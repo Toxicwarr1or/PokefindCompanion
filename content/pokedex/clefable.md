@@ -573,7 +573,7 @@ forms:
     types: ['Normal', 'Ghost']
     abilities: ['Intimidate', 'Stakeout']
     hidden_ability: 'Illusion'
-    sprite: ''
+    sprite: 'images/pokedex/clefable-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

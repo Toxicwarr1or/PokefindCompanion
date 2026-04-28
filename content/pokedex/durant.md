@@ -442,7 +442,7 @@ forms:
     types: ['Fire', 'Electric']
     abilities: ['Reckless', 'Download']
     hidden_ability: 'Infiltrator'
-    sprite: ''
+    sprite: 'images/pokedex/durant-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 0.3

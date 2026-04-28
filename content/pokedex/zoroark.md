@@ -519,7 +519,7 @@ forms:
     types: ['Fairy', 'Fighting']
     abilities: ['Sheer Force', 'Dazzling']
     hidden_ability: 'Misty Surge'
-    sprite: ''
+    sprite: 'images/pokedex/zoroark-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.6

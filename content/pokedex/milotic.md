@@ -412,7 +412,7 @@ forms:
     types: ['Ice', 'Dragon']
     abilities: ['Multiscale', 'Snow Warning']
     hidden_ability: 'Regenerator'
-    sprite: ''
+    sprite: 'images/pokedex/milotic-anniversary.png'
     egg_groups: ['dragon', 'water 1']
     growth_rate: 'erratic'
     height_m: 6.2

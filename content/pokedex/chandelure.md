@@ -363,7 +363,7 @@ forms:
     types: ['Ice', 'Electric']
     abilities: ['Snow Warning', 'Serene Grace']
     hidden_ability: 'Download'
-    sprite: ''
+    sprite: 'images/pokedex/chandelure-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

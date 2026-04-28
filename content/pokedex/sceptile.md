@@ -550,7 +550,7 @@ forms:
     types: ['Bug', 'Psychic']
     abilities: ['Psychic Surge', 'Skill Link']
     hidden_ability: 'Compound Eyes'
-    sprite: ''
+    sprite: 'images/pokedex/sceptile-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'medium_slow'
     height_m: 1.7

@@ -540,7 +540,7 @@ forms:
     types: ['Fire', 'Dark']
     abilities: ['Stamina', 'Steam Engine']
     hidden_ability: 'Adaptability'
-    sprite: ''
+    sprite: 'images/pokedex/steelix-anniversary.png'
     egg_groups: ['mineral']
     growth_rate: 'medium_fast'
     height_m: 9.2

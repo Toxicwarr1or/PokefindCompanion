@@ -459,7 +459,7 @@ forms:
     types: ['Water', 'Psychic']
     abilities: ['Trace', 'Contrary']
     hidden_ability: 'Speed Boost'
-    sprite: ''
+    sprite: 'images/pokedex/houndoom-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'slow'
     height_m: 1.4

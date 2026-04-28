@@ -576,7 +576,7 @@ forms:
     types: ['Steel', 'Flying']
     abilities: ['Filter', 'Serene Grace']
     hidden_ability: 'Gale Wings'
-    sprite: ''
+    sprite: 'images/pokedex/gardevoir-anniversary.png'
     egg_groups: ['amorphous']
     growth_rate: 'slow'
     height_m: 1.6

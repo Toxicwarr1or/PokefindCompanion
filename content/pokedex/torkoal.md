@@ -506,7 +506,7 @@ forms:
     types: ['Steel']
     abilities: ['Steely Spirit', 'Flash Fire']
     hidden_ability: 'Unaware'
-    sprite: ''
+    sprite: 'images/pokedex/torkoal-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

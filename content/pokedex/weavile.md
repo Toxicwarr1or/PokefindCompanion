@@ -562,7 +562,7 @@ forms:
     types: ['Water', 'Ground']
     abilities: ['Sand Force', 'Magic Guard']
     hidden_ability: 'Sap Sipper'
-    sprite: ''
+    sprite: 'images/pokedex/weavile-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.1

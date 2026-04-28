@@ -603,7 +603,7 @@ forms:
     types: ['Water', 'Grass']
     abilities: ['Natural Cure', 'Triage']
     hidden_ability: 'Drizzle'
-    sprite: ''
+    sprite: 'images/pokedex/latias-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.4

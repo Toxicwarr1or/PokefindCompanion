@@ -559,7 +559,7 @@ forms:
     types: ['Electric', 'Dragon']
     abilities: ['Electric Surge', 'Competitive']
     hidden_ability: 'Galvanize'
-    sprite: ''
+    sprite: 'images/pokedex/hydreigon-anniversary.png'
     egg_groups: ['dragon']
     growth_rate: 'slow'
     height_m: 1.8

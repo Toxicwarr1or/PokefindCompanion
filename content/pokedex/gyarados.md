@@ -468,7 +468,7 @@ forms:
     types: ['Rock', 'Dragon']
     abilities: ['Sand Force', 'Strong Jaw']
     hidden_ability: 'Solid Rock'
-    sprite: ''
+    sprite: 'images/pokedex/gyarados-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

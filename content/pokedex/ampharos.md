@@ -494,7 +494,7 @@ forms:
     types: ['Fire', 'Dragon']
     abilities: ['Moody', 'Fluffy']
     hidden_ability: 'Adaptability'
-    sprite: ''
+    sprite: 'images/pokedex/ampharos-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'medium_slow'
     height_m: 1.4

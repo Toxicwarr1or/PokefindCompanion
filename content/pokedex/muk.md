@@ -1085,7 +1085,7 @@ forms:
     types: ['Poison', 'Water']
     abilities: ['Liquid Ooze', 'Regenerator']
     hidden_ability: 'Prankster'
-    sprite: ''
+    sprite: 'images/pokedex/muk-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

@@ -549,7 +549,7 @@ forms:
     types: ['Rock', 'Ghost']
     abilities: ['Rough Skin', 'Perish Body']
     hidden_ability: 'Prankster'
-    sprite: ''
+    sprite: 'images/pokedex/lapras-anniversary.png'
     egg_groups: ['water 1', 'monster']
     egg_steps: 10280
     growth_rate: 'slow'

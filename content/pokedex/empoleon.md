@@ -492,7 +492,7 @@ forms:
     types: ['Ice', 'Dark']
     abilities: ['Ice Scales', 'Water Absorb']
     hidden_ability: 'Swift Swim'
-    sprite: ''
+    sprite: 'images/pokedex/empoleon-anniversary.png'
     egg_groups: ['field', 'water 1']
     growth_rate: 'medium_slow'
     height_m: 1.7

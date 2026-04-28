@@ -426,7 +426,7 @@ forms:
     types: ['Ghost', 'Dark']
     abilities: ['Intimidate', 'Berserk']
     hidden_ability: 'Dark Aura'
-    sprite: ''
+    sprite: 'images/pokedex/raikou-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.9

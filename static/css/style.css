@@ -1571,20 +1571,13 @@ pre code { background: transparent; padding: 0; }
     line-height: 1.55;
 }
 
-.mc-model-skin-toggle {
-    display: flex;
-    gap: 0.3rem;
-    margin: 0.5rem 0 0.3rem;
-}
+/* Skin selector. The buttons share the `.skin-chip` pill style of the
+   informational chips that used to live in the Available Skins row, so
+   nothing changes visually until the user clicks. `.mc-skin-btn` adds
+   button-y interactivity (cursor, hover, active palette) and is what the
+   model-viewer JS scopes its selector to. */
 .mc-skin-btn {
-    flex: 1;
-    padding: 0.35rem 0.7rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    color: var(--text-dim);
     cursor: pointer;
-    font-size: 0.82rem;
     font-weight: 600;
     transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
 }

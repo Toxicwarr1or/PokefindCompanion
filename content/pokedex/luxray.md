@@ -373,7 +373,7 @@ forms:
     types: ['Electric', 'Ghost']
     abilities: ['Contrary', 'Electric Surge']
     hidden_ability: 'Shadow Tag'
-    sprite: ''
+    sprite: 'images/pokedex/luxray-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.4

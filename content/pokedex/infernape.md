@@ -570,7 +570,7 @@ forms:
     types: ['Ice', 'Ground']
     abilities: ['Dry Skin', 'Mold Breaker']
     hidden_ability: 'Guts'
-    sprite: ''
+    sprite: 'images/pokedex/infernape-anniversary.png'
     egg_groups: ['human-like', 'field']
     growth_rate: 'medium_slow'
     height_m: 1.2

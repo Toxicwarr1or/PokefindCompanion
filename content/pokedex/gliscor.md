@@ -539,7 +539,7 @@ forms:
     types: ['Electric', 'Flying']
     abilities: ['Reckless', 'Toxic Boost']
     hidden_ability: 'Transistor'
-    sprite: ''
+    sprite: 'images/pokedex/gliscor-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_slow'
     height_m: 2

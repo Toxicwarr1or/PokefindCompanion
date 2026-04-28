@@ -536,7 +536,7 @@ forms:
     types: ['Dragon', 'Fighting']
     abilities: ['Moxie', 'Sharpness']
     hidden_ability: 'Sheer Force'
-    sprite: ''
+    sprite: 'images/pokedex/heracross-anniversary.png'
     egg_groups: ['bug']
     egg_steps: 6425
     growth_rate: 'slow'

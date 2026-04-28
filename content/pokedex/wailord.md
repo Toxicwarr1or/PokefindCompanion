@@ -413,7 +413,7 @@ forms:
     types: ['Steel', 'Flying']
     abilities: ['Heavy Metal', 'Aerilate']
     hidden_ability: 'Motor Drive'
-    sprite: ''
+    sprite: 'images/pokedex/wailord-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'fluctuating'
     height_m: 14.5

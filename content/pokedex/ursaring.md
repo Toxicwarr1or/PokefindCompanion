@@ -506,7 +506,7 @@ forms:
     types: ['Dark', 'Fighting']
     abilities: ['Technician', 'Fur Coat']
     hidden_ability: 'Gluttony'
-    sprite: ''
+    sprite: 'images/pokedex/ursaring-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

@@ -383,7 +383,7 @@ forms:
     types: ['Rock', 'Fire']
     abilities: ['No Guard', 'Sand Rush']
     hidden_ability: 'Drought'
-    sprite: ''
+    sprite: 'images/pokedex/vanilluxe-anniversary.png'
     egg_groups: ['mineral']
     growth_rate: 'slow'
     height_m: 1.3

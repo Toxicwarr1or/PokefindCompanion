@@ -508,7 +508,7 @@ forms:
     types: ['Dark', 'Steel']
     abilities: ['Iron Fist', 'Weak Armor']
     hidden_ability: 'Protean'
-    sprite: ''
+    sprite: 'images/pokedex/haxorus-anniversary.png'
     egg_groups: ['dragon', 'monster']
     growth_rate: 'slow'
     height_m: 1.8

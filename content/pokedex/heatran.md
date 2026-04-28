@@ -448,7 +448,7 @@ forms:
     types: ['Ground', 'Steel']
     abilities: ['Sand Rush', 'Earth Eater']
     hidden_ability: 'Steam Engine'
-    sprite: ''
+    sprite: 'images/pokedex/heatran-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.7

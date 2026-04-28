@@ -347,7 +347,7 @@ forms:
     types: ['Fighting', 'Flying']
     abilities: ['Infiltrator', 'Defiant']
     hidden_ability: 'Hustle'
-    sprite: ''
+    sprite: 'images/pokedex/staraptor-anniversary.png'
     egg_groups: ['flying']
     growth_rate: 'medium_slow'
     height_m: 1.2

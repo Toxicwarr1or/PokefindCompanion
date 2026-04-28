@@ -350,7 +350,7 @@ forms:
     types: ['Fire', 'Fairy']
     abilities: ['Dazzling', 'Justified']
     hidden_ability: 'Speed Boost'
-    sprite: ''
+    sprite: 'images/pokedex/dodrio-anniversary.png'
     egg_groups: ['flying']
     growth_rate: 'medium_fast'
     height_m: 1.8

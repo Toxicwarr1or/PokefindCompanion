@@ -366,7 +366,7 @@ forms:
     types: ['Water', 'Fire']
     abilities: ['Water Bubble', 'Unaware']
     hidden_ability: 'Water Absorb'
-    sprite: ''
+    sprite: 'images/pokedex/hippowdon-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'slow'
     height_m: 2

@@ -475,7 +475,7 @@ forms:
     types: ['Water', 'Dragon']
     abilities: ['Strong Jaw', 'Swift Swim']
     hidden_ability: 'Drizzle'
-    sprite: ''
+    sprite: 'images/pokedex/garchomp-anniversary.png'
     egg_groups: ['dragon']
     growth_rate: 'fast'
     height_m: 1.5

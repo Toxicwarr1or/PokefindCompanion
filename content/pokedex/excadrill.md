@@ -435,7 +435,7 @@ forms:
     types: ['Rock', 'Grass']
     abilities: ['Reckless', 'Rock Head']
     hidden_ability: 'Sand Rush'
-    sprite: ''
+    sprite: 'images/pokedex/excadrill-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.7

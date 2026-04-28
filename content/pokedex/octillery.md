@@ -451,7 +451,7 @@ forms:
     types: ['Dark', 'Psychic']
     abilities: ['Prism Armor', 'Mega Launcher']
     hidden_ability: 'Regenerator'
-    sprite: ''
+    sprite: 'images/pokedex/octillery-anniversary.png'
     egg_groups: ['water 2', 'water 1']
     growth_rate: 'medium_fast'
     height_m: 0.9

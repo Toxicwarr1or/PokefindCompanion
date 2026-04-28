@@ -451,7 +451,7 @@ forms:
     types: ['Grass', 'Poison']
     abilities: ['Thick Fat', 'Neutralizing Gas']
     hidden_ability: 'Chlorophyll'
-    sprite: ''
+    sprite: 'images/pokedex/magnezone-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'medium_fast'
     height_m: 1.2

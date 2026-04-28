@@ -556,7 +556,7 @@ forms:
     types: ['Grass', 'Electric']
     abilities: ['Grassy Surge', 'Weak Armor']
     hidden_ability: 'Rock Head'
-    sprite: ''
+    sprite: 'images/pokedex/emboar-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.6

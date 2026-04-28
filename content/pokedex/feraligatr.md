@@ -538,7 +538,7 @@ forms:
     types: ['Fighting', 'Rock']
     abilities: ['Sand Rush', 'Iron Fist']
     hidden_ability: 'No Guard'
-    sprite: ''
+    sprite: 'images/pokedex/feraligatr-anniversary.png'
     egg_groups: ['water 1', 'monster']
     growth_rate: 'medium_slow'
     height_m: 2.3

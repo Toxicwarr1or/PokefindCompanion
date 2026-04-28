@@ -831,7 +831,7 @@ forms:
     types: ['Steel', 'Fairy']
     abilities: ['Moody', 'Magic Bounce']
     hidden_ability: 'Misty Surge'
-    sprite: ''
+    sprite: 'images/pokedex/exeggutor-anniversary.png'
     egg_groups: ['grass']
     growth_rate: 'slow'
     height_m: 2

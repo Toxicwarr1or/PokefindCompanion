@@ -552,7 +552,7 @@ forms:
     types: ['Ice', 'Poison']
     abilities: ['Merciless', 'Slush Rush']
     hidden_ability: 'Simple'
-    sprite: ''
+    sprite: 'images/pokedex/sigilyph-anniversary.png'
     egg_groups: ['flying']
     growth_rate: 'medium_fast'
     height_m: 1.4

@@ -448,7 +448,7 @@ forms:
     types: ['Grass', 'Steel']
     abilities: ['Huge Power', 'Grass Pelt']
     hidden_ability: 'Iron Barbs'
-    sprite: ''
+    sprite: 'images/pokedex/bastiodon-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'fast'
     height_m: 1.3

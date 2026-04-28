@@ -282,10 +282,22 @@ function startViewer(container) {
   if (container.dataset.mcStarted === '1') return;
   container.dataset.mcStarted = '1';
 
-  const skinUrls = {
-    regular: baseUrl,
-    shiny:   container.dataset.mcModelShiny || null,
-  };
+  // The page passes every available skin URL in a single
+  // `data-mc-model-skins` JSON attribute. The structurally per-skin attr
+  // we tried first (`data-mc-model-<skin>`) collided with Hugo's
+  // html/template autoescape: any underscore in the attribute name was
+  // rewritten to `ZgotmplZ`, which collapsed `april_fools`,
+  // `lunar_new_year`, and `sword_and_shield` onto the same broken attr
+  // and made those buttons no-ops. JSON in an attribute *value* dodges
+  // the rule.
+  const skinUrls = { regular: baseUrl };
+  if (container.dataset.mcModelSkins) {
+    try {
+      Object.assign(skinUrls, JSON.parse(container.dataset.mcModelSkins));
+    } catch (e) {
+      console.warn('mc-model-viewer: failed to parse data-mc-model-skins', e);
+    }
+  }
 
   // Create renderer fresh per container so multiple viewers can coexist.
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });

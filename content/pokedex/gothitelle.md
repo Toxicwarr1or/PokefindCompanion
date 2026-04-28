@@ -558,7 +558,7 @@ forms:
     types: ['Dark', 'Steel']
     abilities: ['Adaptability', 'Intimidate']
     hidden_ability: 'Pure Power'
-    sprite: ''
+    sprite: 'images/pokedex/gothitelle-anniversary.png'
     egg_groups: ['human-like']
     growth_rate: 'medium_slow'
     height_m: 1.5

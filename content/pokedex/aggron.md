@@ -654,7 +654,7 @@ forms:
     types: ['Dragon', 'Poison']
     abilities: ['Intimidate', 'Neutralizing Gas']
     hidden_ability: 'No Guard'
-    sprite: ''
+    sprite: 'images/pokedex/aggron-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'slow'
     height_m: 2.1

@@ -526,7 +526,7 @@ forms:
     types: ['Steel', 'Poison']
     abilities: ['Heatproof', 'Levitate']
     hidden_ability: 'Tinted Lens'
-    sprite: ''
+    sprite: 'images/pokedex/flygon-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_slow'
     height_m: 2

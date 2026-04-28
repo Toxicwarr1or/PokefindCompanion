@@ -420,7 +420,7 @@ forms:
     types: ['Ghost', 'Fairy']
     abilities: ['Intimidate', 'Wandering Spirit']
     hidden_ability: 'Misty Surge'
-    sprite: ''
+    sprite: 'images/pokedex/suicune-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 2

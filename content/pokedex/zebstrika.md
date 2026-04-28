@@ -354,7 +354,7 @@ forms:
     types: ['Psychic', 'Flying']
     abilities: ['Serene Grace', 'Aerilate']
     hidden_ability: 'Magic Guard'
-    sprite: ''
+    sprite: 'images/pokedex/zebstrika-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 1.6

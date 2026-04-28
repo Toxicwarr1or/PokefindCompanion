@@ -540,7 +540,7 @@ forms:
     types: ['Dark', 'Fighting']
     abilities: ['Hustle', 'Guts']
     hidden_ability: 'Defiant'
-    sprite: ''
+    sprite: 'images/pokedex/rampardos-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'fast'
     height_m: 1.6

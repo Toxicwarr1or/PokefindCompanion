@@ -532,7 +532,7 @@ forms:
     types: ['Poison', 'Dragon']
     abilities: ['Poison Touch', 'Multiscale']
     hidden_ability: 'Dragon''s Maw'
-    sprite: ''
+    sprite: 'images/pokedex/bisharp-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'medium_fast'
     height_m: 1.6

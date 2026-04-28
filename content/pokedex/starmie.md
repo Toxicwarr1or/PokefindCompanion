@@ -404,7 +404,7 @@ forms:
     types: ['Ice', 'Ghost']
     abilities: ['Screen Cleaner', 'Refrigerate']
     hidden_ability: 'Magic Guard'
-    sprite: ''
+    sprite: 'images/pokedex/starmie-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'slow'
     height_m: 1.1

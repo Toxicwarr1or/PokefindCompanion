@@ -490,7 +490,7 @@ forms:
     types: ['Ground', 'Rock']
     abilities: ['Sand Stream', 'Solid Rock']
     hidden_ability: 'Dry Skin'
-    sprite: ''
+    sprite: 'images/pokedex/forretress-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 1.2

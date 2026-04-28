@@ -478,7 +478,7 @@ forms:
     types: ['Psychic', 'Fighting']
     abilities: ['Psychic Surge', 'Quick Feet']
     hidden_ability: 'Flare Boost'
-    sprite: ''
+    sprite: 'images/pokedex/magmortar-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'medium_fast'
     height_m: 1.6

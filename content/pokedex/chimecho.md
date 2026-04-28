@@ -544,7 +544,7 @@ forms:
     types: ['Dark', 'Fairy']
     abilities: ['Prankster']
     hidden_ability: 'Triage'
-    sprite: ''
+    sprite: 'images/pokedex/chimecho-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

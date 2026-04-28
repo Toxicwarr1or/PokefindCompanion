@@ -378,7 +378,7 @@ forms:
     types: ['Steel', 'Fighting']
     abilities: ['Regenerator', 'Iron Barbs']
     hidden_ability: 'Good as Gold'
-    sprite: ''
+    sprite: 'images/pokedex/amoonguss-anniversary.png'
     egg_groups: ['grass']
     growth_rate: 'medium_fast'
     height_m: 0.6

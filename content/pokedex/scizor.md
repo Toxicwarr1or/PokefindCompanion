@@ -461,7 +461,7 @@ forms:
     types: ['Dragon', 'Steel']
     abilities: ['Technician', 'Clear Body']
     hidden_ability: 'Mold Breaker'
-    sprite: ''
+    sprite: 'images/pokedex/scizor-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 1.8

@@ -593,7 +593,7 @@ forms:
     types: ['Steel', 'Water']
     abilities: ['Lightning Rod', 'Download']
     hidden_ability: 'Regenerator'
-    sprite: ''
+    sprite: 'images/pokedex/slowbro-anniversary.png'
     egg_groups: ['water 1', 'monster']
     growth_rate: 'medium_fast'
     height_m: 1.6

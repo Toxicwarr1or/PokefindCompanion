@@ -337,7 +337,7 @@ forms:
     types: ['Water', 'Electric']
     abilities: ['Tough Claws', 'Liquid Voice']
     hidden_ability: 'Galvanize'
-    sprite: ''
+    sprite: 'images/pokedex/swellow-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'medium_slow'
     height_m: 0.7

@@ -407,7 +407,7 @@ forms:
     types: ['Electric', 'Grass']
     abilities: ['Analytic', 'Grassy Surge']
     hidden_ability: 'Triage'
-    sprite: ''
+    sprite: 'images/pokedex/sunflora-anniversary.png'
     egg_groups: ['grass']
     growth_rate: 'medium_slow'
     height_m: 0.8

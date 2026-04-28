@@ -564,7 +564,7 @@ forms:
     types: ['Dragon', 'Ghost']
     abilities: ['No Guard', 'Stakeout']
     hidden_ability: 'Shadow Tag'
-    sprite: ''
+    sprite: 'images/pokedex/aerodactyl-anniversary.png'
     egg_groups: ['flying']
     growth_rate: 'slow'
     height_m: 1.8

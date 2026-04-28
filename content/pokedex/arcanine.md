@@ -364,7 +364,7 @@ forms:
     types: ['Water']
     abilities: ['Intimidate', 'Innards Out']
     hidden_ability: 'Drizzle'
-    sprite: ''
+    sprite: 'images/pokedex/arcanine-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'slow'
     height_m: 1.9

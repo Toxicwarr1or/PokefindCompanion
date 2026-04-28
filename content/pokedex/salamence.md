@@ -484,7 +484,7 @@ forms:
     types: ['Dark', 'Flying']
     abilities: ['Rock Head', 'Tough Claws']
     hidden_ability: 'Aerilate'
-    sprite: ''
+    sprite: 'images/pokedex/salamence-anniversary.png'
     egg_groups: ['dragon']
     growth_rate: 'slow'
     height_m: 1.5

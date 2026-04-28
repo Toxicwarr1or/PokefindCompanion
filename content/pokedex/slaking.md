@@ -532,7 +532,7 @@ forms:
     types: ['Grass', 'Fighting']
     abilities: ['Grassy Surge', 'Thick Fat']
     hidden_ability: 'Unaware'
-    sprite: ''
+    sprite: 'images/pokedex/slaking-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'slow'
     height_m: 2

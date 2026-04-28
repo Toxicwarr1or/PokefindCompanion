@@ -471,7 +471,7 @@ forms:
     types: ['Grass', 'Fairy']
     abilities: ['Pixilate', 'Chlorophyll']
     hidden_ability: 'Regenerator'
-    sprite: ''
+    sprite: 'images/pokedex/breloom-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'fluctuating'
     height_m: 1.2

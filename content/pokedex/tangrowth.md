@@ -517,7 +517,7 @@ forms:
     types: ['Electric', 'Steel']
     abilities: ['Magnet Pull', 'Triage']
     hidden_ability: 'Electric Surge'
-    sprite: ''
+    sprite: 'images/pokedex/tangrowth-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

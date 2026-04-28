@@ -563,7 +563,7 @@ forms:
     types: ['Water', 'Grass']
     abilities: ['Toxic Boost', 'Triage']
     hidden_ability: 'Speed Boost'
-    sprite: ''
+    sprite: 'images/pokedex/toxicroak-anniversary.png'
     egg_groups: ['human-like']
     growth_rate: 'medium_fast'
     height_m: 1.3

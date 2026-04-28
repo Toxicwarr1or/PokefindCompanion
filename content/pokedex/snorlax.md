@@ -624,7 +624,7 @@ forms:
     types: ['Dark', 'Poison']
     abilities: ['Poison Touch', 'Ripen']
     hidden_ability: 'Quick Draw'
-    sprite: ''
+    sprite: 'images/pokedex/snorlax-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'slow'
     height_m: 2.1

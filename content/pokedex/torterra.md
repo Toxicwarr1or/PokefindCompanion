@@ -467,7 +467,7 @@ forms:
     types: ['Grass', 'Fire']
     abilities: ['Chlorophyll', 'Harvest']
     hidden_ability: 'Contrary'
-    sprite: ''
+    sprite: 'images/pokedex/torterra-anniversary.png'
     egg_groups: ['grass', 'monster']
     growth_rate: 'medium_slow'
     height_m: 2.2

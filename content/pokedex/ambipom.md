@@ -534,7 +534,7 @@ forms:
     types: ['Steel', 'Ice']
     abilities: ['Slush Rush', 'Infiltrator']
     hidden_ability: 'Gorilla Tactics'
-    sprite: ''
+    sprite: 'images/pokedex/ambipom-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'fast'
     height_m: 1.2

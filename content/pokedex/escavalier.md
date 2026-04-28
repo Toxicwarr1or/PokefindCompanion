@@ -401,7 +401,7 @@ forms:
     types: ['Ghost', 'Fire']
     abilities: ['Defiant', 'Hustle']
     hidden_ability: 'Quick Draw'
-    sprite: ''
+    sprite: 'images/pokedex/escavalier-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 1

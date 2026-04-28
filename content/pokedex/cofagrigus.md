@@ -465,7 +465,7 @@ forms:
     types: ['Psychic', 'Dragon']
     abilities: ['Psychic Surge', 'Trace']
     hidden_ability: 'Prankster'
-    sprite: ''
+    sprite: 'images/pokedex/cofagrigus-anniversary.png'
     egg_groups: ['amorphous', 'mineral']
     growth_rate: 'medium_fast'
     height_m: 1.7

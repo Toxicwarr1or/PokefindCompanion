@@ -449,7 +449,7 @@ forms:
     types: ['Bug', 'Fire']
     abilities: ['Simple', 'Flash Fire']
     hidden_ability: 'Speed Boost'
-    sprite: ''
+    sprite: 'images/pokedex/scolipede-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_slow'
     height_m: 2.5

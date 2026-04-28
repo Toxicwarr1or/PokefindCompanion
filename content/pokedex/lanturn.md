@@ -445,7 +445,7 @@ forms:
     types: ['Ground', 'Fairy']
     abilities: ['Regenerator', 'Huge Power']
     hidden_ability: 'Filter'
-    sprite: ''
+    sprite: 'images/pokedex/lanturn-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.2

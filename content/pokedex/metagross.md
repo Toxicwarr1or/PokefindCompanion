@@ -499,7 +499,7 @@ forms:
     types: ['Rock', 'Bug']
     abilities: ['Arena Trap', 'Sturdy']
     hidden_ability: 'Sand Stream'
-    sprite: ''
+    sprite: 'images/pokedex/metagross-anniversary.png'
     egg_groups: ['mineral']
     growth_rate: 'slow'
     height_m: 1.6

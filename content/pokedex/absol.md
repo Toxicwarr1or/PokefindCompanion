@@ -698,7 +698,7 @@ forms:
     types: ['Ghost', 'Bug']
     abilities: ['Speed Boost', 'Compound Eyes']
     hidden_ability: 'Magic Bounce'
-    sprite: ''
+    sprite: 'images/pokedex/absol-anniversary.png'
     egg_groups: ['field']
     egg_steps: 6425
     growth_rate: 'medium_slow'

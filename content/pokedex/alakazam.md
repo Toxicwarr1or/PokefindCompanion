@@ -536,7 +536,7 @@ forms:
     types: ['Water', 'Psychic']
     abilities: ['Infiltrator', 'Magic Bounce']
     hidden_ability: 'Mega Launcher'
-    sprite: ''
+    sprite: 'images/pokedex/alakazam-anniversary.png'
     egg_groups: ['human-like']
     growth_rate: 'medium_slow'
     height_m: 1.5

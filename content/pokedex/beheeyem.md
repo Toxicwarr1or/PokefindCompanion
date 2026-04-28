@@ -516,7 +516,7 @@ forms:
     types: ['Ghost', 'Fairy']
     abilities: ['Adaptability', 'Misty Surge']
     hidden_ability: 'Magic Guard'
-    sprite: ''
+    sprite: 'images/pokedex/beheeyem-anniversary.png'
     egg_groups: ['human-like']
     growth_rate: 'medium_fast'
     height_m: 1

@@ -632,7 +632,7 @@ forms:
     types: ['Electric', 'Water']
     abilities: ['Reckless', 'Volt Absorb']
     hidden_ability: 'Swift Swim'
-    sprite: ''
+    sprite: 'images/pokedex/dragonite-anniversary.png'
     egg_groups: ['dragon', 'water 1']
     growth_rate: 'slow'
     height_m: 2.2

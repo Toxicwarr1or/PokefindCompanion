@@ -472,7 +472,7 @@ forms:
     types: ['Ghost', 'Dark']
     abilities: ['Levitate', 'Sticky Hold']
     hidden_ability: 'Slow Start'
-    sprite: ''
+    sprite: 'images/pokedex/porygon2-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

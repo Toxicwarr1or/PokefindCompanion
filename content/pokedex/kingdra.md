@@ -366,7 +366,7 @@ forms:
     types: ['Dragon', 'Fairy']
     abilities: ['Serene Grace', 'Fairy Aura']
     hidden_ability: 'Multiscale'
-    sprite: ''
+    sprite: 'images/pokedex/kingdra-anniversary.png'
     egg_groups: ['dragon', 'water 1']
     growth_rate: 'medium_fast'
     height_m: 1.8

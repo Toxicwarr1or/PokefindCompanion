@@ -595,7 +595,7 @@ forms:
     types: ['Water', 'Electric']
     abilities: ['Swift Swim', 'Mold Breaker']
     hidden_ability: 'Levitate'
-    sprite: ''
+    sprite: 'images/pokedex/latios-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 2

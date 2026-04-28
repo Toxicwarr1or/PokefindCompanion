@@ -611,7 +611,7 @@ forms:
     types: ['Ice', 'Electric']
     abilities: ['Skill Link', 'Static']
     hidden_ability: 'Guts'
-    sprite: ''
+    sprite: 'images/pokedex/rhyperior-anniversary.png'
     egg_groups: ['field', 'monster']
     growth_rate: 'slow'
     height_m: 2.4

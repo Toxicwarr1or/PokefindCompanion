@@ -56,7 +56,65 @@
   </nav>
   {{ end }}
 
+  {{/* Region forms — Pokefind's gen-specific regional variants; semantic
+        equivalents of Pokémon's Alolan/Galarian, but each gen has its
+        own (Kyoto / Jataro / Haikou / Shiloh / Zeinova). Each species
+        belongs to at most one region, and the pack's `anniversary/`
+        directory carries that region's model for the species. */}}
+  {{ $regionForms := slice "Kyoto" "Jataro" "Haikou" "Shiloh" "Zeinova" }}
+
+  {{/* Pre-compute which cosmetic-skin keys are already represented by a
+        form tab — either by direct label match (a future "Christmas" form
+        → christmas skin) or via the region-form-to-anniversary mapping
+        above. The Standard tab's Available Skins chip list omits these
+        to avoid showing the same artwork in two places. */}}
+  {{ $skinsClaimedByForms := slice }}
+  {{ range $forms }}
+    {{ $fname := .name }}
+    {{ range site.Data.cosmetic_skins }}
+      {{ if eq $fname .label }}{{ $skinsClaimedByForms = $skinsClaimedByForms | append .key }}{{ end }}
+    {{ end }}
+    {{ if in $regionForms $fname }}{{ $skinsClaimedByForms = $skinsClaimedByForms | append "anniversary" }}{{ end }}
+  {{ end }}
+
   {{ range $i, $f := $forms }}
+  {{/* Resolve `$variant` (= the model output dir) and the staged-skin map
+        up-front so both the viewer (visuals column) and the Available
+        Skins row (stats column) can use them. */}}
+  {{ $slug := lower (replaceRE "[^a-zA-Z0-9]+" "-" $.Title) }}
+  {{ $variant := "" }}
+  {{ if eq $i 0 }}{{ $variant = "regular" }}{{ end }}
+  {{ if eq $f.name "Alolan" }}{{ $variant = "alolan" }}{{ end }}
+  {{ if eq $f.name "Galarian" }}{{ $variant = "galarian" }}{{ end }}
+  {{ if eq $f.name "Female" }}{{ $variant = "female" }}{{ end }}
+  {{/* Region forms route to the anniversary skin's output directory. */}}
+  {{ if in $regionForms $f.name }}{{ $variant = "anniversary" }}{{ end }}
+  {{/* Other cosmetic-skin forms: any form whose `name` matches a cosmetic
+        skin's display label routes to that skin's output directory
+        (Christmas → `christmas/<slug>/`, etc.). The page renders the
+        staged cosmetic-skin model on that tab; its chip is hidden on the
+        Standard tab below via `$skinsClaimedByForms`. */}}
+  {{ range site.Data.cosmetic_skins }}
+    {{ if eq $f.name .label }}{{ $variant = .key }}{{ end }}
+  {{ end }}
+  {{ $availableSkins := slice }}
+  {{ $skinLabels := dict }}
+  {{ $skinUrls := dict }}
+  {{ if and $variant (or (eq $variant "regular") (eq $variant "female")) }}
+    {{ range site.Data.cosmetic_skins }}
+      {{ $skin := .key }}
+      {{ $dir := $skin }}
+      {{ if and (eq $variant "female") (eq $skin "shiny") }}{{ $dir = "female_shiny" }}{{ end }}
+      {{ $allowed := or (eq $variant "regular") (eq $skin "shiny") }}
+      {{ $hasOwnFormTab := in $skinsClaimedByForms $skin }}
+      {{ $path := printf "static/models-3d/%s/%s/%s.json" $dir $slug $slug }}
+      {{ if and $allowed (not $hasOwnFormTab) (fileExists $path) }}
+        {{ $availableSkins = $availableSkins | append $skin }}
+        {{ $skinLabels = merge $skinLabels (dict $skin .label) }}
+        {{ $skinUrls = merge $skinUrls (dict $skin (printf "/models-3d/%s/%s/%s.json" $dir $slug $slug | relURL)) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
   <section class="form-panel{{ if eq $i 0 }} active{{ end }}" data-form-index="{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
     <div class="dex-profile">
       <div class="dex-visuals">
@@ -67,30 +125,26 @@
             <span>(no sprite)</span>
           {{ end }}
         </div>
-        {{/* 3D model viewer — Standard tab uses the regular skin; Alolan
-              and Galarian form tabs use their own variant folders. Only
-              renders when the staged model JSON exists on disk. */}}
-        {{ $slug := lower (replaceRE "[^a-zA-Z0-9]+" "-" $.Title) }}
-        {{ $variant := "" }}
-        {{ if eq $i 0 }}{{ $variant = "regular" }}{{ end }}
-        {{ if eq $f.name "Alolan" }}{{ $variant = "alolan" }}{{ end }}
-        {{ if eq $f.name "Galarian" }}{{ $variant = "galarian" }}{{ end }}
+        {{/* 3D model viewer. The skin toggle isn't a standalone row anymore
+             — the stats column's "Available Skins" entry doubles as the
+             selector (see `<dt>Available Skins</dt>` below). The viewer
+             carries one `data-mc-model-<skin>` attr per staged variant so
+             the JS can look up URLs when buttons elsewhere on the page are
+             clicked. */}}
         {{ if $variant }}
         {{ $modelPath := printf "static/models-3d/%s/%s/%s.json" $variant $slug $slug }}
         {{ if (fileExists $modelPath) }}
-        {{/* Shiny variant only available for the Standard form's regular
-             skin (no shiny Alolan/Galarian assets in the pack today). */}}
-        {{ $shinyPath := printf "static/models-3d/shiny/%s/%s.json" $slug $slug }}
-        {{ $hasShiny := and (eq $variant "regular") (fileExists $shinyPath) }}
-        {{ if $hasShiny }}
-        <div class="mc-model-skin-toggle" role="tablist" aria-label="Model skin">
-          <button type="button" class="mc-skin-btn active" data-skin="regular" aria-selected="true">Regular</button>
-          <button type="button" class="mc-skin-btn" data-skin="shiny" aria-selected="false">Shiny</button>
-        </div>
-        {{ end }}
         <div class="mc-model-viewer"
              data-mc-model="{{ printf "/models-3d/%s/%s/%s.json" $variant $slug $slug | relURL }}"
-             {{ if $hasShiny }}data-mc-model-shiny="{{ printf "/models-3d/shiny/%s/%s.json" $slug $slug | relURL }}"{{ end }}></div>
+             {{/* All skin URLs travel in one JSON attribute. Per-skin
+                 `data-mc-model-<skin>` attrs were collapsed to ZgotmplZ
+                 by Hugo's html/template autoescape whenever a skin key
+                 contained an underscore (april_fools, lunar_new_year,
+                 sword_and_shield) — the rule fires structurally on
+                 attribute names regardless of pipeline functions or
+                 safeHTML. A single attribute carrying a JSON-encoded
+                 map sidesteps the rule entirely. */}}
+             {{ if gt (len $skinUrls) 0 }}data-mc-model-skins="{{ $skinUrls | jsonify }}"{{ end }}></div>
         {{ end }}
         {{ end }}
       </div>
@@ -102,7 +156,24 @@
         {{ with $f.egg_steps }}<dt>Hatch Steps</dt><dd>{{ . }}</dd>{{ end }}
         {{ with $f.growth_rate }}<dt>Growth Rate</dt><dd>{{ . | replaceRE "_" " " | title }}</dd>{{ end }}
         {{ if or $f.height_m $f.weight_kg }}<dt>Size</dt><dd>{{ with $f.height_m }}{{ . }} m{{ end }}{{ if and $f.height_m $f.weight_kg }} · {{ end }}{{ with $f.weight_kg }}{{ . }} kg{{ end }}</dd>{{ end }}
-        {{ if and (eq $i 0) $.Params.skins }}<dt>Available Skins</dt><dd class="skins-inline">{{ range $.Params.skins }}<span class="skin-chip">{{ . }}</span>{{ end }}</dd>{{ end }}
+        {{/* Available Skins doubles as the model viewer's skin selector:
+             clicking a chip switches the 3D model to that skin (handled by
+             mc-model-viewer.js via the `.mc-skin-btn[data-skin]` hookup).
+             Only emitted on form tabs that actually have a 3D viewer with
+             cosmetic skin variants — falls back to the frontmatter skins
+             list (informational only) when the form has no viewer. */}}
+        {{ if gt (len $availableSkins) 0 }}
+        <dt>Available Skins</dt>
+        <dd class="skins-inline" role="tablist" aria-label="Model skin">
+          <button type="button" class="mc-skin-btn skin-chip active" data-skin="regular" aria-selected="true">Regular</button>
+          {{ range $availableSkins }}
+            <button type="button" class="mc-skin-btn skin-chip" data-skin="{{ . }}" aria-selected="false">{{ index $skinLabels . }}</button>
+          {{ end }}
+        </dd>
+        {{ else if and (eq $i 0) $.Params.skins }}
+        <dt>Available Skins</dt>
+        <dd class="skins-inline">{{ range $.Params.skins }}<span class="skin-chip">{{ . }}</span>{{ end }}</dd>
+        {{ end }}
       </dl>
     </div>
 

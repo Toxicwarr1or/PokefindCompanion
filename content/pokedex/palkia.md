@@ -522,7 +522,7 @@ forms:
     types: ['Fairy', 'Dragon']
     abilities: ['Trace', 'Marvel Scale']
     hidden_ability: 'Soul-Heart'
-    sprite: ''
+    sprite: 'images/pokedex/palkia-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 4.2

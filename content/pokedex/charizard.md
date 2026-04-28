@@ -542,7 +542,7 @@ forms:
     types: ['Dragon', 'Electric']
     abilities: ['Magnet Pull', 'Beast Boost']
     hidden_ability: 'Tough Claws'
-    sprite: ''
+    sprite: 'images/pokedex/charizard-anniversary.png'
     egg_groups: ['dragon', 'monster']
     growth_rate: 'medium_slow'
     height_m: 1.7

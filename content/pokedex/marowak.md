@@ -994,7 +994,7 @@ forms:
     types: ['Bug', 'Poison']
     abilities: ['Skill Link', 'Wimp Out']
     hidden_ability: 'Tinted Lens'
-    sprite: ''
+    sprite: 'images/pokedex/marowak-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'medium_fast'
     height_m: 1

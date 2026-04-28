@@ -443,7 +443,7 @@ forms:
     types: ['Electric', 'Ghost']
     abilities: ['Storm Drain', 'Levitate']
     hidden_ability: 'Drizzle'
-    sprite: ''
+    sprite: 'images/pokedex/tentacruel-anniversary.png'
     egg_groups: ['water 3']
     growth_rate: 'slow'
     height_m: 1.6

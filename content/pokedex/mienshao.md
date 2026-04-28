@@ -483,7 +483,7 @@ forms:
     types: ['Grass', 'Dark']
     abilities: ['Technician', 'Adaptability']
     hidden_ability: 'Sharpness'
-    sprite: ''
+    sprite: 'images/pokedex/mienshao-anniversary.png'
     egg_groups: ['human-like', 'field']
     growth_rate: 'medium_slow'
     height_m: 1.4

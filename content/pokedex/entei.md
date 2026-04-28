@@ -427,7 +427,7 @@ forms:
     types: ['Ghost', 'Fighting']
     abilities: ['Intimidate', 'Shadow Shield']
     hidden_ability: 'Sheer Force'
-    sprite: ''
+    sprite: 'images/pokedex/entei-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 2.1

@@ -440,7 +440,7 @@ forms:
     types: ['Ice', 'Flying']
     abilities: ['Adaptability', 'Slush Rush']
     hidden_ability: 'Magic Guard'
-    sprite: ''
+    sprite: 'images/pokedex/donphan-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

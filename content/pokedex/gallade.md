@@ -684,7 +684,7 @@ forms:
     types: ['Fighting', 'Fairy']
     abilities: ['Unburden', 'Pixilate']
     hidden_ability: 'Guts'
-    sprite: ''
+    sprite: 'images/pokedex/gallade-anniversary.png'
     egg_groups: ['amorphous']
     growth_rate: 'slow'
     height_m: 1.6

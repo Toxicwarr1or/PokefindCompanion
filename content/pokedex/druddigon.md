@@ -622,7 +622,7 @@ forms:
     types: ['Steel', 'Rock']
     abilities: ['Sturdy', 'Defiant']
     hidden_ability: 'Tough Claws'
-    sprite: ''
+    sprite: 'images/pokedex/druddigon-anniversary.png'
     egg_groups: ['dragon', 'monster']
     growth_rate: 'medium_fast'
     height_m: 1.6

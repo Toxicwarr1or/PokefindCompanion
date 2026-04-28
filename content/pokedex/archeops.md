@@ -530,7 +530,7 @@ forms:
     types: ['Flying', 'Ground']
     abilities: ['Technician', 'No Guard']
     hidden_ability: 'Gale Wings'
-    sprite: ''
+    sprite: 'images/pokedex/archeops-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

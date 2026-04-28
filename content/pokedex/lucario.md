@@ -545,7 +545,7 @@ forms:
     types: ['Electric', 'Poison']
     abilities: ['Battery', 'Surge Surfer']
     hidden_ability: 'Prankster'
-    sprite: ''
+    sprite: 'images/pokedex/lucario-anniversary.png'
     egg_groups: ['human-like', 'field']
     growth_rate: 'medium_slow'
     height_m: 1.2

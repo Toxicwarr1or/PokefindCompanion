@@ -477,7 +477,7 @@ forms:
     types: ['Rock', 'Flying']
     abilities: ['Sand Rush', 'Rock Head']
     hidden_ability: 'Magic Guard'
-    sprite: ''
+    sprite: 'images/pokedex/samurott-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'medium_slow'
     height_m: 1.5

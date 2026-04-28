@@ -556,7 +556,7 @@ forms:
     types: ['Water', 'Ice']
     abilities: ['Refrigerate', 'Water Bubble']
     hidden_ability: 'Technician'
-    sprite: ''
+    sprite: 'images/pokedex/blaziken-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.9

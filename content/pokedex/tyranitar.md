@@ -646,7 +646,7 @@ forms:
     types: ['Fire', 'Dragon']
     abilities: ['Drought', 'Hustle']
     hidden_ability: 'Rough Skin'
-    sprite: ''
+    sprite: 'images/pokedex/tyranitar-anniversary.png'
     egg_groups: ['monster']
     growth_rate: 'slow'
     height_m: 2

@@ -458,7 +458,7 @@ forms:
     types: ['Rock', 'Fairy']
     abilities: ['Illusion', 'Sand Rush']
     hidden_ability: 'Technician'
-    sprite: ''
+    sprite: 'images/pokedex/mismagius-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.6

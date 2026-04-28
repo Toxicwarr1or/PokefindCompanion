@@ -492,7 +492,7 @@ forms:
     types: ['Grass']
     abilities: ['Stamina', 'Simple']
     hidden_ability: 'Poison Heal'
-    sprite: ''
+    sprite: 'images/pokedex/skarmory-anniversary.png'
     egg_groups: ['flying']
     growth_rate: 'slow'
     height_m: 1.7

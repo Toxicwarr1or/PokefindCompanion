@@ -72,7 +72,7 @@ forms:
     types: ['Dragon', 'Bug']
     abilities: ['Parental Bond']
     hidden_ability: 'Beast Boost'
-    sprite: ''
+    sprite: 'images/pokedex/weedle-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 0.3

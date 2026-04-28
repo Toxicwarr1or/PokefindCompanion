@@ -469,7 +469,7 @@ forms:
     types: ['Electric', 'Dark']
     abilities: ['Punk Rock', 'Quick Feet']
     hidden_ability: 'Sheer Force'
-    sprite: ''
+    sprite: 'images/pokedex/typhlosion-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.7

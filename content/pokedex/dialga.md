@@ -526,7 +526,7 @@ forms:
     types: ['Fighting', 'Dragon']
     abilities: ['Guts', 'Dauntless Shield']
     hidden_ability: 'Scrappy'
-    sprite: ''
+    sprite: 'images/pokedex/dialga-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 5.4

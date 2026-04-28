@@ -400,7 +400,7 @@ forms:
     types: ['Poison', 'Dragon']
     abilities: ['Speed Boost', 'Merciless']
     hidden_ability: 'Sheer Force'
-    sprite: ''
+    sprite: 'images/pokedex/yanmega-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 1.9

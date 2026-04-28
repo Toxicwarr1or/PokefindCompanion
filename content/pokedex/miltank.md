@@ -586,7 +586,7 @@ forms:
     types: ['Normal', 'Ground']
     abilities: ['Normalize', 'Sand Stream']
     hidden_ability: 'Cheek Pouch'
-    sprite: ''
+    sprite: 'images/pokedex/miltank-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.2

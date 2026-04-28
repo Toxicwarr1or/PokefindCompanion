@@ -479,7 +479,7 @@ forms:
     types: ['Water', 'Dark']
     abilities: ['Iron Fist', 'Water Veil']
     hidden_ability: 'Stamina'
-    sprite: ''
+    sprite: 'images/pokedex/hariyama-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'fluctuating'
     height_m: 2.3

@@ -454,7 +454,7 @@ forms:
     types: ['Ice', 'Fire']
     abilities: ['Libero', 'Snow Warning']
     hidden_ability: 'Adaptability'
-    sprite: ''
+    sprite: 'images/pokedex/froslass-anniversary.png'
     egg_groups: ['mineral', 'fairy']
     growth_rate: 'medium_fast'
     height_m: 1.3

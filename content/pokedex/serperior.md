@@ -464,7 +464,7 @@ forms:
     types: ['Grass', 'Dragon']
     abilities: ['Stamina', 'Regenerator']
     hidden_ability: 'Speed Boost'
-    sprite: ''
+    sprite: 'images/pokedex/serperior-anniversary.png'
     egg_groups: ['grass', 'field']
     growth_rate: 'medium_slow'
     height_m: 3.3

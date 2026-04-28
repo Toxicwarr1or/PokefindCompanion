@@ -447,7 +447,7 @@ forms:
     types: ['Ground', 'Fire']
     abilities: ['Drought', 'Sand Stream']
     hidden_ability: 'Dry Skin'
-    sprite: ''
+    sprite: 'images/pokedex/venusaur-anniversary.png'
     egg_groups: ['grass', 'monster']
     growth_rate: 'medium_slow'
     height_m: 2

@@ -433,7 +433,7 @@ forms:
     types: ['Electric', 'Fairy']
     abilities: ['Unburden', 'Marvel Scale']
     hidden_ability: 'Prankster'
-    sprite: ''
+    sprite: 'images/pokedex/meganium-anniversary.png'
     egg_groups: ['grass', 'monster']
     growth_rate: 'medium_slow'
     height_m: 1.8

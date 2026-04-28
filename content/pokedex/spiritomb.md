@@ -489,7 +489,7 @@ forms:
     types: ['Water', 'Ground']
     abilities: ['Comatose', 'Liquid Ooze']
     hidden_ability: 'Water Absorb'
-    sprite: ''
+    sprite: 'images/pokedex/spiritomb-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'medium_fast'
     height_m: 1

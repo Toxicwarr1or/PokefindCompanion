@@ -459,7 +459,7 @@ forms:
     types: ['Normal', 'Grass']
     abilities: ['Arena Trap', 'Fur Coat']
     hidden_ability: 'Chlorophyll'
-    sprite: ''
+    sprite: 'images/pokedex/bouffalant-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

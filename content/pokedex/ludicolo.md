@@ -424,7 +424,7 @@ forms:
     types: ['Grass', 'Fire']
     abilities: ['Chlorophyll', 'Flash Fire']
     hidden_ability: 'Water Absorb'
-    sprite: ''
+    sprite: 'images/pokedex/ludicolo-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

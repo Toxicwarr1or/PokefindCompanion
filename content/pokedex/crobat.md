@@ -436,7 +436,7 @@ forms:
     types: ['Poison', 'Psychic']
     abilities: ['Psychic Surge', 'Sheer Force']
     hidden_ability: 'Levitate'
-    sprite: ''
+    sprite: 'images/pokedex/crobat-anniversary.png'
     egg_groups: ['flying']
     growth_rate: 'medium_fast'
     height_m: 1.8

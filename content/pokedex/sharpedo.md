@@ -468,7 +468,7 @@ forms:
     types: ['Steel', 'Poison']
     abilities: ['Toxic Debris', 'Corrosion']
     hidden_ability: 'Sheer Force'
-    sprite: ''
+    sprite: 'images/pokedex/sharpedo-anniversary.png'
     egg_groups: ['water 2']
     growth_rate: 'slow'
     height_m: 1.8

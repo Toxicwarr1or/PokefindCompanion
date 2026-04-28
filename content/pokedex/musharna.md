@@ -394,7 +394,7 @@ forms:
     types: ['Fire', 'Psychic']
     abilities: ['Magic Bounce', 'Flame Body']
     hidden_ability: 'Unaware'
-    sprite: ''
+    sprite: 'images/pokedex/musharna-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

@@ -438,7 +438,7 @@ forms:
     types: ['Psychic', 'Fairy']
     abilities: ['Immunity', 'Regenerator']
     hidden_ability: 'Psychic Surge'
-    sprite: ''
+    sprite: 'images/pokedex/alomomola-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

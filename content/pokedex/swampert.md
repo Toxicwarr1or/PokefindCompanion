@@ -500,7 +500,7 @@ forms:
     types: ['Electric', 'Fighting']
     abilities: ['Iron Fist', 'Surge Surfer']
     hidden_ability: 'Guts'
-    sprite: ''
+    sprite: 'images/pokedex/swampert-anniversary.png'
     egg_groups: ['water 1', 'monster']
     growth_rate: 'medium_slow'
     height_m: 1.5

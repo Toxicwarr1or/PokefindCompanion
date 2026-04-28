@@ -1,0 +1,56 @@
+# Canonical list of cosmetic skins (output dir name → display label).
+# Read by:
+#   * scripts/stage_models_3d.py — to loop pokemon_skins/<key>/ source dirs
+#   * scripts/stage_animated_models.py — to map bbmodel texture tokens
+#   * layouts/pokedex/single.html — to emit a toggle button per available skin
+# Order is the display order; first-class skins (shiny, aura) lead.
+- key: shiny
+  label: Shiny
+- key: aura
+  label: Aura
+- key: anniversary
+  label: Anniversary
+- key: christmas
+  label: Christmas
+- key: easter
+  label: Easter
+- key: halloween
+  label: Halloween
+- key: lunar_new_year
+  label: Lunar New Year
+- key: summer
+  label: Summer
+- key: thanksgiving
+  label: Thanksgiving
+- key: valentine
+  label: Valentine
+- key: shadow
+  label: Shadow
+- key: cosmic
+  label: Cosmic
+- key: mecha
+  label: Mecha
+- key: modeler
+  label: Modeler
+- key: monochrome
+  label: Monochrome
+- key: marvel
+  label: Marvel
+- key: disney
+  label: Disney
+- key: starwars
+  label: Star Wars
+- key: meme
+  label: Meme
+- key: fusemon
+  label: Fusemon
+- key: gamer
+  label: Gamer
+- key: surfing
+  label: Surfing
+- key: april_fools
+  label: April Fools
+- key: sword_and_shield
+  label: Sword and Shield
+- key: cakemon
+  label: Cakemon

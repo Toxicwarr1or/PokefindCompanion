@@ -584,7 +584,7 @@ forms:
     types: ['Ice', 'Electric']
     abilities: ['Skill Link', 'Static']
     hidden_ability: 'Analytic'
-    sprite: ''
+    sprite: 'images/pokedex/rhydon-anniversary.png'
     egg_groups: ['field', 'monster']
     growth_rate: 'slow'
     height_m: 1.9

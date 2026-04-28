@@ -443,7 +443,7 @@ forms:
     types: ['Ice', 'Bug']
     abilities: ['Ice Scales', 'Refrigerate']
     hidden_ability: 'Slush Rush'
-    sprite: ''
+    sprite: 'images/pokedex/volcarona-anniversary.png'
     egg_groups: ['bug']
     growth_rate: 'slow'
     height_m: 1.6

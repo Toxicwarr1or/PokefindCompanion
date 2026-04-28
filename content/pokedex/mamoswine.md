@@ -430,7 +430,7 @@ forms:
     types: ['Dark', 'Fire']
     abilities: ['Moxie', 'Fur Coat']
     hidden_ability: 'Sheer Force'
-    sprite: ''
+    sprite: 'images/pokedex/mamoswine-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'slow'
     height_m: 2.5

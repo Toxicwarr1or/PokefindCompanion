@@ -420,7 +420,7 @@ forms:
     types: ['Bug', 'Water']
     abilities: ['Skill Link', 'Filter']
     hidden_ability: 'Simple'
-    sprite: ''
+    sprite: 'images/pokedex/crustle-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

@@ -879,7 +879,7 @@ forms:
     types: ['Poison', 'Dark']
     abilities: ['Stakeout', 'Libero']
     hidden_ability: 'Gluttony'
-    sprite: ''
+    sprite: 'images/pokedex/darmanitan-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.3

@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import json
 import shutil
+import struct
 import sys
 from pathlib import Path
 
@@ -45,37 +46,141 @@ SKIP_BONES: set[str] = {"flame"}
 # than `regular/`, matching how stage_models_3d.py partitions form variants.
 VARIANT_PREFIXES = ("alolan", "galarian", "hisuian")
 
-# Event/cosmetic skin tokens to filter from texture selection. Note that
-# "shiny" is intentionally NOT here — shiny is a first-class skin we ship
-# alongside regular and route through a separate output directory.
-EVENT_TOKENS: set[str] = {
-    "halloween", "easter", "christmas", "xmas", "thanksgiving", "summer",
-    "valentine", "shadow", "aura", "anniversary", "anni",
-    "modeler", "monochrome", "meme", "cosmic", "marvel", "avengers",
-    "disney", "starwars", "lunar", "fusemon", "april", "fool", "fools",
-    "cakemon", "cake", "gamer", "mecha", "surfing", "spook", "spooky",
-}
-
-# Skins we stage. Shiny gets its own directory under static/models-3d/shiny/,
-# matching what the pokedex template at layouts/pokedex/single.html expects.
-SKINS = ("regular", "shiny")
+# Cosmetic skins we ship — each gets its own output directory under
+# `static/models-3d/<skin>/`. The canonical list of skin keys lives in
+# `data/cosmetic_skins.yaml` (shared with the static stager and the
+# pokedex template); below we map bbmodel-texture *tokens* (single-word
+# slices of a bbmodel texture name like `charizard_halloween`) to those
+# canonical skin keys. Aliases handle short-form tokens for multi-word
+# skin keys (`lunar` → `lunar_new_year`).
+COSMETIC_SKINS_YAML = Path(__file__).resolve().parent.parent / "data/cosmetic_skins.yaml"
 
 
-def make_uv_scaler(bb: dict):
+def _load_canonical_skin_keys() -> tuple[str, ...]:
+    keys: list[str] = []
+    for line in COSMETIC_SKINS_YAML.read_text().splitlines():
+        s = line.strip()
+        if s.startswith("- key:"):
+            keys.append(s.split(":", 1)[1].strip())
+    return tuple(keys)
+
+
+CANONICAL_SKIN_KEYS = _load_canonical_skin_keys()
+
+# Token → canonical key. Identity entries cover the simple single-word
+# skins (`shiny`, `aura`, `halloween`, …); explicit aliases bridge
+# bbmodel names that abbreviate the canonical key (`lunar` for
+# `lunar_new_year`, `april`/`fool`/`fools` for `april_fools`, etc.).
+COSMETIC_SKIN_TOKENS: dict[str, str] = {k: k for k in CANONICAL_SKIN_KEYS}
+COSMETIC_SKIN_TOKENS.update({
+    "anni": "anniversary",
+    "xmas": "christmas",
+    "spook": "halloween", "spooky": "halloween",
+    "lunar": "lunar_new_year",
+    "avengers": "marvel",
+    "april": "april_fools",
+    "aprilfools": "april_fools",
+    "fool": "april_fools", "fools": "april_fools",
+    "cake": "cakemon",
+    "sword": "sword_and_shield", "shield": "sword_and_shield",
+})
+
+# Output directory order (regular always first), preserving the YAML order.
+SKINS: tuple[str, ...] = ("regular",) + CANONICAL_SKIN_KEYS
+
+
+def png_pixel_width(path: Path) -> int | None:
+    """Read just the IHDR width from a PNG without pulling in PIL."""
+    if not path or not path.exists():
+        return None
+    with open(path, "rb") as f:
+        f.read(16)  # signature + IHDR length + 'IHDR'
+        return int(struct.unpack(">I", f.read(4))[0])
+
+
+def make_uv_scaler(bb: dict, file_widths: dict[str, int] | None = None):
     """Returns `uv_scale_for(tex_idx)` for converting bbmodel face UVs to
-    0..16 space. Face UVs are expressed in the *texture's* uv_width units,
-    not the project resolution — when those differ (e.g. project=64 with a
-    128-px atlas), using the project value over-scales every UV by 2× and
-    faces sample the wrong region of the atlas."""
+    0..16 space. The rule (verified by reverse-engineering the BetterModel
+    exporter's output for Charizard / Weavile / Seismitoad / Bisharp /
+    Rotom):
+
+      * If the resourcepack file is *larger* than the bbmodel-embedded
+        texture, the exporter padded the embedded into the bigger file at
+        native pixel size (top-left, transparent margins). UV `u` lands at
+        file pixel `u`, so sample at `u / file_width` →
+        `scale = 16 / file_width`. Bisharp & Magnezone fall here.
+
+      * Otherwise (file == embedded, or file smaller — a downscale), the
+        bbmodel UV is in the texture's own `uv_width` units; UV
+        `uv_width` covers the whole texture, so `scale = 16 / uv_width`.
+        Charizard, Weavile, Seismitoad, and Rotom all fall here.
+
+    Why not `embedded_width` directly? Blockbench scales the embedded
+    texture to fit the per-texture `uv_width` UV space, so face UVs are
+    expressed in `uv_width` units — not embedded pixels — when the file
+    isn't padded.
+
+    `file_widths` is a per-role lookup `{"body": int, "flame": int}` built
+    up-front by reading PNG headers in `stage_one`."""
     proj_w = float((bb.get("resolution") or {}).get("width", 16) or 16)
     textures = bb.get("textures") or []
+    file_widths = file_widths or {}
+
+    # Find the bbmodel texture entries that the *shipped* atlas (body, flame)
+    # actually corresponds to, ignoring skin variants. Faces in the bbmodel
+    # may reference any texture index (Weavile authors faces against an
+    # event/anniversary texture for instance), but the staged JSON only
+    # ships the body and optional flame atlases — so UV scaling must be
+    # relative to *those* textures' metadata, not whatever the face is bound
+    # to in the bbmodel.
+    body_t: dict = {}
+    flame_t: dict = {}
+    for t in textures:
+        n = (t.get("name") or "")
+        if not n or is_variant_texture_name(n):
+            continue
+        if "flame" in n.lower():
+            if not flame_t:
+                flame_t = t
+        elif not body_t:
+            body_t = t
+
+    def _scale_for_role(t: dict, role: str) -> float:
+        uv_w = float(t.get("uv_width") or proj_w)
+        emb_w = float(t.get("width") or uv_w)
+        file_w = float(file_widths.get(role) or 0)
+        # Empirically verified against the BetterModel exporter's UVs:
+        #   - uv_width == embedded_width: bbmodel UVs are file-pixel
+        #     coordinates, so divisor = file_width (Bisharp, Magnezone,
+        #     Rotom, Charizard).
+        #   - uv_width != embedded_width: Blockbench scaled the embedded
+        #     into the uv_width logical space; divisor = uv_width
+        #     (Weavile, Seismitoad, Arcanine).
+        divisor = file_w if uv_w == emb_w and file_w > 0 else uv_w
+        return 16.0 / divisor if divisor > 0 else 16.0 / proj_w
+
+    body_scale = _scale_for_role(body_t, "body") if body_t else 16.0 / proj_w
+    flame_scale = _scale_for_role(flame_t, "flame") if flame_t else body_scale
+
     def uv_scale_for(tex_idx) -> float:
+        # Route by the face's bound texture name — flame textures go to
+        # `flame_scale` regardless of which index they're at; everything
+        # else to `body_scale`.
         if isinstance(tex_idx, int) and 0 <= tex_idx < len(textures):
-            uv_w = textures[tex_idx].get("uv_width")
-            if uv_w:
-                return 16.0 / float(uv_w)
-        return 16.0 / proj_w
+            if "flame" in (textures[tex_idx].get("name") or "").lower():
+                return flame_scale
+        return body_scale
     return uv_scale_for
+
+
+def is_variant_texture_name(name: str) -> bool:
+    """Quick check: does this bbmodel texture name look like a cosmetic
+    skin variant (not the regular base body atlas)? Used by `make_uv_scaler`
+    to pick the canonical regular body/flame textures whose dimensions
+    drive the UV scaler — variant atlases sometimes have different sizes
+    and would skew the scale."""
+    tokens = set(name.lower().removesuffix(".png").split("_"))
+    return any(t in tokens for t in COSMETIC_SKIN_TOKENS)
 
 
 def make_tex_remap(bb: dict) -> dict[int, str]:
@@ -207,18 +312,22 @@ def walk_bbmodel_to_bones(bb: dict, root_name: str, uv_scale_for, tex_remap,
 
 def texture_kind(name: str, species: str) -> tuple[str, str] | None:
     """Classify a bbmodel texture name into `(skin, role)` where skin is
-    'regular' or 'shiny' and role is 'body' or 'flame'. Returns None for
-    event-cosmetic variants we don't ship.
+    `regular` or one of `COSMETIC_SKIN_TOKENS.values()`, and role is
+    `body` or `flame`. Returns None when the name doesn't belong to this
+    species (different prefix).
 
     Examples (species='charizard'):
       'charizard'              -> ('regular', 'body')
-      'charizard_shiny'        -> ('shiny',   'body')
-      'charizard_flame'        -> ('regular', 'flame')
-      'charizard_flame_shiny'  -> ('shiny',   'flame')
-      'charizard_halloween'    -> None
-      'charizard_flame_aura'   -> None
-    Form tokens like 'alola'/'galarian' are accepted (alolan_exeggutor's base
-    body texture is 'alolan_exeggutor_alola')."""
+      'charizard_shiny'        -> ('shiny',     'body')
+      'charizard_aura'         -> ('aura',      'body')
+      'charizard_halloween'    -> ('halloween', 'body')
+      'charizard_flame'        -> ('regular',   'flame')
+      'charizard_flame_shiny'  -> ('shiny',     'flame')
+      'charizard_flame_aura'   -> ('aura',      'flame')
+    Form tokens like 'alola'/'galarian' are accepted as part of the body
+    name (alolan_exeggutor's base body texture is 'alolan_exeggutor_alola').
+    When a name carries multiple skin tokens (e.g. 'charizard_flame_halloween'
+    *and* '_shiny'), we pick whichever appears first in the SKINS order."""
     nl = name.lower()
     sp = species.lower()
     if nl == sp:
@@ -227,9 +336,11 @@ def texture_kind(name: str, species: str) -> tuple[str, str] | None:
         suffix_tokens = set(nl[len(sp) + 1:].split("_"))
     else:
         return None
-    if suffix_tokens & EVENT_TOKENS:
-        return None
-    skin = "shiny" if "shiny" in suffix_tokens else "regular"
+    skin = "regular"
+    for token, dirname in COSMETIC_SKIN_TOKENS.items():
+        if token in suffix_tokens:
+            skin = dirname
+            break
     role = "flame" if "flame" in suffix_tokens else "body"
     return skin, role
 
@@ -254,9 +365,9 @@ def resolve_texture_file(species: str, bb_tex_name: str) -> Path | None:
 
 def derive_textures(bb: dict, species: str, skin: str) -> tuple[dict[str, str], list[Path]]:
     """Pick the body and (optional) flame textures for the requested skin
-    plus the source PNG paths to copy. If the species lacks a shiny flame
-    texture, the shiny output reuses the regular flame (Charizard's flame
-    doesn't recolour for shiny — only the body atlas does)."""
+    plus the source PNG paths to copy. If a non-regular skin lacks its own
+    flame texture, the output reuses the regular flame (Charizard's flame
+    is shared between shiny and the regular body atlas, for instance)."""
     body_name: str | None = None
     flame_name: str | None = None
     regular_flame_fallback: str | None = None
@@ -273,10 +384,18 @@ def derive_textures(bb: dict, species: str, skin: str) -> tuple[dict[str, str], 
                 body_name = n
             elif r == "flame" and flame_name is None:
                 flame_name = n
-        elif s == "regular" and r == "flame" and skin == "shiny":
+        elif s == "regular" and r == "flame" and skin != "regular":
             if regular_flame_fallback is None:
                 regular_flame_fallback = n
-    if not flame_name and skin == "shiny":
+    # A non-regular skin is only "real" if the bbmodel ships a *body*
+    # atlas for it — flame is a per-cube particle layer, sharing it with
+    # the regular skin alone doesn't constitute a recolor. Without this
+    # guard, the regular-flame fallback below would cause every skin in
+    # SKINS to produce a flame-only output for fire types (Charizard ends
+    # up with chips for cosmic, gamer, mecha, etc. it doesn't have).
+    if skin != "regular" and not body_name:
+        return {}, []
+    if not flame_name and skin != "regular":
         flame_name = regular_flame_fallback
     textures: dict[str, str] = {}
     srcs: list[Path] = []
@@ -326,7 +445,19 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
     if slug not in pokedex_pages:
         return {"regular": "no-page"}
     bb = json.loads(bb_path.read_text())
-    uv_scale_for = make_uv_scaler(bb)
+    # The UV scaler depends on the *resourcepack* file dimensions (see
+    # `make_uv_scaler` for why), so resolve regular textures up front to get
+    # those sizes, then build the scaler, then walk the model. Geometry is
+    # shared between regular and shiny so we only do this once.
+    regular_textures, regular_srcs = derive_textures(bb, species, "regular")
+    file_widths: dict[str, int] = {}
+    for src in regular_srcs:
+        w = png_pixel_width(src)
+        if not w:
+            continue
+        role = "flame" if "flame" in src.stem.lower() else "body"
+        file_widths.setdefault(role, w)
+    uv_scale_for = make_uv_scaler(bb, file_widths)
     tex_remap = make_tex_remap(bb)
     root = walk_bbmodel_to_bones(bb, ROOT_BONE_DEFAULT, uv_scale_for, tex_remap, SKIP_BONES)
     if root is None:
@@ -334,13 +465,19 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
     bones_payload = [root]
     statuses: dict[str, str] = {}
     for skin in SKINS:
-        if skin == "shiny" and variant != "regular":
+        # Skin-as-overlay variants (shiny, aura) only ship for the base
+        # `regular` form variant — alolan/galarian forms don't have shipped
+        # aura/shiny atlases in the pack.
+        if skin != "regular" and variant != "regular":
             continue
-        textures, texture_srcs = derive_textures(bb, species, skin)
+        if skin == "regular":
+            textures, texture_srcs = regular_textures, regular_srcs
+        else:
+            textures, texture_srcs = derive_textures(bb, species, skin)
         if not textures:
             statuses[skin] = "no-texture"
             continue
-        out_dir = (OUT_BASE / "shiny" / slug) if skin == "shiny" else (OUT_BASE / variant / slug)
+        out_dir = (OUT_BASE / skin / slug) if skin != "regular" else (OUT_BASE / variant / slug)
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / f"{slug}.json").write_text(
             json.dumps({"textures": textures, "bones": bones_payload})

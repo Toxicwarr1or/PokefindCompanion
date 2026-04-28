@@ -488,7 +488,7 @@ forms:
     types: ['Ghost', 'Fighting']
     abilities: ['Levitate', 'Shadow Tag']
     hidden_ability: 'Speed Boost'
-    sprite: ''
+    sprite: 'images/pokedex/porygon-z-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

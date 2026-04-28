@@ -478,7 +478,7 @@ forms:
     types: ['Flying', 'Fairy']
     abilities: ['Pixilate', 'Speed Boost']
     hidden_ability: 'Simple'
-    sprite: ''
+    sprite: 'images/pokedex/emolga-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.4

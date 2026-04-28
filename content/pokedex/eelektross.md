@@ -480,7 +480,7 @@ forms:
     types: ['Bug', 'Dark']
     abilities: ['Tinted Lens', 'Gluttony']
     hidden_ability: 'Triage'
-    sprite: ''
+    sprite: 'images/pokedex/eelektross-anniversary.png'
     egg_groups: ['field']
     growth_rate: 'fast'
     height_m: 1.1

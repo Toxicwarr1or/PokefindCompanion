@@ -561,7 +561,7 @@ forms:
     types: ['Water', 'Steel']
     abilities: ['Adaptability', 'Filter']
     hidden_ability: 'Water Bubble'
-    sprite: ''
+    sprite: 'images/pokedex/scrafty-anniversary.png'
     egg_groups: ['dragon', 'field']
     growth_rate: 'medium_fast'
     height_m: 1.1

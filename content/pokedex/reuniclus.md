@@ -587,7 +587,7 @@ forms:
     types: ['Poison', 'Fairy']
     abilities: ['Toxic Debris', 'Prankster']
     hidden_ability: 'Regenerator'
-    sprite: ''
+    sprite: 'images/pokedex/reuniclus-anniversary.png'
     egg_groups: ['amorphous']
     growth_rate: 'medium_slow'
     height_m: 1

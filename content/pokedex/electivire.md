@@ -527,7 +527,7 @@ forms:
     types: ['Steel']
     abilities: ['Steelworker', 'Iron Barbs']
     hidden_ability: 'Sharpness'
-    sprite: ''
+    sprite: 'images/pokedex/electivire-anniversary.png'
     egg_groups: ['undiscovered']
     growth_rate: 'medium_fast'
     height_m: 1.8

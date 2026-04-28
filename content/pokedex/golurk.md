@@ -544,7 +544,7 @@ forms:
     types: ['Ghost', 'Steel']
     abilities: ['Magic Guard', 'Stalwart']
     hidden_ability: 'Levitate'
-    sprite: ''
+    sprite: 'images/pokedex/golurk-anniversary.png'
     egg_groups: ['mineral']
     growth_rate: 'medium_fast'
     height_m: 2.8

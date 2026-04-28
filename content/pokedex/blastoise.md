@@ -499,7 +499,7 @@ forms:
     types: ['Steel', 'Bug']
     abilities: ['Tinted Lens', 'Heatproof']
     hidden_ability: 'Unaware'
-    sprite: ''
+    sprite: 'images/pokedex/blastoise-anniversary.png'
     egg_groups: ['water 1', 'monster']
     growth_rate: 'medium_slow'
     height_m: 1.6

@@ -467,7 +467,7 @@ forms:
     types: ['Ghost', 'Flying']
     abilities: ['Filter', 'Rattled']
     hidden_ability: 'Aerilate'
-    sprite: ''
+    sprite: 'images/pokedex/togekiss-anniversary.png'
     egg_groups: ['fairy']
     growth_rate: 'fast'
     height_m: 1.5

@@ -613,7 +613,7 @@ forms:
     types: ['Psychic', 'Fighting']
     abilities: ['Unaware', 'Analytic']
     hidden_ability: 'Pure Power'
-    sprite: ''
+    sprite: 'images/pokedex/slowking-anniversary.png'
     egg_groups: ['water 1', 'monster']
     growth_rate: 'medium_fast'
     height_m: 2

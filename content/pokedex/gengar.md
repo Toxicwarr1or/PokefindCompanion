@@ -564,7 +564,7 @@ forms:
     types: ['Ghost', 'Fairy']
     abilities: ['Magic Guard', 'Trace']
     hidden_ability: 'Prankster'
-    sprite: ''
+    sprite: 'images/pokedex/gengar-anniversary.png'
     egg_groups: ['amorphous']
     growth_rate: 'medium_slow'
     height_m: 1.5

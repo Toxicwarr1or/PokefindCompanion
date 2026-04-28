@@ -338,7 +338,7 @@ forms:
     types: ['Ice', 'Fighting']
     abilities: ['Technician', 'No Guard']
     hidden_ability: 'Speed Boost'
-    sprite: ''
+    sprite: 'images/pokedex/roserade-anniversary.png'
     egg_groups: ['grass', 'fairy']
     growth_rate: 'medium_slow'
     height_m: 0.9

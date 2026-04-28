@@ -638,7 +638,7 @@ forms:
     types: ['Ground', 'Ghost']
     abilities: ['Solid Rock', 'Cursed Body']
     hidden_ability: 'Thick Fat'
-    sprite: ''
+    sprite: 'images/pokedex/blissey-anniversary.png'
     egg_groups: ['fairy']
     growth_rate: 'fast'
     height_m: 1.5

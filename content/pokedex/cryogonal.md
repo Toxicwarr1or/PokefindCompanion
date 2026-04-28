@@ -406,7 +406,7 @@ forms:
     types: ['Ice', 'Steel']
     abilities: ['Levitate', 'Sniper']
     hidden_ability: 'Magic Guard'
-    sprite: ''
+    sprite: 'images/pokedex/cryogonal-anniversary.png'
     egg_groups: ['mineral']
     growth_rate: 'medium_fast'
     height_m: 1.1

@@ -531,7 +531,7 @@ forms:
     types: ['Electric', 'Ghost']
     abilities: ['Levitate', 'Mummy']
     hidden_ability: 'Prankster'
-    sprite: ''
+    sprite: 'images/pokedex/bronzong-anniversary.png'
     egg_groups: ['mineral']
     growth_rate: 'medium_fast'
     height_m: 1.3

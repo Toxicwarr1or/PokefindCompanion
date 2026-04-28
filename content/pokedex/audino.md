@@ -691,7 +691,7 @@ forms:
     types: ['Psychic']
     abilities: ['Simple', 'Telepathy']
     hidden_ability: 'Magic Guard'
-    sprite: ''
+    sprite: 'images/pokedex/audino-anniversary.png'
     egg_groups: ['fairy']
     growth_rate: 'fast'
     height_m: 1.1
