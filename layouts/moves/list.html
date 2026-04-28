@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="page moves-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+
+  {{ $moves     := where .Pages "Params.entry_kind" "move"    }}
+  {{ $abilities := where .Pages "Params.entry_kind" "ability" }}
+  {{ $moves     = sort $moves     "Title" "asc" }}
+  {{ $abilities = sort $abilities "Title" "asc" }}
+
+  <nav class="form-tabs" role="tablist">
+    <button class="form-tab active"
+            role="tab"
+            data-form-index="0"
+            aria-selected="true">
+      Moves <span class="tab-count">{{ len $moves }}</span>
+    </button>
+    <button class="form-tab"
+            role="tab"
+            data-form-index="1"
+            aria-selected="false">
+      Abilities <span class="tab-count">{{ len $abilities }}</span>
+    </button>
+  </nav>
+
+  <section class="form-panel active" data-form-index="0">
+    <p class="meta">Every attacking, status, and field move referenced anywhere in the Pokedex.</p>
+    <ul class="moves-grid">
+      {{ range $moves }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="form-panel" data-form-index="1" hidden>
+    <p class="meta">Every ability and hidden ability referenced anywhere in the Pokedex.</p>
+    <ul class="moves-grid">
+      {{ range $abilities }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+</article>
+{{ end }}

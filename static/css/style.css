@@ -1462,3 +1462,27 @@ pre code { background: transparent; padding: 0; }
     max-width: 720px;
     margin: 0.5rem 0;
 }
+
+/* ----- Moves & Abilities list ----- */
+.moves-grid {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.4rem 0.6rem;
+}
+.moves-grid li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.4rem 0.7rem;
+    transition: border-color 120ms ease;
+}
+.moves-grid li:hover { border-color: var(--brand); }
+.moves-grid li a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.moves-grid li a:hover { color: var(--brand); }
