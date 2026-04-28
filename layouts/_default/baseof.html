@@ -9,6 +9,15 @@
   <link rel="icon" href="{{ "images/favicon.png" | relURL }}">
   <meta name="theme-color" content="{{ .Site.Params.brandColor }}">
   <script defer src="{{ "js/pokedex.js" | relURL }}"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three":      "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="{{ "js/mc-model-viewer.js" | relURL }}"></script>
 </head>
 <body>
   {{ partial "header.html" . }}

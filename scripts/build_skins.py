@@ -36,6 +36,17 @@ EXCLUDE_SKINS = {
     # Random is dissolved — its species are reassigned via SYNTHETIC_SKINS
     # / SKIN_MERGE below; nothing should land in a "Random" tab.
     "random",
+    # Cakemon == April Fools (per user); just keep April Fools.
+    "cakemon",
+}
+
+# Per-skin entries to drop. Keys are the resource pack folder name; values
+# are the species-folder names that should NOT appear under that skin.
+EXCLUDE_PER_SKIN = {
+    "starwars":          {"chebacca", "chewbacca", "jedi", "stormtrooper"},
+    "galarian":          {"shiny"},
+    "alolan":            {"old", "shiny"},
+    "anniversary_shiny": {"shiny"},
 }
 
 # Source-skin → destination-skin merges. The source folder's species get
@@ -183,6 +194,7 @@ def species_for_skin(skin_name: str) -> list[str]:
     """Return the deduped set of species folder names that have any asset
     (texture or model) under this skin. Walks both trees recursively to
     capture region-grouped layouts (e.g. anniversary/zeinova/charizard)."""
+    skin_excludes = EXCLUDE_PER_SKIN.get(skin_name, set())
     found: set[str] = set()
     for root in (TEXTURES_DIR / skin_name, MODELS_DIR / skin_name):
         if not root.exists():
@@ -192,14 +204,14 @@ def species_for_skin(skin_name: str) -> list[str]:
             if d.is_dir():
                 # Treat as a species folder if it has no further subdirs.
                 if not any(c.is_dir() for c in d.iterdir()):
-                    if d.name not in EXCLUDE_SPECIES_FOLDERS:
+                    if d.name not in EXCLUDE_SPECIES_FOLDERS and d.name not in skin_excludes:
                         found.add(d.name)
         # Model trees: each <dex>_<species>.json file names a species.
         for f in root.rglob("*.json"):
             m = _MODEL_NAME_RE.match(f.name)
             if m:
                 name = m.group(1).lower()
-                if name not in EXCLUDE_SPECIES_FOLDERS:
+                if name not in EXCLUDE_SPECIES_FOLDERS and name not in skin_excludes:
                     found.add(name)
     return sorted(found)
 

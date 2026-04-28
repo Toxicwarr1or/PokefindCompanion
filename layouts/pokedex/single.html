@@ -1,5 +1,41 @@
 {{ define "main" }}
 <article class="page dex-page">
+  {{/* Prev/next navigation by dex number. Pokedex pages all live under
+        /pokedex/<slug>/ and carry a dex_number frontmatter integer; we sort
+        the section by it once and find this page's neighbours. */}}
+  {{ $dex := int .Params.dex_number }}
+  {{ $byDex := slice }}
+  {{ range (where .Site.RegularPages "Section" "pokedex") }}
+    {{ if .Params.dex_number }}
+    {{ $byDex = $byDex | append (dict "page" . "n" (int .Params.dex_number)) }}
+    {{ end }}
+  {{ end }}
+  {{ $byDex = sort $byDex "n" "asc" }}
+  {{ $prev := false }}{{ $next := false }}
+  {{ range $i, $entry := $byDex }}
+    {{ if eq $entry.n $dex }}
+      {{ if gt $i 0 }}{{ $prev = (index $byDex (sub $i 1)).page }}{{ end }}
+      {{ if lt $i (sub (len $byDex) 1) }}{{ $next = (index $byDex (add $i 1)).page }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  <nav class="dex-nav">
+    {{ with $prev }}
+    <a class="dex-nav-prev" href="{{ .RelPermalink }}" rel="prev">
+      <span class="dex-nav-arrow">←</span>
+      <span class="dex-nav-meta">#{{ .Params.dex_number }}</span>
+      <span class="dex-nav-name">{{ .Title }}</span>
+    </a>
+    {{ else }}<span class="dex-nav-prev disabled" aria-hidden="true"></span>{{ end }}
+    {{ with $next }}
+    <a class="dex-nav-next" href="{{ .RelPermalink }}" rel="next">
+      <span class="dex-nav-name">{{ .Title }}</span>
+      <span class="dex-nav-meta">#{{ .Params.dex_number }}</span>
+      <span class="dex-nav-arrow">→</span>
+    </a>
+    {{ else }}<span class="dex-nav-next disabled" aria-hidden="true"></span>{{ end }}
+  </nav>
+
   <header class="page-header">
     <h1>{{ if .Params.dex_number }}<span class="dex-num">#{{ .Params.dex_number }}</span> {{ end }}{{ .Title }}</h1>
     {{ with .Params.subtitle }}<p class="subtitle dex-flavor">{{ . }}</p>{{ end }}
@@ -31,6 +67,20 @@
             <span>(no sprite)</span>
           {{ end }}
         </div>
+        {{/* 3D model viewer — Standard tab uses the regular skin; Alolan
+              and Galarian form tabs use their own variant folders. Only
+              renders when the staged model JSON exists on disk. */}}
+        {{ $slug := lower (replaceRE "[^a-zA-Z0-9]+" "-" $.Title) }}
+        {{ $variant := "" }}
+        {{ if eq $i 0 }}{{ $variant = "regular" }}{{ end }}
+        {{ if eq $f.name "Alolan" }}{{ $variant = "alolan" }}{{ end }}
+        {{ if eq $f.name "Galarian" }}{{ $variant = "galarian" }}{{ end }}
+        {{ if $variant }}
+        {{ $modelPath := printf "static/models-3d/%s/%s/%s.json" $variant $slug $slug }}
+        {{ if (fileExists $modelPath) }}
+        <div class="mc-model-viewer" data-mc-model="{{ printf "/models-3d/%s/%s/%s.json" $variant $slug $slug | relURL }}"></div>
+        {{ end }}
+        {{ end }}
       </div>
       <dl class="stats">
         {{ with $f.types }}<dt>Type</dt><dd class="types">{{ range . }}<span class="type-{{ lower . }}">{{ . }}</span>{{ end }}</dd>{{ end }}

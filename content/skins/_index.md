@@ -7,7 +7,7 @@ skins:
   - key: 'alolan'
     label: 'Alolan'
     description: 'Tropical regional variants from the Alola region.'
-    count: 20
+    count: 18
     species:
       - name: 'Diglett'
         slug: 'diglett'
@@ -31,8 +31,6 @@ skins:
         slug: 'muk'
       - name: 'Ninetales'
         slug: 'ninetales'
-      - name: 'Old'
-        slug: 'old'
       - name: 'Persian'
         slug: 'persian'
       - name: 'Raichu'
@@ -45,8 +43,6 @@ skins:
         slug: 'sandshrew'
       - name: 'Sandslash'
         slug: 'sandslash'
-      - name: 'Shiny'
-        slug: 'shiny'
       - name: 'Vulpix'
         slug: 'vulpix'
   - key: 'anniversary'
@@ -1099,15 +1095,6 @@ skins:
         slug: 'zoroark'
       - name: 'Zweilous'
         slug: 'zweilous'
-  - key: 'cakemon'
-    label: 'Cakemon'
-    description: 'Cake-themed reskins from a past April Fools.'
-    count: 2
-    species:
-      - name: 'Bellossom'
-        slug: 'bellossom'
-      - name: 'Politoed'
-        slug: 'politoed'
   - key: 'christmas'
     label: 'Christmas'
     description: 'Holiday-themed reskins from past Christmas events.'
@@ -2057,7 +2044,7 @@ skins:
   - key: 'galarian'
     label: 'Galarian'
     description: 'Regional variants from the Galar region.'
-    count: 12
+    count: 11
     species:
       - name: 'Corsola'
         slug: 'corsola'
@@ -2077,8 +2064,6 @@ skins:
         slug: 'ponyta'
       - name: 'Rapidash'
         slug: 'rapidash'
-      - name: 'Shiny'
-        slug: 'shiny'
       - name: 'Weezing'
         slug: 'weezing'
       - name: 'Zigzagoon'
@@ -2863,12 +2848,8 @@ skins:
   - key: 'starwars'
     label: 'Star Wars'
     description: 'Star Wars-themed crossover skins.'
-    count: 10
+    count: 7
     species:
-      - name: 'Chewbacca'
-        slug: 'chewbacca'
-      - name: 'Jedi'
-        slug: 'jedi'
       - name: 'Minun'
         slug: 'minun'
       - name: 'Pichu'
@@ -2879,8 +2860,6 @@ skins:
         slug: 'plusle'
       - name: 'Raichu'
         slug: 'raichu'
-      - name: 'Stormtrooper'
-        slug: 'stormtrooper'
       - name: 'Teddiursa'
         slug: 'teddiursa'
       - name: 'Ursaring'
