@@ -1,0 +1,867 @@
+Bulbasaur
+Ivysaur
+Venusaur
+Kyoto Venusaur
+Charmander
+Charmeleon
+Kyoto Charizard
+Kyoto Blastoise
+Caterpie
+Metapod
+Butterfree
+Weedle
+Kyoto Weedle
+Kakuna
+Beedrill
+Pidgey
+Pidgeotto
+Pidgeot
+Rattata
+Alolan Rattata
+Raticate
+Alolan Raticate
+Spearow
+Fearow
+Ekans
+Pikachu
+Raichu
+Alolan Raichu
+Sandshrew
+Alolan Sandshrew
+Sandslash
+Alolan Sandslash
+Nidoran-F
+Nidorina
+Nidoqueen
+Nidoran-M
+Nidorino
+Clefairy
+Clefable
+Kyoto Clefable
+Vulpix
+Alolan Vulpix
+Ninetales
+Alolan Ninetales
+Jigglypuff
+Wigglytuff
+Zubat
+Golbat
+Oddish
+Gloom
+Vileplume
+Paras
+Parasect
+Venonat
+Venomoth
+Diglett
+Alolan Diglett
+Alolan Dugtrio
+Meowth
+Alolan Meowth
+Galarian Meowth
+Persian
+Alolan Persian
+Psyduck
+Golduck
+Mankey
+Primeape
+Growlithe
+Kyoto Arcanine
+Poliwag
+Poliwhirl
+Poliwrath
+Abra
+Kadabra
+Alakazam
+Kyoto Alakazam
+Bellsprout
+Weepinbell
+Tentacool
+Tentacruel
+Kyoto Tentacruel
+Geodude
+Alolan Geodude
+Graveler
+Alolan Graveler
+Golem
+Alolan Golem
+Ponyta
+Galarian Ponyta
+Rapidash
+Galarian Rapidash
+Slowpoke
+Kyoto Slowbro
+Magnemite
+Magneton
+Farfetch'd
+Galarian Farfetch'd
+Doduo
+Dodrio
+Kyoto Dodrio
+Seel
+Dewgong
+Grimer
+Alolan Grimer
+Muk
+Alolan Muk
+Kyoto Muk
+Shellder
+Cloyster
+Gastly
+Haunter
+Kyoto Gengar
+Onix
+Drowzee
+Hypno
+Krabby
+Kingler
+Voltorb
+Electrode
+Exeggcute
+Exeggutor
+Alolan Exeggutor
+Kyoto Exeggutor
+Cubone
+Marowak
+Alolan Marowak
+Kyoto Marowak
+Hitmonlee
+Hitmonchan
+Lickitung
+Koffing
+Weezing
+Rhyhorn
+Rhydon
+Kyoto Rhydon
+Chansey
+Kyoto Chansey
+Tangela
+Kangaskhan
+Horsea
+Seadra
+Goldeen
+Seaking
+Staryu
+Starmie
+Kyoto Starmie
+Mr. Mime
+Galarian Mr. Mime
+Scyther
+Jynx
+Electabuzz
+Magmar
+Pinsir
+Tauros
+Magikarp
+Kyoto Gyarados
+Lapras
+Kyoto Lapras
+Eevee
+Vaporeon
+Flareon
+Porygon
+Omanyte
+Omastar
+Kabuto
+Kabutops
+Aerodactyl
+Kyoto Aerodactyl
+Snorlax
+Kyoto Snorlax
+Articuno
+Zapdos
+Moltres
+Dratini
+Dragonair
+Kyoto Dragonite
+Chikorita
+Bayleef
+Jataro Meganium
+Cyndaquil
+Quilava
+Typhlosion
+Jataro Typhlosion
+Totodile
+Croconaw
+Feraligatr
+Jataro Feraligatr
+Sentret
+Furret
+Hoothoot
+Ledyba
+Ledian
+Spinarak
+Crobat
+Jataro Crobat
+Chinchou
+Jataro Lanturn
+Pichu
+Cleffa
+Igglybuff
+Togepi
+Togetic
+Natu
+Xatu
+Mareep
+Flaaffy
+Ampharos
+Jataro Ampharos
+Bellossom
+Marill
+Politoed
+Hoppip
+Skiploom
+Jumpluff
+Aipom
+Sunkern
+Sunflora
+Jataro Sunflora
+Yanma
+Wooper
+Quagsire
+Espeon
+Umbreon
+Murkrow
+Slowking
+Jataro Slowking
+Misdreavus
+Unown
+Girafarig
+Pineco
+Forretress
+Jataro Forretress
+Dunsparce
+Jataro Dunsparce
+Gligar
+Steelix
+Jataro Steelix
+Qwilfish
+Jataro Scizor
+Shuckle
+Heracross
+Jataro Heracross
+Sneasel
+Teddiursa
+Ursaring
+Jataro Ursaring
+Slugma
+Magcargo
+Swinub
+Piloswine
+Corsola
+Galarian Corsola
+Remoraid
+Octillery
+Jataro Octillery
+Delibird
+Mantine
+Jataro Skarmory
+Houndour
+Houndoom
+Jataro Houndoom
+Kingdra
+Jataro Kingdra
+Phanpy
+Jataro Donphan
+Porygon2
+Jataro Porygon2
+Stantler
+Smeargle
+Tyrogue
+Hitmontop
+Smoochum
+Elekid
+Magby
+Jataro Miltank
+Blissey
+Jataro Blissey
+Jataro Raikou
+Jataro Entei
+Jataro Suicune
+Larvitar
+Pupitar
+Tyranitar
+Jataro Tyranitar
+Lugia
+Treecko
+Grovyle
+Sceptile
+Haikou Sceptile
+Torchic
+Combusken
+Blaziken
+Haikou Blaziken
+Mudkip
+Marshtomp
+Swampert
+Haikou Swampert
+Poochyena
+Mightyena
+Zigzagoon
+Galarian Zigzagoon
+Linoone
+Galarian Linoone
+Wurmple
+Silcoon
+Beautifly
+Cascoon
+Dustox
+Lotad
+Lombre
+Ludicolo
+Haikou Ludicolo
+Seedot
+Nuzleaf
+Shiftry
+Taillow
+Haikou Swellow
+Wingull
+Pelipper
+Ralts
+Kirlia
+Gardevoir
+Haikou Gardevoir
+Surskit
+Shroomish
+Breloom
+Haikou Breloom
+Slakoth
+Vigoroth
+Haikou Slaking
+Nincada
+Ninjask
+Shedinja
+Whismur
+Loudred
+Exploud
+Makuhita
+Haikou Hariyama
+Azurill
+Nosepass
+Skitty
+Delcatty
+Mawile
+Aron
+Lairon
+Aggron
+Haikou Aggron
+Meditite
+Medicham
+Electrike
+Manectric
+Plusle
+Minun
+Volbeat
+Illumise
+Roselia
+Gulpin
+Swalot
+Carvanha
+Sharpedo
+Haikou Sharpedo
+Wailmer
+Haikou Wailord
+Numel
+Camerupt
+Haikou Torkoal
+Trapinch
+Vibrava
+Flygon
+Haikou Flygon
+Cacnea
+Cacturne
+Swablu
+Altaria
+Zangoose
+Seviper
+Lunatone
+Solrock
+Barboach
+Whiscash
+Corphish
+Crawdaunt
+Baltoy
+Claydol
+Lileep
+Anorith
+Armaldo
+Feebas
+Haikou Milotic
+Castform
+Kecleon
+Shuppet
+Banette
+Duskull
+Dusclops
+Tropius
+Haikou Chimecho
+Absol
+Haikou Absol
+Wynaut
+Snorunt
+Glalie
+Spheal
+Sealeo
+Walrein
+Clamperl
+Huntail
+Gorebyss
+Relicanth
+Luvdisc
+Bagon
+Shelgon
+Salamence
+Haikou Salamence
+Beldum
+Metang
+Haikou Metagross
+Regirock
+Regice
+Registeel
+Latias
+Haikou Latias
+Latios
+Haikou Latios
+Groudon
+Deoxys
+Turtwig
+Grotle
+Torterra
+Shiloh Torterra
+Chimchar
+Monferno
+Infernape
+Shiloh Infernape
+Piplup
+Prinplup
+Empoleon
+Shiloh Empoleon
+Starly
+Staravia
+Staraptor
+Shiloh Staraptor
+Kricketot
+Kricketune
+Shinx
+Luxio
+Luxray
+Shiloh Luxray
+Budew
+Roserade
+Shiloh Roserade
+Cranidos
+Rampardos
+Shiloh Rampardos
+Shieldon
+Bastiodon
+Shiloh Bastiodon
+Burmy
+Wormadam
+Mothim
+Combee
+Vespiquen
+Shiloh Vespiquen
+Pachirisu
+Buizel
+Floatzel
+Cherubi
+Cherrim
+Shellos
+Shiloh Ambipom
+Drifloon
+Drifblim
+Buneary
+Lopunny
+Mismagius
+Shiloh Mismagius
+Honchkrow
+Glameow
+Purugly
+Chingling
+Stunky
+Skuntank
+Bronzor
+Shiloh Bronzong
+Bonsly
+Mime Jr.
+Happiny
+Chatot
+Shiloh Spiritomb
+Shiloh Garchomp
+Munchlax
+Riolu
+Shiloh Lucario
+Hippopotas
+Hippowdon
+Shiloh Hippowdon
+Skorupi
+Drapion
+Croagunk
+Toxicroak
+Shiloh Toxicroak
+Carnivine
+Finneon
+Lumineon
+Mantyke
+Snover
+Abomasnow
+Shiloh Weavile
+Shiloh Magnezone
+Lickilicky
+Rhyperior
+Shiloh Rhyperior
+Tangrowth
+Shiloh Tangrowth
+Shiloh Electivire
+Shiloh Magmortar
+Togekiss
+Shiloh Togekiss
+Shiloh Yanmega
+Leafeon
+Glaceon
+Gliscor
+Shiloh Gliscor
+Mamoswine
+Shiloh Mamoswine
+Porygon-Z
+Shiloh Porygon-Z
+Gallade
+Shiloh Gallade
+Probopass
+Dusknoir
+Froslass
+Shiloh Froslass
+Shiloh Dialga
+Shiloh Palkia
+Shiloh Heatran
+Regigigas
+Giratina
+Phione
+Snivy
+Servine
+Serperior
+Zeinova Serperior
+Tepig
+Pignite
+Zeinova Emboar
+Oshawott
+Dewott
+Zeinova Samurott
+Patrat
+Watchog
+Lillipup
+Herdier
+Stoutland
+Purrloin
+Liepard
+Pansage
+Simisage
+Pansear
+Panpour
+Munna
+Zeinova Musharna
+Pidove
+Tranquill
+Unfezant
+Blitzle
+Zebstrika
+Zeinova Zebstrika
+Roggenrola
+Boldore
+Gigalith
+Woobat
+Swoobat
+Drilbur
+Zeinova Excadrill
+Audino
+Zeinova Audino
+Timburr
+Gurdurr
+Zeinova Conkeldurr
+Tympole
+Palpitoad
+Sewaddle
+Swadloon
+Leavanny
+Venipede
+Whirlipede
+Scolipede
+Zeinova Scolipede
+Cottonee
+Whimsicott
+Petilil
+Basculin
+Sandile
+Krokorok
+Darumaka
+Galarian Darumaka
+Darmanitan
+Galarian Darmanitan
+Zeinova Darmanitan
+Maractus
+Dwebble
+Crustle
+Zeinova Crustle
+Scraggy
+Zeinova Scrafty
+Sigilyph
+Zeinova Sigilyph
+Yamask
+Galarian Yamask
+Cofagrigus
+Zeinova Cofagrigus
+Tirtouga
+Archen
+Zeinova Archeops
+Trubbish
+Garbodor
+Zorua
+Zoroark
+Zeinova Zoroark
+Minccino
+Cinccino
+Gothita
+Gothorita
+Gothitelle
+Zeinova Gothitelle
+Solosis
+Duosion
+Zeinova Reuniclus
+Ducklett
+Swanna
+Vanillite
+Vanillish
+Vanilluxe
+Zeinova Vanilluxe
+Deerling
+Zeinova Emolga
+Karrablast
+Zeinova Escavalier
+Foongus
+Zeinova Amoonguss
+Frillish
+Jellicent
+Alomomola
+Zeinova Alomomola
+Joltik
+Galvantula
+Ferroseed
+Klink
+Klang
+Klinklang
+Tynamo
+Eelektrik
+Zeinova Eelektross
+Elgyem
+Beheeyem
+Zeinova Beheeyem
+Litwick
+Lampent
+Chandelure
+Zeinova Chandelure
+Axew
+Fraxure
+Zeinova Haxorus
+Cubchoo
+Beartic
+Cryogonal
+Zeinova Cryogonal
+Shelmet
+Accelgor
+Stunfisk
+Galarian Stunfisk
+Mienfoo
+Zeinova Mienshao
+Druddigon
+Zeinova Druddigon
+Golett
+Golurk
+Zeinova Golurk
+Pawniard
+Zeinova Bisharp
+Bouffalant
+Zeinova Bouffalant
+Rufflet
+Braviary
+Vullaby
+Mandibuzz
+Heatmor
+Durant
+Zeinova Durant
+Deino
+Zweilous
+Zeinova Hydreigon
+Larvesta
+Volcarona
+Zeinova Volcarona
+Terrakion
+Tornadus
+Landorus
+Kyurem
+Meloetta
+Genesect
+Chespin
+Quilladin
+Chesnaught
+Fennekin
+Braixen
+Delphox
+Froakie
+Frogadier
+Greninja
+Bunnelby
+Diggersby
+Fletchling
+Fletchinder
+Talonflame
+Scatterbug
+Spewpa
+Vivillon
+Litleo
+Pyroar
+Flabebe
+Floette
+Florges
+Skiddo
+Gogoat
+Pancham
+Pangoro
+Furfrou
+Espurr
+Meowstic
+Honedge
+Doublade
+Aegislash
+Spritzee
+Aromatisse
+Swirlix
+Slurpuff
+Inkay
+Malamar
+Binacle
+Barbaracle
+Skrelp
+Dragalge
+Clauncher
+Clawitzer
+Helioptile
+Heliolisk
+Tyrunt
+Tyrantrum
+Amaura
+Aurorus
+Sylveon
+Hawlucha
+Dedenne
+Carbink
+Goomy
+Sliggoo
+Goodra
+Klefki
+Phantump
+Trevenant
+Pumpkaboo
+Gourgeist
+Bergmite
+Avalugg
+Noibat
+Noivern
+Xerneas
+Yveltal
+Zygarde
+Diancie
+Hoopa
+Volcanion
+Rowlet
+Dartrix
+Decidueye
+Litten
+Torracat
+Incineroar
+Popplio
+Brionne
+Primarina
+Pikipek
+Trumbeak
+Toucannon
+Yungoos
+Gumshoos
+Grubbin
+Charjabug
+Vikavolt
+Crabrawler
+Crabominable
+Oricorio
+Cutiefly
+Ribombee
+Rockruff
+Lycanroc
+Wishiwashi
+Mareanie
+Toxapex
+Mudbray
+Mudsdale
+Dewpider
+Araquanid
+Fomantis
+Lurantis
+Morelull
+Shiinotic
+Salandit
+Salazzle
+Stufful
+Bewear
+Bounsweet
+Steenee
+Tsareena
+Comfey
+Oranguru
+Passimian
+Wimpod
+Golisopod
+Sandygast
+Palossand
+Pyukumuku
+Type: Null
+Silvally
+Minior
+Komala
+Turtonator
+Togedemaru
+Mimikyu
+Bruxish
+Drampa
+Dhelmise
+Jangmo-o
+Hakamo-o
+Kommo-o
+Tapu Koko
+Tapu Lele
+Tapu Bulu
+Tapu Fini
+Cosmog
+Cosmoem
+Solgaleo
+Lunala
+Nihilego
+Buzzwole
+Pheromosa
+Xurkitree
+Celesteela
+Kartana
+Guzzlord
+Necrozma
+Magearna
+Marshadow
+Goard
+Cloud
+Beast Cloud
+Savage Cloud
+Frostfang
+Soko
+Fafnir
+Shade
+Vixen
+Slythe
+Wildwing
+Panshao

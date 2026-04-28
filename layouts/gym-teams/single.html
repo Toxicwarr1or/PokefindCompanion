@@ -1,0 +1,101 @@
+{{ define "main" }}
+<article class="page gym-teams-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p class="meta"><a href="{{ "/gym-teams/" | relURL }}">← All generations</a></p>
+  </header>
+
+  {{ with .Params.gyms }}
+  <h2>Gym Leaders</h2>
+  <div class="gym-grid">
+    {{ range . }}
+    <div class="gym-card">
+      <header class="gym-card-head">
+        <span class="gym-badge">Gym {{ .index }}</span>
+        <h3 class="gym-leader">{{ .leader }}</h3>
+      </header>
+      {{ with .trainers }}
+      <details class="gym-trainers">
+        <summary>{{ len . }} gym trainer{{ if ne (len .) 1 }}s{{ end }}</summary>
+        {{ range . }}
+        <div class="trainer-block">
+          <h4 class="trainer-name">{{ .name }}</h4>
+          {{ with .team }}
+          <table class="gym-team">
+            <thead><tr><th>Pokémon</th><th>Lv</th><th>Moves</th></tr></thead>
+            <tbody>
+              {{ range . }}
+              <tr>
+                <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
+                <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
+                <td class="gym-moves">
+                  {{ with .moves }}
+                    {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
+                  {{ else }}—{{ end }}
+                </td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+          {{ end }}
+        </div>
+        {{ end }}
+      </details>
+      {{ end }}
+      <h4 class="leader-label">Leader's team</h4>
+      {{ with .team }}
+      <table class="gym-team">
+        <thead><tr><th>Pokémon</th><th>Lv</th><th>Nature</th><th>Moves</th></tr></thead>
+        <tbody>
+          {{ range . }}
+          <tr>
+            <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
+            <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
+            <td class="gym-moves">
+              {{ with .moves }}
+                {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
+              {{ else }}—{{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Params.elite_four }}
+  <h2>Elite Four &amp; Champion</h2>
+  <div class="gym-grid">
+    {{ range . }}
+    <div class="gym-card e4-card">
+      <header class="gym-card-head">
+        <span class="gym-badge e4-badge">Elite</span>
+        <h3 class="gym-leader">{{ .name }}</h3>
+      </header>
+      {{ with .team }}
+      <table class="gym-team">
+        <thead><tr><th>Pokémon</th><th>Lv</th><th>Nature</th><th>Moves</th></tr></thead>
+        <tbody>
+          {{ range . }}
+          <tr>
+            <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
+            <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
+            <td class="gym-moves">
+              {{ with .moves }}
+                {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
+              {{ else }}—{{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,57 @@
+{{ $section := .Section }}
+{{ with .Site.GetPage (printf "/%s" $section) }}
+{{ $pages := .Pages.ByTitle }}
+{{ $isLong := gt (len $pages) 30 }}
+
+{{ if $isLong }}
+{{- /* Long sections (Pokedex): floating button + overlay modal — hidden until summoned */ -}}
+<button class="section-fab" type="button" aria-haspopup="dialog" aria-controls="section-overlay-{{ $section }}"
+        title="Browse {{ .Title }} (or press /)" aria-label="Browse {{ .Title }}">
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="7"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</button>
+<div class="section-overlay" id="section-overlay-{{ $section }}" role="dialog" aria-label="Browse {{ .Title }}" hidden>
+  <div class="section-overlay-backdrop" data-overlay-close></div>
+  <div class="section-overlay-panel" role="document">
+    <header class="section-overlay-header">
+      <input type="search"
+             class="section-overlay-search"
+             placeholder="Search {{ len $pages }} {{ .Title }} entries…"
+             autocomplete="off"
+             aria-label="Search the {{ .Title }} list">
+      <button type="button" class="section-overlay-close" data-overlay-close aria-label="Close">×</button>
+    </header>
+    <ul class="section-overlay-list">
+      {{ range $pages }}
+      <li>
+        <a href="{{ .RelPermalink }}"
+           data-name="{{ lower .Title }}"
+           {{ if eq $.RelPermalink .RelPermalink }}class="active"{{ end }}>
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+<nav class="section-nav" aria-label="Section">
+  <h4>{{ .Title }}</h4>
+  <p class="section-nav-hint">Browse all entries via the search button (bottom-right).</p>
+</nav>
+{{ else }}
+<nav class="section-nav" aria-label="Section">
+  <h4>{{ .Title }}</h4>
+  <ul>
+    {{ range $pages }}
+    <li>
+      <a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} class="active"{{ end }}>
+        {{ .Title }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
+{{ end }}

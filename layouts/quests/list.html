@@ -1,0 +1,43 @@
+{{ define "main" }}
+<article class="page quests-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+
+  {{/* Generation tabs are pages with a quests[] frontmatter array. */}}
+  {{ $genPages := where .Pages "Params.quests" "ne" nil }}
+  {{ $genPages = sort $genPages "Title" }}
+  {{ if $genPages }}
+  <h2>Quest Log by Region</h2>
+  <p class="meta">Every quest that appears in the in-game <code>/questlog</code>, organized by generation. Seasonal/event quests are excluded.</p>
+  <nav class="form-tabs" role="tablist">
+    {{ range $i, $p := $genPages }}
+    <button class="form-tab{{ if eq $i 0 }} active{{ end }}"
+            role="tab"
+            data-form-index="{{ $i }}"
+            aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+      {{ $p.Title }}
+    </button>
+    {{ end }}
+  </nav>
+
+  {{ range $i, $p := $genPages }}
+  <section class="form-panel{{ if eq $i 0 }} active{{ end }}" data-form-index="{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
+    <p class="meta">{{ len $p.Params.quests }} quest{{ if ne (len $p.Params.quests) 1 }}s{{ end }}.</p>
+    <ul class="quest-list">
+      {{ $genNum := $p.Params.gen }}
+      {{ range $p.Params.quests }}
+      <li class="quest-entry">
+        <h3 class="quest-name"><a href="{{ printf "/quests/gen%d/%s/" (int $genNum) .slug | relURL }}">{{ .name }}</a></h3>
+        {{ with .description }}<p class="quest-desc">{{ . }}</p>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+  {{ end }}
+
+  </article>
+{{ end }}

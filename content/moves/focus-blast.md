@@ -1,0 +1,18 @@
+---
+title: 'Focus Blast'
+entry_kind: 'move'
+date: 2026-04-27
+move_type: 'Fighting'
+category: 'Special'
+power: '120'
+accuracy: '70'
+pp: '5'
+contact: 'No'
+generation: 'Gen 4'
+target: 'Selected Pokemon'
+effect: 'The user heightens its mental focus and unleashes its power. This may also lower the target''s  Sp. Def stat.'
+learners_level:
+  - { name: 'Shiloh Roserade', level: '59' }
+learners_tm: ['Abomasnow', 'Accelgor', 'Aggron', 'Alakazam', 'Alolan Golem', 'Alolan Marowak', 'Alolan Muk', 'Alolan Raichu', 'Alolan Sandslash', 'Ampharos', 'Arceus', 'Archeops', 'Azumarill', 'Beartic', 'Bisharp', 'Blastoise', 'Blaziken', 'Blissey', 'Breloom', 'Cacturne', 'Carracosta', 'Charizard', 'Cinccino', 'Clefable', 'Cobalion', 'Combusken', 'Conkeldurr', 'Croagunk', 'Darkrai', 'Darmanitan', 'Deoxys', 'Dragonite', 'Druddigon', 'Dusknoir', 'Electabuzz', 'Electivire', 'Emboar', 'Escavalier', 'Excadrill', 'Exploud', 'Feraligatr', 'Floatzel', 'Furret', 'Galarian Mr. Mime', 'Gallade', 'Garbodor', 'Gardevoir', 'Gengar', 'Golduck', 'Golem', 'Golett', 'Golurk', 'Granbull', 'Groudon', 'Grumpig', 'Gurdurr', 'Haikou Absol', 'Haikou Blaziken', 'Haikou Breloom', 'Haikou Chimecho', 'Haikou Flygon', 'Haikou Gardevoir', 'Haikou Latias', 'Haikou Latios', 'Haikou Ludicolo', 'Haikou Sceptile', 'Haikou Swampert', 'Haikou Swellow', 'Haikou Torkoal', 'Hariyama', 'Haxorus', 'Heatmor', 'Heracross', 'Hitmonchan', 'Hitmonlee', 'Hydreigon', 'Hypno', 'Infernape', 'Jataro Ampharos', 'Jataro Blissey', 'Jataro Crobat', 'Jataro Feraligatr', 'Jataro Forretress', 'Jataro Heracross', 'Jataro Kingdra', 'Jataro Lanturn', 'Jataro Meganium', 'Jataro Octillery', 'Jataro Porygon2', 'Jataro Slowking', 'Jataro Typhlosion', 'Jataro Tyranitar', 'Jataro Ursaring', 'Jynx', 'Kangaskhan', 'Keldeo', 'Krookodile', 'Kyoto Aerodactyl', 'Kyoto Alakazam', 'Kyoto Arcanine', 'Kyoto Chansey', 'Kyoto Charizard', 'Kyoto Clefable', 'Kyoto Dodrio', 'Kyoto Dragonite', 'Kyoto Exeggutor', 'Kyoto Gengar', 'Kyoto Lapras', 'Kyoto Slowbro', 'Kyoto Starmie', 'Kyoto Tentacruel', 'Kyurem', 'Landorus', 'Ledian', 'Lickilicky', 'Lopunny', 'Lucario', 'Ludicolo', 'Machamp', 'Machoke', 'Machop', 'Magmar', 'Magmortar', 'Makuhita', 'Mankey', 'Marowak', 'Mawile', 'Medicham', 'Meditite', 'Meloetta', 'Mew', 'Mewtwo', 'Mienfoo', 'Mienshao', 'Miltank', 'Monferno', 'Mr. Mime', 'Muk', 'Nidoking', 'Nidoqueen', 'Palkia', 'Pignite', 'Pinsir', 'Politoed', 'Poliwrath', 'Primeape', 'Quagsire', 'Raichu', 'Rampardos', 'Rayquaza', 'Regice', 'Regigigas', 'Regirock', 'Registeel', 'Reshiram', 'Reuniclus', 'Rhydon', 'Rhyperior', 'Riolu', 'Sandslash', 'Sawk', 'Sceptile', 'Scrafty', 'Scraggy', 'Seismitoad', 'Shiftry', 'Shiloh Dialga', 'Shiloh Electivire', 'Shiloh Froslass', 'Shiloh Gallade', 'Shiloh Gliscor', 'Shiloh Infernape', 'Shiloh Lucario', 'Shiloh Luxray', 'Shiloh Magmortar', 'Shiloh Mismagius', 'Shiloh Palkia', 'Shiloh Porygon-Z', 'Shiloh Roserade', 'Shiloh Staraptor', 'Shiloh Tangrowth', 'Shiloh Togekiss', 'Shiloh Torterra', 'Simipour', 'Simisage', 'Simisear', 'Slaking', 'Slowbro', 'Slowking', 'Snorlax', 'Swampert', 'Tangrowth', 'Terrakion', 'Throh', 'Thundurus', 'Timburr', 'Tornadus', 'Toxicroak', 'Typhlosion', 'Tyranitar', 'Ursaring', 'Victini', 'Vigoroth', 'Virizion', 'Watchog', 'Weavile', 'Wigglytuff', 'Zangoose', 'Zeinova Alomomola', 'Zeinova Amoonguss', 'Zeinova Archeops', 'Zeinova Audino', 'Zeinova Chandelure', 'Zeinova Cofagrigus', 'Zeinova Crustle', 'Zeinova Eelektross', 'Zeinova Emolga', 'Zeinova Golurk', 'Zeinova Gothitelle', 'Zeinova Hydreigon', 'Zeinova Mienshao', 'Zeinova Musharna', 'Zeinova Reuniclus', 'Zeinova Samurott', 'Zeinova Scolipede', 'Zeinova Serperior', 'Zeinova Sigilyph', 'Zeinova Vanilluxe', 'Zeinova Volcarona', 'Zeinova Zebstrika', 'Zeinova Zoroark', 'Zekrom', 'Zoroark']
+---
+

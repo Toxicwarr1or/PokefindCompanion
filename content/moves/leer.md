@@ -1,0 +1,188 @@
+---
+title: 'Leer'
+entry_kind: 'move'
+date: 2026-04-27
+move_type: 'Normal'
+category: 'Status'
+power: '—'
+accuracy: '100'
+pp: '30'
+contact: 'No'
+generation: 'Gen 1'
+target: 'All Opponents'
+effect: 'The user gives opposing Pokémon an intimidating leer that lowers the Defense stat.'
+learners_level:
+  - { name: 'Haikou Torkoal', level: '0' }
+  - { name: 'Abomasnow', level: '1' }
+  - { name: 'Arbok', level: '1' }
+  - { name: 'Archen', level: '1' }
+  - { name: 'Archeops', level: '1' }
+  - { name: 'Bouffalant', level: '1' }
+  - { name: 'Braviary', level: '1' }
+  - { name: 'Cacnea', level: '1' }
+  - { name: 'Cacturne', level: '1' }
+  - { name: 'Carvanha', level: '1' }
+  - { name: 'Chimchar', level: '1' }
+  - { name: 'Cobalion', level: '1' }
+  - { name: 'Conkeldurr', level: '1' }
+  - { name: 'Cranidos', level: '1' }
+  - { name: 'Croconaw', level: '1' }
+  - { name: 'Cyndaquil', level: '1' }
+  - { name: 'Deoxys', level: '1' }
+  - { name: 'Dragonair', level: '1' }
+  - { name: 'Dragonite', level: '1' }
+  - { name: 'Drapion', level: '1' }
+  - { name: 'Dratini', level: '1' }
+  - { name: 'Druddigon', level: '1' }
+  - { name: 'Dusclops', level: '1' }
+  - { name: 'Dusknoir', level: '1' }
+  - { name: 'Duskull', level: '1' }
+  - { name: 'Ekans', level: '1' }
+  - { name: 'Electabuzz', level: '1' }
+  - { name: 'Electivire', level: '1' }
+  - { name: 'Elekid', level: '1' }
+  - { name: 'Entei', level: '1' }
+  - { name: 'Farfetch''d', level: '1' }
+  - { name: 'Feraligatr', level: '1' }
+  - { name: 'Froslass', level: '1' }
+  - { name: 'Galarian Linoone', level: '1' }
+  - { name: 'Galarian Zigzagoon', level: '1' }
+  - { name: 'Gallade', level: '1' }
+  - { name: 'Glalie', level: '1' }
+  - { name: 'Grovyle', level: '1' }
+  - { name: 'Gurdurr', level: '1' }
+  - { name: 'Haikou Hariyama', level: '1' }
+  - { name: 'Heracross', level: '1' }
+  - { name: 'Herdier', level: '1' }
+  - { name: 'Houndoom', level: '1' }
+  - { name: 'Houndour', level: '1' }
+  - { name: 'Infernape', level: '1' }
+  - { name: 'Kangaskhan', level: '1' }
+  - { name: 'Keldeo', level: '1' }
+  - { name: 'Krokorok', level: '1' }
+  - { name: 'Krookodile', level: '1' }
+  - { name: 'Larvitar', level: '1' }
+  - { name: 'Lillipup', level: '1' }
+  - { name: 'Machamp', level: '1' }
+  - { name: 'Machoke', level: '1' }
+  - { name: 'Machop', level: '1' }
+  - { name: 'Magby', level: '1' }
+  - { name: 'Magmar', level: '1' }
+  - { name: 'Magmortar', level: '1' }
+  - { name: 'Mandibuzz', level: '1' }
+  - { name: 'Mankey', level: '1' }
+  - { name: 'Monferno', level: '1' }
+  - { name: 'Natu', level: '1' }
+  - { name: 'Nidoran-M', level: '1' }
+  - { name: 'Nidorino', level: '1' }
+  - { name: 'Primeape', level: '1' }
+  - { name: 'Pupitar', level: '1' }
+  - { name: 'Quilava', level: '1' }
+  - { name: 'Raikou', level: '1' }
+  - { name: 'Rampardos', level: '1' }
+  - { name: 'Rufflet', level: '1' }
+  - { name: 'Sableye', level: '1' }
+  - { name: 'Sandile', level: '1' }
+  - { name: 'Sawk', level: '1' }
+  - { name: 'Sceptile', level: '1' }
+  - { name: 'Scizor', level: '1' }
+  - { name: 'Scrafty', level: '1' }
+  - { name: 'Scraggy', level: '1' }
+  - { name: 'Scyther', level: '1' }
+  - { name: 'Sharpedo', level: '1' }
+  - { name: 'Shiloh Dialga', level: '1' }
+  - { name: 'Shiloh Electivire', level: '1' }
+  - { name: 'Shiloh Magmortar', level: '1' }
+  - { name: 'Shiloh Spiritomb', level: '1' }
+  - { name: 'Simipour', level: '1' }
+  - { name: 'Simisage', level: '1' }
+  - { name: 'Simisear', level: '1' }
+  - { name: 'Skarmory', level: '1' }
+  - { name: 'Skorupi', level: '1' }
+  - { name: 'Sneasel', level: '1' }
+  - { name: 'Snorunt', level: '1' }
+  - { name: 'Snover', level: '1' }
+  - { name: 'Stoutland', level: '1' }
+  - { name: 'Suicune', level: '1' }
+  - { name: 'Terrakion', level: '1' }
+  - { name: 'Throh', level: '1' }
+  - { name: 'Timburr', level: '1' }
+  - { name: 'Totodile', level: '1' }
+  - { name: 'Treecko', level: '1' }
+  - { name: 'Tropius', level: '1' }
+  - { name: 'Typhlosion', level: '1' }
+  - { name: 'Tyranitar', level: '1' }
+  - { name: 'Ursaring', level: '1' }
+  - { name: 'Virizion', level: '1' }
+  - { name: 'Vullaby', level: '1' }
+  - { name: 'Weavile', level: '1' }
+  - { name: 'Xatu', level: '1' }
+  - { name: 'Zangoose', level: '1' }
+  - { name: 'Zoroark', level: '1' }
+  - { name: 'Zorua', level: '1' }
+  - { name: 'Patrat', level: '3' }
+  - { name: 'Stantler', level: '3' }
+  - { name: 'Watchog', level: '3' }
+  - { name: 'Absol', level: '4' }
+  - { name: 'Axew', level: '4' }
+  - { name: 'Electrike', level: '4' }
+  - { name: 'Escavalier', level: '4' }
+  - { name: 'Fraxure', level: '4' }
+  - { name: 'Haxorus', level: '4' }
+  - { name: 'Karrablast', level: '4' }
+  - { name: 'Manectric', level: '4' }
+  - { name: 'Panpour', level: '4' }
+  - { name: 'Pansage', level: '4' }
+  - { name: 'Pansear', level: '4' }
+  - { name: 'Serperior', level: '4' }
+  - { name: 'Servine', level: '4' }
+  - { name: 'Shiloh Empoleon', level: '4' }
+  - { name: 'Snivy', level: '4' }
+  - { name: 'Fearow', level: '5' }
+  - { name: 'Galarian Farfetch''d', level: '5' }
+  - { name: 'Kyoto Blastoise', level: '5' }
+  - { name: 'Luxio', level: '5' }
+  - { name: 'Luxray', level: '5' }
+  - { name: 'Shiloh Luxray', level: '5' }
+  - { name: 'Shinx', level: '5' }
+  - { name: 'Spearow', level: '5' }
+  - { name: 'Bisharp', level: '6' }
+  - { name: 'Pawniard', level: '6' }
+  - { name: 'Bagon', level: '7' }
+  - { name: 'Jataro Steelix', level: '7' }
+  - { name: 'Kyoto Lapras', level: '7' }
+  - { name: 'Salamence', level: '7' }
+  - { name: 'Shelgon', level: '7' }
+  - { name: 'Shiloh Infernape', level: '7' }
+  - { name: 'Zeinova Crustle', level: '7' }
+  - { name: 'Growlithe', level: '8' }
+  - { name: 'Jataro Feraligatr', level: '8' }
+  - { name: 'Pidove', level: '8' }
+  - { name: 'Tranquill', level: '8' }
+  - { name: 'Unfezant', level: '8' }
+  - { name: 'Heatran', level: '9' }
+  - { name: 'Horsea', level: '9' }
+  - { name: 'Kingdra', level: '9' }
+  - { name: 'Kingler', level: '9' }
+  - { name: 'Krabby', level: '9' }
+  - { name: 'Seadra', level: '9' }
+  - { name: 'Zeinova Druddigon', level: '9' }
+  - { name: 'Corphish', level: '10' }
+  - { name: 'Crawdaunt', level: '10' }
+  - { name: 'Haikou Blaziken', level: '10' }
+  - { name: 'Jataro Typhlosion', level: '10' }
+  - { name: 'Kyoto Dodrio', level: '10' }
+  - { name: 'Kabuto', level: '11' }
+  - { name: 'Kabutops', level: '11' }
+  - { name: 'Alolan Marowak', level: '13' }
+  - { name: 'Cubone', level: '13' }
+  - { name: 'Marowak', level: '13' }
+  - { name: 'Jataro Tyranitar', level: '14' }
+  - { name: 'Kyoto Aerodactyl', level: '15' }
+  - { name: 'Omanyte', level: '19' }
+  - { name: 'Omastar', level: '19' }
+  - { name: 'Shellder', level: '20' }
+  - { name: 'Gyarados', level: '26' }
+learners_egg: ['Cranidos', 'Poochyena', 'Stunky']
+---
+

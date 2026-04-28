@@ -1,0 +1,201 @@
+{{ define "main" }}
+<article class="page dex-page">
+  <header class="page-header">
+    <h1>{{ if .Params.dex_number }}<span class="dex-num">#{{ .Params.dex_number }}</span> {{ end }}{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle dex-flavor">{{ . }}</p>{{ end }}
+    {{ with .Date }}<p class="meta">Updated {{ .Format "Jan 2, 2006" }}</p>{{ end }}
+  </header>
+
+  {{ $forms := .Params.forms }}
+  {{ if and $forms (gt (len $forms) 1) }}
+  <nav class="form-tabs" role="tablist">
+    {{ range $i, $f := $forms }}
+    <button class="form-tab{{ if eq $i 0 }} active{{ end }}"
+            role="tab"
+            data-form-index="{{ $i }}"
+            aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+      {{ $f.name }}
+    </button>
+    {{ end }}
+  </nav>
+  {{ end }}
+
+  {{ range $i, $f := $forms }}
+  <section class="form-panel{{ if eq $i 0 }} active{{ end }}" data-form-index="{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
+    <div class="dex-profile">
+      <div class="dex-visuals">
+        <div class="sprite">
+          {{ with $f.sprite }}
+            <img src="{{ . | relURL }}" alt="{{ $.Title }} {{ $f.name }} sprite">
+          {{ else }}
+            <span>(no sprite)</span>
+          {{ end }}
+        </div>
+      </div>
+      <dl class="stats">
+        {{ with $f.types }}<dt>Type</dt><dd class="types">{{ range . }}<span class="type-{{ lower . }}">{{ . }}</span>{{ end }}</dd>{{ end }}
+        {{ with $f.abilities }}<dt>Abilities</dt><dd>{{ range $i, $a := . }}{{ if $i }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $a)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ $a }}</a>{{ end }}</dd>{{ end }}
+        {{ with $f.hidden_ability }}<dt>Hidden Ability</dt><dd><a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ . }}</a></dd>{{ end }}
+        {{ with $f.egg_groups }}<dt>Egg Groups</dt><dd>{{ delimit . ", " | title }}</dd>{{ end }}
+        {{ with $f.growth_rate }}<dt>Growth Rate</dt><dd>{{ . | replaceRE "_" " " | title }}</dd>{{ end }}
+        {{ if or $f.height_m $f.weight_kg }}<dt>Size</dt><dd>{{ with $f.height_m }}{{ . }} m{{ end }}{{ if and $f.height_m $f.weight_kg }} · {{ end }}{{ with $f.weight_kg }}{{ . }} kg{{ end }}</dd>{{ end }}
+        {{ if and (eq $i 0) $.Params.skins }}<dt>Available Skins</dt><dd class="skins-inline">{{ range $.Params.skins }}<span class="skin-chip">{{ . }}</span>{{ end }}</dd>{{ end }}
+      </dl>
+    </div>
+
+    {{ with $f.base_stats }}
+    {{ $bst := add (add (add (add (add .hp .atk) .def) .spa) .spd) .spe }}
+    <h2>Base Stats</h2>
+    <table class="stat-table">
+      <tbody>
+        <tr class="stat-row stat-hp"><th>HP</th><td class="stat-value">{{ .hp }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .hp 2.55) 1.0 }}%"></span></td></tr>
+        <tr class="stat-row stat-atk"><th>Attack</th><td class="stat-value">{{ .atk }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .atk 2.55) 1.0 }}%"></span></td></tr>
+        <tr class="stat-row stat-def"><th>Defense</th><td class="stat-value">{{ .def }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .def 2.55) 1.0 }}%"></span></td></tr>
+        <tr class="stat-row stat-spa"><th>Sp. Atk</th><td class="stat-value">{{ .spa }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .spa 2.55) 1.0 }}%"></span></td></tr>
+        <tr class="stat-row stat-spd"><th>Sp. Def</th><td class="stat-value">{{ .spd }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .spd 2.55) 1.0 }}%"></span></td></tr>
+        <tr class="stat-row stat-spe"><th>Speed</th><td class="stat-value">{{ .spe }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .spe 2.55) 1.0 }}%"></span></td></tr>
+        <tr class="stat-row stat-bst"><th>Total</th><td class="stat-value"><strong>{{ $bst }}</strong></td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div $bst 7.20) 1.0 }}%"></span></td></tr>
+      </tbody>
+    </table>
+    {{ end }}
+
+    {{ with $f.note }}
+    <p class="form-note"><em>{{ . }}</em></p>
+    {{ end }}
+
+    {{ with $f.notable_moves }}
+    <h2>Level-up Moves</h2>
+    <table class="learnset-table">
+      <thead>
+        <tr>
+          <th>Lv.</th><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range . }}
+        <tr>
+          <td class="learnset-level">{{ replaceRE "^Level " "" .source }}</td>
+          <td class="learnset-move"><a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .move)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ .move }}</a></td>
+          <td>{{ with .type }}<span class="type-{{ lower . }} type-pill-sm">{{ . }}</span>{{ end }}</td>
+          <td>{{ with .category }}<span class="cat-{{ lower . }}">{{ . }}</span>{{ end }}</td>
+          <td class="num">{{ .power }}</td>
+          <td class="num">{{ .accuracy }}</td>
+          <td class="num">{{ .pp }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+    {{ end }}
+
+    {{ with $f.tms }}
+    <details class="movepool" open>
+      <summary><h2>TMs &amp; HMs <span class="movepool-count">({{ len . }})</span></h2></summary>
+      <table class="learnset-table">
+        <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th></tr></thead>
+        <tbody>
+          {{ range . }}
+          <tr>
+            <td class="learnset-move"><a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .move)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ .move }}</a></td>
+            <td>{{ with .type }}<span class="type-{{ lower . }} type-pill-sm">{{ . }}</span>{{ end }}</td>
+            <td>{{ with .category }}<span class="cat-{{ lower . }}">{{ . }}</span>{{ end }}</td>
+            <td class="num">{{ .power }}</td>
+            <td class="num">{{ .accuracy }}</td>
+            <td class="num">{{ .pp }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </details>
+    {{ end }}
+
+    {{ with $f.tutor_moves }}
+    <details class="movepool" open>
+      <summary><h2>Move Tutor <span class="movepool-count">({{ len . }})</span></h2></summary>
+      <table class="learnset-table">
+        <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th></tr></thead>
+        <tbody>
+          {{ range . }}
+          <tr>
+            <td class="learnset-move"><a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .move)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ .move }}</a></td>
+            <td>{{ with .type }}<span class="type-{{ lower . }} type-pill-sm">{{ . }}</span>{{ end }}</td>
+            <td>{{ with .category }}<span class="cat-{{ lower . }}">{{ . }}</span>{{ end }}</td>
+            <td class="num">{{ .power }}</td>
+            <td class="num">{{ .accuracy }}</td>
+            <td class="num">{{ .pp }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </details>
+    {{ end }}
+
+    {{ with $f.egg_moves }}
+    <details class="movepool" open>
+      <summary><h2>Egg Moves <span class="movepool-count">({{ len . }})</span></h2></summary>
+      <table class="learnset-table">
+        <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th></tr></thead>
+        <tbody>
+          {{ range . }}
+          <tr>
+            <td class="learnset-move"><a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .move)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ .move }}</a></td>
+            <td>{{ with .type }}<span class="type-{{ lower . }} type-pill-sm">{{ . }}</span>{{ end }}</td>
+            <td>{{ with .category }}<span class="cat-{{ lower . }}">{{ . }}</span>{{ end }}</td>
+            <td class="num">{{ .power }}</td>
+            <td class="num">{{ .accuracy }}</td>
+            <td class="num">{{ .pp }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </details>
+    {{ end }}
+
+    {{ with $f.locations }}
+    <section class="dex-locations">
+      <h2>Where it spawns <span class="learners-count">({{ len . }})</span></h2>
+      <ul class="learners-list">
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with $f.competitive_sets }}
+    <section class="competitive-sets">
+      <h2>Competitive Builds <span class="learners-count">({{ len . }})</span></h2>
+      {{ range . }}
+      <div class="comp-set{{ if .auto }} comp-set-auto{{ end }}">
+        <header class="comp-set-header">
+          {{ with .tier }}<span class="comp-set-tier">{{ . }}</span>{{ end }}
+          <span class="comp-set-name">{{ .name }}</span>
+        </header>
+        <dl class="comp-set-meta">
+          {{ with .ability }}<dt>Ability</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . " / " }}{{ else }}{{ . }}{{ end }}</dd>{{ end }}
+          {{ with .item }}<dt>Item</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . " / " }}{{ else }}{{ . }}{{ end }}</dd>{{ end }}
+          {{ with .nature }}<dt>Nature</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . " / " }}{{ else }}{{ . }}{{ end }}</dd>{{ end }}
+          {{ with .evs }}<dt>EVs</dt><dd>{{ range $k, $v := . }}{{ $v }} {{ upper $k }} / {{ end }}</dd>{{ end }}
+        </dl>
+        <ol class="comp-set-moves">
+          {{ range .moves }}
+          <li>
+            {{ if reflect.IsSlice . }}
+              {{ range $i, $m := . }}{{ if $i }} / {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ $m }}</a>{{ end }}
+            {{ else }}
+              <a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ . }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ol>
+        {{ if .auto }}<p class="comp-set-note">No published Smogon set for this form — auto-built from its movepool.</p>{{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{ with .Params.video }}
+  <h2>Video Guide</h2>
+  {{ partial "youtube.html" . }}
+  {{ end }}
+</article>
+{{ end }}

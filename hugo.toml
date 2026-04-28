@@ -1,0 +1,66 @@
+baseURL = "https://pokefindcompanion.pages.dev/"
+languageCode = "en-us"
+title = "Pokefind Companion"
+
+# Pretty URLs
+canonifyURLs = false
+relativeURLs = false
+
+# Don't generate noisy default pages we don't want
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "An editorially curated Pokefind reference, paired with the WarriorToxic YouTube channel."
+  author = "WarriorToxic"
+  youtube = "https://www.youtube.com/@WarriorToxic"
+  brandColor = "#3eb045"
+
+# Top-nav menu
+[[menu.main]]
+  name = "Pokedex"
+  url = "/pokedex/"
+  weight = 10
+
+[[menu.main]]
+  name = "Moves & Abilities"
+  url = "/moves/"
+  weight = 15
+
+[[menu.main]]
+  name = "Quests"
+  url = "/quests/"
+  weight = 20
+
+[[menu.main]]
+  name = "Gym Teams"
+  url = "/gym-teams/"
+  weight = 30
+
+[[menu.main]]
+  name = "Mechanics"
+  url = "/mechanics/"
+  weight = 40
+
+[[menu.main]]
+  name = "Breeding"
+  url = "/breeding/"
+  weight = 60
+
+[[menu.main]]
+  name = "Skins"
+  url = "/skins/"
+  weight = 70
+
+# Markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true   # allow raw HTML in markdown — we control the content
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 4
+
+# Build hardening
+[outputs]
+  home    = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

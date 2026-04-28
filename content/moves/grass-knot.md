@@ -1,0 +1,19 @@
+---
+title: 'Grass Knot'
+entry_kind: 'move'
+date: 2026-04-27
+move_type: 'Grass'
+category: 'Special'
+power: '—'
+accuracy: '100'
+pp: '20'
+contact: 'Yes'
+generation: 'Gen 4'
+target: 'Selected Pokemon'
+effect: 'The user snares the target with grass and trips it. The heavier the target, the greater the move''s power.'
+learners_level:
+  - { name: 'Haikou Ludicolo', level: '19' }
+  - { name: 'Pansage', level: '34' }
+learners_tm: ['Abomasnow', 'Abra', 'Aipom', 'Alakazam', 'Alolan Exeggutor', 'Alolan Raichu', 'Alolan Raticate', 'Alolan Rattata', 'Ambipom', 'Amoonguss', 'Arceus', 'Audino', 'Azelf', 'Azumarill', 'Baltoy', 'Bayleef', 'Beartic', 'Bellossom', 'Bellsprout', 'Bibarel', 'Bidoof', 'Bisharp', 'Blissey', 'Breloom', 'Bronzong', 'Bronzor', 'Budew', 'Bulbasaur', 'Buneary', 'Cacnea', 'Cacturne', 'Carnivine', 'Celebi', 'Chansey', 'Cherrim', 'Cherubi', 'Chikorita', 'Chimchar', 'Chimecho', 'Chingling', 'Cinccino', 'Claydol', 'Clefable', 'Clefairy', 'Cleffa', 'Cofagrigus', 'Conkeldurr', 'Cottonee', 'Cradily', 'Cresselia', 'Cubchoo', 'Darmanitan', 'Darumaka', 'Deerling', 'Delcatty', 'Deoxys', 'Dewott', 'Drowzee', 'Eelektross', 'Emboar', 'Empoleon', 'Espeon', 'Exeggcute', 'Exeggutor', 'Ferrothorn', 'Foongus', 'Furret', 'Galarian Linoone', 'Galarian Mr. Mime', 'Galarian Zigzagoon', 'Gallade', 'Gardevoir', 'Girafarig', 'Gloom', 'Golett', 'Golurk', 'Gothita', 'Gothitelle', 'Gothorita', 'Grotle', 'Grovyle', 'Grumpig', 'Gurdurr', 'Haikou Absol', 'Haikou Breloom', 'Haikou Latias', 'Haikou Latios', 'Haikou Ludicolo', 'Haikou Sceptile', 'Haikou Slaking', 'Happiny', 'Haxorus', 'Hoppip', 'Hypno', 'Igglybuff', 'Infernape', 'Ivysaur', 'Jataro Blissey', 'Jataro Houndoom', 'Jataro Meganium', 'Jataro Octillery', 'Jataro Raikou', 'Jataro Suicune', 'Jigglypuff', 'Jirachi', 'Jumpluff', 'Jynx', 'Kadabra', 'Kecleon', 'Kirlia', 'Krokorok', 'Krookodile', 'Kyoto Alakazam', 'Kyoto Blastoise', 'Kyoto Chansey', 'Kyoto Exeggutor', 'Kyoto Weedle', 'Landorus', 'Latias', 'Latios', 'Leafeon', 'Leavanny', 'Liepard', 'Lileep', 'Lilligant', 'Linoone', 'Lombre', 'Lopunny', 'Lotad', 'Ludicolo', 'Lunatone', 'Manaphy', 'Maractus', 'Marill', 'Mawile', 'Medicham', 'Meditite', 'Meganium', 'Meloetta', 'Mesprit', 'Metagross', 'Metang', 'Mew', 'Mewtwo', 'Mienfoo', 'Mienshao', 'Mime Jr.', 'Minccino', 'Minun', 'Monferno', 'Mr. Mime', 'Natu', 'Nuzleaf', 'Oddish', 'Oshawott', 'Pachirisu', 'Panpour', 'Pansage', 'Pansear', 'Paras', 'Parasect', 'Patrat', 'Pawniard', 'Petilil', 'Phione', 'Pichu', 'Pignite', 'Pikachu', 'Piplup', 'Plusle', 'Prinplup', 'Purrloin', 'Raichu', 'Ralts', 'Raticate', 'Rattata', 'Reuniclus', 'Roselia', 'Roserade', 'Samurott', 'Sawk', 'Sawsbuck', 'Sceptile', 'Scrafty', 'Scraggy', 'Seedot', 'Seismitoad', 'Sentret', 'Serperior', 'Servine', 'Sewaddle', 'Shaymin', 'Shiftry', 'Shiloh Bastiodon', 'Shiloh Empoleon', 'Shiloh Lucario', 'Shiloh Magmortar', 'Shiloh Mismagius', 'Shiloh Palkia', 'Shiloh Roserade', 'Shiloh Spiritomb', 'Shiloh Torterra', 'Shiloh Toxicroak', 'Shroomish', 'Simipour', 'Simisage', 'Simisear', 'Skiploom', 'Skitty', 'Slowbro', 'Slowking', 'Slowpoke', 'Smoochum', 'Snivy', 'Snover', 'Solrock', 'Spoink', 'Starmie', 'Sunflora', 'Sunkern', 'Swadloon', 'Tangela', 'Tangrowth', 'Tepig', 'Throh', 'Thundurus', 'Timburr', 'Togekiss', 'Togepi', 'Togetic', 'Tornadus', 'Torterra', 'Treecko', 'Tropius', 'Turtwig', 'Uxie', 'Venusaur', 'Victini', 'Victreebel', 'Vileplume', 'Virizion', 'Watchog', 'Weepinbell', 'Whimsicott', 'Wigglytuff', 'Wormadam', 'Xatu', 'Zeinova Amoonguss', 'Zeinova Audino', 'Zeinova Bouffalant', 'Zeinova Cofagrigus', 'Zeinova Crustle', 'Zeinova Eelektross', 'Zeinova Excadrill', 'Zeinova Mienshao', 'Zeinova Reuniclus', 'Zeinova Scolipede', 'Zeinova Serperior', 'Zeinova Vanilluxe', 'Zeinova Volcarona', 'Zeinova Zoroark', 'Zigzagoon', 'Zoroark', 'Zorua']
+---
+

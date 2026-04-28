@@ -1,0 +1,57 @@
+{{ define "main" }}
+<section class="page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+
+  {{ $entries := .Pages }}
+  <div class="dex-controls">
+    <label class="dex-search">
+      <input type="search" id="dex-search" placeholder="Search by name…" autocomplete="off">
+    </label>
+    <div class="dex-sort" role="group" aria-label="Sort">
+      <button data-sort="dex-asc"  class="active">Dex# ↑</button>
+      <button data-sort="dex-desc">Dex# ↓</button>
+      <button data-sort="name-asc">A–Z</button>
+      <button data-sort="name-desc">Z–A</button>
+    </div>
+    <div class="dex-count"><span id="dex-visible">{{ len $entries }}</span> / {{ len $entries }}</div>
+  </div>
+
+  <ul id="dex-grid" class="dex-grid">
+    {{ range $entries }}
+    {{ $first := index .Params.forms 0 }}
+    {{ $sprite := "" }}
+    {{ with $first }}{{ with .sprite }}{{ $sprite = . }}{{ end }}{{ end }}
+    {{ $dex := .Params.dex_number | default "0" }}
+    {{ $dexNum := int $dex }}
+    {{ $name := lower .Title }}
+    {{ $formCount := 0 }}
+    {{ range .Params.forms }}{{ if eq (.kind | default "skin") "form" }}{{ $formCount = add $formCount 1 }}{{ end }}{{ end }}
+    {{ $extraForms := sub $formCount 1 }}
+    <li class="dex-card"
+        data-name="{{ $name }}"
+        data-dex="{{ $dexNum }}"
+        data-display="{{ .Title }}">
+      <a href="{{ .RelPermalink }}">
+        <div class="dex-card-sprite">
+          {{ if $sprite }}<img loading="lazy" src="{{ $sprite | relURL }}" alt="{{ .Title }}">{{ else }}<span>?</span>{{ end }}
+        </div>
+        <div class="dex-card-meta">
+          <span class="dex-card-num">#{{ $dex }}</span>
+          <span class="dex-card-name">{{ .Title }}</span>
+          {{ with $first }}{{ with .types }}
+          <span class="dex-card-types">
+            {{ range . }}<span class="type-{{ lower . }}">{{ . }}</span>{{ end }}
+          </span>
+          {{ end }}{{ end }}
+          {{ if gt $extraForms 0 }}<span class="dex-card-forms">+{{ $extraForms }} form{{ if gt $extraForms 1 }}s{{ end }}</span>{{ end }}
+        </div>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

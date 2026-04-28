@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="page skins-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+
+  {{ with .Params.skins }}
+  <nav class="form-tabs" role="tablist">
+    {{ range $i, $s := . }}
+    <button class="form-tab{{ if eq $i 0 }} active{{ end }}"
+            role="tab"
+            data-form-index="{{ $i }}"
+            aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+      {{ $s.label }} <span class="tab-count">{{ $s.count }}</span>
+    </button>
+    {{ end }}
+  </nav>
+
+  {{ range $i, $s := . }}
+  <section class="form-panel{{ if eq $i 0 }} active{{ end }}" data-form-index="{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
+    <h2>{{ $s.label }}</h2>
+    {{ with $s.description }}<p class="prose">{{ . }}</p>{{ end }}
+    <p class="meta">{{ $s.count }} Pokémon with this skin.</p>
+    <ul class="skin-grid">
+      {{ range $s.species }}
+      <li><a href="{{ printf "/pokedex/%s/" .slug | relURL }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+  {{ end }}
+</article>
+{{ end }}

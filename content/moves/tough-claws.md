@@ -1,0 +1,8 @@
+---
+title: 'Tough Claws'
+entry_kind: 'ability'
+date: 2026-04-27
+effect: 'Powers up moves that make direct contact.'
+learners_ability: ['Galarian Meowth', 'Haikou Salamence', 'Haikou Swellow', 'Kyoto Charizard', 'Zeinova Druddigon']
+---
+

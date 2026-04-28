@@ -1,0 +1,8 @@
+---
+title: 'Steadfast'
+entry_kind: 'ability'
+date: 2026-04-27
+effect: 'The Pokémon''s determination boosts the Speed stat each time the Pokémon flinches.'
+learners_ability: ['Galarian Farfetch''d', 'Gallade', 'Hitmontop', 'Lucario', 'Machamp', 'Machoke', 'Machop', 'Riolu', 'Scyther', 'Tyrogue']
+---
+

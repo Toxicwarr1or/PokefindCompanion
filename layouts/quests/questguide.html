@@ -1,0 +1,131 @@
+{{ define "main" }}
+<article class="page quest-guide">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p class="meta">
+      <a href="{{ printf "/quests/gen%d/" (int .Params.gen) | relURL }}">← Gen {{ .Params.gen }} quest log</a>
+      &nbsp;·&nbsp; <a href="{{ "/quests/" | relURL }}">All regions</a>
+    </p>
+    {{ with .Params.description }}<p class="quest-desc">{{ . }}</p>{{ end }}
+    <p class="meta">
+      {{ with .Params.author }}<strong>Author:</strong> {{ . }}{{ end }}
+    </p>
+  </header>
+
+  {{ with .Params.video_id }}
+  <section class="quest-video">
+    <h2>Video Guide</h2>
+    <div class="yt-embed">
+      <iframe src="https://www.youtube.com/embed/{{ . }}"
+              title="{{ $.Params.video_title | default $.Title }}"
+              loading="lazy" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+    </div>
+    <p class="meta"><a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener">{{ $.Params.video_title }} ↗</a></p>
+  </section>
+  {{ end }}
+
+  {{ with .Params.start }}
+  <section class="quest-start">
+    <h2>How to start</h2>
+    {{ with .description }}<p class="start-desc">{{ . }}</p>{{ end }}
+    <ul class="start-meta">
+      {{ with .npc }}<li><strong>NPC:</strong> {{ . }}</li>{{ end }}
+      {{ with .town }}<li><strong>Town:</strong> {{ . }}</li>{{ end }}
+      {{ if or .x .y .z }}<li><strong>Coordinates:</strong> <code>{{ printf "%.1f, %.1f, %.1f" .x .y .z }}</code></li>{{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{ with .Params.steps }}
+  <h2>Walkthrough</h2>
+  <ol class="walkthrough">
+    {{ range $i, $s := . }}
+    {{ with $s.act }}
+    <li class="act-divider">
+      <h3>Act {{ . }}</h3>
+      {{ with $s.act_video_id }}
+      <div class="yt-embed">
+        <iframe src="https://www.youtube.com/embed/{{ . }}"
+                title="{{ $s.act_video_title }}"
+                loading="lazy" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+      </div>
+      <p class="meta"><a href="https://youtu.be/{{ . }}" target="_blank" rel="noopener">{{ $s.act_video_title }} ↗</a></p>
+      {{ end }}
+    </li>
+    {{ end }}
+    <li class="walkthrough-step">
+      <p class="step-text">{{ $s.text }}</p>
+      {{ with $s.location }}
+      {{ if eq .kind "battle" }}
+      {{/* Battle steps render coords inside each battle card; skip pin here */}}
+      {{ else if eq .kind "region" }}
+      <p class="step-location step-region">
+        <span class="loc-pin">▭</span>
+        <strong>Region:</strong>
+        {{ with .bbox }}
+        <code>({{ printf "%.0f, %.0f, %.0f" .x1 .y1 .z1 }}) → ({{ printf "%.0f, %.0f, %.0f" .x2 .y2 .z2 }})</code>
+        {{ else }}
+        <code>~{{ printf "%.0f, %.0f, %.0f" .x .y .z }}</code>
+        {{ end }}
+        {{ with .town }}<span class="loc-town">in {{ . }}</span>{{ end }}
+      </p>
+      {{ else }}
+      <p class="step-location">
+        <span class="loc-pin">{{ if eq .kind "npc" }}🗨{{ else }}📍{{ end }}</span>
+        <code>{{ printf "%.1f, %.1f, %.1f" .x .y .z }}</code>
+        {{ with .town }}<span class="loc-town">in {{ . }}</span>{{ end }}
+        {{ with .label }}<span class="loc-label">— {{ . }}</span>{{ end }}
+      </p>
+      {{ end }}
+      {{ end }}
+      {{ with $s.battles }}
+      <div class="step-battles">
+        {{ range . }}
+        <div class="battle-card">
+          <h4 class="battle-trainer">⚔ vs {{ .trainer }}</h4>
+          {{ if or .x .y .z }}
+          <p class="battle-loc">
+            <span class="loc-pin">📍</span>
+            <code>{{ printf "%.1f, %.1f, %.1f" .x .y .z }}</code>
+            {{ with .town }}<span class="loc-town">in {{ . }}</span>{{ end }}
+          </p>
+          {{ end }}
+          {{ with .team }}
+          <ul class="battle-team">
+            {{ range . }}
+            <li>
+              <a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a>
+              {{ with .level }}<span class="lv">Lv {{ . }}</span>{{ end }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ with $s.rewards }}
+      <ul class="step-rewards">
+        <li class="rewards-label">Rewards on completion:</li>
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ol>
+  {{ end }}
+
+  {{ with .Params.final_rewards }}
+  <h2>Final Rewards</h2>
+  <ul class="final-rewards">
+    {{ range . }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  {{ end }}
+</article>
+{{ end }}

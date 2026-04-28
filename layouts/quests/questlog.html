@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="page quests-page">
+  <header class="page-header">
+    <h1>{{ .Title }} Quest Log</h1>
+    <p class="meta"><a href="{{ "/quests/" | relURL }}">← All regions</a></p>
+  </header>
+
+  {{ with .Params.quests }}
+  <p class="meta">{{ len . }} quest{{ if ne (len .) 1 }}s{{ end }}.</p>
+  {{ $genNum := $.Params.gen }}
+  <ul class="quest-list">
+    {{ range . }}
+    <li class="quest-entry">
+      <h3 class="quest-name"><a href="{{ printf "/quests/gen%d/%s/" (int $genNum) .slug | relURL }}">{{ .name }}</a></h3>
+      {{ with .description }}<p class="quest-desc">{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</article>
+{{ end }}

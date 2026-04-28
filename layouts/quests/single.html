@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article class="page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+    <p class="meta">
+      {{ with .Params.region }}<strong>Region:</strong> {{ . }} &nbsp;·&nbsp; {{ end }}
+      {{ with .Params.episode }}<strong>Episode:</strong> {{ . }} &nbsp;·&nbsp; {{ end }}
+      {{ with .Params.difficulty }}<strong>Difficulty:</strong> {{ . }} &nbsp;·&nbsp; {{ end }}
+      {{ with .Params.length }}<strong>Length:</strong> {{ . }}{{ end }}
+    </p>
+    {{ with .Date }}<p class="meta">Updated {{ .Format "Jan 2, 2006" }}</p>{{ end }}
+  </header>
+
+  {{ with .Params.video }}
+  <h2>Video Guide</h2>
+  {{ partial "youtube.html" . }}
+  {{ end }}
+
+  {{ with .Params.prerequisites }}
+  <div class="callout">
+    <strong>Prerequisites:</strong>
+    <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+  </div>
+  {{ end }}
+
+  {{ with .Params.rewards }}
+  <div class="callout">
+    <strong>Rewards:</strong>
+    <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+  </div>
+  {{ end }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

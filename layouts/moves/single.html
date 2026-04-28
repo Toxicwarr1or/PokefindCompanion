@@ -1,0 +1,92 @@
+{{ define "main" }}
+<article class="page move-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.entry_kind }}<p class="subtitle">{{ . | title }}</p>{{ end }}
+    {{ with .Date }}<p class="meta">Updated {{ .Format "Jan 2, 2006" }}</p>{{ end }}
+  </header>
+
+  <section class="move-meta">
+    <dl>
+      {{ with .Params.move_type }}<dt>Type</dt><dd><span class="type-{{ lower . }}">{{ . }}</span></dd>{{ end }}
+      {{ with .Params.category }}<dt>Category</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.power }}<dt>Power</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.accuracy }}<dt>Accuracy</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.pp }}<dt>PP</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.priority }}<dt>Priority</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.contact }}<dt>Contact</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.target }}<dt>Target</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.hits }}<dt>Hits</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.flinch_chance }}<dt>Flinch</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.crit_rate }}<dt>Crit Rate</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.drain }}<dt>Drain / Recoil</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.healing }}<dt>Self-Heal</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.sound_based }}<dt>Sound-based</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.generation }}<dt>Introduced</dt><dd>{{ . }}</dd>{{ end }}
+    </dl>
+  </section>
+
+  {{ with .Params.effect }}
+  <p class="move-effect">{{ . }}</p>
+  {{ end }}
+
+  {{ $isAbility := eq .Params.entry_kind "ability" }}
+
+  {{ if $isAbility }}
+    {{ with .Params.learners_ability }}
+    <section class="learners">
+      <h2>Pokemon with this ability <span class="learners-count">({{ len . }})</span></h2>
+      <ul class="learners-list">
+        {{ range . }}
+        <li><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" (replaceRE "^(Alolan|Galarian|Hisuian|Paldean|Kyoto|Jataro|Haikou|Shiloh|Zeinova) " "" .))) | relURL }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  {{ else }}
+    {{ with .Params.learners_level }}
+    <section class="learners">
+      <h2>Learns by Level-up <span class="learners-count">({{ len . }})</span></h2>
+      <ul class="learners-list learners-level">
+        {{ range . }}
+        <li><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" (replaceRE "^(Alolan|Galarian|Hisuian|Paldean|Kyoto|Jataro|Haikou|Shiloh|Zeinova) " "" .name))) | relURL }}">{{ .name }}</a> <span class="learners-level-num">Lv {{ .level }}</span></li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Params.learners_tm }}
+    <section class="learners">
+      <h2>Learns via TM/HM <span class="learners-count">({{ len . }})</span></h2>
+      <ul class="learners-list">
+        {{ range . }}
+        <li><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" (replaceRE "^(Alolan|Galarian|Hisuian|Paldean|Kyoto|Jataro|Haikou|Shiloh|Zeinova) " "" .))) | relURL }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Params.learners_tutor }}
+    <section class="learners">
+      <h2>Learns via Move Tutor <span class="learners-count">({{ len . }})</span></h2>
+      <ul class="learners-list">
+        {{ range . }}
+        <li><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" (replaceRE "^(Alolan|Galarian|Hisuian|Paldean|Kyoto|Jataro|Haikou|Shiloh|Zeinova) " "" .))) | relURL }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Params.learners_egg }}
+    <section class="learners">
+      <h2>Learns as Egg Move <span class="learners-count">({{ len . }})</span></h2>
+      <ul class="learners-list">
+        {{ range . }}
+        <li><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" (replaceRE "^(Alolan|Galarian|Hisuian|Paldean|Kyoto|Jataro|Haikou|Shiloh|Zeinova) " "" .))) | relURL }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  {{ end }}
+</article>
+{{ end }}
