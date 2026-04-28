@@ -150,6 +150,36 @@ function buildElementMesh(element, materialMap, textureWidth, textureHeight) {
   return mesh;
 }
 
+// Build a nested THREE.Group for a staged bone. Each bone records:
+//   - parent-relative origin (group position)
+//   - rotation [x,y,z] degrees, applied as Euler XYZ (matches Blockbench)
+//   - elements: cubes already translated into bone-local coords
+//   - children: sub-bones
+// Cube meshes get added directly so their per-element rotation pivot still
+// works; the bone group rotation then propagates through the whole subtree.
+function buildBoneGroup(bone, materialMap) {
+  const group = new THREE.Group();
+  if (bone.name) group.name = bone.name;
+  const o = bone.origin || [0, 0, 0];
+  group.position.set(o[0], o[1], o[2]);
+  const r = bone.rotation || [0, 0, 0];
+  if (r[0] || r[1] || r[2]) {
+    group.rotation.set(
+      THREE.MathUtils.degToRad(r[0]),
+      THREE.MathUtils.degToRad(r[1]),
+      THREE.MathUtils.degToRad(r[2]),
+    );
+  }
+  for (const el of bone.elements || []) {
+    const m = buildElementMesh(el, materialMap, 0, 0);
+    if (m) group.add(m);
+  }
+  for (const child of bone.children || []) {
+    group.add(buildBoneGroup(child, materialMap));
+  }
+  return group;
+}
+
 async function loadTexture(url) {
   const loader = new THREE.TextureLoader();
   return new Promise((resolve, reject) => {
@@ -207,9 +237,17 @@ async function buildModelGroup(modelUrl) {
   }
 
   const inner = new THREE.Group();
-  for (const el of model.elements || []) {
-    const m = buildElementMesh(el, materialMap, 0, 0);
-    if (m) inner.add(m);
+  // Animated species (Charizard, etc.) are staged with a `bones` tree —
+  // nested groups whose origins/rotations match the Blockbench rig — so the
+  // multi-axis rest-pose rotations on wings and arms render correctly. Plain
+  // pokedex models keep using the flat `elements` list.
+  if (Array.isArray(model.bones) && model.bones.length) {
+    for (const b of model.bones) inner.add(buildBoneGroup(b, materialMap));
+  } else {
+    for (const el of model.elements || []) {
+      const m = buildElementMesh(el, materialMap, 0, 0);
+      if (m) inner.add(m);
+    }
   }
 
   // Apply only the Y (yaw) and Z (roll) parts of `display.gui.rotation`.
