@@ -100,17 +100,28 @@
   {{ $availableSkins := slice }}
   {{ $skinLabels := dict }}
   {{ $skinUrls := dict }}
-  {{ if and $variant (or (eq $variant "regular") (eq $variant "female")) }}
+  {{/* The base (always-active) chip's label depends on the form: "Regular"
+        for the standard tab, "Anniversary" for region-form tabs, etc.
+        Overlay-shiny tabs (Female, Anniversary) only get the Shiny chip
+        — other cosmetic skins don't apply on those forms. */}}
+  {{ $baseLabel := "Regular" }}
+  {{ if eq $variant "anniversary" }}{{ $baseLabel = "Anniversary" }}{{ end }}
+  {{ if and $variant (or (eq $variant "regular") (eq $variant "female") (eq $variant "anniversary")) }}
     {{ range site.Data.cosmetic_skins }}
       {{ $skin := .key }}
       {{ $dir := $skin }}
+      {{ $label := .label }}
       {{ if and (eq $variant "female") (eq $skin "shiny") }}{{ $dir = "female_shiny" }}{{ end }}
+      {{ if and (eq $variant "anniversary") (eq $skin "shiny") }}
+        {{ $dir = "anniversary_shiny" }}
+        {{ $label = "Shiny Anniversary" }}
+      {{ end }}
       {{ $allowed := or (eq $variant "regular") (eq $skin "shiny") }}
       {{ $hasOwnFormTab := in $skinsClaimedByForms $skin }}
       {{ $path := printf "static/models-3d/%s/%s/%s.json" $dir $slug $slug }}
       {{ if and $allowed (not $hasOwnFormTab) (fileExists $path) }}
         {{ $availableSkins = $availableSkins | append $skin }}
-        {{ $skinLabels = merge $skinLabels (dict $skin .label) }}
+        {{ $skinLabels = merge $skinLabels (dict $skin $label) }}
         {{ $skinUrls = merge $skinUrls (dict $skin (printf "/models-3d/%s/%s/%s.json" $dir $slug $slug | relURL)) }}
       {{ end }}
     {{ end }}
@@ -165,7 +176,7 @@
         {{ if gt (len $availableSkins) 0 }}
         <dt>Available Skins</dt>
         <dd class="skins-inline" role="tablist" aria-label="Model skin">
-          <button type="button" class="mc-skin-btn skin-chip active" data-skin="regular" aria-selected="true">Regular</button>
+          <button type="button" class="mc-skin-btn skin-chip active" data-skin="regular" aria-selected="true">{{ $baseLabel }}</button>
           {{ range $availableSkins }}
             <button type="button" class="mc-skin-btn skin-chip" data-skin="{{ . }}" aria-selected="false">{{ index $skinLabels . }}</button>
           {{ end }}

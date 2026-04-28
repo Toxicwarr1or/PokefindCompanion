@@ -250,8 +250,17 @@ def main() -> int:
 
     summary: dict[str, int] = {"skipped_placeholder": 0, "skipped_no_page": 0}
 
-    for variant in ("regular",) + COSMETIC_SKINS + FORM_VARIANTS:
-        v_dir = MODELS_BASE / variant
+    # Each entry pairs the canonical *output-variant* name (used for
+    # routing, fixup logic, and `skin_variant=` arg into stage_static_model)
+    # with the *source path* under MODELS_BASE. They're usually equal, but
+    # `anniversary_shiny` lives nested at `anniversary/shiny/` in the pack
+    # while needing its own top-level output dir.
+    sources: list[tuple[str, str]] = (
+        [(v, v) for v in (("regular",) + COSMETIC_SKINS + FORM_VARIANTS)]
+        + [("anniversary_shiny", "anniversary/shiny")]
+    )
+    for variant, source_path in sources:
+        v_dir = MODELS_BASE / source_path
         if not v_dir.exists():
             continue
         for model_path in sorted(v_dir.glob("*.json")):
