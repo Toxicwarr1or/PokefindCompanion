@@ -1,7 +1,7 @@
 ---
 title: 'Electrode'
 subtitle: 'It stores electric energy under very high pressure. It often explodes with little or no provocation.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '101'
 skins: ['Shiny', 'Halloween', 'Easter']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Duosion'
 subtitle: 'Since they have two divided brains, at times they suddenly try to take two different actions at once.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '578'
 skins: []
 forms:

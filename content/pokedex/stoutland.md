@@ -1,7 +1,7 @@
 ---
 title: 'Stoutland'
 subtitle: 'It rescues people stranded by blizzards in the mountains. Its shaggy fur shields it from the cold.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '508'
 skins: ['Shiny', 'Halloween', 'Christmas']
 forms:

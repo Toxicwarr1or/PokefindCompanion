@@ -1,7 +1,7 @@
 ---
 title: 'Accelgor'
 subtitle: 'When its body dries out, it weakens. So, to prevent dehydration, it wraps itself in many layers of thin membrane.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '617'
 skins: ['Shiny', 'Aura']
 forms:

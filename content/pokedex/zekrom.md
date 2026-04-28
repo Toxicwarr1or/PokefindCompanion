@@ -1,7 +1,7 @@
 ---
 title: 'Zekrom'
 subtitle: 'Concealing itself in lightning clouds, it flies throughout the Unova region. It creates electricity in its tail.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '644'
 skins: ['Shiny', 'Halloween']
 forms:

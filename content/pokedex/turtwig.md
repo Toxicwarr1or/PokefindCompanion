@@ -1,7 +1,7 @@
 ---
 title: 'Turtwig'
 subtitle: 'Made from soil, the shell on its back hardens when it drinks water. It lives along lakes.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '387'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Aura']
 forms:

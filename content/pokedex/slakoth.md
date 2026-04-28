@@ -1,7 +1,7 @@
 ---
 title: 'Slakoth'
 subtitle: 'Slakoth lolls around for over twenty hours every day. Because it moves so little, it does not need much food. This Pokemon''s sole daily meal consists of just three leaves.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '287'
 skins: ['Shiny', 'Christmas']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Wailord'
 subtitle: 'Wailord is the largest of all identified Pokemon up to now. This giant Pokemon swims languorously in the vast open sea, eating massive amounts of food at once with its enormous mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '321'
 skins: ['Shiny', 'Halloween', 'Easter', 'Summer', 'Shadow', 'Aura']
 forms:

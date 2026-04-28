@@ -1,7 +1,7 @@
 ---
 title: 'Quagsire'
 subtitle: 'This carefree Pokemon has an easy-going nature. While swimming, it always bumps into boat hulls.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '195'
 skins: ['Shiny', 'Halloween', 'Thanksgiving', 'Aura', 'Modeler']
 forms:

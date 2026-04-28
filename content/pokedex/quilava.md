@@ -1,7 +1,7 @@
 ---
 title: 'Quilava'
 subtitle: 'Be careful if it turns its back during battle. It means that it will attack with the fire on its back.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '156'
 skins: ['Shiny', 'Aura']
 forms:

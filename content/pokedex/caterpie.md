@@ -1,7 +1,7 @@
 ---
 title: 'Caterpie'
 subtitle: 'Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '10'
 skins: ['Shiny']
 forms:

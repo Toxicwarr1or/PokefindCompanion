@@ -1,7 +1,7 @@
 ---
 title: 'Cranidos'
 subtitle: 'It lived in jungles around 100 million years ago. Its skull is as hard as iron.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '408'
 skins: ['Shiny']
 forms:

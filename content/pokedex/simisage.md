@@ -1,7 +1,7 @@
 ---
 title: 'Simisage'
 subtitle: 'Ill tempered, it fights by swinging its barbed tail around wildly. The leaf growing on its head is very bitter.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '512'
 skins: ['Shiny', 'Christmas']
 forms:

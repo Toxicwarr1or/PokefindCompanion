@@ -1,7 +1,7 @@
 ---
 title: 'Lickilicky'
 subtitle: 'It wraps things with its extensible tongue. Getting too close to it will leave you soaked with drool.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '463'
 skins: ['Shiny', 'Valentine']
 forms:

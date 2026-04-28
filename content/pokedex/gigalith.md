@@ -1,7 +1,7 @@
 ---
 title: 'Gigalith'
 subtitle: 'Compressing the energy from its internal core lets it fire off an attack capable of blowing away a mountain.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '526'
 skins: ['Shiny', 'Christmas', 'Aura', 'Modeler']
 forms:

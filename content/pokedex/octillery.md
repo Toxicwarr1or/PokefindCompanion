@@ -1,7 +1,7 @@
 ---
 title: 'Octillery'
 subtitle: 'It traps enemies with its suction- cupped tentacles then smashes them with its rock-hard head.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '224'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Scolipede'
 subtitle: 'With quick movements, it chases down its foes, attacking relentlessly with its horns until it prevails.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '545'
 skins: ['Shiny', 'Christmas', 'Aura']
 forms:

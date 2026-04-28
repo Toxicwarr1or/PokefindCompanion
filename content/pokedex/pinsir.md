@@ -1,7 +1,7 @@
 ---
 title: 'Pinsir'
 subtitle: 'If it fails to crush the victim in its pincers, it will swing it around and toss it hard.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '127'
 skins: ['Shiny']
 forms:

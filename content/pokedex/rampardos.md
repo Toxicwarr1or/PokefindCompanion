@@ -1,7 +1,7 @@
 ---
 title: 'Rampardos'
 subtitle: 'Its powerful head butt has enough power to shatter even the most durable things upon impact.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '409'
 skins: ['Shiny', 'Halloween', 'Aura', 'Modeler']
 forms:

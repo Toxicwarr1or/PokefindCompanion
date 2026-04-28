@@ -1,7 +1,7 @@
 ---
 title: 'Pidgeot'
 subtitle: 'When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '18'
 skins: ['Shiny', 'Halloween']
 forms:

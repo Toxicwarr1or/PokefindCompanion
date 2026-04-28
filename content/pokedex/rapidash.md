@@ -1,7 +1,7 @@
 ---
 title: 'Rapidash'
 subtitle: 'Very competitive, this Pokemon will chase anything that moves fast in the hopes of racing it.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '78'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow']
 forms:
@@ -389,7 +389,7 @@ forms:
     types: ['Psychic', 'Fairy']
     abilities: ['Run Away', 'Pastel Veil']
     hidden_ability: 'Anticipation'
-    sprite: ''
+    sprite: 'images/pokedex/rapidash-galarian.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 1.7

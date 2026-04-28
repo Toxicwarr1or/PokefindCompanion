@@ -1,7 +1,7 @@
 ---
 title: 'Darkrai'
 subtitle: 'It can lull people to sleep and make them dream. It is active during nights of the new moon.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '491'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine']
 forms:

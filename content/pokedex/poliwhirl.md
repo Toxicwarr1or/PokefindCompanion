@@ -1,7 +1,7 @@
 ---
 title: 'Poliwhirl'
 subtitle: 'Capable of living in or out of water. When out of water, it sweats to keep its body slimy.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '61'
 skins: ['Shiny', 'Christmas', 'Cosmic']
 forms:

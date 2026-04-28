@@ -1,7 +1,7 @@
 ---
 title: 'Chimecho'
 subtitle: 'Chimecho makes its cries echo inside its hollow body. When this Pokemon becomes enraged, its cries result in ultrasonic waves that have the power to knock foes flying.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '358'
 skins: ['Shiny', 'Christmas', 'Easter']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Skarmory'
 subtitle: 'Its sturdy wings look heavy, but they are actually hollow and light, allowing it to fly freely in the sky.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '227'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Aura', 'Fusemon']
 forms:

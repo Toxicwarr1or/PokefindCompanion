@@ -1,7 +1,7 @@
 ---
 title: 'Granbull'
 subtitle: 'It is actually timid and easily spooked. If attacked, it flails about to fend off its attacker.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '210'
 skins: ['Shiny', 'Easter']
 forms:

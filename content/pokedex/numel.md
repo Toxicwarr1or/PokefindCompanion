@@ -1,7 +1,7 @@
 ---
 title: 'Numel'
 subtitle: 'Numel is extremely dull witted - it doesn''t notice being hit. However, it can''t stand hunger for even a second. This Pokemon''s body is a seething cauldron of boiling magma.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '322'
 skins: ['Shiny']
 forms:

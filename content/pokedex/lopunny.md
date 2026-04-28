@@ -1,7 +1,7 @@
 ---
 title: 'Lopunny'
 subtitle: 'An extremely cautious Pokemon. It cloaks its body with its fluffy ear fur when it senses danger.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '428'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine']
 forms:

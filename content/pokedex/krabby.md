@@ -1,7 +1,7 @@
 ---
 title: 'Krabby'
 subtitle: 'Its pincers are not only powerful weapons, they are used for balance when walking sideways.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '98'
 skins: ['Shiny']
 forms:

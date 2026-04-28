@@ -1,7 +1,7 @@
 ---
 title: 'Trubbish'
 subtitle: 'Inhaling the gas they belch will make you sleep for a week. They prefer unsanitary places.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '568'
 skins: ['Shiny', 'Halloween', 'Thanksgiving']
 forms:

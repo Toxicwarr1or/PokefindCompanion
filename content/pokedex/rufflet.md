@@ -1,7 +1,7 @@
 ---
 title: 'Rufflet'
 subtitle: 'They crush berries with their talons. They bravely stand up to any opponent, no matter how strong it is.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '627'
 skins: ['Shiny', 'Summer']
 forms:

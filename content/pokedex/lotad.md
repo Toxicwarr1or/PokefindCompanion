@@ -1,7 +1,7 @@
 ---
 title: 'Lotad'
 subtitle: 'Lotad live in ponds and lakes, where they float on the surface. It grows weak if its broad leaf dies. On rare occasions, this Pokemon travels on land in search of clean water.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '270'
 skins: ['Shiny', 'Valentine']
 forms:

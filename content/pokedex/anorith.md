@@ -1,7 +1,7 @@
 ---
 title: 'Anorith'
 subtitle: 'Anorith was regenerated from a prehistoric fossil. This primitive Pokemon once lived in warm seas. It grips its prey firmly between its two large claws.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '347'
 skins: ['Shiny']
 forms:

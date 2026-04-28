@@ -1,7 +1,7 @@
 ---
 title: 'Muk'
 subtitle: 'Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '89'
 skins: ['Shiny', 'Halloween', 'Monochrome']
 forms:
@@ -510,7 +510,7 @@ forms:
     types: ['Poison', 'Dark']
     abilities: ['Poison Touch', 'Gluttony']
     hidden_ability: 'Power of Alchemy'
-    sprite: ''
+    sprite: 'images/pokedex/muk-alolan.png'
     egg_groups: ['amorphous']
     growth_rate: 'medium_fast'
     height_m: 1.2

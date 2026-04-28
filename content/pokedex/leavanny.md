@@ -1,7 +1,7 @@
 ---
 title: 'Leavanny'
 subtitle: 'Upon finding a small Pokemon, it weaves clothing for it from leaves, using the cutters on its arms and sticky silk.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '542'
 skins: ['Shiny', 'Valentine', 'Thanksgiving']
 forms:

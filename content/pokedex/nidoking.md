@@ -1,7 +1,7 @@
 ---
 title: 'Nidoking'
 subtitle: 'It uses its powerful tail in battle to smash, constrict, then break the prey''s bones.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '34'
 skins: ['Shiny', 'Easter', 'Summer', 'Shadow', 'Aura']
 forms:

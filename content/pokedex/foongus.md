@@ -1,7 +1,7 @@
 ---
 title: 'Foongus'
 subtitle: 'It lures people in with its PokÃ© Ball pattern, then releases poison spores. Why it resembles a PokÃ© Ball is unknown.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '590'
 skins: ['Shiny']
 forms:

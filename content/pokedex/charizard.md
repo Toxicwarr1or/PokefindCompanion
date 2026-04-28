@@ -1,7 +1,7 @@
 ---
 title: 'Charizard'
 subtitle: 'Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '6'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Lunar New Year', 'Shadow', 'Aura']
 forms:

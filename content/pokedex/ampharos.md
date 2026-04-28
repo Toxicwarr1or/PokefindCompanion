@@ -1,7 +1,7 @@
 ---
 title: 'Ampharos'
 subtitle: 'The tail''s tip shines brightly and can be seen from far away. It acts as a beacon for lost people.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '181'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

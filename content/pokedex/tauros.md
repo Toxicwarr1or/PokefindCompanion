@@ -1,7 +1,7 @@
 ---
 title: 'Tauros'
 subtitle: 'When it targets an enemy, it charges furiously while whipping its body with its long tails.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '128'
 skins: ['Shiny', 'Christmas', 'Easter']
 forms:

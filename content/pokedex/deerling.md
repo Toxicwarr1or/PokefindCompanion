@@ -1,7 +1,7 @@
 ---
 title: 'Deerling'
 subtitle: 'The color and scent of their fur changes to match the mountain grass. When they sense hostility, they hide in the grass.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '585'
 skins: ['Shiny']
 forms:

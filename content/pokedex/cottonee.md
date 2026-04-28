@@ -1,7 +1,7 @@
 ---
 title: 'Cottonee'
 subtitle: 'When attacked, it escapes by shooting cotton from its body. The cotton serves as a decoy to distract the attacker.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '546'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

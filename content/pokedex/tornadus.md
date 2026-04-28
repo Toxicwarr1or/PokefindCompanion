@@ -1,7 +1,7 @@
 ---
 title: 'Tornadus'
 subtitle: 'The lower half of its body is wrapped in a cloud of energy. It zooms through the sky at 200 mph.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '641'
 skins: ['Shiny', 'Christmas']
 forms:

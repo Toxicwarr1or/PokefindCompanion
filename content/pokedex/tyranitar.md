@@ -1,7 +1,7 @@
 ---
 title: 'Tyranitar'
 subtitle: 'Its body can''t be harmed by any sort of attack, so it is very eager to make challenges against enemies.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '248'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Monochrome']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Stantler'
 subtitle: 'The curved antlers subtly change the flow of air to create a strange space where reality is distorted.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '234'
 skins: ['Shiny', 'Christmas']
 forms:

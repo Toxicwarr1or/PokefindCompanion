@@ -1,7 +1,7 @@
 ---
 title: 'Growlithe'
 subtitle: 'Very protective of its territory. It will bark and bite to repel intruders from its space.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '58'
 skins: ['Shiny', 'Easter']
 forms:

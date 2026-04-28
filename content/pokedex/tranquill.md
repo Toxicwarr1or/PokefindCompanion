@@ -1,7 +1,7 @@
 ---
 title: 'Tranquill'
 subtitle: 'It can return to its Trainer''s location regardless of the distance separating them.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '520'
 skins: ['Shiny']
 forms:

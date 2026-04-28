@@ -1,7 +1,7 @@
 ---
 title: 'Golduck'
 subtitle: 'Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '55'
 skins: ['Shiny']
 forms:

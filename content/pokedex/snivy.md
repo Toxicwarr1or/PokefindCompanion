@@ -1,7 +1,7 @@
 ---
 title: 'Snivy'
 subtitle: 'It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '495'
 skins: ['Shiny', 'Easter', 'Valentine', 'Aura']
 forms:

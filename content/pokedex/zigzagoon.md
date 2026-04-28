@@ -1,7 +1,7 @@
 ---
 title: 'Zigzagoon'
 subtitle: 'Zigzagoon restlessly wanders everywhere at all times. This Pokemon does so because it is very curious. It becomes interested in anything that it happens to see.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '263'
 skins: ['Shiny']
 forms:
@@ -496,7 +496,7 @@ forms:
     types: ['Dark', 'Normal']
     abilities: ['Pickup', 'Gluttony']
     hidden_ability: 'Quick Feet'
-    sprite: ''
+    sprite: 'images/pokedex/zigzagoon-galarian.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.4

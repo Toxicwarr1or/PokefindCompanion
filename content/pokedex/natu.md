@@ -1,7 +1,7 @@
 ---
 title: 'Natu'
 subtitle: 'Because its wings aren''t yet fully grown, it has to hop to get around. It is always staring at something.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '177'
 skins: ['Shiny']
 forms:

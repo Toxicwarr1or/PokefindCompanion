@@ -1,7 +1,7 @@
 ---
 title: 'Drowzee'
 subtitle: 'Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '96'
 skins: ['Shiny']
 forms:

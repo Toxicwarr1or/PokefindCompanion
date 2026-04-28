@@ -1,7 +1,7 @@
 ---
 title: 'Mismagius'
 subtitle: 'Its cries sound like incantations. Those hearing it are tormented by headaches and hallucinations.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '429'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Shadow']
 forms:

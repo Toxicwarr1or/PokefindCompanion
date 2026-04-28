@@ -1,7 +1,7 @@
 ---
 title: 'Leafeon'
 subtitle: 'Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '470'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura']
 forms:

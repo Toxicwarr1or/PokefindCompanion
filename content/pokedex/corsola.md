@@ -1,7 +1,7 @@
 ---
 title: 'Corsola'
 subtitle: 'It continuously sheds and grows. The tip of its head is prized as a treasure for its beauty.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '222'
 skins: ['Shiny', 'Halloween', 'Thanksgiving', 'Summer']
 forms:
@@ -561,7 +561,7 @@ forms:
     types: ['Ghost']
     abilities: ['Weak Armor']
     hidden_ability: 'Cursed Body'
-    sprite: ''
+    sprite: 'images/pokedex/corsola-galarian.png'
     egg_groups: ['water 3', 'water 1']
     growth_rate: 'fast'
     height_m: 0.6

@@ -1,7 +1,7 @@
 ---
 title: 'Herdier'
 subtitle: 'It has black, cape-like fur that is very hard and decreases the amount of damage it receives.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '507'
 skins: ['Shiny', 'Christmas']
 forms:

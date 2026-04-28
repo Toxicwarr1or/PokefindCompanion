@@ -1,7 +1,7 @@
 ---
 title: 'Mawile'
 subtitle: 'MAWHILE''s huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, MAWHILE chomps it with its gaping jaws.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '303'
 skins: ['Shiny', 'Valentine']
 forms:

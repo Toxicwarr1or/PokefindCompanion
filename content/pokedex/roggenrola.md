@@ -1,7 +1,7 @@
 ---
 title: 'Roggenrola'
 subtitle: 'Its ear is hexagonal in shape. Compressed underground, its body is as hard as steel.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '524'
 skins: ['Shiny']
 forms:

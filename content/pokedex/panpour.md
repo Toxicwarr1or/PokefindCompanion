@@ -1,7 +1,7 @@
 ---
 title: 'Panpour'
 subtitle: 'The water stored inside the tuft on its head is full of nutrients. Plants that receive its water grow large.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '515'
 skins: ['Shiny']
 forms:

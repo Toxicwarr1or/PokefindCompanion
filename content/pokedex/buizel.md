@@ -1,7 +1,7 @@
 ---
 title: 'Buizel'
 subtitle: 'It has a flotation sac that is like an inflatable collar. It floats on water with its head out.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '418'
 skins: ['Shiny']
 forms:

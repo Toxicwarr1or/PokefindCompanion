@@ -1,7 +1,7 @@
 ---
 title: 'Skuntank'
 subtitle: 'It sprays a vile-smelling fluid from the tip of its tail to attack. Its range is over 160 feet.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '435'
 skins: ['Shiny']
 forms:

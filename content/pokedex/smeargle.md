@@ -1,7 +1,7 @@
 ---
 title: 'Smeargle'
 subtitle: 'A special fluid oozes from the tip of its tail. It paints the fluid everywhere to mark its territory.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '235'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine']
 forms:

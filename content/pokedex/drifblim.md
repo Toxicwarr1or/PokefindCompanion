@@ -1,7 +1,7 @@
 ---
 title: 'Drifblim'
 subtitle: 'It''s drowzy in daytime, but flies off in the evening in big groups. No one knows where they go.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '426'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter']
 forms:

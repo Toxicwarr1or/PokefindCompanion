@@ -1,7 +1,7 @@
 ---
 title: 'Ledian'
 subtitle: 'When the stars flicker in the night sky, it flutters about, scattering a glowing powder.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '166'
 skins: ['Shiny', 'Valentine']
 forms:

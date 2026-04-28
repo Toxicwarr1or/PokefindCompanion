@@ -1,7 +1,7 @@
 ---
 title: 'Gallade'
 subtitle: 'A master of courtesy and swordsmanship, it fights using extending swords on its elbows.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '475'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Thanksgiving', 'Aura']
 forms:

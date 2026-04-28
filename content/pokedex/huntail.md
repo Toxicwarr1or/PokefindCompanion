@@ -1,7 +1,7 @@
 ---
 title: 'Huntail'
 subtitle: 'Huntail''s presence went unnoticed by people for a long time because it lives at extreme depths in the sea. This Pokemon''s eyes can see clearly even in the murky dark depths of the ocean.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '367'
 skins: ['Shiny']
 forms:

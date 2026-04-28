@@ -1,7 +1,7 @@
 ---
 title: 'Bibarel'
 subtitle: 'It makes its nest by damming streams with bark and mud. It is known as an industrious worker.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '400'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Shadow']
 forms:

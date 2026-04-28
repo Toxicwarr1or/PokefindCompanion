@@ -1,7 +1,7 @@
 ---
 title: 'Magikarp'
 subtitle: 'In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '129'
 skins: ['Shiny', 'Easter']
 forms:

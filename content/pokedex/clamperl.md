@@ -1,7 +1,7 @@
 ---
 title: 'Clamperl'
 subtitle: 'Clamperl''s sturdy shell is not only good for protection - it is also used for clamping and catching prey. A fully grown Clamperl''s shell will be scored with nicks and scratches all over.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '366'
 skins: ['Shiny']
 forms:

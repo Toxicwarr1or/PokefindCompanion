@@ -1,7 +1,7 @@
 ---
 title: 'Dewott'
 subtitle: 'Strict training is how it learns its flowing double-scalchop technique.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '502'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

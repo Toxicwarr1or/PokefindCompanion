@@ -1,7 +1,7 @@
 ---
 title: 'Metapod'
 subtitle: 'This Pokemon is vulnerable to attack while its shell is soft, exposing its weak and tender body.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '11'
 skins: ['Shiny']
 forms:

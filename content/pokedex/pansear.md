@@ -1,7 +1,7 @@
 ---
 title: 'Pansear'
 subtitle: 'When it is angered, the temperature of its head tuft reaches 600° F. It uses its tuft to roast berries.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '513'
 skins: ['Shiny']
 forms:

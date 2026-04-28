@@ -1,7 +1,7 @@
 ---
 title: 'Carracosta'
 subtitle: 'They can live both in the ocean and on land. A slap from one of them is enough to open a hole in the bottom of a tanker.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '565'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Summer']
 forms:

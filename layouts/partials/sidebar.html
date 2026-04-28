@@ -1,4 +1,15 @@
 {{ $section := .Section }}
+{{- /* Home page (no section): render the same items as the top nav, in menu order */ -}}
+{{ if .IsHome }}
+<nav class="section-nav" aria-label="Section">
+  <h4>{{ .Title }}</h4>
+  <ul>
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</nav>
+{{ else }}
 {{ with .Site.GetPage (printf "/%s" $section) }}
 {{ $pages := .Pages.ByTitle }}
 {{ $isLong := gt (len $pages) 30 }}
@@ -53,5 +64,6 @@
     {{ end }}
   </ul>
 </nav>
+{{ end }}
 {{ end }}
 {{ end }}

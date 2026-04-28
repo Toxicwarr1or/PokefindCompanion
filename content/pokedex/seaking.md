@@ -1,7 +1,7 @@
 ---
 title: 'Seaking'
 subtitle: 'In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '119'
 skins: ['Shiny']
 forms:

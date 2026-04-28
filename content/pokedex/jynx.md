@@ -1,7 +1,7 @@
 ---
 title: 'Jynx'
 subtitle: 'It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '124'
 skins: ['Shiny', 'Monochrome']
 forms:

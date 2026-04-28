@@ -1,7 +1,7 @@
 ---
 title: 'Swalot'
 subtitle: 'When Swalot spots prey, it spurts out a hideously toxic fluid from its pores and sprays the target. Once the prey has weakened, this Pokemon gulps it down whole with its cavernous mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '317'
 skins: ['Shiny', 'Shadow']
 forms:

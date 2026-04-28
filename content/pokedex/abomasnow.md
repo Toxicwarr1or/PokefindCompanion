@@ -1,7 +1,7 @@
 ---
 title: 'Abomasnow'
 subtitle: 'It whips up blizzards in mountains that are always buried in snow. It is the abominable snowman.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '460'
 skins: ['Shiny', 'Halloween', 'Aura']
 forms:

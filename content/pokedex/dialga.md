@@ -1,7 +1,7 @@
 ---
 title: 'Dialga'
 subtitle: 'It has the power to control time. It appears in Sinnoh-region myths as an ancient deity.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '483'
 skins: ['Shiny', 'Halloween', 'Thanksgiving', 'Cosmic', 'Fusemon']
 forms:

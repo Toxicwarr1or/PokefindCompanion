@@ -1,7 +1,7 @@
 ---
 title: 'Maractus'
 subtitle: 'It uses an up-tempo song and dance to drive away the bird Pokemon that prey on its flower seeds.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '556'
 skins: ['Shiny', 'Summer']
 forms:

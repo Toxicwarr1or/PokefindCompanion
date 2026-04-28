@@ -1,7 +1,7 @@
 ---
 title: 'Shuckle'
 subtitle: 'The BERRIES it stores in its vase-like shell decompose and become a gooey liquid.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '213'
 skins: ['Shiny', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Aura']
 forms:

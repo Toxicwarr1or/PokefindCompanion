@@ -1,7 +1,7 @@
 ---
 title: 'Baltoy'
 subtitle: 'Baltoy moves while spinning around on its one foot. Primitive wall paintings depicting this Pokemon living among people were discovered in some ancient ruins.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '343'
 skins: ['Shiny']
 forms:

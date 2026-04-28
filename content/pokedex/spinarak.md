@@ -1,7 +1,7 @@
 ---
 title: 'Spinarak'
 subtitle: 'It lies still in the same pose for days in its web, waiting for its unsuspecting prey to wander close.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '167'
 skins: ['Shiny']
 forms:

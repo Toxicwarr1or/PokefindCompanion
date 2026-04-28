@@ -1,7 +1,7 @@
 ---
 title: 'Chingling'
 subtitle: 'It emits cries by agitating an orb at the back of its throat. It moves with flouncing hops.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '433'
 skins: ['Shiny']
 forms:

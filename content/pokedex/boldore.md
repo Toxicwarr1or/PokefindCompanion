@@ -1,7 +1,7 @@
 ---
 title: 'Boldore'
 subtitle: 'When it overflows with power, the orange crystal on its body glows. It looks for underground water in caves.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '525'
 skins: ['Shiny']
 forms:

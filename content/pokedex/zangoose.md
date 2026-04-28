@@ -1,7 +1,7 @@
 ---
 title: 'Zangoose'
 subtitle: 'Memories of battling its arch-rival Seviper are etched into every cell of Zangoose''s body. This Pokemon adroitly dodges attacks with incredible agility.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '335'
 skins: ['Shiny', 'Shadow']
 forms:

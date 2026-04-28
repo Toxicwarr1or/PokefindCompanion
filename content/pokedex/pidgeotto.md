@@ -1,7 +1,7 @@
 ---
 title: 'Pidgeotto'
 subtitle: 'Very protective of its sprawling territorial area, this Pokemon will fiercely peck at any intruder.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '17'
 skins: ['Shiny']
 forms:

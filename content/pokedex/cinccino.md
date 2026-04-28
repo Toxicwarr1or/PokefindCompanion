@@ -1,7 +1,7 @@
 ---
 title: 'Cinccino'
 subtitle: 'Their white fur is coated in a special oil that makes it easy for them to deflect attacks.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '573'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

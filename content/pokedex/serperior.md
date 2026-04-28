@@ -1,7 +1,7 @@
 ---
 title: 'Serperior'
 subtitle: 'It can stop its opponents'' movements with just a glare. It takes in solar energy and boosts it internally.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '497'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine', 'Aura']
 forms:

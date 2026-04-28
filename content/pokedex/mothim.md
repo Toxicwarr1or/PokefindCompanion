@@ -1,7 +1,7 @@
 ---
 title: 'Mothim'
 subtitle: 'It loves the honey of flowers and steals honey collected by Combee.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '414'
 skins: ['Shiny', 'Christmas', 'Valentine']
 forms:

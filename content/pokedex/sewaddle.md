@@ -1,7 +1,7 @@
 ---
 title: 'Sewaddle'
 subtitle: 'Leavanny dress it in clothes they made for it when it hatched. It hides its head in its hood while it is sleeping.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '540'
 skins: ['Shiny', 'Valentine']
 forms:

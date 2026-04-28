@@ -1,7 +1,7 @@
 ---
 title: 'Zebstrika'
 subtitle: 'They have lightning-like movements. When Zebstrika run at full speed, the sound of thunder reverberates.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '523'
 skins: ['Shiny', 'Christmas', 'Aura']
 forms:

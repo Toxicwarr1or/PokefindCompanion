@@ -1,7 +1,7 @@
 ---
 title: 'Pidgey'
 subtitle: 'A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '16'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Lanturn'
 subtitle: 'The light it emits is so bright that it can illuminate the sea''s surface from a depth of over three miles.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '171'
 skins: ['Shiny', 'Valentine']
 forms:

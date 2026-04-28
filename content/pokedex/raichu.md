@@ -1,7 +1,7 @@
 ---
 title: 'Raichu'
 subtitle: 'Its long tail serves as a ground to protect itself from its own high voltage power.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '26'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Meme', 'Monochrome']
 forms:
@@ -460,7 +460,7 @@ forms:
     types: ['Electric', 'Psychic']
     abilities: ['Surge Surfer']
     hidden_ability: 'Lightning Rod'
-    sprite: ''
+    sprite: 'images/pokedex/raichu-alolan.png'
     egg_groups: ['fairy', 'field']
     growth_rate: 'medium_fast'
     height_m: 0.8

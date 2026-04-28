@@ -1,7 +1,7 @@
 ---
 title: 'Carnivine'
 subtitle: 'It attracts prey with its sweet- smelling saliva, then chomps down. It takes a whole day to eat prey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '455'
 skins: ['Shiny']
 forms:

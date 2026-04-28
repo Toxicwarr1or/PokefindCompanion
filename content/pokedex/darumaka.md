@@ -1,7 +1,7 @@
 ---
 title: 'Darumaka'
 subtitle: 'When its internal fire is burning, it cannot calm down and it runs around. When the fire diminishes, it falls asleep.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '554'
 skins: ['Shiny', 'Easter']
 forms:
@@ -494,7 +494,7 @@ forms:
     types: ['Ice']
     abilities: ['Hustle']
     hidden_ability: 'Inner Focus'
-    sprite: ''
+    sprite: 'images/pokedex/darumaka-galarian.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 0.7

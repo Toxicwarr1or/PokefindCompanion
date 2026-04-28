@@ -1,7 +1,7 @@
 ---
 title: 'Rotom'
 subtitle: 'Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '479'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Gamer', 'Meme']
 forms:

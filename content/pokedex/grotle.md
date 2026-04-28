@@ -1,7 +1,7 @@
 ---
 title: 'Grotle'
 subtitle: 'It lives along water in forests. In the daytime, it leaves the forest to sunbathe its treed shell.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '388'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Aura']
 forms:

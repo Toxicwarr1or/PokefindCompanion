@@ -1,7 +1,7 @@
 ---
 title: 'Frillish'
 subtitle: 'With its thin, veil-like arms wrapped around the body of its opponent, it sinks to the ocean floor.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '592'
 skins: ['Shiny', 'Easter']
 forms:

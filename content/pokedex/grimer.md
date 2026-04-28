@@ -1,7 +1,7 @@
 ---
 title: 'Grimer'
 subtitle: 'Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '88'
 skins: ['Shiny']
 forms:
@@ -514,7 +514,7 @@ forms:
     types: ['Poison', 'Dark']
     abilities: ['Poison Touch', 'Gluttony']
     hidden_ability: 'Power of Alchemy'
-    sprite: ''
+    sprite: 'images/pokedex/grimer-alolan.png'
     egg_groups: ['amorphous']
     growth_rate: 'medium_fast'
     height_m: 0.9

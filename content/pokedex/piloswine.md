@@ -1,7 +1,7 @@
 ---
 title: 'Piloswine'
 subtitle: 'Because the long hair all over its body obscures its sight, it just keeps charging repeatedly.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '221'
 skins: ['Shiny', 'Christmas']
 forms:

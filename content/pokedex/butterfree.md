@@ -1,7 +1,7 @@
 ---
 title: 'Butterfree'
 subtitle: 'In battle, it flaps its wings at high speed to release highly toxic dust into the air.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '12'
 skins: ['Shiny', 'Christmas', 'Easter', 'Thanksgiving']
 forms:

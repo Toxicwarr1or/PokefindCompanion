@@ -1,7 +1,7 @@
 ---
 title: 'Nidoqueen'
 subtitle: 'Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '31'
 skins: ['Shiny', 'Summer', 'Shadow', 'Aura']
 forms:

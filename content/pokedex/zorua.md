@@ -1,7 +1,7 @@
 ---
 title: 'Zorua'
 subtitle: 'It changes into the forms of others to surprise them. Apparently, it often transforms into a silent child.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '570'
 skins: ['Shiny', 'Valentine', 'Thanksgiving']
 forms:

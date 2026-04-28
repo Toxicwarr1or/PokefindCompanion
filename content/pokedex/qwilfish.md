@@ -1,7 +1,7 @@
 ---
 title: 'Qwilfish'
 subtitle: 'To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water all at once.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '211'
 skins: ['Shiny', 'Christmas', 'Easter']
 forms:

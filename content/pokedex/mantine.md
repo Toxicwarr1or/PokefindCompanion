@@ -1,7 +1,7 @@
 ---
 title: 'Mantine'
 subtitle: 'As it majestically swims, it doesn''t care if Remoraid attach to it for scavenging its leftovers.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '226'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

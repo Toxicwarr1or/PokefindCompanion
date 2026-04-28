@@ -1,7 +1,7 @@
 ---
 title: 'Scizor'
 subtitle: 'It swings its eye- patterned pincers up to scare its foes. This makes it look like it has three heads.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '212'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Mecha', 'Cosmic', 'Marvel']
 forms:

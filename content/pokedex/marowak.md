@@ -1,7 +1,7 @@
 ---
 title: 'Marowak'
 subtitle: 'The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '105'
 skins: ['Shiny', 'Christmas', 'Shadow']
 forms:
@@ -512,7 +512,7 @@ forms:
     types: ['Fire', 'Ghost']
     abilities: ['Cursed Body', 'Lightning Rod']
     hidden_ability: 'Rock Head'
-    sprite: ''
+    sprite: 'images/pokedex/marowak-alolan.png'
     egg_groups: ['monster']
     growth_rate: 'medium_fast'
     height_m: 1

@@ -1,7 +1,7 @@
 ---
 title: 'Meloetta'
 subtitle: 'Its melodies are sung with a special vocalization method that can control the feelings of those who hear it.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '648'
 skins: ['Shiny', 'Summer']
 forms:

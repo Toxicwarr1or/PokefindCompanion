@@ -1,7 +1,7 @@
 ---
 title: 'Cleffa'
 subtitle: 'Because of its unusual, star-like silhouette, people believe that it came here on a meteor.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '173'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Wigglytuff'
 subtitle: 'The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '40'
 skins: ['Shiny']
 forms:

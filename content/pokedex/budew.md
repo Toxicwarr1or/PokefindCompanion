@@ -1,7 +1,7 @@
 ---
 title: 'Budew'
 subtitle: 'Over the winter, it closes its bud and endures the cold. In spring, the bud opens and releases pollen.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '406'
 skins: ['Shiny', 'Shadow']
 forms:

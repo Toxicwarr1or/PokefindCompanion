@@ -1,7 +1,7 @@
 ---
 title: 'Nidorino'
 subtitle: 'An aggressive Pokemon that is quick to attack. The horn on its head secretes a powerful venom.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '33'
 skins: ['Shiny']
 forms:

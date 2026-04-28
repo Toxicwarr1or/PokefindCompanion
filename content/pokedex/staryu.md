@@ -1,7 +1,7 @@
 ---
 title: 'Staryu'
 subtitle: 'An enigmatic Pokemon that can effortlessly regenerate any appendage it loses in battle.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '120'
 skins: ['Shiny']
 forms:

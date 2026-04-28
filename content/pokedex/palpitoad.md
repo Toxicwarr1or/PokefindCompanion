@@ -1,7 +1,7 @@
 ---
 title: 'Palpitoad'
 subtitle: 'When they vibrate the bumps on their heads, they can make waves in water or earthquake-like vibrations on land.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '536'
 skins: ['Shiny']
 forms:

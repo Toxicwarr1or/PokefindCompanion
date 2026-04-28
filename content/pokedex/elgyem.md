@@ -1,7 +1,7 @@
 ---
 title: 'Elgyem'
 subtitle: 'It uses its strong psychic power to squeeze its opponent''s brain, causing unendurable headaches.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '605'
 skins: ['Shiny']
 forms:

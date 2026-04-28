@@ -1,7 +1,7 @@
 ---
 title: 'Bouffalant'
 subtitle: 'Their fluffy fur absorbs damage, even if they strike foes with a fierce headbutt.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '626'
 skins: ['Shiny', 'Easter']
 forms:

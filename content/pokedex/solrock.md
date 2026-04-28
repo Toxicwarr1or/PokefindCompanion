@@ -1,7 +1,7 @@
 ---
 title: 'Solrock'
 subtitle: 'Solrock is a new species of Pokemon that is said to have fallen from space. It floats in air and moves silently. In battle, this Pokemon releases intensely bright light.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '338'
 skins: ['Shiny', 'Cosmic']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Croconaw'
 subtitle: 'If it loses a fang, a new one grows back in its place. There are always 48 fangs lining its mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '159'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

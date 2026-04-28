@@ -1,7 +1,7 @@
 ---
 title: 'Timburr'
 subtitle: 'It fights by swinging a piece of lumber around. It is close to evolving when it can handle the lumber without difficulty.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '532'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Reuniclus'
 subtitle: 'When Reuniclus shake hands, a network forms between their brains, increasing their psychic power.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '579'
 skins: ['Shiny', 'Halloween', 'Easter', 'Cosmic']
 forms:

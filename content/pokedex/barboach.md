@@ -1,7 +1,7 @@
 ---
 title: 'Barboach'
 subtitle: 'Barboach''s sensitive whiskers serve as a superb radar system. This Pokemon hides in mud, leaving only its two whiskers exposed while it waits for prey to come along.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '339'
 skins: ['Shiny']
 forms:

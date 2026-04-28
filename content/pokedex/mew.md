@@ -1,7 +1,7 @@
 ---
 title: 'Mew'
 subtitle: 'So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '151'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Aura', 'Gamer', 'Monochrome']
 forms:

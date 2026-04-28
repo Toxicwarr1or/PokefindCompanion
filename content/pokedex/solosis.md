@@ -1,7 +1,7 @@
 ---
 title: 'Solosis'
 subtitle: 'They drive away attackers by unleashing psychic power. They can use telepathy to talk with others.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '577'
 skins: ['Shiny', 'Easter']
 forms:

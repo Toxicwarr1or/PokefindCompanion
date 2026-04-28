@@ -1,7 +1,7 @@
 ---
 title: 'Weedle'
 subtitle: 'Often found in forests, eating leaves. It has a sharp venomous stinger on its head.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '13'
 skins: ['Shiny', 'Christmas', 'Valentine', 'Shadow']
 forms:

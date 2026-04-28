@@ -1,7 +1,7 @@
 ---
 title: 'Moltres'
 subtitle: 'Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '146'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura']
 forms:

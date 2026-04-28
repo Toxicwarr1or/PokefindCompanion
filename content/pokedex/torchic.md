@@ -1,7 +1,7 @@
 ---
 title: 'Torchic'
 subtitle: 'Torchic sticks with its TRAINER, following behind with unsteady steps. This Pokemon breathes fire of over 1,800 degrees F, including fireballs that leave the foe scorched black.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '255'
 skins: ['Shiny', 'Aura']
 forms:

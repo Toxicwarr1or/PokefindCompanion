@@ -1,7 +1,7 @@
 ---
 title: 'Kricketune'
 subtitle: 'It crosses its knifelike arms in front of its chest when it cries. It can compose melodies ad lib.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '402'
 skins: ['Shiny']
 forms:

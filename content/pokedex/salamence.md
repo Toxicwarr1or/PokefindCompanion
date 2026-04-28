@@ -1,7 +1,7 @@
 ---
 title: 'Salamence'
 subtitle: 'Salamence came about as a result of a strong, long-held dream of growing wings. It is said that this powerful desire triggered a sudden mutation in this Pokemon''s cells, causing it to sprout its magnificent wings.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '373'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura', 'Modeler']
 forms:

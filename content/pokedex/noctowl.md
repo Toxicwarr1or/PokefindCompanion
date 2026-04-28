@@ -1,7 +1,7 @@
 ---
 title: 'Noctowl'
 subtitle: 'Its eyes are specially adapted. They concentrate even faint light and enable it to see in the dark.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '164'
 skins: ['Shiny', 'Easter']
 forms:

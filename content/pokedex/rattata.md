@@ -1,7 +1,7 @@
 ---
 title: 'Rattata'
 subtitle: 'Bites anything when it attacks. Small and very quick, it is a common sight in many places.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '19'
 skins: ['Shiny']
 forms:
@@ -462,7 +462,7 @@ forms:
     types: ['Dark', 'Normal']
     abilities: ['Gluttony', 'Hustle']
     hidden_ability: 'Thick Fat'
-    sprite: ''
+    sprite: 'images/pokedex/rattata-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.3

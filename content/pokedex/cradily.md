@@ -1,7 +1,7 @@
 ---
 title: 'Cradily'
 subtitle: 'Cradily roams around the ocean floor in search of food. This Pokemon freely extends its tree trunk-like neck and captures unwary prey using its eight tentacles.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '346'
 skins: ['Shiny', 'Halloween', 'Easter', 'Aura']
 forms:

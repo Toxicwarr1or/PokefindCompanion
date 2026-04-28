@@ -1,7 +1,7 @@
 ---
 title: 'Doduo'
 subtitle: 'A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '84'
 skins: ['Shiny']
 forms:

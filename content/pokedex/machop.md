@@ -1,7 +1,7 @@
 ---
 title: 'Machop'
 subtitle: 'Loves to build its muscles. It trains in all styles of martial arts to become even stronger.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '66'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

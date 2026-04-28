@@ -1,7 +1,7 @@
 ---
 title: 'Zubat'
 subtitle: 'Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '41'
 skins: ['Shiny']
 forms:

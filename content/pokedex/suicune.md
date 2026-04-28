@@ -1,7 +1,7 @@
 ---
 title: 'Suicune'
 subtitle: 'Said to be the reincarnation of north winds, it can instantly purify filthy, murky water.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '245'
 skins: ['Shiny', 'Christmas', 'Summer', 'Shadow', 'Aura', 'Sword And Shield']
 forms:

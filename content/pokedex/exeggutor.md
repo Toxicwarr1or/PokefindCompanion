@@ -1,7 +1,7 @@
 ---
 title: 'Exeggutor'
 subtitle: 'Legend has it that on rare occasions, one of its heads will drop off and continue on as an Exeggcute.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '103'
 skins: ['Shiny', 'Summer', 'Shadow']
 forms:
@@ -396,7 +396,7 @@ forms:
     types: ['Grass', 'Dragon']
     abilities: ['Frisk']
     hidden_ability: 'Harvest'
-    sprite: ''
+    sprite: 'images/pokedex/exeggutor-alolan.png'
     egg_groups: ['grass']
     growth_rate: 'slow'
     height_m: 2

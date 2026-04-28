@@ -1,7 +1,7 @@
 ---
 title: 'Sunkern'
 subtitle: 'It may drop out of the sky suddenly. If attacked by a Spearow, it will violently shake its leaves.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '191'
 skins: ['Shiny', 'Valentine', 'Thanksgiving']
 forms:

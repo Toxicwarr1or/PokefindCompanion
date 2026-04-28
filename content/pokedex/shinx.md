@@ -1,7 +1,7 @@
 ---
 title: 'Shinx'
 subtitle: 'All of its fur dazzles if danger is sensed. It flees while the foe is momentarily blinded.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '403'
 skins: ['Shiny', 'Easter']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Vanillite'
 subtitle: 'The temperature of their breath is -58° F. They create snow crystals and make snow fall in the areas around them.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '582'
 skins: ['Shiny', 'Summer']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Shellder'
 subtitle: 'Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '90'
 skins: ['Shiny']
 forms:

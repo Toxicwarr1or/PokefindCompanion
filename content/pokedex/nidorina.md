@@ -1,7 +1,7 @@
 ---
 title: 'Nidorina'
 subtitle: 'The female''s horn develops slowly. Prefers physical attacks such as clawing and biting.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '30'
 skins: ['Shiny']
 forms:

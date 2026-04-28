@@ -1,7 +1,7 @@
 ---
 title: 'Garbodor'
 subtitle: 'It clenches opponents with its left arm and finishes them off with foul-smelling poison gas belched from its mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '569'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura']
 forms:

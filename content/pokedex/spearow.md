@@ -1,7 +1,7 @@
 ---
 title: 'Spearow'
 subtitle: 'Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '21'
 skins: ['Shiny']
 forms:

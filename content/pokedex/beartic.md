@@ -1,7 +1,7 @@
 ---
 title: 'Beartic'
 subtitle: 'It can make its breath freeze at will. Very able in the water, it swims around in northern seas and catches prey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '614'
 skins: ['Shiny', 'Christmas']
 forms:

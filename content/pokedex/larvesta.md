@@ -1,7 +1,7 @@
 ---
 title: 'Larvesta'
 subtitle: 'This Pokemon was believed to have been born from the sun. When it evolves, its entire body is engulfed in flames.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '636'
 skins: ['Shiny']
 forms:

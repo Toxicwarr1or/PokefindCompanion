@@ -1,7 +1,7 @@
 ---
 title: 'Mamoswine'
 subtitle: 'Its impressive tusks are made of ice. The population thinned when it turned warm after the ice age.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '473'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Summer', 'Aura']
 forms:

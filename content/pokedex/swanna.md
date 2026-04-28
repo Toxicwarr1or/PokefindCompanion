@@ -1,7 +1,7 @@
 ---
 title: 'Swanna'
 subtitle: 'Swanna start to dance at dusk. The one dancing in the middle is the leader of the flock.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '581'
 skins: ['Shiny', 'Easter']
 forms:

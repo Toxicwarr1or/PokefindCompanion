@@ -1,7 +1,7 @@
 ---
 title: 'Golem'
 subtitle: 'Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '76'
 skins: ['Shiny', 'Easter', 'Aura']
 forms:
@@ -478,7 +478,7 @@ forms:
     types: ['Rock', 'Electric']
     abilities: ['Magnet Pull', 'Sturdy']
     hidden_ability: 'Galvanize'
-    sprite: ''
+    sprite: 'images/pokedex/golem-alolan.png'
     egg_groups: ['mineral']
     growth_rate: 'medium_slow'
     height_m: 1.4

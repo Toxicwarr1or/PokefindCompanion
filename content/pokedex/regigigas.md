@@ -1,7 +1,7 @@
 ---
 title: 'Regigigas'
 subtitle: 'There is an enduring legend that states this Pokemon towed continents with ropes.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '486'
 skins: ['Shiny', 'Halloween']
 forms:

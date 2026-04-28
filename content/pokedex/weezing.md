@@ -1,7 +1,7 @@
 ---
 title: 'Weezing'
 subtitle: 'Where two kinds of poison gases meet, 2 Koffings can fuse into a Weezing over many years.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '110'
 skins: ['Shiny', 'Christmas', 'Aura', 'Cosmic', 'Monochrome']
 forms:
@@ -414,7 +414,7 @@ forms:
     types: ['Poison', 'Fairy']
     abilities: ['Levitate', 'Neutralizing Gas']
     hidden_ability: 'Misty Surge'
-    sprite: ''
+    sprite: 'images/pokedex/weezing-galarian.png'
     egg_groups: ['amorphous']
     growth_rate: 'medium_fast'
     height_m: 3.0

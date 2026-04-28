@@ -1,7 +1,7 @@
 ---
 title: 'Farfetch''d'
 subtitle: 'The sprig of green onions it holds is its weapon. It is used much like a metal sword.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '83'
 skins: ['Shiny', 'Christmas', 'Thanksgiving']
 forms:
@@ -497,7 +497,7 @@ forms:
     types: ['Fighting']
     abilities: ['Steadfast']
     hidden_ability: 'Scrappy'
-    sprite: ''
+    sprite: 'images/pokedex/farfetch-d-galarian.png'
     egg_groups: ['field', 'flying']
     growth_rate: 'medium_fast'
     height_m: 0.8

@@ -1,7 +1,7 @@
 ---
 title: 'Mr. Mime'
 subtitle: 'If interrupted while it is miming, it will slap around the offender with its broad hands.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '122'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Summer', 'Disney', 'Modeler']
 forms:
@@ -721,7 +721,7 @@ forms:
     types: ['Ice', 'Psychic']
     abilities: ['Vital Spirit', 'Screen Cleaner']
     hidden_ability: 'Ice Body'
-    sprite: ''
+    sprite: 'images/pokedex/mr-mime-galarian.png'
     egg_groups: ['human-like']
     growth_rate: 'medium_fast'
     height_m: 1.4

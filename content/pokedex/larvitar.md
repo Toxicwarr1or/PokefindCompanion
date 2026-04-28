@@ -1,7 +1,7 @@
 ---
 title: 'Larvitar'
 subtitle: 'It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '246'
 skins: ['Shiny', 'Aura']
 forms:

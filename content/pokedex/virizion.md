@@ -1,7 +1,7 @@
 ---
 title: 'Virizion'
 subtitle: 'This Pokemon fought humans in order to protect its friends. Legends about it continue to be passed down.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '640'
 skins: ['Shiny', 'Easter', 'Thanksgiving']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Buneary'
 subtitle: 'It slams foes by sharply uncoiling its rolled ears. It stings enough to make a grown-up cry in pain.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '427'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Yanma'
 subtitle: 'If it flaps its wings really fast, it can generate shock waves that will shatter windows in the area.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '193'
 skins: ['Shiny', 'Easter', 'Summer']
 forms:

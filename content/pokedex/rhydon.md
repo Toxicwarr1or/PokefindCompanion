@@ -1,7 +1,7 @@
 ---
 title: 'Rhydon'
 subtitle: 'Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '112'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

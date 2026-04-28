@@ -1,7 +1,7 @@
 ---
 title: 'Ekans'
 subtitle: 'Moves silently and stealthily. Eats the eggs of birds, such as Pidgey and Spearow, whole.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '23'
 skins: ['Shiny']
 forms:

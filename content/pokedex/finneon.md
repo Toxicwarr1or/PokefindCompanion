@@ -1,7 +1,7 @@
 ---
 title: 'Finneon'
 subtitle: 'After long exposure to sunlight, the patterns on its tail fins shine vividly when darkness arrives.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '456'
 skins: ['Shiny']
 forms:

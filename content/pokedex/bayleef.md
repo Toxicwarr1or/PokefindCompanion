@@ -1,7 +1,7 @@
 ---
 title: 'Bayleef'
 subtitle: 'The scent of spices comes from around its neck. Somehow, sniffing it makes you want to fight.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '153'
 skins: ['Shiny', 'Aura']
 forms:

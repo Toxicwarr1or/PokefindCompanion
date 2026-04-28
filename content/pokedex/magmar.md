@@ -1,7 +1,7 @@
 ---
 title: 'Magmar'
 subtitle: 'Its body always burns with an orange glow that enables it to hide perfectly among flames.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '126'
 skins: ['Shiny']
 forms:

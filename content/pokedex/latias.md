@@ -1,7 +1,7 @@
 ---
 title: 'Latias'
 subtitle: 'Latias is highly sensitive to the emotions of people. If it senses any hostility, this Pokemon ruffles the feathers all over its body and cries shrilly to intimidate the foe.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '380'
 skins: ['Shiny', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Horsea'
 subtitle: 'Known to shoot down flying bugs with precision blasts of ink from the surface of the water.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '116'
 skins: ['Shiny']
 forms:

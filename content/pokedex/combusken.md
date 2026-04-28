@@ -1,7 +1,7 @@
 ---
 title: 'Combusken'
 subtitle: 'Combusken toughens up its legs and thighs by running through fields and mountains. This Pokemon''s legs possess both speed and power, enabling it to dole out ten kicks in one second.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '256'
 skins: ['Shiny', 'Aura']
 forms:

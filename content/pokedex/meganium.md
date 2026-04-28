@@ -1,7 +1,7 @@
 ---
 title: 'Meganium'
 subtitle: 'The aroma that rises from its petals contains a substance that calms aggressive feelings.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '154'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Thanksgiving', 'Summer', 'Shadow', 'Aura']
 forms:

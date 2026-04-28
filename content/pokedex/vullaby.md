@@ -1,7 +1,7 @@
 ---
 title: 'Vullaby'
 subtitle: 'Its wings are too tiny to allow it to fly. As the time approaches for it to evolve, it discards the bones it was wearing.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '629'
 skins: ['Shiny', 'Easter']
 forms:

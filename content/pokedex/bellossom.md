@@ -1,7 +1,7 @@
 ---
 title: 'Bellossom'
 subtitle: 'Bellossom gather at times and appear to dance. They say that the dance is a ritual to summon the sun.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '182'
 skins: ['Shiny', 'Halloween', 'Easter']
 forms:

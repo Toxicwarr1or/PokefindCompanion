@@ -1,7 +1,7 @@
 ---
 title: 'Emolga'
 subtitle: 'The energy made in its cheeks'' electric pouches is stored inside its membrane and released while it is gliding.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '587'
 skins: ['Shiny', 'Christmas', 'Valentine']
 forms:

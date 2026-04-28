@@ -1,7 +1,7 @@
 ---
 title: 'Croagunk'
 subtitle: 'Its cheeks hold poison sacs. It tries to catch foes off guard to jab them with toxic fingers.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '453'
 skins: ['Shiny']
 forms:

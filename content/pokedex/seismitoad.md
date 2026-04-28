@@ -1,7 +1,7 @@
 ---
 title: 'Seismitoad'
 subtitle: 'They shoot paralyzing liquid from their head bumps. They use vibration to hurt their opponents.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '537'
 skins: ['Shiny', 'Halloween']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Parasect'
 subtitle: 'A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '47'
 skins: ['Shiny']
 forms:

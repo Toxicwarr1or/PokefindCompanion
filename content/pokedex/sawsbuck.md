@@ -1,7 +1,7 @@
 ---
 title: 'Sawsbuck'
 subtitle: 'They migrate according to the seasons. People can tell the season by looking at Sawsbuck''s horns.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '586'
 skins: ['Valentine']
 forms:

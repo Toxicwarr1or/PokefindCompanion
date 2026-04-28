@@ -1,7 +1,7 @@
 ---
 title: 'Glalie'
 subtitle: 'Glalie has a body made of rock, which it hardens with an armor of ice. This Pokemon has the ability to freeze moisture in the atmosphere into any shape it desires.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '362'
 skins: ['Shiny', 'Christmas', 'Easter']
 forms:

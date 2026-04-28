@@ -1,7 +1,7 @@
 ---
 title: 'Chatot'
 subtitle: 'It can learn and speak human words. If they gather, they all learn the same saying.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '441'
 skins: ['Shiny', 'Valentine', 'Thanksgiving', 'Summer']
 forms:

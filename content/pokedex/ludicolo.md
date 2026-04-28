@@ -1,7 +1,7 @@
 ---
 title: 'Ludicolo'
 subtitle: 'Ludicolo begins dancing as soon as it hears cheerful, festive music. This Pokemon is said to appear when it hears the singing of children on hiking outings.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '272'
 skins: ['Shiny', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Shadow']
 forms:

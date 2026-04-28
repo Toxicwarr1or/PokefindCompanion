@@ -1,7 +1,7 @@
 ---
 title: 'Ambipom'
 subtitle: 'To eat, it deftly shucks nuts with its two tails. It rarely uses its arms now.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '424'
 skins: ['Shiny', 'Thanksgiving', 'Summer', 'Meme']
 forms:

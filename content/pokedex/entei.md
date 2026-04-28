@@ -1,7 +1,7 @@
 ---
 title: 'Entei'
 subtitle: 'Volcanoes erupt when it barks. Unable to restrain its extreme power, it races headlong around the land.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '244'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura', 'Meme']
 forms:

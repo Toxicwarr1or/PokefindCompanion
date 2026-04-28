@@ -1,7 +1,7 @@
 ---
 title: 'Vulpix'
 subtitle: 'At the time of birth, it has just one tail. The tail splits from its tip as it grows older.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '37'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine']
 forms:
@@ -513,7 +513,7 @@ forms:
     types: ['Ice']
     abilities: ['Snow Cloak']
     hidden_ability: 'Snow Warning'
-    sprite: ''
+    sprite: 'images/pokedex/vulpix-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.6

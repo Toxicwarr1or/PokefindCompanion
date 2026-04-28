@@ -1,7 +1,7 @@
 ---
 title: 'Kadabra'
 subtitle: 'It emits special alpha waves from its body that induce headaches just by being close by.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '64'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

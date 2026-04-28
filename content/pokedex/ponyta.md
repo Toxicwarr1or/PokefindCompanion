@@ -1,7 +1,7 @@
 ---
 title: 'Ponyta'
 subtitle: 'Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '77'
 skins: ['Shiny', 'Christmas', 'Valentine']
 forms:
@@ -412,7 +412,7 @@ forms:
     types: ['Psychic']
     abilities: ['Run Away', 'Pastel Veil']
     hidden_ability: 'Anticipation'
-    sprite: ''
+    sprite: 'images/pokedex/ponyta-galarian.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.8

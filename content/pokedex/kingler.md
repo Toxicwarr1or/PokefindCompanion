@@ -1,7 +1,7 @@
 ---
 title: 'Kingler'
 subtitle: 'The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '99'
 skins: ['Shiny']
 forms:

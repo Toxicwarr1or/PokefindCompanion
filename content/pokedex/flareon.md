@@ -1,7 +1,7 @@
 ---
 title: 'Flareon'
 subtitle: 'When storing thermal energy in its body, its temperature could soar to over 1600 degrees.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '136'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Meowth'
 subtitle: 'Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '52'
 skins: ['Shiny']
 forms:
@@ -555,7 +555,7 @@ forms:
     types: ['Dark']
     abilities: ['Pickup', 'Technician']
     hidden_ability: 'Rattled'
-    sprite: ''
+    sprite: 'images/pokedex/meowth-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.4
@@ -1075,7 +1075,7 @@ forms:
     types: ['Steel']
     abilities: ['Pickup', 'Tough Claws']
     hidden_ability: 'Unnerve'
-    sprite: ''
+    sprite: 'images/pokedex/meowth-galarian.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.4

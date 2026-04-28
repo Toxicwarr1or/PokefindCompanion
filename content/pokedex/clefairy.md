@@ -1,7 +1,7 @@
 ---
 title: 'Clefairy'
 subtitle: 'Its magical and cute appeal has many admirers. It is rare and found only in certain areas.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '35'
 skins: ['Shiny', 'Easter', 'Cosmic']
 forms:

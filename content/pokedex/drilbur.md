@@ -1,7 +1,7 @@
 ---
 title: 'Drilbur'
 subtitle: 'It can dig through the ground at a speed of 30 mph. It could give a car running aboveground a good race.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '529'
 skins: ['Shiny']
 forms:

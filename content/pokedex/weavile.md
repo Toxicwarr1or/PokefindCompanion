@@ -1,7 +1,7 @@
 ---
 title: 'Weavile'
 subtitle: 'They live in cold regions, forming groups of four or five that hunt prey with impressive coordination.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '461'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Marvel', 'Meme']
 forms:

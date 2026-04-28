@@ -1,7 +1,7 @@
 ---
 title: 'Cherubi'
 subtitle: 'The small ball holds the nutrients needed for evolution. Apparently, it is very sweet and tasty.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '420'
 skins: ['Shiny']
 forms:

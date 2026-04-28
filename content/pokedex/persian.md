@@ -1,7 +1,7 @@
 ---
 title: 'Persian'
 subtitle: 'Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '53'
 skins: ['Shiny']
 forms:
@@ -516,7 +516,7 @@ forms:
     types: ['Dark']
     abilities: ['Fur Coat', 'Technician']
     hidden_ability: 'Unnerve'
-    sprite: ''
+    sprite: 'images/pokedex/persian-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 1

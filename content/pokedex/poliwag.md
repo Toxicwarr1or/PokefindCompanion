@@ -1,7 +1,7 @@
 ---
 title: 'Poliwag'
 subtitle: 'Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '60'
 skins: ['Shiny', 'Christmas']
 forms:

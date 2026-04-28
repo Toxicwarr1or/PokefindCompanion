@@ -1,7 +1,7 @@
 ---
 title: 'Nincada'
 subtitle: 'Nincada lives underground for many years in complete darkness. This Pokemon absorbs nutrients from the roots of trees. It stays motionless as it waits for evolution.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '290'
 skins: ['Shiny', 'Easter']
 forms:

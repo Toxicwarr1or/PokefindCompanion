@@ -1,7 +1,7 @@
 ---
 title: 'Skorupi'
 subtitle: 'It grips prey with its tail claws and injects poison. It tenaciously hangs on until the poison takes.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '451'
 skins: ['Shiny']
 forms:

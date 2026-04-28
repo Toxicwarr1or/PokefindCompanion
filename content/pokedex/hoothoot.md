@@ -1,7 +1,7 @@
 ---
 title: 'Hoothoot'
 subtitle: 'It always stands on one foot. It changes feet so fast, the movement can rarely be seen.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '163'
 skins: ['Shiny']
 forms:

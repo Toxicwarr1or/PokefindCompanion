@@ -1,7 +1,7 @@
 ---
 title: 'Gabite'
 subtitle: 'There is a long-held belief that medicine made from its scales will heal even incurable illnesses.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '444'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura']
 forms:

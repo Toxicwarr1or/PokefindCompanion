@@ -1,7 +1,7 @@
 ---
 title: 'Chansey'
 subtitle: 'A rare and elusive Pokemon that is said to bring happiness to those who manage to get it.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '113'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Cosmic', 'Meme']
 forms:

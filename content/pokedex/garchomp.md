@@ -1,7 +1,7 @@
 ---
 title: 'Garchomp'
 subtitle: 'When it folds up its body and extends its wings, it looks like a jet plane. It flies at sonic speed.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '445'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Lunar New Year', 'Shadow', 'Aura', 'Mecha', 'Fusemon']
 forms:

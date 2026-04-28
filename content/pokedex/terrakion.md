@@ -1,7 +1,7 @@
 ---
 title: 'Terrakion'
 subtitle: 'This Pokemon came to the defense of Pokemon that had lost their homes in a war among humans.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '639'
 skins: ['Shiny', 'Easter']
 forms:

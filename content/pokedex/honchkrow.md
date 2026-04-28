@@ -1,7 +1,7 @@
 ---
 title: 'Honchkrow'
 subtitle: 'Becoming active at night, it is known to swarm with numerous Murkrow in tow.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '430'
 skins: ['Shiny', 'Halloween', 'Easter', 'Fusemon']
 forms:

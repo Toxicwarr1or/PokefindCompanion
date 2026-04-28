@@ -1,7 +1,7 @@
 ---
 title: 'Slowpoke'
 subtitle: 'Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '79'
 skins: ['Shiny', 'Easter', 'Aura', 'Meme']
 forms:

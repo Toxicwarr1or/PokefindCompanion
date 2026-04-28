@@ -1,7 +1,7 @@
 ---
 title: 'Bulbasaur'
 subtitle: 'A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokemon.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '1'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura']
 forms:

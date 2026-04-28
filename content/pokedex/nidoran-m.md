@@ -1,7 +1,7 @@
 ---
 title: 'Nidoran-M'
 subtitle: 'Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '32'
 skins: ['Shiny']
 forms:

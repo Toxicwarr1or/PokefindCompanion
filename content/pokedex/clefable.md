@@ -1,7 +1,7 @@
 ---
 title: 'Clefable'
 subtitle: 'A timid fairy Pokemon that is rarely seen. It will run and hide the moment it senses people.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '36'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Cosmic']
 forms:

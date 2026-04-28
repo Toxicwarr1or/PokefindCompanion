@@ -1,7 +1,7 @@
 ---
 title: 'Klinklang'
 subtitle: 'Its red core functions as an energy tank. It fires the charged energy through its spikes into an area.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '601'
 skins: []
 forms:

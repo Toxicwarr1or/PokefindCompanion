@@ -1,7 +1,7 @@
 ---
 title: 'Tympole'
 subtitle: 'They warn others of danger by vibrating their cheeks to create a high-pitched sound.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '535'
 skins: ['Shiny']
 forms:

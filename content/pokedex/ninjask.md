@@ -1,7 +1,7 @@
 ---
 title: 'Ninjask'
 subtitle: 'Ninjask moves around at such a high speed that it cannot be seen, even while its crying can be clearly heard. For that reason, this Pokemon was long believed to be invisible.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '291'
 skins: ['Shiny', 'Easter']
 forms:

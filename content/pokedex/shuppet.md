@@ -1,7 +1,7 @@
 ---
 title: 'Shuppet'
 subtitle: 'Shuppet is attracted by feelings of jealousy and vindictiveness. If someone develops strong feelings of vengeance, this Pokemon will appear in a swarm and line up beneath the eaves of that person''s home.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '353'
 skins: ['Shiny']
 forms:

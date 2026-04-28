@@ -1,7 +1,7 @@
 ---
 title: 'Braviary'
 subtitle: 'They fight for their friends without any thought about danger to themselves. One can carry a car while flying.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '628'
 skins: ['Shiny', 'Summer', 'Disney']
 forms:

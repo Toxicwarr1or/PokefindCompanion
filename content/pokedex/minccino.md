@@ -1,7 +1,7 @@
 ---
 title: 'Minccino'
 subtitle: 'They greet one another by rubbing each other with their tails, which are always kept well groomed and clean.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '572'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

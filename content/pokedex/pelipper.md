@@ -1,7 +1,7 @@
 ---
 title: 'Pelipper'
 subtitle: 'Pelipper is a flying transporter that carries small Pokemon and eggs inside its massive bill. This Pokemon builds its nest on steep cliffs facing the sea.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '279'
 skins: ['Shiny', 'Easter', 'Valentine', 'Summer']
 forms:

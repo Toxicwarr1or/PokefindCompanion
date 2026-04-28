@@ -1,7 +1,7 @@
 ---
 title: 'Archeops'
 subtitle: 'They are intelligent and will cooperate to catch prey. From the ground, they use a running start to take flight.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '567'
 skins: ['Shiny', 'Christmas', 'Disney', 'Meme']
 forms:

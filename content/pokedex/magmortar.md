@@ -1,7 +1,7 @@
 ---
 title: 'Magmortar'
 subtitle: 'It blasts fireballs of over 3,600 degrees F from the ends of its arms. It lives in volcanic craters.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '467'
 skins: ['Shiny', 'Aura']
 forms:

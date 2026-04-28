@@ -1,7 +1,7 @@
 ---
 title: 'Magnezone'
 subtitle: 'It evolved from exposure to a special magnetic field. Three units generate magnetism.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '462'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Aura', 'Cosmic']
 forms:

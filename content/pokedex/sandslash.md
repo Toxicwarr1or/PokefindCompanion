@@ -1,7 +1,7 @@
 ---
 title: 'Sandslash'
 subtitle: 'Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '28'
 skins: ['Shiny', 'Christmas']
 forms:
@@ -474,7 +474,7 @@ forms:
     types: ['Ice', 'Steel']
     abilities: ['Snow Cloak']
     hidden_ability: 'Slush Rush'
-    sprite: ''
+    sprite: 'images/pokedex/sandslash-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 1

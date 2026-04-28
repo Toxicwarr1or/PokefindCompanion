@@ -1,7 +1,7 @@
 ---
 title: 'Dratini'
 subtitle: 'Long considered a mythical Pokemon until recently when a small colony was found living underwater.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '147'
 skins: ['Shiny', 'Aura']
 forms:

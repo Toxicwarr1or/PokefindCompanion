@@ -1,7 +1,7 @@
 ---
 title: 'Beheeyem'
 subtitle: 'It can manipulate an opponent''s memory. Apparently, it communicates by flashing its three different-colored fingers.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '606'
 skins: ['Shiny']
 forms:

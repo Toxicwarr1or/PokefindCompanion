@@ -1,7 +1,7 @@
 ---
 title: 'Togepi'
 subtitle: 'The shell seems to be filled with joy. It is said that it will share good luck when treated kindly.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '175'
 skins: ['Shiny', 'Easter']
 forms:

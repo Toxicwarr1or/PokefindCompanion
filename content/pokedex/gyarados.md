@@ -1,7 +1,7 @@
 ---
 title: 'Gyarados'
 subtitle: 'Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '130'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Lunar New Year', 'Shadow', 'Aura', 'Disney', 'Meme']
 forms:

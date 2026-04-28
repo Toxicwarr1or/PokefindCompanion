@@ -1,7 +1,7 @@
 ---
 title: 'Gliscor'
 subtitle: 'It observes prey while hanging inverted from branches. When the chance presents itself, it swoops!'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '472'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura', 'Monochrome']
 forms:

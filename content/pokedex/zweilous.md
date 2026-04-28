@@ -1,7 +1,7 @@
 ---
 title: 'Zweilous'
 subtitle: 'After it has eaten up all the food in its territory, it moves to another area. Its two heads do not get along.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '634'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

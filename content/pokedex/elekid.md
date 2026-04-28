@@ -1,7 +1,7 @@
 ---
 title: 'Elekid'
 subtitle: 'It rotates its arms to generate electricity, but it tires easily, so it charges up only a little bit.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '239'
 skins: ['Shiny', 'Christmas']
 forms:

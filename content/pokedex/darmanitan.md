@@ -1,7 +1,7 @@
 ---
 title: 'Darmanitan'
 subtitle: 'Its internal fire burns at 2,500° F, making enough power that it can destroy a dump truck with one punch.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '555'
 skins: ['Shiny', 'Easter', 'Aura']
 forms:
@@ -519,7 +519,7 @@ forms:
     types: ['Ice']
     abilities: ['Gorilla Tactics']
     hidden_ability: 'Zen Mode'
-    sprite: ''
+    sprite: 'images/pokedex/darmanitan-galarian.png'
     egg_groups: ['field']
     growth_rate: 'medium_slow'
     height_m: 1.7

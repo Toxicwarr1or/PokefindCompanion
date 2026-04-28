@@ -1,7 +1,7 @@
 ---
 title: 'Mandibuzz'
 subtitle: 'It makes a nest out of bones it finds. It grabs weakened prey in its talons and hauls it to its nest of bones.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '630'
 skins: ['Shiny', 'Halloween', 'Easter']
 forms:

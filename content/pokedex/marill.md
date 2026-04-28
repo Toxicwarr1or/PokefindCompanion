@@ -1,7 +1,7 @@
 ---
 title: 'Marill'
 subtitle: 'The tip of its tail, which contains oil that is lighter than water, lets it swim without drowning.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '183'
 skins: ['Shiny', 'Easter']
 forms:

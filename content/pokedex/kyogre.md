@@ -1,7 +1,7 @@
 ---
 title: 'Kyogre'
 subtitle: 'Kyogre has the power to create massive rain clouds that cover the entire sky and bring about torrential downpours. This Pokemon saved people who were suffering from droughts.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '382'
 skins: ['Shiny', 'Christmas', 'Easter']
 forms:

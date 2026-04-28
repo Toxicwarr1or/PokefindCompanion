@@ -1,7 +1,7 @@
 ---
 title: 'Cubone'
 subtitle: 'Because it never removes its skull helmet, no one has ever seen this Pokemon''s real face.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '104'
 skins: ['Shiny']
 forms:

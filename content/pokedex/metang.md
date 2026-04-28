@@ -1,7 +1,7 @@
 ---
 title: 'Metang'
 subtitle: 'When two Beldum fuse together, Metang is formed. The brains of the Beldum are joined by a magnetic nervous system. By linking its brains magnetically, this Pokemon generates strong psychokinetic power.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '375'
 skins: ['Shiny', 'Aura']
 forms:

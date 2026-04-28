@@ -1,7 +1,7 @@
 ---
 title: 'Venonat'
 subtitle: 'Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '48'
 skins: ['Shiny', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Totodile'
 subtitle: 'Its well-developed jaws are powerful and capable of crushing anything. Even its trainer must be careful.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '158'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

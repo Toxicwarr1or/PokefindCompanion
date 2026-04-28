@@ -1,7 +1,7 @@
 ---
 title: 'Chikorita'
 subtitle: 'A sweet aroma gently wafts from the leaf on its head. It is docile and loves to soak up the sun''s rays.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '152'
 skins: ['Shiny', 'Aura']
 forms:

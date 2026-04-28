@@ -1,7 +1,7 @@
 ---
 title: 'Jolteon'
 subtitle: 'It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '135'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

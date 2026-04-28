@@ -1,7 +1,7 @@
 ---
 title: 'Palkia'
 subtitle: 'It has the ability to distort space. It is described as a deity in Sinnoh-region mythology.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '484'
 skins: ['Shiny', 'Christmas', 'Cosmic']
 forms:

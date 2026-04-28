@@ -1,7 +1,7 @@
 ---
 title: 'Roserade'
 subtitle: 'It attracts prey with a sweet aroma, then downs it with thorny whips hidden in its arms.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '407'
 skins: ['Shiny', 'Christmas', 'Valentine', 'Summer', 'Shadow', 'Fusemon']
 forms:

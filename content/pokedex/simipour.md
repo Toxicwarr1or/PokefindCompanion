@@ -1,7 +1,7 @@
 ---
 title: 'Simipour'
 subtitle: 'The tuft on its head holds water. When the level runs low, it replenishes the tuft by siphoning up water with its tail.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '516'
 skins: ['Shiny', 'Christmas']
 forms:

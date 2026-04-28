@@ -1,7 +1,7 @@
 ---
 title: 'Phanpy'
 subtitle: 'It swings its long snout around playfully, but because it is so strong, that can be dangerous.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '231'
 skins: ['Shiny']
 forms:

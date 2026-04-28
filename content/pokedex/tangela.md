@@ -1,7 +1,7 @@
 ---
 title: 'Tangela'
 subtitle: 'The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '114'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine']
 forms:

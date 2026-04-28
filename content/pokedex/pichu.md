@@ -1,7 +1,7 @@
 ---
 title: 'Pichu'
 subtitle: 'It is not yet skilled at storing electricity. It may send out a jolt if amused or startled.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '172'
 skins: ['Shiny', 'Summer']
 forms:

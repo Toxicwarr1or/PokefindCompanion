@@ -1,7 +1,7 @@
 ---
 title: 'Unfezant'
 subtitle: 'Males swing their head plumage to threaten opponents. The females'' flying abilities surpass those of the males.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '521'
 skins: ['Shiny']
 forms:

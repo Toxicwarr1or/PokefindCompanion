@@ -1,7 +1,7 @@
 ---
 title: 'Shellos'
 subtitle: 'Its colors and shapes differ from region to region. In the Sinnoh region, two types are confirmed.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '422'
 skins: ['Shiny']
 forms:

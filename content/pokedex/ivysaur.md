@@ -1,7 +1,7 @@
 ---
 title: 'Ivysaur'
 subtitle: 'When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '2'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura']
 forms:

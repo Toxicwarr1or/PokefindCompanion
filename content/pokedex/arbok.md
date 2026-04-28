@@ -1,7 +1,7 @@
 ---
 title: 'Arbok'
 subtitle: 'It is rumored that the ferocious warning markings on its belly differ from area to area.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '24'
 skins: ['Shiny', 'Halloween']
 forms:

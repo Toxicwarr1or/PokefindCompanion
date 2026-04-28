@@ -1,7 +1,7 @@
 ---
 title: 'Snubbull'
 subtitle: 'Although it looks frightening, it is actually kind and affectionate. It is very popular among women.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '209'
 skins: ['Shiny', 'Easter']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Scrafty'
 subtitle: 'Groups of them beat up anything that enters their territory. Each can spit acidic liquid from its mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '560'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Summer', 'Aura', 'Meme']
 forms:

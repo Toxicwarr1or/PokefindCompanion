@@ -1,7 +1,7 @@
 ---
 title: 'Aipom'
 subtitle: 'Its tail is so powerful that it can use it to grab a tree branch and hold itself up in the air.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '190'
 skins: ['Shiny', 'Summer']
 forms:

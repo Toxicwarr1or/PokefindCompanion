@@ -1,7 +1,7 @@
 ---
 title: 'Shaymin'
 subtitle: 'It lives in flower patches and avoids detection by curling up to look like a flowering plant.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '492'
 skins: ['Shiny', 'Easter', 'Valentine', 'Thanksgiving']
 forms:

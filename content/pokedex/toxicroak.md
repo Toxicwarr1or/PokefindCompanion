@@ -1,7 +1,7 @@
 ---
 title: 'Toxicroak'
 subtitle: 'Its knuckle claws secrete a toxin so vile that even a scratch could prove fatal.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '454'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

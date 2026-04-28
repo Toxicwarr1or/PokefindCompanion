@@ -1,7 +1,7 @@
 ---
 title: 'Oshawott'
 subtitle: 'It fights using the scalchop on its stomach. In response to an attack, it retaliates immediately by slashing.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '501'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

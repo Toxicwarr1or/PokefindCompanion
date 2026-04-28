@@ -1,7 +1,7 @@
 ---
 title: 'Swinub'
 subtitle: 'It rubs its snout on the ground to find and dig up food. It sometimes discovers hot springs.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '220'
 skins: ['Shiny', 'Christmas']
 forms:

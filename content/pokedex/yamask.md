@@ -1,7 +1,7 @@
 ---
 title: 'Yamask'
 subtitle: 'Each of them carries a mask that used to be its face when it was human. Sometimes they look at it and cry.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '562'
 skins: ['Shiny']
 forms:
@@ -486,7 +486,7 @@ forms:
     kind: 'form'
     types: ['Ground', 'Ghost']
     abilities: ['Wandering Spirit']
-    sprite: ''
+    sprite: 'images/pokedex/yamask-galarian.png'
     egg_groups: ['amorphous', 'mineral']
     growth_rate: 'medium_fast'
     height_m: 0.5

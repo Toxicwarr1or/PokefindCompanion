@@ -1,7 +1,7 @@
 ---
 title: 'Genesect'
 subtitle: 'Over 300 million years ago, it was feared as the strongest of hunters. It has been modified by Team Plasma.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '649'
 skins: ['Shiny', 'Aura']
 forms:

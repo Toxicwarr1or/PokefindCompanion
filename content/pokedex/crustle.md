@@ -1,7 +1,7 @@
 ---
 title: 'Crustle'
 subtitle: 'Competing for territory, Crustle fight viciously. The one whose boulder is broken is the loser of the battle.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '558'
 skins: ['Shiny', 'Christmas', 'Easter', 'Summer', 'Aura']
 forms:

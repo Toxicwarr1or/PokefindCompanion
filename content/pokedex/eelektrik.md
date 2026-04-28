@@ -1,7 +1,7 @@
 ---
 title: 'Eelektrik'
 subtitle: 'They coil around foes and shock them with electricity-generating organs that seem simply to be circular patterns.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '603'
 skins: ['Shiny', 'Aura']
 forms:

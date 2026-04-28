@@ -1,7 +1,7 @@
 ---
 title: 'Kyurem'
 subtitle: 'It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '646'
 skins: ['Shiny', 'Cosmic']
 forms:

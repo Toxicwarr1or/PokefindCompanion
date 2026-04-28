@@ -1,7 +1,7 @@
 ---
 title: 'Prinplup'
 subtitle: 'It lives alone, away from others. Apparently, every one of them believes it is the most important.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '394'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Aura']
 forms:

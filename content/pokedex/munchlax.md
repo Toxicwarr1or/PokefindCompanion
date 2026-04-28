@@ -1,7 +1,7 @@
 ---
 title: 'Munchlax'
 subtitle: 'It wolfs down its weight in food once a day, swallowing food whole with almost no chewing.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '446'
 skins: ['Shiny']
 forms:

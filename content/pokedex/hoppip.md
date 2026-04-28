@@ -1,7 +1,7 @@
 ---
 title: 'Hoppip'
 subtitle: 'To keep from being blown away by the wind, they gather in clusters. They do enjoy gentle breezes, though.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '187'
 skins: ['Shiny', 'Valentine']
 forms:

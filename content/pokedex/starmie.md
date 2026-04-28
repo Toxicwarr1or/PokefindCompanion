@@ -1,7 +1,7 @@
 ---
 title: 'Starmie'
 subtitle: 'Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '121'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura', 'Cosmic', 'Fusemon', 'Meme']
 forms:

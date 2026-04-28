@@ -1,7 +1,7 @@
 ---
 title: 'Bidoof'
 subtitle: 'With nerves of steel, nothing can perturb it. It is more agile and active than it appears.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '399'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Shadow']
 forms:

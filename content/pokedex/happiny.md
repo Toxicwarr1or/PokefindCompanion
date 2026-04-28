@@ -1,7 +1,7 @@
 ---
 title: 'Happiny'
 subtitle: 'It loves round white things. It carries an egg-shaped rock in imitation of Chansey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '440'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Kecleon'
 subtitle: 'Kecleon is capable of changing its body colors at will to blend in with its surroundings. There is one exception - this Pokemon can''t change the zigzag pattern on its belly.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '352'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Marshtomp'
 subtitle: 'The surface of Marshtomp''s body is enveloped by a thin, sticky film that enables it to live on land. This Pokemon plays in mud on beaches when the ocean tide is low.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '259'
 skins: ['Shiny', 'Easter', 'Valentine', 'Aura']
 forms:

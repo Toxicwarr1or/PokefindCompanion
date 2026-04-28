@@ -1,7 +1,7 @@
 ---
 title: 'Loudred'
 subtitle: 'Loudred''s bellowing can completely decimate a wood-frame house. It uses its voice to punish its foes. This Pokemon''s round ears serve as loudspeakers.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '294'
 skins: ['Shiny']
 forms:

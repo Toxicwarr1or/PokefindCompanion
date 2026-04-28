@@ -1,7 +1,7 @@
 ---
 title: 'Geodude'
 subtitle: 'Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '74'
 skins: ['Shiny', 'Easter']
 forms:
@@ -491,7 +491,7 @@ forms:
     types: ['Rock', 'Electric']
     abilities: ['Magnet Pull', 'Sturdy']
     hidden_ability: 'Galvanize'
-    sprite: ''
+    sprite: 'images/pokedex/geodude-alolan.png'
     egg_groups: ['mineral']
     growth_rate: 'medium_slow'
     height_m: 0.4

@@ -1,7 +1,7 @@
 ---
 title: 'Bisharp'
 subtitle: 'It leads a group of Pawniard. It battles to become the boss, but will be driven from the group if it loses.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '625'
 skins: ['Shiny', 'Easter', 'Aura']
 forms:

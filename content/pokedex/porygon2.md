@@ -1,7 +1,7 @@
 ---
 title: 'Porygon2'
 subtitle: 'This upgraded version of Porygon is designed for space exploration. It can''t fly, though.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '233'
 skins: ['Shiny', 'Easter', 'Valentine', 'Aura']
 forms:

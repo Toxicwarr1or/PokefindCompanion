@@ -1,7 +1,7 @@
 ---
 title: 'Luxio'
 subtitle: 'Its claws loose electricity with enough amperage to cause fainting. They live in small groups.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '404'
 skins: ['Shiny', 'Easter']
 forms:

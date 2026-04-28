@@ -1,7 +1,7 @@
 ---
 title: 'Golbat'
 subtitle: 'Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '42'
 skins: ['Shiny', 'Halloween']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Fearow'
 subtitle: 'With its huge and magnificent wings, it can keep aloft without ever having to land for rest.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '22'
 skins: ['Shiny']
 forms:

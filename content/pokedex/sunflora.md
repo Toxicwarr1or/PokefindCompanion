@@ -1,7 +1,7 @@
 ---
 title: 'Sunflora'
 subtitle: 'It converts sunlight into energy. In the darkness after sunset, it closes its petals and becomes still.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '192'
 skins: ['Shiny', 'Valentine', 'Thanksgiving']
 forms:

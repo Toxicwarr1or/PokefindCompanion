@@ -1,7 +1,7 @@
 ---
 title: 'Slowbro'
 subtitle: 'The Shellder that is latched onto Slowpoke''s tail is said to feed on the host''s left over scraps.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '80'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Aura', 'Meme']
 forms:

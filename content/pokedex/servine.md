@@ -1,7 +1,7 @@
 ---
 title: 'Servine'
 subtitle: 'It moves along the ground as if sliding. Its swift movements befuddle its foes, and it then attacks with a vine whip.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '496'
 skins: ['Shiny', 'Easter', 'Valentine', 'Aura']
 forms:

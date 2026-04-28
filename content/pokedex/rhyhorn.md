@@ -1,7 +1,7 @@
 ---
 title: 'Rhyhorn'
 subtitle: 'Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '111'
 skins: ['Shiny', 'Valentine']
 forms:

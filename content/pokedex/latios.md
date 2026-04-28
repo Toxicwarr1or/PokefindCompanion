@@ -1,7 +1,7 @@
 ---
 title: 'Latios'
 subtitle: 'Latios has the ability to make its foe see an image of what it has seen or imagines in its head. This Pokemon is intelligent and understands human speech.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '381'
 skins: ['Shiny', 'Valentine']
 forms:

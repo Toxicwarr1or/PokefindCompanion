@@ -1,7 +1,7 @@
 ---
 title: 'Crawdaunt'
 subtitle: 'Crawdaunt has an extremely violent nature that compels it to challenge other living things to battle. Other life-forms refuse to live in ponds inhabited by this Pokemon, making them desolate places.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '342'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Summer', 'Aura', 'Disney']
 forms:

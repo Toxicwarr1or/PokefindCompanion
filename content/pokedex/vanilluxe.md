@@ -1,7 +1,7 @@
 ---
 title: 'Vanilluxe'
 subtitle: 'Swallowing large amounts of water, they make snow clouds inside their bodies and attack their foes with violent blizzards.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '584'
 skins: ['Shiny', 'Halloween', 'Summer']
 forms:

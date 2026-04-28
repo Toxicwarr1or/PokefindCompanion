@@ -1,7 +1,7 @@
 ---
 title: 'Remoraid'
 subtitle: 'It has superb accuracy. The water it shoots out can strike even moving prey from more than 300 feet.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '223'
 skins: ['Shiny']
 forms:

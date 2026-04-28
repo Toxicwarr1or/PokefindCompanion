@@ -1,7 +1,7 @@
 ---
 title: 'Mankey'
 subtitle: 'Extremely quick to anger. It could be docile one moment then thrashing away the next instant.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '56'
 skins: ['Shiny']
 forms:

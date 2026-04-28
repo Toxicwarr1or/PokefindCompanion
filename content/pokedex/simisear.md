@@ -1,7 +1,7 @@
 ---
 title: 'Simisear'
 subtitle: 'It loves sweets because they become energy for the fire burning inside its body.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '514'
 skins: ['Shiny', 'Christmas']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Cloyster'
 subtitle: 'When attacked, it launches its horns in quick volleys. Its innards have never been seen.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '91'
 skins: ['Shiny', 'Easter', 'Valentine', 'Thanksgiving', 'Aura', 'Monochrome']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Tentacool'
 subtitle: 'Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '72'
 skins: ['Shiny', 'Valentine']
 forms:

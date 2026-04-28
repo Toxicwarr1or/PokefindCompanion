@@ -1,7 +1,7 @@
 ---
 title: 'Wingull'
 subtitle: 'Wingull has the habit of carrying prey and valuables in its beak and hiding them in all sorts of locations. This Pokemon rides the winds and flies as if it were skating across the sky.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '278'
 skins: ['Shiny']
 forms:

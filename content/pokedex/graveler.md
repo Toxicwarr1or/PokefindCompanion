@@ -1,7 +1,7 @@
 ---
 title: 'Graveler'
 subtitle: 'Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '75'
 skins: ['Shiny', 'Easter']
 forms:
@@ -428,7 +428,7 @@ forms:
     types: ['Rock', 'Electric']
     abilities: ['Magnet Pull', 'Sturdy']
     hidden_ability: 'Galvanize'
-    sprite: ''
+    sprite: 'images/pokedex/graveler-alolan.png'
     egg_groups: ['mineral']
     growth_rate: 'medium_slow'
     height_m: 1

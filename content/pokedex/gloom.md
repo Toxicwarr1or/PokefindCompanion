@@ -1,7 +1,7 @@
 ---
 title: 'Gloom'
 subtitle: 'The fluid that oozes from its mouth isn''t drool. It is a nectar that is used to attract prey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '44'
 skins: ['Shiny', 'Easter']
 forms:

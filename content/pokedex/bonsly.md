@@ -1,7 +1,7 @@
 ---
 title: 'Bonsly'
 subtitle: 'It looks as if it is always crying. It is actually adjusting its body''s fluid levels by eliminating excess.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '438'
 skins: ['Shiny']
 forms:

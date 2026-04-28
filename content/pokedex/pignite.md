@@ -1,7 +1,7 @@
 ---
 title: 'Pignite'
 subtitle: 'When its internal fire flares up, its movements grow sharper and faster. When in trouble, it emits smoke.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '499'
 skins: ['Shiny', 'Easter', 'Aura']
 forms:

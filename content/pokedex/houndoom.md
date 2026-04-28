@@ -1,7 +1,7 @@
 ---
 title: 'Houndoom'
 subtitle: 'If you are burned by the flames it shoots from its mouth, the pain will never go away.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '229'
 skins: ['Shiny', 'Christmas', 'Easter', 'Shadow', 'Aura']
 forms:

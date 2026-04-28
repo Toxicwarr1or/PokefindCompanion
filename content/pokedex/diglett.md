@@ -1,7 +1,7 @@
 ---
 title: 'Diglett'
 subtitle: 'Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '50'
 skins: ['Shiny', 'Valentine']
 forms:
@@ -437,7 +437,7 @@ forms:
     types: ['Ground', 'Steel']
     abilities: ['Sand Veil', 'Tangling Hair']
     hidden_ability: 'Sand Force'
-    sprite: ''
+    sprite: 'images/pokedex/diglett-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.2

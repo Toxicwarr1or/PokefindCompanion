@@ -1,7 +1,7 @@
 ---
 title: 'Karrablast'
 subtitle: 'These mysterious Pokemon evolve when they receive electrical stimulation while they are in the same place as Shelmet.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '588'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Cubchoo'
 subtitle: 'When it is not feeling well, its mucus gets watery and the power of its Ice-type moves decreases.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '613'
 skins: ['Shiny']
 forms:

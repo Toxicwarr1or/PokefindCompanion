@@ -1,7 +1,7 @@
 ---
 title: 'Gardevoir'
 subtitle: 'Gardevoir has the ability to read the future. If it senses impending danger to its TRAINER, this Pokemon is said to unleash its psychokinetic energy at full power.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '282'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Shadow', 'Aura', 'Disney']
 forms:

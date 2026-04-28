@@ -1,7 +1,7 @@
 ---
 title: 'Bagon'
 subtitle: 'Bagon has a dream of one day soaring in the sky. In doomed efforts to fly, this Pokemon hurls itself off cliffs. As a result of its dives, its head has  grown tough and as hard as tempered steel.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '371'
 skins: ['Shiny', 'Aura']
 forms:

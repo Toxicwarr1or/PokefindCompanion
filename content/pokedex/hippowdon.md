@@ -1,7 +1,7 @@
 ---
 title: 'Hippowdon'
 subtitle: 'It blasts internally stored sand from ports on its body to create a towering twister for attack.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '450'
 skins: ['Shiny', 'Easter', 'Thanksgiving', 'Aura']
 forms:

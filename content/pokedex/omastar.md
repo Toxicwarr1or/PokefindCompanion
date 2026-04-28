@@ -1,7 +1,7 @@
 ---
 title: 'Omastar'
 subtitle: 'A prehistoric Pokemon that died out when its heavy shell made it impossible to catch prey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '139'
 skins: ['Shiny', 'Shadow', 'Aura', 'Monochrome']
 forms:

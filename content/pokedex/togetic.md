@@ -1,7 +1,7 @@
 ---
 title: 'Togetic'
 subtitle: 'They say that it will appear before kindhearted, caring people and shower them with happiness.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '176'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

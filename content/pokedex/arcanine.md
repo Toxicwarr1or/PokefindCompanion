@@ -1,7 +1,7 @@
 ---
 title: 'Arcanine'
 subtitle: 'A Pokemon that has been admired since the past for its beauty. It runs agilely as if on wings.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '59'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura', 'Monochrome']
 forms:

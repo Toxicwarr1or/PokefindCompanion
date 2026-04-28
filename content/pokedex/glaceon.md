@@ -1,7 +1,7 @@
 ---
 title: 'Glaceon'
 subtitle: 'As a protective technique, it can completely freeze its fur to make its hairs stand like needles.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '471'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Igglybuff'
 subtitle: 'It has a very soft body. If it starts to roll, it will bounce all over and be impossible to stop.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '174'
 skins: ['Shiny']
 forms:

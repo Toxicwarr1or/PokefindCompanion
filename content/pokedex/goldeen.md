@@ -1,7 +1,7 @@
 ---
 title: 'Goldeen'
 subtitle: 'Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '118'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Lillipup'
 subtitle: 'It faces strong opponents with great courage. But, when at a disadvantage in a fight, this intelligent Pokemon flees.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '506'
 skins: ['Shiny', 'Christmas']
 forms:

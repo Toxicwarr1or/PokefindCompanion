@@ -1,7 +1,7 @@
 ---
 title: 'Slowking'
 subtitle: 'It has incredible intellect and intuition. Whatever the situation, it remains calm and collected.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '199'
 skins: ['Shiny', 'Easter', 'Aura', 'Meme', 'Monochrome']
 forms:

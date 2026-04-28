@@ -1,7 +1,7 @@
 ---
 title: 'Smoochum'
 subtitle: 'Its lips are the most sensitive parts on its body. It always uses its lips first to examine things.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '238'
 skins: ['Shiny']
 forms:

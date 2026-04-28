@@ -1,7 +1,7 @@
 ---
 title: 'Pupitar'
 subtitle: 'Its shell is as hard as sheet rock, and it is also very strong. Its THRASHING can topple a mountain.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '247'
 skins: ['Shiny', 'Aura']
 forms:

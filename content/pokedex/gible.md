@@ -1,7 +1,7 @@
 ---
 title: 'Gible'
 subtitle: 'It nests in small, horizontal holes in cave walls. It pounces to catch prey that stray too close.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '443'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Weepinbell'
 subtitle: 'It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '70'
 skins: ['Shiny']
 forms:

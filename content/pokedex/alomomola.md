@@ -1,7 +1,7 @@
 ---
 title: 'Alomomola'
 subtitle: 'The special membrane enveloping Alomomola has the ability to heal wounds.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '594'
 skins: ['Shiny', 'Valentine', 'Summer']
 forms:

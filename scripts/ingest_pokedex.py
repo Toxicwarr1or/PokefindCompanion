@@ -186,6 +186,54 @@ FORM_SUFFIX = {
 
 REGIONAL_PREFIXES = [p for p in FORM_SUFFIX.keys() if p != "Standard"]
 
+# PokeAPI uses dedicated form IDs (10000-range) for Alolan / Galarian / Hisuian
+# variants. The local species_gen6.json file uses negative IDs for these,
+# which don't resolve upstream. Map each (base species, form prefix) pair to
+# the canonical PokeAPI form ID so we can fetch a real sprite for the tab.
+POKEAPI_FORM_IDS = {
+    # ---------- Alolan (Gen 7) ----------
+    ("Rattata",    "Alolan"): 10091,
+    ("Raticate",   "Alolan"): 10092,
+    ("Raichu",     "Alolan"): 10100,
+    ("Sandshrew",  "Alolan"): 10101,
+    ("Sandslash",  "Alolan"): 10102,
+    ("Vulpix",     "Alolan"): 10103,
+    ("Ninetales",  "Alolan"): 10104,
+    ("Diglett",    "Alolan"): 10105,
+    ("Dugtrio",    "Alolan"): 10106,
+    ("Meowth",     "Alolan"): 10107,
+    ("Persian",    "Alolan"): 10108,
+    ("Geodude",    "Alolan"): 10109,
+    ("Graveler",   "Alolan"): 10110,
+    ("Golem",      "Alolan"): 10111,
+    ("Grimer",     "Alolan"): 10112,
+    ("Muk",        "Alolan"): 10113,
+    ("Exeggutor",  "Alolan"): 10114,
+    ("Marowak",    "Alolan"): 10115,
+    # ---------- Galarian (Gen 8) ----------
+    ("Meowth",     "Galarian"): 10161,
+    ("Ponyta",     "Galarian"): 10162,
+    ("Rapidash",   "Galarian"): 10163,
+    ("Slowpoke",   "Galarian"): 10164,
+    ("Slowbro",    "Galarian"): 10165,
+    ("Farfetch'd", "Galarian"): 10166,
+    ("Farfetchd",  "Galarian"): 10166,
+    ("Weezing",    "Galarian"): 10167,
+    ("Mr. Mime",   "Galarian"): 10168,
+    ("Mr Mime",    "Galarian"): 10168,
+    ("Articuno",   "Galarian"): 10169,
+    ("Zapdos",     "Galarian"): 10170,
+    ("Moltres",    "Galarian"): 10171,
+    ("Slowking",   "Galarian"): 10172,
+    ("Corsola",    "Galarian"): 10173,
+    ("Zigzagoon",  "Galarian"): 10174,
+    ("Linoone",    "Galarian"): 10175,
+    ("Darumaka",   "Galarian"): 10176,
+    ("Darmanitan", "Galarian"): 10177,
+    ("Yamask",     "Galarian"): 10178,
+    ("Stunfisk",   "Galarian"): 10179,
+}
+
 # Manually-injected forms not present in the species data file. Keyed by base name.
 # Each form provides: ability set, type override, base-stat override, sprite-suffix,
 # and an editorial note describing how the form change is triggered in-game.
@@ -466,7 +514,12 @@ class SpriteCache:
     def _fetch_pokeapi(self, dex_id: int, save_as: str, variant: str = "") -> str | None:
         """Fetch a sprite from PokeAPI. variant='' is the default front sprite;
         variant='shiny' uses the shiny subdirectory."""
-        if not self.enable_pokeapi or dex_id <= 0 or dex_id > 1010:
+        # PokeAPI uses the 10000-10999 range for regional / alternate-form
+        # sprites (Alolan, Galarian, etc.) — those are valid even though the
+        # base mainline range stops at 1010.
+        if not self.enable_pokeapi or dex_id <= 0:
+            return None
+        if dex_id > 1010 and not (10000 <= dex_id <= 10999):
             return None
         target = self.images_dir / f"{save_as}.png"
         if target.exists():
@@ -1027,7 +1080,16 @@ def main() -> int:
             fb = fallback_set(full_name, form_data.get("notable_moves") or [],
                               form_data.get("base_stats"))
             form_data["competitive_sets"] = [fb] if fb else []
-            forms_yaml.append(render_form_yaml(prefix, form_data, None, kind="form"))
+            # Try PokeAPI for Alolan / Galarian / Hisuian / Paldean forms.
+            # Anniversary regional prefixes (Kyoto, Jataro, etc.) have no
+            # upstream sprite — the lookup just returns None and we fall back
+            # to the (no sprite) placeholder, same as before.
+            form_sprite = None
+            form_id = POKEAPI_FORM_IDS.get((base_name, prefix))
+            if form_id:
+                save_as = f"{content_slug(base_name)}-{prefix.lower()}"
+                form_sprite = sprite_cache.fetch_pokeapi(form_id, save_as)
+            forms_yaml.append(render_form_yaml(prefix, form_data, form_sprite, kind="form"))
 
         # Manually-injected forms (Kyurem Black/White, Meloetta Pirouette, etc.)
         if base_name in EXTRA_FORMS:

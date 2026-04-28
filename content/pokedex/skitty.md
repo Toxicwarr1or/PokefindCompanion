@@ -1,7 +1,7 @@
 ---
 title: 'Skitty'
 subtitle: 'Skitty has the habit of becoming fascinated by moving objects and chasing them around. This Pokemon is known to chase after its own tail and become dizzy.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '300'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Krokorok'
 subtitle: 'They live in groups of a few individuals. Protective membranes shield their eyes from sandstorms.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '552'
 skins: ['Shiny', 'Christmas']
 forms:

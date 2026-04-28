@@ -1,7 +1,7 @@
 ---
 title: 'Wobbuffet'
 subtitle: 'It hates light and shock. If attacked, it inflates its body to pump up its counterstrike.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '202'
 skins: ['Shiny', 'Halloween', 'Easter']
 forms:

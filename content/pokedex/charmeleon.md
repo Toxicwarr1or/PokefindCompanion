@@ -1,7 +1,7 @@
 ---
 title: 'Charmeleon'
 subtitle: 'When it swings its burning tail, it elevates the temperature to unbearably high levels.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '5'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura']
 forms:

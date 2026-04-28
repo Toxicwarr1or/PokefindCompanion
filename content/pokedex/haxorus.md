@@ -1,7 +1,7 @@
 ---
 title: 'Haxorus'
 subtitle: 'They are kind but can be relentless when defending territory. They challenge foes with tusks that can cut steel.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '612'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Aura', 'Fusemon']
 forms:

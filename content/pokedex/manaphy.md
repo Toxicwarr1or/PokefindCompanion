@@ -1,7 +1,7 @@
 ---
 title: 'Manaphy'
 subtitle: 'Born on a cold seafloor, it will swim great distances to return to its birthplace.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '490'
 skins: ['Shiny', 'Christmas', 'Easter', 'Summer', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Patrat'
 subtitle: 'Using food stored in cheek pouches, they can keep watch for days. They use their tails to communicate with others.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '504'
 skins: ['Shiny']
 forms:

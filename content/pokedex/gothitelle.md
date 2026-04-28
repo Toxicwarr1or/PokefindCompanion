@@ -1,7 +1,7 @@
 ---
 title: 'Gothitelle'
 subtitle: 'Starry skies thousands of light-years away are visible in the space distorted by their intense psychic power.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '576'
 skins: ['Shiny', 'Halloween', 'Aura', 'Cosmic']
 forms:

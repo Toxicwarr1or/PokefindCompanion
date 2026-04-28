@@ -1,7 +1,7 @@
 ---
 title: 'Victini'
 subtitle: 'This Pokemon brings victory. It is said that Trainers with Victini always win, regardless of the type of encounter.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '494'
 skins: ['Shiny', 'Halloween', 'Easter', 'Aura']
 forms:

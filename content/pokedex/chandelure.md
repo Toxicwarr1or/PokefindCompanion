@@ -1,7 +1,7 @@
 ---
 title: 'Chandelure'
 subtitle: 'It absorbs a spirit, which it then burns. By waving the flames on its arms, it puts its foes into a hypnotic trance.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '609'
 skins: ['Shiny', 'Christmas', 'Valentine', 'Thanksgiving', 'Lunar New Year', 'Aura', 'Modeler']
 forms:

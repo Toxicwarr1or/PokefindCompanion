@@ -1,7 +1,7 @@
 ---
 title: 'Galvantula'
 subtitle: 'When attacked, they create an electric barrier by spitting out many electrically charged threads.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '596'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Aura']
 forms:

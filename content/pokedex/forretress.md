@@ -1,7 +1,7 @@
 ---
 title: 'Forretress'
 subtitle: 'Its entire body is shielded by a steel-hard shell. What lurks inside the armor is a total mystery.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '205'
 skins: ['Shiny', 'Christmas', 'Easter', 'Aura']
 forms:

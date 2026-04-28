@@ -1,7 +1,7 @@
 ---
 title: 'Cyndaquil'
 subtitle: 'It is timid, and always curls itself up in a ball. If attacked, it flares up its back for protection.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '155'
 skins: ['Shiny', 'Aura']
 forms:

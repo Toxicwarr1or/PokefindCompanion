@@ -1,7 +1,7 @@
 ---
 title: 'Cofagrigus'
 subtitle: 'It has been said that they swallow those who get too close and turn them into mummies. They like to eat gold nuggets.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '563'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Aura']
 forms:

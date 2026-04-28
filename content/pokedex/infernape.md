@@ -1,7 +1,7 @@
 ---
 title: 'Infernape'
 subtitle: 'It uses a special kind of martial arts involving all its limbs. Its fire never goes out.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '392'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Summer', 'Shadow', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Excadrill'
 subtitle: 'It can help in tunnel construction. Its drill has evolved into steel strong enough to bore through iron plates.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '530'
 skins: ['Shiny', 'Halloween', 'Aura', 'Mecha']
 forms:

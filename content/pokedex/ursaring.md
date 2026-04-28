@@ -1,7 +1,7 @@
 ---
 title: 'Ursaring'
 subtitle: 'Although it is a good climber, it prefers to snap trees with its forelegs and eat fallen BERRIES.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '217'
 skins: ['Shiny', 'Shadow']
 forms:

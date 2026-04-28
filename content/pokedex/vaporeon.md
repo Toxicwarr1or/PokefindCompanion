@@ -1,7 +1,7 @@
 ---
 title: 'Vaporeon'
 subtitle: 'Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid''s.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '134'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow', 'Aura', 'Fusemon']
 forms:

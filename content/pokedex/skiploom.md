@@ -1,7 +1,7 @@
 ---
 title: 'Skiploom'
 subtitle: 'The bloom on top of its head opens and closes as the temperature fluctuates up and down.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '188'
 skins: ['Shiny', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Whirlipede'
 subtitle: 'Protected by a hard shell, it spins its body like a wheel and crashes furiously into its enemies.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '544'
 skins: ['Shiny']
 forms:

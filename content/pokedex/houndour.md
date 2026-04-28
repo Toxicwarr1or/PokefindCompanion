@@ -1,7 +1,7 @@
 ---
 title: 'Houndour'
 subtitle: 'It uses different kinds of cries for communicating with others of its kind and for pursuing its prey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '228'
 skins: ['Shiny', 'Easter']
 forms:

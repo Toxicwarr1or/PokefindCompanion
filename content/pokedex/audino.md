@@ -1,7 +1,7 @@
 ---
 title: 'Audino'
 subtitle: 'It touches others with the feelers on its ears, using the sound of their heartbeats to tell how they are feeling.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '531'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Jumpluff'
 subtitle: 'Once it catches the wind, it deftly controls its cotton-puff spores to float, even around the world.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '189'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

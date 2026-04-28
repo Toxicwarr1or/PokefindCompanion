@@ -1,7 +1,7 @@
 ---
 title: 'Jellicent'
 subtitle: 'The fate of the ships and crew that wander into Jellicent''s habitat: all sunken, all lost, all vanished.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '593'
 skins: ['Shiny', 'Easter', 'Summer']
 forms:

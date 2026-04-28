@@ -1,7 +1,7 @@
 ---
 title: 'Deino'
 subtitle: 'It tends to bite everything, and it is not a picky eater. Approaching it carelessly is dangerous.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '633'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

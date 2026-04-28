@@ -1,7 +1,7 @@
 ---
 title: 'Regice'
 subtitle: 'Regice''s body was made during an ice age. The deep-frozen body can''t be melted, even by fire. This Pokemon controls frigid air of minus 328 degrees F.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '378'
 skins: ['Shiny', 'Christmas']
 forms:

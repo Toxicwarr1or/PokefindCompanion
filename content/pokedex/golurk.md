@@ -1,7 +1,7 @@
 ---
 title: 'Golurk'
 subtitle: 'It flies across the sky at Mach speeds. Removing the seal on its chest makes its internal energy go out of control.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '623'
 skins: ['Shiny', 'Christmas', 'Aura']
 forms:

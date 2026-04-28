@@ -1,7 +1,7 @@
 ---
 title: 'Pachirisu'
 subtitle: 'It makes fur balls that crackle with static electricity. It stores them with berries in tree holes.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '417'
 skins: ['Shiny', 'Easter']
 forms:

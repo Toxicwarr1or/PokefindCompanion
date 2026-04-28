@@ -1,7 +1,7 @@
 ---
 title: 'Druddigon'
 subtitle: 'It warms its body by absorbing sunlight with its wings. When its body temperature falls, it can no longer move.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '621'
 skins: ['Shiny', 'Lunar New Year']
 forms:

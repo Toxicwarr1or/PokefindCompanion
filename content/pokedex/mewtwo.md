@@ -1,7 +1,7 @@
 ---
 title: 'Mewtwo'
 subtitle: 'It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '150'
 skins: ['Shiny', 'Halloween', 'Shadow', 'Aura', 'Gamer', 'Mecha', 'Disney']
 forms:

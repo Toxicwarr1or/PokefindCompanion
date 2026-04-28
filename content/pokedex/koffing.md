@@ -1,7 +1,7 @@
 ---
 title: 'Koffing'
 subtitle: 'Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '109'
 skins: ['Shiny', 'Christmas']
 forms:

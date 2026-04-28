@@ -1,7 +1,7 @@
 ---
 title: 'Rhyperior'
 subtitle: 'It puts rocks in holes in its palms and uses its muscles to shoot them. Geodude are shot at rare times.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '464'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

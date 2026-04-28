@@ -1,7 +1,7 @@
 ---
 title: 'Stunfisk'
 subtitle: 'Its skin is very hard, so it is unhurt even if stepped on by sumo wrestlers. It smiles when transmitting electricity.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '618'
 skins: ['Shiny']
 forms:
@@ -531,7 +531,7 @@ forms:
     kind: 'form'
     types: ['Ground', 'Steel']
     abilities: ['Mimicry']
-    sprite: ''
+    sprite: 'images/pokedex/stunfisk-galarian.png'
     egg_groups: ['amorphous', 'water 1']
     growth_rate: 'medium_fast'
     height_m: 0.7

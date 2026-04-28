@@ -1,7 +1,7 @@
 ---
 title: 'Purrloin'
 subtitle: 'They steal from people for fun, but their victims can''t help but forgive them. Their deceptively cute act is perfect.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '509'
 skins: ['Shiny']
 forms:

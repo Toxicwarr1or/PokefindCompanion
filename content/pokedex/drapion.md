@@ -1,7 +1,7 @@
 ---
 title: 'Drapion'
 subtitle: 'It has the power in its clawed arms to make scrap of a car. The tips of its claws release poison.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '452'
 skins: ['Shiny', 'Halloween', 'Shadow', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Espeon'
 subtitle: 'It uses the fine hair that covers its body to sense air currents and predict its enemy''s actions.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '196'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Meme', 'Monochrome']
 forms:

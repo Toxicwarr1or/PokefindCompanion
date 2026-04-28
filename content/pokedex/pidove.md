@@ -1,7 +1,7 @@
 ---
 title: 'Pidove'
 subtitle: 'Each follows its Trainer''s orders as best it can, but they sometimes fail to understand complicated commands.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '519'
 skins: ['Shiny']
 forms:

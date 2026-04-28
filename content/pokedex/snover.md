@@ -1,7 +1,7 @@
 ---
 title: 'Snover'
 subtitle: 'It lives on snowy mountains. Having had little contact with humans, it is boldly inquisitive.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '459'
 skins: ['Shiny']
 forms:

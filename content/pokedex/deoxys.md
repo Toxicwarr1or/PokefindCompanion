@@ -1,7 +1,7 @@
 ---
 title: 'Deoxys'
 subtitle: 'The DNA of a space virus underwent a sudden mutation upon exposure to a laser beam and resulted in Deoxys. The crystalline organ on this Pokemon''s chest appears to be its brain.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '386'
 skins: ['Shiny', 'Halloween']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Thundurus'
 subtitle: 'Countless charred remains mar the landscape of places through which Thundurus has passed.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '642'
 skins: ['Shiny', 'Halloween']
 forms:

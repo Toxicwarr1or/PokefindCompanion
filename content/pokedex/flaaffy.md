@@ -1,7 +1,7 @@
 ---
 title: 'Flaaffy'
 subtitle: 'As a result of storing too much electricity, it developed patches where even downy wool won''t grow.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '180'
 skins: ['Shiny', 'Valentine']
 forms:

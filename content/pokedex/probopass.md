@@ -1,7 +1,7 @@
 ---
 title: 'Probopass'
 subtitle: 'It exudes strong magnetism from all over. It controls three small units called Mini-Noses.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '476'
 skins: ['Shiny', 'Halloween']
 forms:

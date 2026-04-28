@@ -1,7 +1,7 @@
 ---
 title: 'Tangrowth'
 subtitle: 'It ensnares prey by extending arms made of vines. Losing arms to predators does not trouble it.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '465'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura', 'Cosmic']
 forms:

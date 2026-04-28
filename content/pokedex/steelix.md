@@ -1,7 +1,7 @@
 ---
 title: 'Steelix'
 subtitle: 'Its body has been compressed deep under the ground. As a result, it is even harder than a diamond.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '208'
 skins: ['Shiny', 'Christmas', 'Aura', 'Cosmic']
 forms:

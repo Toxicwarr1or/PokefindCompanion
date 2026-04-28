@@ -1,7 +1,7 @@
 ---
 title: 'Kabutops'
 subtitle: 'Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '141'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura', 'Monochrome']
 forms:

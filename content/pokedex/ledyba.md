@@ -1,7 +1,7 @@
 ---
 title: 'Ledyba'
 subtitle: 'It is very timid. It will be afraid to move if it is alone. But it will be active if it is in a group.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '165'
 skins: ['Shiny']
 forms:

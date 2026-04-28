@@ -1,7 +1,7 @@
 ---
 title: 'Vespiquen'
 subtitle: 'Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '416'
 skins: ['Shiny', 'Summer']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Blissey'
 subtitle: 'Anyone who takes even one bite of Blissey''s egg becomes unfailingly caring and pleasant to everyone.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '242'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Cosmic', 'Fusemon', 'Meme']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Seel'
 subtitle: 'The protruding horn on its head is very hard. It is used for bashing through thick ice.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '86'
 skins: ['Shiny']
 forms:

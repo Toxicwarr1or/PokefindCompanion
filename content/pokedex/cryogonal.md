@@ -1,7 +1,7 @@
 ---
 title: 'Cryogonal'
 subtitle: 'When its body temperature goes up, it turns into steam and vanishes. When its temperature lowers, it returns to ice.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '615'
 skins: ['Shiny', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Zoroark'
 subtitle: 'Bonds between these Pokemon are very strong. It protects the safety of its pack by tricking its opponents.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '571'
 skins: ['Shiny', 'Valentine', 'Thanksgiving', 'Summer', 'Aura']
 forms:

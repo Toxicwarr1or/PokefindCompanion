@@ -1,7 +1,7 @@
 ---
 title: 'Burmy'
 subtitle: 'To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '412'
 skins: ['Shiny', 'Christmas']
 forms:

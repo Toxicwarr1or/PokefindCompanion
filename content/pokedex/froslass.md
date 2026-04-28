@@ -1,7 +1,7 @@
 ---
 title: 'Froslass'
 subtitle: 'It freezes foes with an icy breath nearly -60 degrees F. What seems to be its body is actually hollow.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '478'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine']
 forms:

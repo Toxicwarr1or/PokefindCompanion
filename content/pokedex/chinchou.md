@@ -1,7 +1,7 @@
 ---
 title: 'Chinchou'
 subtitle: 'It shoots positive and negative electricity between the tips of its two antennae and zaps its enemies.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '170'
 skins: ['Shiny']
 forms:

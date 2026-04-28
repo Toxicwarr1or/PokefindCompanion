@@ -1,7 +1,7 @@
 ---
 title: 'Shroomish'
 subtitle: 'Shroomish live in damp soil in the dark depths of forests. They are often found keeping still under fallen leaves. This Pokemon feeds on compost that is made up of fallen, rotted leaves.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '285'
 skins: ['Shiny', 'Summer']
 forms:

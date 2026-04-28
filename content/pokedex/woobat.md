@@ -1,7 +1,7 @@
 ---
 title: 'Woobat'
 subtitle: 'Its habitat is dark forests and caves. It emits ultrasonic waves from its nose to learn about its surroundings.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '527'
 skins: ['Shiny', 'Valentine']
 forms:

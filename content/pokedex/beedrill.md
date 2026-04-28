@@ -1,7 +1,7 @@
 ---
 title: 'Beedrill'
 subtitle: 'Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '15'
 skins: ['Shiny', 'Christmas', 'Valentine']
 forms:

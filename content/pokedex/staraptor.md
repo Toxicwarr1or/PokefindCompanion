@@ -1,7 +1,7 @@
 ---
 title: 'Staraptor'
 subtitle: 'It has a savage nature. It will courageously challenge foes that are much larger.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '398'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

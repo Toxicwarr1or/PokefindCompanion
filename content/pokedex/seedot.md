@@ -1,7 +1,7 @@
 ---
 title: 'Seedot'
 subtitle: 'Seedot attaches itself to a tree branch using the top of its head. It sucks moisture from the tree while hanging off the branch. The more water it drinks, the glossier this Pokemon''s body becomes.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '273'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Tyrogue'
 subtitle: 'It is always bursting with energy. To make itself stronger, it keeps on fighting even if it loses.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '236'
 skins: ['Shiny', 'Valentine']
 forms:

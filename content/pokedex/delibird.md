@@ -1,7 +1,7 @@
 ---
 title: 'Delibird'
 subtitle: 'It carries food all day long. There are tales about lost people who were saved by the food it had.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '225'
 skins: ['Shiny']
 forms:

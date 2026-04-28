@@ -1,7 +1,7 @@
 ---
 title: 'Amoonguss'
 subtitle: 'It lures prey close by dancing and waving its arm caps, which resemble PokÃ© Balls, in a swaying motion.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '591'
 skins: ['Shiny', 'Halloween', 'Easter', 'Summer', 'April Fools']
 forms:

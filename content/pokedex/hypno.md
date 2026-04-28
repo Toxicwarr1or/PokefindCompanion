@@ -1,7 +1,7 @@
 ---
 title: 'Hypno'
 subtitle: 'When it locks eyes with an enemy, it will use a mix of PSI moves such as HypnoSIS and CONFUSION.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '97'
 skins: ['Shiny', 'Halloween', 'Modeler']
 forms:

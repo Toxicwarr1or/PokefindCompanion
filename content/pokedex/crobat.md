@@ -1,7 +1,7 @@
 ---
 title: 'Crobat'
 subtitle: 'It flies so silently through the dark on its four wings that it may not be noticed even when nearby.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '169'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine', 'Thanksgiving', 'Cosmic', 'Monochrome']
 forms:

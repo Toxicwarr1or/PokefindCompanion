@@ -1,7 +1,7 @@
 ---
 title: 'Celebi'
 subtitle: 'This Pokemon wanders across time. Grass and trees flourish in the forests in which it has appeared.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '251'
 skins: ['Shiny', 'Easter', 'Summer', 'Aura', 'Monochrome']
 forms:

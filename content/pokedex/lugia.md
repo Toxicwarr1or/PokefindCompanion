@@ -1,7 +1,7 @@
 ---
 title: 'Lugia'
 subtitle: 'It is said that it quietly spends its time deep at the bottom of the sea because its powers are too strong.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '249'
 skins: ['Shiny', 'Easter', 'Shadow', 'Aura']
 forms:

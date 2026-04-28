@@ -1,7 +1,7 @@
 ---
 title: 'Poochyena'
 subtitle: 'At first sight, Poochyena takes a bite at anything that moves. This Pokemon chases after prey until the victim becomes exhausted. However, it may turn tail if the prey strikes back.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '261'
 skins: ['Shiny']
 forms:

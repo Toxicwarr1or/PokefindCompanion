@@ -1,7 +1,7 @@
 ---
 title: 'Gastrodon'
 subtitle: 'It has a pliable body without any bones. If any part of its body is torn off, it grows right back.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '423'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura']
 forms:

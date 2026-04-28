@@ -1,7 +1,7 @@
 ---
 title: 'Scraggy'
 subtitle: 'Its skin has a rubbery elasticity, so it can reduce damage by defensively pulling its skin up to its neck.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '559'
 skins: ['Shiny', 'Summer']
 forms:

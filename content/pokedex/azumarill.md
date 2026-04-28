@@ -1,7 +1,7 @@
 ---
 title: 'Azumarill'
 subtitle: 'By keeping still and listening intently, it can tell what is in even wild, fast- moving rivers.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '184'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'April Fools', 'Aura', 'Marvel', 'Meme']
 forms:

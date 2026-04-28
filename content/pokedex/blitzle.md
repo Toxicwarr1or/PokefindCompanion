@@ -1,7 +1,7 @@
 ---
 title: 'Blitzle'
 subtitle: 'Its mane shines when it discharges electricity. They use their flashing manes to communicate with one another.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '522'
 skins: ['Shiny', 'Christmas']
 forms:

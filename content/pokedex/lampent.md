@@ -1,7 +1,7 @@
 ---
 title: 'Lampent'
 subtitle: 'This ominous Pokemon is feared. Through cities it wanders, searching for the spirits of the fallen.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '608'
 skins: ['Shiny', 'Thanksgiving']
 forms:

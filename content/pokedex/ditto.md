@@ -1,7 +1,7 @@
 ---
 title: 'Ditto'
 subtitle: 'Capable of copying an enemy''s genetic code to instantly transform itself into a duplicate of the enemy.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '132'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Aura', 'Gamer', 'Cosmic']
 forms:

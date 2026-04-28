@@ -1,7 +1,7 @@
 ---
 title: 'Pineco'
 subtitle: 'It likes to make its shell thicker by adding layers of tree bark. The additional weight doesn''t bother it.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '204'
 skins: ['Shiny', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Gastly'
 subtitle: 'Almost invisible, this gaseous Pokemon cloaks the target and puts it to sleep without notice.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '92'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

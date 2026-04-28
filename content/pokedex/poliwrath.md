@@ -1,7 +1,7 @@
 ---
 title: 'Poliwrath'
 subtitle: 'An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '62'
 skins: ['Shiny', 'Christmas', 'Cosmic', 'Disney']
 forms:

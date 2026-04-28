@@ -1,7 +1,7 @@
 ---
 title: 'Relicanth'
 subtitle: 'Relicanth is a Pokemon species that existed for a hundred million years without ever changing its form. This ancient Pokemon feeds on microscopic organisms with its toothless mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '369'
 skins: ['Shiny']
 forms:

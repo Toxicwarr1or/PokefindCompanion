@@ -1,7 +1,7 @@
 ---
 title: 'Piplup'
 subtitle: 'Because it is very proud, it hates accepting food from people. Its thick down guards it from cold.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '393'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Aura']
 forms:

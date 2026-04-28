@@ -1,7 +1,7 @@
 ---
 title: 'Ducklett'
 subtitle: 'These bird Pokemon are excellent divers. They swim around in the water eating their favorite food--peat moss.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '580'
 skins: ['Shiny', 'Easter']
 forms:

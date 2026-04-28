@@ -1,7 +1,7 @@
 ---
 title: 'Cresselia'
 subtitle: 'Shiny particles are released from its wings like a veil. It is said to represent the crescent moon.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '488'
 skins: ['Shiny', 'Halloween', 'Valentine']
 forms:

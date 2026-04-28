@@ -1,7 +1,7 @@
 ---
 title: 'Charmander'
 subtitle: 'Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '4'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura']
 forms:

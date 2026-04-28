@@ -1,7 +1,7 @@
 ---
 title: 'Gothita'
 subtitle: 'Their ribbonlike feelers increase their psychic power. They are always staring at something.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '574'
 skins: ['Shiny']
 forms:

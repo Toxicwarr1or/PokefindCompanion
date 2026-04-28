@@ -1,7 +1,7 @@
 ---
 title: 'Porygon-Z'
 subtitle: 'Additional software was installed to make it a better Pokemon. It began acting oddly, however.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '474'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

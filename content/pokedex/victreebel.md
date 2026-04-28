@@ -1,7 +1,7 @@
 ---
 title: 'Victreebel'
 subtitle: 'Said to live in huge colonies deep in jungles, although no one has ever returned from there.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '71'
 skins: ['Shiny', 'Halloween', 'Thanksgiving']
 forms:

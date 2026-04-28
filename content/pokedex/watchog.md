@@ -1,7 +1,7 @@
 ---
 title: 'Watchog'
 subtitle: 'When they see an enemy, their tails stand high, and they spit the seeds of berries stored in their cheek pouches.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '505'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Fraxure'
 subtitle: 'Since a broken tusk will not grow back, they diligently sharpen their tusks on river rocks after they''ve been fighting.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '611'
 skins: ['Shiny', 'Easter', 'Aura']
 forms:

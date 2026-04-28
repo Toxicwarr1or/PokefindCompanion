@@ -1,7 +1,7 @@
 ---
 title: 'Magby'
 subtitle: 'Each and every time it inhales and exhales, hot embers dribble out of its mouth and nostrils.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '240'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Axew'
 subtitle: 'They use their tusks to crush the berries they eat. Repeated regrowth makes their tusks strong and sharp.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '610'
 skins: ['Shiny', 'Easter', 'Aura']
 forms:

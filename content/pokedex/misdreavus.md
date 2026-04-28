@@ -1,7 +1,7 @@
 ---
 title: 'Misdreavus'
 subtitle: 'It likes playing mischievous tricks such as screaming and wailing to startle people at night.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '200'
 skins: ['Shiny', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Oddish'
 subtitle: 'During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '43'
 skins: ['Shiny']
 forms:

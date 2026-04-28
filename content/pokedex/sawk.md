@@ -1,7 +1,7 @@
 ---
 title: 'Sawk'
 subtitle: 'The sound of Sawk punching boulders and trees can be heard all the way from the mountains where they train.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '539'
 skins: ['Shiny', 'Easter']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Tentacruel'
 subtitle: 'The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '73'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Cosmic']
 forms:

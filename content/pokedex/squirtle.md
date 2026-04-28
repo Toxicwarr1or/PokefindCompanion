@@ -1,7 +1,7 @@
 ---
 title: 'Squirtle'
 subtitle: 'After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '7'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura', 'Meme']
 forms:

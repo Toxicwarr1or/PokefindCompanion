@@ -1,7 +1,7 @@
 ---
 title: 'Empoleon'
 subtitle: 'The three horns that extend from its beak attest to its power. The leader has the biggest horns.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '395'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Shadow', 'Aura']
 forms:

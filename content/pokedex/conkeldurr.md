@@ -1,7 +1,7 @@
 ---
 title: 'Conkeldurr'
 subtitle: 'It is thought that Conkeldurr taught humans how to make concrete more than 2,000 years ago.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '534'
 skins: ['Shiny', 'Christmas', 'Easter', 'Aura', 'Meme']
 forms:

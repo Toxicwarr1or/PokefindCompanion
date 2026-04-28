@@ -1,7 +1,7 @@
 ---
 title: 'Magneton'
 subtitle: 'Formed by several Magnemites linked together. They frequently appear when sunspots flare up.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '82'
 skins: []
 forms:

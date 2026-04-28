@@ -1,7 +1,7 @@
 ---
 title: 'Seadra'
 subtitle: 'Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '117'
 skins: ['Shiny']
 forms:

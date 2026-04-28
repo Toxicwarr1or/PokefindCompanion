@@ -1,7 +1,7 @@
 ---
 title: 'Dustox'
 subtitle: 'Dustox is instinctively drawn to light. Swarms of this Pokemon are attracted by the bright lights of cities, where they wreak havoc by stripping the leaves off roadside trees for food.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '269'
 skins: ['Shiny']
 forms:

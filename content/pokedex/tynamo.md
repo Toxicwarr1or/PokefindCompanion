@@ -1,7 +1,7 @@
 ---
 title: 'Tynamo'
 subtitle: 'While one alone doesn''t have much power, a chain of many Tynamo can be as powerful as lightning.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '602'
 skins: ['Shiny', 'Aura']
 forms:

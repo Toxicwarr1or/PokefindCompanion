@@ -1,7 +1,7 @@
 ---
 title: 'Kangaskhan'
 subtitle: 'The infant rarely ventures out of its mother''s protective pouch until it is 3 years old.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '115'
 skins: ['Shiny', 'Thanksgiving', 'Shadow']
 forms:

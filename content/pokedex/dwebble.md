@@ -1,7 +1,7 @@
 ---
 title: 'Dwebble'
 subtitle: 'This Pokemon can easily melt holes in hard rocks with a liquid secreted from its mouth.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '557'
 skins: ['Shiny']
 forms:

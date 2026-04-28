@@ -1,7 +1,7 @@
 ---
 title: 'Onix'
 subtitle: 'As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '95'
 skins: ['Shiny', 'Christmas']
 forms:

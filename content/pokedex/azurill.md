@@ -1,7 +1,7 @@
 ---
 title: 'Azurill'
 subtitle: 'Azurill spins its tail as if it were a lasso, then hurls it far. The momentum of the throw sends its body flying, too. Using this unique action, one of these Pokemon managed to hurl itself a record 33 feet.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '298'
 skins: ['Shiny']
 forms:

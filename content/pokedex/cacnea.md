@@ -1,7 +1,7 @@
 ---
 title: 'Cacnea'
 subtitle: 'Cacnea lives in arid locations such as deserts. It releases a strong aroma from its flower to attract prey. When prey comes near, this Pokemon shoots sharp thorns from its body to bring the victim down.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '331'
 skins: ['Shiny']
 forms:

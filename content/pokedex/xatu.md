@@ -1,7 +1,7 @@
 ---
 title: 'Xatu'
 subtitle: 'They say that it stays still and quiet because it is seeing both the past and future at the same time.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '178'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Monochrome']
 forms:

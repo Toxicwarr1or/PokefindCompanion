@@ -1,7 +1,7 @@
 ---
 title: 'Shelmet'
 subtitle: 'When attacked, it defends itself by closing the lid of its shell. It can spit a sticky, poisonous liquid.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '616'
 skins: ['Shiny']
 forms:

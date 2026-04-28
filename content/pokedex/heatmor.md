@@ -1,7 +1,7 @@
 ---
 title: 'Heatmor'
 subtitle: 'It breathes through a hole in its tail while it burns with an internal fire. Durant is its prey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '631'
 skins: ['Shiny', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Yanmega'
 subtitle: 'By churning its wings, it creates shock waves that inflict critical internal injuries to foes.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '469'
 skins: ['Shiny', 'Easter', 'Summer', 'Cosmic']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Riolu'
 subtitle: 'The aura that emanates from its body intensifies to alert others if it is afraid or sad.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '447'
 skins: ['Shiny', 'Halloween', 'Summer']
 forms:

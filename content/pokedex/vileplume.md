@@ -1,7 +1,7 @@
 ---
 title: 'Vileplume'
 subtitle: 'The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '45'
 skins: ['Shiny', 'Easter', 'Modeler']
 forms:

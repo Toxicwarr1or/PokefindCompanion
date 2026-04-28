@@ -1,7 +1,7 @@
 ---
 title: 'Pikachu'
 subtitle: 'When several of these Pokemon gather, their electricity could build and cause lightning storms.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '25'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Meme', 'Monochrome']
 forms:

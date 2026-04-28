@@ -1,7 +1,7 @@
 ---
 title: 'Azelf'
 subtitle: 'Known as "The Being of Willpower." It sleeps at the bottom of a lake to keep the world in balance.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '482'
 skins: ['Shiny', 'Christmas', 'Valentine']
 forms:

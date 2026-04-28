@@ -1,7 +1,7 @@
 ---
 title: 'Phione'
 subtitle: 'A Pokemon that lives in warm seas. It inflates the flotation sac on its head to drift and search for food.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '489'
 skins: ['Shiny', 'Summer']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Lickitung'
 subtitle: 'Its tongue can be extended like a chameleon''s. It leaves a tingling sensation when it licks enemies.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '108'
 skins: ['Shiny']
 forms:

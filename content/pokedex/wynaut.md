@@ -1,7 +1,7 @@
 ---
 title: 'Wynaut'
 subtitle: 'Wynaut can always be seen with a big, happy smile on its face. Look at its tail to determine if it is angry. When angered, this Pokemon will be slapping the ground with its tail.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '360'
 skins: ['Shiny']
 forms:

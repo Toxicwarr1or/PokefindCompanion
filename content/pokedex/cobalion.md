@@ -1,7 +1,7 @@
 ---
 title: 'Cobalion'
 subtitle: 'This legendary Pokemon battled against humans to protect Pokemon. Its personality is calm and composed.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '638'
 skins: ['Shiny', 'Easter']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Breloom'
 subtitle: 'Breloom closes in on its foe with light and sprightly footwork, then throws punches with its stretchy arms. This Pokemon''s fighting technique puts boxers to shame.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '286'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Shadow', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Scyther'
 subtitle: 'With ninja-like agility and speed, it can create the illusion that there is more than one.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '123'
 skins: ['Shiny', 'Shadow', 'Aura']
 forms:

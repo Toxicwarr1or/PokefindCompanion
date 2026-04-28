@@ -1,7 +1,7 @@
 ---
 title: 'Lileep'
 subtitle: 'Lileep became extinct approximately a hundred million years ago. This ancient Pokemon attaches itself to a rock on the seafloor and catches approaching prey using tentacles  shaped like flower petals.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '345'
 skins: ['Shiny']
 forms:

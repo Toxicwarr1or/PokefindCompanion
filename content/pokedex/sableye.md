@@ -1,7 +1,7 @@
 ---
 title: 'Sableye'
 subtitle: 'Sableye lead quiet lives deep inside caverns. They are feared, however, because these Pokemon are thought to steal the spirits of people when their eyes burn with a sinister glow in the darkness.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '302'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Disney']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Sudowoodo'
 subtitle: 'Although it always pretends to be a tree, its composition appears to be closer to a rock than a plant.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '185'
 skins: ['Shiny', 'Halloween', 'Christmas']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Mesprit'
 subtitle: 'Known as "The Being of Emotion." It taught humans the nobility of sorrow, pain, and joy.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '481'
 skins: ['Shiny', 'Halloween', 'Valentine']
 forms:

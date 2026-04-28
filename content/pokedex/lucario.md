@@ -1,7 +1,7 @@
 ---
 title: 'Lucario'
 subtitle: 'It has the ability to sense the auras of all things. It understands human speech.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '448'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Meme']
 forms:

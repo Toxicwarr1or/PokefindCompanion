@@ -1,7 +1,7 @@
 ---
 title: 'Gligar'
 subtitle: 'It flies straight at its target''s face then clamps down on the startled victim to inject poison.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '207'
 skins: ['Shiny', 'Easter', 'Valentine', 'Monochrome']
 forms:

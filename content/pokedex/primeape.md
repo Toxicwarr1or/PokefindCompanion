@@ -1,7 +1,7 @@
 ---
 title: 'Primeape'
 subtitle: 'Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '57'
 skins: ['Shiny', 'Christmas']
 forms:

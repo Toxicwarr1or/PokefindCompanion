@@ -1,7 +1,7 @@
 ---
 title: 'Haunter'
 subtitle: 'Because of its ability to slip through block walls, it is said to be from another dimension.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '93'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

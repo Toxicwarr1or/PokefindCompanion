@@ -1,7 +1,7 @@
 ---
 title: 'Venomoth'
 subtitle: 'The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '49'
 skins: ['Shiny', 'Valentine', 'Meme', 'Monochrome']
 forms:

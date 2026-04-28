@@ -1,7 +1,7 @@
 ---
 title: 'Masquerain'
 subtitle: 'Masquerain intimidates enemies with the eyelike patterns on its antennas. This Pokemon flaps its four wings to freely fly in any direction - even sideways and backwards - as if it were a helicopter.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '284'
 skins: ['Shiny', 'Christmas', 'Valentine', 'Summer']
 forms:

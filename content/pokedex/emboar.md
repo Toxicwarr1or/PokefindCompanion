@@ -1,7 +1,7 @@
 ---
 title: 'Emboar'
 subtitle: 'It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '500'
 skins: ['Shiny', 'Christmas', 'Easter', 'Thanksgiving', 'Aura']
 forms:

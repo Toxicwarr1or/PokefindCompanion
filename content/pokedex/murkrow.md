@@ -1,7 +1,7 @@
 ---
 title: 'Murkrow'
 subtitle: 'Feared and loathed by many, it is believed to bring misfortune to all those who see it at night.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '198'
 skins: ['Shiny', 'Halloween']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Alakazam'
 subtitle: 'Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '65'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Fusemon']
 forms:

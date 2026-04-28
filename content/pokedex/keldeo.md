@@ -1,7 +1,7 @@
 ---
 title: 'Keldeo'
 subtitle: 'By blasting water from its hooves, it can glide across water. It excels at using leg moves while battling.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '647'
 skins: ['Shiny', 'Christmas']
 forms:

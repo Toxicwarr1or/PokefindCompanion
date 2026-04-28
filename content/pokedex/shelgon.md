@@ -1,7 +1,7 @@
 ---
 title: 'Shelgon'
 subtitle: 'Inside Shelgon''s armor-like shell, cells are in the midst of transformation to create an entirely new body. This Pokemon''s shell is extremely heavy, making its movements sluggish.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '372'
 skins: ['Shiny', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Escavalier'
 subtitle: 'They fly around at high speed, striking with their pointed spears. Even when in trouble, they face opponents bravely.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '589'
 skins: ['Shiny', 'Halloween', 'Aura']
 forms:

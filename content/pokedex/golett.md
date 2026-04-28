@@ -1,7 +1,7 @@
 ---
 title: 'Golett'
 subtitle: 'The energy that burns inside it enables it to move, but no one has yet been able to identify this energy.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '622'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Absol'
 subtitle: 'Every time Absol appears before people, it is followed by a disaster such as an earthquake or a tidal wave. As a result, it came to be known as the disaster Pokemon.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '359'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Shadow', 'Aura']
 forms:

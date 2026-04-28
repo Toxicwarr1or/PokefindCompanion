@@ -1,7 +1,7 @@
 ---
 title: 'Samurott'
 subtitle: 'One swing of the sword incorporated in its armor can fell an opponent. A simple glare from one of them quiets everybody.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '503'
 skins: ['Shiny', 'Valentine', 'Aura']
 forms:

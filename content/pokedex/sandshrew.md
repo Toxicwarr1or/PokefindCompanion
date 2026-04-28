@@ -1,7 +1,7 @@
 ---
 title: 'Sandshrew'
 subtitle: 'Burrows deep underground in arid locations far from water. It only emerges to hunt for food.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '27'
 skins: ['Shiny']
 forms:
@@ -512,7 +512,7 @@ forms:
     types: ['Ice', 'Steel']
     abilities: ['Snow Cloak']
     hidden_ability: 'Slush Rush'
-    sprite: ''
+    sprite: 'images/pokedex/sandshrew-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.6

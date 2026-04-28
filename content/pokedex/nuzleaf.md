@@ -1,7 +1,7 @@
 ---
 title: 'Nuzleaf'
 subtitle: 'Nuzleaf live in densely overgrown forests. They occasionally venture out of the forest to startle people. This Pokemon dislikes having its long nose pinched.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '274'
 skins: ['Shiny']
 forms:

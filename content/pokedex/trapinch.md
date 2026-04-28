@@ -1,7 +1,7 @@
 ---
 title: 'Trapinch'
 subtitle: 'Trapinch''s nest is a sloped, bowl-like pit dug in sand. This Pokemon patiently waits for prey to tumble down the pit. Its giant jaws have enough strength to crush even boulders.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '328'
 skins: ['Shiny']
 forms:

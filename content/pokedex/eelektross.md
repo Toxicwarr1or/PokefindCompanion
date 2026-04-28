@@ -1,7 +1,7 @@
 ---
 title: 'Eelektross'
 subtitle: 'They crawl out of the ocean using their arms. They will attack prey on shore and immediately drag it into the ocean.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '604'
 skins: ['Shiny', 'Halloween', 'Aura']
 forms:

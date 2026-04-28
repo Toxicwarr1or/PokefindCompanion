@@ -1,7 +1,7 @@
 ---
 title: 'Regirock'
 subtitle: 'Regirock was sealed away by people long ago. If this Pokemon''s body is damaged in battle, it is said to seek out suitable rocks on its own to repair itself.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '377'
 skins: ['Shiny', 'Halloween']
 forms:

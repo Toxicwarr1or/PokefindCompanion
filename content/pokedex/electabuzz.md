@@ -1,7 +1,7 @@
 ---
 title: 'Electabuzz'
 subtitle: 'Normally found near power plants, they can wander away and cause major blackouts in cities.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '125'
 skins: ['Shiny', 'Christmas', 'Shadow']
 forms:

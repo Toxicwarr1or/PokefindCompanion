@@ -1,7 +1,7 @@
 ---
 title: 'Vanillish'
 subtitle: 'Snowy mountains are this Pokemon''s habitat. During an ancient ice age, they moved to southern areas.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '583'
 skins: ['Shiny', 'Summer']
 forms:

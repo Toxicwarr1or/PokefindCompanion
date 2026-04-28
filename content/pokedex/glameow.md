@@ -1,7 +1,7 @@
 ---
 title: 'Glameow'
 subtitle: 'It claws if displeased and purrs when affectionate. Its fickleness is very popular among some.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '431'
 skins: ['Shiny']
 forms:

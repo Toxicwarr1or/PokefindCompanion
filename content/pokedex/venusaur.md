@@ -1,7 +1,7 @@
 ---
 title: 'Venusaur'
 subtitle: 'The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '3'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Shadow', 'Aura']
 forms:

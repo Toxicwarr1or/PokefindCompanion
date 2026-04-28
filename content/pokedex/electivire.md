@@ -1,7 +1,7 @@
 ---
 title: 'Electivire'
 subtitle: 'It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '466'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura', 'Modeler']
 forms:

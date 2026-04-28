@@ -1,7 +1,7 @@
 ---
 title: 'Pansage'
 subtitle: 'This Pokemon dwells deep in the forest. Eating a leaf from its head whisks weariness away as if by magic.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '511'
 skins: ['Shiny']
 forms:

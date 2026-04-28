@@ -1,7 +1,7 @@
 ---
 title: 'Bronzong'
 subtitle: 'One caused a news sensation when it was dug up at a construction site after a 2,000-year sleep.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '437'
 skins: ['Shiny', 'Christmas', 'Valentine', 'April Fools', 'Meme']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Teddiursa'
 subtitle: 'If it finds honey, its crescent mark glows. It always licks its paws because they are soaked with honey.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '216'
 skins: ['Shiny']
 forms:

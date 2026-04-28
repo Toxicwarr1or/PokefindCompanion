@@ -1,7 +1,7 @@
 ---
 title: 'Raticate'
 subtitle: 'It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '20'
 skins: ['Shiny']
 forms:
@@ -453,7 +453,7 @@ forms:
     types: ['Dark', 'Normal']
     abilities: ['Gluttony', 'Hustle']
     hidden_ability: 'Thick Fat'
-    sprite: ''
+    sprite: 'images/pokedex/raticate-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.7

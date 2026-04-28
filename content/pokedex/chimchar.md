@@ -1,7 +1,7 @@
 ---
 title: 'Chimchar'
 subtitle: 'It agilely scales sheer cliffs to live atop craggy mountains. Its fire is put out when it sleeps.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '390'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Aura']
 forms:

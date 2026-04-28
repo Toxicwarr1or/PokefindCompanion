@@ -1,7 +1,7 @@
 ---
 title: 'Swadloon'
 subtitle: 'Forests where Swadloon live have superb foliage because the nutrients they make from fallen leaves nourish the plant life.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '541'
 skins: ['Shiny', 'Valentine']
 forms:

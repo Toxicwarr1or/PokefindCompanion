@@ -1,7 +1,7 @@
 ---
 title: 'Tepig'
 subtitle: 'It can deftly dodge its foe''s attacks while shooting fireballs from its nose. It roasts berries before it eats them.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '498'
 skins: ['Shiny', 'Easter', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Sandile'
 subtitle: 'They live buried in the sands of the desert. The sun-warmed sands prevent their body temperature from dropping.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '551'
 skins: ['Shiny', 'Christmas']
 forms:

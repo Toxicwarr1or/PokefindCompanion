@@ -1,7 +1,7 @@
 ---
 title: 'Jigglypuff'
 subtitle: 'When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '39'
 skins: ['Shiny']
 forms:

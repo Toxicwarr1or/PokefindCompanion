@@ -1,7 +1,7 @@
 ---
 title: 'Snorlax'
 subtitle: 'Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '143'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Shadow', 'Aura', 'Disney', 'Meme']
 forms:

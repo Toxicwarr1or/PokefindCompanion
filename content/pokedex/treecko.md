@@ -1,7 +1,7 @@
 ---
 title: 'Treecko'
 subtitle: 'Treecko has small hooks on the bottom of its feet that enable it to scale vertical walls. This Pokemon attacks by slamming foes with its thick tail.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '252'
 skins: ['Shiny', 'Aura']
 forms:

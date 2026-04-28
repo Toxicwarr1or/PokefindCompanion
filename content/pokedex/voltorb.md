@@ -1,7 +1,7 @@
 ---
 title: 'Voltorb'
 subtitle: 'Usually found in power plants. Easily mistaken for a POKÃ© BALL, they have zapped many people.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '100'
 skins: ['Shiny', 'Easter']
 forms:

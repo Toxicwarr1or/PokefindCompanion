@@ -1,7 +1,7 @@
 ---
 title: 'Illumise'
 subtitle: 'Illumise attracts a swarm of Volbeat using a sweet fragrance. Once the Volbeat have gathered, this Pokemon leads the lit-up swarm in drawing geometric designs on the canvas of the night sky.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '314'
 skins: ['Shiny', 'Thanksgiving']
 forms:

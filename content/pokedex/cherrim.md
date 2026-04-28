@@ -1,7 +1,7 @@
 ---
 title: 'Cherrim'
 subtitle: 'It blooms during times of strong sunlight. It tries to make up for everything it endured as a bud.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '421'
 skins: ['Shiny']
 forms:

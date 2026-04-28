@@ -1,7 +1,7 @@
 ---
 title: 'Stunky'
 subtitle: 'It protects itself by spraying a noxious fluid from its rear. The stench lingers for 24 hours.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '434'
 skins: ['Shiny']
 forms:

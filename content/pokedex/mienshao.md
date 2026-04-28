@@ -1,7 +1,7 @@
 ---
 title: 'Mienshao'
 subtitle: 'It wields the fur on its arms like a whip. Its arm attacks come with such rapidity that they cannot even be seen.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '620'
 skins: ['Shiny', 'Halloween']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Typhlosion'
 subtitle: 'If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '157'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Cosmic', 'Monochrome']
 forms:

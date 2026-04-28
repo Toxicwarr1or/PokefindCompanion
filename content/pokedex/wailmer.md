@@ -1,7 +1,7 @@
 ---
 title: 'Wailmer'
 subtitle: 'Wailmer''s nostrils are located above its eyes. This playful Pokemon loves to startle people by forcefully snorting out seawater it stores inside its body out of its nostrils.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '320'
 skins: ['Shiny']
 forms:

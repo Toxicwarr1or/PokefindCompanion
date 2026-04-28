@@ -1,7 +1,7 @@
 ---
 title: 'Ferrothorn'
 subtitle: 'It fights by swinging around its three spiky feelers. A hit from these steel spikes can reduce a boulder to rubble.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '598'
 skins: ['Shiny', 'Easter', 'Valentine', 'Aura', 'Mecha']
 forms:

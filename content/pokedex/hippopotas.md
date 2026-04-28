@@ -1,7 +1,7 @@
 ---
 title: 'Hippopotas'
 subtitle: 'It lives in arid places. Instead of perspiration, it expels grainy sand from its body.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '449'
 skins: ['Shiny']
 forms:

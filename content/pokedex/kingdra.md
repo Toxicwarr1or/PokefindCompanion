@@ -1,7 +1,7 @@
 ---
 title: 'Kingdra'
 subtitle: 'It is said that it usually hides in underwater caves. It can create whirlpools by yawning.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '230'
 skins: ['Shiny', 'Valentine', 'Summer', 'Shadow', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Durant'
 subtitle: 'They attack in groups, covering themselves in steel armor to protect themselves from Heatmor.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '632'
 skins: ['Shiny', 'Summer']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Magnemite'
 subtitle: 'Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '81'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

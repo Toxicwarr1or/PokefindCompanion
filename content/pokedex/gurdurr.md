@@ -1,7 +1,7 @@
 ---
 title: 'Gurdurr'
 subtitle: 'This Pokemon is so muscular and strongly built that even a group of wrestlers could not make it budge an inch.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '533'
 skins: ['Shiny', 'Christmas']
 forms:

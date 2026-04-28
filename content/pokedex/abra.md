@@ -1,7 +1,7 @@
 ---
 title: 'Abra'
 subtitle: 'Using its ability to read minds, it will identify impending danger and TELEPORT to safety.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '63'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

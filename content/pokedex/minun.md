@@ -1,7 +1,7 @@
 ---
 title: 'Minun'
 subtitle: 'Minun is more concerned about cheering on its partners than its own safety. It shorts out the electricity in its body to create brilliant showers of sparks to cheer on its teammates.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '312'
 skins: ['Shiny', 'Easter']
 forms:

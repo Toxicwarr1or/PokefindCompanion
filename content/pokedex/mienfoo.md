@@ -1,7 +1,7 @@
 ---
 title: 'Mienfoo'
 subtitle: 'In fights, they dominate with onslaughts of flowing, continuous attacks. With their sharp claws, they cut enemies.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '619'
 skins: ['Shiny']
 forms:

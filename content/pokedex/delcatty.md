@@ -1,7 +1,7 @@
 ---
 title: 'Delcatty'
 subtitle: 'Delcatty prefers to live an unfettered existence in which it can do as it pleases at its own pace. Because this Pokemon eats and sleeps whenever it decides, its daily routines are completely random.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '301'
 skins: ['Shiny']
 forms:

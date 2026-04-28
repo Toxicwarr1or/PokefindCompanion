@@ -1,7 +1,7 @@
 ---
 title: 'Beautifly'
 subtitle: 'Beautifly''s favorite food is the sweet pollen of flowers. If you want to see this Pokemon, just leave a potted flower by an open window. Beautifly is sure to come looking for pollen.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '267'
 skins: ['Shiny']
 forms:

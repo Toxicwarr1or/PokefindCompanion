@@ -1,7 +1,7 @@
 ---
 title: 'Munna'
 subtitle: 'Munna always float in the air. People whose dreams are eaten by them forget what the dreams had been about.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '517'
 skins: ['Shiny', 'Thanksgiving']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Eevee'
 subtitle: 'Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '133'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow', 'Aura']
 forms:

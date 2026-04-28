@@ -1,7 +1,7 @@
 ---
 title: 'Wartortle'
 subtitle: 'Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '8'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Thanksgiving', 'Aura', 'Meme']
 forms:

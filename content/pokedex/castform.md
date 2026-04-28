@@ -1,7 +1,7 @@
 ---
 title: 'Castform'
 subtitle: 'Castform''s appearance changes with the weather. This Pokemon gained the ability to use the vast power of nature to protect its tiny body.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '351'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Mareep'
 subtitle: 'If static electricity builds in its body, its fleece doubles in volume. Touching it will shock you.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '179'
 skins: ['Shiny', 'Valentine']
 forms:

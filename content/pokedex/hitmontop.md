@@ -1,7 +1,7 @@
 ---
 title: 'Hitmontop'
 subtitle: 'If you become enchanted by its smooth, elegant, dance-like kicks, you may get drilled hard.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '237'
 skins: ['Shiny', 'Halloween', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Joltik'
 subtitle: 'Joltik that live in cities have learned a technique for sucking electricity from the outlets in houses.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '595'
 skins: ['Shiny', 'Christmas']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Sneasel'
 subtitle: 'Its paws conceal sharp claws. If attacked, it suddenly extends the claws and startles its enemy.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '215'
 skins: ['Shiny']
 forms:

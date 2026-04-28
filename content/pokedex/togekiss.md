@@ -1,7 +1,7 @@
 ---
 title: 'Togekiss'
 subtitle: 'It will never appear where there is strife. Its sightings have become rare recently.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '468'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Cosmic', 'Disney', 'Fusemon']
 forms:

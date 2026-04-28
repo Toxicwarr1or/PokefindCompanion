@@ -1,7 +1,7 @@
 ---
 title: 'Whimsicott'
 subtitle: 'Like the wind, it can slip through any gap, no matter how small. It leaves balls of white fluff behind.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '547'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

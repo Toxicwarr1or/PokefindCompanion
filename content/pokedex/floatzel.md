@@ -1,7 +1,7 @@
 ---
 title: 'Floatzel'
 subtitle: 'It floats using its well-developed flotation sac. It assists in the rescues of drowning people.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '419'
 skins: ['Shiny', 'Easter', 'Valentine', 'Summer']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Ninetales'
 subtitle: 'Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '38'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Monochrome']
 forms:
@@ -363,7 +363,7 @@ forms:
     types: ['Ice', 'Fairy']
     abilities: ['Snow Cloak']
     hidden_ability: 'Snow Warning'
-    sprite: ''
+    sprite: 'images/pokedex/ninetales-alolan.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 1.1

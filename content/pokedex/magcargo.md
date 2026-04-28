@@ -1,7 +1,7 @@
 ---
 title: 'Magcargo'
 subtitle: 'The shell on its back is just skin that has cooled and hardened. It breaks easily with a slight touch.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '219'
 skins: ['Shiny']
 forms:

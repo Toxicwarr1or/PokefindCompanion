@@ -1,7 +1,7 @@
 ---
 title: 'Medicham'
 subtitle: 'It is said that through meditation, Medicham heightens energy inside its body and sharpens its sixth sense. This Pokemon hides its presence by merging itself with fields and mountains.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '308'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura']
 forms:

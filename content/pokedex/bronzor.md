@@ -1,7 +1,7 @@
 ---
 title: 'Bronzor'
 subtitle: 'Implements shaped like it were discovered in ancient tombs. It is unknown if they are related.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '436'
 skins: ['Shiny']
 forms:

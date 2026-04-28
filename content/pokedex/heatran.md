@@ -1,7 +1,7 @@
 ---
 title: 'Heatran'
 subtitle: 'It dwells in volcanic caves. It digs in with its cross-shaped feet to crawl on ceilings and walls.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '485'
 skins: ['Shiny', 'Halloween', 'Valentine']
 forms:

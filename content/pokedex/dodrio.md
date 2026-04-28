@@ -1,7 +1,7 @@
 ---
 title: 'Dodrio'
 subtitle: 'Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '85'
 skins: ['Shiny']
 forms:

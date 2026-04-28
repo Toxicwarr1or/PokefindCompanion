@@ -1,7 +1,7 @@
 ---
 title: 'Paras'
 subtitle: 'Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '46'
 skins: ['Shiny']
 forms:

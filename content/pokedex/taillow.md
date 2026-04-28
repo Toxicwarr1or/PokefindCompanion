@@ -1,7 +1,7 @@
 ---
 title: 'Taillow'
 subtitle: 'Taillow courageously stands its ground against foes, however strong they may be. This gutsy Pokemon will remain defiant even after a loss. On the other hand, it cries loudly if it becomes hungry.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '276'
 skins: ['Shiny']
 forms:

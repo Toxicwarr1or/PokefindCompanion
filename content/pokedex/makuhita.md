@@ -1,7 +1,7 @@
 ---
 title: 'Makuhita'
 subtitle: 'Makuhita is tenacious - it will keep getting up and attacking its foe however many times it is knocked down. Every time it gets back up, this Pokemon stores more energy in its body for evolving.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '296'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Machoke'
 subtitle: 'Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '67'
 skins: ['Shiny', 'Easter', 'Valentine']
 forms:

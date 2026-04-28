@@ -1,7 +1,7 @@
 ---
 title: 'Landorus'
 subtitle: 'Lands visited by Landorus grant such bountiful crops that it has been hailed as "The Guardian of the Fields."'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '645'
 skins: ['Shiny']
 forms:

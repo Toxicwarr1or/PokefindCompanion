@@ -1,7 +1,7 @@
 ---
 title: 'Hitmonlee'
 subtitle: 'When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '106'
 skins: ['Shiny', 'Valentine']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Linoone'
 subtitle: 'Linoone always runs full speed and only in straight lines. If facing an obstacle, it makes a right-angle turn to evade it. This Pokemon is very challenged by gently curving roads.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '264'
 skins: ['Shiny']
 forms:
@@ -498,7 +498,7 @@ forms:
     types: ['Dark', 'Normal']
     abilities: ['Pickup', 'Gluttony']
     hidden_ability: 'Quick Feet'
-    sprite: ''
+    sprite: 'images/pokedex/linoone-galarian.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.5

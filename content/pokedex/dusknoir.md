@@ -1,7 +1,7 @@
 ---
 title: 'Dusknoir'
 subtitle: 'The antenna on its head captures radio waves from the world of spirits that command it to take people there.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '477'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Aura', 'Modeler']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Slugma'
 subtitle: 'It never sleeps. It has to keep moving because if it stopped, its magma body would cool and harden.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '218'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Donphan'
 subtitle: 'It has sharp, hard tusks and a rugged hide. Its TACKLE is strong enough to knock down a house.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '232'
 skins: ['Shiny', 'Christmas', 'Valentine', 'Aura', 'Meme']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Raikou'
 subtitle: 'The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '243'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura', 'Sword And Shield']
 forms:

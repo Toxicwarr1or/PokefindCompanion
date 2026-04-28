@@ -1,7 +1,7 @@
 ---
 title: 'Starly'
 subtitle: 'They flock in great numbers. Though small, they flap their wings with great power.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '396'
 skins: ['Shiny']
 forms:

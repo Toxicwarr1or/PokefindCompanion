@@ -1,7 +1,7 @@
 ---
 title: 'Miltank'
 subtitle: 'Its milk is packed with nutrition, making it the ultimate beverage for the sick or weary.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '241'
 skins: ['Shiny', 'Easter']
 forms:

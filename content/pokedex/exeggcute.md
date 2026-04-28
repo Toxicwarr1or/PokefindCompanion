@@ -1,7 +1,7 @@
 ---
 title: 'Exeggcute'
 subtitle: 'Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '102'
 skins: ['Shiny']
 forms:

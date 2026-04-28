@@ -1,7 +1,7 @@
 ---
 title: 'Ferroseed'
 subtitle: 'When threatened, it attacks by shooting a barrage of spikes, which gives it a chance to escape by rolling away.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '597'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Monferno'
 subtitle: 'To intimidate attackers, it stretches the fire on its tail to make itself appear bigger.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '391'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Swoobat'
 subtitle: 'It emits sound waves of various frequencies from its nose, including some powerful enough to destroy rocks.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '528'
 skins: ['Shiny', 'Valentine']
 forms:

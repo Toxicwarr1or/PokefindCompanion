@@ -1,7 +1,7 @@
 ---
 title: 'Unown'
 subtitle: 'Their shapes look like hieroglyphs on ancient tablets. It is said that the two are somehow related.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '201'
 skins: ['Shiny', 'Halloween']
 forms:

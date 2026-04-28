@@ -1,7 +1,7 @@
 ---
 title: 'Petilil'
 subtitle: 'The leaves on its head are very bitter. Eating one of these leaves is known to refresh a tired body.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '548'
 skins: ['Shiny', 'Valentine']
 forms:

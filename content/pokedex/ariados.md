@@ -1,7 +1,7 @@
 ---
 title: 'Ariados'
 subtitle: 'It spins string not only from its rear but also from its mouth. It is hard to tell which end is which.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '168'
 skins: ['Shiny', 'Halloween']
 forms:

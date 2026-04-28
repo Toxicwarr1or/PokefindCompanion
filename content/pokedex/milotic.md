@@ -1,7 +1,7 @@
 ---
 title: 'Milotic'
 subtitle: 'Milotic is said to be the most beautiful of all the Pokemon. It has the power to becalm such emotions as anger and hostility to quell bitter feuding.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '350'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Cosmic', 'Fusemon']
 forms:

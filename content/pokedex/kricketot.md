@@ -1,7 +1,7 @@
 ---
 title: 'Kricketot'
 subtitle: 'It shakes its head back to front, causing its antennae to hit each other and sound like a xylophone.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '401'
 skins: ['Shiny']
 forms:

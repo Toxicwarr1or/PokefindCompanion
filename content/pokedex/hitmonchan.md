@@ -1,7 +1,7 @@
 ---
 title: 'Hitmonchan'
 subtitle: 'While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '107'
 skins: ['Shiny', 'Valentine']
 forms:

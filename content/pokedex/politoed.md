@@ -1,7 +1,7 @@
 ---
 title: 'Politoed'
 subtitle: 'If Poliwag and Poliwhirl hear its echoing cry, they respond by gathering from far and wide.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '186'
 skins: ['Shiny', 'Christmas', 'Aura', 'Cosmic']
 forms:

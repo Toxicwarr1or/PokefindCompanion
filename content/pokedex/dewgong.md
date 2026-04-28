@@ -1,7 +1,7 @@
 ---
 title: 'Dewgong'
 subtitle: 'Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '87'
 skins: ['Shiny', 'Summer']
 forms:

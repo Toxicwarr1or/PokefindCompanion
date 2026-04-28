@@ -1,7 +1,7 @@
 ---
 title: 'Uxie'
 subtitle: 'Known as The Being of Knowledge." It is said that it can wipe out the memory of those who see its eyes.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '480'
 skins: ['Shiny', 'Valentine', 'Thanksgiving']
 forms:

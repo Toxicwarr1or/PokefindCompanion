@@ -1,7 +1,7 @@
 ---
 title: 'Machamp'
 subtitle: 'Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '68'
 skins: ['Shiny', 'Easter', 'Valentine', 'Aura', 'Modeler', 'Fusemon', 'Meme']
 forms:

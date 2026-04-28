@@ -1,7 +1,7 @@
 ---
 title: 'Luxray'
 subtitle: 'It has eyes that can see through anything. It spots and captures prey hiding behind objects.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '405'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine', 'Aura']
 forms:

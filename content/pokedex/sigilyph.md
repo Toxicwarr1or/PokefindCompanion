@@ -1,7 +1,7 @@
 ---
 title: 'Sigilyph'
 subtitle: 'They never vary the route they fly, because their memories of guarding an ancient city remain steadfast.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '561'
 skins: ['Shiny']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Throh'
 subtitle: 'When it tightens its belt, it becomes stronger. Wild Throh use vines to weave their own belts.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '538'
 skins: ['Shiny', 'Easter']
 forms:

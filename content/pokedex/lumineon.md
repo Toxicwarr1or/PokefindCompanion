@@ -1,7 +1,7 @@
 ---
 title: 'Lumineon'
 subtitle: 'It lives on the deep-sea floor. It attracts prey by flashing the patterns on its four tail fins.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '457'
 skins: ['Shiny']
 forms:

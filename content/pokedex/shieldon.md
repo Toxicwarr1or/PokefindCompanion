@@ -1,7 +1,7 @@
 ---
 title: 'Shieldon'
 subtitle: 'A Pokemon that lived in jungles around 100 million years ago. Its facial hide is extremely hard.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '410'
 skins: ['Shiny']
 forms:

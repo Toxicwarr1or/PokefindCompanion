@@ -1,7 +1,7 @@
 ---
 title: 'Volcarona'
 subtitle: 'When volcanic ash darkened the atmosphere, it is said that Volcarona''s fire provided a replacement for the sun.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '637'
 skins: ['Shiny', 'Valentine', 'Summer', 'Aura']
 forms:

@@ -1,7 +1,7 @@
 ---
 title: 'Feraligatr'
 subtitle: 'When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up.'
-date: 2026-04-27
+date: 2026-04-28
 dex_number: '160'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Monochrome']
 forms:
