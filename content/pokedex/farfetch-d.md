@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Defiant'
     sprite: 'images/pokedex/farfetch-d.png'
     egg_groups: ['field', 'flying']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.8
     weight_kg: 15
@@ -494,11 +495,13 @@ forms:
         pp: '5'
   - name: 'Galarian'
     kind: 'form'
+    description: 'The Farfetch''d of the Galar region are brave warriors, and they wield thick, tough leeks in battle.'
     types: ['Fighting']
     abilities: ['Steadfast']
     hidden_ability: 'Scrappy'
     sprite: 'images/pokedex/farfetch-d-galarian.png'
     egg_groups: ['field', 'flying']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.8
     weight_kg: 42.0

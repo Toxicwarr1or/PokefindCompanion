@@ -523,6 +523,7 @@ forms:
         pp: '15'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Electivire sharpens its metal limbs through constant combat, leaving sparks and cuts in its wake. It is oddly drawn to coins, hoarding shiny objects to test their durability.'
     types: ['Steel']
     abilities: ['Steelworker', 'Iron Barbs']
     hidden_ability: 'Sharpness'

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Shell Armor'
     sprite: 'images/pokedex/torkoal.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 80.4

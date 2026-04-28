@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sheer Force'
     sprite: 'images/pokedex/totodile.png'
     egg_groups: ['water 1', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.6
     weight_kg: 9.5

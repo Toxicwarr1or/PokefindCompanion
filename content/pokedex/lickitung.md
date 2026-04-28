@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Cloud Nine'
     sprite: 'images/pokedex/lickitung.png'
     egg_groups: ['monster']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.2
     weight_kg: 65.5

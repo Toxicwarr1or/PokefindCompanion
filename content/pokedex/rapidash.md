@@ -386,6 +386,7 @@ forms:
         pp: '15'
   - name: 'Galarian'
     kind: 'form'
+    description: 'Little can stand up to its psycho cut. Unleashed from this Pokémon''s horn, the move will punch a hole right through a thick metal sheet.'
     types: ['Psychic', 'Fairy']
     abilities: ['Run Away', 'Pastel Veil']
     hidden_ability: 'Anticipation'

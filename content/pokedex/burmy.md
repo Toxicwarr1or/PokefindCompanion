@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Overcoat'
     sprite: 'images/pokedex/burmy.png'
     egg_groups: ['bug']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.2
     weight_kg: 3.4

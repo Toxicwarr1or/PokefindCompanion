@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Speed Boost'
     sprite: 'images/pokedex/torchic.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.4
     weight_kg: 2.5

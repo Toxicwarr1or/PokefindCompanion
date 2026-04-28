@@ -1,5 +1,5 @@
 ---
-title: 'A Soothing Melody'
+title: 'Main Quest 3 - A Soothing Melody'
 date: 2026-04-28
 layout: questguide
 gen: 5

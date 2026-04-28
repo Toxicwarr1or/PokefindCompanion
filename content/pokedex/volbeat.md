@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Prankster'
     sprite: 'images/pokedex/volbeat.png'
     egg_groups: ['human-like', 'bug']
+    egg_steps: 3855
     growth_rate: 'erratic'
     height_m: 0.7
     weight_kg: 17.7

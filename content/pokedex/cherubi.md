@@ -11,6 +11,7 @@ forms:
     abilities: ['Chlorophyll']
     sprite: 'images/pokedex/cherubi.png'
     egg_groups: ['grass', 'fairy']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 3.3

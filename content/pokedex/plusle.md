@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Lightning Rod'
     sprite: 'images/pokedex/plusle.png'
     egg_groups: ['fairy']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 4.2

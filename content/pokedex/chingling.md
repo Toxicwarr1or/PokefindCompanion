@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/chingling.png'
     egg_groups: ['undiscovered']
+    egg_steps: 6425
     growth_rate: 'fast'
     height_m: 0.2
     weight_kg: 0.6

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Weak Armor'
     sprite: 'images/pokedex/onix.png'
     egg_groups: ['mineral']
+    egg_steps: 6425
     growth_rate: 'medium_fast'
     height_m: 8.8
     weight_kg: 210

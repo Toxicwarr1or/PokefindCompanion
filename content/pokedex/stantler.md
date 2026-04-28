@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sap Sipper'
     sprite: 'images/pokedex/stantler.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 1.4
     weight_kg: 71.2

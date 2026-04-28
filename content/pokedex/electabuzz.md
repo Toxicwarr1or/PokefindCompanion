@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Vital Spirit'
     sprite: 'images/pokedex/electabuzz.png'
     egg_groups: ['human-like']
+    egg_steps: 6425
     growth_rate: 'medium_fast'
     height_m: 1.1
     weight_kg: 30

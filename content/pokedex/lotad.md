@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Own Tempo'
     sprite: 'images/pokedex/lotad.png'
     egg_groups: ['grass', 'water 1']
+    egg_steps: 3855
     growth_rate: 'medium_slow'
     height_m: 0.5
     weight_kg: 2.6

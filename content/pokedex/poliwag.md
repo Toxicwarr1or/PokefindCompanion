@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Swift Swim'
     sprite: 'images/pokedex/poliwag.png'
     egg_groups: ['water 1']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.6
     weight_kg: 12.4

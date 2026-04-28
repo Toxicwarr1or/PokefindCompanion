@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Run Away'
     sprite: 'images/pokedex/oddish.png'
     egg_groups: ['grass']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.5
     weight_kg: 5.4

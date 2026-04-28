@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Telepathy'
     sprite: 'images/pokedex/meditite.png'
     egg_groups: ['human-like']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.6
     weight_kg: 11.2

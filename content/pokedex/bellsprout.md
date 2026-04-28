@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Gluttony'
     sprite: 'images/pokedex/bellsprout.png'
     egg_groups: ['grass']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.7
     weight_kg: 4

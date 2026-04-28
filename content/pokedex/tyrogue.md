@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Vital Spirit'
     sprite: 'images/pokedex/tyrogue.png'
     egg_groups: ['undiscovered']
+    egg_steps: 6425
     growth_rate: 'medium_fast'
     height_m: 0.7
     weight_kg: 21

@@ -536,6 +536,7 @@ forms:
         pp: '15'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Its Skull withstands impacts of any magnitude. As a result, its brain never gets the chance to grow.'
     types: ['Dark', 'Fighting']
     abilities: ['Hustle', 'Guts']
     hidden_ability: 'Defiant'

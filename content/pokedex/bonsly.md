@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rattled'
     sprite: 'images/pokedex/bonsly.png'
     egg_groups: ['undiscovered']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 15

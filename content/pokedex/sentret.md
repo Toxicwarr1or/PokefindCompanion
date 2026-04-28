@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Frisk'
     sprite: 'images/pokedex/sentret.png'
     egg_groups: ['field']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.8
     weight_kg: 6

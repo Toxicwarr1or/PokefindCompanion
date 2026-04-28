@@ -475,6 +475,7 @@ forms:
         pp: '15'
   - name: 'Haikou'
     kind: 'form'
+    description: 'Hariyama trains relentlessly in coastal storms, letting crashing waves harden its body. Each strike grows heavier the longer it stands its ground, and it never falters once it finds its rhythm.'
     types: ['Water', 'Dark']
     abilities: ['Iron Fist', 'Water Veil']
     hidden_ability: 'Stamina'

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Prankster'
     sprite: 'images/pokedex/illumise.png'
     egg_groups: ['human-like', 'bug']
+    egg_steps: 3855
     growth_rate: 'fluctuating'
     height_m: 0.6
     weight_kg: 17.7

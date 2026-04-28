@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Pressure'
     sprite: 'images/pokedex/wailmer.png'
     egg_groups: ['water 2', 'field']
+    egg_steps: 10280
     growth_rate: 'fluctuating'
     height_m: 2
     weight_kg: 130

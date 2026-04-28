@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Overcoat'
     sprite: 'images/pokedex/pineco.png'
     egg_groups: ['bug']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.6
     weight_kg: 7.2

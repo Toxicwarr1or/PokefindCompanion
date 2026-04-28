@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Weak Armor'
     sprite: 'images/pokedex/skarmory.png'
     egg_groups: ['flying']
+    egg_steps: 6425
     growth_rate: 'slow'
     height_m: 1.7
     weight_kg: 50.5

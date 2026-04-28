@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Gluttony'
     sprite: 'images/pokedex/munchlax.png'
     egg_groups: ['undiscovered']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 0.6
     weight_kg: 105

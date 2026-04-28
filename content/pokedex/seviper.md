@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Infiltrator'
     sprite: 'images/pokedex/seviper.png'
     egg_groups: ['dragon', 'field']
+    egg_steps: 5140
     growth_rate: 'fluctuating'
     height_m: 2.7
     weight_kg: 52.5

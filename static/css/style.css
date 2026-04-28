@@ -1559,3 +1559,69 @@ pre code { background: transparent; padding: 0; }
     font-variant-numeric: tabular-nums;
 }
 .dex-nav-name { color: var(--text); font-weight: 600; }
+
+.form-description {
+    margin: 0.5rem 0 1rem;
+    padding: 0.6rem 0.95rem;
+    border-left: 3px solid var(--brand);
+    background: var(--surface);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    color: var(--text-dim);
+    font-style: italic;
+    line-height: 1.55;
+}
+
+.mc-model-skin-toggle {
+    display: flex;
+    gap: 0.3rem;
+    margin: 0.5rem 0 0.3rem;
+}
+.mc-skin-btn {
+    flex: 1;
+    padding: 0.35rem 0.7rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.mc-skin-btn:hover { color: var(--text); border-color: var(--brand); }
+.mc-skin-btn.active {
+    background: var(--brand);
+    color: #0a0f12;
+    border-color: var(--brand);
+}
+.mc-skin-btn[data-skin="shiny"].active {
+    background: var(--accent-shiny);
+    border-color: var(--accent-shiny);
+    color: #1a0a14;
+}
+
+/* ----- Quest sub-tabs (Main vs Side within a gen) ----- */
+.quest-subtabs {
+    display: flex;
+    gap: 0.4rem;
+    margin: 0.4rem 0 0.8rem;
+}
+.quest-subtab {
+    flex: 0 1 auto;
+    padding: 0.4rem 0.95rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.quest-subtab:hover { color: var(--text); border-color: var(--brand); }
+.quest-subtab.active {
+    background: var(--surface-elev);
+    color: var(--brand);
+    border-color: var(--brand);
+}
+.quest-subpanel[hidden] { display: none; }

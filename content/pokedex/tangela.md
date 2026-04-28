@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Regenerator'
     sprite: 'images/pokedex/tangela.png'
     egg_groups: ['grass']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1
     weight_kg: 35

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Limber'
     sprite: 'images/pokedex/buneary.png'
     egg_groups: ['human-like', 'field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 5.5

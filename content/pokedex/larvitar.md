@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sand Veil'
     sprite: 'images/pokedex/larvitar.png'
     egg_groups: ['monster']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 0.6
     weight_kg: 72

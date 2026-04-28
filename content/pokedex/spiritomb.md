@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Infiltrator'
     sprite: 'images/pokedex/spiritomb.png'
     egg_groups: ['amorphous']
+    egg_steps: 7710
     growth_rate: 'medium_fast'
     height_m: 1
     weight_kg: 108
@@ -484,6 +485,7 @@ forms:
         pp: '20'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Spiritomb drifts lazily through warm sands, its bound spirits resting beneath the surface. Despite its eerie origin, it thrives in calm waters, absorbing moisture and draining energy from anything that disturbs its peace.'
     types: ['Water', 'Ground']
     abilities: ['Comatose', 'Liquid Ooze']
     hidden_ability: 'Water Absorb'

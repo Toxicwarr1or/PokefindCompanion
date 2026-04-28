@@ -1,5 +1,5 @@
 ---
-title: 'Main Quest 8- The Great War - Statera'
+title: 'Main Quest 8 - The Great War - Statera'
 date: 2026-04-28
 layout: questguide
 gen: 5

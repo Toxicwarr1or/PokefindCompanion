@@ -411,6 +411,7 @@ forms:
         pp: '10'
   - name: 'Galarian'
     kind: 'form'
+    description: 'This Pokémon consumes particles that contaminate the air. Instead of leaving droppings, it expels clean air'
     types: ['Poison', 'Fairy']
     abilities: ['Levitate', 'Neutralizing Gas']
     hidden_ability: 'Misty Surge'

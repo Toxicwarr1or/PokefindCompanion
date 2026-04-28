@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rain Dish'
     sprite: 'images/pokedex/surskit.png'
     egg_groups: ['bug', 'water 1']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 1.7

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Leaf Guard'
     sprite: 'images/pokedex/roselia.png'
     egg_groups: ['grass', 'fairy']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.3
     weight_kg: 2

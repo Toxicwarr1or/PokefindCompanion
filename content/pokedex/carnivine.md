@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/carnivine.png'
     egg_groups: ['grass']
+    egg_steps: 6425
     growth_rate: 'slow'
     height_m: 1.4
     weight_kg: 27

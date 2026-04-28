@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sturdy'
     sprite: 'images/pokedex/relicanth.png'
     egg_groups: ['water 2', 'water 1']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 1
     weight_kg: 23.4

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Steadfast'
     sprite: 'images/pokedex/machop.png'
     egg_groups: ['human-like']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.8
     weight_kg: 19.5

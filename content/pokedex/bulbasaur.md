@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Chlorophyll'
     sprite: 'images/pokedex/bulbasaur.png'
     egg_groups: ['grass', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.7
     weight_kg: 6.9

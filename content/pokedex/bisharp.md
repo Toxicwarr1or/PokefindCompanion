@@ -528,6 +528,7 @@ forms:
         pp: '20'
   - name: 'Zeinova'
     kind: 'form'
+    description: 'Bisharp''s bladed body exudes a deadly toxin, and its scales repel damage until its guard is broken. When it strikes, its draconic power surges, leaving corrosive wounds that refuse to heal.'
     types: ['Poison', 'Dragon']
     abilities: ['Poison Touch', 'Multiscale']
     hidden_ability: 'Dragon''s Maw'

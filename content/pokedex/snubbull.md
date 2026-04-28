@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rattled'
     sprite: 'images/pokedex/snubbull.png'
     egg_groups: ['fairy', 'field']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 0.6
     weight_kg: 7.8

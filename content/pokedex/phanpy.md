@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sand Veil'
     sprite: 'images/pokedex/phanpy.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 33.5

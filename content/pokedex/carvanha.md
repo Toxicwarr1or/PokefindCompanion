@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Speed Boost'
     sprite: 'images/pokedex/carvanha.png'
     egg_groups: ['water 2']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.8
     weight_kg: 20.8

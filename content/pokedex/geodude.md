@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sand Veil'
     sprite: 'images/pokedex/geodude.png'
     egg_groups: ['mineral']
+    egg_steps: 3855
     growth_rate: 'medium_slow'
     height_m: 0.4
     weight_kg: 20

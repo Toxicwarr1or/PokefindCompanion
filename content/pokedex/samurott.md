@@ -473,6 +473,7 @@ forms:
         pp: '20'
   - name: 'Zeinova'
     kind: 'form'
+    description: 'Though flightless, Samurott commands the skies by summoning slicing winds through sheer force. It charges through sandstorms without injury, using momentum alone to overwhelm its enemies.'
     types: ['Rock', 'Flying']
     abilities: ['Sand Rush', 'Rock Head']
     hidden_ability: 'Magic Guard'

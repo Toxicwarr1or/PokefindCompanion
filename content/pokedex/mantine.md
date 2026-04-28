@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Water Veil'
     sprite: 'images/pokedex/mantine.png'
     egg_groups: ['water 1']
+    egg_steps: 6425
     growth_rate: 'slow'
     height_m: 2.1
     weight_kg: 220

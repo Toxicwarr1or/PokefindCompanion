@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/gastly.png'
     egg_groups: ['amorphous']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 1.3
     weight_kg: 0.1

@@ -426,6 +426,7 @@ forms:
         pp: '5'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'A frozen one was dug up from soil dating back 11,000 years. It woke up to much amazement.'
     types: ['Dark', 'Fire']
     abilities: ['Moxie', 'Fur Coat']
     hidden_ability: 'Sheer Force'

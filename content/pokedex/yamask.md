@@ -484,6 +484,7 @@ forms:
         pp: '20'
   - name: 'Galarian'
     kind: 'form'
+    description: 'A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask’s dark power.'
     types: ['Ground', 'Ghost']
     abilities: ['Wandering Spirit']
     sprite: 'images/pokedex/yamask-galarian.png'

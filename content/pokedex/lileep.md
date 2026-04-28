@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Storm Drain'
     sprite: 'images/pokedex/lileep.png'
     egg_groups: ['water 3']
+    egg_steps: 7710
     growth_rate: 'erratic'
     height_m: 1
     weight_kg: 23.8

@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/misdreavus.png'
     egg_groups: ['amorphous']
+    egg_steps: 6425
     growth_rate: 'fast'
     height_m: 0.7
     weight_kg: 1

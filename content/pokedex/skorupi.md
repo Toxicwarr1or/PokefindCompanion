@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Keen Eye'
     sprite: 'images/pokedex/skorupi.png'
     egg_groups: ['water 3', 'bug']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.8
     weight_kg: 12

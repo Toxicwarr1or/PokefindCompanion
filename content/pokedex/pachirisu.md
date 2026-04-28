@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Volt Absorb'
     sprite: 'images/pokedex/pachirisu.png'
     egg_groups: ['fairy', 'field']
+    egg_steps: 2570
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 3.9

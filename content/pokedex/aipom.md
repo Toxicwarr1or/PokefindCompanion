@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Skill Link'
     sprite: 'images/pokedex/aipom.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 0.8
     weight_kg: 11.5

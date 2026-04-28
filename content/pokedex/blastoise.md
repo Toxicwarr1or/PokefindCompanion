@@ -495,6 +495,7 @@ forms:
         pp: '15'
   - name: 'Kyoto'
     kind: 'form'
+    description: 'Test'
     types: ['Steel', 'Bug']
     abilities: ['Tinted Lens', 'Heatproof']
     hidden_ability: 'Unaware'

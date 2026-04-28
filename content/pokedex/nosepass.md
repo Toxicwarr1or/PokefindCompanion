@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sand Force'
     sprite: 'images/pokedex/nosepass.png'
     egg_groups: ['mineral']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1
     weight_kg: 97

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Aftermath'
     sprite: 'images/pokedex/voltorb.png'
     egg_groups: ['mineral']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 10.4

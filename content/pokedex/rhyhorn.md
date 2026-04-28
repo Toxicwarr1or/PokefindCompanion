@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Reckless'
     sprite: 'images/pokedex/rhyhorn.png'
     egg_groups: ['field', 'monster']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 1
     weight_kg: 115

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sheer Force'
     sprite: 'images/pokedex/makuhita.png'
     egg_groups: ['human-like']
+    egg_steps: 5140
     growth_rate: 'fluctuating'
     height_m: 1
     weight_kg: 86.4

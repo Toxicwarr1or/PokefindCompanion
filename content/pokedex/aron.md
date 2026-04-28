@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Heavy Metal'
     sprite: 'images/pokedex/aron.png'
     egg_groups: ['monster']
+    egg_steps: 8995
     growth_rate: 'slow'
     height_m: 0.4
     weight_kg: 60

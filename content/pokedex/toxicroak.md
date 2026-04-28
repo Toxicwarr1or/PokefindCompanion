@@ -559,6 +559,7 @@ forms:
         pp: '15'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Its knuckles claws secrete a toxin so vile that even a scratch could prove fatal.'
     types: ['Water', 'Grass']
     abilities: ['Toxic Boost', 'Triage']
     hidden_ability: 'Speed Boost'

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Poison Touch'
     sprite: 'images/pokedex/grimer.png'
     egg_groups: ['amorphous']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.9
     weight_kg: 30

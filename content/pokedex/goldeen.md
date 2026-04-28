@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Lightning Rod'
     sprite: 'images/pokedex/goldeen.png'
     egg_groups: ['water 2']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.6
     weight_kg: 15

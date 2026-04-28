@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Moody'
     sprite: 'images/pokedex/snorunt.png'
     egg_groups: ['mineral', 'fairy']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.7
     weight_kg: 16.8

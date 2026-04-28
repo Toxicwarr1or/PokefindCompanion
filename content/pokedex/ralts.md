@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Telepathy'
     sprite: 'images/pokedex/ralts.png'
     egg_groups: ['amorphous']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.4
     weight_kg: 6.6

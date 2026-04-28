@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sand Rush'
     sprite: 'images/pokedex/sandshrew.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.6
     weight_kg: 12

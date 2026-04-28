@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/chimecho.png'
     egg_groups: ['amorphous']
+    egg_steps: 6425
     growth_rate: 'fast'
     height_m: 0.6
     weight_kg: 1

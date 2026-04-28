@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Frisk'
     sprite: 'images/pokedex/duskull.png'
     egg_groups: ['amorphous']
+    egg_steps: 6425
     growth_rate: 'fast'
     height_m: 0.8
     weight_kg: 15

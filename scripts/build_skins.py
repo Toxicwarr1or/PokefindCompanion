@@ -77,6 +77,12 @@ SYNTHETIC_SKINS = {
 # placeholders / shared assets, not real Pokémon).
 EXCLUDE_SPECIES_FOLDERS = {"statue"}
 
+# Folder names that mean "regional / variant tag" rather than a species. When
+# a recursive walk lands on a leaf folder with one of these names, treat the
+# enclosing folder's name as the species instead — that keeps e.g.
+# valentine/rapidash/galarian/ tagged as 'Rapidash', not 'Galarian'.
+VARIANT_FOLDERS = {"alolan", "galarian", "alola", "galar", "shiny", "old"}
+
 # Display names for each skin folder.
 SKIN_DISPLAY = {
     "alolan":            "Alolan",
@@ -173,12 +179,33 @@ def species_display(folder_name: str) -> str:
     return " ".join(w.capitalize() for w in name.replace("-", " ").replace("_", " ").split())
 
 
+SLUG_OVERRIDES = {
+    "mrmime":     "mr-mime",
+    "mimejr":     "mime-jr",
+    "farfetchd":  "farfetch-d",
+    "hooh":       "ho-oh",
+    "nidoranf":   "nidoran-f",
+    "nidoranm":   "nidoran-m",
+    "porygonz":   "porygon-z",
+}
+
+
 def species_slug(folder_name: str) -> str:
-    """Best-effort URL slug matching the wiki's pokedex pages."""
+    """Best-effort URL slug for the wiki's pokedex pages. Alolan/Galarian
+    folders point at the BASE species page so the link is always reachable
+    — the regional form is then a tab on that page."""
     name = folder_name.lower()
-    for prefix in ("alolan_", "galarian_"):
-        if name.startswith(prefix):
-            name = name[len(prefix):]
+    # Strip the regional marker whether it appears as a prefix
+    # ('alolan_exeggutor') or suffix ('marowak-alolan').
+    for marker in ("alolan", "galarian", "alola", "galar"):
+        if name.startswith(marker + "_") or name.startswith(marker + "-"):
+            name = name[len(marker) + 1:]
+        if name.endswith("_" + marker) or name.endswith("-" + marker):
+            name = name[:-(len(marker) + 1)]
+    # Resource-pack folders use compact spellings (mrmime, hooh, farfetchd)
+    # that don't match the wiki's hyphenated/punctuated pokedex slugs.
+    if name in SLUG_OVERRIDES:
+        return SLUG_OVERRIDES[name]
     return re.sub(r"[^a-z0-9]+", "-", name).strip("-")
 
 
@@ -199,13 +226,21 @@ def species_for_skin(skin_name: str) -> list[str]:
     for root in (TEXTURES_DIR / skin_name, MODELS_DIR / skin_name):
         if not root.exists():
             continue
-        # Texture trees: each LEAF directory is a species.
+        # Texture trees: each LEAF directory is a species. If the leaf is a
+        # regional marker (e.g. .../rapidash/galarian/), walk up one level
+        # and use the enclosing folder's name — the species is the parent.
         for d in root.rglob("*"):
             if d.is_dir():
-                # Treat as a species folder if it has no further subdirs.
                 if not any(c.is_dir() for c in d.iterdir()):
-                    if d.name not in EXCLUDE_SPECIES_FOLDERS and d.name not in skin_excludes:
-                        found.add(d.name)
+                    name = d.name
+                    if name.lower() in VARIANT_FOLDERS:
+                        if d.parent != root and d.parent.name.lower() not in VARIANT_FOLDERS:
+                            name = d.parent.name
+                        else:
+                            continue
+                    if name in EXCLUDE_SPECIES_FOLDERS or name in skin_excludes:
+                        continue
+                    found.add(name)
         # Model trees: each <dex>_<species>.json file names a species.
         for f in root.rglob("*.json"):
             m = _MODEL_NAME_RE.match(f.name)

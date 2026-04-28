@@ -333,6 +333,7 @@ forms:
         pp: '15'
   - name: 'Haikou'
     kind: 'form'
+    description: 'Swellow skims storm-tossed seas, charging itself with lightning as it dives. Sailors claim its wings crackle moments before sudden squalls form.'
     types: ['Water', 'Electric']
     abilities: ['Tough Claws', 'Liquid Voice']
     hidden_ability: 'Galvanize'

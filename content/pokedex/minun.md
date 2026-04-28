@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Volt Absorb'
     sprite: 'images/pokedex/minun.png'
     egg_groups: ['fairy']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 4.2

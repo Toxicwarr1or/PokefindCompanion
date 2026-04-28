@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/unown.png'
     egg_groups: ['undiscovered']
+    egg_steps: 10280
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 5

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Hustle'
     sprite: 'images/pokedex/nidoran-f.png'
     egg_groups: ['field', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.4
     weight_kg: 7

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sheer Force'
     sprite: 'images/pokedex/trapinch.png'
     egg_groups: ['bug']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.7
     weight_kg: 15

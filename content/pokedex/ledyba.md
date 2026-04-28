@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rattled'
     sprite: 'images/pokedex/ledyba.png'
     egg_groups: ['bug']
+    egg_steps: 3855
     growth_rate: 'fast'
     height_m: 1
     weight_kg: 10.8

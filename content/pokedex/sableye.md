@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Prankster'
     sprite: 'images/pokedex/sableye.png'
     egg_groups: ['human-like']
+    egg_steps: 6425
     growth_rate: 'medium_slow'
     height_m: 0.5
     weight_kg: 11

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Swift Swim'
     sprite: 'images/pokedex/psyduck.png'
     egg_groups: ['field', 'water 1']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.8
     weight_kg: 19.6

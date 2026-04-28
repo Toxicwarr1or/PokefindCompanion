@@ -149,5 +149,30 @@
         initFormTabs();
         initDexList();
         initSectionOverlay();
+        initQuestSubtabs();
+    }
+
+    // ---------- Main Quests vs Side Quests sub-tabs (Quests page) ----------
+    function initQuestSubtabs() {
+        document.querySelectorAll('.quest-subtabs').forEach(function (nav) {
+            var panel = nav.parentElement;
+            var buttons = nav.querySelectorAll('.quest-subtab');
+            buttons.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var cat = btn.dataset.questCat;
+                    buttons.forEach(function (b) {
+                        var on = b === btn;
+                        b.classList.toggle('active', on);
+                        b.setAttribute('aria-selected', on ? 'true' : 'false');
+                    });
+                    panel.querySelectorAll('.quest-subpanel').forEach(function (p) {
+                        var on = p.dataset.questCat === cat;
+                        p.classList.toggle('active', on);
+                        if (on) p.removeAttribute('hidden');
+                        else p.setAttribute('hidden', '');
+                    });
+                });
+            });
+        });
     }
 })();

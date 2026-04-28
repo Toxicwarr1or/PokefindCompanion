@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Adaptability'
     sprite: 'images/pokedex/feebas.png'
     egg_groups: ['dragon', 'water 1']
+    egg_steps: 5140
     growth_rate: 'erratic'
     height_m: 0.6
     weight_kg: 7.4

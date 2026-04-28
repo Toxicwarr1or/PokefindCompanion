@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rattled'
     sprite: 'images/pokedex/dunsparce.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.5
     weight_kg: 14
@@ -608,6 +609,7 @@ forms:
         pp: '5'
   - name: 'Jataro'
     kind: 'form'
+    description: 'Test'
     types: ['Electric']
     abilities: ['Insomnia', 'Flame Body']
     hidden_ability: 'Magic Bounce'

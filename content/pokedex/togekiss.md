@@ -463,6 +463,7 @@ forms:
         pp: '15'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'It will never appear where there is strike. Its sightings have become rare recently.'
     types: ['Ghost', 'Flying']
     abilities: ['Filter', 'Rattled']
     hidden_ability: 'Aerilate'

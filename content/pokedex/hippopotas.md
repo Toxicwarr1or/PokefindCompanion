@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sand Force'
     sprite: 'images/pokedex/hippopotas.png'
     egg_groups: ['field']
+    egg_steps: 7710
     growth_rate: 'slow'
     height_m: 0.8
     weight_kg: 49.5

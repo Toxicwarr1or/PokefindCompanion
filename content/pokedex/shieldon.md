@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Soundproof'
     sprite: 'images/pokedex/shieldon.png'
     egg_groups: ['monster']
+    egg_steps: 7710
     growth_rate: 'erratic'
     height_m: 0.5
     weight_kg: 57

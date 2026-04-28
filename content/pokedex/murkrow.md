@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Prankster'
     sprite: 'images/pokedex/murkrow.png'
     egg_groups: ['flying']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.5
     weight_kg: 2.1

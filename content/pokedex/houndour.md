@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Unnerve'
     sprite: 'images/pokedex/houndour.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.6
     weight_kg: 10.8

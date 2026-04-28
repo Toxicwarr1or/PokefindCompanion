@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rough Skin'
     sprite: 'images/pokedex/gible.png'
     egg_groups: ['dragon', 'monster']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 0.7
     weight_kg: 20.5

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Soundproof'
     sprite: 'images/pokedex/snover.png'
     egg_groups: ['grass', 'monster']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 1
     weight_kg: 50.5

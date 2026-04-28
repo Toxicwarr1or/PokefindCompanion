@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Water Veil'
     sprite: 'images/pokedex/buizel.png'
     egg_groups: ['field', 'water 1']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.7
     weight_kg: 29.5

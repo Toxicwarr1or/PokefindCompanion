@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Quick Feet'
     sprite: 'images/pokedex/zigzagoon.png'
     egg_groups: ['field']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 17.5
@@ -493,11 +494,13 @@ forms:
         pp: '10'
   - name: 'Galarian'
     kind: 'form'
+    description: 'Its restlessness has it constantly running around. If it sees another Pokémon, it will purposely run into them in order to start a fight.'
     types: ['Dark', 'Normal']
     abilities: ['Pickup', 'Gluttony']
     hidden_ability: 'Quick Feet'
     sprite: 'images/pokedex/zigzagoon-galarian.png'
     egg_groups: ['field']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 17.5

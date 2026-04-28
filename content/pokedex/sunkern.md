@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Early Bird'
     sprite: 'images/pokedex/sunkern.png'
     egg_groups: ['grass']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.3
     weight_kg: 1.8

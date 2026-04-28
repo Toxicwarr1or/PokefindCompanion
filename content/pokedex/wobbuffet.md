@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Telepathy'
     sprite: 'images/pokedex/wobbuffet.png'
     egg_groups: ['amorphous']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.3
     weight_kg: 28.5

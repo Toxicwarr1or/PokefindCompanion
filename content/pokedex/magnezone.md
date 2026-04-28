@@ -447,6 +447,7 @@ forms:
         pp: '15'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Magnezone releases sweet-smelling spores from its floral growths, disrupting nearby Pokémon while drawing energy from sunlight. Its presence alters the air itself, allowing nothing to function as expected.'
     types: ['Grass', 'Poison']
     abilities: ['Thick Fat', 'Neutralizing Gas']
     hidden_ability: 'Chlorophyll'

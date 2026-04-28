@@ -530,6 +530,7 @@ forms:
         pp: '20'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Ambipom''s metal-coated tails strike with freezing force, capable of shattering defenses in an instant. Once it commits to an attack, it shows no hesitation, slipping past guards with relentless precision.'
     types: ['Steel', 'Ice']
     abilities: ['Slush Rush', 'Infiltrator']
     hidden_ability: 'Gorilla Tactics'

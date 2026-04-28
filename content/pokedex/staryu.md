@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Analytic'
     sprite: 'images/pokedex/staryu.png'
     egg_groups: ['water 3']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.8
     weight_kg: 34.5

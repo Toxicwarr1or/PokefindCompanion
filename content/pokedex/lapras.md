@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Hydration'
     sprite: 'images/pokedex/lapras.png'
     egg_groups: ['water 1', 'monster']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 2.5
     weight_kg: 220
@@ -550,6 +551,7 @@ forms:
     hidden_ability: 'Prankster'
     sprite: ''
     egg_groups: ['water 1', 'monster']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 2.5
     weight_kg: 220

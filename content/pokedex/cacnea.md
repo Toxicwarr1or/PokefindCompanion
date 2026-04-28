@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Water Absorb'
     sprite: 'images/pokedex/cacnea.png'
     egg_groups: ['human-like', 'grass']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.4
     weight_kg: 51.3

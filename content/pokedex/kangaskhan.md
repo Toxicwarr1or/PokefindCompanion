@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Inner Focus'
     sprite: 'images/pokedex/kangaskhan.png'
     egg_groups: ['monster']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 2.2
     weight_kg: 80

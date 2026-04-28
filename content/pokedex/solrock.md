@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/solrock.png'
     egg_groups: ['mineral']
+    egg_steps: 6425
     growth_rate: 'fast'
     height_m: 1.2
     weight_kg: 154

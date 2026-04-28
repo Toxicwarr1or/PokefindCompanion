@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Solar Power'
     sprite: 'images/pokedex/charmander.png'
     egg_groups: ['dragon', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.6
     weight_kg: 8.5

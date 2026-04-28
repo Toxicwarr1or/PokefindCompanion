@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Magic Bounce'
     sprite: 'images/pokedex/natu.png'
     egg_groups: ['flying']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.2
     weight_kg: 2

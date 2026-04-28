@@ -444,6 +444,7 @@ forms:
         pp: '20'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'When attacked, they form a wall with their shieldlike faces to protect their young.'
     types: ['Grass', 'Steel']
     abilities: ['Huge Power', 'Grass Pelt']
     hidden_ability: 'Iron Barbs'

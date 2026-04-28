@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sheer Force'
     sprite: 'images/pokedex/tauros.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 1.4
     weight_kg: 88.4

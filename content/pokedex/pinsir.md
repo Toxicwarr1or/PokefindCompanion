@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Moxie'
     sprite: 'images/pokedex/pinsir.png'
     egg_groups: ['bug']
+    egg_steps: 6425
     growth_rate: 'slow'
     height_m: 1.5
     weight_kg: 55

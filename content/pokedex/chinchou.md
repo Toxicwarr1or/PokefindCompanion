@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Water Absorb'
     sprite: 'images/pokedex/chinchou.png'
     egg_groups: ['water 2']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.5
     weight_kg: 12

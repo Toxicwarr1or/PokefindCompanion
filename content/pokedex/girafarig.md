@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sap Sipper'
     sprite: 'images/pokedex/girafarig.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.5
     weight_kg: 41.5

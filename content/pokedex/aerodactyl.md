@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Unnerve'
     sprite: 'images/pokedex/aerodactyl.png'
     egg_groups: ['flying']
+    egg_steps: 8995
     growth_rate: 'slow'
     height_m: 1.8
     weight_kg: 59

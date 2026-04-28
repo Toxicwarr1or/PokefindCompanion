@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Oblivious'
     sprite: 'images/pokedex/spheal.png'
     egg_groups: ['field', 'water 1']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.8
     weight_kg: 39.5

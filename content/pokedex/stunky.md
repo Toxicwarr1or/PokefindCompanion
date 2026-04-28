@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Keen Eye'
     sprite: 'images/pokedex/stunky.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 19.2

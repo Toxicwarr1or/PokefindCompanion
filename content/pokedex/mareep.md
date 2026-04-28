@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Plus'
     sprite: 'images/pokedex/mareep.png'
     egg_groups: ['field', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.6
     weight_kg: 7.8

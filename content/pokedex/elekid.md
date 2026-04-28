@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Vital Spirit'
     sprite: 'images/pokedex/elekid.png'
     egg_groups: ['undiscovered']
+    egg_steps: 6425
     growth_rate: 'medium_fast'
     height_m: 0.6
     weight_kg: 23.5

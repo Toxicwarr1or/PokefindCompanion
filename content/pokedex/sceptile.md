@@ -546,6 +546,7 @@ forms:
         pp: '10'
   - name: 'Haikou'
     kind: 'form'
+    description: 'The leaves that grow on its arms can slice down thick trees. It is without peer in jungle combat.'
     types: ['Bug', 'Psychic']
     abilities: ['Psychic Surge', 'Skill Link']
     hidden_ability: 'Compound Eyes'

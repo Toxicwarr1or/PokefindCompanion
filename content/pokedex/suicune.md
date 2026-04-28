@@ -416,6 +416,7 @@ forms:
         pp: '20'
   - name: 'Jataro'
     kind: 'form'
+    description: 'Suicune is believed to appear where sorrow lingers longest, purifying restless spirits with gentle light. Legends say it guides lost souls across water under moonlit skies.'
     types: ['Ghost', 'Fairy']
     abilities: ['Intimidate', 'Wandering Spirit']
     hidden_ability: 'Misty Surge'

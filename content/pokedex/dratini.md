@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Marvel Scale'
     sprite: 'images/pokedex/dratini.png'
     egg_groups: ['dragon', 'water 1']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 1.8
     weight_kg: 3.3

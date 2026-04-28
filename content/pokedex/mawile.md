@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sheer Force'
     sprite: 'images/pokedex/mawile.png'
     egg_groups: ['fairy', 'field']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 0.6
     weight_kg: 11.5

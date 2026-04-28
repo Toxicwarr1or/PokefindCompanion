@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Harvest'
     sprite: 'images/pokedex/tropius.png'
     egg_groups: ['grass', 'monster']
+    egg_steps: 6425
     growth_rate: 'slow'
     height_m: 2
     weight_kg: 100

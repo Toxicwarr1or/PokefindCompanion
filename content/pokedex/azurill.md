@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sap Sipper'
     sprite: 'images/pokedex/azurill.png'
     egg_groups: ['undiscovered']
+    egg_steps: 2570
     growth_rate: 'fast'
     height_m: 0.2
     weight_kg: 2

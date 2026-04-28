@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rattled'
     sprite: 'images/pokedex/magikarp.png'
     egg_groups: ['dragon', 'water 2']
+    egg_steps: 1285
     growth_rate: 'slow'
     height_m: 0.9
     weight_kg: 10

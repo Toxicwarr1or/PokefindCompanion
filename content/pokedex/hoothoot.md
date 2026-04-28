@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Tinted Lens'
     sprite: 'images/pokedex/hoothoot.png'
     egg_groups: ['flying']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.7
     weight_kg: 21.2

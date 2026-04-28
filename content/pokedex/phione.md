@@ -11,6 +11,7 @@ forms:
     abilities: ['Hydration']
     sprite: 'images/pokedex/phione.png'
     egg_groups: ['fairy', 'water 1']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 0.4
     weight_kg: 3.1

@@ -491,6 +491,7 @@ forms:
         pp: '10'
   - name: 'Galarian'
     kind: 'form'
+    description: 'It lived in snowy areas for so long that its fire sac cooled off and atrophied. It now has an organ that generates cold instead.'
     types: ['Ice']
     abilities: ['Hustle']
     hidden_ability: 'Inner Focus'

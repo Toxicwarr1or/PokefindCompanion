@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Tangled Feet'
     sprite: 'images/pokedex/doduo.png'
     egg_groups: ['flying']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.4
     weight_kg: 39.2

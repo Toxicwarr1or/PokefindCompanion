@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Pickpocket'
     sprite: 'images/pokedex/seedot.png'
     egg_groups: ['grass', 'field']
+    egg_steps: 3855
     growth_rate: 'medium_slow'
     height_m: 0.5
     weight_kg: 4

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Battle Armor'
     sprite: 'images/pokedex/cubone.png'
     egg_groups: ['monster']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 6.5

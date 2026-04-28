@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Water Veil'
     sprite: 'images/pokedex/mantyke.png'
     egg_groups: ['undiscovered']
+    egg_steps: 6425
     growth_rate: 'slow'
     height_m: 1
     weight_kg: 65

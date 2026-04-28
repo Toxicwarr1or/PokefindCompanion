@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Gluttony'
     sprite: 'images/pokedex/gulpin.png'
     egg_groups: ['amorphous']
+    egg_steps: 5140
     growth_rate: 'fluctuating'
     height_m: 0.4
     weight_kg: 10.3

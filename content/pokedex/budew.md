@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Leaf Guard'
     sprite: 'images/pokedex/budew.png'
     egg_groups: ['undiscovered']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.2
     weight_kg: 1.2

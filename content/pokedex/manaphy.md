@@ -11,6 +11,7 @@ forms:
     abilities: ['Hydration']
     sprite: 'images/pokedex/manaphy.png'
     egg_groups: ['fairy', 'water 1']
+    egg_steps: 2570
     growth_rate: 'slow'
     height_m: 0.3
     weight_kg: 1.4

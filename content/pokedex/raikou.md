@@ -422,6 +422,7 @@ forms:
         pp: '15'
   - name: 'Jataro'
     kind: 'form'
+    description: 'Said to race through the shadows of ancient battlefields, Raikou absorbs lingering fear to fuel its spite. Its roar is never heard twice—those who listen too closely often vanish before the echo fades.'
     types: ['Ghost', 'Dark']
     abilities: ['Intimidate', 'Berserk']
     hidden_ability: 'Dark Aura'

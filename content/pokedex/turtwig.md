@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Shell Armor'
     sprite: 'images/pokedex/turtwig.png'
     egg_groups: ['grass', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.4
     weight_kg: 10.2

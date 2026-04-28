@@ -680,9 +680,11 @@ def species_form_data(species: dict) -> dict:
         "types": [t.capitalize() for t in species.get("types", [])],
         "abilities": regular,
         "hidden_ability": hidden,
+        "description": species.get("description", "") or "",
         "height_m": species.get("height", 0),
         "weight_kg": species.get("weight", 0),
         "egg_groups": species.get("egg_groups", []) or [],
+        "egg_steps": species.get("egg_steps", 0) or 0,
         "growth_rate": species.get("growth_rate", "") or "",
         "base_stats": {
             "hp": species.get("hp", 0),
@@ -716,12 +718,18 @@ def enrich_move(name: str, level: int | None = None) -> dict:
 
 
 def render_form_yaml(form_name: str, form: dict, sprite_rel: str | None, kind: str,
-                     model_url: str | None = None, indent: str = "  ") -> str:
+                     model_url: str | None = None, indent: str = "  ",
+                     base_description: str = "") -> str:
     lines = []
     lines.append(f"{indent}- name: {yaml_string(form_name)}")
     lines.append(f"{indent}  kind: {yaml_string(kind)}")
     if model_url:
         lines.append(f"{indent}  model: {yaml_string(model_url)}")
+    # Only emit a per-form description when it actually differs from the
+    # base species' (the page's <h1> subtitle already shows the base copy).
+    form_desc = (form.get("description") or "").strip()
+    if form_desc and form_desc != base_description.strip():
+        lines.append(f"{indent}  description: {yaml_string(form_desc)}")
     lines.append(f"{indent}  types: {yaml_list(form.get('types', []))}")
     lines.append(f"{indent}  abilities: {yaml_list(form.get('abilities', []))}")
     if form.get("hidden_ability"):
@@ -730,6 +738,8 @@ def render_form_yaml(form_name: str, form: dict, sprite_rel: str | None, kind: s
     lines.append(f"{indent}  sprite: {sprite_yaml}")
     if form.get("egg_groups"):
         lines.append(f"{indent}  egg_groups: {yaml_list(form['egg_groups'])}")
+    if form.get("egg_steps"):
+        lines.append(f"{indent}  egg_steps: {form['egg_steps']}")
     if form.get("growth_rate"):
         lines.append(f"{indent}  growth_rate: {yaml_string(form['growth_rate'])}")
     if form.get("height_m") is not None:
@@ -1045,6 +1055,7 @@ def main() -> int:
 
         # ---- Forms (stat-changing variants) — re-emitted as tabs ----
         forms_yaml: list[str] = []
+        base_description = ""
 
         # Standard form: spawn-region locations + Smogon sets (with auto-built fallback)
         if standard_data is not None:
@@ -1057,7 +1068,9 @@ def main() -> int:
                 if fb:
                     std_sets = [fb]
             standard_data["competitive_sets"] = std_sets
-            forms_yaml.append(render_form_yaml("Standard", standard_data, rel, kind="form"))
+            base_description = (standard_data.get("description") or "").strip()
+            forms_yaml.append(render_form_yaml("Standard", standard_data, rel, kind="form",
+                                                base_description=base_description))
 
         # Regional forms (Kyoto / Jataro / Haikou / Shiloh / Zeinova / Alolan / Galarian)
         for prefix in REGIONAL_PREFIXES:
@@ -1089,7 +1102,8 @@ def main() -> int:
             if form_id:
                 save_as = f"{content_slug(base_name)}-{prefix.lower()}"
                 form_sprite = sprite_cache.fetch_pokeapi(form_id, save_as)
-            forms_yaml.append(render_form_yaml(prefix, form_data, form_sprite, kind="form"))
+            forms_yaml.append(render_form_yaml(prefix, form_data, form_sprite, kind="form",
+                                                base_description=base_description))
 
         # Manually-injected forms (Kyurem Black/White, Meloetta Pirouette, etc.)
         if base_name in EXTRA_FORMS:
@@ -1114,7 +1128,8 @@ def main() -> int:
                             manual_path.write_bytes(src.read_bytes())
                 form_sprite = f"images/pokedex/{expected_filename}" if manual_path.exists() else None
                 harvest(merged)
-                forms_yaml.append(render_form_yaml(extra["name"], merged, form_sprite, kind="form"))
+                forms_yaml.append(render_form_yaml(extra["name"], merged, form_sprite, kind="form",
+                                                    base_description=base_description))
 
         base_species = form_map.get("Standard") or next(iter(form_map.values()))
         md = render_page(base_name, base_species, forms_yaml, skins=skins)

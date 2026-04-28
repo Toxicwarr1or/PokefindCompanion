@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sheer Force'
     sprite: 'images/pokedex/bagon.png'
     egg_groups: ['dragon']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 0.6
     weight_kg: 42.1

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Guts'
     sprite: 'images/pokedex/shinx.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.5
     weight_kg: 9.5

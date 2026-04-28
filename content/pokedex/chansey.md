@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Healer'
     sprite: 'images/pokedex/chansey.png'
     egg_groups: ['fairy']
+    egg_steps: 10280
     growth_rate: 'fast'
     height_m: 1.1
     weight_kg: 34.6

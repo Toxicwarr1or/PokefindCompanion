@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rattled'
     sprite: 'images/pokedex/poochyena.png'
     egg_groups: ['field']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 13.6

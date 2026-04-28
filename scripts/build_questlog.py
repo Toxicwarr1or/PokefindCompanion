@@ -70,6 +70,24 @@ def _tokenize(s: str) -> set[str]:
 # Manual quest_key → video_id overrides. Use this for quests whose names are
 # all stopwords (e.g. "Gen 5 Intro" → tokenize() returns empty), or where the
 # fuzzy matcher picks the wrong video. The override always wins over fuzzy.
+# Quest-name overrides for cases where the source script's name is misspelled,
+# missing a prefix, or otherwise needs editorial cleanup before display.
+NAME_OVERRIDES = {
+    "gen5_main_quest_3":   "Main Quest 3 - A Soothing Melody",
+}
+
+
+def normalize_quest_name(name: str) -> str:
+    """Editorial cleanup applied to every quest title:
+      - "Main Quest 8-…" → "Main Quest 8 - …" (missing space before the dash)
+      - Trim collapsed multi-spaces."""
+    if not name:
+        return name
+    name = re.sub(r"(Main Quest \d+)\s*-\s*", r"\1 - ", name)
+    name = re.sub(r"\s{2,}", " ", name).strip()
+    return name
+
+
 VIDEO_OVERRIDES = {
     "gen5_intro": ("RMZt4aYZM0k", "Welcome to PokeFind (Episode 1: Gen 5 Introduction)"),
     "a_cosmic_discovery_main": ("F-joH5oorY0", "The Electrode Puzzle (A Cosmic Discovery Act 4)"),
@@ -411,6 +429,13 @@ def extract_quest(path: Path) -> dict | None:
     # Quest must have at least a name or a key to be useful
     if not (out.get("name") or out.get("key")):
         return None
+
+    # Apply editorial name fixes (per-quest overrides + general cleanups).
+    qkey = out.get("key", "")
+    if qkey in NAME_OVERRIDES:
+        out["name"] = NAME_OVERRIDES[qkey]
+    else:
+        out["name"] = normalize_quest_name(out.get("name", ""))
     return out
 
 
@@ -1258,6 +1283,19 @@ def yaml_string(value) -> str:
     return "'" + s.replace("'", "''") + "'"
 
 
+def quest_category(qkey: str) -> str:
+    """Classify a quest as 'main' (intro / numbered main quest / Elite Four)
+    or 'side' (everything else) so the gen tab can split them into sub-tabs."""
+    k = qkey.lower()
+    if "intro" in k:
+        return "main"
+    if re.search(r"main[-_]quest", k):
+        return "main"
+    if re.search(r"elite[_-]?four", k):
+        return "main"
+    return "side"
+
+
 def render_gen_md(gen_label: str, gen_num: int, quests: list[dict]) -> str:
     lines = ["---"]
     lines.append(f"title: {yaml_string(gen_label)}")
@@ -1270,6 +1308,7 @@ def render_gen_md(gen_label: str, gen_num: int, quests: list[dict]) -> str:
     for q in order_quests(quests):
         lines.append(f"  - key: {yaml_string(q.get('key', ''))}")
         lines.append(f"    slug: {yaml_string(slug_for(q))}")
+        lines.append(f"    category: {yaml_string(quest_category(q.get('key', '')))}")
         lines.append(f"    name: {yaml_string(q.get('name', ''))}")
         if q.get("description"):
             lines.append(f"    description: {yaml_string(q['description'])}")

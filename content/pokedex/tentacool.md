@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rain Dish'
     sprite: 'images/pokedex/tentacool.png'
     egg_groups: ['water 3']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.9
     weight_kg: 45.5

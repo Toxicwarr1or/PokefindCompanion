@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Infiltrator'
     sprite: 'images/pokedex/hoppip.png'
     egg_groups: ['grass', 'fairy']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.4
     weight_kg: 0.5

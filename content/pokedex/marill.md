@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sap Sipper'
     sprite: 'images/pokedex/marill.png'
     egg_groups: ['fairy', 'water 1']
+    egg_steps: 2570
     growth_rate: 'fast'
     height_m: 0.4
     weight_kg: 8.5

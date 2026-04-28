@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Moody'
     sprite: 'images/pokedex/bidoof.png'
     egg_groups: ['field', 'water 1']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 20

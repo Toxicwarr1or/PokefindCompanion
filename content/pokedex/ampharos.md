@@ -490,6 +490,7 @@ forms:
         pp: '15'
   - name: 'Jataro'
     kind: 'form'
+    description: 'Its tail shines bright and strong. It has been prized since long ago as a beacon for sailors.'
     types: ['Fire', 'Dragon']
     abilities: ['Moody', 'Fluffy']
     hidden_ability: 'Adaptability'

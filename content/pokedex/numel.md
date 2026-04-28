@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Own Tempo'
     sprite: 'images/pokedex/numel.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.7
     weight_kg: 24

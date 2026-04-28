@@ -450,6 +450,7 @@ forms:
         pp: '15'
   - name: 'Alolan'
     kind: 'form'
+    description: 'It commands a nest of Rattata. Different nests don''t get along, whipping up severe fights over feeding grounds.'
     types: ['Dark', 'Normal']
     abilities: ['Gluttony', 'Hustle']
     hidden_ability: 'Thick Fat'

@@ -78,7 +78,19 @@
         {{ if $variant }}
         {{ $modelPath := printf "static/models-3d/%s/%s/%s.json" $variant $slug $slug }}
         {{ if (fileExists $modelPath) }}
-        <div class="mc-model-viewer" data-mc-model="{{ printf "/models-3d/%s/%s/%s.json" $variant $slug $slug | relURL }}"></div>
+        {{/* Shiny variant only available for the Standard form's regular
+             skin (no shiny Alolan/Galarian assets in the pack today). */}}
+        {{ $shinyPath := printf "static/models-3d/shiny/%s/%s.json" $slug $slug }}
+        {{ $hasShiny := and (eq $variant "regular") (fileExists $shinyPath) }}
+        {{ if $hasShiny }}
+        <div class="mc-model-skin-toggle" role="tablist" aria-label="Model skin">
+          <button type="button" class="mc-skin-btn active" data-skin="regular" aria-selected="true">Regular</button>
+          <button type="button" class="mc-skin-btn" data-skin="shiny" aria-selected="false">Shiny</button>
+        </div>
+        {{ end }}
+        <div class="mc-model-viewer"
+             data-mc-model="{{ printf "/models-3d/%s/%s/%s.json" $variant $slug $slug | relURL }}"
+             {{ if $hasShiny }}data-mc-model-shiny="{{ printf "/models-3d/shiny/%s/%s.json" $slug $slug | relURL }}"{{ end }}></div>
         {{ end }}
         {{ end }}
       </div>
@@ -87,11 +99,16 @@
         {{ with $f.abilities }}<dt>Abilities</dt><dd>{{ range $i, $a := . }}{{ if $i }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $a)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ $a }}</a>{{ end }}</dd>{{ end }}
         {{ with $f.hidden_ability }}<dt>Hidden Ability</dt><dd><a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .)) | relURL }}" target="_blank" rel="noopener" class="movelink">{{ . }}</a></dd>{{ end }}
         {{ with $f.egg_groups }}<dt>Egg Groups</dt><dd>{{ delimit . ", " | title }}</dd>{{ end }}
+        {{ with $f.egg_steps }}<dt>Hatch Steps</dt><dd>{{ . }}</dd>{{ end }}
         {{ with $f.growth_rate }}<dt>Growth Rate</dt><dd>{{ . | replaceRE "_" " " | title }}</dd>{{ end }}
         {{ if or $f.height_m $f.weight_kg }}<dt>Size</dt><dd>{{ with $f.height_m }}{{ . }} m{{ end }}{{ if and $f.height_m $f.weight_kg }} · {{ end }}{{ with $f.weight_kg }}{{ . }} kg{{ end }}</dd>{{ end }}
         {{ if and (eq $i 0) $.Params.skins }}<dt>Available Skins</dt><dd class="skins-inline">{{ range $.Params.skins }}<span class="skin-chip">{{ . }}</span>{{ end }}</dd>{{ end }}
       </dl>
     </div>
+
+    {{ with $f.description }}
+    <p class="form-description">{{ . }}</p>
+    {{ end }}
 
     {{ with $f.base_stats }}
     {{ $bst := add (add (add (add (add .hp .atk) .def) .spa) .spd) .spe }}

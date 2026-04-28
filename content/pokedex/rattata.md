@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Hustle'
     sprite: 'images/pokedex/rattata.png'
     egg_groups: ['field']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.3
     weight_kg: 3.5
@@ -459,6 +460,7 @@ forms:
         pp: '10'
   - name: 'Alolan'
     kind: 'form'
+    description: 'Night after night, they sneak into people''s homes seeking food. A massive outbreak of them has become an issue of public concern.'
     types: ['Dark', 'Normal']
     abilities: ['Gluttony', 'Hustle']
     hidden_ability: 'Thick Fat'

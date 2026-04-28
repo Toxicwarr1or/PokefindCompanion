@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Swift Swim'
     sprite: 'images/pokedex/anorith.png'
     egg_groups: ['water 3']
+    egg_steps: 7710
     growth_rate: 'erratic'
     height_m: 0.7
     weight_kg: 12.5

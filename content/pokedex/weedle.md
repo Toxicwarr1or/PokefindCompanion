@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Run Away'
     sprite: 'images/pokedex/weedle.png'
     egg_groups: ['bug']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.3
     weight_kg: 3.2

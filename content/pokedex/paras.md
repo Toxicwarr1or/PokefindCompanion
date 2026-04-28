@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Damp'
     sprite: 'images/pokedex/paras.png'
     egg_groups: ['grass', 'bug']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.3
     weight_kg: 5.4

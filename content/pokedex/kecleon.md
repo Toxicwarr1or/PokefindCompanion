@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Protean'
     sprite: 'images/pokedex/kecleon.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 1
     weight_kg: 22

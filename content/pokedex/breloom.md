@@ -467,6 +467,7 @@ forms:
         pp: '10'
   - name: 'Haikou'
     kind: 'form'
+    description: 'Breloom closes in on its foe with light and sprightly footwork, then throws punches with its stretchy arms. This Pokémon’s fighting technique puts boxers to shame.'
     types: ['Grass', 'Fairy']
     abilities: ['Pixilate', 'Chlorophyll']
     hidden_ability: 'Regenerator'

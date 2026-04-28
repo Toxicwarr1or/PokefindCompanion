@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Cloud Nine'
     sprite: 'images/pokedex/swablu.png'
     egg_groups: ['dragon', 'flying']
+    egg_steps: 5140
     growth_rate: 'erratic'
     height_m: 0.4
     weight_kg: 1.2

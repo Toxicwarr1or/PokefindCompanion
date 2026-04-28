@@ -11,6 +11,7 @@ forms:
     abilities: ['Forecast']
     sprite: 'images/pokedex/castform.png'
     egg_groups: ['amorphous', 'fairy']
+    egg_steps: 6425
     growth_rate: 'medium_fast'
     height_m: 0.3
     weight_kg: 0.8

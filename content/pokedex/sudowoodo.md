@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rattled'
     sprite: 'images/pokedex/sudowoodo.png'
     egg_groups: ['mineral']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.2
     weight_kg: 38

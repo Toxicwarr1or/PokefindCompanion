@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Quick Feet'
     sprite: 'images/pokedex/shroomish.png'
     egg_groups: ['grass', 'fairy']
+    egg_steps: 3855
     growth_rate: 'fluctuating'
     height_m: 0.4
     weight_kg: 4.5

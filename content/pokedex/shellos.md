@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sand Force'
     sprite: 'images/pokedex/shellos.png'
     egg_groups: ['amorphous', 'water 1']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.3
     weight_kg: 6.3

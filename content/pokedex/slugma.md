@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Weak Armor'
     sprite: 'images/pokedex/slugma.png'
     egg_groups: ['amorphous']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.7
     weight_kg: 35

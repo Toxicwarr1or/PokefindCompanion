@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Water Veil'
     sprite: 'images/pokedex/finneon.png'
     egg_groups: ['water 2']
+    egg_steps: 5140
     growth_rate: 'erratic'
     height_m: 0.4
     weight_kg: 7

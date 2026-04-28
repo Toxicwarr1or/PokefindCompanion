@@ -516,6 +516,7 @@ forms:
         pp: '15'
   - name: 'Galarian'
     kind: 'form'
+    description: 'The thick arms of this hot-blooded Pokémon can deliver punches capable of obliterating a dump truck.'
     types: ['Ice']
     abilities: ['Gorilla Tactics']
     hidden_ability: 'Zen Mode'
@@ -874,6 +875,7 @@ forms:
         pp: '10'
   - name: 'Zeinova'
     kind: 'form'
+    description: 'Its internal fire burns at 2,500 F, making enough power that it can destroy a dump truck with one punch.'
     types: ['Poison', 'Dark']
     abilities: ['Stakeout', 'Libero']
     hidden_ability: 'Gluttony'

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Flame Body'
     sprite: 'images/pokedex/ponyta.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1
     weight_kg: 30
@@ -409,11 +410,13 @@ forms:
         pp: '10'
   - name: 'Galarian'
     kind: 'form'
+    description: 'Its small horn hides a healing power. With a few rubs from this Pokémon''s horn, any slight wound you have will be healed.'
     types: ['Psychic']
     abilities: ['Run Away', 'Pastel Veil']
     hidden_ability: 'Anticipation'
     sprite: 'images/pokedex/ponyta-galarian.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.8
     weight_kg: 24.0

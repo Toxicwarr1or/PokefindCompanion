@@ -400,6 +400,7 @@ forms:
         pp: '10'
   - name: 'Kyoto'
     kind: 'form'
+    description: 'It is said that it uses the seven-coloured core of its body to send electric waves into outer space.'
     types: ['Ice', 'Ghost']
     abilities: ['Screen Cleaner', 'Refrigerate']
     hidden_ability: 'Magic Guard'

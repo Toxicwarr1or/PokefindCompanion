@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Unnerve'
     sprite: 'images/pokedex/ekans.png'
     egg_groups: ['dragon', 'field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 2
     weight_kg: 6.9

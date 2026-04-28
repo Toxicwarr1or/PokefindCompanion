@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Thick Fat'
     sprite: 'images/pokedex/swinub.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.4
     weight_kg: 6.5

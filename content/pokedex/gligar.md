@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Immunity'
     sprite: 'images/pokedex/gligar.png'
     egg_groups: ['bug']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 1.1
     weight_kg: 64.8

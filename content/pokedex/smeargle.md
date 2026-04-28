@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Moody'
     sprite: 'images/pokedex/smeargle.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 1.2
     weight_kg: 58

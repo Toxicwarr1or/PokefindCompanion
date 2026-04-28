@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sap Sipper'
     sprite: 'images/pokedex/miltank.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 1.2
     weight_kg: 75.5
@@ -581,6 +582,7 @@ forms:
         pp: '10'
   - name: 'Jataro'
     kind: 'form'
+    description: 'Miltank wanders arid deserts with a pouch full of cactus fruit, storing nourishment for long journeys. When threatened, it kicks up clouds of sand before calmly snacking to regain its strength.'
     types: ['Normal', 'Ground']
     abilities: ['Normalize', 'Sand Stream']
     hidden_ability: 'Cheek Pouch'

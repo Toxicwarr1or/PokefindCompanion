@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Damp'
     sprite: 'images/pokedex/mudkip.png'
     egg_groups: ['water 1', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.4
     weight_kg: 7.6

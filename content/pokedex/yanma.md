@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Frisk'
     sprite: 'images/pokedex/yanma.png'
     egg_groups: ['bug']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.2
     weight_kg: 38

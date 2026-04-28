@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Rain Dish'
     sprite: 'images/pokedex/wingull.png'
     egg_groups: ['flying', 'water 1']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.6
     weight_kg: 9.5

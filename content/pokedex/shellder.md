@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Overcoat'
     sprite: 'images/pokedex/shellder.png'
     egg_groups: ['water 3']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.3
     weight_kg: 4

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Gluttony'
     sprite: 'images/pokedex/spoink.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 0.7
     weight_kg: 30.6

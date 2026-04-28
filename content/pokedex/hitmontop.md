@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Steadfast'
     sprite: 'images/pokedex/hitmontop.png'
     egg_groups: ['human-like']
+    egg_steps: 6425
     growth_rate: 'medium_fast'
     height_m: 1.4
     weight_kg: 48

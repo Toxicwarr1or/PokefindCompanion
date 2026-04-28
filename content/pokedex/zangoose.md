@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Toxic Boost'
     sprite: 'images/pokedex/zangoose.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'erratic'
     height_m: 1.3
     weight_kg: 40.3

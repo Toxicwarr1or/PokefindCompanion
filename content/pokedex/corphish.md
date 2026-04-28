@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Adaptability'
     sprite: 'images/pokedex/corphish.png'
     egg_groups: ['water 3', 'water 1']
+    egg_steps: 3855
     growth_rate: 'fluctuating'
     height_m: 0.6
     weight_kg: 11.5

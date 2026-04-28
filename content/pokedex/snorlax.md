@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Gluttony'
     sprite: 'images/pokedex/snorlax.png'
     egg_groups: ['monster']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 2.1
     weight_kg: 460

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Hydration'
     sprite: 'images/pokedex/barboach.png'
     egg_groups: ['water 2']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 1.9

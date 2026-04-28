@@ -409,6 +409,7 @@ forms:
         pp: '15'
   - name: 'Haikou'
     kind: 'form'
+    description: 'Designed after ancient flying machines, Wailord glides effortlessly through the sky despite its immense mass. Its engines hum calmly, unaffected by weather, as it draws power from passing storms.'
     types: ['Steel', 'Flying']
     abilities: ['Heavy Metal', 'Aerilate']
     hidden_ability: 'Motor Drive'

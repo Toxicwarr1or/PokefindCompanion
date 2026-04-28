@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Regenerator'
     sprite: 'images/pokedex/corsola.png'
     egg_groups: ['water 3', 'water 1']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 0.6
     weight_kg: 5
@@ -558,11 +559,13 @@ forms:
         pp: '20'
   - name: 'Galarian'
     kind: 'form'
+    description: 'Watch your step when wandering areas oceans once covered. What looks like a stone could be this Pokémon, and it will curse you if you kick it.'
     types: ['Ghost']
     abilities: ['Weak Armor']
     hidden_ability: 'Cursed Body'
     sprite: 'images/pokedex/corsola-galarian.png'
     egg_groups: ['water 3', 'water 1']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 0.6
     weight_kg: 0.5

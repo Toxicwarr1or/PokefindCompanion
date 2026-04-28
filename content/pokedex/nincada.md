@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Run Away'
     sprite: 'images/pokedex/nincada.png'
     egg_groups: ['bug']
+    egg_steps: 3855
     growth_rate: 'erratic'
     height_m: 0.5
     weight_kg: 5.5

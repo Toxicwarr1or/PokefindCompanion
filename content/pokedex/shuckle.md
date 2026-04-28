@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Contrary'
     sprite: 'images/pokedex/shuckle.png'
     egg_groups: ['bug']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.6
     weight_kg: 20.5

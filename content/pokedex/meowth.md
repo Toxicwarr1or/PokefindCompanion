@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Unnerve'
     sprite: 'images/pokedex/meowth.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 4.2
@@ -1072,11 +1073,13 @@ forms:
         pp: '10'
   - name: 'Galarian'
     kind: 'form'
+    description: 'Living with a savage, seafaring people has toughened this Pokémon''s body so much that parts of it have turned to iron.'
     types: ['Steel']
     abilities: ['Pickup', 'Tough Claws']
     hidden_ability: 'Unnerve'
     sprite: 'images/pokedex/meowth-galarian.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.4
     weight_kg: 7.5

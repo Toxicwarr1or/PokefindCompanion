@@ -180,7 +180,9 @@ async function buildModelGroup(modelUrl) {
   const tex = model.textures || {};
   const seen = new Map();   // de-dupe identical texture refs into one material
   for (const [key, ref] of Object.entries(tex)) {
-    if (key === 'particle') continue;
+    // Don't skip 'particle' — some models (e.g. Kyurem) re-use the particle
+    // ref as a face texture, and skipping it causes those faces to fall back
+    // to the wrong material.
     if (seen.has(ref)) {
       materialMap[key] = seen.get(ref);
       continue;
@@ -204,14 +206,32 @@ async function buildModelGroup(modelUrl) {
     seen.set(ref, mat);
   }
 
-  const root = new THREE.Group();
+  const inner = new THREE.Group();
   for (const el of model.elements || []) {
     const m = buildElementMesh(el, materialMap, 0, 0);
-    if (m) root.add(m);
+    if (m) inner.add(m);
   }
 
-  // Center + scale-fit. Java models live in a 16-unit cube; we recenter to
-  // origin and let the camera orbit at a consistent distance.
+  // Apply only the Y (yaw) and Z (roll) parts of `display.gui.rotation`.
+  // Some species — notably Kyurem — author their cuboids on a diagonal (Z
+  // rotations of ±45°) and use the GUI rotation's Z to put the model
+  // upright; the Y component handles facing direction. The X component is
+  // a 3/4-from-above pitch used for inventory icons, which makes the
+  // standalone viewer look as if the species is leaning forward — skip it.
+  const guiRot = (((model.display || {}).gui || {}).rotation) || null;
+  const root = new THREE.Group();
+  if (guiRot && Array.isArray(guiRot) && guiRot.length >= 3) {
+    const [, ry, rz] = guiRot;
+    inner.rotation.set(
+      0,
+      THREE.MathUtils.degToRad(ry),
+      THREE.MathUtils.degToRad(rz),
+    );
+  }
+  root.add(inner);
+
+  // Center the bounding box at origin (after rotation). Java models live in
+  // a 16-unit cube; recentre so orbit framing stays consistent.
   const box = new THREE.Box3().setFromObject(root);
   const center = box.getCenter(new THREE.Vector3());
   root.position.sub(center);
@@ -219,10 +239,15 @@ async function buildModelGroup(modelUrl) {
 }
 
 function startViewer(container) {
-  const url = container.dataset.mcModel;
-  if (!url) return;
+  const baseUrl = container.dataset.mcModel;
+  if (!baseUrl) return;
   if (container.dataset.mcStarted === '1') return;
   container.dataset.mcStarted = '1';
+
+  const skinUrls = {
+    regular: baseUrl,
+    shiny:   container.dataset.mcModelShiny || null,
+  };
 
   // Create renderer fresh per container so multiple viewers can coexist.
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -246,33 +271,86 @@ function startViewer(container) {
   controls.dampingFactor = 0.08;
   controls.target.set(0, 0, 0);
 
-  buildModelGroup(url).then((group) => {
-    const childCount = group.children.length;
-    console.log('mc-model-viewer:', url, 'group children =', childCount);
-    if (childCount === 0) {
-      container.dataset.mcMessage = 'model parsed but produced no geometry';
-      container.classList.add('mc-model-error');
-      return;
-    }
-    scene.add(group);
+  // Tracks the currently-mounted model so we can swap it without rebuilding
+  // the entire scene/camera/controls when the user toggles the skin.
+  let currentGroup = null;
+  let cameraFramed = false;
 
-    // Auto-fit camera distance to the model's bounding sphere so different
-    // species frame consistently. -Z is the model's "north" / front face in
-    // Minecraft convention, so place the camera on the -Z side at a slight
-    // angle to give a 3/4 front-top default view.
-    const box = new THREE.Box3().setFromObject(group);
-    const size = box.getSize(new THREE.Vector3()).length();
-    const d = size * 1.6;
-    camera.position.set(-d * 0.45, d * 0.35, -d);
-    camera.near = Math.max(d * 0.01, 0.1);
-    camera.far = d * 10;
-    camera.updateProjectionMatrix();
-    controls.target.set(0, 0, 0);
-    controls.update();
-  }).catch((err) => {
-    console.error('mc-model-viewer:', err);
-    container.dataset.mcMessage = err.message || String(err);
-    container.classList.add('mc-model-error');
+  function countMeshes(obj) {
+    let n = 0;
+    obj.traverse((o) => { if (o.isMesh) n++; });
+    return n;
+  }
+
+  function disposeMaterial(mat) {
+    if (!mat) return;
+    if (Array.isArray(mat)) { mat.forEach(disposeMaterial); return; }
+    if (mat.map && mat.map.dispose) mat.map.dispose();
+    mat.dispose && mat.dispose();
+  }
+
+  function unmount(group) {
+    if (!group) return;
+    scene.remove(group);
+    group.traverse((obj) => {
+      if (obj.geometry && obj.geometry.dispose) obj.geometry.dispose();
+      if (obj.material) disposeMaterial(obj.material);
+    });
+  }
+
+  function loadSkin(url) {
+    container.classList.remove('mc-model-error');
+    return buildModelGroup(url).then((group) => {
+      console.log('mc-model-viewer:', url, 'children =', group.children.length,
+                  'meshes =', countMeshes(group));
+      if (countMeshes(group) === 0) {
+        container.dataset.mcMessage = 'model parsed but produced no geometry';
+        container.classList.add('mc-model-error');
+        return;
+      }
+      unmount(currentGroup);
+      currentGroup = group;
+      scene.add(group);
+      // Frame the camera once on the first model so that toggling skins
+      // doesn't reset the user's orbit position.
+      if (!cameraFramed) {
+        const box = new THREE.Box3().setFromObject(group);
+        const size = box.getSize(new THREE.Vector3()).length();
+        const d = size * 1.6;
+        camera.position.set(-d * 0.45, d * 0.35, -d);
+        camera.near = Math.max(d * 0.01, 0.1);
+        camera.far = d * 10;
+        camera.updateProjectionMatrix();
+        controls.target.set(0, 0, 0);
+        controls.update();
+        cameraFramed = true;
+      }
+    }).catch((err) => {
+      console.error('mc-model-viewer:', err);
+      container.dataset.mcMessage = err.message || String(err);
+      container.classList.add('mc-model-error');
+    });
+  }
+
+  loadSkin(baseUrl);
+
+  // Wire the skin-toggle buttons that sit just above the viewer in the same
+  // form panel. Buttons are matched by document position, not parent, since
+  // the toggle and viewer are siblings inside the visuals column.
+  const panel = container.closest('.form-panel') || document;
+  const buttons = panel.querySelectorAll('.mc-skin-btn');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const skin = btn.dataset.skin;
+      const url = skinUrls[skin];
+      if (!url) return;
+      buttons.forEach((b) => {
+        const active = b === btn;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      loadSkin(url);
+    });
   });
 
   function resize() {

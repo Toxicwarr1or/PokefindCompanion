@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Regenerator'
     sprite: 'images/pokedex/slowpoke.png'
     egg_groups: ['water 1', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.2
     weight_kg: 36

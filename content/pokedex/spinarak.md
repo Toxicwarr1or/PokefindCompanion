@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Sniper'
     sprite: 'images/pokedex/spinarak.png'
     egg_groups: ['bug']
+    egg_steps: 3855
     growth_rate: 'fast'
     height_m: 0.5
     weight_kg: 8.5

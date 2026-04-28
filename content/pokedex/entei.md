@@ -423,6 +423,7 @@ forms:
         pp: '15'
   - name: 'Jataro'
     kind: 'form'
+    description: 'Born from the spirits of fallen warriors, Entei''s strikes shake both the physical and spirit realms. Each roar is a challenge—only the brave dare stand their ground.'
     types: ['Ghost', 'Fighting']
     abilities: ['Intimidate', 'Shadow Shield']
     hidden_ability: 'Sheer Force'

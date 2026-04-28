@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Harvest'
     sprite: 'images/pokedex/exeggcute.png'
     egg_groups: ['grass']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.4
     weight_kg: 2.5

@@ -474,6 +474,7 @@ forms:
         pp: '15'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Magmortar hones its mind as sharply as its fists, predicting opponents'' movements before they strike. When its focus peaks, its speed surges suddenly, overwhelming foes with perfectly adapted blows.'
     types: ['Psychic', 'Fighting']
     abilities: ['Psychic Surge', 'Quick Feet']
     hidden_ability: 'Flare Boost'

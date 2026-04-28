@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Infiltrator'
     sprite: 'images/pokedex/zubat.png'
     egg_groups: ['flying']
+    egg_steps: 3855
     growth_rate: 'medium_fast'
     height_m: 0.8
     weight_kg: 7.5

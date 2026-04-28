@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Contrary'
     sprite: 'images/pokedex/spinda.png'
     egg_groups: ['human-like', 'field']
+    egg_steps: 3855
     growth_rate: 'fast'
     height_m: 1.1
     weight_kg: 5

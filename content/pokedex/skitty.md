@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Wonder Skin'
     sprite: 'images/pokedex/skitty.png'
     egg_groups: ['fairy', 'field']
+    egg_steps: 3855
     growth_rate: 'fast'
     height_m: 0.6
     weight_kg: 11

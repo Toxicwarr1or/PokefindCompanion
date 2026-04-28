@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Reckless'
     sprite: 'images/pokedex/starly.png'
     egg_groups: ['flying']
+    egg_steps: 3855
     growth_rate: 'medium_slow'
     height_m: 0.3
     weight_kg: 2

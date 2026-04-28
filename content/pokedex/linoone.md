@@ -495,6 +495,7 @@ forms:
         pp: '20'
   - name: 'Galarian'
     kind: 'form'
+    description: 'It uses its long tongue to taunt opponents. Once the opposition is enraged, this Pokémon hurls itself at the opponent, tackling them forcefully.'
     types: ['Dark', 'Normal']
     abilities: ['Pickup', 'Gluttony']
     hidden_ability: 'Quick Feet'

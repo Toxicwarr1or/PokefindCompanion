@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Steadfast'
     sprite: 'images/pokedex/scyther.png'
     egg_groups: ['bug']
+    egg_steps: 6425
     growth_rate: 'medium_fast'
     height_m: 1.5
     weight_kg: 56

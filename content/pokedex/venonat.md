@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Run Away'
     sprite: 'images/pokedex/venonat.png'
     egg_groups: ['bug']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1
     weight_kg: 30

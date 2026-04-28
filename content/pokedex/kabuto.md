@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Weak Armor'
     sprite: 'images/pokedex/kabuto.png'
     egg_groups: ['water 3', 'water 1']
+    egg_steps: 7710
     growth_rate: 'medium_fast'
     height_m: 0.5
     weight_kg: 11.5

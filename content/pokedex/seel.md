@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Ice Body'
     sprite: 'images/pokedex/seel.png'
     egg_groups: ['field', 'water 1']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 1.1
     weight_kg: 90

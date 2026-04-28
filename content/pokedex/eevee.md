@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Anticipation'
     sprite: 'images/pokedex/eevee.png'
     egg_groups: ['field']
+    egg_steps: 8995
     growth_rate: 'medium_fast'
     height_m: 0.3
     weight_kg: 6.5

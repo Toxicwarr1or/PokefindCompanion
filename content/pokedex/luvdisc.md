@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Hydration'
     sprite: 'images/pokedex/luvdisc.png'
     egg_groups: ['water 2']
+    egg_steps: 5140
     growth_rate: 'fast'
     height_m: 0.6
     weight_kg: 8.7

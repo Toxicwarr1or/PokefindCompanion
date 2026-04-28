@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Poison Touch'
     sprite: 'images/pokedex/croagunk.png'
     egg_groups: ['human-like']
+    egg_steps: 2570
     growth_rate: 'medium_fast'
     height_m: 0.7
     weight_kg: 23

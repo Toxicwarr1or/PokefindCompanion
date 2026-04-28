@@ -11,6 +11,7 @@ forms:
     abilities: ['Truant']
     sprite: 'images/pokedex/slakoth.png'
     egg_groups: ['field']
+    egg_steps: 3855
     growth_rate: 'slow'
     height_m: 0.8
     weight_kg: 24

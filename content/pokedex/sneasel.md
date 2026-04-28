@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Pickpocket'
     sprite: 'images/pokedex/sneasel.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.9
     weight_kg: 28

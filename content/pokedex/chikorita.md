@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Leaf Guard'
     sprite: 'images/pokedex/chikorita.png'
     egg_groups: ['grass', 'monster']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.9
     weight_kg: 6.4

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Flare Boost'
     sprite: 'images/pokedex/drifloon.png'
     egg_groups: ['amorphous']
+    egg_steps: 7710
     growth_rate: 'fluctuating'
     height_m: 0.4
     weight_kg: 1.2

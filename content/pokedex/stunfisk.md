@@ -529,6 +529,7 @@ forms:
         pp: '10'
   - name: 'Galarian'
     kind: 'form'
+    description: 'Living in mud with a high iron content has given it a strong steel body.'
     types: ['Ground', 'Steel']
     abilities: ['Mimicry']
     sprite: 'images/pokedex/stunfisk-galarian.png'

@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Iron Fist'
     sprite: 'images/pokedex/chimchar.png'
     egg_groups: ['human-like', 'field']
+    egg_steps: 5140
     growth_rate: 'medium_slow'
     height_m: 0.5
     weight_kg: 6.2

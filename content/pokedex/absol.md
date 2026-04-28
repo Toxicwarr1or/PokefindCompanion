@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Justified'
     sprite: 'images/pokedex/absol.png'
     egg_groups: ['field']
+    egg_steps: 6425
     growth_rate: 'medium_slow'
     height_m: 1.2
     weight_kg: 47
@@ -699,6 +700,7 @@ forms:
     hidden_ability: 'Magic Bounce'
     sprite: ''
     egg_groups: ['field']
+    egg_steps: 6425
     growth_rate: 'medium_slow'
     height_m: 1.2
     weight_kg: 47

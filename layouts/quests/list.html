@@ -24,17 +24,46 @@
   </nav>
 
   {{ range $i, $p := $genPages }}
+  {{ $genNum := $p.Params.gen }}
+  {{ $main := slice }}
+  {{ $side := slice }}
+  {{ range $p.Params.quests }}
+    {{ if eq .category "main" }}{{ $main = $main | append . }}
+    {{ else }}{{ $side = $side | append . }}{{ end }}
+  {{ end }}
   <section class="form-panel{{ if eq $i 0 }} active{{ end }}" data-form-index="{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
-    <p class="meta">{{ len $p.Params.quests }} quest{{ if ne (len $p.Params.quests) 1 }}s{{ end }}.</p>
-    <ul class="quest-list">
-      {{ $genNum := $p.Params.gen }}
-      {{ range $p.Params.quests }}
-      <li class="quest-entry">
-        <h3 class="quest-name"><a href="{{ printf "/quests/gen%d/%s/" (int $genNum) .slug | relURL }}">{{ .name }}</a></h3>
-        {{ with .description }}<p class="quest-desc">{{ . }}</p>{{ end }}
-      </li>
-      {{ end }}
-    </ul>
+    <nav class="quest-subtabs" role="tablist" aria-label="{{ $p.Title }} quest categories">
+      <button type="button" class="quest-subtab active" data-quest-cat="main" aria-selected="true">
+        Main Quests &amp; Elite Four <span class="tab-count">{{ len $main }}</span>
+      </button>
+      <button type="button" class="quest-subtab" data-quest-cat="side" aria-selected="false">
+        Side Quests <span class="tab-count">{{ len $side }}</span>
+      </button>
+    </nav>
+
+    <div class="quest-subpanel active" data-quest-cat="main">
+      <p class="meta">{{ len $main }} main-line quest{{ if ne (len $main) 1 }}s{{ end }}.</p>
+      <ul class="quest-list">
+        {{ range $main }}
+        <li class="quest-entry">
+          <h3 class="quest-name"><a href="{{ printf "/quests/gen%d/%s/" (int $genNum) .slug | relURL }}">{{ .name }}</a></h3>
+          {{ with .description }}<p class="quest-desc">{{ . }}</p>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="quest-subpanel" data-quest-cat="side" hidden>
+      <p class="meta">{{ len $side }} side quest{{ if ne (len $side) 1 }}s{{ end }}.</p>
+      <ul class="quest-list">
+        {{ range $side }}
+        <li class="quest-entry">
+          <h3 class="quest-name"><a href="{{ printf "/quests/gen%d/%s/" (int $genNum) .slug | relURL }}">{{ .name }}</a></h3>
+          {{ with .description }}<p class="quest-desc">{{ . }}</p>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
   </section>
   {{ end }}
   {{ end }}

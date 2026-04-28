@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Justified'
     sprite: 'images/pokedex/growlithe.png'
     egg_groups: ['field']
+    egg_steps: 5140
     growth_rate: 'slow'
     height_m: 0.7
     weight_kg: 19

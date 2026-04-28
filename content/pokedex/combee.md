@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Hustle'
     sprite: 'images/pokedex/combee.png'
     egg_groups: ['bug']
+    egg_steps: 3855
     growth_rate: 'medium_slow'
     height_m: 0.3
     weight_kg: 5.5

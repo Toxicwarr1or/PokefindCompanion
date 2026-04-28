@@ -11,6 +11,7 @@ forms:
     abilities: ['Levitate']
     sprite: 'images/pokedex/rotom.png'
     egg_groups: ['amorphous']
+    egg_steps: 5140
     growth_rate: 'medium_fast'
     height_m: 0.3
     weight_kg: 0.3

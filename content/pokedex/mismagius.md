@@ -454,6 +454,7 @@ forms:
         pp: '10'
   - name: 'Shiloh'
     kind: 'form'
+    description: 'Bonds between these Pokemon are very strong. It protects the safety of its pack by tricking its opponents.'
     types: ['Rock', 'Fairy']
     abilities: ['Illusion', 'Sand Rush']
     hidden_ability: 'Technician'

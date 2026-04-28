@@ -12,6 +12,7 @@ forms:
     hidden_ability: 'Light Metal'
     sprite: 'images/pokedex/beldum.png'
     egg_groups: ['mineral']
+    egg_steps: 10280
     growth_rate: 'slow'
     height_m: 0.6
     weight_kg: 95.2
