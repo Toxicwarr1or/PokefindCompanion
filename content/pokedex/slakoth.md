@@ -479,6 +479,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Slakoth'
+        slug: 'slakoth'
+        depth: 0
+        method: ''
+      - species: 'Vigoroth'
+        slug: 'vigoroth'
+        depth: 1
+        method: 'Level 18'
+      - species: 'Slaking'
+        slug: 'slaking'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

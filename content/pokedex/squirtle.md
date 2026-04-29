@@ -489,6 +489,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Squirtle'
+        slug: 'squirtle'
+        depth: 0
+        method: ''
+      - species: 'Wartortle'
+        slug: 'wartortle'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Blastoise'
+        slug: 'blastoise'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

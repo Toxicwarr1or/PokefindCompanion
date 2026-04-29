@@ -521,6 +521,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Elekid'
+        slug: 'elekid'
+        depth: 0
+        method: ''
+      - species: 'Electabuzz'
+        slug: 'electabuzz'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Electivire'
+        slug: 'electivire'
+        depth: 2
+        method: 'Trade, holding Electirizer'
   - name: 'Shiloh'
     kind: 'form'
     description: 'Electivire sharpens its metal limbs through constant combat, leaving sparks and cuts in its wake. It is oddly drawn to coins, hoarding shiny objects to test their durability.'

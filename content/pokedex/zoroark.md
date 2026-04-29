@@ -514,6 +514,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Zorua'
+        slug: 'zorua'
+        depth: 0
+        method: ''
+      - species: 'Zoroark'
+        slug: 'zoroark'
+        depth: 1
+        method: 'Level 30'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Fairy', 'Fighting']

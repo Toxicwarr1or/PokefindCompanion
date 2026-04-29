@@ -468,6 +468,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Magby'
+        slug: 'magby'
+        depth: 0
+        method: ''
+      - species: 'Magmar'
+        slug: 'magmar'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Magmortar'
+        slug: 'magmortar'
+        depth: 2
+        method: 'Trade, holding Magmarizer'
 region: ''
 anniversary: ''
 tier: ''

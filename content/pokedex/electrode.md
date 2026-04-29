@@ -395,6 +395,15 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Voltorb'
+        slug: 'voltorb'
+        depth: 0
+        method: ''
+      - species: 'Electrode'
+        slug: 'electrode'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

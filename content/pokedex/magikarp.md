@@ -61,6 +61,15 @@ forms:
         power: '85'
         accuracy: '85'
         pp: '5'
+    evolution_family:
+      - species: 'Magikarp'
+        slug: 'magikarp'
+        depth: 0
+        method: ''
+      - species: 'Gyarados'
+        slug: 'gyarados'
+        depth: 1
+        method: 'Level 20'
 region: ''
 anniversary: ''
 tier: ''

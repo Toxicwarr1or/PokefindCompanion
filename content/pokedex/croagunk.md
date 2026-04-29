@@ -623,6 +623,15 @@ forms:
         power: '70'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Croagunk'
+        slug: 'croagunk'
+        depth: 0
+        method: ''
+      - species: 'Toxicroak'
+        slug: 'toxicroak'
+        depth: 1
+        method: 'Level 37'
 region: ''
 anniversary: ''
 tier: ''

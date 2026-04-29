@@ -433,6 +433,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Deerling'
+        slug: 'deerling'
+        depth: 0
+        method: ''
+      - species: 'Sawsbuck'
+        slug: 'sawsbuck'
+        depth: 1
+        method: 'Level 34'
   - name: 'Summer'
     kind: 'form'
     types: ['Normal', 'Grass']

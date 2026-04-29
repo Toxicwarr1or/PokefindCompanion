@@ -395,6 +395,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Yanma'
+        slug: 'yanma'
+        depth: 0
+        method: ''
+      - species: 'Yanmega'
+        slug: 'yanmega'
+        depth: 1
+        method: 'Level up, knowing Ancient Power'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Poison', 'Dragon']

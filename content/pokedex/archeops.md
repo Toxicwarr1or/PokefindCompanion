@@ -525,6 +525,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Archen'
+        slug: 'archen'
+        depth: 0
+        method: ''
+      - species: 'Archeops'
+        slug: 'archeops'
+        depth: 1
+        method: 'Level 37'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Flying', 'Ground']

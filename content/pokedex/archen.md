@@ -540,6 +540,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Archen'
+        slug: 'archen'
+        depth: 0
+        method: ''
+      - species: 'Archeops'
+        slug: 'archeops'
+        depth: 1
+        method: 'Level 37'
 region: ''
 anniversary: ''
 tier: ''

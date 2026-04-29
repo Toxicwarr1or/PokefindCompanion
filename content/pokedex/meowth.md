@@ -551,6 +551,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '30'
+    evolution_family:
+      - species: 'Meowth'
+        slug: 'meowth'
+        depth: 0
+        method: ''
+      - species: 'Persian'
+        slug: 'persian'
+        depth: 1
+        method: 'Level 28'
   - name: 'Alolan'
     kind: 'form'
     types: ['Dark']

@@ -557,6 +557,15 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Croagunk'
+        slug: 'croagunk'
+        depth: 0
+        method: ''
+      - species: 'Toxicroak'
+        slug: 'toxicroak'
+        depth: 1
+        method: 'Level 37'
   - name: 'Shiloh'
     kind: 'form'
     description: 'Its knuckles claws secrete a toxin so vile that even a scratch could prove fatal.'

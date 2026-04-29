@@ -540,6 +540,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Teddiursa'
+        slug: 'teddiursa'
+        depth: 0
+        method: ''
+      - species: 'Ursaring'
+        slug: 'ursaring'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

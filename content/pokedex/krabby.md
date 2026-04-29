@@ -481,6 +481,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Krabby'
+        slug: 'krabby'
+        depth: 0
+        method: ''
+      - species: 'Kingler'
+        slug: 'kingler'
+        depth: 1
+        method: 'Level 28'
 region: ''
 anniversary: ''
 tier: ''

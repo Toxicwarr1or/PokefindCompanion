@@ -450,6 +450,15 @@ forms:
         power: '90'
         accuracy: '85'
         pp: '20'
+    evolution_family:
+      - species: 'Joltik'
+        slug: 'joltik'
+        depth: 0
+        method: ''
+      - species: 'Galvantula'
+        slug: 'galvantula'
+        depth: 1
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

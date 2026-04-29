@@ -438,6 +438,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Tentacool'
+        slug: 'tentacool'
+        depth: 0
+        method: ''
+      - species: 'Tentacruel'
+        slug: 'tentacruel'
+        depth: 1
+        method: 'Level 30'
   - name: 'Kyoto'
     kind: 'form'
     types: ['Electric', 'Ghost']

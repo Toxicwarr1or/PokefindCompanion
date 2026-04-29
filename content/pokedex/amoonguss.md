@@ -373,6 +373,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Foongus'
+        slug: 'foongus'
+        depth: 0
+        method: ''
+      - species: 'Amoonguss'
+        slug: 'amoonguss'
+        depth: 1
+        method: 'Level 39'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Steel', 'Fighting']

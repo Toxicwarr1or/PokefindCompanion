@@ -358,6 +358,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Litwick'
+        slug: 'litwick'
+        depth: 0
+        method: ''
+      - species: 'Lampent'
+        slug: 'lampent'
+        depth: 1
+        method: 'Level 41'
+      - species: 'Chandelure'
+        slug: 'chandelure'
+        depth: 2
+        method: 'Use Dusk Stone'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Ice', 'Electric']

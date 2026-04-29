@@ -444,6 +444,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '5'
+    evolution_family:
+      - species: 'Oshawott'
+        slug: 'oshawott'
+        depth: 0
+        method: ''
+      - species: 'Dewott'
+        slug: 'dewott'
+        depth: 1
+        method: 'Level 17'
+      - species: 'Samurott'
+        slug: 'samurott'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

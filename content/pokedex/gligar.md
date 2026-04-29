@@ -582,6 +582,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '35'
+    evolution_family:
+      - species: 'Gligar'
+        slug: 'gligar'
+        depth: 0
+        method: ''
+      - species: 'Gliscor'
+        slug: 'gliscor'
+        depth: 1
+        method: 'Level up, holding Razor Fang, at night'
 region: ''
 anniversary: ''
 tier: ''

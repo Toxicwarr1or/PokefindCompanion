@@ -414,6 +414,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Rufflet'
+        slug: 'rufflet'
+        depth: 0
+        method: ''
+      - species: 'Braviary'
+        slug: 'braviary'
+        depth: 1
+        method: 'Level 54'
 region: ''
 anniversary: ''
 tier: ''

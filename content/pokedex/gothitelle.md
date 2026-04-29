@@ -553,6 +553,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Gothita'
+        slug: 'gothita'
+        depth: 0
+        method: ''
+      - species: 'Gothorita'
+        slug: 'gothorita'
+        depth: 1
+        method: 'Level 32'
+      - species: 'Gothitelle'
+        slug: 'gothitelle'
+        depth: 2
+        method: 'Level 41'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Dark', 'Steel']

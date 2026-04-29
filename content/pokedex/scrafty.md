@@ -556,6 +556,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Scraggy'
+        slug: 'scraggy'
+        depth: 0
+        method: ''
+      - species: 'Scrafty'
+        slug: 'scrafty'
+        depth: 1
+        method: 'Level 39'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Water', 'Steel']

@@ -512,6 +512,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Woobat'
+        slug: 'woobat'
+        depth: 0
+        method: ''
+      - species: 'Swoobat'
+        slug: 'swoobat'
+        depth: 1
+        method: 'Level up, high friendship'
 region: ''
 anniversary: ''
 tier: ''

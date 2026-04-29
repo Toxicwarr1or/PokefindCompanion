@@ -528,6 +528,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Aipom'
+        slug: 'aipom'
+        depth: 0
+        method: ''
+      - species: 'Ambipom'
+        slug: 'ambipom'
+        depth: 1
+        method: 'Level up, knowing Double Hit'
   - name: 'Shiloh'
     kind: 'form'
     description: 'Ambipom''s metal-coated tails strike with freezing force, capable of shattering defenses in an instant. Once it commits to an attack, it shows no hesitation, slipping past guards with relentless precision.'

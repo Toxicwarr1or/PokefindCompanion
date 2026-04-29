@@ -497,6 +497,15 @@ forms:
         power: '70'
         accuracy: '100'
         pp: '5'
+    evolution_family:
+      - species: 'Zorua'
+        slug: 'zorua'
+        depth: 0
+        method: ''
+      - species: 'Zoroark'
+        slug: 'zoroark'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

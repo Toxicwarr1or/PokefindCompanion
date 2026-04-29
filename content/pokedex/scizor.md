@@ -456,6 +456,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Scyther'
+        slug: 'scyther'
+        depth: 0
+        method: ''
+      - species: 'Scizor'
+        slug: 'scizor'
+        depth: 1
+        method: 'Trade, holding Metal Coat'
   - name: 'Jataro'
     kind: 'form'
     types: ['Dragon', 'Steel']

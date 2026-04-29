@@ -55,6 +55,27 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Wurmple'
+        slug: 'wurmple'
+        depth: 0
+        method: ''
+      - species: 'Silcoon'
+        slug: 'silcoon'
+        depth: 1
+        method: 'Level 7'
+      - species: 'Beautifly'
+        slug: 'beautifly'
+        depth: 2
+        method: 'Level 10'
+      - species: 'Cascoon'
+        slug: 'cascoon'
+        depth: 1
+        method: 'Level 7'
+      - species: 'Dustox'
+        slug: 'dustox'
+        depth: 2
+        method: 'Level 10'
 region: ''
 anniversary: ''
 tier: ''

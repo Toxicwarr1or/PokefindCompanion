@@ -466,6 +466,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Porygon'
+        slug: 'porygon'
+        depth: 0
+        method: ''
+      - species: 'Porygon2'
+        slug: 'porygon2'
+        depth: 1
+        method: 'Trade, holding Up-Grade'
+      - species: 'Porygon-Z'
+        slug: 'porygon-z'
+        depth: 2
+        method: 'Trade, holding Dubious Disc'
 region: ''
 anniversary: ''
 tier: ''

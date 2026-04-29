@@ -331,6 +331,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Taillow'
+        slug: 'taillow'
+        depth: 0
+        method: ''
+      - species: 'Swellow'
+        slug: 'swellow'
+        depth: 1
+        method: 'Level 22'
   - name: 'Haikou'
     kind: 'form'
     description: 'Swellow skims storm-tossed seas, charging itself with lightning as it dives. Sailors claim its wings crackle moments before sudden squalls form.'

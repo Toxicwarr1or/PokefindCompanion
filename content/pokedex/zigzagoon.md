@@ -492,6 +492,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Zigzagoon'
+        slug: 'zigzagoon'
+        depth: 0
+        method: ''
+      - species: 'Linoone'
+        slug: 'linoone'
+        depth: 1
+        method: 'Level 20'
   - name: 'Galarian'
     kind: 'form'
     description: 'Its restlessness has it constantly running around. If it sees another Pokémon, it will purposely run into them in order to start a fight.'

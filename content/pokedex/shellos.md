@@ -391,6 +391,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Shellos'
+        slug: 'shellos'
+        depth: 0
+        method: ''
+      - species: 'Gastrodon'
+        slug: 'gastrodon'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

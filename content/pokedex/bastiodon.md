@@ -442,6 +442,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Shieldon'
+        slug: 'shieldon'
+        depth: 0
+        method: ''
+      - species: 'Bastiodon'
+        slug: 'bastiodon'
+        depth: 1
+        method: 'Level 30'
   - name: 'Shiloh'
     kind: 'form'
     description: 'When attacked, they form a wall with their shieldlike faces to protect their young.'

@@ -400,6 +400,15 @@ forms:
         power: '35'
         accuracy: '85'
         pp: '15'
+    evolution_family:
+      - species: 'Barboach'
+        slug: 'barboach'
+        depth: 0
+        method: ''
+      - species: 'Whiscash'
+        slug: 'whiscash'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

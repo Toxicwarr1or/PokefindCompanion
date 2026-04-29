@@ -537,6 +537,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Spoink'
+        slug: 'spoink'
+        depth: 0
+        method: ''
+      - species: 'Grumpig'
+        slug: 'grumpig'
+        depth: 1
+        method: 'Level 32'
 region: ''
 anniversary: ''
 tier: ''

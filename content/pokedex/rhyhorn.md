@@ -563,6 +563,19 @@ forms:
         power: '65'
         accuracy: '95'
         pp: '15'
+    evolution_family:
+      - species: 'Rhyhorn'
+        slug: 'rhyhorn'
+        depth: 0
+        method: ''
+      - species: 'Rhydon'
+        slug: 'rhydon'
+        depth: 1
+        method: 'Level 42'
+      - species: 'Rhyperior'
+        slug: 'rhyperior'
+        depth: 2
+        method: 'Trade, holding Protector'
 region: ''
 anniversary: ''
 tier: ''

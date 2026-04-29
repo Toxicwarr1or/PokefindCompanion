@@ -551,6 +551,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Torchic'
+        slug: 'torchic'
+        depth: 0
+        method: ''
+      - species: 'Combusken'
+        slug: 'combusken'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Blaziken'
+        slug: 'blaziken'
+        depth: 2
+        method: 'Level 36'
   - name: 'Haikou'
     kind: 'form'
     types: ['Water', 'Ice']

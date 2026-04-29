@@ -424,6 +424,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Finneon'
+        slug: 'finneon'
+        depth: 0
+        method: ''
+      - species: 'Lumineon'
+        slug: 'lumineon'
+        depth: 1
+        method: 'Level 31'
 region: ''
 anniversary: ''
 tier: ''

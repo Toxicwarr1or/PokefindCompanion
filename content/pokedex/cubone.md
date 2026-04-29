@@ -526,6 +526,15 @@ forms:
         power: '130'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Cubone'
+        slug: 'cubone'
+        depth: 0
+        method: ''
+      - species: 'Marowak'
+        slug: 'marowak'
+        depth: 1
+        method: 'Level 28'
 region: ''
 anniversary: ''
 tier: ''

@@ -433,6 +433,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Diglett'
+        slug: 'diglett'
+        depth: 0
+        method: ''
+      - species: 'Dugtrio'
+        slug: 'dugtrio'
+        depth: 1
+        method: 'Level 26'
   - name: 'Alolan'
     kind: 'form'
     types: ['Ground', 'Steel']

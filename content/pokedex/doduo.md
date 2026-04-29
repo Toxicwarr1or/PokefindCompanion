@@ -356,6 +356,15 @@ forms:
         power: '—'
         accuracy: '55'
         pp: '20'
+    evolution_family:
+      - species: 'Doduo'
+        slug: 'doduo'
+        depth: 0
+        method: ''
+      - species: 'Dodrio'
+        slug: 'dodrio'
+        depth: 1
+        method: 'Level 31'
 region: ''
 anniversary: ''
 tier: ''

@@ -24,11 +24,32 @@ from __future__ import annotations
 import json
 import shutil
 import struct
+
+try:
+    from PIL import Image
+    _HAS_PIL = True
+except ImportError:
+    _HAS_PIL = False
 import sys
 from pathlib import Path
 
 MODELS_DIR = Path("/home/jack/Downloads/models")
 PACK_BM_TEXTURES = Path("/tmp/devhelditem/assets/bettermodel/textures")
+PACK_BM_MODELS = Path("/tmp/devhelditem/assets/bettermodel/models/modern_item")
+
+# Per-(species, skin) overrides where the bbmodel's body geometry doesn't
+# fit the variant atlas, so we composite the BetterModel exporter's part
+# files instead. Each entry lists the part-file *suffixes* (after
+# `<species>_v_<skin>_`) to include — we drop holiday/event sub-variants
+# (halloween, valentine, gamer when not the wanted skin) and keep the
+# core body parts for that skin.
+PART_FILE_OVERRIDES: dict[tuple[str, str], tuple[str, ...]] = {
+    # Rotom's meme skin is a 64×64 Bart Simpson character UV-unwrapped on
+    # a different geometry from the regular 32×32 ghost-ish rotom. The
+    # BetterModel exporter ships meme-specific part files
+    # (rotom_v_meme_rotom_1.json + lefthand/righthand) — compose those.
+    ("rotom", "meme"): ("rotom", "lefthand", "righthand"),
+}
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 POKEDEX_DIR = WIKI_ROOT / "content/pokedex"
 OUT_BASE = WIKI_ROOT / "static/models-3d"
@@ -87,6 +108,31 @@ COSMETIC_SKIN_TOKENS.update({
 
 # Output directory order (regular always first), preserving the YAML order.
 SKINS: tuple[str, ...] = ("regular",) + CANONICAL_SKIN_KEYS
+
+
+def copy_texture(src: Path, dst: Path) -> None:
+    """Copy a PNG, stripping any animation: when `<src>.mcmeta` declares a
+    vertical frame sprite-sheet, write only the first square frame so the
+    static viewer doesn't show all frames stacked at once. Mewtwo's gamer
+    atlas is the canonical case (64×192 = three 64×64 frames + an mcmeta);
+    leaving it intact made the body's UVs sample frames 2 and 3 by
+    accident."""
+    mcmeta = src.with_suffix(src.suffix + ".mcmeta")
+    if mcmeta.exists() and _HAS_PIL:
+        try:
+            meta = json.loads(mcmeta.read_text())
+        except json.JSONDecodeError:
+            meta = {}
+        if "animation" in meta:
+            try:
+                with Image.open(src) as img:
+                    w, h = img.size
+                    if h > w:
+                        img.crop((0, 0, w, w)).save(dst)
+                        return
+            except Exception:
+                pass
+    shutil.copy2(src, dst)
 
 
 def png_pixel_width(path: Path) -> int | None:
@@ -237,11 +283,10 @@ def cube_to_mc_element(e: dict, uv_scale_for, tex_remap: dict[int, str] | None =
     return cube
 
 
-def walk_bbmodel_to_bones(bb: dict, root_name: str, uv_scale_for, tex_remap,
-                          skip_groups: set[str]) -> dict | None:
-    """Walk the bbmodel outliner under `root_name` and emit a nested-bones
-    dict tree. Each bone records its parent-relative origin, rotation, the
-    cubes parented directly to it (in bone-local coords), and child bones.
+def _emit_bone(node: dict, parent_world_origin: list[float],
+               elements_by_uuid: dict, uv_scale_for, tex_remap,
+               skip_groups: set[str]) -> dict:
+    """Recursively emit one bbmodel outliner node as a bones-tree dict.
 
     Bbmodel cubes are stored in absolute world coords with parent bones'
     rotations *not* baked in — at zero rotation the cubes occupy their
@@ -250,63 +295,140 @@ def walk_bbmodel_to_bones(bb: dict, root_name: str, uv_scale_for, tex_remap,
     into the bone-local frame so that downstream three.js group rotation
     around `bone.origin` produces the rendered rest pose without us having
     to bake any matrices in Python."""
+    world_origin = list(node.get("origin") or [0.0, 0.0, 0.0])[:3]
+    while len(world_origin) < 3:
+        world_origin.append(0.0)
+    local_origin = [world_origin[i] - parent_world_origin[i] for i in range(3)]
+    rotation = list(node.get("rotation") or [0.0, 0.0, 0.0])[:3]
+    while len(rotation) < 3:
+        rotation.append(0.0)
+    out_elements: list[dict] = []
+    out_children: list[dict] = []
+    for child in node.get("children", []) or []:
+        if isinstance(child, str):
+            e = elements_by_uuid.get(child)
+            if not e:
+                continue
+            mc = cube_to_mc_element(e, uv_scale_for, tex_remap)
+            if not mc:
+                continue
+            mc["from"] = [mc["from"][i] - world_origin[i] for i in range(3)]
+            mc["to"] = [mc["to"][i] - world_origin[i] for i in range(3)]
+            rot = mc.get("rotation")
+            if isinstance(rot, dict) and "origin" in rot:
+                o = rot["origin"]
+                mc["rotation"] = dict(rot, origin=[
+                    o[0] - world_origin[0],
+                    o[1] - world_origin[1],
+                    o[2] - world_origin[2],
+                ])
+            out_elements.append(mc)
+        elif isinstance(child, dict):
+            if (child.get("name") or "") in skip_groups:
+                continue
+            out_children.append(_emit_bone(
+                child, world_origin, elements_by_uuid,
+                uv_scale_for, tex_remap, skip_groups))
+    return {
+        "name": node.get("name") or "",
+        "origin": local_origin,
+        "rotation": rotation,
+        "elements": out_elements,
+        "children": out_children,
+    }
+
+
+def walk_bbmodel_to_bones(bb: dict, root_name: str, uv_scale_for, tex_remap,
+                          skip_groups: set[str]) -> list[dict]:
+    """Walk the bbmodel outliner and emit the base-skin bones — the body
+    group plus any auxiliary top-level sibling groups that aren't
+    hitboxes and aren't named after a cosmetic skin.
+
+    Most bbmodels keep the base skin in a "body" group, but some name it
+    after the species (arbok, bidoof…) or leave it unnamed. Some (Mewtwo,
+    Mew) split base geometry across multiple top-level groups: the main
+    body in one, then auxiliary cubes (Mewtwo's "shadow_*" psychic-aura
+    cubes around the head, "tail6_*" tail-tip extension) in unnamed
+    siblings. Those need to render alongside the body on every skin —
+    they're not skin-specific.
+
+    Skin-named top-level groups (Charizard's "halloween", "christmas",
+    etc.) are *excluded* from the base walk; `walk_skin_addon_group`
+    picks them up only for the matching skin tab."""
     elements_by_uuid = {e["uuid"]: e for e in bb.get("elements", []) if "uuid" in e}
+    skin_names = {k.lower() for k in COSMETIC_SKIN_TOKENS.keys()}
+    skin_names |= {v.lower() for v in COSMETIC_SKIN_TOKENS.values()}
 
-    def emit_bone(node: dict, parent_world_origin: list[float]) -> dict:
-        world_origin = list(node.get("origin") or [0.0, 0.0, 0.0])[:3]
-        # Pad short origin/rotation arrays defensively.
-        while len(world_origin) < 3:
-            world_origin.append(0.0)
-        local_origin = [world_origin[i] - parent_world_origin[i] for i in range(3)]
-        rotation = list(node.get("rotation") or [0.0, 0.0, 0.0])[:3]
-        while len(rotation) < 3:
-            rotation.append(0.0)
-        out_elements: list[dict] = []
-        out_children: list[dict] = []
-        for child in node.get("children", []) or []:
-            if isinstance(child, str):
-                e = elements_by_uuid.get(child)
-                if not e:
-                    continue
-                mc = cube_to_mc_element(e, uv_scale_for, tex_remap)
-                if not mc:
-                    continue
-                mc["from"] = [mc["from"][i] - world_origin[i] for i in range(3)]
-                mc["to"] = [mc["to"][i] - world_origin[i] for i in range(3)]
-                rot = mc.get("rotation")
-                if isinstance(rot, dict) and "origin" in rot:
-                    o = rot["origin"]
-                    mc["rotation"] = dict(rot, origin=[
-                        o[0] - world_origin[0],
-                        o[1] - world_origin[1],
-                        o[2] - world_origin[2],
-                    ])
-                out_elements.append(mc)
-            elif isinstance(child, dict):
-                if (child.get("name") or "") in skip_groups:
-                    continue
-                out_children.append(emit_bone(child, world_origin))
-        return {
-            "name": node.get("name") or "",
-            "origin": local_origin,
-            "rotation": rotation,
-            "elements": out_elements,
-            "children": out_children,
-        }
-
-    # Most bbmodels keep the base skin in a "body" group, but a fair number
-    # name it after the species (arbok, bidoof…) or leave it unnamed. The
-    # "hitbox" group always sits beside it as a sibling and contains a single
-    # placeholder cube — never treat that one as the root.
+    body_group = None
     for top in bb.get("outliner", []) or []:
         if isinstance(top, dict) and top.get("name") == root_name:
-            return emit_bone(top, [0.0, 0.0, 0.0])
+            body_group = top
+            break
+    if body_group is None:
+        for top in bb.get("outliner", []) or []:
+            if not isinstance(top, dict):
+                continue
+            if (top.get("name") or "").lower() == "hitbox":
+                continue
+            body_group = top
+            break
+    if body_group is None:
+        return []
+
+    def is_hitbox_group(node: dict) -> bool:
+        """Hitbox groups can be named "hitbox" or anonymous — in the latter
+        case the single cube inside carries a `hitbox_*` name. Detect both."""
+        if (node.get("name") or "").lower() == "hitbox":
+            return True
+        kids = node.get("children") or []
+        if len(kids) == 1 and isinstance(kids[0], str):
+            cube = elements_by_uuid.get(kids[0])
+            if cube and (cube.get("name") or "").lower().startswith("hitbox"):
+                return True
+        return False
+
+    bones: list[dict] = [_emit_bone(body_group, [0.0, 0.0, 0.0], elements_by_uuid,
+                                    uv_scale_for, tex_remap, skip_groups)]
+    for top in bb.get("outliner", []) or []:
+        if not isinstance(top, dict) or top is body_group:
+            continue
+        if is_hitbox_group(top):
+            continue
+        name = (top.get("name") or "").lower()
+        if name and name in skin_names:
+            continue   # picked up per-skin by walk_skin_addon_group
+        aux_bone = _emit_bone(top, [0.0, 0.0, 0.0], elements_by_uuid,
+                              uv_scale_for, tex_remap, skip_groups)
+        # Auxiliary base bones are typically VFX cubes that the in-game
+        # renderer fades / pulses (Mewtwo's psychic-aura `shadow_*` cubes
+        # around the head, the `tail6_*` energy trail behind it). Mark
+        # them translucent so the viewer renders them at reduced opacity
+        # — without this hint they show as solid colored blocks where the
+        # in-game effect is a glow.
+        aux_bone["opacity"] = 0.4
+        bones.append(aux_bone)
+    return bones
+
+
+def walk_skin_addon_group(bb: dict, skin_key: str, uv_scale_for, tex_remap,
+                          skip_groups: set[str]) -> dict | None:
+    """Find a top-level bbmodel group that adds skin-specific geometry
+    (Charizard's `christmas` group has a Santa hat, `halloween` has horns,
+    etc.) and emit it as a parallel bone tree. Matches by canonical skin
+    key OR any of its bbmodel-token aliases (so `lunar` → lunar_new_year,
+    `xmas` → christmas, etc.). Returns None if no such group exists for
+    the requested skin."""
+    aliases: set[str] = {skin_key.lower()}
+    for token, dirname in COSMETIC_SKIN_TOKENS.items():
+        if dirname == skin_key:
+            aliases.add(token)
+    elements_by_uuid = {e["uuid"]: e for e in bb.get("elements", []) if "uuid" in e}
     for top in bb.get("outliner", []) or []:
         if not isinstance(top, dict):
             continue
-        if (top.get("name") or "").lower() == "hitbox":
-            continue
-        return emit_bone(top, [0.0, 0.0, 0.0])
+        if (top.get("name") or "").lower() in aliases:
+            return _emit_bone(top, [0.0, 0.0, 0.0], elements_by_uuid,
+                              uv_scale_for, tex_remap, skip_groups)
     return None
 
 
@@ -414,6 +536,49 @@ def derive_textures(bb: dict, species: str, skin: str) -> tuple[dict[str, str], 
     return textures, srcs
 
 
+def stage_from_part_files(species: str, skin: str, slug: str, out_dir: Path,
+                          part_suffixes: tuple[str, ...]) -> str:
+    """Stage a skin by combining the BetterModel exporter's part files into
+    a single flat-elements JSON. Used when the bbmodel's geometry doesn't
+    match the variant atlas (Rotom meme is the canonical case — the meme
+    atlas is a different model entirely)."""
+    elements: list[dict] = []
+    textures: dict[str, str] = {}
+    texture_srcs: set[Path] = set()
+    found_any = False
+    for suffix in part_suffixes:
+        p = PACK_BM_MODELS / f"{species}_v_{skin}_{suffix}_1.json"
+        if not p.exists():
+            continue
+        try:
+            part = json.loads(p.read_text())
+        except json.JSONDecodeError:
+            continue
+        found_any = True
+        # Texture refs are namespaced `bettermodel:item/<file>` — drop the
+        # namespace prefix so the viewer's path-tail filename rule resolves
+        # them to a sibling PNG in the staged dir.
+        for k, v in (part.get("textures") or {}).items():
+            if isinstance(v, str):
+                clean = v.replace("bettermodel:", "bettermodel/")
+                textures.setdefault(k, clean)
+                rel = clean.split("/", 1)[1] if "/" in clean else clean
+                texture_srcs.add(PACK_BM_TEXTURES / f"{rel}.png")
+        for elem in part.get("elements") or []:
+            elements.append(elem)
+    if not found_any or not elements:
+        return "no-parts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / f"{slug}.json").write_text(
+        json.dumps({"textures": textures, "elements": elements})
+    )
+    for src in sorted(texture_srcs):
+        if not src.exists():
+            return f"missing-texture:{src.name}"
+        copy_texture(src, out_dir / src.name)
+    return "ok"
+
+
 def count_bones_and_elements(bone: dict) -> tuple[int, int]:
     n_bones = 1
     n_elems = len(bone.get("elements") or [])
@@ -459,10 +624,9 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
         file_widths.setdefault(role, w)
     uv_scale_for = make_uv_scaler(bb, file_widths)
     tex_remap = make_tex_remap(bb)
-    root = walk_bbmodel_to_bones(bb, ROOT_BONE_DEFAULT, uv_scale_for, tex_remap, SKIP_BONES)
-    if root is None:
+    base_bones = walk_bbmodel_to_bones(bb, ROOT_BONE_DEFAULT, uv_scale_for, tex_remap, SKIP_BONES)
+    if not base_bones:
         return {"regular": "no-root"}
-    bones_payload = [root]
     statuses: dict[str, str] = {}
     for skin in SKINS:
         # Skin-as-overlay variants (shiny, aura) only ship for the base
@@ -470,6 +634,18 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
         # aura/shiny atlases in the pack.
         if skin != "regular" and variant != "regular":
             continue
+
+        # If this (species, skin) is in PART_FILE_OVERRIDES, build the
+        # output from the BetterModel exporter's part files instead of
+        # the bbmodel — used when the variant atlas targets a different
+        # geometry than the bbmodel's body (Rotom meme).
+        override_parts = PART_FILE_OVERRIDES.get((species, skin))
+        if override_parts is not None:
+            out_dir = OUT_BASE / skin / slug
+            statuses[skin] = stage_from_part_files(species, skin, slug, out_dir,
+                                                   override_parts)
+            continue
+
         if skin == "regular":
             textures, texture_srcs = regular_textures, regular_srcs
         else:
@@ -477,6 +653,31 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
         if not textures:
             statuses[skin] = "no-texture"
             continue
+        # Skip variant skins whose body atlas has different dimensions to
+        # the regular's after multi-frame cropping — that means the variant
+        # is a different model's atlas and rendering the regular geometry
+        # against it produces visual garbage. Cases where we DO want the
+        # variant (Rotom meme has a meme-specific exporter geometry) are
+        # handled via PART_FILE_OVERRIDES above.
+        if skin != "regular" and file_widths.get("body"):
+            body_src = next((s for s in texture_srcs
+                             if "flame" not in s.stem.lower()), None)
+            if body_src and body_src.exists():
+                bw = png_pixel_width(body_src)
+                if bw and bw != file_widths["body"]:
+                    statuses[skin] = "size-mismatch"
+                    continue
+        # Some skins (Charizard's christmas/halloween/easter/thanksgiving/
+        # summer) ship extra geometry in their own top-level bbmodel group
+        # alongside `body`. When staging that skin, walk the addon group
+        # too and append it as a parallel bone tree — its sub-bones mirror
+        # the body's transforms, so cubes inside (Santa hat, horns, etc.)
+        # render in the right place automatically.
+        bones_payload = list(base_bones)
+        if skin != "regular":
+            addon = walk_skin_addon_group(bb, skin, uv_scale_for, tex_remap, SKIP_BONES)
+            if addon is not None:
+                bones_payload.append(addon)
         out_dir = (OUT_BASE / skin / slug) if skin != "regular" else (OUT_BASE / variant / slug)
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / f"{slug}.json").write_text(
@@ -487,7 +688,7 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
             if not src.exists():
                 missing = src.name
                 break
-            shutil.copy2(src, out_dir / src.name)
+            copy_texture(src, out_dir / src.name)
         statuses[skin] = f"missing-texture:{missing}" if missing else "ok"
     return statuses
 

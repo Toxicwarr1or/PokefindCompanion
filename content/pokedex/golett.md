@@ -471,6 +471,15 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Golett'
+        slug: 'golett'
+        depth: 0
+        method: ''
+      - species: 'Golurk'
+        slug: 'golurk'
+        depth: 1
+        method: 'Level 43'
 region: ''
 anniversary: ''
 tier: ''

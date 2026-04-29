@@ -561,6 +561,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Nidoran-M'
+        slug: 'nidoran-m'
+        depth: 0
+        method: ''
+      - species: 'Nidorino'
+        slug: 'nidorino'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Nidoking'
+        slug: 'nidoking'
+        depth: 2
+        method: 'Use Moon Stone'
 region: ''
 anniversary: ''
 tier: ''

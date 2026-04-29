@@ -454,6 +454,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Houndour'
+        slug: 'houndour'
+        depth: 0
+        method: ''
+      - species: 'Houndoom'
+        slug: 'houndoom'
+        depth: 1
+        method: 'Level 24'
   - name: 'Jataro'
     kind: 'form'
     types: ['Water', 'Psychic']

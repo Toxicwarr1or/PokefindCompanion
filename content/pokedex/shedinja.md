@@ -371,6 +371,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Nincada'
+        slug: 'nincada'
+        depth: 0
+        method: ''
+      - species: 'Ninjask'
+        slug: 'ninjask'
+        depth: 1
+        method: 'Level 20'
+      - species: 'Shedinja'
+        slug: 'shedinja'
+        depth: 1
+        method: 'Shed'
 region: ''
 anniversary: ''
 tier: ''

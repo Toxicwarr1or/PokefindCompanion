@@ -534,6 +534,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Cranidos'
+        slug: 'cranidos'
+        depth: 0
+        method: ''
+      - species: 'Rampardos'
+        slug: 'rampardos'
+        depth: 1
+        method: 'Level 30'
   - name: 'Shiloh'
     kind: 'form'
     description: 'Its Skull withstands impacts of any magnitude. As a result, its brain never gets the chance to grow.'

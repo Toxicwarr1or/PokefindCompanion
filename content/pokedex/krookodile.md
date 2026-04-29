@@ -574,6 +574,19 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Sandile'
+        slug: 'sandile'
+        depth: 0
+        method: ''
+      - species: 'Krokorok'
+        slug: 'krokorok'
+        depth: 1
+        method: 'Level 29'
+      - species: 'Krookodile'
+        slug: 'krookodile'
+        depth: 2
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

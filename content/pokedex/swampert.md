@@ -495,6 +495,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Mudkip'
+        slug: 'mudkip'
+        depth: 0
+        method: ''
+      - species: 'Marshtomp'
+        slug: 'marshtomp'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Swampert'
+        slug: 'swampert'
+        depth: 2
+        method: 'Level 36'
   - name: 'Haikou'
     kind: 'form'
     types: ['Electric', 'Fighting']

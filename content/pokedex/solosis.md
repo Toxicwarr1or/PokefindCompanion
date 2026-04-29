@@ -527,6 +527,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Solosis'
+        slug: 'solosis'
+        depth: 0
+        method: ''
+      - species: 'Duosion'
+        slug: 'duosion'
+        depth: 1
+        method: 'Level 32'
+      - species: 'Reuniclus'
+        slug: 'reuniclus'
+        depth: 2
+        method: 'Level 41'
 region: ''
 anniversary: ''
 tier: ''

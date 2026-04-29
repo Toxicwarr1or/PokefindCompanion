@@ -446,6 +446,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Remoraid'
+        slug: 'remoraid'
+        depth: 0
+        method: ''
+      - species: 'Octillery'
+        slug: 'octillery'
+        depth: 1
+        method: 'Level 25'
   - name: 'Jataro'
     kind: 'form'
     types: ['Dark', 'Psychic']

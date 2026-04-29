@@ -425,6 +425,19 @@ forms:
         power: '65'
         accuracy: '95'
         pp: '15'
+    evolution_family:
+      - species: 'Shinx'
+        slug: 'shinx'
+        depth: 0
+        method: ''
+      - species: 'Luxio'
+        slug: 'luxio'
+        depth: 1
+        method: 'Level 15'
+      - species: 'Luxray'
+        slug: 'luxray'
+        depth: 2
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

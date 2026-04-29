@@ -526,6 +526,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Bronzor'
+        slug: 'bronzor'
+        depth: 0
+        method: ''
+      - species: 'Bronzong'
+        slug: 'bronzong'
+        depth: 1
+        method: 'Level 33'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Electric', 'Ghost']

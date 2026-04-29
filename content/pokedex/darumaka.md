@@ -489,6 +489,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Darumaka'
+        slug: 'darumaka'
+        depth: 0
+        method: ''
+      - species: 'Darmanitan'
+        slug: 'darmanitan'
+        depth: 1
+        method: 'Level 35'
   - name: 'Galarian'
     kind: 'form'
     description: 'It lived in snowy areas for so long that its fire sac cooled off and atrophied. It now has an organ that generates cold instead.'

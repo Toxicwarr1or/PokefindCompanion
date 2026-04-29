@@ -614,6 +614,15 @@ forms:
         power: '65'
         accuracy: '95'
         pp: '15'
+    evolution_family:
+      - species: 'Snubbull'
+        slug: 'snubbull'
+        depth: 0
+        method: ''
+      - species: 'Granbull'
+        slug: 'granbull'
+        depth: 1
+        method: 'Level 23'
 region: ''
 anniversary: ''
 tier: ''

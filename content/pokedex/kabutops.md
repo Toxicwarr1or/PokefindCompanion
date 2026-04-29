@@ -470,6 +470,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Kabuto'
+        slug: 'kabuto'
+        depth: 0
+        method: ''
+      - species: 'Kabutops'
+        slug: 'kabutops'
+        depth: 1
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

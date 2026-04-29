@@ -537,6 +537,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Charmander'
+        slug: 'charmander'
+        depth: 0
+        method: ''
+      - species: 'Charmeleon'
+        slug: 'charmeleon'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Charizard'
+        slug: 'charizard'
+        depth: 2
+        method: 'Level 36'
   - name: 'Kyoto'
     kind: 'form'
     types: ['Dragon', 'Electric']

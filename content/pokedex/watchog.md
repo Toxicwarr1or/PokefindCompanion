@@ -515,6 +515,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Patrat'
+        slug: 'patrat'
+        depth: 0
+        method: ''
+      - species: 'Watchog'
+        slug: 'watchog'
+        depth: 1
+        method: 'Level 20'
 region: ''
 anniversary: ''
 tier: ''

@@ -417,6 +417,19 @@ forms:
         power: '90'
         accuracy: '85'
         pp: '20'
+    evolution_family:
+      - species: 'Mareep'
+        slug: 'mareep'
+        depth: 0
+        method: ''
+      - species: 'Flaaffy'
+        slug: 'flaaffy'
+        depth: 1
+        method: 'Level 15'
+      - species: 'Ampharos'
+        slug: 'ampharos'
+        depth: 2
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

@@ -456,6 +456,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Ferroseed'
+        slug: 'ferroseed'
+        depth: 0
+        method: ''
+      - species: 'Ferrothorn'
+        slug: 'ferrothorn'
+        depth: 1
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

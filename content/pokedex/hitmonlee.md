@@ -430,6 +430,23 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '5'
+    evolution_family:
+      - species: 'Tyrogue'
+        slug: 'tyrogue'
+        depth: 0
+        method: ''
+      - species: 'Hitmonlee'
+        slug: 'hitmonlee'
+        depth: 1
+        method: 'Level 20, Atk > Def'
+      - species: 'Hitmonchan'
+        slug: 'hitmonchan'
+        depth: 1
+        method: 'Level 20, Def > Atk'
+      - species: 'Hitmontop'
+        slug: 'hitmontop'
+        depth: 1
+        method: 'Level 20, Atk = Def'
 region: ''
 anniversary: ''
 tier: ''

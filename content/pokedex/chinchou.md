@@ -468,6 +468,15 @@ forms:
         power: '35'
         accuracy: '85'
         pp: '15'
+    evolution_family:
+      - species: 'Chinchou'
+        slug: 'chinchou'
+        depth: 0
+        method: ''
+      - species: 'Lanturn'
+        slug: 'lanturn'
+        depth: 1
+        method: 'Level 27'
 region: ''
 anniversary: ''
 tier: ''

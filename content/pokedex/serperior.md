@@ -459,6 +459,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Snivy'
+        slug: 'snivy'
+        depth: 0
+        method: ''
+      - species: 'Servine'
+        slug: 'servine'
+        depth: 1
+        method: 'Level 17'
+      - species: 'Serperior'
+        slug: 'serperior'
+        depth: 2
+        method: 'Level 36'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Grass', 'Dragon']

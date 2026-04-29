@@ -501,6 +501,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Teddiursa'
+        slug: 'teddiursa'
+        depth: 0
+        method: ''
+      - species: 'Ursaring'
+        slug: 'ursaring'
+        depth: 1
+        method: 'Level 30'
   - name: 'Jataro'
     kind: 'form'
     types: ['Dark', 'Fighting']

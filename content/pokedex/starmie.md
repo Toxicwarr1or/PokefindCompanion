@@ -398,6 +398,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Staryu'
+        slug: 'staryu'
+        depth: 0
+        method: ''
+      - species: 'Starmie'
+        slug: 'starmie'
+        depth: 1
+        method: 'Use Water Stone'
   - name: 'Kyoto'
     kind: 'form'
     description: 'It is said that it uses the seven-coloured core of its body to send electric waves into outer space.'

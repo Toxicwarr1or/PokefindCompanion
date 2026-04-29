@@ -407,6 +407,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Zubat'
+        slug: 'zubat'
+        depth: 0
+        method: ''
+      - species: 'Golbat'
+        slug: 'golbat'
+        depth: 1
+        method: 'Level 22'
+      - species: 'Crobat'
+        slug: 'crobat'
+        depth: 2
+        method: 'Level up, high friendship'
 region: ''
 anniversary: ''
 tier: ''

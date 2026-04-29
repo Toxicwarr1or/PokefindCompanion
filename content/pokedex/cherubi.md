@@ -391,6 +391,15 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Cherubi'
+        slug: 'cherubi'
+        depth: 0
+        method: ''
+      - species: 'Cherrim'
+        slug: 'cherrim'
+        depth: 1
+        method: 'Level 25'
 region: ''
 anniversary: ''
 tier: ''

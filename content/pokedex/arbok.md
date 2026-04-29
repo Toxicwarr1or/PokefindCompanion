@@ -457,6 +457,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Ekans'
+        slug: 'ekans'
+        depth: 0
+        method: ''
+      - species: 'Arbok'
+        slug: 'arbok'
+        depth: 1
+        method: 'Level 22'
 region: ''
 anniversary: ''
 tier: ''

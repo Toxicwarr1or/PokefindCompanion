@@ -402,6 +402,19 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Magnemite'
+        slug: 'magnemite'
+        depth: 0
+        method: ''
+      - species: 'Magneton'
+        slug: 'magneton'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Magnezone'
+        slug: 'magnezone'
+        depth: 2
+        method: 'Level up, near Special Magnetic Field'
 region: ''
 anniversary: ''
 tier: ''

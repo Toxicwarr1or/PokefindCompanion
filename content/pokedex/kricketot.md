@@ -94,6 +94,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Kricketot'
+        slug: 'kricketot'
+        depth: 0
+        method: ''
+      - species: 'Kricketune'
+        slug: 'kricketune'
+        depth: 1
+        method: 'Level 10'
 region: ''
 anniversary: ''
 tier: ''

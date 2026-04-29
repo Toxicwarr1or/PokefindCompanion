@@ -342,6 +342,19 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Starly'
+        slug: 'starly'
+        depth: 0
+        method: ''
+      - species: 'Staravia'
+        slug: 'staravia'
+        depth: 1
+        method: 'Level 14'
+      - species: 'Staraptor'
+        slug: 'staraptor'
+        depth: 2
+        method: 'Level 34'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Fighting', 'Flying']

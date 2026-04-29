@@ -406,6 +406,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Petilil'
+        slug: 'petilil'
+        depth: 0
+        method: ''
+      - species: 'Lilligant'
+        slug: 'lilligant'
+        depth: 1
+        method: 'Use Sun Stone'
 region: ''
 anniversary: ''
 tier: ''

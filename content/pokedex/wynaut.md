@@ -94,6 +94,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '25'
+    evolution_family:
+      - species: 'Wynaut'
+        slug: 'wynaut'
+        depth: 0
+        method: ''
+      - species: 'Wobbuffet'
+        slug: 'wobbuffet'
+        depth: 1
+        method: 'Level 15'
 region: ''
 anniversary: ''
 tier: ''

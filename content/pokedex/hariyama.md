@@ -473,6 +473,15 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Makuhita'
+        slug: 'makuhita'
+        depth: 0
+        method: ''
+      - species: 'Hariyama'
+        slug: 'hariyama'
+        depth: 1
+        method: 'Level 24'
   - name: 'Haikou'
     kind: 'form'
     description: 'Hariyama trains relentlessly in coastal storms, letting crashing waves harden its body. Each strike grows heavier the longer it stands its ground, and it never falters once it finds its rhythm.'

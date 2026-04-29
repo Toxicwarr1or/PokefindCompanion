@@ -489,6 +489,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Shuppet'
+        slug: 'shuppet'
+        depth: 0
+        method: ''
+      - species: 'Banette'
+        slug: 'banette'
+        depth: 1
+        method: 'Level 37'
 region: ''
 anniversary: ''
 tier: ''

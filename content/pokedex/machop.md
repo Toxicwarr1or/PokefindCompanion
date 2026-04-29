@@ -553,6 +553,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Machop'
+        slug: 'machop'
+        depth: 0
+        method: ''
+      - species: 'Machoke'
+        slug: 'machoke'
+        depth: 1
+        method: 'Level 28'
+      - species: 'Machamp'
+        slug: 'machamp'
+        depth: 2
+        method: 'Trade'
 region: ''
 anniversary: ''
 tier: ''

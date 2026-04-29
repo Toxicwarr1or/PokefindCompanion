@@ -431,6 +431,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Seedot'
+        slug: 'seedot'
+        depth: 0
+        method: ''
+      - species: 'Nuzleaf'
+        slug: 'nuzleaf'
+        depth: 1
+        method: 'Level 14'
+      - species: 'Shiftry'
+        slug: 'shiftry'
+        depth: 2
+        method: 'Use Leaf Stone'
 region: ''
 anniversary: ''
 tier: ''

@@ -408,6 +408,15 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Ponyta'
+        slug: 'ponyta'
+        depth: 0
+        method: ''
+      - species: 'Rapidash'
+        slug: 'rapidash'
+        depth: 1
+        method: 'Level 40'
   - name: 'Galarian'
     kind: 'form'
     description: 'Its small horn hides a healing power. With a few rubs from this Pokémon''s horn, any slight wound you have will be healed.'

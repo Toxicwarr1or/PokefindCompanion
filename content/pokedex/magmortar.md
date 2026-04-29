@@ -472,6 +472,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Magby'
+        slug: 'magby'
+        depth: 0
+        method: ''
+      - species: 'Magmar'
+        slug: 'magmar'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Magmortar'
+        slug: 'magmortar'
+        depth: 2
+        method: 'Trade, holding Magmarizer'
   - name: 'Shiloh'
     kind: 'form'
     description: 'Magmortar hones its mind as sharply as its fists, predicting opponents'' movements before they strike. When its focus peaks, its speed surges suddenly, overwhelming foes with perfectly adapted blows.'

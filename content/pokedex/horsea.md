@@ -390,6 +390,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Horsea'
+        slug: 'horsea'
+        depth: 0
+        method: ''
+      - species: 'Seadra'
+        slug: 'seadra'
+        depth: 1
+        method: 'Level 32'
+      - species: 'Kingdra'
+        slug: 'kingdra'
+        depth: 2
+        method: 'Trade, holding Dragon Scale'
 region: ''
 anniversary: ''
 tier: ''

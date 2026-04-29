@@ -526,6 +526,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Pawniard'
+        slug: 'pawniard'
+        depth: 0
+        method: ''
+      - species: 'Bisharp'
+        slug: 'bisharp'
+        depth: 1
+        method: 'Level 52'
   - name: 'Zeinova'
     kind: 'form'
     description: 'Bisharp''s bladed body exudes a deadly toxin, and its scales repel damage until its guard is broken. When it strikes, its draconic power surges, leaving corrosive wounds that refuse to heal.'

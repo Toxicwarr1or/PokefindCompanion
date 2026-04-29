@@ -527,6 +527,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Treecko'
+        slug: 'treecko'
+        depth: 0
+        method: ''
+      - species: 'Grovyle'
+        slug: 'grovyle'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Sceptile'
+        slug: 'sceptile'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

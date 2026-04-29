@@ -510,6 +510,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Grimer'
+        slug: 'grimer'
+        depth: 0
+        method: ''
+      - species: 'Muk'
+        slug: 'muk'
+        depth: 1
+        method: 'Level 38'
   - name: 'Alolan'
     kind: 'form'
     types: ['Poison', 'Dark']

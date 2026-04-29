@@ -410,6 +410,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Snorunt'
+        slug: 'snorunt'
+        depth: 0
+        method: ''
+      - species: 'Glalie'
+        slug: 'glalie'
+        depth: 1
+        method: 'Level 42'
+      - species: 'Froslass'
+        slug: 'froslass'
+        depth: 1
+        method: 'Use Dawn Stone, (female)'
 region: ''
 anniversary: ''
 tier: ''

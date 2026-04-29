@@ -479,6 +479,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Bagon'
+        slug: 'bagon'
+        depth: 0
+        method: ''
+      - species: 'Shelgon'
+        slug: 'shelgon'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Salamence'
+        slug: 'salamence'
+        depth: 2
+        method: 'Level 50'
   - name: 'Haikou'
     kind: 'form'
     types: ['Dark', 'Flying']

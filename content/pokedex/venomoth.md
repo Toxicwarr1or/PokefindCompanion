@@ -409,6 +409,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Venonat'
+        slug: 'venonat'
+        depth: 0
+        method: ''
+      - species: 'Venomoth'
+        slug: 'venomoth'
+        depth: 1
+        method: 'Level 31'
 region: ''
 anniversary: ''
 tier: ''

@@ -444,6 +444,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Wingull'
+        slug: 'wingull'
+        depth: 0
+        method: ''
+      - species: 'Pelipper'
+        slug: 'pelipper'
+        depth: 1
+        method: 'Level 25'
 region: ''
 anniversary: ''
 tier: ''

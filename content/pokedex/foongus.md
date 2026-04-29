@@ -409,6 +409,15 @@ forms:
         power: '—'
         accuracy: '75'
         pp: '30'
+    evolution_family:
+      - species: 'Foongus'
+        slug: 'foongus'
+        depth: 0
+        method: ''
+      - species: 'Amoonguss'
+        slug: 'amoonguss'
+        depth: 1
+        method: 'Level 39'
 region: ''
 anniversary: ''
 tier: ''

@@ -423,6 +423,15 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Phanpy'
+        slug: 'phanpy'
+        depth: 0
+        method: ''
+      - species: 'Donphan'
+        slug: 'donphan'
+        depth: 1
+        method: 'Level 25'
 region: ''
 anniversary: ''
 tier: ''

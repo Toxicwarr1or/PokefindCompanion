@@ -440,6 +440,39 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Eevee'
+        slug: 'eevee'
+        depth: 0
+        method: ''
+      - species: 'Vaporeon'
+        slug: 'vaporeon'
+        depth: 1
+        method: 'Use Water Stone'
+      - species: 'Jolteon'
+        slug: 'jolteon'
+        depth: 1
+        method: 'Use Thunder Stone'
+      - species: 'Flareon'
+        slug: 'flareon'
+        depth: 1
+        method: 'Use Fire Stone'
+      - species: 'Espeon'
+        slug: 'espeon'
+        depth: 1
+        method: 'Level up, at day, high friendship'
+      - species: 'Umbreon'
+        slug: 'umbreon'
+        depth: 1
+        method: 'Level up, at night, high friendship'
+      - species: 'Leafeon'
+        slug: 'leafeon'
+        depth: 1
+        method: 'Level up, near Moss Rock'
+      - species: 'Glaceon'
+        slug: 'glaceon'
+        depth: 1
+        method: 'Level up, near Ice Rock'
 region: ''
 anniversary: ''
 tier: ''

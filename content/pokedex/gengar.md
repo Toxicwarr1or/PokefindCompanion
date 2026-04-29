@@ -559,6 +559,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Gastly'
+        slug: 'gastly'
+        depth: 0
+        method: ''
+      - species: 'Haunter'
+        slug: 'haunter'
+        depth: 1
+        method: 'Level 25'
+      - species: 'Gengar'
+        slug: 'gengar'
+        depth: 2
+        method: 'Trade'
   - name: 'Kyoto'
     kind: 'form'
     types: ['Ghost', 'Fairy']

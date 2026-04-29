@@ -613,6 +613,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Sneasel'
+        slug: 'sneasel'
+        depth: 0
+        method: ''
+      - species: 'Weavile'
+        slug: 'weavile'
+        depth: 1
+        method: 'Level up, holding Razor Claw, at night'
 region: ''
 anniversary: ''
 tier: ''

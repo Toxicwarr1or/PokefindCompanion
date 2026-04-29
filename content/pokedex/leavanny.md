@@ -470,6 +470,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Sewaddle'
+        slug: 'sewaddle'
+        depth: 0
+        method: ''
+      - species: 'Swadloon'
+        slug: 'swadloon'
+        depth: 1
+        method: 'Level 20'
+      - species: 'Leavanny'
+        slug: 'leavanny'
+        depth: 2
+        method: 'Level up, high friendship'
 region: ''
 anniversary: ''
 tier: ''

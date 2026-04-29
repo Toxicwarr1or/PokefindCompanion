@@ -485,6 +485,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '5'
+    evolution_family:
+      - species: 'Exeggcute'
+        slug: 'exeggcute'
+        depth: 0
+        method: ''
+      - species: 'Exeggutor'
+        slug: 'exeggutor'
+        depth: 1
+        method: 'Use Leaf Stone'
 region: ''
 anniversary: ''
 tier: ''

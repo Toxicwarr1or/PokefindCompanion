@@ -497,6 +497,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Azurill'
+        slug: 'azurill'
+        depth: 0
+        method: ''
+      - species: 'Marill'
+        slug: 'marill'
+        depth: 1
+        method: 'Level up, high friendship'
+      - species: 'Azumarill'
+        slug: 'azumarill'
+        depth: 2
+        method: 'Level 18'
 region: ''
 anniversary: ''
 tier: ''

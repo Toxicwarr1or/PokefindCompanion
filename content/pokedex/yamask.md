@@ -482,6 +482,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Yamask'
+        slug: 'yamask'
+        depth: 0
+        method: ''
+      - species: 'Cofagrigus'
+        slug: 'cofagrigus'
+        depth: 1
+        method: 'Level 34'
   - name: 'Galarian'
     kind: 'form'
     description: 'A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask’s dark power.'

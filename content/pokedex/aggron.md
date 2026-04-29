@@ -649,6 +649,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Aron'
+        slug: 'aron'
+        depth: 0
+        method: ''
+      - species: 'Lairon'
+        slug: 'lairon'
+        depth: 1
+        method: 'Level 32'
+      - species: 'Aggron'
+        slug: 'aggron'
+        depth: 2
+        method: 'Level 42'
   - name: 'Haikou'
     kind: 'form'
     types: ['Dragon', 'Poison']

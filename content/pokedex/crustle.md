@@ -415,6 +415,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Dwebble'
+        slug: 'dwebble'
+        depth: 0
+        method: ''
+      - species: 'Crustle'
+        slug: 'crustle'
+        depth: 1
+        method: 'Level 34'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Bug', 'Water']

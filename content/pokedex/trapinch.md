@@ -436,6 +436,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Trapinch'
+        slug: 'trapinch'
+        depth: 0
+        method: ''
+      - species: 'Vibrava'
+        slug: 'vibrava'
+        depth: 1
+        method: 'Level 35'
+      - species: 'Flygon'
+        slug: 'flygon'
+        depth: 2
+        method: 'Level 45'
 region: ''
 anniversary: ''
 tier: ''

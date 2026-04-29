@@ -441,6 +441,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Lileep'
+        slug: 'lileep'
+        depth: 0
+        method: ''
+      - species: 'Cradily'
+        slug: 'cradily'
+        depth: 1
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

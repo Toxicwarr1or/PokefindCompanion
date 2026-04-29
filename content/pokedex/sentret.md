@@ -531,6 +531,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Sentret'
+        slug: 'sentret'
+        depth: 0
+        method: ''
+      - species: 'Furret'
+        slug: 'furret'
+        depth: 1
+        method: 'Level 15'
 region: ''
 anniversary: ''
 tier: ''

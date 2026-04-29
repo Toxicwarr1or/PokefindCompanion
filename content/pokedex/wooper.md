@@ -476,6 +476,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Wooper'
+        slug: 'wooper'
+        depth: 0
+        method: ''
+      - species: 'Quagsire'
+        slug: 'quagsire'
+        depth: 1
+        method: 'Level 20'
 region: ''
 anniversary: ''
 tier: ''

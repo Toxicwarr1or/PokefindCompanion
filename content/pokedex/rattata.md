@@ -458,6 +458,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Rattata'
+        slug: 'rattata'
+        depth: 0
+        method: ''
+      - species: 'Raticate'
+        slug: 'raticate'
+        depth: 1
+        method: 'Level 20'
   - name: 'Alolan'
     kind: 'form'
     description: 'Night after night, they sneak into people''s homes seeking food. A massive outbreak of them has become an issue of public concern.'

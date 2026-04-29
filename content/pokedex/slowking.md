@@ -608,6 +608,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Slowpoke'
+        slug: 'slowpoke'
+        depth: 0
+        method: ''
+      - species: 'Slowbro'
+        slug: 'slowbro'
+        depth: 1
+        method: 'Level 37'
+      - species: 'Slowking'
+        slug: 'slowking'
+        depth: 1
+        method: 'Trade, holding King''s Rock'
   - name: 'Jataro'
     kind: 'form'
     types: ['Psychic', 'Fighting']

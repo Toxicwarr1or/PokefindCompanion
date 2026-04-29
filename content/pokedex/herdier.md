@@ -373,6 +373,19 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Lillipup'
+        slug: 'lillipup'
+        depth: 0
+        method: ''
+      - species: 'Herdier'
+        slug: 'herdier'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Stoutland'
+        slug: 'stoutland'
+        depth: 2
+        method: 'Level 32'
 region: ''
 anniversary: ''
 tier: ''

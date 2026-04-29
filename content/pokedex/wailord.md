@@ -407,6 +407,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Wailmer'
+        slug: 'wailmer'
+        depth: 0
+        method: ''
+      - species: 'Wailord'
+        slug: 'wailord'
+        depth: 1
+        method: 'Level 40'
   - name: 'Haikou'
     kind: 'form'
     description: 'Designed after ancient flying machines, Wailord glides effortlessly through the sky despite its immense mass. Its engines hum calmly, unaffected by weather, as it draws power from passing storms.'

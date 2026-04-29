@@ -438,6 +438,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '35'
+    evolution_family:
+      - species: 'Hoothoot'
+        slug: 'hoothoot'
+        depth: 0
+        method: ''
+      - species: 'Noctowl'
+        slug: 'noctowl'
+        depth: 1
+        method: 'Level 20'
 region: ''
 anniversary: ''
 tier: ''

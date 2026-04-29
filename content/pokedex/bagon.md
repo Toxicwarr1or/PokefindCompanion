@@ -416,6 +416,19 @@ forms:
         power: '40'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Bagon'
+        slug: 'bagon'
+        depth: 0
+        method: ''
+      - species: 'Shelgon'
+        slug: 'shelgon'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Salamence'
+        slug: 'salamence'
+        depth: 2
+        method: 'Level 50'
 region: ''
 anniversary: ''
 tier: ''

@@ -467,6 +467,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Timburr'
+        slug: 'timburr'
+        depth: 0
+        method: ''
+      - species: 'Gurdurr'
+        slug: 'gurdurr'
+        depth: 1
+        method: 'Level 25'
+      - species: 'Conkeldurr'
+        slug: 'conkeldurr'
+        depth: 2
+        method: 'Trade'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Grass', 'Ground']

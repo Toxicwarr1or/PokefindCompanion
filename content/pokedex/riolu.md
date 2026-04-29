@@ -521,6 +521,15 @@ forms:
         power: '40'
         accuracy: '100'
         pp: '30'
+    evolution_family:
+      - species: 'Riolu'
+        slug: 'riolu'
+        depth: 0
+        method: ''
+      - species: 'Lucario'
+        slug: 'lucario'
+        depth: 1
+        method: 'Level up, at day, high friendship'
 region: ''
 anniversary: ''
 tier: ''

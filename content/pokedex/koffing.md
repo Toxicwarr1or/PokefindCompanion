@@ -473,6 +473,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Koffing'
+        slug: 'koffing'
+        depth: 0
+        method: ''
+      - species: 'Weezing'
+        slug: 'weezing'
+        depth: 1
+        method: 'Level 35'
 region: ''
 anniversary: ''
 tier: ''

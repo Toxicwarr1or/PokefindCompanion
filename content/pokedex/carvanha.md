@@ -431,6 +431,15 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Carvanha'
+        slug: 'carvanha'
+        depth: 0
+        method: ''
+      - species: 'Sharpedo'
+        slug: 'sharpedo'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

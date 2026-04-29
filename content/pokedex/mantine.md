@@ -495,6 +495,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Mantyke'
+        slug: 'mantyke'
+        depth: 0
+        method: ''
+      - species: 'Mantine'
+        slug: 'mantine'
+        depth: 1
+        method: 'Level up, with Remoraid in party'
 region: ''
 anniversary: ''
 tier: ''

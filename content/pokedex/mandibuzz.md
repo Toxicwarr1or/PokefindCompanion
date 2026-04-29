@@ -450,6 +450,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Vullaby'
+        slug: 'vullaby'
+        depth: 0
+        method: ''
+      - species: 'Mandibuzz'
+        slug: 'mandibuzz'
+        depth: 1
+        method: 'Level 54'
 region: ''
 anniversary: ''
 tier: ''

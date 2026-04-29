@@ -401,6 +401,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Yanma'
+        slug: 'yanma'
+        depth: 0
+        method: ''
+      - species: 'Yanmega'
+        slug: 'yanmega'
+        depth: 1
+        method: 'Level up, knowing Ancient Power'
 region: ''
 anniversary: ''
 tier: ''

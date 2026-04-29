@@ -430,6 +430,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Drilbur'
+        slug: 'drilbur'
+        depth: 0
+        method: ''
+      - species: 'Excadrill'
+        slug: 'excadrill'
+        depth: 1
+        method: 'Level 31'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Rock', 'Grass']

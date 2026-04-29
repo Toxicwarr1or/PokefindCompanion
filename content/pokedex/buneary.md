@@ -584,6 +584,15 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Buneary'
+        slug: 'buneary'
+        depth: 0
+        method: ''
+      - species: 'Lopunny'
+        slug: 'lopunny'
+        depth: 1
+        method: 'Level up, high friendship'
 region: ''
 anniversary: ''
 tier: ''

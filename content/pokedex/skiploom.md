@@ -378,6 +378,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Hoppip'
+        slug: 'hoppip'
+        depth: 0
+        method: ''
+      - species: 'Skiploom'
+        slug: 'skiploom'
+        depth: 1
+        method: 'Level 18'
+      - species: 'Jumpluff'
+        slug: 'jumpluff'
+        depth: 2
+        method: 'Level 27'
 region: ''
 anniversary: ''
 tier: ''

@@ -544,6 +544,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Treecko'
+        slug: 'treecko'
+        depth: 0
+        method: ''
+      - species: 'Grovyle'
+        slug: 'grovyle'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Sceptile'
+        slug: 'sceptile'
+        depth: 2
+        method: 'Level 36'
   - name: 'Haikou'
     kind: 'form'
     description: 'The leaves that grow on its arms can slice down thick trees. It is without peer in jungle combat.'

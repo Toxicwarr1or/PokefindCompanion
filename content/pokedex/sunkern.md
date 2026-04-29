@@ -443,6 +443,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Sunkern'
+        slug: 'sunkern'
+        depth: 0
+        method: ''
+      - species: 'Sunflora'
+        slug: 'sunflora'
+        depth: 1
+        method: 'Use Sun Stone'
 region: ''
 anniversary: ''
 tier: ''

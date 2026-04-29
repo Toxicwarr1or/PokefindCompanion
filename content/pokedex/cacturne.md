@@ -494,6 +494,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Cacnea'
+        slug: 'cacnea'
+        depth: 0
+        method: ''
+      - species: 'Cacturne'
+        slug: 'cacturne'
+        depth: 1
+        method: 'Level 32'
 region: ''
 anniversary: ''
 tier: ''

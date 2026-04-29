@@ -375,6 +375,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Spheal'
+        slug: 'spheal'
+        depth: 0
+        method: ''
+      - species: 'Sealeo'
+        slug: 'sealeo'
+        depth: 1
+        method: 'Level 32'
+      - species: 'Walrein'
+        slug: 'walrein'
+        depth: 2
+        method: 'Level 44'
 region: ''
 anniversary: ''
 tier: ''

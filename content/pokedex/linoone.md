@@ -493,6 +493,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Zigzagoon'
+        slug: 'zigzagoon'
+        depth: 0
+        method: ''
+      - species: 'Linoone'
+        slug: 'linoone'
+        depth: 1
+        method: 'Level 20'
   - name: 'Galarian'
     kind: 'form'
     description: 'It uses its long tongue to taunt opponents. Once the opposition is enraged, this Pokémon hurls itself at the opponent, tackling them forcefully.'

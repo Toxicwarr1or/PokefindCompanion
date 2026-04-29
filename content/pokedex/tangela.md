@@ -508,6 +508,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Tangela'
+        slug: 'tangela'
+        depth: 0
+        method: ''
+      - species: 'Tangrowth'
+        slug: 'tangrowth'
+        depth: 1
+        method: 'Level up, knowing Ancient Power'
 region: ''
 anniversary: ''
 tier: ''

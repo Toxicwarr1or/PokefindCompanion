@@ -332,6 +332,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Vanillite'
+        slug: 'vanillite'
+        depth: 0
+        method: ''
+      - species: 'Vanillish'
+        slug: 'vanillish'
+        depth: 1
+        method: 'Level 35'
+      - species: 'Vanilluxe'
+        slug: 'vanilluxe'
+        depth: 2
+        method: 'Level 47'
 region: ''
 anniversary: ''
 tier: ''

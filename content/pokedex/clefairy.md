@@ -665,6 +665,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Cleffa'
+        slug: 'cleffa'
+        depth: 0
+        method: ''
+      - species: 'Clefairy'
+        slug: 'clefairy'
+        depth: 1
+        method: 'Level up, high friendship'
+      - species: 'Clefable'
+        slug: 'clefable'
+        depth: 2
+        method: 'Use Moon Stone'
 region: ''
 anniversary: ''
 tier: ''

@@ -349,6 +349,15 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Blitzle'
+        slug: 'blitzle'
+        depth: 0
+        method: ''
+      - species: 'Zebstrika'
+        slug: 'zebstrika'
+        depth: 1
+        method: 'Level 27'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Psychic', 'Flying']

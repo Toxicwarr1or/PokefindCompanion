@@ -535,6 +535,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Onix'
+        slug: 'onix'
+        depth: 0
+        method: ''
+      - species: 'Steelix'
+        slug: 'steelix'
+        depth: 1
+        method: 'Trade, holding Metal Coat'
   - name: 'Jataro'
     kind: 'form'
     types: ['Fire', 'Dark']

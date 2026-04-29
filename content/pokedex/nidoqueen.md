@@ -567,6 +567,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Nidoran-F'
+        slug: 'nidoran-f'
+        depth: 0
+        method: ''
+      - species: 'Nidorina'
+        slug: 'nidorina'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Nidoqueen'
+        slug: 'nidoqueen'
+        depth: 2
+        method: 'Use Moon Stone'
 region: ''
 anniversary: ''
 tier: ''

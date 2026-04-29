@@ -363,6 +363,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Pidove'
+        slug: 'pidove'
+        depth: 0
+        method: ''
+      - species: 'Tranquill'
+        slug: 'tranquill'
+        depth: 1
+        method: 'Level 21'
+      - species: 'Unfezant'
+        slug: 'unfezant'
+        depth: 2
+        method: 'Level 32'
 region: ''
 anniversary: ''
 tier: ''

@@ -453,6 +453,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Glameow'
+        slug: 'glameow'
+        depth: 0
+        method: ''
+      - species: 'Purugly'
+        slug: 'purugly'
+        depth: 1
+        method: 'Level 38'
 region: ''
 anniversary: ''
 tier: ''

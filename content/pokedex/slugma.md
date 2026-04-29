@@ -451,6 +451,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Slugma'
+        slug: 'slugma'
+        depth: 0
+        method: ''
+      - species: 'Magcargo'
+        slug: 'magcargo'
+        depth: 1
+        method: 'Level 38'
 region: ''
 anniversary: ''
 tier: ''

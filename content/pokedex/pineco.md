@@ -446,6 +446,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Pineco'
+        slug: 'pineco'
+        depth: 0
+        method: ''
+      - species: 'Forretress'
+        slug: 'forretress'
+        depth: 1
+        method: 'Level 31'
 region: ''
 anniversary: ''
 tier: ''

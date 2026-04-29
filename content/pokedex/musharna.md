@@ -389,6 +389,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Munna'
+        slug: 'munna'
+        depth: 0
+        method: ''
+      - species: 'Musharna'
+        slug: 'musharna'
+        depth: 1
+        method: 'Use Moon Stone'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Fire', 'Psychic']

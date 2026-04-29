@@ -514,7 +514,7 @@ forms:
     kind: 'form'
     types: ['Ghost', 'Dragon']
     abilities: ['Levitate']
-    sprite: ''
+    sprite: 'images/pokedex/giratina-origin.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 4.5

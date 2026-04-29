@@ -303,6 +303,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Feebas'
+        slug: 'feebas'
+        depth: 0
+        method: ''
+      - species: 'Milotic'
+        slug: 'milotic'
+        depth: 1
+        method: 'Trade, holding Prism Scale, high beauty'
 region: ''
 anniversary: ''
 tier: ''

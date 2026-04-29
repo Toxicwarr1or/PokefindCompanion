@@ -516,6 +516,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '5'
+    evolution_family:
+      - species: 'Corphish'
+        slug: 'corphish'
+        depth: 0
+        method: ''
+      - species: 'Crawdaunt'
+        slug: 'crawdaunt'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

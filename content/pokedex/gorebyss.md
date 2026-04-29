@@ -379,6 +379,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Clamperl'
+        slug: 'clamperl'
+        depth: 0
+        method: ''
+      - species: 'Huntail'
+        slug: 'huntail'
+        depth: 1
+        method: 'Trade, holding Deep Sea Tooth'
+      - species: 'Gorebyss'
+        slug: 'gorebyss'
+        depth: 1
+        method: 'Trade, holding Deep Sea Scale'
 region: ''
 anniversary: ''
 tier: ''

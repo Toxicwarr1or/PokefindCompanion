@@ -716,6 +716,15 @@ forms:
         power: '70'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Mime Jr.'
+        slug: 'mime-jr'
+        depth: 0
+        method: ''
+      - species: 'Mr. Mime'
+        slug: 'mr-mime'
+        depth: 1
+        method: 'Level up, knowing Mimic'
   - name: 'Galarian'
     kind: 'form'
     description: 'Its talent is tap-dancing. It can also manipulate temperatures to create a floor of ice, which this Pokémon can kick up to use as a barrier.'

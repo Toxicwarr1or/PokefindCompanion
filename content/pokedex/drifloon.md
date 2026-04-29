@@ -484,6 +484,15 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Drifloon'
+        slug: 'drifloon'
+        depth: 0
+        method: ''
+      - species: 'Drifblim'
+        slug: 'drifblim'
+        depth: 1
+        method: 'Level 28'
 region: ''
 anniversary: ''
 tier: ''

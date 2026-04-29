@@ -505,6 +505,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Swablu'
+        slug: 'swablu'
+        depth: 0
+        method: ''
+      - species: 'Altaria'
+        slug: 'altaria'
+        depth: 1
+        method: 'Level 35'
 region: ''
 anniversary: ''
 tier: ''

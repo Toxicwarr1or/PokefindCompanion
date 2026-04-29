@@ -534,6 +534,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Smoochum'
+        slug: 'smoochum'
+        depth: 0
+        method: ''
+      - species: 'Jynx'
+        slug: 'jynx'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

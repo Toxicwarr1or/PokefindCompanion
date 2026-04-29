@@ -512,6 +512,19 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Chimchar'
+        slug: 'chimchar'
+        depth: 0
+        method: ''
+      - species: 'Monferno'
+        slug: 'monferno'
+        depth: 1
+        method: 'Level 14'
+      - species: 'Infernape'
+        slug: 'infernape'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

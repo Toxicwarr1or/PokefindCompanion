@@ -539,6 +539,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Togepi'
+        slug: 'togepi'
+        depth: 0
+        method: ''
+      - species: 'Togetic'
+        slug: 'togetic'
+        depth: 1
+        method: 'Level up, high friendship'
+      - species: 'Togekiss'
+        slug: 'togekiss'
+        depth: 2
+        method: 'Use Shiny Stone'
 region: ''
 anniversary: ''
 tier: ''

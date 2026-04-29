@@ -408,6 +408,19 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Larvitar'
+        slug: 'larvitar'
+        depth: 0
+        method: ''
+      - species: 'Pupitar'
+        slug: 'pupitar'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Tyranitar'
+        slug: 'tyranitar'
+        depth: 2
+        method: 'Level 55'
 region: ''
 anniversary: ''
 tier: ''

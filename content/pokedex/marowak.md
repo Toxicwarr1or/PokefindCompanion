@@ -507,6 +507,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Cubone'
+        slug: 'cubone'
+        depth: 0
+        method: ''
+      - species: 'Marowak'
+        slug: 'marowak'
+        depth: 1
+        method: 'Level 28'
   - name: 'Alolan'
     kind: 'form'
     types: ['Fire', 'Ghost']

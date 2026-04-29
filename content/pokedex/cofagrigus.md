@@ -460,6 +460,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Yamask'
+        slug: 'yamask'
+        depth: 0
+        method: ''
+      - species: 'Cofagrigus'
+        slug: 'cofagrigus'
+        depth: 1
+        method: 'Level 34'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Psychic', 'Dragon']

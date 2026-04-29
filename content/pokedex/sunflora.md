@@ -402,6 +402,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Sunkern'
+        slug: 'sunkern'
+        depth: 0
+        method: ''
+      - species: 'Sunflora'
+        slug: 'sunflora'
+        depth: 1
+        method: 'Use Sun Stone'
   - name: 'Jataro'
     kind: 'form'
     types: ['Electric', 'Grass']

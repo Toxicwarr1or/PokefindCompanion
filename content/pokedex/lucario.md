@@ -540,6 +540,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Riolu'
+        slug: 'riolu'
+        depth: 0
+        method: ''
+      - species: 'Lucario'
+        slug: 'lucario'
+        depth: 1
+        method: 'Level up, at day, high friendship'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Electric', 'Poison']

@@ -441,6 +441,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Cottonee'
+        slug: 'cottonee'
+        depth: 0
+        method: ''
+      - species: 'Whimsicott'
+        slug: 'whimsicott'
+        depth: 1
+        method: 'Use Sun Stone'
 region: ''
 anniversary: ''
 tier: ''

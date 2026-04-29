@@ -408,6 +408,15 @@ forms:
         power: '—'
         accuracy: '85'
         pp: '40'
+    evolution_family:
+      - species: 'Karrablast'
+        slug: 'karrablast'
+        depth: 0
+        method: ''
+      - species: 'Escavalier'
+        slug: 'escavalier'
+        depth: 1
+        method: 'Trade, trade for Shelmet'
 region: ''
 anniversary: ''
 tier: ''

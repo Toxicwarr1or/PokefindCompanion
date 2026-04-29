@@ -396,6 +396,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Gible'
+        slug: 'gible'
+        depth: 0
+        method: ''
+      - species: 'Gabite'
+        slug: 'gabite'
+        depth: 1
+        method: 'Level 24'
+      - species: 'Garchomp'
+        slug: 'garchomp'
+        depth: 2
+        method: 'Level 48'
 region: ''
 anniversary: ''
 tier: ''

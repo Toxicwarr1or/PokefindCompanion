@@ -494,6 +494,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Beldum'
+        slug: 'beldum'
+        depth: 0
+        method: ''
+      - species: 'Metang'
+        slug: 'metang'
+        depth: 1
+        method: 'Level 20'
+      - species: 'Metagross'
+        slug: 'metagross'
+        depth: 2
+        method: 'Level 45'
   - name: 'Haikou'
     kind: 'form'
     types: ['Rock', 'Bug']

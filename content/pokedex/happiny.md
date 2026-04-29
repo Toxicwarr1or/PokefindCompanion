@@ -425,6 +425,19 @@ forms:
         power: '—'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Happiny'
+        slug: 'happiny'
+        depth: 0
+        method: ''
+      - species: 'Chansey'
+        slug: 'chansey'
+        depth: 1
+        method: 'Level up, holding Oval Stone, at day'
+      - species: 'Blissey'
+        slug: 'blissey'
+        depth: 2
+        method: 'Level up, high friendship'
 region: ''
 anniversary: ''
 tier: ''

@@ -474,6 +474,15 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Growlithe'
+        slug: 'growlithe'
+        depth: 0
+        method: ''
+      - species: 'Arcanine'
+        slug: 'arcanine'
+        depth: 1
+        method: 'Use Fire Stone'
 region: ''
 anniversary: ''
 tier: ''

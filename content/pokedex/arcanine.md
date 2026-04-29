@@ -359,6 +359,15 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Growlithe'
+        slug: 'growlithe'
+        depth: 0
+        method: ''
+      - species: 'Arcanine'
+        slug: 'arcanine'
+        depth: 1
+        method: 'Use Fire Stone'
   - name: 'Kyoto'
     kind: 'form'
     types: ['Water']

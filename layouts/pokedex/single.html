@@ -87,6 +87,7 @@
   {{ if eq $f.name "Alolan" }}{{ $variant = "alolan" }}{{ end }}
   {{ if eq $f.name "Galarian" }}{{ $variant = "galarian" }}{{ end }}
   {{ if eq $f.name "Female" }}{{ $variant = "female" }}{{ end }}
+  {{ if eq $f.name "Origin" }}{{ $variant = "origin" }}{{ end }}
   {{/* Region forms route to the anniversary skin's output directory. */}}
   {{ if in $regionForms $f.name }}{{ $variant = "anniversary" }}{{ end }}
   {{/* Other cosmetic-skin forms: any form whose `name` matches a cosmetic
@@ -190,6 +191,38 @@
 
     {{ with $f.description }}
     <p class="form-description">{{ . }}</p>
+    {{ end }}
+
+    {{/* Evolution family — `evolution_family` is the full DFS-ordered
+          tree of every Pokémon in this species' evolutionary component
+          (Charmander/Charmeleon/Charizard all share the same 3-entry
+          list; Eevee + the 7 Eeveelutions all share the same 8-entry
+          list). `populate_evolutions.py` writes it from the in-game
+          data at PokemonWorld-master/.../evolutions.json. Each entry
+          carries species name, slug, depth (for indentation), and the
+          trigger method inherited from its parent. The current page's
+          row gets the `.evo-self` highlight. */}}
+    {{ if $f.evolution_family }}
+    <h2>Evolution Family</h2>
+    <ul class="evo-tree">
+      {{ range $f.evolution_family }}
+      {{ $isSelf := eq .slug $slug }}
+      <li class="evo-row{{ if $isSelf }} evo-self{{ end }}" style="--evo-depth: {{ .depth }};">
+        {{ with .method }}<span class="evo-method">{{ . }}</span>{{ end }}
+        {{ if $isSelf }}
+        <span class="evo-step">
+          <img class="evo-sprite" src="{{ printf "images/pokedex/%s.png" .slug | relURL }}" alt="{{ .species }}" loading="lazy">
+          <span class="evo-name">{{ .species }}</span>
+        </span>
+        {{ else }}
+        <a class="evo-step" href="{{ printf "/pokedex/%s/" .slug | relURL }}">
+          <img class="evo-sprite" src="{{ printf "images/pokedex/%s.png" .slug | relURL }}" alt="{{ .species }}" loading="lazy">
+          <span class="evo-name">{{ .species }}</span>
+        </a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
     {{ end }}
 
     {{ with $f.base_stats }}

@@ -463,6 +463,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Magikarp'
+        slug: 'magikarp'
+        depth: 0
+        method: ''
+      - species: 'Gyarados'
+        slug: 'gyarados'
+        depth: 1
+        method: 'Level 20'
   - name: 'Kyoto'
     kind: 'form'
     types: ['Rock', 'Dragon']

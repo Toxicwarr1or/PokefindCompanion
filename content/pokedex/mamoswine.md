@@ -424,6 +424,19 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '5'
+    evolution_family:
+      - species: 'Swinub'
+        slug: 'swinub'
+        depth: 0
+        method: ''
+      - species: 'Piloswine'
+        slug: 'piloswine'
+        depth: 1
+        method: 'Level 33'
+      - species: 'Mamoswine'
+        slug: 'mamoswine'
+        depth: 2
+        method: 'Level up, knowing Ancient Power'
   - name: 'Shiloh'
     kind: 'form'
     description: 'A frozen one was dug up from soil dating back 11,000 years. It woke up to much amazement.'

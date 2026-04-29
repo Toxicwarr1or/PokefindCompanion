@@ -679,6 +679,23 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Ralts'
+        slug: 'ralts'
+        depth: 0
+        method: ''
+      - species: 'Kirlia'
+        slug: 'kirlia'
+        depth: 1
+        method: 'Level 20'
+      - species: 'Gardevoir'
+        slug: 'gardevoir'
+        depth: 2
+        method: 'Level 30'
+      - species: 'Gallade'
+        slug: 'gallade'
+        depth: 2
+        method: 'Use Dawn Stone, (male)'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Fighting', 'Fairy']

@@ -435,6 +435,15 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '5'
+    evolution_family:
+      - species: 'Phanpy'
+        slug: 'phanpy'
+        depth: 0
+        method: ''
+      - species: 'Donphan'
+        slug: 'donphan'
+        depth: 1
+        method: 'Level 25'
   - name: 'Jataro'
     kind: 'form'
     types: ['Ice', 'Flying']

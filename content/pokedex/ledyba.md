@@ -458,6 +458,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Ledyba'
+        slug: 'ledyba'
+        depth: 0
+        method: ''
+      - species: 'Ledian'
+        slug: 'ledian'
+        depth: 1
+        method: 'Level 18'
 region: ''
 anniversary: ''
 tier: ''

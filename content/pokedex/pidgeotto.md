@@ -301,6 +301,19 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Pidgey'
+        slug: 'pidgey'
+        depth: 0
+        method: ''
+      - species: 'Pidgeotto'
+        slug: 'pidgeotto'
+        depth: 1
+        method: 'Level 18'
+      - species: 'Pidgeot'
+        slug: 'pidgeot'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

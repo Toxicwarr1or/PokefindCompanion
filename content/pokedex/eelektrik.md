@@ -380,6 +380,19 @@ forms:
         power: '—'
         accuracy: '90'
         pp: '10'
+    evolution_family:
+      - species: 'Tynamo'
+        slug: 'tynamo'
+        depth: 0
+        method: ''
+      - species: 'Eelektrik'
+        slug: 'eelektrik'
+        depth: 1
+        method: 'Level 39'
+      - species: 'Eelektross'
+        slug: 'eelektross'
+        depth: 2
+        method: 'Use Thunder Stone'
 region: ''
 anniversary: ''
 tier: ''

@@ -419,6 +419,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Poochyena'
+        slug: 'poochyena'
+        depth: 0
+        method: ''
+      - species: 'Mightyena'
+        slug: 'mightyena'
+        depth: 1
+        method: 'Level 18'
 region: ''
 anniversary: ''
 tier: ''

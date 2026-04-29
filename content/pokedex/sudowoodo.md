@@ -528,6 +528,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Bonsly'
+        slug: 'bonsly'
+        depth: 0
+        method: ''
+      - species: 'Sudowoodo'
+        slug: 'sudowoodo'
+        depth: 1
+        method: 'Level up, knowing Mimic'
 region: ''
 anniversary: ''
 tier: ''

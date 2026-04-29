@@ -395,6 +395,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Electrike'
+        slug: 'electrike'
+        depth: 0
+        method: ''
+      - species: 'Manectric'
+        slug: 'manectric'
+        depth: 1
+        method: 'Level 26'
 region: ''
 anniversary: ''
 tier: ''

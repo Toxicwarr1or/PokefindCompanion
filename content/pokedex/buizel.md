@@ -453,6 +453,15 @@ forms:
         power: '25'
         accuracy: '85'
         pp: '10'
+    evolution_family:
+      - species: 'Buizel'
+        slug: 'buizel'
+        depth: 0
+        method: ''
+      - species: 'Floatzel'
+        slug: 'floatzel'
+        depth: 1
+        method: 'Level 26'
 region: ''
 anniversary: ''
 tier: ''

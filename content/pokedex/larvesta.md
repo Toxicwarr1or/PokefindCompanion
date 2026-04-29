@@ -404,6 +404,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Larvesta'
+        slug: 'larvesta'
+        depth: 0
+        method: ''
+      - species: 'Volcarona'
+        slug: 'volcarona'
+        depth: 1
+        method: 'Level 59'
 region: ''
 anniversary: ''
 tier: ''

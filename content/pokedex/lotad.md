@@ -423,6 +423,19 @@ forms:
         power: '40'
         accuracy: '100'
         pp: '25'
+    evolution_family:
+      - species: 'Lotad'
+        slug: 'lotad'
+        depth: 0
+        method: ''
+      - species: 'Lombre'
+        slug: 'lombre'
+        depth: 1
+        method: 'Level 14'
+      - species: 'Ludicolo'
+        slug: 'ludicolo'
+        depth: 2
+        method: 'Use Water Stone'
 region: ''
 anniversary: ''
 tier: ''

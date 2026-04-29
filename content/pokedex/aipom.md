@@ -591,6 +591,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Aipom'
+        slug: 'aipom'
+        depth: 0
+        method: ''
+      - species: 'Ambipom'
+        slug: 'ambipom'
+        depth: 1
+        method: 'Level up, knowing Double Hit'
 region: ''
 anniversary: ''
 tier: ''

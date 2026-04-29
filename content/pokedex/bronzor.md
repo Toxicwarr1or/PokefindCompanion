@@ -453,6 +453,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Bronzor'
+        slug: 'bronzor'
+        depth: 0
+        method: ''
+      - species: 'Bronzong'
+        slug: 'bronzong'
+        depth: 1
+        method: 'Level 33'
 region: ''
 anniversary: ''
 tier: ''

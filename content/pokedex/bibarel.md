@@ -470,6 +470,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Bidoof'
+        slug: 'bidoof'
+        depth: 0
+        method: ''
+      - species: 'Bibarel'
+        slug: 'bibarel'
+        depth: 1
+        method: 'Level 15'
 region: ''
 anniversary: ''
 tier: ''

@@ -448,6 +448,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Panpour'
+        slug: 'panpour'
+        depth: 0
+        method: ''
+      - species: 'Simipour'
+        slug: 'simipour'
+        depth: 1
+        method: 'Use Water Stone'
 region: ''
 anniversary: ''
 tier: ''

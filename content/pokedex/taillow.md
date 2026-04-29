@@ -387,6 +387,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Taillow'
+        slug: 'taillow'
+        depth: 0
+        method: ''
+      - species: 'Swellow'
+        slug: 'swellow'
+        depth: 1
+        method: 'Level 22'
 region: ''
 anniversary: ''
 tier: ''

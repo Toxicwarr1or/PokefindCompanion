@@ -422,6 +422,19 @@ forms:
         power: '90'
         accuracy: '85'
         pp: '20'
+    evolution_family:
+      - species: 'Whismur'
+        slug: 'whismur'
+        depth: 0
+        method: ''
+      - species: 'Loudred'
+        slug: 'loudred'
+        depth: 1
+        method: 'Level 20'
+      - species: 'Exploud'
+        slug: 'exploud'
+        depth: 2
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

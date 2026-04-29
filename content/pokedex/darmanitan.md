@@ -514,6 +514,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Darumaka'
+        slug: 'darumaka'
+        depth: 0
+        method: ''
+      - species: 'Darmanitan'
+        slug: 'darmanitan'
+        depth: 1
+        method: 'Level 35'
   - name: 'Galarian'
     kind: 'form'
     description: 'The thick arms of this hot-blooded Pokémon can deliver punches capable of obliterating a dump truck.'

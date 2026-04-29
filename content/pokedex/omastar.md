@@ -411,6 +411,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Omanyte'
+        slug: 'omanyte'
+        depth: 0
+        method: ''
+      - species: 'Omastar'
+        slug: 'omastar'
+        depth: 1
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

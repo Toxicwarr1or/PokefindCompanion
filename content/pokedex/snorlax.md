@@ -619,6 +619,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Munchlax'
+        slug: 'munchlax'
+        depth: 0
+        method: ''
+      - species: 'Snorlax'
+        slug: 'snorlax'
+        depth: 1
+        method: 'Level up, high friendship'
   - name: 'Kyoto'
     kind: 'form'
     types: ['Dark', 'Poison']

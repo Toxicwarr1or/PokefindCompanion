@@ -410,6 +410,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Burmy'
+        slug: 'burmy'
+        depth: 0
+        method: ''
+      - species: 'Wormadam'
+        slug: 'wormadam'
+        depth: 1
+        method: 'Level 20, (female)'
+      - species: 'Mothim'
+        slug: 'mothim'
+        depth: 1
+        method: 'Level 20, (male)'
   - name: 'Sandy'
     kind: 'form'
     types: ['Bug', 'Ground']

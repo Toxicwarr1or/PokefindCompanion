@@ -471,6 +471,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Oshawott'
+        slug: 'oshawott'
+        depth: 0
+        method: ''
+      - species: 'Dewott'
+        slug: 'dewott'
+        depth: 1
+        method: 'Level 17'
+      - species: 'Samurott'
+        slug: 'samurott'
+        depth: 2
+        method: 'Level 36'
   - name: 'Zeinova'
     kind: 'form'
     description: 'Though flightless, Samurott commands the skies by summoning slicing winds through sheer force. It charges through sandstorms without injury, using momentum alone to overwhelm its enemies.'

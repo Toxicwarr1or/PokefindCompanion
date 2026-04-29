@@ -512,6 +512,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Tangela'
+        slug: 'tangela'
+        depth: 0
+        method: ''
+      - species: 'Tangrowth'
+        slug: 'tangrowth'
+        depth: 1
+        method: 'Level up, knowing Ancient Power'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Electric', 'Steel']

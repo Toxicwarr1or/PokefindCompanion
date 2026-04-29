@@ -472,6 +472,19 @@ forms:
         power: '65'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Bulbasaur'
+        slug: 'bulbasaur'
+        depth: 0
+        method: ''
+      - species: 'Ivysaur'
+        slug: 'ivysaur'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Venusaur'
+        slug: 'venusaur'
+        depth: 2
+        method: 'Level 32'
 region: ''
 anniversary: ''
 tier: ''

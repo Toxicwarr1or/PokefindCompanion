@@ -345,6 +345,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Doduo'
+        slug: 'doduo'
+        depth: 0
+        method: ''
+      - species: 'Dodrio'
+        slug: 'dodrio'
+        depth: 1
+        method: 'Level 31'
   - name: 'Kyoto'
     kind: 'form'
     types: ['Fire', 'Fairy']

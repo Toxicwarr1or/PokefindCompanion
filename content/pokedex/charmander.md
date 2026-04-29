@@ -498,6 +498,19 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Charmander'
+        slug: 'charmander'
+        depth: 0
+        method: ''
+      - species: 'Charmeleon'
+        slug: 'charmeleon'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Charizard'
+        slug: 'charizard'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

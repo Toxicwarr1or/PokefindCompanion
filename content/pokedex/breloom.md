@@ -465,6 +465,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Shroomish'
+        slug: 'shroomish'
+        depth: 0
+        method: ''
+      - species: 'Breloom'
+        slug: 'breloom'
+        depth: 1
+        method: 'Level 23'
   - name: 'Haikou'
     kind: 'form'
     description: 'Breloom closes in on its foe with light and sprightly footwork, then throws punches with its stretchy arms. This Pokémon’s fighting technique puts boxers to shame.'

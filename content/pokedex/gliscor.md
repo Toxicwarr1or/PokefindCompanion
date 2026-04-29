@@ -534,6 +534,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Gligar'
+        slug: 'gligar'
+        depth: 0
+        method: ''
+      - species: 'Gliscor'
+        slug: 'gliscor'
+        depth: 1
+        method: 'Level up, holding Razor Fang, at night'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Electric', 'Flying']

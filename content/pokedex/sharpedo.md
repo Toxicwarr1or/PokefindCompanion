@@ -463,6 +463,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Carvanha'
+        slug: 'carvanha'
+        depth: 0
+        method: ''
+      - species: 'Sharpedo'
+        slug: 'sharpedo'
+        depth: 1
+        method: 'Level 30'
   - name: 'Haikou'
     kind: 'form'
     types: ['Steel', 'Poison']

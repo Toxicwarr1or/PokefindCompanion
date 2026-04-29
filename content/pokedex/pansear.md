@@ -548,6 +548,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Pansear'
+        slug: 'pansear'
+        depth: 0
+        method: ''
+      - species: 'Simisear'
+        slug: 'simisear'
+        depth: 1
+        method: 'Use Fire Stone'
 region: ''
 anniversary: ''
 tier: ''

@@ -386,6 +386,23 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Poliwag'
+        slug: 'poliwag'
+        depth: 0
+        method: ''
+      - species: 'Poliwhirl'
+        slug: 'poliwhirl'
+        depth: 1
+        method: 'Level 25'
+      - species: 'Poliwrath'
+        slug: 'poliwrath'
+        depth: 2
+        method: 'Use Water Stone'
+      - species: 'Politoed'
+        slug: 'politoed'
+        depth: 2
+        method: 'Trade, holding King''s Rock'
 region: ''
 anniversary: ''
 tier: ''

@@ -380,6 +380,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Skitty'
+        slug: 'skitty'
+        depth: 0
+        method: ''
+      - species: 'Delcatty'
+        slug: 'delcatty'
+        depth: 1
+        method: 'Use Moon Stone'
 region: ''
 anniversary: ''
 tier: ''

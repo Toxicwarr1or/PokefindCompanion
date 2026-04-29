@@ -104,6 +104,12 @@ SLUG_OVERRIDES = {
     "sawsbuck_summer": None,
     "sawsbuck_autumn": None,
     "sawsbuck_winter": None,
+    # Giratina ships its two formes as separate model files. Standard tab
+    # uses the Altered Forme; Origin Forme gets a dedicated form tab routed
+    # to its own output directory (single.html maps `Origin` → variant
+    # "origin").
+    "giratina_altered": "giratina",
+    "giratina_origin":  ("origin", "giratina"),
 }
 
 

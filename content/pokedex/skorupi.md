@@ -510,6 +510,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Skorupi'
+        slug: 'skorupi'
+        depth: 0
+        method: ''
+      - species: 'Drapion'
+        slug: 'drapion'
+        depth: 1
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

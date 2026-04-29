@@ -450,6 +450,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Gulpin'
+        slug: 'gulpin'
+        depth: 0
+        method: ''
+      - species: 'Swalot'
+        slug: 'swalot'
+        depth: 1
+        method: 'Level 26'
 region: ''
 anniversary: ''
 tier: ''

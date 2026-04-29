@@ -487,6 +487,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Geodude'
+        slug: 'geodude'
+        depth: 0
+        method: ''
+      - species: 'Graveler'
+        slug: 'graveler'
+        depth: 1
+        method: 'Level 25'
+      - species: 'Golem'
+        slug: 'golem'
+        depth: 2
+        method: 'Trade'
   - name: 'Alolan'
     kind: 'form'
     types: ['Rock', 'Electric']

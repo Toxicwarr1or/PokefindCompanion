@@ -454,6 +454,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Cubchoo'
+        slug: 'cubchoo'
+        depth: 0
+        method: ''
+      - species: 'Beartic'
+        slug: 'beartic'
+        depth: 1
+        method: 'Level 37'
 region: ''
 anniversary: ''
 tier: ''

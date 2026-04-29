@@ -1618,3 +1618,63 @@ pre code { background: transparent; padding: 0; }
     border-color: var(--brand);
 }
 .quest-subpanel[hidden] { display: none; }
+
+/* ----- Evolution family tree -----
+   Each `.evo-row` is one species in the family, indented by its depth
+   in the chain (root at depth 0). The current page's row gets `.evo-self`
+   highlighting; every other row links to its species' page. */
+.evo-tree {
+    list-style: none;
+    margin: 0.5rem 0 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+.evo-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* Tree indent — set inline as `--evo-depth` per row. */
+    padding-left: calc(var(--evo-depth, 0) * 1.5rem);
+    position: relative;
+}
+.evo-row::before {
+    content: "";
+    display: inline-block;
+    width: calc(var(--evo-depth, 0) * 0.75rem);
+}
+.evo-method {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.1rem 0.55rem;
+    white-space: nowrap;
+}
+.evo-step {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.2rem 0.6rem 0.2rem 0.3rem;
+    transition: border-color 120ms ease, background 120ms ease;
+}
+.evo-step:hover { border-color: var(--brand); }
+.evo-row.evo-self .evo-step {
+    border-color: var(--brand);
+    background: var(--surface-elev);
+    cursor: default;
+}
+.evo-sprite {
+    width: 40px;
+    height: 40px;
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+.evo-name { font-weight: 600; font-size: 0.9rem; }

@@ -544,6 +544,15 @@ forms:
         power: '70'
         accuracy: '100'
         pp: '5'
+    evolution_family:
+      - species: 'Pawniard'
+        slug: 'pawniard'
+        depth: 0
+        method: ''
+      - species: 'Bisharp'
+        slug: 'bisharp'
+        depth: 1
+        method: 'Level 52'
 region: ''
 anniversary: ''
 tier: ''

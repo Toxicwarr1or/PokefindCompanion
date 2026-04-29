@@ -529,6 +529,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Drowzee'
+        slug: 'drowzee'
+        depth: 0
+        method: ''
+      - species: 'Hypno'
+        slug: 'hypno'
+        depth: 1
+        method: 'Level 26'
 region: ''
 anniversary: ''
 tier: ''

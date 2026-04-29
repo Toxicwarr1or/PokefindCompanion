@@ -551,6 +551,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Lickitung'
+        slug: 'lickitung'
+        depth: 0
+        method: ''
+      - species: 'Lickilicky'
+        slug: 'lickilicky'
+        depth: 1
+        method: 'Level up, knowing Rollout'
 region: ''
 anniversary: ''
 tier: ''

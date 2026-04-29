@@ -514,6 +514,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Abra'
+        slug: 'abra'
+        depth: 0
+        method: ''
+      - species: 'Kadabra'
+        slug: 'kadabra'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Alakazam'
+        slug: 'alakazam'
+        depth: 2
+        method: 'Trade'
 region: ''
 anniversary: ''
 tier: ''

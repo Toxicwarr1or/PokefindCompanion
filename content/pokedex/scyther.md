@@ -471,6 +471,15 @@ forms:
         power: '70'
         accuracy: '90'
         pp: '25'
+    evolution_family:
+      - species: 'Scyther'
+        slug: 'scyther'
+        depth: 0
+        method: ''
+      - species: 'Scizor'
+        slug: 'scizor'
+        depth: 1
+        method: 'Trade, holding Metal Coat'
 region: ''
 anniversary: ''
 tier: ''

@@ -468,6 +468,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Wailmer'
+        slug: 'wailmer'
+        depth: 0
+        method: ''
+      - species: 'Wailord'
+        slug: 'wailord'
+        depth: 1
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

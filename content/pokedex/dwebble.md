@@ -470,6 +470,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Dwebble'
+        slug: 'dwebble'
+        depth: 0
+        method: ''
+      - species: 'Crustle'
+        slug: 'crustle'
+        depth: 1
+        method: 'Level 34'
 region: ''
 anniversary: ''
 tier: ''

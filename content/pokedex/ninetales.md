@@ -358,6 +358,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Vulpix'
+        slug: 'vulpix'
+        depth: 0
+        method: ''
+      - species: 'Ninetales'
+        slug: 'ninetales'
+        depth: 1
+        method: 'Use Fire Stone'
   - name: 'Alolan'
     kind: 'form'
     types: ['Ice', 'Fairy']

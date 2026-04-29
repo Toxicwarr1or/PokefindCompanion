@@ -499,6 +499,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Purrloin'
+        slug: 'purrloin'
+        depth: 0
+        method: ''
+      - species: 'Liepard'
+        slug: 'liepard'
+        depth: 1
+        method: 'Level 20'
 region: ''
 anniversary: ''
 tier: ''

@@ -472,6 +472,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Totodile'
+        slug: 'totodile'
+        depth: 0
+        method: ''
+      - species: 'Croconaw'
+        slug: 'croconaw'
+        depth: 1
+        method: 'Level 18'
+      - species: 'Feraligatr'
+        slug: 'feraligatr'
+        depth: 2
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

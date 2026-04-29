@@ -379,6 +379,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Minccino'
+        slug: 'minccino'
+        depth: 0
+        method: ''
+      - species: 'Cinccino'
+        slug: 'cinccino'
+        depth: 1
+        method: 'Use Shiny Stone'
 region: ''
 anniversary: ''
 tier: ''

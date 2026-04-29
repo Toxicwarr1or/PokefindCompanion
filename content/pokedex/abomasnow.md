@@ -459,6 +459,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Snover'
+        slug: 'snover'
+        depth: 0
+        method: ''
+      - species: 'Abomasnow'
+        slug: 'abomasnow'
+        depth: 1
+        method: 'Level 40'
 region: ''
 anniversary: ''
 tier: ''

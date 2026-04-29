@@ -498,6 +498,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Axew'
+        slug: 'axew'
+        depth: 0
+        method: ''
+      - species: 'Fraxure'
+        slug: 'fraxure'
+        depth: 1
+        method: 'Level 38'
+      - species: 'Haxorus'
+        slug: 'haxorus'
+        depth: 2
+        method: 'Level 48'
 region: ''
 anniversary: ''
 tier: ''

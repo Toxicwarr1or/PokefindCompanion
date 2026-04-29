@@ -477,6 +477,15 @@ forms:
         power: '30'
         accuracy: '70'
         pp: '20'
+    evolution_family:
+      - species: 'Stunky'
+        slug: 'stunky'
+        depth: 0
+        method: ''
+      - species: 'Skuntank'
+        slug: 'skuntank'
+        depth: 1
+        method: 'Level 34'
 region: ''
 anniversary: ''
 tier: ''

@@ -383,6 +383,15 @@ forms:
         power: '90'
         accuracy: '85'
         pp: '20'
+    evolution_family:
+      - species: 'Blitzle'
+        slug: 'blitzle'
+        depth: 0
+        method: ''
+      - species: 'Zebstrika'
+        slug: 'zebstrika'
+        depth: 1
+        method: 'Level 27'
 region: ''
 anniversary: ''
 tier: ''

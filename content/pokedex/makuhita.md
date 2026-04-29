@@ -504,6 +504,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Makuhita'
+        slug: 'makuhita'
+        depth: 0
+        method: ''
+      - species: 'Hariyama'
+        slug: 'hariyama'
+        depth: 1
+        method: 'Level 24'
 region: ''
 anniversary: ''
 tier: ''

@@ -350,6 +350,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Ducklett'
+        slug: 'ducklett'
+        depth: 0
+        method: ''
+      - species: 'Swanna'
+        slug: 'swanna'
+        depth: 1
+        method: 'Level 35'
 region: ''
 anniversary: ''
 tier: ''

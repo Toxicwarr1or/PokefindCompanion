@@ -452,6 +452,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Misdreavus'
+        slug: 'misdreavus'
+        depth: 0
+        method: ''
+      - species: 'Mismagius'
+        slug: 'mismagius'
+        depth: 1
+        method: 'Use Dusk Stone'
   - name: 'Shiloh'
     kind: 'form'
     description: 'Bonds between these Pokemon are very strong. It protects the safety of its pack by tricking its opponents.'

@@ -387,6 +387,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Tympole'
+        slug: 'tympole'
+        depth: 0
+        method: ''
+      - species: 'Palpitoad'
+        slug: 'palpitoad'
+        depth: 1
+        method: 'Level 25'
+      - species: 'Seismitoad'
+        slug: 'seismitoad'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

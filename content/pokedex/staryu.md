@@ -437,6 +437,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Staryu'
+        slug: 'staryu'
+        depth: 0
+        method: ''
+      - species: 'Starmie'
+        slug: 'starmie'
+        depth: 1
+        method: 'Use Water Stone'
 region: ''
 anniversary: ''
 tier: ''

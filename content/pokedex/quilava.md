@@ -355,6 +355,19 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Cyndaquil'
+        slug: 'cyndaquil'
+        depth: 0
+        method: ''
+      - species: 'Quilava'
+        slug: 'quilava'
+        depth: 1
+        method: 'Level 14'
+      - species: 'Typhlosion'
+        slug: 'typhlosion'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

@@ -384,6 +384,19 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '5'
+    evolution_family:
+      - species: 'Roggenrola'
+        slug: 'roggenrola'
+        depth: 0
+        method: ''
+      - species: 'Boldore'
+        slug: 'boldore'
+        depth: 1
+        method: 'Level 25'
+      - species: 'Gigalith'
+        slug: 'gigalith'
+        depth: 2
+        method: 'Trade'
 region: ''
 anniversary: ''
 tier: ''

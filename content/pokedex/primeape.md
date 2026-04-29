@@ -552,6 +552,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Mankey'
+        slug: 'mankey'
+        depth: 0
+        method: ''
+      - species: 'Primeape'
+        slug: 'primeape'
+        depth: 1
+        method: 'Level 28'
 region: ''
 anniversary: ''
 tier: ''

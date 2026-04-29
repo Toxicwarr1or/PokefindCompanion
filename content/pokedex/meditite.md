@@ -588,6 +588,15 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Meditite'
+        slug: 'meditite'
+        depth: 0
+        method: ''
+      - species: 'Medicham'
+        slug: 'medicham'
+        depth: 1
+        method: 'Level 37'
 region: ''
 anniversary: ''
 tier: ''

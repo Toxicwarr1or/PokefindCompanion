@@ -641,6 +641,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Larvitar'
+        slug: 'larvitar'
+        depth: 0
+        method: ''
+      - species: 'Pupitar'
+        slug: 'pupitar'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Tyranitar'
+        slug: 'tyranitar'
+        depth: 2
+        method: 'Level 55'
   - name: 'Jataro'
     kind: 'form'
     types: ['Fire', 'Dragon']

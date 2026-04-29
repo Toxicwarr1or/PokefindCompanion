@@ -402,6 +402,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Paras'
+        slug: 'paras'
+        depth: 0
+        method: ''
+      - species: 'Parasect'
+        slug: 'parasect'
+        depth: 1
+        method: 'Level 24'
 region: ''
 anniversary: ''
 tier: ''

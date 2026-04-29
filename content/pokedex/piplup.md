@@ -444,6 +444,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Piplup'
+        slug: 'piplup'
+        depth: 0
+        method: ''
+      - species: 'Prinplup'
+        slug: 'prinplup'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Empoleon'
+        slug: 'empoleon'
+        depth: 2
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

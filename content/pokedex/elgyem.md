@@ -546,6 +546,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Elgyem'
+        slug: 'elgyem'
+        depth: 0
+        method: ''
+      - species: 'Beheeyem'
+        slug: 'beheeyem'
+        depth: 1
+        method: 'Level 42'
 region: ''
 anniversary: ''
 tier: ''

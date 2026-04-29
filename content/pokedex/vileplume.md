@@ -337,6 +337,23 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Oddish'
+        slug: 'oddish'
+        depth: 0
+        method: ''
+      - species: 'Gloom'
+        slug: 'gloom'
+        depth: 1
+        method: 'Level 21'
+      - species: 'Vileplume'
+        slug: 'vileplume'
+        depth: 2
+        method: 'Use Leaf Stone'
+      - species: 'Bellossom'
+        slug: 'bellossom'
+        depth: 2
+        method: 'Use Sun Stone'
 region: ''
 anniversary: ''
 tier: ''

@@ -524,6 +524,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Pansage'
+        slug: 'pansage'
+        depth: 0
+        method: ''
+      - species: 'Simisage'
+        slug: 'simisage'
+        depth: 1
+        method: 'Use Leaf Stone'
 region: ''
 anniversary: ''
 tier: ''

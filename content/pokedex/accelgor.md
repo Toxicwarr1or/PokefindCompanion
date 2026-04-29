@@ -358,6 +358,15 @@ forms:
         power: '50'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Shelmet'
+        slug: 'shelmet'
+        depth: 0
+        method: ''
+      - species: 'Accelgor'
+        slug: 'accelgor'
+        depth: 1
+        method: 'Trade, trade for Karrablast'
 region: ''
 anniversary: ''
 tier: ''

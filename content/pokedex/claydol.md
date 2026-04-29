@@ -546,6 +546,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Baltoy'
+        slug: 'baltoy'
+        depth: 0
+        method: ''
+      - species: 'Claydol'
+        slug: 'claydol'
+        depth: 1
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

@@ -445,6 +445,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Frillish'
+        slug: 'frillish'
+        depth: 0
+        method: ''
+      - species: 'Jellicent'
+        slug: 'jellicent'
+        depth: 1
+        method: 'Level 40'
   - name: 'Female'
     kind: 'form'
     types: ['Water', 'Ghost']

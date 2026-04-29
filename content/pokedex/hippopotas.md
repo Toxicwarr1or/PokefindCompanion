@@ -378,6 +378,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Hippopotas'
+        slug: 'hippopotas'
+        depth: 0
+        method: ''
+      - species: 'Hippowdon'
+        slug: 'hippowdon'
+        depth: 1
+        method: 'Level 34'
 region: ''
 anniversary: ''
 tier: ''

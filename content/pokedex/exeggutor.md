@@ -391,6 +391,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Exeggcute'
+        slug: 'exeggcute'
+        depth: 0
+        method: ''
+      - species: 'Exeggutor'
+        slug: 'exeggutor'
+        depth: 1
+        method: 'Use Leaf Stone'
   - name: 'Alolan'
     kind: 'form'
     types: ['Grass', 'Dragon']

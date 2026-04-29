@@ -409,6 +409,15 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Koffing'
+        slug: 'koffing'
+        depth: 0
+        method: ''
+      - species: 'Weezing'
+        slug: 'weezing'
+        depth: 1
+        method: 'Level 35'
   - name: 'Galarian'
     kind: 'form'
     description: 'This Pokémon consumes particles that contaminate the air. Instead of leaving droppings, it expels clean air'

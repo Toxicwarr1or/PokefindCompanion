@@ -503,6 +503,19 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '5'
+    evolution_family:
+      - species: 'Axew'
+        slug: 'axew'
+        depth: 0
+        method: ''
+      - species: 'Fraxure'
+        slug: 'fraxure'
+        depth: 1
+        method: 'Level 38'
+      - species: 'Haxorus'
+        slug: 'haxorus'
+        depth: 2
+        method: 'Level 48'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Dark', 'Steel']

@@ -157,7 +157,7 @@ function buildElementMesh(element, materialMap, textureWidth, textureHeight) {
 //   - children: sub-bones
 // Cube meshes get added directly so their per-element rotation pivot still
 // works; the bone group rotation then propagates through the whole subtree.
-function buildBoneGroup(bone, materialMap) {
+function buildBoneGroup(bone, materialMap, inheritedOpacity) {
   const group = new THREE.Group();
   if (bone.name) group.name = bone.name;
   const o = bone.origin || [0, 0, 0];
@@ -170,12 +170,30 @@ function buildBoneGroup(bone, materialMap) {
       THREE.MathUtils.degToRad(r[2]),
     );
   }
+  // Honour `opacity` field on the bone — used to render Mewtwo's `shadow_*`
+  // psychic-aura cubes (and similar VFX cubes on other species) translucent
+  // instead of as solid colored blocks. Children inherit the parent's
+  // opacity unless they declare their own. Materials are cloned per-bone so
+  // we don't mutate the shared materialMap.
+  let myOpacity = bone.opacity != null ? bone.opacity : inheritedOpacity;
+  let childMaterialMap = materialMap;
+  if (myOpacity != null && myOpacity < 1) {
+    childMaterialMap = {};
+    for (const [k, mat] of Object.entries(materialMap)) {
+      const clone = mat.clone();
+      clone.opacity = myOpacity;
+      clone.transparent = true;
+      clone.alphaTest = 0;
+      clone.depthWrite = false;
+      childMaterialMap[k] = clone;
+    }
+  }
   for (const el of bone.elements || []) {
-    const m = buildElementMesh(el, materialMap, 0, 0);
+    const m = buildElementMesh(el, childMaterialMap, 0, 0);
     if (m) group.add(m);
   }
   for (const child of bone.children || []) {
-    group.add(buildBoneGroup(child, materialMap));
+    group.add(buildBoneGroup(child, childMaterialMap, myOpacity));
   }
   return group;
 }

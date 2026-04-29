@@ -347,6 +347,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Bellsprout'
+        slug: 'bellsprout'
+        depth: 0
+        method: ''
+      - species: 'Weepinbell'
+        slug: 'weepinbell'
+        depth: 1
+        method: 'Level 21'
+      - species: 'Victreebel'
+        slug: 'victreebel'
+        depth: 2
+        method: 'Use Leaf Stone'
 region: ''
 anniversary: ''
 tier: ''

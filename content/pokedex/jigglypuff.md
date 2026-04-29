@@ -567,6 +567,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Igglybuff'
+        slug: 'igglybuff'
+        depth: 0
+        method: ''
+      - species: 'Jigglypuff'
+        slug: 'jigglypuff'
+        depth: 1
+        method: 'Level up, high friendship'
+      - species: 'Wigglytuff'
+        slug: 'wigglytuff'
+        depth: 2
+        method: 'Use Moon Stone'
 region: ''
 anniversary: ''
 tier: ''

@@ -539,6 +539,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Psyduck'
+        slug: 'psyduck'
+        depth: 0
+        method: ''
+      - species: 'Golduck'
+        slug: 'golduck'
+        depth: 1
+        method: 'Level 33'
 region: ''
 anniversary: ''
 tier: ''

@@ -539,6 +539,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Chingling'
+        slug: 'chingling'
+        depth: 0
+        method: ''
+      - species: 'Chimecho'
+        slug: 'chimecho'
+        depth: 1
+        method: 'Level up, at night, high friendship'
   - name: 'Haikou'
     kind: 'form'
     types: ['Dark', 'Fairy']

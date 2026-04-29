@@ -533,6 +533,15 @@ forms:
         power: '65'
         accuracy: '95'
         pp: '15'
+    evolution_family:
+      - species: 'Houndour'
+        slug: 'houndour'
+        depth: 0
+        method: ''
+      - species: 'Houndoom'
+        slug: 'houndoom'
+        depth: 1
+        method: 'Level 24'
 region: ''
 anniversary: ''
 tier: ''

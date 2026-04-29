@@ -404,6 +404,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Deino'
+        slug: 'deino'
+        depth: 0
+        method: ''
+      - species: 'Zweilous'
+        slug: 'zweilous'
+        depth: 1
+        method: 'Level 50'
+      - species: 'Hydreigon'
+        slug: 'hydreigon'
+        depth: 2
+        method: 'Level 64'
 region: ''
 anniversary: ''
 tier: ''

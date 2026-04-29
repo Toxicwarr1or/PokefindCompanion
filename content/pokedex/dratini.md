@@ -475,6 +475,19 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Dratini'
+        slug: 'dratini'
+        depth: 0
+        method: ''
+      - species: 'Dragonair'
+        slug: 'dragonair'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Dragonite'
+        slug: 'dragonite'
+        depth: 2
+        method: 'Level 55'
 region: ''
 anniversary: ''
 tier: ''

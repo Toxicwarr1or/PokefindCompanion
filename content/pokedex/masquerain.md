@@ -378,6 +378,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Surskit'
+        slug: 'surskit'
+        depth: 0
+        method: ''
+      - species: 'Masquerain'
+        slug: 'masquerain'
+        depth: 1
+        method: 'Level 22'
 region: ''
 anniversary: ''
 tier: ''

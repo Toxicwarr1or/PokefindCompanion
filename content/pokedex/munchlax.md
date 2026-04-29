@@ -603,6 +603,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Munchlax'
+        slug: 'munchlax'
+        depth: 0
+        method: ''
+      - species: 'Snorlax'
+        slug: 'snorlax'
+        depth: 1
+        method: 'Level up, high friendship'
 region: ''
 anniversary: ''
 tier: ''

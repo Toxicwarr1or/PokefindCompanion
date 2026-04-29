@@ -518,6 +518,15 @@ forms:
         power: '60'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Munna'
+        slug: 'munna'
+        depth: 0
+        method: ''
+      - species: 'Musharna'
+        slug: 'musharna'
+        depth: 1
+        method: 'Use Moon Stone'
 region: ''
 anniversary: ''
 tier: ''

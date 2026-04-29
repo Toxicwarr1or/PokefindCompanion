@@ -478,6 +478,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Tirtouga'
+        slug: 'tirtouga'
+        depth: 0
+        method: ''
+      - species: 'Carracosta'
+        slug: 'carracosta'
+        depth: 1
+        method: 'Level 37'
 region: ''
 anniversary: ''
 tier: ''

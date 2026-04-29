@@ -548,6 +548,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Misdreavus'
+        slug: 'misdreavus'
+        depth: 0
+        method: ''
+      - species: 'Mismagius'
+        slug: 'mismagius'
+        depth: 1
+        method: 'Use Dusk Stone'
 region: ''
 anniversary: ''
 tier: ''

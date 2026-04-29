@@ -551,6 +551,19 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Tepig'
+        slug: 'tepig'
+        depth: 0
+        method: ''
+      - species: 'Pignite'
+        slug: 'pignite'
+        depth: 1
+        method: 'Level 17'
+      - species: 'Emboar'
+        slug: 'emboar'
+        depth: 2
+        method: 'Level 36'
   - name: 'Zeinova'
     kind: 'form'
     types: ['Grass', 'Electric']

@@ -407,6 +407,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Weedle'
+        slug: 'weedle'
+        depth: 0
+        method: ''
+      - species: 'Kakuna'
+        slug: 'kakuna'
+        depth: 1
+        method: 'Level 7'
+      - species: 'Beedrill'
+        slug: 'beedrill'
+        depth: 2
+        method: 'Level 10'
 region: ''
 anniversary: ''
 tier: ''

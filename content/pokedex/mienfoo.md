@@ -522,6 +522,15 @@ forms:
         power: '70'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Mienfoo'
+        slug: 'mienfoo'
+        depth: 0
+        method: ''
+      - species: 'Mienshao'
+        slug: 'mienshao'
+        depth: 1
+        method: 'Level 50'
 region: ''
 anniversary: ''
 tier: ''

@@ -521,6 +521,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Cranidos'
+        slug: 'cranidos'
+        depth: 0
+        method: ''
+      - species: 'Rampardos'
+        slug: 'rampardos'
+        depth: 1
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

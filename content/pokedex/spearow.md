@@ -375,6 +375,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Spearow'
+        slug: 'spearow'
+        depth: 0
+        method: ''
+      - species: 'Fearow'
+        slug: 'fearow'
+        depth: 1
+        method: 'Level 20'
 region: ''
 anniversary: ''
 tier: ''

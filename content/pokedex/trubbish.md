@@ -423,6 +423,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    evolution_family:
+      - species: 'Trubbish'
+        slug: 'trubbish'
+        depth: 0
+        method: ''
+      - species: 'Garbodor'
+        slug: 'garbodor'
+        depth: 1
+        method: 'Level 36'
 region: ''
 anniversary: ''
 tier: ''

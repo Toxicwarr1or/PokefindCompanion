@@ -344,6 +344,19 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Klink'
+        slug: 'klink'
+        depth: 0
+        method: ''
+      - species: 'Klang'
+        slug: 'klang'
+        depth: 1
+        method: 'Level 38'
+      - species: 'Klinklang'
+        slug: 'klinklang'
+        depth: 2
+        method: 'Level 49'
 region: ''
 anniversary: ''
 tier: ''

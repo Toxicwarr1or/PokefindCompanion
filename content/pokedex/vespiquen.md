@@ -415,6 +415,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Combee'
+        slug: 'combee'
+        depth: 0
+        method: ''
+      - species: 'Vespiquen'
+        slug: 'vespiquen'
+        depth: 1
+        method: 'Level 21, (female)'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Poison', 'Fairy']

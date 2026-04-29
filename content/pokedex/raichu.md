@@ -455,6 +455,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Pichu'
+        slug: 'pichu'
+        depth: 0
+        method: ''
+      - species: 'Pikachu'
+        slug: 'pikachu'
+        depth: 1
+        method: 'Level up, high friendship'
+      - species: 'Raichu'
+        slug: 'raichu'
+        depth: 2
+        method: 'Use Thunder Stone'
   - name: 'Alolan'
     kind: 'form'
     types: ['Electric', 'Psychic']

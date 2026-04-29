@@ -559,6 +559,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Duskull'
+        slug: 'duskull'
+        depth: 0
+        method: ''
+      - species: 'Dusclops'
+        slug: 'dusclops'
+        depth: 1
+        method: 'Level 37'
+      - species: 'Dusknoir'
+        slug: 'dusknoir'
+        depth: 2
+        method: 'Trade, holding Reaper Cloth'
 region: ''
 anniversary: ''
 tier: ''

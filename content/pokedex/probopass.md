@@ -493,6 +493,15 @@ forms:
         power: '75'
         accuracy: '100'
         pp: '15'
+    evolution_family:
+      - species: 'Nosepass'
+        slug: 'nosepass'
+        depth: 0
+        method: ''
+      - species: 'Probopass'
+        slug: 'probopass'
+        depth: 1
+        method: 'Level up, near Special Magnetic Field'
 region: ''
 anniversary: ''
 tier: ''

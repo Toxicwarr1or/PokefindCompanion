@@ -493,6 +493,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Natu'
+        slug: 'natu'
+        depth: 0
+        method: ''
+      - species: 'Xatu'
+        slug: 'xatu'
+        depth: 1
+        method: 'Level 25'
 region: ''
 anniversary: ''
 tier: ''

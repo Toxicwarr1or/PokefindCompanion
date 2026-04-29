@@ -413,6 +413,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Shroomish'
+        slug: 'shroomish'
+        depth: 0
+        method: ''
+      - species: 'Breloom'
+        slug: 'breloom'
+        depth: 1
+        method: 'Level 23'
 region: ''
 anniversary: ''
 tier: ''

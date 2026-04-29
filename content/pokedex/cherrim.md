@@ -335,6 +335,15 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Cherubi'
+        slug: 'cherubi'
+        depth: 0
+        method: ''
+      - species: 'Cherrim'
+        slug: 'cherrim'
+        depth: 1
+        method: 'Level 25'
   - name: 'Sunshine'
     kind: 'form'
     types: ['Grass']

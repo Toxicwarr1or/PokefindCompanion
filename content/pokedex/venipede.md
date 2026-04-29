@@ -368,6 +368,19 @@ forms:
         power: '25'
         accuracy: '100'
         pp: '20'
+    evolution_family:
+      - species: 'Venipede'
+        slug: 'venipede'
+        depth: 0
+        method: ''
+      - species: 'Whirlipede'
+        slug: 'whirlipede'
+        depth: 1
+        method: 'Level 22'
+      - species: 'Scolipede'
+        slug: 'scolipede'
+        depth: 2
+        method: 'Level 30'
 region: ''
 anniversary: ''
 tier: ''

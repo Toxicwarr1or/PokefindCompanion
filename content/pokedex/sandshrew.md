@@ -508,6 +508,15 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    evolution_family:
+      - species: 'Sandshrew'
+        slug: 'sandshrew'
+        depth: 0
+        method: ''
+      - species: 'Sandslash'
+        slug: 'sandslash'
+        depth: 1
+        method: 'Level 22'
   - name: 'Alolan'
     kind: 'form'
     types: ['Ice', 'Steel']

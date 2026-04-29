@@ -333,6 +333,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Budew'
+        slug: 'budew'
+        depth: 0
+        method: ''
+      - species: 'Roselia'
+        slug: 'roselia'
+        depth: 1
+        method: 'Level up, at day, high friendship'
+      - species: 'Roserade'
+        slug: 'roserade'
+        depth: 2
+        method: 'Use Shiny Stone'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Ice', 'Fighting']

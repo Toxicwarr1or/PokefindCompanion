@@ -412,6 +412,19 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    evolution_family:
+      - species: 'Caterpie'
+        slug: 'caterpie'
+        depth: 0
+        method: ''
+      - species: 'Metapod'
+        slug: 'metapod'
+        depth: 1
+        method: 'Level 7'
+      - species: 'Butterfree'
+        slug: 'butterfree'
+        depth: 2
+        method: 'Level 10'
 region: ''
 anniversary: ''
 tier: ''

@@ -354,6 +354,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Chikorita'
+        slug: 'chikorita'
+        depth: 0
+        method: ''
+      - species: 'Bayleef'
+        slug: 'bayleef'
+        depth: 1
+        method: 'Level 16'
+      - species: 'Meganium'
+        slug: 'meganium'
+        depth: 2
+        method: 'Level 32'
 region: ''
 anniversary: ''
 tier: ''

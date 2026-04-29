@@ -448,6 +448,15 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    evolution_family:
+      - species: 'Rattata'
+        slug: 'rattata'
+        depth: 0
+        method: ''
+      - species: 'Raticate'
+        slug: 'raticate'
+        depth: 1
+        method: 'Level 20'
   - name: 'Alolan'
     kind: 'form'
     description: 'It commands a nest of Rattata. Different nests don''t get along, whipping up severe fights over feeding grounds.'

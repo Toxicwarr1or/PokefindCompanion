@@ -485,6 +485,19 @@ forms:
         power: '60'
         accuracy: '85'
         pp: '15'
+    evolution_family:
+      - species: 'Elekid'
+        slug: 'elekid'
+        depth: 0
+        method: ''
+      - species: 'Electabuzz'
+        slug: 'electabuzz'
+        depth: 1
+        method: 'Level 30'
+      - species: 'Electivire'
+        slug: 'electivire'
+        depth: 2
+        method: 'Trade, holding Electirizer'
 region: ''
 anniversary: ''
 tier: ''

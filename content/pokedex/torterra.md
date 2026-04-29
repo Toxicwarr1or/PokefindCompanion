@@ -462,6 +462,19 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    evolution_family:
+      - species: 'Turtwig'
+        slug: 'turtwig'
+        depth: 0
+        method: ''
+      - species: 'Grotle'
+        slug: 'grotle'
+        depth: 1
+        method: 'Level 18'
+      - species: 'Torterra'
+        slug: 'torterra'
+        depth: 2
+        method: 'Level 32'
   - name: 'Shiloh'
     kind: 'form'
     types: ['Grass', 'Fire']

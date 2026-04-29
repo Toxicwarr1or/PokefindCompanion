@@ -522,6 +522,15 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '35'
+    evolution_family:
+      - species: 'Murkrow'
+        slug: 'murkrow'
+        depth: 0
+        method: ''
+      - species: 'Honchkrow'
+        slug: 'honchkrow'
+        depth: 1
+        method: 'Use Dusk Stone'
 region: ''
 anniversary: ''
 tier: ''
