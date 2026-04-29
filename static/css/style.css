@@ -2491,13 +2491,49 @@ pre code { background: transparent; padding: 0; }
     margin-right: 0.35rem;
 }
 
-/* ===== Mobile responsive (≤600px) — pokedex list, single page, tables ===== */
-@media (max-width: 600px) {
+/* ===== Mobile responsive — pokedex list, single page, tables =====
+   The header tab bar already scales to viewport width via flex-wrap; the
+   content used to overflow horizontally because (a) tables were wider than
+   viewport, (b) `display:block` on tables broke the layout algorithm, and
+   (c) nothing prevented one rogue child from pushing the body sideways. The
+   rules below keep tables inside their parent (table-layout:fixed + cell
+   word-wrap) and clip any remaining overflow at the body level so manual
+   pinch-zoom is no longer required. */
+
+/* Defensive: every page gets horizontal-overflow protection regardless of
+   viewport. `.layout` keeps its `max-width: var(--max-width)` cap (1100px,
+   set further up) so the desktop view stays centered with whitespace on
+   either side; we only ensure that grid/flex children can shrink, and that
+   replaced elements don't blow past their parent. */
+html, body { overflow-x: hidden; }
+.content, .page { max-width: 100%; min-width: 0; }
+img, video, canvas, svg { max-width: 100%; }
+pre, code { max-width: 100%; }
+
+/* Horizontal-scroll wrapper for wide tables (stat, level-up, TMs, Tutor,
+   Egg moves). The wrapper appears in single.html around each <table>; on
+   wide viewports the table fits and there's nothing to scroll. On phones,
+   the table sizes to its content and the wrapper scrolls horizontally so
+   no columns are hidden. */
+.table-scroll {
+    overflow-x: auto;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    /* Subtle visual hint that the row is scrollable when overflowing —
+       a thin scrollbar styled in brand color. */
+    scrollbar-width: thin;
+    scrollbar-color: var(--brand) var(--surface);
+}
+.table-scroll::-webkit-scrollbar { height: 6px; }
+.table-scroll::-webkit-scrollbar-track { background: var(--surface); }
+.table-scroll::-webkit-scrollbar-thumb { background: var(--brand); border-radius: 3px; }
+
+@media (max-width: 768px) {
     /* Page chrome: reclaim padding from the layout edges and shrink page H1s. */
     .layout { padding: 1rem 0.6rem; gap: 1rem; }
-    .page-header h1 { font-size: 1.5rem; line-height: 1.2; }
+    .page-header h1 { font-size: 1.5rem; line-height: 1.2; word-break: break-word; }
     .page-header .subtitle { font-size: 0.95rem; }
-    h2 { font-size: 1.05rem; }
+    h2 { font-size: 1.05rem; word-break: break-word; }
 
     /* Pokedex list — fit ~3 cards per row on a 360px viewport instead of one
        enormous card. The icon stays square but the surrounding metadata
@@ -2508,7 +2544,7 @@ pre code { background: transparent; padding: 0; }
     }
     .dex-card a { padding: 0.4rem; }
     .dex-card-sprite { margin-bottom: 0.3rem; }
-    .dex-card-name { font-size: 0.82rem; }
+    .dex-card-name { font-size: 0.82rem; word-break: break-word; }
     .dex-card-num { font-size: 0.7rem; }
     .dex-card-types span { font-size: 0.55rem; padding: 0.05rem 0.3rem; }
     .dex-card-forms { font-size: 0.65rem; }
@@ -2522,52 +2558,94 @@ pre code { background: transparent; padding: 0; }
     .dex-sort, .dex-filter { flex-wrap: wrap; }
     .dex-sort button, .dex-filter button { padding: 0.35rem 0.6rem; font-size: 0.78rem; }
 
-    /* Single Pokemon page — tighter profile + smaller header. */
+    /* Single Pokemon page — tighter profile + smaller header. min-width:0
+       on the dex-profile children lets them shrink below their content's
+       natural width inside the grid cell. */
     .dex-page .page-header h1 { font-size: 1.3rem; }
     .dex-profile {
         padding: 0.75rem;
         gap: 0.75rem;
         margin: 0.75rem 0;
     }
+    .dex-profile .stats { min-width: 0; }
     .dex-profile .stats dt { font-size: 0.78rem; }
-    .dex-profile .stats dd { margin: 0.1rem 0 0.5rem; }
+    .dex-profile .stats dd { margin: 0.1rem 0 0.5rem; word-break: break-word; }
+    .dex-profile .types span { font-size: 0.7rem; padding: 0.15rem 0.45rem; }
     .form-tab { padding: 0.35rem 0.7rem; font-size: 0.85rem; }
     .form-description { padding: 0.5rem 0.75rem; font-size: 0.92rem; line-height: 1.45; }
 
-    /* Prev/next dex nav — wrap-tolerant, smaller arrow, no fat padding. */
-    .dex-nav a, .dex-nav .disabled { padding: 0.4rem 0.55rem; font-size: 0.8rem; gap: 0.3rem; }
+    /* Prev/next dex nav — wrap-tolerant, smaller arrow, no fat padding,
+       min-width:0 + truncation so long names don't push the row wider. */
+    .dex-nav { gap: 0.35rem; }
+    .dex-nav a, .dex-nav .disabled {
+        padding: 0.4rem 0.55rem;
+        font-size: 0.8rem;
+        gap: 0.3rem;
+        min-width: 0;
+        overflow: hidden;
+    }
     .dex-nav-meta { font-size: 0.7rem; }
-    .dex-nav-name { font-size: 0.8rem; }
-
-    /* Wide tables (level-up moves, TMs, tutors, egg moves) overflow narrow
-       viewports horizontally. `display:block; overflow-x:auto;` on the table
-       lets the user swipe the table sideways without breaking the rest of
-       the page. Stat-table benefits too — the bar column needs room. */
-    .stat-table, .learnset-table {
-        display: block;
-        overflow-x: auto;
+    .dex-nav-name {
+        font-size: 0.8rem;
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
+
+    /* Tables: stat-table is small enough to fit any phone, so we keep it
+       on `table-layout: fixed` with explicit column widths. Learnset tables
+       (level-up, TMs, Tutor, Egg) have too many columns to compress without
+       hiding data, so they live inside a `.table-scroll` wrapper that
+       scrolls horizontally on overflow. The wrapper is defined globally
+       (above this media query) — we only tune the table size here. */
+    .stat-table {
+        width: 100%;
+        table-layout: fixed;
         font-size: 0.85rem;
     }
-    .stat-table th, .stat-table td { padding: 0.3rem 0.45rem; }
-    .stat-table th { width: auto; min-width: 60px; }
-    .stat-table .stat-value { width: auto; min-width: 38px; }
-    .stat-table .stat-bar { min-width: 90px; }
-    .learnset-table thead th, .learnset-table tbody td { padding: 0.3rem 0.5rem; }
-    .learnset-table .learnset-level { width: auto; min-width: 32px; }
+    .stat-table th, .stat-table td {
+        padding: 0.3rem 0.4rem;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+    .stat-table th { width: 38%; }
+    .stat-table .stat-value { width: 22%; }
+    .stat-table .stat-bar { width: 40%; }
+
+    .learnset-table {
+        font-size: 0.85rem;
+        /* No fixed layout — let columns size to content; the scroll wrapper
+           takes care of overflow. */
+    }
+    .learnset-table th, .learnset-table td {
+        padding: 0.3rem 0.5rem;
+        white-space: nowrap;
+    }
+    .learnset-table .learnset-move { white-space: nowrap; }
+    .learnset-table .type-pill-sm,
+    .learnset-table .cat-physical,
+    .learnset-table .cat-special,
+    .learnset-table .cat-status {
+        font-size: 0.62rem;
+        padding: 0.05rem 0.3rem;
+    }
 
     /* Movepool details summary header smaller. */
     .movepool > summary > h2 { font-size: 1rem; display: inline; }
 
-    /* Competitive sets — compact card padding, 2-column meta on phones. */
+    /* Competitive sets — compact card padding, narrow meta column. */
     .comp-set { padding: 0.6rem 0.75rem; }
-    .comp-set-name { font-size: 0.95rem; }
-    .comp-set-meta { grid-template-columns: 70px 1fr; font-size: 0.88rem; }
+    .comp-set-name { font-size: 0.95rem; word-break: break-word; }
+    .comp-set-meta { grid-template-columns: 64px 1fr; font-size: 0.85rem; }
+    .comp-set-meta dd { word-break: break-word; }
     .comp-set-moves { grid-template-columns: 1fr; }
+    .comp-set-moves li { font-size: 0.85rem; }
 
     /* Evolution tree — halve the per-depth indent so chains don't push off
        the right edge. */
-    .evo-row { padding-left: calc(var(--evo-depth, 0) * 0.75rem); }
+    .evo-tree { overflow-x: hidden; }
+    .evo-row { padding-left: calc(var(--evo-depth, 0) * 0.75rem); flex-wrap: wrap; }
     .evo-row::before { width: calc(var(--evo-depth, 0) * 0.4rem); }
     .evo-method { font-size: 0.65rem; padding: 0.05rem 0.4rem; }
     .evo-name { font-size: 0.82rem; }
@@ -2582,4 +2660,15 @@ pre code { background: transparent; padding: 0; }
     .header-inner { padding: 0.5rem 0.75rem; gap: 0.75rem; }
     .site-nav ul { gap: 0.6rem; }
     .site-nav a { font-size: 0.9rem; }
+}
+
+/* Extra-narrow phones (≤380px): drop one more pixel of padding and shrink
+   the dex card minimum so 3 cards still fit. */
+@media (max-width: 380px) {
+    .layout { padding: 0.75rem 0.45rem; }
+    .dex-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }
+    .dex-card a { padding: 0.3rem; }
+    .dex-card-name { font-size: 0.78rem; }
+    .stat-table, .learnset-table { font-size: 0.8rem; }
+    .form-tab { padding: 0.3rem 0.55rem; font-size: 0.8rem; }
 }

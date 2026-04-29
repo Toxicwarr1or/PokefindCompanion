@@ -46,6 +46,11 @@
   //   sunSpaMult:     SpA multiplier in harsh sun (Solar Power)
   //   immune:         move-type immunity (defender)
   //   wonderGuard:    only super-effective hits land
+  //   pulseMult:      multiply damage of pulse moves (Mega Launcher)
+  //   unaware:        ignore the opposing Pokémon's stat stages during damage
+  //                   calc — applied symmetrically: defender's Unaware zeros
+  //                   the attacker's Atk/SpA stage, attacker's Unaware zeros
+  //                   the defender's Def/SpD stage
   //   mult:           generic flat damage multiplier (offensive or defensive,
   //                   tagged via `side`)
   const ABILITY_EFFECTS = {
@@ -92,9 +97,27 @@
     'Water Absorb':         { side: 'def', immune: 'Water' },
     'Storm Drain':          { side: 'def', immune: 'Water' },
     'Dry Skin':             { side: 'def', immune: 'Water', defTypeMult: { Fire: 1.25 } },
-    'Wonder Guard':         { side: 'def', wonderGuard: true }
+    'Wonder Guard':         { side: 'def', wonderGuard: true },
+    'Mega Launcher':        { side: 'att', pulseMult: 1.5 },
+    'Unaware':              { unaware: true }     // applies on whichever side has it
   };
   function abilityEffect(name) { return name ? ABILITY_EFFECTS[name] : null; }
+
+  // Pulse moves boosted by Mega Launcher. Heal Pulse is a Status move and is
+  // already filtered out of the move list (BP=0), so we don't include it.
+  const PULSE_MOVES = new Set([
+    'Aura Sphere', 'Dark Pulse', 'Dragon Pulse',
+    'Origin Pulse', 'Terrain Pulse', 'Water Pulse'
+  ]);
+
+  // Terrain Pulse: outside terrain it's Normal-type 50 BP. When the user is
+  // grounded under one of these terrains it changes type and doubles power.
+  const TERRAIN_PULSE_TYPES = {
+    electric: 'Electric',
+    grassy:   'Grass',
+    misty:    'Fairy',
+    psychic:  'Psychic'
+  };
 
   // ---- Hazard damage on switch-in ----------------------------------------
   // Stealth Rock: Rock-type effectiveness on the defender × maxHP / 8.
@@ -233,8 +256,24 @@
   function readMove() {
     const slug = $('dc-move-name').value;
     if (!slug) return null;
-    const m = DATA.moves[slug];
-    if (!m) return null;
+    const base = DATA.moves[slug];
+    if (!base) return null;
+    // Clone so we can apply move-specific terrain/weather overrides without
+    // mutating the cached move data.
+    const m = Object.assign({}, base);
+
+    // Terrain Pulse: under any active terrain (we assume the user is
+    // grounded), the move's type matches the terrain and base power doubles
+    // from 50 to 100. Reflect this in both the displayed chips and the
+    // value calcDamage receives.
+    if (m.name === 'Terrain Pulse') {
+      const terrain = $('dc-terrain') ? $('dc-terrain').value : '';
+      if (TERRAIN_PULSE_TYPES[terrain]) {
+        m.type = TERRAIN_PULSE_TYPES[terrain];
+        m.power = 100;
+      }
+    }
+
     $('dc-move-type').textContent = m.type;
     $('dc-move-type').className = 'dc-chip type-' + m.type.toLowerCase();
     $('dc-move-cat').textContent = m.category;
@@ -286,6 +325,10 @@
     let D = def.stats[defenseStatKey];
     let aStage = att.stages[attackStatKey];
     let dStage = def.stages[defenseStatKey];
+    // Unaware: each side ignores the opposing Pokémon's relevant stat stage
+    // changes (both positive and negative) when calculating damage.
+    if (dEff && dEff.unaware) aStage = 0;
+    if (aEff && aEff.unaware) dStage = 0;
     if (crit > 1) {
       if (aStage < 0) aStage = 0;
       if (dStage > 0) dStage = 0;
@@ -346,6 +389,7 @@
     if (aEff && aEff.sandTypes && aEff.sandTypes.indexOf(moveType) !== -1 && weather === 'sand') mod *= aEff.mult;
     if (aEff && aEff.superEffMult && eff > 1) mod *= aEff.superEffMult;
     if (aEff && aEff.resistedMult && eff < 1 && eff > 0) mod *= aEff.resistedMult;
+    if (aEff && aEff.pulseMult && PULSE_MOVES.has(move.name)) mod *= aEff.pulseMult;
     if (aEff && aEff.mult && !aEff.sandTypes && !aEff.normalToType) mod *= aEff.mult;
 
     // ---- Defender ability mods ----

@@ -274,7 +274,7 @@
     {{ with $f.base_stats }}
     {{ $bst := add (add (add (add (add .hp .atk) .def) .spa) .spd) .spe }}
     <h2>Base Stats</h2>
-    <table class="stat-table">
+    <div class="table-scroll"><table class="stat-table">
       <tbody>
         <tr class="stat-row stat-hp"><th>HP</th><td class="stat-value">{{ .hp }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .hp 2.55) 1.0 }}%"></span></td></tr>
         <tr class="stat-row stat-atk"><th>Attack</th><td class="stat-value">{{ .atk }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .atk 2.55) 1.0 }}%"></span></td></tr>
@@ -284,7 +284,7 @@
         <tr class="stat-row stat-spe"><th>Speed</th><td class="stat-value">{{ .spe }}</td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div .spe 2.55) 1.0 }}%"></span></td></tr>
         <tr class="stat-row stat-bst"><th>Total</th><td class="stat-value"><strong>{{ $bst }}</strong></td><td class="stat-bar"><span class="stat-bar-fill" style="width: {{ mul (div $bst 7.20) 1.0 }}%"></span></td></tr>
       </tbody>
-    </table>
+    </table></div>
     {{ end }}
 
     {{ with $f.note }}
@@ -293,7 +293,7 @@
 
     {{ with $f.notable_moves }}
     <h2>Level-up Moves</h2>
-    <table class="learnset-table">
+    <div class="table-scroll"><table class="learnset-table">
       <thead>
         <tr>
           <th>Lv.</th><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th>
@@ -312,13 +312,13 @@
         </tr>
         {{ end }}
       </tbody>
-    </table>
+    </table></div>
     {{ end }}
 
     {{ with $f.tms }}
     <details class="movepool" open>
       <summary><h2>TMs &amp; HMs <span class="movepool-count">({{ len . }})</span></h2></summary>
-      <table class="learnset-table">
+      <div class="table-scroll"><table class="learnset-table">
         <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th></tr></thead>
         <tbody>
           {{ range . }}
@@ -332,14 +332,14 @@
           </tr>
           {{ end }}
         </tbody>
-      </table>
+      </table></div>
     </details>
     {{ end }}
 
     {{ with $f.tutor_moves }}
     <details class="movepool" open>
       <summary><h2>Move Tutor <span class="movepool-count">({{ len . }})</span></h2></summary>
-      <table class="learnset-table">
+      <div class="table-scroll"><table class="learnset-table">
         <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th></tr></thead>
         <tbody>
           {{ range . }}
@@ -353,7 +353,7 @@
           </tr>
           {{ end }}
         </tbody>
-      </table>
+      </table></div>
     </details>
     {{ end }}
 
@@ -379,7 +379,7 @@
       {{ if $inheritedEggMoves }}
       <p class="movepool-note">Includes egg moves inherited from this Pokémon's pre-evolution chain.</p>
       {{ end }}
-      <table class="learnset-table">
+      <div class="table-scroll"><table class="learnset-table">
         <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th></tr></thead>
         <tbody>
           {{ range . }}
@@ -393,7 +393,7 @@
           </tr>
           {{ end }}
         </tbody>
-      </table>
+      </table></div>
     </details>
     {{ end }}
 
