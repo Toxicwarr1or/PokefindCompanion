@@ -1678,3 +1678,14 @@ pre code { background: transparent; padding: 0; }
     object-fit: contain;
 }
 .evo-name { font-weight: 600; font-size: 0.9rem; }
+
+/* ----- Inline currency icons (mechanics/currencies page) ----- */
+.currency-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: -0.25em;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    margin-right: 0.35rem;
+}

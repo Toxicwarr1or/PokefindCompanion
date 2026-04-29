@@ -17,6 +17,11 @@ disableKinds = ["taxonomy", "term"]
 
 # Top-nav menu
 [[menu.main]]
+  name = "Pokefind"
+  url = "/pokefind/"
+  weight = 5
+
+[[menu.main]]
   name = "Pokedex"
   url = "/pokedex/"
   weight = 10
