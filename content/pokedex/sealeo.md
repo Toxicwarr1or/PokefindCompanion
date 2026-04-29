@@ -1,6 +1,6 @@
 ---
 title: 'Sealeo'
-subtitle: 'Sealeo has the habit of always juggling on the tip of its nose anything it sees for the first time. This Pokemon occasionally entertains itself by balancing and rolling a Spheal on its nose.'
+subtitle: 'Sealeo has the habit of always juggling on the tip of its nose anything it sees for the first time. This Pokémon occasionally entertains itself by balancing and rolling a Spheal on its nose.'
 date: 2026-04-28
 dex_number: '364'
 skins: ['Shiny', 'Halloween']

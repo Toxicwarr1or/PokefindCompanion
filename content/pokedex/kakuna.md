@@ -1,6 +1,6 @@
 ---
 title: 'Kakuna'
-subtitle: 'Almost incapable of moving, this Pokemon can only harden its shell to protect itself from predators.'
+subtitle: 'Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.'
 date: 2026-04-28
 dex_number: '14'
 skins: ['Shiny', 'Christmas', 'Valentine']

@@ -9,7 +9,7 @@ accuracy: '70'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by wrapping its opponent in a fierce wind that flies up into the sky. This may also confuse the target.'
 learners_level:
   - { name: 'Zeinova Volcarona', level: '1' }

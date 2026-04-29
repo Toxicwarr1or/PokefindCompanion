@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target.'
 learners_level:
   - { name: 'Zeinova Musharna', level: '0' }

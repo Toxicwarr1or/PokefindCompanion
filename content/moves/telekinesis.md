@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user makes the target float with its psychic power. The target is easier to hit for three turns.'
 learners_level:
   - { name: 'Alakazam', level: '33' }

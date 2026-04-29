@@ -1,11 +1,11 @@
 ---
-title: 'The Mysterious Pokemon'
+title: 'The Mysterious Pokémon'
 date: 2026-04-28
 layout: questguide
 gen: 3
-quest_key: 'THE_MYSTERIOUS_POKEMON'
+quest_key: 'THE_MYSTERIOUS_POKÉMON'
 slug: 'the-mysterious-pokemon'
-description: 'Detective Pikachu has caught rumour of a Mysterious Pokemon!'
+description: 'Detective Pikachu has caught rumour of a Mysterious Pokémon!'
 source_file: 'the-mysterious-pokemon.json'
 start:
   npc: 'Mysterious Person'

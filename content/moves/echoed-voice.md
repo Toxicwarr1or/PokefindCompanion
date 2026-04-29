@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'The user attacks the target with an echoing voice. If this move is used every turn, its power is increased.'
 learners_level:

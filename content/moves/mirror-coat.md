@@ -10,7 +10,7 @@ pp: '20'
 priority: '-5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A retaliation move that counters any special attack, inflicting double the damage taken.'
 learners_level:
   - { name: 'Haikou Blaziken', level: '1' }

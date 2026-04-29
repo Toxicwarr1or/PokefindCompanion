@@ -8,7 +8,7 @@ slug: 'gen4-main-quest-1'
 description: 'Professor Hemlock told you about another scientist who lives in Findville Cape. Pay him a visit and listen to what he has to say.'
 source_file: 'gen4-main-quest-1.json'
 video_id: '1Rv7moTOBmA'
-video_title: 'PokeFind Shadow Quest 1'
+video_title: 'PokéFind Shadow Quest 1'
 start:
   npc: 'Isaac'
   x: 916.5

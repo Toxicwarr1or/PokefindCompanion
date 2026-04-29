@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user counters the target by mimicking the target''s last move.'
 learners_level:
   - { name: 'Chatot', level: '9' }

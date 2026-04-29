@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slams the target with an enormous tree. The user can''t move on the next turn.'
 learners_level:
   - { name: 'Jataro Sunflora', level: '70' }

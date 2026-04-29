@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The power stored using the move Stockpile is released at once in an attack. The more power is stored, the greater the move''s power.'
 learners_level:
   - { name: 'Haikou Swampert', level: '1' }

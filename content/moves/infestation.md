@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is infested and attacked for four to five turns. The target can''t flee during this time.'
 learners_level:
   - { name: 'Kyoto Marowak', level: '27' }

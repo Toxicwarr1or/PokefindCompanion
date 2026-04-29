@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks with a swift chop. It can also break barriers, such as Light Screen and Reflect.'
 learners_level:
   - { name: 'Zeinova Bisharp', level: '1' }

@@ -1,6 +1,6 @@
 ---
 title: 'Walrein'
-subtitle: 'Walrein''s two massively developed tusks can totally shatter blocks of ice weighing ten tons with one blow. This Pokemon''s thick coat of blubber insulates it from subzero temperatures.'
+subtitle: 'Walrein''s two massively developed tusks can totally shatter blocks of ice weighing ten tons with one blow. This Pokémon''s thick coat of blubber insulates it from subzero temperatures.'
 date: 2026-04-28
 dex_number: '365'
 skins: ['Shiny', 'Halloween', 'Aura']

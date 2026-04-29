@@ -1,6 +1,6 @@
 ---
 title: 'Linoone'
-subtitle: 'Linoone always runs full speed and only in straight lines. If facing an obstacle, it makes a right-angle turn to evade it. This Pokemon is very challenged by gently curving roads.'
+subtitle: 'Linoone always runs full speed and only in straight lines. If facing an obstacle, it makes a right-angle turn to evade it. This Pokémon is very challenged by gently curving roads.'
 date: 2026-04-28
 dex_number: '264'
 skins: ['Shiny']

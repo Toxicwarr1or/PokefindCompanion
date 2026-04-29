@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target with a pulsing blast of water. This may also confuse the target.'
 learners_level:
   - { name: 'Kyogre', level: '1' }

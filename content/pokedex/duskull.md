@@ -1,6 +1,6 @@
 ---
 title: 'Duskull'
-subtitle: 'Duskull can pass through any wall no matter how thick it may be. Once this Pokemon chooses a target, it will doggedly pursue the intended victim until the break of dawn.'
+subtitle: 'Duskull can pass through any wall no matter how thick it may be. Once this Pokémon chooses a target, it will doggedly pursue the intended victim until the break of dawn.'
 date: 2026-04-28
 dex_number: '355'
 skins: ['Shiny']

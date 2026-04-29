@@ -9,7 +9,7 @@ accuracy: '75'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is slammed with a steel-hard tail. This may also lower the target''s Defense stat.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

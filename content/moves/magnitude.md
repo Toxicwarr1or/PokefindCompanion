@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'No'
 generation: 'Gen 2'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user attacks everything around it with a ground-shaking quake. Its power varies.'
 learners_level:
   - { name: 'Kyoto Gyarados', level: '0' }

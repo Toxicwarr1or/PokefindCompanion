@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user senses the target''s movements with its mind to ensure its next attack does not miss the target.'
 learners_level:
   - { name: 'Kyoto Clefable', level: '0' }

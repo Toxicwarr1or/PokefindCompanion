@@ -9,7 +9,7 @@ accuracy: '80'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'The target is raked with sharp claws or scythes quickly two to five times in a row.'
 learners_level:

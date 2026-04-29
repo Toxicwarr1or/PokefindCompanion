@@ -8,7 +8,7 @@ slug: 'bitter5'
 description: 'On your way to explore Searing Peak you cross paths with your newly formed rivals, have they finally become a match for you?'
 source_file: 'bitter5.json'
 video_id: 'rk2WgVrIkg4'
-video_title: 'PokeFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Lincoln'
   x: -1095.5

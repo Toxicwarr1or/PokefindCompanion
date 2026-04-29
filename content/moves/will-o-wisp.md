@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user shoots a sinister, bluish-white flame at the target to inflict a burn.'
 learners_level:
   - { name: 'Zeinova Vanilluxe', level: '1' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack''s power is doubled when used on a target with paralysis. This also cures the target''s paralysis, however.'
 learners_level:
   - { name: 'Makuhita', level: '28' }

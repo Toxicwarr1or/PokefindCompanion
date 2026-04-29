@@ -8,7 +8,7 @@ slug: 'waterfall'
 description: 'While exploring Lodestar Port you discover a new water-type move that holds unbelievable strength. Can you prove your worth and be granted access to a Families secret that has only been shared with a select few for centuries?'
 source_file: 'waterfall.json'
 video_id: 'OmFuL5T4O5k'
-video_title: 'PokeFind When It Rains It Pours (HM Quest: Generation 3)'
+video_title: 'PokéFind When It Rains It Pours (HM Quest: Generation 3)'
 start:
   npc: 'Charlotte'
   town: 'Lodestar Port'

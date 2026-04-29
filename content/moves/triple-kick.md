@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '3'
 effect: 'A consecutive three-kick attack that becomes more powerful with each successful hit.'
 learners_level:

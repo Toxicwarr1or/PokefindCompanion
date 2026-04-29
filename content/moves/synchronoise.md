@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'Using an odd shock wave, the user inflicts damage on any Pokémon of the same type in the area around it.'
 learners_level:
   - { name: 'Zeinova Musharna', level: '0' }

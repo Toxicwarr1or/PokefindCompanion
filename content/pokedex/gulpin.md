@@ -1,6 +1,6 @@
 ---
 title: 'Gulpin'
-subtitle: 'Virtually all of Gulpin''s body is its stomach. As a result, it can swallow something its own size. This Pokemon''s stomach contains a special fluid that digests anything.'
+subtitle: 'Virtually all of Gulpin''s body is its stomach. As a result, it can swallow something its own size. This Pokémon''s stomach contains a special fluid that digests anything.'
 date: 2026-04-28
 dex_number: '316'
 skins: ['Shiny', 'Shadow']

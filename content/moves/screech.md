@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '40'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'An earsplitting screech harshly lowers the target''s Defense stat.'
 learners_level:

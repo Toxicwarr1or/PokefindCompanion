@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Two turns after this move is used, a hunk of psychic energy attacks the target.'
 learners_level:
   - { name: 'Jataro Crobat', level: '0' }

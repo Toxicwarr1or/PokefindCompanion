@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user vanishes somewhere, then strikes the target on the next turn. This move hits even if the target protects itself.'
 learners_level:
   - { name: 'Jataro Blissey', level: '0' }

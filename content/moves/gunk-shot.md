@@ -9,7 +9,7 @@ accuracy: '80'
 pp: '5'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user shoots filthy garbage at the target to attack. This may also poison the target.'
 learners_level:
   - { name: 'Kyoto Snorlax', level: '1' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by slicing with a long horn. The target''s stat changes don''t affect this attack''s damage.'
 learners_level:
   - { name: 'Shiloh Porygon-Z', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user tucks in its head to raise its Defense stat on the first turn, then rams the target on the next turn.'
 learners_level:
   - { name: 'Zeinova Bouffalant', level: '0' }

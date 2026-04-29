@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'If the target is electrified before it uses a move during that turn, the target''s move becomes Electric type.'
 learners_level:
   - { name: 'Haikou Torkoal', level: '0' }

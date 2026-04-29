@@ -1,6 +1,6 @@
 ---
 title: 'Ho-Oh'
-subtitle: 'Legends claim this Pokemon flies the world''s skies continuously on its magnificent seven- colored wings.'
+subtitle: 'Legends claim this Pokémon flies the world''s skies continuously on its magnificent seven- colored wings.'
 date: 2026-04-28
 dex_number: '250'
 skins: ['Shiny', 'Easter', 'Thanksgiving', 'Shadow', 'Aura']

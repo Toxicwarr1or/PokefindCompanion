@@ -1,6 +1,6 @@
 ---
 title: 'Aron'
-subtitle: 'This Pokemon has a body of steel. To make its body, Aron feeds on iron ore that it digs from mountains. Occasionally, it causes major trouble by eating bridges and rails.'
+subtitle: 'This Pokémon has a body of steel. To make its body, Aron feeds on iron ore that it digs from mountains. Occasionally, it causes major trouble by eating bridges and rails.'
 date: 2026-04-28
 dex_number: '304'
 skins: ['Shiny']

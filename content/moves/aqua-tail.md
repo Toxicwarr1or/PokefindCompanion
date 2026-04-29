@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by swinging its tail as if it were a vicious wave in a raging storm.'
 learners_level:
   - { name: 'Kyogre', level: '15' }

@@ -9,7 +9,7 @@ accuracy: '55'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'A soothing lullaby is sung in a calming voice that puts the target into a deep slumber.'
 learners_level:

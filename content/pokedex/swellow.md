@@ -1,6 +1,6 @@
 ---
 title: 'Swellow'
-subtitle: 'Swellow flies high above our heads, making graceful arcs in the sky. This Pokemon dives at a steep angle as soon as it spots its prey. The hapless prey is tightly grasped by Swellow''s clawed feet, preventing escape.'
+subtitle: 'Swellow flies high above our heads, making graceful arcs in the sky. This Pokémon dives at a steep angle as soon as it spots its prey. The hapless prey is tightly grasped by Swellow''s clawed feet, preventing escape.'
 date: 2026-04-28
 dex_number: '277'
 skins: ['Shiny', 'Christmas']

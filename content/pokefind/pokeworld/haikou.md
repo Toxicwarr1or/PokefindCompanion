@@ -1,9 +1,9 @@
 ---
 title: "Haikou"
-subtitle: "Generation 3 region — Minoru's purification cult, served on `poke3`"
+subtitle: "Generation 3 region — Minoru's purification cult, served on `poké3`"
 ---
 
-The **Haikou Region** opens up the third generation of Pokémon (dex 1–386) and runs on the `poke3` server. For overall flavor and main-quest summary see [PokeWorld](../).
+The **Haikou Region** opens up the third generation of Pokémon (dex 1–386) and runs on the `poké3` server. For overall flavor and main-quest summary see [PokéWorld](../).
 
 This page collects the recurring NPCs that spawn around Haikou outside of the main-quest beats. They rotate through hidden coordinates and announce themselves on broadcast and in the Discord `#pworld-rare-spawns` feed.
 

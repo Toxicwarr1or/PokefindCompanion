@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is gripped and squeezed from both sides to inflict damage.'
 learners_level:
   - { name: 'Durant', level: '1' }

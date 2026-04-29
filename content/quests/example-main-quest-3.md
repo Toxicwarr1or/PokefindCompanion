@@ -8,8 +8,8 @@ difficulty: "Mid-game"
 length: "~25 min"
 video: "CUEQ5M_fvgg"
 prerequisites:
-  - "Completed Main Quest 2 (Pokemon On The Loose)"
-  - "Surfing capable Pokemon"
+  - "Completed Main Quest 2 (Pokémon On The Loose)"
+  - "Surfing capable Pokémon"
 rewards:
   - "Soothing Bell (key item)"
   - "Bag upgrade — fourth pocket unlocked"
@@ -56,5 +56,5 @@ The ferry trip back has its own short cutscene. Turn the quest in at the League 
 
 ## Common pitfalls
 
-- **You ferry over without surf-capable Pokemon and get stuck.** The return trip from Northrun requires Surf if the ferry is not running. The ferry stops between 9pm and 6am in-game. Just wait, or surf back.
+- **You ferry over without surf-capable Pokémon and get stuck.** The return trip from Northrun requires Surf if the ferry is not running. The ferry stops between 9pm and 6am in-game. Just wait, or surf back.
 - **You strike the chimes correctly but nothing happens.** The plaque rotates between two languages depending on server time; verify which version you are reading. The video shows both.

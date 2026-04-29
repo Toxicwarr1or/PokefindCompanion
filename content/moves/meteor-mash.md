@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is hit with a hard punch fired like a meteor. This may also raise the user''s Attack stat.'
 learners_level:
   - { name: 'Zeinova Golurk', level: '0' }

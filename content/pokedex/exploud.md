@@ -1,6 +1,6 @@
 ---
 title: 'Exploud'
-subtitle: 'Exploud triggers earthquakes with the tremors it creates by bellowing. If this Pokemon violently inhales from the ports on its body, it''s a sign that it is preparing to let loose a huge bellow.'
+subtitle: 'Exploud triggers earthquakes with the tremors it creates by bellowing. If this Pokémon violently inhales from the ports on its body, it''s a sign that it is preparing to let loose a huge bellow.'
 date: 2026-04-28
 dex_number: '295'
 skins: ['Shiny', 'Christmas', 'Valentine']

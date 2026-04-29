@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user transforms into a copy of the target right down to having the same move set.'
 learners_level:
   - { name: 'Ditto', level: '1' }

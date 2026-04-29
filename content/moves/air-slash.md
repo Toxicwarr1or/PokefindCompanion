@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '30%'
 effect: 'The user attacks with a blade of air that slices even the sky. This may also make the target flinch.'
 learners_level:

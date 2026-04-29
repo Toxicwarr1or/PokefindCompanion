@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '+75%'
 effect: 'The user steals the target''s HP with a kiss. The user''s HP is restored by over half of the damage taken by the target.'
 learners_level:

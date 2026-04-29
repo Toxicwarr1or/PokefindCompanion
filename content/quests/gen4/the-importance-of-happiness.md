@@ -20,7 +20,7 @@ steps:
       "y": 59.0
       z: 1000.8
       label: 'Justin’s Buneary'
-  - text: 'Collect 5 berries under the Woodburn Pokemon gym'
+  - text: 'Collect 5 berries under the Woodburn Pokémon gym'
   - text: 'Return to Justin with the berries'
     location:
       kind: 'npc'
@@ -28,7 +28,7 @@ steps:
       "y": 59.0
       z: 1001.0
       label: 'Justin'
-  - text: 'Speak to the Delivery Person in Findville Cape’s Pokemart'
+  - text: 'Speak to the Delivery Person in Findville Cape’s Pokémart'
     location:
       kind: 'npc'
       x: 871.5
@@ -48,7 +48,7 @@ steps:
         x2: 937.0
         "y2": 30.0
         z2: 798.0
-  - text: 'Beat Jack in a Pokemon battle'
+  - text: 'Beat Jack in a Pokémon battle'
     location:
       kind: 'battle'
     battles:

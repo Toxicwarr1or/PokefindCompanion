@@ -1,9 +1,9 @@
 ---
 title: "Jataro"
-subtitle: "Generation 2 region — widest tonal range; Shadow Quest 2 and Eusine's legendary hunt, served on `poke2`"
+subtitle: "Generation 2 region — widest tonal range; Shadow Quest 2 and Eusine's legendary hunt, served on `poké2`"
 ---
 
-The **Jataro Region** opens up the second generation of Pokémon (dex 1–251) and runs on the `poke2` server. For overall flavor and main-quest summary see [PokeWorld](../).
+The **Jataro Region** opens up the second generation of Pokémon (dex 1–251) and runs on the `poké2` server. For overall flavor and main-quest summary see [PokéWorld](../).
 
 This page collects the recurring NPCs that spawn around Jataro outside of the main-quest beats. They rotate through hidden coordinates and announce themselves on broadcast and in the Discord `#pworld-rare-spawns` feed.
 

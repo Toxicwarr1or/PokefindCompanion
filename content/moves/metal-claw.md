@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '35'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is raked with steel claws. This may also raise the user''s Attack stat.'
 learners_level:
   - { name: 'Zeinova Crustle', level: '0' }

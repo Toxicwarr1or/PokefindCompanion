@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is struck with slender, whiplike vines to inflict damage.'
 learners_level:
   - { name: 'Bellsprout', level: '1' }

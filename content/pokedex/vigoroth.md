@@ -1,6 +1,6 @@
 ---
 title: 'Vigoroth'
-subtitle: 'Vigoroth is always itching and agitated to go on a wild rampage. It simply can''t tolerate sitting still for even a minute. This Pokemon''s stress level rises if it can''t be moving constantly.'
+subtitle: 'Vigoroth is always itching and agitated to go on a wild rampage. It simply can''t tolerate sitting still for even a minute. This Pokémon''s stress level rises if it can''t be moving constantly.'
 date: 2026-04-28
 dex_number: '288'
 skins: ['Shiny', 'Christmas']

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user blasts the target with power that distorts even time. The user can''t move on the next turn.'
 learners_level:
   - { name: 'Dialga', level: '46' }

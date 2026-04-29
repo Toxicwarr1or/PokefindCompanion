@@ -1,6 +1,6 @@
 ---
 title: 'Staravia'
-subtitle: 'It flies around forests and fields in search of bug Pokemon. It stays within a huge flock.'
+subtitle: 'It flies around forests and fields in search of bug Pokémon. It stays within a huge flock.'
 date: 2026-04-28
 dex_number: '397'
 skins: ['Shiny']

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user cloaks itself in fire and charges at the target. This may also leave the target with a burn.'
 learners_level:
   - { name: 'Haikou Ludicolo', level: '0' }

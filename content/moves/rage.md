@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'As long as this move is in use, the power of rage raises the Attack stat each time the user is hit in battle.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

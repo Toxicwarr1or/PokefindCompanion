@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user swings and hits with its strong, heavy fist. It lowers the user''s Speed, however.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

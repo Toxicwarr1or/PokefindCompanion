@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks with a ray of light that sparkles as if it were made of gemstones.'
 learners_level:
   - { name: 'Kyoto Gyarados', level: '0' }

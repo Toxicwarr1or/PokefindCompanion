@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack move cuts down the target''s HP to equal the user''s HP.'
 learners_level:
   - { name: 'Jataro Miltank', level: '6' }

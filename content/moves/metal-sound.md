@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '40'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'A horrible sound like scraping metal harshly lowers the target''s Sp. Def stat.'
 learners_level:

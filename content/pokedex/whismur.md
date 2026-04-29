@@ -1,6 +1,6 @@
 ---
 title: 'Whismur'
-subtitle: 'Normally, Whismur''s voice is very quiet - it is barely audible even if one is paying close attention. However, if this Pokemon senses danger, it starts crying at an earsplitting volume.'
+subtitle: 'Normally, Whismur''s voice is very quiet - it is barely audible even if one is paying close attention. However, if this Pokémon senses danger, it starts crying at an earsplitting volume.'
 date: 2026-04-28
 dex_number: '293'
 skins: ['Shiny']

@@ -9,7 +9,7 @@ accuracy: '70'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A wicked thunderbolt is dropped on the target to inflict damage. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Elekid', level: '43' }

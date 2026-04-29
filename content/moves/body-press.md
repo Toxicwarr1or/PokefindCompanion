@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '0'
 effect: 'The user attacks by slamming its body into the target. The higher the user''s Defense, the more damage it can inflict on the target.'
 learners_level:

@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user scatters curious leaves that chase the target. This attack never misses.'
 learners_level:
   - { name: 'Haikou Sceptile', level: '1' }

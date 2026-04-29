@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is razed with a mystical fire of great intensity. This may also leave the target with a burn.'
 learners_level:
   - { name: 'Entei', level: '1' }

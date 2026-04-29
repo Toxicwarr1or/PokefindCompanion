@@ -16,7 +16,7 @@ start:
   "y": 26.0
   z: 727.5
 steps:
-  - text: 'Find the kids near the Pokemon Center'
+  - text: 'Find the kids near the Pokémon Center'
     location:
       kind: 'region'
       x: -277.5

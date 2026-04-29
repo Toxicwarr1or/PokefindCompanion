@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'Round objects are hurled at the target to strike two to five times in a row.'
 learners_level:

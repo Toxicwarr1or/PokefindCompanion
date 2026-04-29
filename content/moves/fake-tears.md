@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user feigns crying to fluster the target, harshly lowering its Sp. Def stat.'
 learners_level:
   - { name: 'Jataro Porygon2', level: '0' }

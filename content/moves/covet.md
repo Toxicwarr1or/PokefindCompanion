@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user endearingly approaches the target, then steals the target''s held item.'
 learners_level:
   - { name: 'Mankey', level: '1' }

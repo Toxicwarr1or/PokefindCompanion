@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user gathers all its light energy and releases it all at once. This may also lower the target''s Sp. Def stat.'
 learners_level:
   - { name: 'Blastoise', level: '1' }

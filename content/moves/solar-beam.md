@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'In this two-turn attack, the user gathers light, then blasts a bundled beam on the next turn.'
 learners_level:
   - { name: 'Shiloh Magnezone', level: '21' }

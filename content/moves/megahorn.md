@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Using its tough and impressive horn, the user rams into the target with no letup.'
 learners_level:
   - { name: 'Zeinova Bouffalant', level: '0' }

@@ -1,6 +1,6 @@
 ---
 title: 'Jirachi'
-subtitle: 'A legend states that Jirachi will make true any wish that is written on notes attached to its head when it awakens. If this Pokemon senses danger, it will fight without awakening.'
+subtitle: 'A legend states that Jirachi will make true any wish that is written on notes attached to its head when it awakens. If this Pokémon senses danger, it will fight without awakening.'
 date: 2026-04-28
 dex_number: '385'
 skins: ['Shiny', 'Easter', 'Aura', 'Fusemon']

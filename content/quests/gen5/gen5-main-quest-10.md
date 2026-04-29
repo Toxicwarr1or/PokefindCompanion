@@ -78,7 +78,7 @@ steps:
       z: 762.5
       label: 'Bobby'
       town: 'Sparkmont City'
-  - text: 'Find Nurse Rosie at the Pokecenter'
+  - text: 'Find Nurse Rosie at the Pokécenter'
     location:
       kind: 'npc'
       x: 1416.5
@@ -86,7 +86,7 @@ steps:
       z: 867.5
       label: 'Nurse Rosie'
       town: 'Sparkmont City'
-  - text: 'Find five pieces of fruit under the palm trees near the border with Voltaris (Hint: Follow the path going past the Pokecenter that leads to stairs down to the edge of the city)'
+  - text: 'Find five pieces of fruit under the palm trees near the border with Voltaris (Hint: Follow the path going past the Pokécenter that leads to stairs down to the edge of the city)'
     location:
       kind: 'destination'
       x: 1436.5
@@ -111,7 +111,7 @@ steps:
       - 'Stone_Plate'
       - 'Dread_Plate'
       - 'Icicle_Plate'
-  - text: 'Return the fruit to Nurse Rosie at the Pokecenter'
+  - text: 'Return the fruit to Nurse Rosie at the Pokécenter'
     location:
       kind: 'npc'
       x: 1416.5

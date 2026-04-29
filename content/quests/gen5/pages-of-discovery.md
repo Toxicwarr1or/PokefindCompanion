@@ -8,7 +8,7 @@ slug: 'pages-of-discovery'
 description: 'Marianne needs help finding lost pages of a research journal around the region.'
 source_file: 'pages-of-discovery.json'
 video_id: 'lC9Tok9_WL8'
-video_title: 'PokeFind Pages of Discovery Quest'
+video_title: 'PokéFind Pages of Discovery Quest'
 start:
   npc: 'Marianne'
   town: 'Watterson City'

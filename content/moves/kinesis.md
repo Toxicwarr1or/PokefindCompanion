@@ -9,7 +9,7 @@ accuracy: '80'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user distracts the target by bending a spoon. This lowers the target''s accuracy.'
 learners_level:
   - { name: 'Alakazam', level: '1' }

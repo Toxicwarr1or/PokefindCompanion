@@ -10,7 +10,7 @@ pp: '20'
 priority: '1'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user smashes into the target at high speed. This move always goes first.'
 learners_level:
   - { name: 'Zeinova Druddigon', level: '0' }

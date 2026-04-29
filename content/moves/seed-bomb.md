@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slams a barrage of hard-shelled seeds down on the target from above.'
 learners_level:
   - { name: 'Alolan Exeggutor', level: '1' }

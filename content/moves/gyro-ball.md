@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user tackles the target with a high-speed spin. The slower the user compared to the target, the greater the move''s power.'
 learners_level:
   - { name: 'Haikou Metagross', level: '1' }

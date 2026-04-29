@@ -1,6 +1,6 @@
 ---
 title: 'Volbeat'
-subtitle: 'With the arrival of night, Volbeat emits light from its tail. It communicates with others by adjusting the intensity and flashing of its light. This Pokemon is attracted by the sweet aroma of Illumise.'
+subtitle: 'With the arrival of night, Volbeat emits light from its tail. It communicates with others by adjusting the intensity and flashing of its light. This Pokémon is attracted by the sweet aroma of Illumise.'
 date: 2026-04-28
 dex_number: '313'
 skins: ['Shiny', 'Christmas']

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks with an electric charge. The user may use any remaining electricity to raise its Sp. Atk stat.'
 learners_level:
   - { name: 'Eelektrik', level: '1' }

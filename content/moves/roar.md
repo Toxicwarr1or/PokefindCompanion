@@ -10,7 +10,7 @@ pp: '20'
 priority: '-6'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'The target is scared off, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon.'
 learners_level:

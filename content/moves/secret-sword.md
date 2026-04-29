@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user cuts with its long horn. The odd power contained in the horn does physical damage to the target.'
 learners_tutor: ['Keldeo', 'Shiloh Dialga', 'Shiloh Electivire', 'Shiloh Palkia']
 ---

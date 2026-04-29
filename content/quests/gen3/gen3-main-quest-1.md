@@ -8,7 +8,7 @@ slug: 'gen3-main-quest-1'
 description: 'The gym leaders seem to have disappeared. There is a shady person outside Springdale gym. Go and investigate!'
 source_file: 'gen3-main-quest-1.json'
 video_id: 'fiySnCshdFI'
-video_title: 'PokeFind Visions of Victory (Main Quest 1: Generation 3)'
+video_title: 'PokéFind Visions of Victory (Main Quest 1: Generation 3)'
 start:
   npc: 'Ayumu'
   town: 'Sleepy Hollow'

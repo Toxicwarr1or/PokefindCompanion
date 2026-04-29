@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user puts a forest curse on the target. The target is now Grass type as well.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

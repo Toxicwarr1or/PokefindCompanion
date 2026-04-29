@@ -9,7 +9,7 @@ accuracy: '70'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with a discharge of filthy gases. This may also poison the target.'
 learners_level:
   - { name: 'Haikou Torkoal', level: '0' }

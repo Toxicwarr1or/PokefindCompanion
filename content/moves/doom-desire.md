@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Two turns after this move is used, a concentrated bundle of light blasts the target.'
 learners_level:
   - { name: 'Jirachi', level: '70' }

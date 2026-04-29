@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target by smashing into it with incredible force. This may also confuse the target.'
 learners_level:
   - { name: 'Kyoto Gyarados', level: '0' }

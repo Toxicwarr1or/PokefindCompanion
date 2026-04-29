@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user fiercely attacks the target using its entire body.'
 learners_level:
   - { name: 'Zeinova Zebstrika', level: '1' }

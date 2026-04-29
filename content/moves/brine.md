@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'If the target''s HP is half or less, this attack will hit with double the power.'
 learners_level:
   - { name: 'Jataro Slowking', level: '0' }

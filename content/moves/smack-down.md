@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user throws a stone or similar projectile to attack an opponent. A flying Pokémon will fall to the ground when it''s hit.'
 learners_level:
   - { name: 'Shiloh Weavile', level: '1' }

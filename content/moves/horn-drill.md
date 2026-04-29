@@ -9,7 +9,7 @@ accuracy: '30'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user stabs the target with a horn that rotates like a drill. The target faints instantly if this attack hits.'
 learners_level:
   - { name: 'Excadrill', level: '31' }

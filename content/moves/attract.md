@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'If it is the opposite gender of the user, the target becomes infatuated and less likely to attack.'
 learners_level:
   - { name: 'Delcatty', level: '1' }

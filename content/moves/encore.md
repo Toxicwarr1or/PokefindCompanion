@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user compels the target to keep using the move it encored for three turns.'
 learners_level:
   - { name: 'Jataro Meganium', level: '0' }

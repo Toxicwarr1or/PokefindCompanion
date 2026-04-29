@@ -9,7 +9,7 @@ accuracy: '75'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is slammed with a long tail, vines, or the like to inflict damage.'
 learners_level:
   - { name: 'Jataro Donphan', level: '0' }

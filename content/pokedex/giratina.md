@@ -1,6 +1,6 @@
 ---
 title: 'Giratina'
-subtitle: 'A Pokemon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery.'
+subtitle: 'A Pokémon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery.'
 date: 2026-04-28
 dex_number: '487'
 skins: ['Shiny', 'Summer']

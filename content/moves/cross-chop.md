@@ -9,7 +9,7 @@ accuracy: '80'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 crit_rate: '+1'
 effect: 'The user delivers a double chop with its forearms crossed. Critical hits land more easily.'
 learners_level:

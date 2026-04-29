@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '15'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user enrages and confuses the target. However, this also sharply raises the target''s Attack stat.'
 learners_level:
   - { name: 'Seviper', level: '1' }

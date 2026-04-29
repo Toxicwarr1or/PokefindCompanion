@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user unleashes its grudge on the move last used by the target by cutting 4 PP from it.'
 learners_level:
   - { name: 'Kyoto Aerodactyl', level: '0' }

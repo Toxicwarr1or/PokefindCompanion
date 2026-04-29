@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target with an uppercut thrown skyward with force.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Driven by frustration, the user attacks the target. If the user''s previous move has failed, the power of this move doubles.'
 learners_level:
   - { name: 'Kyoto Dodrio', level: '14' }

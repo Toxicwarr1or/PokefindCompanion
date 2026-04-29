@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user adds its HP to the target''s HP, then equally shares the combined HP with the target.'
 learners_level:
   - { name: 'Chandelure', level: '1' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '0'
 effect: 'No Description'
 learners_level:

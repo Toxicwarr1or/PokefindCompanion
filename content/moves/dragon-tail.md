@@ -10,7 +10,7 @@ pp: '10'
 priority: '-6'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon.'
 learners_level:
   - { name: 'Kyoto Weedle', level: '1' }

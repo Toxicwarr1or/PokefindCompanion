@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user blasts the target with a gust of repulsive wind. This may also raise all the user''s stats at once.'
 learners_level:
   - { name: 'Haikou Chimecho', level: '0' }

@@ -61,7 +61,7 @@ steps:
       z: -270.5
       label: 'Avery'
       town: 'Baremaw'
-  - text: 'Speak to Phoenix near the Baremaw pokemart'
+  - text: 'Speak to Phoenix near the Baremaw pokémart'
     location:
       kind: 'battle'
     battles:

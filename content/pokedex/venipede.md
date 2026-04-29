@@ -1,6 +1,6 @@
 ---
 title: 'Venipede'
-subtitle: 'Its bite injects a potent poison, enough to paralyze large bird Pokemon that try to prey on it.'
+subtitle: 'Its bite injects a potent poison, enough to paralyze large bird Pokémon that try to prey on it.'
 date: 2026-04-28
 dex_number: '543'
 skins: ['Shiny']

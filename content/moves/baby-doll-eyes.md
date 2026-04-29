@@ -10,7 +10,7 @@ pp: '30'
 priority: '1'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user stares at the target with its baby-doll eyes, which lowers its Attack stat. This move always goes first.'
 learners_level:
   - { name: 'Zeinova Alomomola', level: '0' }

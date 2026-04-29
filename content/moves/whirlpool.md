@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user traps the target in a violent swirling whirlpool for four to five turns.'
 learners_level:
   - { name: 'Kyoto Tentacruel', level: '0' }

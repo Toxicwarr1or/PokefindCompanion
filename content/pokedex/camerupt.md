@@ -1,6 +1,6 @@
 ---
 title: 'Camerupt'
-subtitle: 'Camerupt has a volcano inside its body. Magma of 18,000 degrees F courses through its body. Occasionally, the humps on this Pokemon''s back erupt, spewing the superheated magma.'
+subtitle: 'Camerupt has a volcano inside its body. Magma of 18,000 degrees F courses through its body. Occasionally, the humps on this Pokémon''s back erupt, spewing the superheated magma.'
 date: 2026-04-28
 dex_number: '323'
 skins: ['Shiny']

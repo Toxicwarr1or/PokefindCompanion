@@ -1,6 +1,6 @@
 ---
 title: 'Wormadam'
-subtitle: 'When Burmy evolved, its cloak became a part of this Pokemon''s body. The cloak is never shed.'
+subtitle: 'When Burmy evolved, its cloak became a part of this Pokémon''s body. The cloak is never shed.'
 date: 2026-04-28
 dex_number: '413'
 skins: ['Shiny', 'Christmas']

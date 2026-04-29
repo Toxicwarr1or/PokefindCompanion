@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user torments and enrages the target, making it incapable of using the same move twice in a row.'
 learners_level:
   - { name: 'Jataro Octillery', level: '1' }

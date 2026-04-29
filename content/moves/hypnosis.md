@@ -9,7 +9,7 @@ accuracy: '60'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user employs hypnotic suggestion to make the target fall into a deep sleep.'
 learners_level:
   - { name: 'Haikou Chimecho', level: '0' }

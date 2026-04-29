@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user employs its psychic power to switch stat changes with the target.'
 learners_level:
   - { name: 'Zeinova Audino', level: '65' }

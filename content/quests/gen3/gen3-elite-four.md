@@ -8,7 +8,7 @@ slug: 'gen3-elite-four'
 description: 'You arrive at Victor Island to participate in the Pokémon League!'
 source_file: 'gen3-elite-four.json'
 video_id: 'EDdqMAlGi6o'
-video_title: 'PokeFind Elite Four (Elite Four: Generation 3)'
+video_title: 'PokéFind Elite Four (Elite Four: Generation 3)'
 start:
   npc: 'League Official'
   town: 'Victor Island'
@@ -117,5 +117,5 @@ steps:
       - '10× Focus Sash'
       - '15× Rare Candy'
       - '3× Max PP'
-      - 'Achievement: pokemon_world_a_new_champion'
+      - 'Achievement: pokémon_world_a_new_champion'
 ---

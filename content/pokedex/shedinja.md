@@ -1,6 +1,6 @@
 ---
 title: 'Shedinja'
-subtitle: 'Shedinja''s hard body doesn''t move - not even a twitch. In fact, its body appears to be merely a hollow shell. It is believed that this Pokemon will steal the spirit of anyone peering into its hollow body from its back.'
+subtitle: 'Shedinja''s hard body doesn''t move - not even a twitch. In fact, its body appears to be merely a hollow shell. It is believed that this Pokémon will steal the spirit of anyone peering into its hollow body from its back.'
 date: 2026-04-28
 dex_number: '292'
 skins: ['Shiny', 'Christmas', 'Easter']

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 crit_rate: '+1'
 effect: 'The target is hammered with a large pincer. Critical hits land more easily.'
 learners_level:

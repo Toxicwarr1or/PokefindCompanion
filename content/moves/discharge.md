@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user strikes everything around it by letting loose a flare of electricity. This may also cause paralysis.'
 learners_level:
   - { name: 'Jataro Sunflora', level: '0' }

@@ -5,10 +5,10 @@ layout: questguide
 gen: 3
 quest_key: 'bitter6'
 slug: 'bitter6'
-description: 'You hear of a great place to train your Pokemon, upon arriving there you bump into your rival Lincoln and he wants to battle.'
+description: 'You hear of a great place to train your Pokémon, upon arriving there you bump into your rival Lincoln and he wants to battle.'
 source_file: 'bitter6.json'
 video_id: 'rk2WgVrIkg4'
-video_title: 'PokeFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Lincoln'
   town: 'Icy Plains'

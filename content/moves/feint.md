@@ -10,7 +10,7 @@ pp: '10'
 priority: '2'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack hits a target using a move such as Protect or Detect. This also lifts the effects of those moves.'
 learners_level:
   - { name: 'Zeinova Bouffalant', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This relentless attack does massive damage to a target affected by status conditions.'
 learners_level:
   - { name: 'Kyoto Aerodactyl', level: '0' }

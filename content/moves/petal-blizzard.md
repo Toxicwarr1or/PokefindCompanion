@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 6'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user stirs up a violent petal blizzard and attacks everything around it.'
 learners_level:
   - { name: 'Jataro Sunflora', level: '0' }

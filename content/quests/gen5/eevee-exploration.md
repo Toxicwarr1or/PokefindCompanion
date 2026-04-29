@@ -9,7 +9,7 @@ description: 'Everybody loves Eevee, but there is much to learn about this Poké
 author: 'Toxicwarr1or'
 source_file: 'eevee_exploration.json'
 video_id: 'oYrIOG8kaDQ'
-video_title: 'Eevee Exploration (Pokefind: Zeinova Side Quest)'
+video_title: 'Eevee Exploration (Pokéfind: Zeinova Side Quest)'
 start:
   npc: 'Eve'
   description: 'Talk to Eve at Findale Harbor. (Hint: She is neighbors with Move Relearner)'

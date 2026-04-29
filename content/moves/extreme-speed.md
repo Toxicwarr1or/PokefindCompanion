@@ -10,7 +10,7 @@ pp: '5'
 priority: '2'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user charges the target at blinding speed. This move always goes first.'
 learners_level:
   - { name: 'Togekiss', level: '1' }

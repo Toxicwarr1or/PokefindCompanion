@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user gazes at the target rather charmingly, making it less wary. This harshly lowers its Attack stat.'
 learners_level:
   - { name: 'Jataro Dunsparce', level: '0' }

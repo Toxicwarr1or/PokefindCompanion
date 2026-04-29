@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user strikes with a simultaneous three-beam attack. May also burn, freeze, or paralyze the target.'
 learners_level:
   - { name: 'Alolan Dugtrio', level: '1' }

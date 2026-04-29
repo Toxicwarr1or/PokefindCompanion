@@ -10,7 +10,7 @@ pp: '20'
 priority: '1'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user covers the target in a combustible powder. If the target uses a Fire-type move, the powder explodes and damages the target.'
 learners_egg: ['Shiloh Bastiodon']
 ---

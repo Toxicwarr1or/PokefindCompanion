@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '10%'
 effect: 'The user clubs the target with a bone. This may also make the target flinch.'
 learners_level:

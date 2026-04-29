@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is jabbed with a sharply pointed horn to inflict damage.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

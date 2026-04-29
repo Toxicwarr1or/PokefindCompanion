@@ -1,6 +1,6 @@
 ---
 title: 'Gothorita'
-subtitle: 'They use hypnosis to control people and Pokemon. Tales of Gothorita leading people astray are told in every corner.'
+subtitle: 'They use hypnosis to control people and Pokémon. Tales of Gothorita leading people astray are told in every corner.'
 date: 2026-04-28
 dex_number: '575'
 skins: ['Shiny', 'Thanksgiving']

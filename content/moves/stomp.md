@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '30%'
 effect: 'The target is stomped with a big foot. This may also make the target flinch.'
 learners_level:

@@ -8,7 +8,7 @@ slug: 'bitter1'
 description: 'You meet another new trainer starting their journey to explore the Haikou region.'
 source_file: 'bitter1.json'
 video_id: 'Dk3Q2K7PJUM'
-video_title: 'PokeFind Bitter Rivals Part 1 - Part 3 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part 1 - Part 3 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Casey'
   x: -336.5

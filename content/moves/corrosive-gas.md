@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '40'
 contact: 'No'
 generation: 'Gen 8'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 hits: '0'
 effect: 'No Description'
 learners_level:

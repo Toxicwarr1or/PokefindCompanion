@@ -1,6 +1,6 @@
 ---
 title: 'Spheal'
-subtitle: 'Spheal is much faster rolling than  walking to get around. When groups of this Pokemon eat, they all clap at once to show their pleasure. Because of this, their mealtimes are noisy.'
+subtitle: 'Spheal is much faster rolling than  walking to get around. When groups of this Pokémon eat, they all clap at once to show their pleasure. Because of this, their mealtimes are noisy.'
 date: 2026-04-28
 dex_number: '363'
 skins: ['Shiny', 'Halloween']

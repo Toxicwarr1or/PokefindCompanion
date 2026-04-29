@@ -1,6 +1,6 @@
 ---
 title: 'Vibrava'
-subtitle: 'To make prey faint, Vibrava generates ultrasonic waves by vigorously making its two wings vibrate. This Pokemon''s ultrasonic waves are so powerful, they can bring on headaches in people.'
+subtitle: 'To make prey faint, Vibrava generates ultrasonic waves by vigorously making its two wings vibrate. This Pokémon''s ultrasonic waves are so powerful, they can bring on headaches in people.'
 date: 2026-04-28
 dex_number: '329'
 skins: ['Shiny']

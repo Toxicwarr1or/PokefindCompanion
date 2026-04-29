@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user intimidates the target with the pattern on its belly to cause paralysis.'
 learners_level:
   - { name: 'Haikou Swellow', level: '1' }

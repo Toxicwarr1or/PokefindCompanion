@@ -1,6 +1,6 @@
 ---
 title: 'Blaziken'
-subtitle: 'In battle, Blaziken blows out intense flames from its wrists and attacks foes courageously. The stronger the foe, the more intensely this Pokemon''s wrists burn.'
+subtitle: 'In battle, Blaziken blows out intense flames from its wrists and attacks foes courageously. The stronger the foe, the more intensely this Pokémon''s wrists burn.'
 date: 2026-04-28
 dex_number: '257'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Thanksgiving', 'Shadow', 'Aura']

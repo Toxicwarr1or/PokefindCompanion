@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user materializes an odd psychic wave to attack the target. This attack does physical damage.'
 learners_level:
   - { name: 'Alolan Exeggutor', level: '17' }

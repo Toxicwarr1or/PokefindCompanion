@@ -10,7 +10,7 @@ pp: '15'
 priority: '-3'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it''s heating up its beak results in a burn.'
 learners_level:
   - { name: 'Kyoto Dodrio', level: '0' }

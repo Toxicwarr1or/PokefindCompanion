@@ -5,10 +5,10 @@ layout: questguide
 gen: 3
 quest_key: 'bitter8'
 slug: 'bitter8'
-description: 'You travel to Targaryen Keep in search of Dragon type Pokemon. While exploring this mythical town you cross paths with Casey who seems to be becoming quite the trainer.'
+description: 'You travel to Targaryen Keep in search of Dragon type Pokémon. While exploring this mythical town you cross paths with Casey who seems to be becoming quite the trainer.'
 source_file: 'bitter8.json'
 video_id: 'rk2WgVrIkg4'
-video_title: 'PokeFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Casey'
   x: 703.5

@@ -1,6 +1,6 @@
 ---
 title: 'Spinda'
-subtitle: 'All the Spinda that exist in the world are said to have utterly unique spot patterns. The shaky, tottering steps of this Pokemon give it the appearance of dancing.'
+subtitle: 'All the Spinda that exist in the world are said to have utterly unique spot patterns. The shaky, tottering steps of this Pokémon give it the appearance of dancing.'
 date: 2026-04-28
 dex_number: '327'
 skins: ['Shiny', 'Halloween']

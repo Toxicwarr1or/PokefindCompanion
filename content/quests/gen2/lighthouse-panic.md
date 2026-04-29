@@ -5,7 +5,7 @@ layout: questguide
 gen: 2
 quest_key: 'LIGHTHOUSE_PANIC'
 slug: 'lighthouse-panic'
-description: 'The Pokemon who keeps the Cruxirt Port Lighthouse running has fallen ill.'
+description: 'The Pokémon who keeps the Cruxirt Port Lighthouse running has fallen ill.'
 source_file: 'lighthouse-panic.json'
 start:
   npc: 'Jerry'

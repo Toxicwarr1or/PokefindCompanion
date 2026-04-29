@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user strikes the target with a burning lash. This also lowers the target''s Defense stat.'
 learners_level:
   - { name: 'Shiloh Torterra', level: '0' }

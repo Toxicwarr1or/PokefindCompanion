@@ -12,7 +12,7 @@ video_id: 'IT2UOq83bdA'
 video_title: 'Main Quest 11 - ...Together We Fall'
 start:
   npc: 'Astrid'
-  description: 'Talk to Astrid and H.A.P.P.Y. outside Voltaris Pokecenter.'
+  description: 'Talk to Astrid and H.A.P.P.Y. outside Voltaris Pokécenter.'
   town: 'Voltaris Island'
   x: 1500.5
   "y": 49.0
@@ -82,7 +82,7 @@ steps:
       z: 766.5
       label: 'Jasmine'
       town: 'Sparkmont City'
-  - text: 'Give Jasmine 64 Poke Balls, 64 Great Balls, 64 Ultra Balls and 1 Heavy Ball.'
+  - text: 'Give Jasmine 64 Poké Balls, 64 Great Balls, 64 Ultra Balls and 1 Heavy Ball.'
     location:
       kind: 'npc'
       x: 1497.5

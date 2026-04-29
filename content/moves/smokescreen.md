@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user releases an obscuring cloud of smoke or ink. This lowers the target''s accuracy.'
 learners_level:
   - { name: 'Haikou Torkoal', level: '0' }

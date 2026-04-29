@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'The user hurls hard rocks at the target. Two to five rocks are launched in a row.'
 learners_level:

@@ -46,7 +46,7 @@ steps:
       x: 977.0
       "y": 64.0
       z: 63.1
-      label: 'pokemon1'
+      label: 'pokémon1'
       town: 'Breezelton Village'
   - text: 'Continue through the cave and fight the remaining guardian Pokémon'
     location:
@@ -54,7 +54,7 @@ steps:
       x: 942.1
       "y": 50.0
       z: 52.2
-      label: 'pokemon2'
+      label: 'pokémon2'
   - text: 'Continue deeper into the cave'
     location:
       kind: 'region'

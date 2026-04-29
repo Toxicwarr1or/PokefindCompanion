@@ -1,6 +1,6 @@
 ---
 title: 'Mime Jr.'
-subtitle: 'It habitually mimics foes. Once mimicked, the foe cannot take its eyes off this Pokemon.'
+subtitle: 'It habitually mimics foes. Once mimicked, the foe cannot take its eyes off this Pokémon.'
 date: 2026-04-28
 dex_number: '439'
 skins: ['Shiny']

@@ -1,6 +1,6 @@
 ---
 title: 'Sentret'
-subtitle: 'A very cautious Pokemon, it raises itself up using its tail to get a better view of its surroundings.'
+subtitle: 'A very cautious Pokémon, it raises itself up using its tail to get a better view of its surroundings.'
 date: 2026-04-28
 dex_number: '161'
 skins: ['Shiny']

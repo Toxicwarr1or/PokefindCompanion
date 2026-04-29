@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The additional effects of this attack depend upon where it was used.'
 learners_level:
   - { name: 'Audino', level: '25' }

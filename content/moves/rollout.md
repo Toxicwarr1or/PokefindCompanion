@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user continually rolls into the target over five turns. It becomes more powerful each time it hits.'
 learners_level:
   - { name: 'Haikou Metagross', level: '1' }

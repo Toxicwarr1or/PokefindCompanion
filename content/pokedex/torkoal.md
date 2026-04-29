@@ -1,6 +1,6 @@
 ---
 title: 'Torkoal'
-subtitle: 'Torkoal digs through mountains in search of coal. If it finds some, it fills hollow spaces on its shell with the coal and burns it. If it is attacked, this Pokemon spouts thick black smoke to beat a retreat.'
+subtitle: 'Torkoal digs through mountains in search of coal. If it finds some, it fills hollow spaces on its shell with the coal and burns it. If it is attacked, this Pokémon spouts thick black smoke to beat a retreat.'
 date: 2026-04-28
 dex_number: '324'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Aura']

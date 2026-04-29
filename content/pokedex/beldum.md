@@ -1,6 +1,6 @@
 ---
 title: 'Beldum'
-subtitle: 'Instead of blood, a powerful magnetic force courses throughout Beldum''s body. This Pokemon communicates with others by sending controlled pulses of magnetism.'
+subtitle: 'Instead of blood, a powerful magnetic force courses throughout Beldum''s body. This Pokémon communicates with others by sending controlled pulses of magnetism.'
 date: 2026-04-28
 dex_number: '374'
 skins: ['Shiny', 'Aura']

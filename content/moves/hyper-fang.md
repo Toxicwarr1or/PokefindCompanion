@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '10%'
 effect: 'The user bites hard on the target with its sharp front fangs. This may also make the target flinch.'
 learners_level:

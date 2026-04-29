@@ -9,7 +9,7 @@ accuracy: '75'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user scatters a big cloud of sleep-inducing dust around the target.'
 learners_level:
   - { name: 'Victreebel', level: '1' }

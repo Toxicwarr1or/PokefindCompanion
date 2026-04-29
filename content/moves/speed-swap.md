@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user exchanges Speed stats with the target.'
 learners_level:
   - { name: 'Alolan Raichu', level: '1' }

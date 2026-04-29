@@ -1,6 +1,6 @@
 ---
 title: 'Kabuto'
-subtitle: 'A Pokemon that was resurrected from a fossil found in what was once the ocean floor eons ago.'
+subtitle: 'A Pokémon that was resurrected from a fossil found in what was once the ocean floor eons ago.'
 date: 2026-04-28
 dex_number: '140'
 skins: ['Shiny']

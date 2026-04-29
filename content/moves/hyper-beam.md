@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with a powerful beam. The user can''t move on the next turn.'
 learners_level:
   - { name: 'Haikou Wailord', level: '1' }

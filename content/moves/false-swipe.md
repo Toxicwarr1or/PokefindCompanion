@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '40'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A restrained attack that prevents the target from fainting. The target is left with at least 1 HP.'
 learners_level:
   - { name: 'Leavanny', level: '1' }

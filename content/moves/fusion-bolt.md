@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user throws down a giant lightning bolt. This move''s power is increased when influenced by an enormous flame.'
 learners_level:
   - { name: 'Zekrom', level: '50' }

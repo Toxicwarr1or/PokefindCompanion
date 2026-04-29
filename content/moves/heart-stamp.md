@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '30%'
 effect: 'The user unleashes a vicious blow after its cute act makes the target less wary. This may also make the target flinch.'
 learners_level:

@@ -463,7 +463,7 @@ forms:
         method: 'Use Dusk Stone'
   - name: 'Shiloh'
     kind: 'form'
-    description: 'Bonds between these Pokemon are very strong. It protects the safety of its pack by tricking its opponents.'
+    description: 'Bonds between these Pokémon are very strong. It protects the safety of its pack by tricking its opponents.'
     types: ['Rock', 'Fairy']
     abilities: ['Illusion', 'Sand Rush']
     hidden_ability: 'Technician'

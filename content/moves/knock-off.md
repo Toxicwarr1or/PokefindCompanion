@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slaps down the target''s held item, and that item can''t be used in that battle. The move does more damage if the target has a held item.'
 learners_level:
   - { name: 'Banette', level: '1' }

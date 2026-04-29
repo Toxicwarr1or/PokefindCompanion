@@ -1,6 +1,6 @@
 ---
 title: 'Aggron'
-subtitle: 'Aggron claims an entire mountain as its own territory. It mercilessly beats up anything that violates its environment. This Pokemon vigilantly patrols its territory at all times.'
+subtitle: 'Aggron claims an entire mountain as its own territory. It mercilessly beats up anything that violates its environment. This Pokémon vigilantly patrols its territory at all times.'
 date: 2026-04-28
 dex_number: '306'
 skins: ['Shiny', 'Shadow', 'Aura', 'Modeler', 'Fusemon']

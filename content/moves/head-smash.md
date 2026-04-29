@@ -9,7 +9,7 @@ accuracy: '80'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-50%'
 effect: 'The user attacks the target with a hazardous, full-power headbutt. This also damages the user terribly.'
 learners_level:

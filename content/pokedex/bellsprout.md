@@ -1,6 +1,6 @@
 ---
 title: 'Bellsprout'
-subtitle: 'A carnivorous Pokemon that traps and eats bugs. It uses its root feet to soak up needed moisture.'
+subtitle: 'A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture.'
 date: 2026-04-28
 dex_number: '69'
 skins: ['Shiny']

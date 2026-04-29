@@ -1,6 +1,6 @@
 ---
 title: 'Zigzagoon'
-subtitle: 'Zigzagoon restlessly wanders everywhere at all times. This Pokemon does so because it is very curious. It becomes interested in anything that it happens to see.'
+subtitle: 'Zigzagoon restlessly wanders everywhere at all times. This Pokémon does so because it is very curious. It becomes interested in anything that it happens to see.'
 date: 2026-04-28
 dex_number: '263'
 skins: ['Shiny']

@@ -14,7 +14,7 @@ start:
   "y": 38.0
   z: 599.5
 steps:
-  - text: 'Find Brayden somewhere near the PokeCenter'
+  - text: 'Find Brayden somewhere near the PokéCenter'
     location:
       kind: 'battle'
       town: 'Arc City'
@@ -81,7 +81,7 @@ steps:
             level: 50
           - species: 'Swellow'
             level: 51
-  - text: 'Talk to Brayden in front of the PokeMart'
+  - text: 'Talk to Brayden in front of the PokéMart'
     location:
       kind: 'npc'
       x: -871.5

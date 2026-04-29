@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target with a bursting flame. The bursting flame damages Pokémon next to the target as well.'
 learners_level:
   - { name: 'Haikou Ludicolo', level: '0' }

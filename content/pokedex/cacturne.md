@@ -1,6 +1,6 @@
 ---
 title: 'Cacturne'
-subtitle: 'During the daytime, Cacturne remains unmoving so that it does not lose any moisture to the harsh desert sun. This Pokemon becomes active at night when the temperature drops.'
+subtitle: 'During the daytime, Cacturne remains unmoving so that it does not lose any moisture to the harsh desert sun. This Pokémon becomes active at night when the temperature drops.'
 date: 2026-04-28
 dex_number: '332'
 skins: ['Shiny', 'Halloween']

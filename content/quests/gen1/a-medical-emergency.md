@@ -5,7 +5,7 @@ layout: questguide
 gen: 1
 quest_key: 'a_medical_emergency'
 slug: 'a-medical-emergency'
-description: 'Team Rocket has stolen the medical supplies at the Wyvern Pokemon Center. It is up to you to infiltrate Team Rocket''s warehouse and return the medical supplies to the Pokemon Center.'
+description: 'Team Rocket has stolen the medical supplies at the Wyvern Pokémon Center. It is up to you to infiltrate Team Rocket''s warehouse and return the medical supplies to the Pokémon Center.'
 author: 'bunstop, lego121212, luk_aszek'
 source_file: 'a-medical-emergency.json'
 start:
@@ -221,7 +221,7 @@ steps:
             level: 100
           - species: 'Dragonite'
             level: 100
-  - text: 'Talk to Nurse Iris at the Wyvern Village Pokemon Center'
+  - text: 'Talk to Nurse Iris at the Wyvern Village Pokémon Center'
     location:
       kind: 'npc'
       x: 833.0

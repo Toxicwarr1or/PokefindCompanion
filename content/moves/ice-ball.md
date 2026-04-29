@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target for five turns. The move''s power increases each time it hits.'
 learners_level:
   - { name: 'Jataro Donphan', level: '0' }

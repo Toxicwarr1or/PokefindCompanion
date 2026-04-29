@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user catches the target off guard and swaps its held item with its own.'
 learners_level:
   - { name: 'Zeinova Beheeyem', level: '0' }

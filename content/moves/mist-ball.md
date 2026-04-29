@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A mist-like flurry of down envelops and damages the target. This may also lower the target''s Sp. Atk stat.'
 learners_level:
   - { name: 'Latias', level: '24' }

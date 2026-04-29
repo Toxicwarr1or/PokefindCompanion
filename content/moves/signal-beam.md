@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks with a sinister beam of light. This may also confuse the target.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

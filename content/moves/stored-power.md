@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target with stored power. The more the user''s stats are raised, the greater the move''s power.'
 learners_level:
   - { name: 'Haikou Chimecho', level: '0' }

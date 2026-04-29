@@ -1,6 +1,6 @@
 ---
 title: 'Tropius'
-subtitle: 'The bunches of fruit around Tropius''s neck are very popular with children. This Pokemon loves fruit, and eats it continuously. Apparently, its love for fruit resulted in its own outgrowth of fruit.'
+subtitle: 'The bunches of fruit around Tropius''s neck are very popular with children. This Pokémon loves fruit, and eats it continuously. Apparently, its love for fruit resulted in its own outgrowth of fruit.'
 date: 2026-04-28
 dex_number: '357'
 skins: ['Shiny', 'Aura']

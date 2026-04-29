@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks and steals the target''s held item simultaneously. The user can''t steal anything if it already holds an item.'
 learners_level:
   - { name: 'Kecleon', level: '1' }

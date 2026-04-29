@@ -1,6 +1,6 @@
 ---
 title: 'Surskit'
-subtitle: 'From the tips of its feet, Surskit secretes an oil that enables it to walk on water as if it were skating. This Pokemon feeds on microscopic organisms in ponds and lakes.'
+subtitle: 'From the tips of its feet, Surskit secretes an oil that enables it to walk on water as if it were skating. This Pokémon feeds on microscopic organisms in ponds and lakes.'
 date: 2026-04-28
 dex_number: '283'
 skins: ['Shiny']

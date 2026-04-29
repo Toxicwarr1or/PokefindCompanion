@@ -1,6 +1,6 @@
 ---
 title: 'Grumpig'
-subtitle: 'Grumpig uses the black pearls on its body to amplify its psychic power waves for gaining total control over its foe. When this Pokemon uses its special power, its snorting breath grows labored.'
+subtitle: 'Grumpig uses the black pearls on its body to amplify its psychic power waves for gaining total control over its foe. When this Pokémon uses its special power, its snorting breath grows labored.'
 date: 2026-04-28
 dex_number: '326'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine']

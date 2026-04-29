@@ -10,7 +10,7 @@ pp: '30'
 priority: '1'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user extends its shadow and attacks the target from behind. This move always goes first.'
 learners_level:
   - { name: 'Kyoto Tentacruel', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '30%'
 effect: 'The user slams the target with its steel-hard head. This may also make the target flinch.'
 learners_level:

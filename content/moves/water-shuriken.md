@@ -10,7 +10,7 @@ pp: '20'
 priority: '1'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'The user hits the target with throwing stars two to five times in a row. This move always goes first.'
 learners_level:

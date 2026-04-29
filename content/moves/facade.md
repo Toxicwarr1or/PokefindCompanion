@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack move doubles its power if the user is poisoned, burned, or paralyzed.'
 learners_level:
   - { name: 'Haikou Wailord', level: '1' }

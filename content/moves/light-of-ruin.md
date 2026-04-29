@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-50%'
 effect: 'Drawing power from the Eternal Flower, the user fires a powerful beam of light. This also damages the user quite a lot.'
 learners_level:

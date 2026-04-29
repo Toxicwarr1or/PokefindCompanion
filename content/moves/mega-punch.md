@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is slugged by a punch thrown with muscle-packed power.'
 learners_level:
   - { name: 'Haikou Ludicolo', level: '0' }

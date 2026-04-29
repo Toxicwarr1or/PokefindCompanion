@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is struck with large, imposing wings spread wide to inflict damage.'
 learners_level:
   - { name: 'Zeinova Serperior', level: '0' }

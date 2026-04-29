@@ -8,9 +8,9 @@ slug: 'gen4-main-quest-2-updated'
 description: 'Thick black smoke can be seen above Woodburn. Go and see if you can help!'
 source_file: 'gen4-main-quest-2_updated.json'
 video_id: '3uBPavO-E3s'
-video_title: 'PokeFind Shadow Quest 2'
+video_title: 'PokéFind Shadow Quest 2'
 start:
-  npc: 'Pokemon Ranger'
+  npc: 'Pokémon Ranger'
   x: 270.5
   "y": 68.0
   z: 714.5
@@ -22,13 +22,13 @@ steps:
       "y": 43.0
       z: 727.5
       label: 'Officer Reynolds'
-  - text: 'Rescue all the pokemon on the ground trapped by the fire'
+  - text: 'Rescue all the pokémon on the ground trapped by the fire'
     location:
       kind: 'npc'
       x: 270.5
       "y": 68.0
       z: 714.5
-      label: 'Pokemon Ranger'
+      label: 'Pokémon Ranger'
   - text: 'Make your way to Wald''s house'
     location:
       kind: 'npc'
@@ -36,13 +36,13 @@ steps:
       "y": 70.0
       z: 766.5
       label: 'Wald'
-  - text: 'Use a Water pokemon to rescue Wald'
+  - text: 'Use a Water pokémon to rescue Wald'
     location:
       kind: 'npc'
       x: 270.5
       "y": 68.0
       z: 714.5
-      label: 'Pokemon Ranger'
+      label: 'Pokémon Ranger'
   - text: 'Go to Wald'
     location:
       kind: 'npc'

@@ -1,6 +1,6 @@
 ---
 title: 'Articuno'
-subtitle: 'A legendary bird Pokemon that is said to appear to doomed people who are lost in icy mountains.'
+subtitle: 'A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains.'
 date: 2026-04-28
 dex_number: '144'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura', 'Fusemon']

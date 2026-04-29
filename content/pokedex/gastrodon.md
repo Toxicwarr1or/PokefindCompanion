@@ -11,7 +11,7 @@ forms:
     abilities: ['Sticky Hold', 'Storm Drain']
     hidden_ability: 'Sand Force'
     sprite: 'images/pokedex/gastrodon.png'
-    note: 'The pink-bodied West Sea variant. Identical stats and types to the East Sea form; only the appearance differs by region of origin. Pokefind ships a single Gastrodon model, so the 3D viewer shows the same model on both form tabs.'
+    note: 'The pink-bodied West Sea variant. Identical stats and types to the East Sea form; only the appearance differs by region of origin. Pokéfind ships a single Gastrodon model, so the 3D viewer shows the same model on both form tabs.'
     egg_groups: ['amorphous', 'water 1']
     growth_rate: 'medium_fast'
     height_m: 0.9
@@ -405,7 +405,7 @@ forms:
     abilities: ['Sticky Hold', 'Storm Drain']
     hidden_ability: 'Sand Force'
     sprite: 'images/pokedex/gastrodon-east.png'
-    note: 'The blue-bodied East Sea variant. Identical stats and types to the West Sea form; only the appearance differs by region of origin. Pokefind ships a single Gastrodon model, so the 3D viewer shows the same model on both form tabs.'
+    note: 'The blue-bodied East Sea variant. Identical stats and types to the West Sea form; only the appearance differs by region of origin. Pokéfind ships a single Gastrodon model, so the 3D viewer shows the same model on both form tabs.'
     egg_groups: ['amorphous', 'water 1']
     growth_rate: 'medium_fast'
     height_m: 0.9
@@ -417,7 +417,7 @@ forms:
       spa: 92
       spd: 82
       spe: 39
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokémon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
     competitive_sets:
       - name: 'Curse'
         tier: 'UU'

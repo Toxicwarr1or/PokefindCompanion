@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '20%'
 effect: 'The user charges at the target and may make it flinch.'
 learners_level:

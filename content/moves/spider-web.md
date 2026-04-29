@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user ensnares the target with thin, gooey silk so it can''t flee from battle.'
 learners_level:
   - { name: 'Galvantula', level: '1' }

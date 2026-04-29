@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is crushed with great force. The more HP the target has left, the greater this move''s power.'
 learners_level:
   - { name: 'Regigigas', level: '75' }

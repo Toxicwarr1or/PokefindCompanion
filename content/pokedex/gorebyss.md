@@ -1,6 +1,6 @@
 ---
 title: 'Gorebyss'
-subtitle: 'Gorebyss lives in the southern seas at extreme depths. Its body is built to withstand the enormous pressure of water at incredible depths. Because of this, this Pokemon''s body is unharmed by ordinary attacks.'
+subtitle: 'Gorebyss lives in the southern seas at extreme depths. Its body is built to withstand the enormous pressure of water at incredible depths. Because of this, this Pokémon''s body is unharmed by ordinary attacks.'
 date: 2026-04-28
 dex_number: '368'
 skins: ['Shiny']

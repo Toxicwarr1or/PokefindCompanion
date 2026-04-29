@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 crit_rate: '+1'
 effect: 'The user crashes into its target while rotating its body like a drill. Critical hits land more easily.'
 learners_level:

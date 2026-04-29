@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user trades held items with the target faster than the eye can follow.'
 learners_level:
   - { name: 'Jataro Porygon2', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '30%'
 effect: 'The user crushes its target by rolling over the target with its rolled-up body. This may also make the target flinch.'
 learners_level:

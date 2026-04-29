@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user plays rough with the target and attacks it. This may also lower the target''s Attack stat.'
 learners_level:
   - { name: 'Shiloh Gallade', level: '0' }

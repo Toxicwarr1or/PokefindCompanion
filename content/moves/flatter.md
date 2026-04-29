@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Flattery is used to confuse the target. However, this also raises the target''s Sp. Atk stat.'
 learners_level:
   - { name: 'Zeinova Gothitelle', level: '0' }

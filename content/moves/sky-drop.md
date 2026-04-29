@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky.'
 learners_level:
   - { name: 'Aerodactyl', level: '49' }

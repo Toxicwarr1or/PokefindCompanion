@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 crit_rate: '+1'
 effect: 'The user handles a sharp leaf like a sword and attacks by cutting its target. Critical hits land more easily.'
 learners_level:

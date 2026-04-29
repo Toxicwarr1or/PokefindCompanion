@@ -1,6 +1,6 @@
 ---
 title: 'Swablu'
-subtitle: 'Swablu has light and fluffy wings that are like cottony clouds. This Pokemon is not frightened of people. It lands on the heads of people and sits there like a cotton-fluff hat.'
+subtitle: 'Swablu has light and fluffy wings that are like cottony clouds. This Pokémon is not frightened of people. It lands on the heads of people and sits there like a cotton-fluff hat.'
 date: 2026-04-28
 dex_number: '333'
 skins: ['Shiny', 'Valentine']

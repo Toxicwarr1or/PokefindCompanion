@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '10%'
 effect: 'The user attacks with an odd, unseeable power. This may also make the target flinch.'
 learners_level:

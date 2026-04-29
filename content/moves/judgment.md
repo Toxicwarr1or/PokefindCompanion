@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user releases countless shots of light at the target. This move''s type varies depending on the kind of Plate the user is holding.'
 learners_level:
   - { name: 'Arceus', level: '100' }

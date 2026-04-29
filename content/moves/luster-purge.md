@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lets loose a damaging burst of light. This may also lower the target''s Sp. Def stat.'
 learners_level:
   - { name: 'Latios', level: '24' }

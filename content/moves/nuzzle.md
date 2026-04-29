@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by nuzzling its electrified cheeks against the target. This also leaves the target with paralysis.'
 learners_level:
   - { name: 'Jataro Meganium', level: '0' }

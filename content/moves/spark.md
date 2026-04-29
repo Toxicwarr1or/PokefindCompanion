@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user throws an electrically charged tackle at the target. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Kyoto Slowbro', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks with a prehistoric power. This may also raise all the user''s stats at once.'
 learners_level:
   - { name: 'Jataro Kingdra', level: '0' }

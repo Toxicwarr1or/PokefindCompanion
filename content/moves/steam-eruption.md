@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '5'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user immerses the target in superheated steam. This may also leave the target with a burn.'
 learners_level:
   - { name: 'Shiloh Spiritomb', level: '40' }

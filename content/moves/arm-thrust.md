@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'The user lets loose a flurry of open-palmed arm thrusts that hit two to five times in a row.'
 learners_level:

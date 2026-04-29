@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target at full power. The attack''s recoil harshly lowers the user''s Sp. Atk stat.'
 learners_level:
   - { name: 'Deoxys', level: '67' }

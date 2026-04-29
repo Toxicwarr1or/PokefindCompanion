@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'An all-out attack that becomes more powerful the less HP the user has.'
 learners_level:
   - { name: 'Haikou Wailord', level: '1' }

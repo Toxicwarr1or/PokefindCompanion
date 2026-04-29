@@ -1,6 +1,6 @@
 ---
 title: 'Spoink'
-subtitle: 'Spoink bounces around on its tail. The shock of its bouncing makes its heart pump. As a result, this Pokemon cannot afford to stop bouncing - if it stops, its heart will stop.'
+subtitle: 'Spoink bounces around on its tail. The shock of its bouncing makes its heart pump. As a result, this Pokémon cannot afford to stop bouncing - if it stops, its heart will stop.'
 date: 2026-04-28
 dex_number: '325'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine']

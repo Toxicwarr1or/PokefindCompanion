@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is stabbed with a tentacle or arm steeped in poison. This may also poison the target.'
 learners_level:
   - { name: 'Farfetch''d', level: '1' }

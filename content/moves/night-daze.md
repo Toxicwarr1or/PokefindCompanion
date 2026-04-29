@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lets loose a pitch-black shock wave at its target. This may also lower the target''s accuracy.'
 learners_level:
   - { name: 'Haikou Chimecho', level: '0' }

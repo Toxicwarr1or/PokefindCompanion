@@ -1,6 +1,6 @@
 ---
 title: 'Reshiram'
-subtitle: 'This Pokemon appears in legends. It sends flames into the air from its tail, burning up everything around it.'
+subtitle: 'This Pokémon appears in legends. It sends flames into the air from its tail, burning up everything around it.'
 date: 2026-04-28
 dex_number: '643'
 skins: ['Shiny', 'Christmas']

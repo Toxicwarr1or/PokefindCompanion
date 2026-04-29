@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is taunted into a rage that allows it to use only attack moves for three turns.'
 learners_level:
   - { name: 'Galarian Darmanitan', level: '1' }

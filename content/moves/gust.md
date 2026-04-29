@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A gust of wind is whipped up by wings and launched at the target to inflict damage.'
 learners_level:
   - { name: 'Articuno', level: '1' }

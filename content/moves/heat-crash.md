@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slams its target with its flame-covered body. The more the user outweighs the target, the greater the move''s power.'
 learners_level:
   - { name: 'Shiloh Torterra', level: '0' }

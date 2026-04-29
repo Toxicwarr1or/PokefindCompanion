@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This move prevents the target from using its held item for five turns. Its Trainer is also prevented from using items on it.'
 learners_level:
   - { name: 'Weavile', level: '1' }

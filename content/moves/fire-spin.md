@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target becomes trapped within a fierce vortex of fire that rages for four to five turns.'
 learners_level:
   - { name: 'Kyoto Dodrio', level: '0' }

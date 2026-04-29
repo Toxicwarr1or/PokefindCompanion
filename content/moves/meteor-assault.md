@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '0'
 effect: 'The user attacks wildly with its thick leek. The user can''t move on the next turn, because the force of this move makes it stagger.'
 learners_level:

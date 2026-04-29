@@ -8,7 +8,7 @@ slug: 'gen3-main-quest-2'
 description: 'Ayumu is in need of your help...again. Minoru has taken over a mine and is digging deep!'
 source_file: 'gen3-main-quest-2.json'
 video_id: 't7PQZG8O2Hk'
-video_title: 'PokeFind Find Your Fire (Main Quest 2: Generation 3)'
+video_title: 'PokéFind Find Your Fire (Main Quest 2: Generation 3)'
 start:
   npc: 'Ayumu'
   town: 'Rockford Bay'

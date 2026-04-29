@@ -8,7 +8,7 @@ slug: 'the-historical-discovery'
 description: 'A new museum has opened in the Haikou Region! Talk to Rhian to see if you can help with the Opening ceremony.'
 source_file: 'the-historical-discovery.json'
 video_id: 'oiFWrWyeBc4'
-video_title: 'The Historical Discovery (Pokefind Haikou Quest)'
+video_title: 'The Historical Discovery (Pokéfind Haikou Quest)'
 start:
   npc: 'Rhian'
   town: 'Findview Port'

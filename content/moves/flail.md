@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user flails about aimlessly to attack. The less HP the user has, the greater the move''s power.'
 learners_level:
   - { name: 'Zeinova Alomomola', level: '0' }

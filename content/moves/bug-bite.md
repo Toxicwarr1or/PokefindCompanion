@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user bites the target. If the target is holding a Berry, the user eats it and gains its effect.'
 learners_level:
   - { name: 'Ariados', level: '1' }

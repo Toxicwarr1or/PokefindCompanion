@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lets out a damaging belch at the target. The user must eat a held Berry to use this move.'
 learners_level:
   - { name: 'Kyoto Muk', level: '0' }

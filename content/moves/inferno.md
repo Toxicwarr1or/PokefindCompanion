@@ -9,7 +9,7 @@ accuracy: '50'
 pp: '5'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by engulfing the target in an intense fire. This leaves the target with a burn.'
 learners_level:
   - { name: 'Kyoto Aerodactyl', level: '0' }

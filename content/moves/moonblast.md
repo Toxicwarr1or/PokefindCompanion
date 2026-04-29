@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Borrowing the power of the moon, the user attacks the target. This may also lower the target''s Sp. Atk stat.'
 learners_level:
   - { name: 'Kyoto Exeggutor', level: '1' }

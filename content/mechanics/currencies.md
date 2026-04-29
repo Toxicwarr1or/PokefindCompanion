@@ -3,7 +3,7 @@ title: "Currencies"
 subtitle: "PokéCoins, Tokens, Battle Points, Challenge Coins, Wish Dust, and PokéGems — what each one is, how you earn it, and where it gets spent"
 ---
 
-Pokefind ships **six** distinct currencies that all live on your trainer profile. Three are the day-to-day economy you hit constantly; two are tied to specific gameplay loops; one is a paid premium currency from the web store.
+Pokéfind ships **six** distinct currencies that all live on your trainer profile. Three are the day-to-day economy you hit constantly; two are tied to specific gameplay loops; one is a paid premium currency from the web store.
 
 > The `/coins` command also responds to `/balance`, `/bal`, `/money`, `/eco`, `/economy`, `/tokens`, and `/battlepoints` — they all open the same readout: PokéCoins, Tokens, and Battle Points side-by-side.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Snorunt'
-subtitle: 'Snorunt live in regions with heavy snowfall. In seasons without snow, such as spring and summer, this Pokemon steals away to live quietly among stalactites and stalagmites deep in caverns.'
+subtitle: 'Snorunt live in regions with heavy snowfall. In seasons without snow, such as spring and summer, this Pokémon steals away to live quietly among stalactites and stalagmites deep in caverns.'
 date: 2026-04-28
 dex_number: '361'
 skins: ['Shiny', 'Christmas']

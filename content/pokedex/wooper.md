@@ -1,6 +1,6 @@
 ---
 title: 'Wooper'
-subtitle: 'This Pokemon lives in cold water. It will leave the water to search for food when it gets cold outside.'
+subtitle: 'This Pokémon lives in cold water. It will leave the water to search for food when it gets cold outside.'
 date: 2026-04-28
 dex_number: '194'
 skins: ['Shiny', 'Thanksgiving']

@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '10%'
 effect: 'The user bites with cold-infused fangs. This may also make the target flinch or leave it frozen.'
 learners_level:

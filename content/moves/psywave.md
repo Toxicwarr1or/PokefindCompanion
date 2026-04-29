@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with an odd psychic wave. The attack varies in intensity.'
 learners_level:
   - { name: 'Jataro Crobat', level: '0' }

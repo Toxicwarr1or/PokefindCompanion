@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 healing: '50%'
 effect: 'The user emits a healing pulse that restores the target''s HP by up to half of its max HP.'
 learners_level:

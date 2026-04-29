@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user jumps up high, then strikes with a kick. If the kick misses, the user hurts itself.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

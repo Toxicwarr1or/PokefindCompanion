@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack move varies in power and type depending on the weather.'
 learners_level:
   - { name: 'Jataro Sunflora', level: '0' }

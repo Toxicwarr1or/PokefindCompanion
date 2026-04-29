@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user charges at the target using every bit of its power. The user can''t move on the next turn.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

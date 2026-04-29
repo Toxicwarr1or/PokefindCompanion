@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'The user tells the target a secret, and the target loses its ability to concentrate. This lowers the target''s Sp. Atk stat.'
 learners_level:

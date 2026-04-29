@@ -1,6 +1,6 @@
 ---
 title: 'Flygon'
-subtitle: 'Flygon is nicknamed "the elemental  spirit of the desert." Because its flapping wings whip up a cloud of sand, this Pokemon is always enveloped in a sandstorm while flying.'
+subtitle: 'Flygon is nicknamed "the elemental  spirit of the desert." Because its flapping wings whip up a cloud of sand, this Pokémon is always enveloped in a sandstorm while flying.'
 date: 2026-04-28
 dex_number: '330'
 skins: ['Shiny', 'Christmas', 'Easter', 'Shadow', 'Aura', 'Modeler']

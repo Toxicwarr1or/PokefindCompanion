@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-33%'
 effect: 'The user cloaks itself in fire and charges the target. This also damages the user quite a lot. This attack may leave the target with a burn.'
 learners_level:

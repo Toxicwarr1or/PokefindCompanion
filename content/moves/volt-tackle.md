@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-33%'
 effect: 'The user electrifies itself and charges the target. This also damages the user quite a lot. This attack may leave the target with paralysis.'
 learners_level:

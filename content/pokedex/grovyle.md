@@ -1,6 +1,6 @@
 ---
 title: 'Grovyle'
-subtitle: 'The leaves growing out of Grovyle''s body are convenient for camouflaging it from enemies in the forest. This Pokemon is a master at climbing trees in jungles.'
+subtitle: 'The leaves growing out of Grovyle''s body are convenient for camouflaging it from enemies in the forest. This Pokémon is a master at climbing trees in jungles.'
 date: 2026-04-28
 dex_number: '253'
 skins: ['Shiny', 'Aura']

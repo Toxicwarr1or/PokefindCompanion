@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user surrounds itself with a great amount of electricity and charges its target. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Zekrom', level: '100' }

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '20%'
 effect: 'The user focuses its willpower to its head and attacks the target. This may also make the target flinch.'
 learners_level:

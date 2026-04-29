@@ -5,7 +5,7 @@ layout: questguide
 gen: 3
 quest_key: 'TIMERBALLQUEST'
 slug: 'times-up'
-description: 'A researcher is studying certain Pokemon moves.'
+description: 'A researcher is studying certain Pokémon moves.'
 source_file: 'times-up.json'
 start:
   npc: 'Millah'
@@ -14,7 +14,7 @@ start:
   "y": 42.0
   z: -875.5
 steps:
-  - text: 'Talk to Lerson in his house near the PokeMart'
+  - text: 'Talk to Lerson in his house near the PokéMart'
     location:
       kind: 'npc'
       x: 290.5

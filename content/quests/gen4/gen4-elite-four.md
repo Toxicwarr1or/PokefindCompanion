@@ -8,7 +8,7 @@ slug: 'gen4-elite-four'
 description: 'Your ultimate challenge is before you, the Elite Four awaits!'
 source_file: 'gen4-elite-four.json'
 video_id: 'IOa1_se8GYE'
-video_title: 'PokeFind Elite Four (E4: Generation 4)'
+video_title: 'PokéFind Elite Four (E4: Generation 4)'
 start:
   npc: 'Cletus'
   x: 1534.0

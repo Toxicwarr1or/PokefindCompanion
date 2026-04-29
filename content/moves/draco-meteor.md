@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Comets are summoned down from the sky onto the target. The attack''s recoil harshly lowers the user''s Sp. Atk stat.'
 learners_level:
   - { name: 'Haikou Latias', level: '61' }

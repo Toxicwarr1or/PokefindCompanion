@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 crit_rate: '+1'
 effect: 'The user calls out its underlings to pummel the target. Critical hits land more easily.'
 learners_level:

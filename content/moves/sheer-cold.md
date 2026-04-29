@@ -9,7 +9,7 @@ accuracy: '30'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target faints instantly. It''s less likely to hit the target if it''s used by Pokémon other than Ice types.'
 learners_level:
   - { name: 'Shiloh Froslass', level: '0' }

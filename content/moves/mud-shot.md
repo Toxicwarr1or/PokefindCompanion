@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by hurling a blob of mud at the target. This also lowers the target''s Speed stat.'
 learners_level:
   - { name: 'Kyoto Muk', level: '0' }

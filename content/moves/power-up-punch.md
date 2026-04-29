@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Striking opponents over and over makes the user''s fists harder. Hitting a target raises the Attack stat.'
 learners_level:
   - { name: 'Lucario', level: '15' }

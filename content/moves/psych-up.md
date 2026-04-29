@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user hypnotizes itself into copying any stat change made by the target.'
 learners_level:
   - { name: 'Grumpig', level: '15' }

@@ -1,6 +1,6 @@
 ---
 title: 'Dunsparce'
-subtitle: 'When spotted, this Pokemon escapes backward by furiously boring into the ground with its tail.'
+subtitle: 'When spotted, this Pokémon escapes backward by furiously boring into the ground with its tail.'
 date: 2026-04-28
 dex_number: '206'
 skins: ['Shiny', 'Fusemon']

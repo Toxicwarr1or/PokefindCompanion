@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user restores its HP by the same amount as the target''s Attack stat. It also lowers the target''s Attack stat.'
 learners_level:
   - { name: 'Jataro Sunflora', level: '0' }

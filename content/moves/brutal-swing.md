@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 7'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user swings its body around violently to inflict damage on everything in its vicinity.'
 learners_level:
   - { name: 'Galarian Yamask', level: '16' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A column of water strikes the target. When combined with its fire equivalent, its power increases and a rainbow appears.'
 learners_tutor: ['Blastoise', 'Croconaw', 'Dewott', 'Empoleon', 'Feraligatr', 'Haikou Blaziken', 'Marshtomp', 'Mudkip', 'Oshawott', 'Piplup', 'Prinplup', 'Samurott', 'Squirtle', 'Swampert', 'Totodile', 'Wartortle']
 ---

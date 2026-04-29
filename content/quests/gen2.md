@@ -8,7 +8,7 @@ quests:
     slug: 'lighthouse-panic'
     category: 'side'
     name: 'Lighthouse Panic!'
-    description: 'The Pokemon who keeps the Cruxirt Port Lighthouse running has fallen ill.'
+    description: 'The Pokémon who keeps the Cruxirt Port Lighthouse running has fallen ill.'
     file: 'lighthouse-panic.json'
   - key: 'northern_winds'
     slug: 'northern-winds'

@@ -1,6 +1,6 @@
 ---
 title: 'Corphish'
-subtitle: 'Corphish were originally foreign Pokemon that were imported as pets. They eventually turned up in the wild. This Pokemon is very hardy and has greatly increased its population.'
+subtitle: 'Corphish were originally foreign Pokémon that were imported as pets. They eventually turned up in the wild. This Pokémon is very hardy and has greatly increased its population.'
 date: 2026-04-28
 dex_number: '341'
 skins: ['Shiny']

@@ -1,6 +1,6 @@
 ---
 title: 'Gengar'
-subtitle: 'Under a full moon, this Pokemon likes to mimic the shadows of people and laugh at their fright.'
+subtitle: 'Under a full moon, this Pokémon likes to mimic the shadows of people and laugh at their fright.'
 date: 2026-04-28
 dex_number: '94'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Aura', 'Mecha', 'Marvel', 'Disney', 'Modeler', 'Meme']

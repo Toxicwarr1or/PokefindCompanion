@@ -9,7 +9,7 @@ accuracy: '30'
 pp: '5'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user opens up a fissure in the ground and drops the target in. The target faints instantly if this attack hits.'
 learners_level:
   - { name: 'Kyoto Gyarados', level: '0' }

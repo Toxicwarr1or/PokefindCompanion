@@ -1,6 +1,6 @@
 ---
 title: 'Plusle'
-subtitle: 'Plusle always acts as a cheerleader for its partners. Whenever a teammate puts out a good effort in battle, this Pokemon shorts out its body to create the crackling noises of sparks to show its joy.'
+subtitle: 'Plusle always acts as a cheerleader for its partners. Whenever a teammate puts out a good effort in battle, this Pokémon shorts out its body to create the crackling noises of sparks to show its joy.'
 date: 2026-04-28
 dex_number: '311'
 skins: ['Shiny', 'Easter']

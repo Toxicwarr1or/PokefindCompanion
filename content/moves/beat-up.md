@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '6'
 effect: 'The user gets all party Pokémon to attack the target. The more party Pokémon, the greater the number of attacks.'
 learners_level:

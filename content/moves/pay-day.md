@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Numerous coins are hurled at the target to inflict damage. Money is earned after the battle.'
 learners_level:
   - { name: 'Shiloh Electivire', level: '1' }

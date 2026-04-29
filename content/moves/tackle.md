@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A physical attack in which the user charges and slams into the target with its whole body.'
 learners_level:
   - { name: 'Aggron', level: '1' }

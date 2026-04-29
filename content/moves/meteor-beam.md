@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '0'
 effect: 'In this two-turn attack, the user gathers space power and boosts its Sp. Atk stat, then attacks the target on the next turn.'
 learners_level:

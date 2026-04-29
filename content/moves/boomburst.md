@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 6'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 sound_based: 'Yes'
 effect: 'The user attacks everything around it with the destructive power of a terrible, explosive sound.'
 learners_level:

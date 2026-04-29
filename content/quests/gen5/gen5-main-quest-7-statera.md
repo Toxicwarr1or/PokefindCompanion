@@ -71,7 +71,7 @@ steps:
         x: 101.5
         "y": 166.0
         z: -290.5
-        town: 'Pokemon League'
+        town: 'Pokémon League'
         team:
           - species: 'Emboar'
             level: 80

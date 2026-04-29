@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user makes a swift attack on the target''s legs, which lowers the target''s Speed stat.'
 learners_level:
   - { name: 'Machamp', level: '13' }

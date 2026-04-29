@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'All Pokemon'
+target: 'All Pokémon'
 sound_based: 'Yes'
 effect: 'Any Pokémon that hears this song faints in three turns, unless it switches out of battle.'
 learners_level:

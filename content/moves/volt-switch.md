@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'After making its attack, the user rushes back to switch places with a party Pokémon in waiting.'
 learners_level:
   - { name: 'Kyoto Slowbro', level: '0' }

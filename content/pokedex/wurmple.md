@@ -1,6 +1,6 @@
 ---
 title: 'Wurmple'
-subtitle: 'Using the spikes on its rear end,   Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokemon''s feet are tipped with suction pads that allow it to cling to glass without slipping.'
+subtitle: 'Using the spikes on its rear end,   Wurmple peels the bark off trees and feeds on the sap that oozes out. This Pokémon''s feet are tipped with suction pads that allow it to cling to glass without slipping.'
 date: 2026-04-28
 dex_number: '265'
 skins: ['Shiny']

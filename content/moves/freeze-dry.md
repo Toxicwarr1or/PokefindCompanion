@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user rapidly cools the target. This may also leave the target frozen. This move is super effective on Water types.'
 learners_level:
   - { name: 'Articuno', level: '1' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 1'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move.'
 learners_level:
   - { name: 'Kyoto Slowbro', level: '0' }

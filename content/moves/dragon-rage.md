@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack hits the target with a shock wave of pure rage. This attack always inflicts 40 HP damage.'
 learners_level:
   - { name: 'Kyoto Gyarados', level: '0' }

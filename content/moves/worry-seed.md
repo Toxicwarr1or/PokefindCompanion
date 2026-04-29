@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A seed that causes worry is planted on the target. It prevents sleep by making the target''s Ability Insomnia.'
 learners_level:
   - { name: 'Budew', level: '16' }

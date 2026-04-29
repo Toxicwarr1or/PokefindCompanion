@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 5'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user strikes everything around it by stomping down on the ground. This lowers the Speed stat of those hit.'
 learners_level:
   - { name: 'Donphan', level: '1' }

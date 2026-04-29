@@ -1,6 +1,6 @@
 ---
 title: 'Blastoise'
-subtitle: 'A brutal Pokemon with pressurized water jets on its shell. They are used for high speed tackles.'
+subtitle: 'A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles.'
 date: 2026-04-28
 dex_number: '9'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Thanksgiving', 'Summer', 'Shadow', 'Aura', 'Meme']

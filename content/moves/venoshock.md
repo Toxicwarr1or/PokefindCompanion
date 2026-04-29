@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user drenches the target in a special poisonous liquid. This move''s power is doubled if the target is poisoned.'
 learners_level:
   - { name: 'Zeinova Sigilyph', level: '1' }

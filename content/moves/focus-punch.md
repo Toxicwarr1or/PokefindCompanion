@@ -10,7 +10,7 @@ pp: '20'
 priority: '-3'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user focuses its mind before launching a punch. This move fails if the user is hit before it is used.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

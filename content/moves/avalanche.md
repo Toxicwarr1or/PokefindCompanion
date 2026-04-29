@@ -10,7 +10,7 @@ pp: '10'
 priority: '-4'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The power of this attack move is doubled if the user has been hurt by the target in the same turn.'
 learners_level:
   - { name: 'Shiloh Froslass', level: '0' }

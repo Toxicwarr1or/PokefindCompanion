@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Sand is hurled in the target''s face, reducing the target''s accuracy.'
 learners_level:
   - { name: 'Zeinova Serperior', level: '0' }

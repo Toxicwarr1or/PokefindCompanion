@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user copies the target''s last move. The move can be used during battle until the Pokémon is switched out.'
 learners_level:
   - { name: 'Kyoto Clefable', level: '0' }

@@ -8,7 +8,7 @@ slug: 'bitter7'
 description: 'Continuing your journey across the Haikou region, you enter Lodestar Port. Down at the coast you see a familiar figure, Sarah, and she wants to speak with you'
 source_file: 'bitter7.json'
 video_id: 'rk2WgVrIkg4'
-video_title: 'PokeFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part5-8 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Sarah'
   town: 'Lodestar Port'

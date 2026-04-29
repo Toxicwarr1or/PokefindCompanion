@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user pins the target with a dark, arresting look. The target becomes unable to flee.'
 learners_level:
   - { name: 'Jataro Raikou', level: '1' }

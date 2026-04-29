@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The power of this attack move is doubled if it''s used on a target that''s switching out of battle.'
 learners_level:
   - { name: 'Jataro Crobat', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is clamped and squeezed by the user''s very thick and sturdy shell for four to five turns.'
 learners_level:
   - { name: 'Zeinova Crustle', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with long, creeping tentacles, vines, or the like. This may also lower the target''s  Speed stat.'
 learners_level:
   - { name: 'Shiloh Tangrowth', level: '0' }

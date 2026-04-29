@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user whips up a storm of leaves around the target. The attack''s recoil harshly lowers the user''s Sp. Atk stat.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

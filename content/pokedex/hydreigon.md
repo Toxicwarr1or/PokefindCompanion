@@ -1,6 +1,6 @@
 ---
 title: 'Hydreigon'
-subtitle: 'This brutal Pokemon travels the skies on its six wings. Anything that moves seems like a foe to it, triggering its attack.'
+subtitle: 'This brutal Pokémon travels the skies on its six wings. Anything that moves seems like a foe to it, triggering its attack.'
 date: 2026-04-28
 dex_number: '635'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Aura']

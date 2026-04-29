@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '+50%'
 effect: 'The user eats the dreams of a sleeping target. It absorbs half the damage caused to heal its own HP.'
 learners_level:

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A spray of bubbles is forcefully ejected at the target. This may also lower its Speed stat.'
 learners_level:
   - { name: 'Zeinova Crustle', level: '0' }

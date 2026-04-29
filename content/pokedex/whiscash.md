@@ -1,6 +1,6 @@
 ---
 title: 'Whiscash'
-subtitle: 'Whiscash is extremely territorial. Just one of these Pokemon will claim a large pond as its exclusive territory. If a foe approaches it, it thrashes about and triggers a massive earthquake.'
+subtitle: 'Whiscash is extremely territorial. Just one of these Pokémon will claim a large pond as its exclusive territory. If a foe approaches it, it thrashes about and triggers a massive earthquake.'
 date: 2026-04-28
 dex_number: '340'
 skins: ['Shiny']

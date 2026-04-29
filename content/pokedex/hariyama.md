@@ -1,6 +1,6 @@
 ---
 title: 'Hariyama'
-subtitle: 'Hariyama practices its straight-arm slaps in any number of locations. One hit of this Pokemon''s powerful, openhanded, straight-arm punches could snap a telephone pole in two.'
+subtitle: 'Hariyama practices its straight-arm slaps in any number of locations. One hit of this Pokémon''s powerful, openhanded, straight-arm punches could snap a telephone pole in two.'
 date: 2026-04-28
 dex_number: '297'
 skins: ['Shiny', 'Halloween', 'Aura']

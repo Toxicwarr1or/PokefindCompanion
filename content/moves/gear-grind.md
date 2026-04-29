@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2'
 effect: 'The user attacks by throwing steel gears at its target twice.'
 learners_level:

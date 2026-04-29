@@ -10,7 +10,7 @@ pp: '5'
 priority: '1'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This move enables the user to attack first. This move fails if the target is not readying an attack.'
 learners_level:
   - { name: 'Haikou Chimecho', level: '0' }

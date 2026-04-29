@@ -1,6 +1,6 @@
 baseURL = "https://pokefindcompanion.pages.dev/"
 languageCode = "en-us"
-title = "Pokefind Companion"
+title = "Pokéfind Companion"
 
 # Pretty URLs
 canonifyURLs = false
@@ -10,19 +10,19 @@ relativeURLs = false
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "An editorially curated Pokefind reference, paired with the WarriorToxic YouTube channel."
+  description = "An editorially curated Pokéfind reference, paired with the WarriorToxic YouTube channel."
   author = "WarriorToxic"
   youtube = "https://www.youtube.com/@WarriorToxic"
   brandColor = "#3eb045"
 
 # Top-nav menu
 [[menu.main]]
-  name = "Pokefind"
+  name = "Pokéfind"
   url = "/pokefind/"
   weight = 5
 
 [[menu.main]]
-  name = "Pokedex"
+  name = "Pokédex"
   url = "/pokedex/"
   weight = 10
 
@@ -40,11 +40,8 @@ disableKinds = ["taxonomy", "term"]
   name = "Mechanics"
   url = "/mechanics/"
   weight = 40
-
-[[menu.main]]
-  name = "Skins"
-  url = "/skins/"
-  weight = 70
+# "Skins" used to live here as a top-level entry; it's now reachable via
+# the "Skindex" link inside the Pokédex group sidebar (see partials/sidebar.html).
 
 # Markdown rendering
 [markup]

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target with great power. However, this also lowers the user''s Attack and Defense stats.'
 learners_level:
   - { name: 'Beartic', level: '1' }

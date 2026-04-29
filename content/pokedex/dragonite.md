@@ -1,6 +1,6 @@
 ---
 title: 'Dragonite'
-subtitle: 'An extremely rarely seen marine Pokemon. Its intelligence is said to match that of humans.'
+subtitle: 'An extremely rarely seen marine Pokémon. Its intelligence is said to match that of humans.'
 date: 2026-04-28
 dex_number: '149'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Summer', 'Lunar New Year', 'Shadow', 'Aura', 'Gamer', 'Mecha', 'Cosmic', 'Fusemon', 'Monochrome']

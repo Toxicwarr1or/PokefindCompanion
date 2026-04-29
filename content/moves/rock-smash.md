@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks with a punch. This may also lower the target''s Defense stat.'
 learners_level:
   - { name: 'Sawk', level: '1' }

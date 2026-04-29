@@ -9,7 +9,7 @@ accuracy: '75'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '20%'
 effect: 'The user tackles the target while exhibiting overwhelming menace. This may also make the target flinch.'
 learners_level:

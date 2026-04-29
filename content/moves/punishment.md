@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The more the target has powered up with stat changes, the greater the move''s power.'
 learners_level:
   - { name: 'Arceus', level: '1' }

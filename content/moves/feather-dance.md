@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user covers the target''s body with a mass of down that harshly lowers its Attack stat.'
 learners_level:
   - { name: 'Jataro Donphan', level: '0' }

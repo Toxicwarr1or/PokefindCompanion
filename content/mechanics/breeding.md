@@ -1,11 +1,11 @@
 ---
 title: "Breeding"
-subtitle: "How eggs, inheritance, hatching, and size actually work on Pokefind"
+subtitle: "How eggs, inheritance, hatching, and size actually work on Pokéfind"
 ---
 
-Pokefind's breeding system follows mainline Pokémon for the broad strokes — egg
+Pokéfind's breeding system follows mainline Pokémon for the broad strokes — egg
 groups, Destiny Knot, Everstone, Power items — but several pieces are
-Pokefind-specific. Everything below is sourced directly from the server code,
+Pokéfind-specific. Everything below is sourced directly from the server code,
 not from the games.
 
 > **Video walkthrough:** [WarriorToxic — Breeding overview](https://youtu.be/WqY39BbB3bw).
@@ -69,7 +69,7 @@ The egg gets a number of IVs copied from the parent pool; the rest roll random
 ### Nature
 
 - **Everstone on either parent**: the egg always gets that parent's nature.
-  (Either gender works — there's no "must be female" restriction Pokefind-side.)
+  (Either gender works — there's no "must be female" restriction Pokéfind-side.)
 - **No Everstone**: random *preferred* nature for the offspring's species.
 
 ### Ability
@@ -101,9 +101,9 @@ The offspring inherits the **female's** ball, with two downgrades:
 Standard rule: if either parent has a baby form earlier in its evolution line,
 the egg hatches as that baby form. Otherwise it hatches as the parent species.
 
-## Pokémon size — the Pokefind-specific bit
+## Pokémon size — the Pokéfind-specific bit
 
-Every Pokémon on Pokefind has a **size tier** that scales the rendered model.
+Every Pokémon on Pokéfind has a **size tier** that scales the rendered model.
 Size is its own attribute (separate from IVs, nature, etc.) and **breeding can
 pass it down**.
 
@@ -203,7 +203,7 @@ The number of eggs you can carry at once is gated by Trainer rank:
 - **The only custom hybrid result is Manaphy + Ditto → Phione.** No other
   cross-species "produces a different baby" rules are implemented.
 - **Two Genderless Pokémon are blocked.** Vanilla allows certain Genderless
-  species to breed with each other only via Ditto; Pokefind enforces this
+  species to breed with each other only via Ditto; Pokéfind enforces this
   strictly.
 - **Anniversary, Shadow, and Alolan forms are sterile** — even if a normal-form
   counterpart of the species would normally breed.

@@ -1,6 +1,6 @@
 ---
 title: 'Pawniard'
-subtitle: 'Blades comprise this Pokemon''s entire body. If battling dulls the blades, it sharpens them on stones by the river.'
+subtitle: 'Blades comprise this Pokémon''s entire body. If battling dulls the blades, it sharpens them on stones by the river.'
 date: 2026-04-28
 dex_number: '624'
 skins: ['Shiny']

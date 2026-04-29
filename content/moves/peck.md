@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is jabbed with a sharply pointed beak or horn.'
 learners_level:
   - { name: 'Jataro Donphan', level: '0' }

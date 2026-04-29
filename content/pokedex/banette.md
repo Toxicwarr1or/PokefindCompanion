@@ -1,6 +1,6 @@
 ---
 title: 'Banette'
-subtitle: 'Banette generates energy for laying strong curses by sticking pins into its own body. This Pokemon was originally a pitiful plush doll that was thrown away.'
+subtitle: 'Banette generates energy for laying strong curses by sticking pins into its own body. This Pokémon was originally a pitiful plush doll that was thrown away.'
 date: 2026-04-28
 dex_number: '354'
 skins: ['Shiny', 'Cosmic', 'Modeler']

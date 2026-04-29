@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user faints when using this move. In return, this harshly lowers the target''s Attack and Sp. Atk stats.'
 learners_level:
   - { name: 'Zeinova Gothitelle', level: '0' }

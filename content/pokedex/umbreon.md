@@ -1,6 +1,6 @@
 ---
 title: 'Umbreon'
-subtitle: 'When agitated, this Pokemon protects itself by spraying poisonous sweat from its pores.'
+subtitle: 'When agitated, this Pokémon protects itself by spraying poisonous sweat from its pores.'
 date: 2026-04-28
 dex_number: '197'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Fusemon', 'Monochrome']

@@ -3,7 +3,7 @@ title: 'Andrew''s Missing Pokémon'
 date: 2026-04-28
 layout: questguide
 gen: 1
-quest_key: 'andrews_missing_pokemon'
+quest_key: 'andrews_missing_pokémon'
 slug: 'andrews-missing-pokemon'
 description: 'A trainer at Finderia Town has lost their Pokémon! Find and help them locate the mysterious missing Pokémon.'
 author: 'GrumpyJupe'

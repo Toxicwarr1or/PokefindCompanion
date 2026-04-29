@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'In this two-turn attack, the user gathers light and fills a blade with the light''s energy, attacking the target on the next turn.'
 learners_level:
   - { name: 'Zeinova Conkeldurr', level: '1' }

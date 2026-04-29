@@ -8,7 +8,7 @@ slug: 'shadow3'
 description: 'Cipher is back! It''s time to finally put an end to his evil plans!'
 source_file: 'shadow3.json'
 video_id: 'NZnSbXrKFas'
-video_title: 'PokeFind Shadow Quest 3'
+video_title: 'PokéFind Shadow Quest 3'
 start:
   npc: 'Michael'
   town: 'Chromium City'

@@ -1,9 +1,9 @@
 ---
 title: "Zeinova"
-subtitle: "Generation 5 region — Team Plasma's quiet return, archipelago geography, served on `poke5`"
+subtitle: "Generation 5 region — Team Plasma's quiet return, archipelago geography, served on `poké5`"
 ---
 
-The **Zeinova Region** opens up the fifth generation of Pokémon (dex 1–649) and runs on the `poke5` server. It's the most-developed region narratively. For overall flavor and main-quest summary see [PokeWorld](../).
+The **Zeinova Region** opens up the fifth generation of Pokémon (dex 1–649) and runs on the `poké5` server. It's the most-developed region narratively. For overall flavor and main-quest summary see [PokéWorld](../).
 
 This page collects the recurring NPCs that spawn across Zeinova's islands outside of the main-quest beats. They rotate through hidden coordinates and announce themselves on broadcast and in the Discord `#pworld-rare-spawns` feed.
 
@@ -20,7 +20,7 @@ Active rotation:
 | Trainer | Spawn locations |
 | --- | --- |
 | **N** | Greenholm (-401, 60, -87) · Pure Harbor Heights (1033, 68, -530) |
-| **Alder** | Spiritvale (519, 68, -9) · Pokemon League (97, 55, -215) |
+| **Alder** | Spiritvale (519, 68, -9) · Pokémon League (97, 55, -215) |
 | **Cheren** | *near Findale Harbor* (636, 49, 358) · Breezelton Village (1028, 46, 222) |
 | **Bianca** | *near Findale Harbor* (647, 49, 370) · Spiritvale (387, 45, -162) |
 | **Cilan** | Findale Harbor (447, 55, 573) · Greenholm (-336, 57, -126) |

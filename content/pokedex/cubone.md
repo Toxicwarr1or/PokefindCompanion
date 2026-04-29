@@ -1,6 +1,6 @@
 ---
 title: 'Cubone'
-subtitle: 'Because it never removes its skull helmet, no one has ever seen this Pokemon''s real face.'
+subtitle: 'Because it never removes its skull helmet, no one has ever seen this Pokémon''s real face.'
 date: 2026-04-28
 dex_number: '104'
 skins: ['Shiny']

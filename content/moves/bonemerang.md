@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2'
 effect: 'The user throws the bone it holds. The bone loops around to hit the target twiceâ€”coming and going.'
 learners_level:

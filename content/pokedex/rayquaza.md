@@ -1,6 +1,6 @@
 ---
 title: 'Rayquaza'
-subtitle: 'Rayquaza lived for hundreds of millions of years in the earth''s ozone layer, never descending to the ground. This Pokemon appears to feed on water and particles in the atmosphere.'
+subtitle: 'Rayquaza lived for hundreds of millions of years in the earth''s ozone layer, never descending to the ground. This Pokémon appears to feed on water and particles in the atmosphere.'
 date: 2026-04-28
 dex_number: '384'
 skins: ['Shiny', 'Halloween', 'Easter', 'Summer', 'Lunar New Year', 'Shadow', 'Aura']

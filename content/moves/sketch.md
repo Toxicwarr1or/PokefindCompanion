@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '1'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'It enables the user to permanently learn the move last used by the target. Once used, Sketch disappears.'
 learners_level:
   - { name: 'Smeargle', level: '1' }

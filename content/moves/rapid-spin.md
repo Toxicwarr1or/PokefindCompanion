@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '40'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A spin attack that can also eliminate such moves as Bind, Wrap, Leech Seed, and Spikes.'
 learners_level:
   - { name: 'Jataro Donphan', level: '0' }

@@ -1,6 +1,6 @@
 ---
 title: 'Registeel'
-subtitle: 'Registeel has a body that is harder than any kind of metal. Its body is apparently hollow. No one has any idea what this Pokemon eats.'
+subtitle: 'Registeel has a body that is harder than any kind of metal. Its body is apparently hollow. No one has any idea what this Pokémon eats.'
 date: 2026-04-28
 dex_number: '379'
 skins: ['Shiny', 'Summer']

@@ -10,7 +10,7 @@ pp: '10'
 priority: '3'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '100%'
 effect: 'This attack hits first and makes the target flinch. It only works the first turn the user is in battle.'
 learners_level:

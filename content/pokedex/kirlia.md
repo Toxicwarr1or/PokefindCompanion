@@ -1,6 +1,6 @@
 ---
 title: 'Kirlia'
-subtitle: 'It is said that a Kirlia that is exposed to the positive emotions of its TRAINER grows beautiful. This Pokemon controls psychokinetic powers with its highly developed brain.'
+subtitle: 'It is said that a Kirlia that is exposed to the positive emotions of its TRAINER grows beautiful. This Pokémon controls psychokinetic powers with its highly developed brain.'
 date: 2026-04-28
 dex_number: '281'
 skins: ['Shiny']

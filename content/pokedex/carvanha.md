@@ -1,6 +1,6 @@
 ---
 title: 'Carvanha'
-subtitle: 'Carvanha''s strongly developed jaws and its sharply pointed fangs pack the destructive power to rip out boat hulls. Many boats have been attacked and sunk by this Pokemon.'
+subtitle: 'Carvanha''s strongly developed jaws and its sharply pointed fangs pack the destructive power to rip out boat hulls. Many boats have been attacked and sunk by this Pokémon.'
 date: 2026-04-28
 dex_number: '318'
 skins: ['Shiny']

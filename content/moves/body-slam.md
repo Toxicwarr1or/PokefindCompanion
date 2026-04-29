@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user drops onto the target with its full body weight. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Haikou Torkoal', level: '0' }

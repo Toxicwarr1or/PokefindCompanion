@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user chomps hard on the target with its sharp front fangs. This cuts the target''s HP in half.'
 learners_level:
   - { name: 'Kyoto Marowak', level: '1' }

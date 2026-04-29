@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Unsanitary sludge is hurled at the target. This may also poison the target.'
 learners_level:
   - { name: 'Garbodor', level: '29' }

@@ -1,6 +1,6 @@
 ---
 title: 'Silcoon'
-subtitle: 'Silcoon tethers itself to a tree branch using silk to keep from falling. There,  this Pokemon hangs quietly while it awaits evolution. It peers out of the silk cocoon through a small hole.'
+subtitle: 'Silcoon tethers itself to a tree branch using silk to keep from falling. There,  this Pokémon hangs quietly while it awaits evolution. It peers out of the silk cocoon through a small hole.'
 date: 2026-04-28
 dex_number: '266'
 skins: ['Shiny']

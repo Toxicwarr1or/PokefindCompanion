@@ -10,7 +10,7 @@ pp: '30'
 priority: '1'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user whirls its fists to send a wave of pure vacuum at the target. This move always goes first.'
 learners_level:
   - { name: 'Shiloh Porygon-Z', level: '0' }

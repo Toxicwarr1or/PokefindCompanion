@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2'
 effect: 'The user slams the target with a long tail, vines, or a tentacle. The target is hit twice in a row.'
 learners_level:

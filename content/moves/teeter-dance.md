@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user performs a wobbly dance that confuses the Pokémon around it.'
 learners_level:
   - { name: 'Haikou Ludicolo', level: '0' }

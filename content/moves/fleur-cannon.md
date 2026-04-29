@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user unleashes a strong beam. The attack''s recoil harshly lowers the user''s Sp. Atk stat.'
 learners_level:
   - { name: 'Jataro Lanturn', level: '74' }

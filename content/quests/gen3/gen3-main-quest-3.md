@@ -8,7 +8,7 @@ slug: 'gen3-main-quest-3'
 description: 'There was a strange storm at Lodestar Port. Go and investigate.'
 source_file: 'gen3-main-quest-3.json'
 video_id: 'sE3Bprl1ogQ'
-video_title: 'PokeFind Wash Away (Main Quest 3: Generation 3)'
+video_title: 'PokéFind Wash Away (Main Quest 3: Generation 3)'
 start:
   npc: 'Birchall'
   town: 'Lodestar Port'

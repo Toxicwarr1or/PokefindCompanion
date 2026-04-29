@@ -5,7 +5,7 @@ layout: questguide
 gen: 4
 quest_key: 'bright_clay'
 slug: 'bright-clay'
-description: 'Meowth wishes to help a Pokemon in need of some wits!'
+description: 'Meowth wishes to help a Pokémon in need of some wits!'
 source_file: 'bright-clay.json'
 start:
   npc: 'Meowth'

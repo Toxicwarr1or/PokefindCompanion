@@ -9,7 +9,7 @@ accuracy: '30'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A vicious, tearing attack with big pincers. The target faints instantly if this attack hits.'
 learners_level:
   - { name: 'Jataro Entei', level: '1' }

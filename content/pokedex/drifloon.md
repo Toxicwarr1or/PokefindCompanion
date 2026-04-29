@@ -1,6 +1,6 @@
 ---
 title: 'Drifloon'
-subtitle: 'A Pokemon formed by the spirits of people and Pokemon. It loves damp, humid seasons.'
+subtitle: 'A Pokémon formed by the spirits of people and Pokémon. It loves damp, humid seasons.'
 date: 2026-04-28
 dex_number: '425'
 skins: ['Shiny']

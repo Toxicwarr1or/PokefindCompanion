@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack inflicts big damage on a sleeping target. This also wakes the target up, however.'
 learners_level:
   - { name: 'Jataro Lanturn', level: '11' }

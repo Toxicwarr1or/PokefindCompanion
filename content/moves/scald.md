@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user shoots boiling hot water at its target. This may also leave the target with a burn.'
 learners_level:
   - { name: 'Simipour', level: '1' }

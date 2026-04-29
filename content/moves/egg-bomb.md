@@ -9,7 +9,7 @@ accuracy: '75'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A large egg is hurled at the target with maximum force to inflict damage.'
 learners_level:
   - { name: 'Alolan Exeggutor', level: '27' }

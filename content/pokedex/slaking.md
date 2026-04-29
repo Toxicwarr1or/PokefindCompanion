@@ -1,6 +1,6 @@
 ---
 title: 'Slaking'
-subtitle: 'Slaking spends all day lying down and lolling about. It eats grass growing within its reach. If it eats all the grass it can reach, this Pokemon reluctantly moves to another spot.'
+subtitle: 'Slaking spends all day lying down and lolling about. It eats grass growing within its reach. If it eats all the grass it can reach, this Pokémon reluctantly moves to another spot.'
 date: 2026-04-28
 dex_number: '289'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura', 'Modeler', 'Meme']

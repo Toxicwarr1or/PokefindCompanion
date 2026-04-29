@@ -1,6 +1,6 @@
 ---
 title: 'Aerodactyl'
-subtitle: 'A ferocious, prehistoric Pokemon that goes for the enemy''s throat with its serrated saw-like fangs.'
+subtitle: 'A ferocious, prehistoric Pokémon that goes for the enemy''s throat with its serrated saw-like fangs.'
 date: 2026-04-28
 dex_number: '142'
 skins: ['Shiny', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Monochrome']

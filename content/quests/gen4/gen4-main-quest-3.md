@@ -5,10 +5,10 @@ layout: questguide
 gen: 4
 quest_key: 'GEN4_MAIN_QUEST_3'
 slug: 'gen4-main-quest-3'
-description: 'Isaac wants to find the hiding spot of a certain pokemon. You find something else instead...'
+description: 'Isaac wants to find the hiding spot of a certain pokémon. You find something else instead...'
 source_file: 'gen4-main-quest-3.json'
 video_id: 'NZnSbXrKFas'
-video_title: 'PokeFind Shadow Quest 3'
+video_title: 'PokéFind Shadow Quest 3'
 start:
   npc: 'Isaac'
   x: 409.5

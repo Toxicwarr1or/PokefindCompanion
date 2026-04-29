@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user throws a punch from the shadows. This attack never misses.'
 learners_level:
   - { name: 'Jataro Blissey', level: '0' }

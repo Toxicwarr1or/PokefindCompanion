@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A jolt of electricity crashes down on the target to inflict damage. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Alolan Raichu', level: '1' }

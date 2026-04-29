@@ -9,7 +9,7 @@ description: 'Legend speaks of the existence of prehistoric fossils within Zeino
 author: 'Toxicwarr1or'
 source_file: 'fossil_frenzy_main2.json'
 video_id: 'B-m8jCU-pxU'
-video_title: 'PokeFind New Fossil Quest (Fossil Frenzy, Zeinova: Generation 5)'
+video_title: 'PokéFind New Fossil Quest (Fossil Frenzy, Zeinova: Generation 5)'
 start:
   npc: 'Archaeologist Phrank'
   description: 'Find Archaeologist Phrank in Sandgate'
@@ -53,7 +53,7 @@ steps:
         "y2": 49.0
         z2: 365.0
       town: 'Sandgate'
-  - text: 'Have a water type Pokemon in your party.'
+  - text: 'Have a water type Pokémon in your party.'
     location:
       kind: 'region'
       x: -1047.5
@@ -74,7 +74,7 @@ steps:
       "y": 17.0
       z: 472.5
       town: 'Sandgate'
-  - text: 'Defeat the nearby water Pokemon.'
+  - text: 'Defeat the nearby water Pokémon.'
     location:
       kind: 'npc'
       x: -1045.5
@@ -142,7 +142,7 @@ steps:
       z: 304.5
       label: 'Beth'
       town: 'Breezelton Village'
-  - text: 'Go to Bridgerun and pick up the package of seeds. (Try looking outside the Pokemart)'
+  - text: 'Go to Bridgerun and pick up the package of seeds. (Try looking outside the Pokémart)'
   - text: 'Take the road back to Breezelton to complete your delivery. (Hint: Make sure to take the road back)'
   - text: 'Find Mama Beth.'
     location:
@@ -163,7 +163,7 @@ steps:
       town: 'Breezelton Village'
   - text: 'Locate Twig in Greenholm.'
   - text: 'Find a tree near the Trainer Gym.'
-  - text: 'Defeat the nearby grass/bug Pokemon.'
+  - text: 'Defeat the nearby grass/bug Pokémon.'
   - text: 'Mark the nearby tree.'
   - text: 'Return to Sarah.'
     location:
@@ -196,7 +196,7 @@ steps:
       "y": 117.0
       z: 73.0
       town: 'Breezelton Village'
-  - text: 'Battle the Flying type Pokemon.'
+  - text: 'Battle the Flying type Pokémon.'
     location:
       kind: 'npc'
       x: 948.5
@@ -254,7 +254,7 @@ steps:
       z: 245.5
       label: 'Archaeologist Phrank'
       town: 'Sandgate'
-  - text: 'Defeat 5 Ground or Rock type Pokemon for Phrank.'
+  - text: 'Defeat 5 Ground or Rock type Pokémon for Phrank.'
     location:
       kind: 'npc'
       x: -1052.5
@@ -292,7 +292,7 @@ steps:
       z: 304.5
       label: 'Beth'
       town: 'Breezelton Village'
-  - text: 'Go to Bridgerun and pick up the package of seeds. (Try looking outside the Pokemart)'
+  - text: 'Go to Bridgerun and pick up the package of seeds. (Try looking outside the Pokémart)'
   - text: 'Take the road back to Breezelton to complete your delivery. (Hint: Make sure to take the road back)'
   - text: 'Find Mama Beth.'
     location:
@@ -313,7 +313,7 @@ steps:
       town: 'Breezelton Village'
   - text: 'Locate Twig in Greenholm.'
   - text: 'Find a tree near the Trainer Gym.'
-  - text: 'Defeat the nearby grass/bug Pokemon.'
+  - text: 'Defeat the nearby grass/bug Pokémon.'
   - text: 'Mark the nearby tree.'
   - text: 'Return to Sarah.'
     location:
@@ -346,7 +346,7 @@ steps:
       "y": 117.0
       z: 73.0
       town: 'Breezelton Village'
-  - text: 'Battle the Flying type Pokemon.'
+  - text: 'Battle the Flying type Pokémon.'
     location:
       kind: 'npc'
       x: 948.5

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with powdery scales blown by the wind. This may also raise all the user''s stats.'
 learners_level:
   - { name: 'Venomoth', level: '1' }

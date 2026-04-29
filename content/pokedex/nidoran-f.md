@@ -1,6 +1,6 @@
 ---
 title: 'Nidoran-F'
-subtitle: 'Although small, its venomous barbs render this Pokemon dangerous. The female has smaller horns.'
+subtitle: 'Although small, its venomous barbs render this Pokémon dangerous. The female has smaller horns.'
 date: 2026-04-28
 dex_number: '29'
 skins: ['Shiny']

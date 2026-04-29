@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A strong electric blast crashes down on the target. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Alolan Raichu', level: '1' }

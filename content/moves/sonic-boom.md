@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is hit with a destructive shock wave that always inflicts 20 HP damage.'
 learners_level:
   - { name: 'Buizel', level: '1' }

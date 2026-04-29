@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2'
 effect: 'The user damages the target twice in succession by jabbing it with two spikes. This may also poison the target.'
 learners_level:

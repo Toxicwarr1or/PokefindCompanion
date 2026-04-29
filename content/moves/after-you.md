@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user helps the target and makes it use its move right after the user.'
 learners_level:
   - { name: 'Togekiss', level: '1' }

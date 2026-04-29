@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 healing: '50%'
 effect: 'The user heals the target''s status condition. If the move succeeds, it also restores the user''s own HP.'
 learners_level:

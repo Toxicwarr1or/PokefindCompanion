@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user retaliates with much greater force against the opponent that last inflicted damage on it.'
 learners_level:
   - { name: 'Alolan Sandslash', level: '1' }

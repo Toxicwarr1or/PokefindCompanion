@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '40'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user holds back when it attacks, and the target is left with at least 1 HP.'
 learners_level:
   - { name: 'Shiloh Electivire', level: '54' }

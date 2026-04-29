@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Things such as long bodies or tentacles are used to bind and squeeze the target for four to five turns.'
 learners_level:
   - { name: 'Carnivine', level: '1' }

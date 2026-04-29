@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '20%'
 effect: 'The user releases a horrible aura imbued with dark thoughts. This may also make the target flinch.'
 learners_level:

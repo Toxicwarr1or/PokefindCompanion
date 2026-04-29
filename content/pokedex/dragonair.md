@@ -1,6 +1,6 @@
 ---
 title: 'Dragonair'
-subtitle: 'A mystical Pokemon that exudes a gentle aura. Has the ability to change climate conditions.'
+subtitle: 'A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions.'
 date: 2026-04-28
 dex_number: '148'
 skins: ['Shiny', 'Aura']

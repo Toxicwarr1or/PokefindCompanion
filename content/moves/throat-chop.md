@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks the target''s throat, and the resultant suffering prevents the target from using moves that emit sound for two turns.'
 learners_level:
   - { name: 'Zeinova Bisharp', level: '1' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user takes the target trick-or-treating. This adds Ghost type to the target''s type.'
 learners_level:
   - { name: 'Shiloh Bronzong', level: '1' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'If the target has already taken some damage in the same turn, this attack''s power is doubled.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'Letting out a noble roar, the user intimidates the target and lowers its Attack and Sp. Atk stats.'
 learners_level:

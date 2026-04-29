@@ -1,9 +1,9 @@
 ---
 title: "Kyoto"
-subtitle: "Generation 1 region — Team Rocket resurgence and Shadow corruption, served on `poke`"
+subtitle: "Generation 1 region — Team Rocket resurgence and Shadow corruption, served on `poké`"
 ---
 
-The **Kyoto Region** is where every PokeWorld journey starts. It's home to the first generation of Pokémon (dex 1–151) and runs on the `poke` server. For overall flavor and main-quest summary see [PokeWorld](../).
+The **Kyoto Region** is where every PokéWorld journey starts. It's home to the first generation of Pokémon (dex 1–151) and runs on the `poké` server. For overall flavor and main-quest summary see [PokéWorld](../).
 
 This page collects the recurring NPCs that spawn around Kyoto outside of the main-quest beats. They rotate through hidden coordinates and announce themselves on broadcast and in the Discord `#pworld-rare-spawns` feed.
 

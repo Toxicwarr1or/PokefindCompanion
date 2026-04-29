@@ -1,6 +1,6 @@
 ---
 title: 'Dusclops'
-subtitle: 'Dusclops''s body is completely hollow - there is nothing at all inside. It is said that its body is like a black hole. This Pokemon will absorb anything into its body, but nothing will ever come back out.'
+subtitle: 'Dusclops''s body is completely hollow - there is nothing at all inside. It is said that its body is like a black hole. This Pokémon will absorb anything into its body, but nothing will ever come back out.'
 date: 2026-04-28
 dex_number: '356'
 skins: ['Shiny', 'Valentine', 'Aura']

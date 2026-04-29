@@ -1,6 +1,6 @@
 ---
 title: 'Meditite'
-subtitle: 'Meditite undertakes rigorous mental training deep in the mountains. However, whenever it meditates, this Pokemon always loses its concentration and focus. As a result, its training never ends.'
+subtitle: 'Meditite undertakes rigorous mental training deep in the mountains. However, whenever it meditates, this Pokémon always loses its concentration and focus. As a result, its training never ends.'
 date: 2026-04-28
 dex_number: '307'
 skins: ['Shiny', 'Valentine']

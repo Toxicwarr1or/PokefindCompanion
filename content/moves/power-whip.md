@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user violently whirls its vines, tentacles, or the  like to harshly lash the target.'
 learners_level:
   - { name: 'Ferrothorn', level: '40' }

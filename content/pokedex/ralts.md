@@ -1,6 +1,6 @@
 ---
 title: 'Ralts'
-subtitle: 'Ralts senses the emotions of people using the horns on its head. This Pokemon rarely appears before people. But when it does, it draws closer if it senses that the person has a positive disposition.'
+subtitle: 'Ralts senses the emotions of people using the horns on its head. This Pokémon rarely appears before people. But when it does, it draws closer if it senses that the person has a positive disposition.'
 date: 2026-04-28
 dex_number: '280'
 skins: ['Shiny']

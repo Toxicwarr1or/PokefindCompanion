@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '0'
 effect: 'The user throws scorching sand at the target to attack. This may also leave the target with a burn.'
 learners_level:

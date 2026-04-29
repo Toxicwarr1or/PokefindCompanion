@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is slashed with scythes or claws. This attack becomes more powerful if it hits in succession.'
 learners_level:
   - { name: 'Zeinova Crustle', level: '0' }

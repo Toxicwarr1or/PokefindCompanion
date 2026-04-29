@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '20'
 contact: 'No'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'The user attacks by shooting scales two to five times in a row. This move boosts the user''s Speed stat but lowers its Defense stat.'
 learners_level:

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '5'
 contact: 'No'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '0'
 effect: 'The user attacks by igniting a small stone and launching it as a fiery ball at the target. This may also leave the target with a burn.'
 learners_level:

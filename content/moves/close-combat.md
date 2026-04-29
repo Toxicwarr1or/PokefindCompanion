@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user fights the target up close without guarding itself. This also lowers the user''s Defense and Sp. Def stats.'
 learners_level:
   - { name: 'Jataro Ursaring', level: '0' }

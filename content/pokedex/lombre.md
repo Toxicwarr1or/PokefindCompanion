@@ -1,6 +1,6 @@
 ---
 title: 'Lombre'
-subtitle: 'Lombre is nocturnal - it will get active after dusk. It is also a mischief-maker. When this Pokemon spots anglers, it tugs on their fishing lines from beneath the surface and enjoys their consternation.'
+subtitle: 'Lombre is nocturnal - it will get active after dusk. It is also a mischief-maker. When this Pokémon spots anglers, it tugs on their fishing lines from beneath the surface and enjoys their consternation.'
 date: 2026-04-28
 dex_number: '271'
 skins: ['Shiny', 'Valentine']

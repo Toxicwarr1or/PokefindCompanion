@@ -1,6 +1,6 @@
 ---
 title: 'Bastiodon'
-subtitle: 'Any frontal attack is repulsed. It is a docile Pokemon that feeds on grass and berries.'
+subtitle: 'Any frontal attack is repulsed. It is a docile Pokémon that feeds on grass and berries.'
 date: 2026-04-28
 dex_number: '411'
 skins: ['Shiny', 'Christmas', 'Summer', 'Aura']

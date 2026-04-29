@@ -6,7 +6,7 @@ gen: 5
 quest_key: 'gen5_odd_behaviors'
 slug: 'odd-behaviors'
 description: 'People have been acting strangely in Findale Harbor, and Officer Jenny needs your help! Can you and Officer Jenny solve the case?'
-author: 'Pokecrafter320'
+author: 'Pokécrafter320'
 source_file: 'odd_behaviors.json'
 start:
   npc: 'Officer Jenny'
@@ -237,7 +237,7 @@ steps:
       z: 601.5
       label: 'Officer Jenny'
       town: 'Findale Harbor'
-  - text: 'Head back to the fountain near the PokeMart to see if Officer Jenny is there'
+  - text: 'Head back to the fountain near the PokéMart to see if Officer Jenny is there'
     location:
       kind: 'npc'
       x: 540.5

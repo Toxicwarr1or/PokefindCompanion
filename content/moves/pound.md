@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is physically pounded with a long tail, a foreleg, or the like.'
 learners_level:
   - { name: 'Zeinova Eelektross', level: '0' }

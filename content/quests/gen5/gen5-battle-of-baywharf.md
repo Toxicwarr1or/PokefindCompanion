@@ -142,7 +142,7 @@ steps:
             level: 20
           - species: 'Lileep'
             level: 20
-  - text: 'Locate the Captain near Baywharf''s PokeMart.'
+  - text: 'Locate the Captain near Baywharf''s PokéMart.'
     location:
       kind: 'npc'
       x: 328.5

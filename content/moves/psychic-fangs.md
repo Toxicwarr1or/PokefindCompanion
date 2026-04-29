@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by breathing a special, hot fire. This also lowers the target''s Sp. Atk stat.'
 learners_level:
   - { name: 'Jataro Meganium', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '30'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user changes its type to make itself resistant to the type of the attack the opponent used last.'
 learners_level:
   - { name: 'Porygon', level: '1' }

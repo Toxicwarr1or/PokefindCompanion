@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A move that leaves the target badly poisoned. Its poison damage worsens every turn.'
 learners_level:
   - { name: 'Zeinova Sigilyph', level: '20' }

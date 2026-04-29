@@ -1,6 +1,6 @@
 ---
 title: 'Zapdos'
-subtitle: 'A legendary bird Pokemon that is said to appear from clouds while dropping enormous lightning bolts.'
+subtitle: 'A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts.'
 date: 2026-04-28
 dex_number: '145'
 skins: ['Shiny', 'Christmas', 'Shadow', 'Aura']

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 8'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user skitters behind the target to attack. This also lowers the target''s Sp. Atk stat.'
 learners_level:
   - { name: 'Kyoto Marowak', level: '1' }

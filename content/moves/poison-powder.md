@@ -9,7 +9,7 @@ accuracy: '75'
 pp: '35'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user scatters a cloud of poisonous dust that poisons the target.'
 learners_level:
   - { name: 'Vileplume', level: '1' }

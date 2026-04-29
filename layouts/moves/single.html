@@ -35,7 +35,7 @@
   {{ if $isAbility }}
     {{ with .Params.learners_ability }}
     <section class="learners">
-      <h2>Pokemon with this ability <span class="learners-count">({{ len . }})</span></h2>
+      <h2>Pokémon with this ability <span class="learners-count">({{ len . }})</span></h2>
       <ul class="learners-list">
         {{ range . }}
         <li><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" (replaceRE "^(Alolan|Galarian|Hisuian|Paldean|Kyoto|Jataro|Haikou|Shiloh|Zeinova) " "" .))) | relURL }}">{{ . }}</a></li>

@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lets loose a blast of aura power from deep within its body at the target. This attack never misses.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

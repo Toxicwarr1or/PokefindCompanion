@@ -1,6 +1,6 @@
 ---
 title: 'Metagross'
-subtitle: 'Metagross has four brains in total. Combined, the four brains can breeze through difficult calculations faster than a supercomputer. This Pokemon can float in the air by tucking in its four legs.'
+subtitle: 'Metagross has four brains in total. Combined, the four brains can breeze through difficult calculations faster than a supercomputer. This Pokémon can float in the air by tucking in its four legs.'
 date: 2026-04-28
 dex_number: '376'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura', 'Gamer', 'Cosmic', 'Modeler']

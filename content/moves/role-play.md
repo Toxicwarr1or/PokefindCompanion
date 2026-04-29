@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user mimics the target completely, copying the target''s natural Ability.'
 learners_level:
   - { name: 'Galarian Mr. Mime', level: '1' }

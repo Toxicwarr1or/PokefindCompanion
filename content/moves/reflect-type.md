@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user reflects the target''s type, making it the same type as the target.'
 learners_level:
   - { name: 'Jataro Donphan', level: '0' }

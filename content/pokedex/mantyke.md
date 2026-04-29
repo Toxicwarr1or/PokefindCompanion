@@ -1,6 +1,6 @@
 ---
 title: 'Mantyke'
-subtitle: 'A friendly Pokemon that captures the subtle flows of seawater using its two antennae.'
+subtitle: 'A friendly Pokémon that captures the subtle flows of seawater using its two antennae.'
 date: 2026-04-28
 dex_number: '458'
 skins: ['Shiny']

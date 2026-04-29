@@ -1,6 +1,6 @@
 ---
 title: 'Manectric'
-subtitle: 'Manectric is constantly discharging electricity from its mane. The sparks sometimes ignite forest fires. When it enters a battle, this Pokemon creates thunderclouds.'
+subtitle: 'Manectric is constantly discharging electricity from its mane. The sparks sometimes ignite forest fires. When it enters a battle, this Pokémon creates thunderclouds.'
 date: 2026-04-28
 dex_number: '310'
 skins: ['Shiny', 'Shadow', 'Aura']

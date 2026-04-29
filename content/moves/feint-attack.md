@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user approaches the target disarmingly, then throws a sucker punch. This attack never misses.'
 learners_level:
   - { name: 'Shiloh Porygon-Z', level: '0' }

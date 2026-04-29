@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by beating the target with a bone that contains a spirit. This may also lower the target''s Defense stat.'
 learners_level:
   - { name: 'Jataro Blissey', level: '0' }

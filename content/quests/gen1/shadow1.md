@@ -8,7 +8,7 @@ slug: 'shadow1'
 description: 'The Shadows are now among us! They are the most powerful Pokémon that Kyoto has seen. If you don''t stop the Shadows, then they will quickly take over Kyoto!'
 source_file: 'shadow1.json'
 video_id: 'NZnSbXrKFas'
-video_title: 'PokeFind Shadow Quest 3'
+video_title: 'PokéFind Shadow Quest 3'
 start:
   npc: 'Jovi'
   town: 'Wyvern Village'

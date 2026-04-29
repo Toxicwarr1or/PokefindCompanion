@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Boulders are hurled at the target. This also lowers the target''s Speed stat by preventing its movement.'
 learners_level:
   - { name: 'Landorus', level: '1' }

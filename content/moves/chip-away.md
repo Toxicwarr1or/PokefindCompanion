@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Looking for an opening, the user strikes consistently. The target''s stat changes don''t affect this attack''s damage.'
 learners_level:
   - { name: 'Haikou Aggron', level: '1' }

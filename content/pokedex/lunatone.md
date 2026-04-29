@@ -1,6 +1,6 @@
 ---
 title: 'Lunatone'
-subtitle: 'Lunatone was discovered at a location where a meteorite fell. As a result, some people theorize that this Pokemon came from space. However, no one has been able to prove this theory so far.'
+subtitle: 'Lunatone was discovered at a location where a meteorite fell. As a result, some people theorize that this Pokémon came from space. However, no one has been able to prove this theory so far.'
 date: 2026-04-28
 dex_number: '337'
 skins: ['Shiny', 'Cosmic']

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user risks everything to attack its target. The user faints but does damage equal to its HP.'
 learners_level:
   - { name: 'Jataro Slowking', level: '0' }

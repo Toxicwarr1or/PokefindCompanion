@@ -1,6 +1,6 @@
 ---
 title: 'Swampert'
-subtitle: 'Swampert is very strong. It has enough power to easily drag a boulder weighing more than a ton. This Pokemon also has powerful vision that lets it see even in murky water.'
+subtitle: 'Swampert is very strong. It has enough power to easily drag a boulder weighing more than a ton. This Pokémon also has powerful vision that lets it see even in murky water.'
 date: 2026-04-28
 dex_number: '260'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Valentine', 'Summer', 'Shadow', 'Aura']

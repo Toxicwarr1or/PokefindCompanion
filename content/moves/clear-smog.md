@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks by throwing a clump of special mud. All stat changes are returned to normal.'
 learners_level:
   - { name: 'Haikou Aggron', level: '1' }

@@ -1,6 +1,6 @@
 ---
 title: 'Cascoon'
-subtitle: 'Cascoon makes its protective cocoon by wrapping its body entirely with a fine silk from its mouth. Once the silk goes around its body, it hardens. This Pokemon prepares for its evolution inside the cocoon.'
+subtitle: 'Cascoon makes its protective cocoon by wrapping its body entirely with a fine silk from its mouth. Once the silk goes around its body, it hardens. This Pokémon prepares for its evolution inside the cocoon.'
 date: 2026-04-28
 dex_number: '268'
 skins: ['Shiny']

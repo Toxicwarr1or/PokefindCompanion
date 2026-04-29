@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is exposed to a sinister ray that triggers confusion.'
 learners_level:
   - { name: 'Jataro Porygon2', level: '0' }

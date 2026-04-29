@@ -1,6 +1,6 @@
 ---
 title: 'Altaria'
-subtitle: 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokemon makes its listeners experience dreamy wonderment.'
+subtitle: 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment.'
 date: 2026-04-28
 dex_number: '334'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow', 'Aura', 'Cosmic']

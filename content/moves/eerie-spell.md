@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'No'
 generation: 'Gen 8'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 sound_based: 'Yes'
 effect: 'The user attacks with its tremendous psychic power. This also removes 3 PP from the target''s last move.'
 learners_level:

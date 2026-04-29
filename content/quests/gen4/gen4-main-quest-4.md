@@ -8,7 +8,7 @@ slug: 'gen4-main-quest-4'
 description: 'A massive storm has flooded the mines of Digger''s Peak.'
 source_file: 'gen4-main-quest-4.json'
 video_id: '1ZFm38ne5z4'
-video_title: 'PokeFind Observing the End (Main Quest 4: Generation 3)'
+video_title: 'PokéFind Observing the End (Main Quest 4: Generation 3)'
 start:
   npc: 'Skagway'
   x: 19.5

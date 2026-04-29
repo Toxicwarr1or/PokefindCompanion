@@ -9,7 +9,7 @@ accuracy: '55'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'The user generates odd sound waves from its body that confuse the target.'
 learners_level:

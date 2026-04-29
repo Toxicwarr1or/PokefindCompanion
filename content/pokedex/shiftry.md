@@ -1,6 +1,6 @@
 ---
 title: 'Shiftry'
-subtitle: 'Shiftry is a mysterious Pokemon that is said to live atop towering trees  dating back over a thousand years. It creates terrific windstorms with the fans it holds.'
+subtitle: 'Shiftry is a mysterious Pokémon that is said to live atop towering trees  dating back over a thousand years. It creates terrific windstorms with the fans it holds.'
 date: 2026-04-28
 dex_number: '275'
 skins: ['Shiny', 'Halloween']

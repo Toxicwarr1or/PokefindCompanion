@@ -10,7 +10,7 @@ pp: '30'
 priority: '1'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user strikes the target with tough punches as fast as bullets. This move always goes first.'
 learners_level:
   - { name: 'Jataro Feraligatr', level: '1' }

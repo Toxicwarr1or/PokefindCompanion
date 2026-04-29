@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is thrown using the power of gravity. It inflicts damage equal to the user''s level.'
 learners_level:
   - { name: 'Kyoto Slowbro', level: '0' }

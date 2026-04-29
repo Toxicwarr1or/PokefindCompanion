@@ -1,6 +1,6 @@
 ---
 title: 'Heracross'
-subtitle: 'This powerful Pokemon thrusts its prized horn under its enemies'' bellies then lifts and throws them.'
+subtitle: 'This powerful Pokémon thrusts its prized horn under its enemies'' bellies then lifts and throws them.'
 date: 2026-04-28
 dex_number: '214'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine', 'Thanksgiving', 'Shadow', 'Aura', 'Monochrome']

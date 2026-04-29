@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is blasted with a forceful shot of water.'
 learners_level:
   - { name: 'Azumarill', level: '1' }

@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lets loose a huge yawn that lulls the target into falling asleep on the next turn.'
 learners_level:
   - { name: 'Jataro Kingdra', level: '0' }

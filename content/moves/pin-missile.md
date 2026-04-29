@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'Sharp spikes are shot at the target in rapid succession. They hit two to five times in a row.'
 learners_level:

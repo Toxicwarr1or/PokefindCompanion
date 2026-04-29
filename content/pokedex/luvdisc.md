@@ -1,6 +1,6 @@
 ---
 title: 'Luvdisc'
-subtitle: 'Luvdisc live in shallow seas in the tropics. This heart-shaped Pokemon earned its name by swimming after loving couples it spotted in the ocean''s waves.'
+subtitle: 'Luvdisc live in shallow seas in the tropics. This heart-shaped Pokémon earned its name by swimming after loving couples it spotted in the ocean''s waves.'
 date: 2026-04-28
 dex_number: '370'
 skins: ['Shiny']

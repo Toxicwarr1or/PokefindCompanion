@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user tickles the target into laughing, reducing its Attack and Defense stats.'
 learners_level:
   - { name: 'Zeinova Serperior', level: '0' }

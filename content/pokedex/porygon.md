@@ -1,6 +1,6 @@
 ---
 title: 'Porygon'
-subtitle: 'A Pokemon that consists entirely of programming code. Capable of moving freely in cyberspace.'
+subtitle: 'A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace.'
 date: 2026-04-28
 dex_number: '137'
 skins: ['Shiny', 'Halloween', 'Easter', 'Valentine', 'Aura']

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks its target by encircling it in sharp leaves. This attack may also lower the target''s accuracy.'
 learners_level:
   - { name: 'Serperior', level: '16' }

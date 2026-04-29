@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user suppresses the target and makes its move go last.'
 learners_level:
   - { name: 'Sableye', level: '44' }

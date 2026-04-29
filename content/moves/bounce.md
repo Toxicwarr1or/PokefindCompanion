@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user bounces up high, then drops on the target on the second turn. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Azurill', level: '23' }

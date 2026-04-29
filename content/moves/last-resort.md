@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This move can be used only after the user has used all the other moves it knows in the battle.'
 learners_level:
   - { name: 'Chingling', level: '16' }

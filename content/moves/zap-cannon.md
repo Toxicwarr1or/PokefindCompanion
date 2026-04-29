@@ -9,7 +9,7 @@ accuracy: '50'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user fires an electric blast like a cannon to inflict damage and cause paralysis.'
 learners_level:
   - { name: 'Kyoto Slowbro', level: '0' }

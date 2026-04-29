@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A powerful low kick that makes the target fall over. The heavier the target, the greater the move''s power.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

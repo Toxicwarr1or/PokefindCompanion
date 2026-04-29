@@ -1,6 +1,6 @@
-# Pokefind Companion
+# Pokéfind Companion
 
-Static reference wiki for the Pokefind Minecraft server, built with Hugo and
+Static reference wiki for the Pokéfind Minecraft server, built with Hugo and
 deployed to Cloudflare Pages. Companion to the WarriorToxic YouTube channel.
 
 ## Local development
@@ -29,8 +29,8 @@ data sources (the server's quest JSON exports, the resource pack, etc.) and
 emit markdown into `content/`. Re-run them when the underlying data changes:
 
 ```bash
-python3 scripts/ingest_pokedex.py        # rebuild Pokedex from species.json
-python3 scripts/build_pokedex_extras.py  # spawn-region towns + Smogon sets
+python3 scripts/ingest_pokédex.py        # rebuild Pokédex from species.json
+python3 scripts/build_pokédex_extras.py  # spawn-region towns + Smogon sets
 python3 scripts/populate_moves.py        # Moves & Abilities tab
 python3 scripts/build_questlog.py        # Quest log + per-quest walkthroughs
 python3 scripts/build_gym_teams.py       # Gym leader / Elite Four rosters

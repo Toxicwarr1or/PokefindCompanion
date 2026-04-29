@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user gets revenge for a fainted ally. If an ally fainted in the previous turn, this move''s power is increased.'
 learners_level:
   - { name: 'Lillipup', level: '29' }

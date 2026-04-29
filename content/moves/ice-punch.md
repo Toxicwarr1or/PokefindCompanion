@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is punched with an icy fist. This may also leave the target frozen.'
 learners_level:
   - { name: 'Abomasnow', level: '1' }

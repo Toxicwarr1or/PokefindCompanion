@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 crit_rate: '+6'
 effect: 'The user strikes the target with a fierce blow. This attack always results in a critical hit.'
 learners_level:

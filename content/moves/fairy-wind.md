@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user stirs up a fairy wind and strikes the target with it.'
 learners_level:
   - { name: 'Cottonee', level: '1' }

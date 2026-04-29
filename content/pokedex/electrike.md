@@ -1,6 +1,6 @@
 ---
 title: 'Electrike'
-subtitle: 'Electrike stores electricity in its long body hair. This Pokemon stimulates its leg muscles with electric charges. These jolts of power give its legs explosive acceleration performance.'
+subtitle: 'Electrike stores electricity in its long body hair. This Pokémon stimulates its leg muscles with electric charges. These jolts of power give its legs explosive acceleration performance.'
 date: 2026-04-28
 dex_number: '309'
 skins: ['Shiny']

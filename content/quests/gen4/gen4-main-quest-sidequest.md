@@ -5,10 +5,10 @@ layout: questguide
 gen: 4
 quest_key: 'GEN4_MAIN_QUEST_SIDEQUEST'
 slug: 'gen4-main-quest-sidequest'
-description: 'The Pokemon powering the generators disappeared after an enormous storm.'
+description: 'The Pokémon powering the generators disappeared after an enormous storm.'
 source_file: 'gen4-main-quest-sidequest.json'
 video_id: '8hetNvzL23w'
-video_title: 'PokeFind Power Storm (Main Questline, Generation 4)'
+video_title: 'PokéFind Power Storm (Main Questline, Generation 4)'
 start:
   npc: 'Strom'
   town: 'Circuit City'
@@ -16,7 +16,7 @@ start:
   "y": 29.5
   z: 663.5
 steps:
-  - text: 'Look around for suspicious people and retrieve the pokemon that power the generator'
+  - text: 'Look around for suspicious people and retrieve the pokémon that power the generator'
     location:
       kind: 'battle'
       town: 'Circuit City'

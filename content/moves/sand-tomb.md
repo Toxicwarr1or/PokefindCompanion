@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user traps the target inside a harshly raging sandstorm for four to five turns.'
 learners_level:
   - { name: 'Zeinova Archeops', level: '0' }

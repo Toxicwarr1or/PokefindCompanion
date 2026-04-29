@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user strikes the target with a quick jolt of electricity. This attack never misses.'
 learners_level:
   - { name: 'Blitzle', level: '11' }

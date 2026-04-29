@@ -1,6 +1,6 @@
 ---
 title: 'Sceptile'
-subtitle: 'The leaves growing on Sceptile''s body are very sharp edged. This Pokemon is very agile - it leaps all over the branches of trees and jumps on its foe from above or behind.'
+subtitle: 'The leaves growing on Sceptile''s body are very sharp edged. This Pokémon is very agile - it leaps all over the branches of trees and jumps on its foe from above or behind.'
 date: 2026-04-28
 dex_number: '254'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Shadow', 'Aura']

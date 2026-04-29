@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user snares the target with grass and trips it. The heavier the target, the greater the move''s power.'
 learners_level:
   - { name: 'Haikou Ludicolo', level: '19' }

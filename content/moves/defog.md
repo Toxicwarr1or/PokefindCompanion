@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A strong wind blows away the target''s barriers such as Reflect or Light Screen. This also lowers the target''s evasiveness.'
 learners_level:
   - { name: 'Galarian Weezing', level: '1' }

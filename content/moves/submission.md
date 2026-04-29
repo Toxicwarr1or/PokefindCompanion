@@ -9,7 +9,7 @@ accuracy: '80'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-25%'
 effect: 'The user grabs the target and recklessly dives for the ground. This also damages the user a little.'
 learners_level:

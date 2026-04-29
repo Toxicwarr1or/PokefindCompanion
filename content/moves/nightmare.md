@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A sleeping target sees a nightmare that inflicts some damage every turn.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

@@ -1,9 +1,9 @@
 ---
 title: "Shiloh"
-subtitle: "Generation 4 region — Team Cosmic Star and disaster-investigation, served on `poke4`"
+subtitle: "Generation 4 region — Team Cosmic Star and disaster-investigation, served on `poké4`"
 ---
 
-The **Shiloh Region** opens up the fourth generation of Pokémon (dex 1–493) and runs on the `poke4` server. For overall flavor and main-quest summary see [PokeWorld](../).
+The **Shiloh Region** opens up the fourth generation of Pokémon (dex 1–493) and runs on the `poké4` server. For overall flavor and main-quest summary see [PokéWorld](../).
 
 This page collects the recurring NPCs that spawn around Shiloh outside of the main-quest beats. They rotate through hidden coordinates and announce themselves on broadcast and in the Discord `#pworld-rare-spawns` feed.
 
@@ -20,12 +20,12 @@ Active rotation:
 | Trainer | Spawn locations |
 | --- | --- |
 | **Diamond** | Findville Cape (813, 59, 904) · Crystal View (208, 107, 498) |
-| **Cynthia** | Pokemon League (1445, 25, 722) · *near Pokemon League* (1437, 133, 1133) |
+| **Cynthia** | Pokémon League (1445, 25, 722) · *near Pokémon League* (1437, 133, 1133) |
 | **Cyrus** | Shadow HQ (-1642, 30, 400) · Duskburn (-587, 51, 686) |
 | **Barry** | Woodburn (339, 63, 846) · Seabrooke (549, 24, -352) |
-| **Ash** | Pokemon League (1526, 33, 691) · *near Pokemon League* (1510, 134, 1119) |
+| **Ash** | Pokémon League (1526, 33, 691) · *near Pokémon League* (1510, 134, 1119) |
 | **Dawn** | Seabrooke (603, 36, -291) · Findville Cape (871, 29, 850) |
-| **Paul** | *near Hearth Valley* (-1181, 26, 86) · Pokemon League (1474, 23, 727) |
+| **Paul** | *near Hearth Valley* (-1181, 26, 86) · Pokémon League (1474, 23, 727) |
 | **Jessie** | Shadow HQ (-1647, 27, 301) · Duskburn (-717, 23, 686) |
 | **James** | Marshbarrow (1273, 23, 188) · *near Marshbarrow* (886, 72, 202) |
 
@@ -99,7 +99,7 @@ One tutor at a time, every 90–150 minutes, **20-minute** window.
 | **Move Maniac** | *near Eastwind* | (834, 54, 396) |
 | **Farmer Clark** | *near Crystal View* | (1, 36, 426) |
 | **Honey** | Woodburn | (341, 42, 608) |
-| **HM Tutor** | Pokemon League | (1449, 25, 668) |
+| **HM Tutor** | Pokémon League | (1449, 25, 668) |
 | **Scientist Fred** (IV Checker) | Findville Cape | (950, 43, 858) |
 | **EV Trainer Clemont** | Battle Tower | (-279, 80, 1037) |
 | **Pokémon Breeder Dominic** | Stronghaven | (-283, 36, 311) |

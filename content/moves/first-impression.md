@@ -10,7 +10,7 @@ pp: '10'
 priority: '2'
 contact: 'Yes'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Although this move has great power, it only works the first turn the user is in battle.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

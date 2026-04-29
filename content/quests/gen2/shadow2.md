@@ -8,7 +8,7 @@ slug: 'shadow2'
 description: 'Cipher has moved operations to Jataro in a secret base. It will be up to you to fight your way through his followers. This is your moment to stop Cipher once and for all!'
 source_file: 'shadow2.json'
 video_id: '3uBPavO-E3s'
-video_title: 'PokeFind Shadow Quest 2'
+video_title: 'PokéFind Shadow Quest 2'
 start:
   npc: 'Michael'
   town: 'Rosolie City'

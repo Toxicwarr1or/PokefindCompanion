@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user hurls mud in the target''s face to inflict damage and lower its accuracy.'
 learners_level:
   - { name: 'Barboach', level: '1' }

@@ -9,7 +9,7 @@ description: 'The Pokémon in Pure Harbor have gone haywire. A trainer should ta
 author: 'Mmaarten'
 source_file: 'gen5-main-quest-2.json'
 video_id: 'qpbNpIN_bhg'
-video_title: 'Pokemon On The Loose! (Episode 7: Main Quest 2)'
+video_title: 'Pokémon On The Loose! (Episode 7: Main Quest 2)'
 start:
   npc: 'Lewis'
   description: 'Talk to Lewis on the bridge to Pure Harbor'
@@ -63,7 +63,7 @@ steps:
       x: 1131.5
       "y": 43.0
       z: -602.0
-      label: 'Shrine_Pokemon1'
+      label: 'Shrine_Pokémon1'
       town: 'Pure Harbor Heights'
   - text: 'Complete the second parkour'
     location:

@@ -10,7 +10,7 @@ pp: '30'
 priority: '1'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user throws a punch at blinding speed. This move always goes first.'
 learners_level:
   - { name: 'Shiloh Gallade', level: '0' }

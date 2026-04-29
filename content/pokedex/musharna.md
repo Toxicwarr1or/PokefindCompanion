@@ -1,6 +1,6 @@
 ---
 title: 'Musharna'
-subtitle: 'The mist emanating from their foreheads is packed with the dreams of people and Pokemon.'
+subtitle: 'The mist emanating from their foreheads is packed with the dreams of people and Pokémon.'
 date: 2026-04-28
 dex_number: '518'
 skins: ['Shiny', 'Easter', 'Thanksgiving', 'Cosmic']

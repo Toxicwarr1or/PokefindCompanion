@@ -1,6 +1,6 @@
 ---
 title: 'Lilligant'
-subtitle: 'Even veteran Trainers face a challenge in getting its beautiful flower to bloom. This Pokemon is popular with celebrities.'
+subtitle: 'Even veteran Trainers face a challenge in getting its beautiful flower to bloom. This Pokémon is popular with celebrities.'
 date: 2026-04-28
 dex_number: '549'
 skins: ['Shiny', 'Christmas', 'Easter', 'Valentine']

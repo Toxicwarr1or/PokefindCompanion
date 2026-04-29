@@ -10,7 +10,7 @@ pp: '30'
 priority: '1'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user flash-freezes chunks of ice and hurls them at the target. This move always goes first.'
 learners_level:
   - { name: 'Shiloh Froslass', level: '0' }

@@ -1,6 +1,6 @@
 ---
 title: 'Groudon'
-subtitle: 'Groudon has long been described in  mythology as the Pokemon that raised lands and expanded continents. This Pokemon took to sleep after a cataclysmic battle with Kyogre.'
+subtitle: 'Groudon has long been described in  mythology as the Pokémon that raised lands and expanded continents. This Pokémon took to sleep after a cataclysmic battle with Kyogre.'
 date: 2026-04-28
 dex_number: '383'
 skins: ['Shiny', 'Easter']

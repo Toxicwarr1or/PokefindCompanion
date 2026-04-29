@@ -8,7 +8,7 @@ slug: 'gen4-main-quest-5'
 description: 'Team Cosmic Star has been spotted around Stronghaven. Find out what they are up to!'
 source_file: 'gen4-main-quest-5.json'
 video_id: 'PB4dyEF3PYc'
-video_title: 'PokeFind New World (Main Quest 5: Generation 3)'
+video_title: 'PokéFind New World (Main Quest 5: Generation 3)'
 start:
   npc: 'Isaac'
   town: 'Ice Village'

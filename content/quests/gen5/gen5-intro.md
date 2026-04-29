@@ -8,7 +8,7 @@ slug: 'gen5-intro'
 description: 'Welcome to Zeinova'
 source_file: 'gen5-intro.json'
 video_id: 'RMZt4aYZM0k'
-video_title: 'Welcome to PokeFind (Episode 1: Gen 5 Introduction)'
+video_title: 'Welcome to PokéFind (Episode 1: Gen 5 Introduction)'
 start:
   description: 'Triggers automatically when you arrive in Findale Harbor — no NPC required.'
 steps:
@@ -30,7 +30,7 @@ steps:
       town: 'Findale Harbor'
     rewards:
       - 'Starter Pokémon'
-      - 'pokegear'
+      - 'pokégear'
   - text: 'Summon your Pokémon by pressing the drop button or right clicking'
     location:
       kind: 'destination'
@@ -51,5 +51,5 @@ steps:
           - species: 'Oshawott'
             level: 1
     rewards:
-      - '16× Poke Ball'
+      - '16× Poké Ball'
 ---

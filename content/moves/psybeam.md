@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with a peculiar ray. This may also leave the target confused.'
 learners_level:
   - { name: 'Mantine', level: '1' }

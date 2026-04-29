@@ -9,7 +9,7 @@ accuracy: '75'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user kisses the target with a sweet, angelic cuteness that causes confusion.'
 learners_level:
   - { name: 'Jataro Meganium', level: '0' }

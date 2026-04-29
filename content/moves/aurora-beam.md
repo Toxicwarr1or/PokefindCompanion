@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is hit with a rainbow-colored beam. This may also lower the target''s Attack stat.'
 learners_level:
   - { name: 'Zeinova Chandelure', level: '0' }

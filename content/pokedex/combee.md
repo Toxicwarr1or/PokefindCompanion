@@ -1,6 +1,6 @@
 ---
 title: 'Combee'
-subtitle: 'A Pokemon formed by three others. It busily carries sweet floral honey to Vespiquen.'
+subtitle: 'A Pokémon formed by three others. It busily carries sweet floral honey to Vespiquen.'
 date: 2026-04-28
 dex_number: '415'
 skins: ['Shiny']

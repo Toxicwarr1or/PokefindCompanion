@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Cloaked in flames, the user dances and flaps its wings. This may also raise the user''s Sp. Atk stat.'
 learners_level:
   - { name: 'Haikou Ludicolo', level: '25' }

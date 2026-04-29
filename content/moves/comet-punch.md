@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'The target is hit with a flurry of punches that strike two to five times in a row.'
 learners_level:

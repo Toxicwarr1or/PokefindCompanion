@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user stores power, then attacks. If the user moves after the target, this attack''s power will be doubled.'
 learners_level:
   - { name: 'Shiloh Hippowdon', level: '0' }

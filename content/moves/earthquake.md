@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user sets off an earthquake that strikes every Pokémon around it.'
 learners_level:
   - { name: 'Barboach', level: '32' }

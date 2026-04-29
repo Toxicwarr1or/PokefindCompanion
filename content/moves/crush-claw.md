@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slashes the target with hard and sharp claws. This may also lower the target''s Defense stat.'
 learners_level:
   - { name: 'Zeinova Druddigon', level: '0' }

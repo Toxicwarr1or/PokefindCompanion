@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon Me First'
+target: 'Selected Pokémon Me First'
 effect: 'The user cuts ahead of the target to copy and use the target''s intended move with greater power. This move fails if it isn''t used first.'
 learners_level:
   - { name: 'Accelgor', level: '28' }

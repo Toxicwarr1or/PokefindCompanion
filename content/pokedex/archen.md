@@ -1,6 +1,6 @@
 ---
 title: 'Archen'
-subtitle: 'Said to be an ancestor of bird Pokemon, they were unable to fly and moved about by hopping from one branch to another.'
+subtitle: 'Said to be an ancestor of bird Pokémon, they were unable to fly and moved about by hopping from one branch to another.'
 date: 2026-04-28
 dex_number: '566'
 skins: ['Shiny']

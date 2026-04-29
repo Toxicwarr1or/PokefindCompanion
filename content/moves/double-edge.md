@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-33%'
 effect: 'A reckless, life-risking tackle. This also damages the user quite a lot.'
 learners_level:

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lands an intense kick of tropical origins on the target. This also lowers the target''s Attack stat.'
 learners_level:
   - { name: 'Zeinova Mienshao', level: '30' }

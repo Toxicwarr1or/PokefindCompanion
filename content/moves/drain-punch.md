@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '+50%'
 effect: 'An energy-draining punch. The user''s HP is restored by half the damage taken by the target.'
 learners_level:

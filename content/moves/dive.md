@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Diving on the first turn, the user floats up and attacks on the next turn.'
 learners_level:
   - { name: 'Zeinova Scrafty', level: '16' }

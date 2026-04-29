@@ -8,7 +8,7 @@ slug: 'classy-competition-4'
 description: 'It''s time for the final battle, before you and Danielle both take on the Elite Four'
 source_file: 'classy-competition-4.json'
 video_id: '8mPomqoYSPU'
-video_title: 'PokeFind Classy Competition 4 (Classy Comp, Generation 4)'
+video_title: 'PokéFind Classy Competition 4 (Classy Comp, Generation 4)'
 start:
   npc: 'Danielle'
   x: 1508.4

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 sound_based: 'Yes'
 effect: 'The user bursts into song, emitting many bubbles. Any Pokémon suffering from a burn will be healed by the touch of these bubbles.'
 learners_level:

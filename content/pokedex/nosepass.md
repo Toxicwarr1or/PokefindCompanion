@@ -1,6 +1,6 @@
 ---
 title: 'Nosepass'
-subtitle: 'Nosepass''s magnetic nose is always pointed to the north. If two of these Pokemon meet, they cannot turn their faces to each other when they are close because their magnetic noses repel one another.'
+subtitle: 'Nosepass''s magnetic nose is always pointed to the north. If two of these Pokémon meet, they cannot turn their faces to each other when they are close because their magnetic noses repel one another.'
 date: 2026-04-28
 dex_number: '299'
 skins: ['Shiny']

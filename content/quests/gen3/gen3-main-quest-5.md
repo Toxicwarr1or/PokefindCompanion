@@ -8,7 +8,7 @@ slug: 'gen3-main-quest-5'
 description: 'Gordon and Ayumu are at Occult Island trying to find Minoru. She is nowhere to be found. Help them find her and stop her once and for all!'
 source_file: 'gen3-main-quest-5.json'
 video_id: 'PB4dyEF3PYc'
-video_title: 'PokeFind New World (Main Quest 5: Generation 3)'
+video_title: 'PokéFind New World (Main Quest 5: Generation 3)'
 start:
   npc: 'Ayumu'
   town: 'Occult Island'
@@ -156,7 +156,7 @@ steps:
       kind: 'battle'
       town: 'Occult Island'
     battles:
-      - trainer: 'Mysterious Pokemon'
+      - trainer: 'Mysterious Pokémon'
         x: 1083.5
         "y": 4.0
         z: -930.5
@@ -186,7 +186,7 @@ steps:
       x: 1083.5
       "y": 4.0
       z: -930.5
-      label: 'Mysterious Pokemon'
+      label: 'Mysterious Pokémon'
       town: 'Occult Island'
     rewards:
       - '250000 Trainer XP'

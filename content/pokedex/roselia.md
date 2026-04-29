@@ -1,6 +1,6 @@
 ---
 title: 'Roselia'
-subtitle: 'Roselia shoots sharp thorns as projectiles at any opponent that tries to steal the flowers on its arms. The aroma of this Pokemon brings serenity to living things.'
+subtitle: 'Roselia shoots sharp thorns as projectiles at any opponent that tries to steal the flowers on its arms. The aroma of this Pokémon brings serenity to living things.'
 date: 2026-04-28
 dex_number: '315'
 skins: ['Shiny', 'Shadow']

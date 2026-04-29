@@ -8,10 +8,10 @@ slug: 'gen5-elite-four'
 description: 'Your ultimate challenge is before you, the Elite Four awaits!'
 source_file: 'gen5-elite-four.json'
 video_id: 'IOa1_se8GYE'
-video_title: 'PokeFind Elite Four (E4: Generation 4)'
+video_title: 'PokéFind Elite Four (E4: Generation 4)'
 start:
   npc: 'Cletus'
-  town: 'Pokemon League'
+  town: 'Pokémon League'
   x: 97.5
   "y": 56.0
   z: -185.5
@@ -24,7 +24,7 @@ steps:
         x: 179.5
         "y": 12.9
         z: -245.1
-        town: 'Pokemon League'
+        town: 'Pokémon League'
         team:
           - species: 'Froslass'
             level: 75
@@ -45,7 +45,7 @@ steps:
       "y": 13.0
       z: -238.5
       label: 'Cletus'
-      town: 'Pokemon League'
+      town: 'Pokémon League'
   - text: 'Battle Elite Four member Grimsley'
     location:
       kind: 'battle'
@@ -54,7 +54,7 @@ steps:
         x: -30.5
         "y": 12.9
         z: -229.5
-        town: 'Pokemon League'
+        town: 'Pokémon League'
         team:
           - species: 'Krookodile'
             level: 77
@@ -75,7 +75,7 @@ steps:
       "y": 13.0
       z: -236.5
       label: 'Cletus'
-      town: 'Pokemon League'
+      town: 'Pokémon League'
   - text: 'Battle Elite Four member Caitlin'
     location:
       kind: 'battle'
@@ -84,7 +84,7 @@ steps:
         x: 97.5
         "y": 12.9
         z: -284.5
-        town: 'Pokemon League'
+        town: 'Pokémon League'
         team:
           - species: 'Metagross'
             level: 80
@@ -105,7 +105,7 @@ steps:
       "y": 13.0
       z: -290.5
       label: 'Cletus'
-      town: 'Pokemon League'
+      town: 'Pokémon League'
   - text: 'Battle Elite Four member Marshal'
     location:
       kind: 'battle'
@@ -114,7 +114,7 @@ steps:
         x: 97.5
         "y": 12.9
         z: -195.6
-        town: 'Pokemon League'
+        town: 'Pokémon League'
         team:
           - species: 'Infernape'
             level: 82
@@ -135,7 +135,7 @@ steps:
       "y": 13.0
       z: -201.5
       label: 'Cletus'
-      town: 'Pokemon League'
+      town: 'Pokémon League'
   - text: 'Battle Elite Four Champion Alder'
     location:
       kind: 'battle'
@@ -144,7 +144,7 @@ steps:
         x: 97.5
         "y": 165.9
         z: -284.5
-        town: 'Pokemon League'
+        town: 'Pokémon League'
         team:
           - species: 'Galvantula'
             level: 85

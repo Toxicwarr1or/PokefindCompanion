@@ -10,7 +10,7 @@ pp: '20'
 priority: '-5'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A retaliation move that counters any physical attack, inflicting double the damage taken.'
 learners_level:
   - { name: 'Jataro Heracross', level: '0' }

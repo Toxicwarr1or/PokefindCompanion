@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user powerfully wrings the target. The more HP the target has, the greater the move''s power.'
 learners_level:
   - { name: 'Zeinova Serperior', level: '0' }

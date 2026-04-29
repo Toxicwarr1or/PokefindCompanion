@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '40'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Enables a Ghost-type target to be hit by Normal- and Fighting-type attacks. This also enables an evasive target to be hit.'
 learners_level:
   - { name: 'Arcanine', level: '1' }

@@ -1,6 +1,6 @@
 ---
 title: 'Mudkip'
-subtitle: 'The fin on Mudkip''s head acts as highly sensitive radar. Using this fin to sense movements of water and air, this Pokemon can determine what is taking place around it without using its eyes.'
+subtitle: 'The fin on Mudkip''s head acts as highly sensitive radar. Using this fin to sense movements of water and air, this Pokémon can determine what is taking place around it without using its eyes.'
 date: 2026-04-28
 dex_number: '258'
 skins: ['Shiny', 'Easter', 'Valentine', 'Aura']

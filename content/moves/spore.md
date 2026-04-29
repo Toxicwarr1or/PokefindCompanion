@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user scatters bursts of spores that induce sleep.'
 learners_level:
   - { name: 'Haikou Breloom', level: '1' }

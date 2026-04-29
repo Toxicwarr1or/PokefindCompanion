@@ -42,7 +42,7 @@ steps:
       "y": 88.0
       z: 124.0
       label: 'Courtney'
-  - text: 'Speak to Catherine at the Frostfort bridge with an Ice-type Pokemon'
+  - text: 'Speak to Catherine at the Frostfort bridge with an Ice-type Pokémon'
     location:
       kind: 'npc'
       x: 379.0

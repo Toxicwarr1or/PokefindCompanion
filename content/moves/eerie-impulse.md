@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user''s body generates an eerie impulse. Exposing the target to it harshly lowers the target''s Sp. Atk stat.'
 learners_level:
   - { name: 'Jataro Blissey', level: '0' }

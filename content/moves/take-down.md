@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-25%'
 effect: 'A reckless, full-body charge attack for slamming into the target. This also damages the user a little.'
 learners_level:

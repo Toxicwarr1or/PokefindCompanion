@@ -1,6 +1,6 @@
 ---
 title: 'Torterra'
-subtitle: 'Small Pokemon occasionally gather on its unmoving back to begin building their nests.'
+subtitle: 'Small Pokémon occasionally gather on its unmoving back to begin building their nests.'
 date: 2026-04-28
 dex_number: '389'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow', 'Aura']

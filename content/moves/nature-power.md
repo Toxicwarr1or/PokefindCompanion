@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This attack makes use of nature''s power. Its effects vary depending on the user''s environment.'
 learners_level:
   - { name: 'Ludicolo', level: '1' }

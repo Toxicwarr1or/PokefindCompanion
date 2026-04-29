@@ -1,6 +1,6 @@
 ---
 title: 'Armaldo'
-subtitle: 'Armaldo''s tough armor makes all attacks bounce off. This Pokemon''s two enormous claws can be freely extended or contracted. They have the power to punch right through a steel slab.'
+subtitle: 'Armaldo''s tough armor makes all attacks bounce off. This Pokémon''s two enormous claws can be freely extended or contracted. They have the power to punch right through a steel slab.'
 date: 2026-04-28
 dex_number: '348'
 skins: ['Shiny', 'Valentine', 'Aura']

@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2–5'
 effect: 'The user attacks by striking the target with its hard tail. It hits the target two to five times in a row.'
 learners_level:

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks with electrically charged fists. This move changes Normal-type moves to Electric-type moves.'
 learners_level:
   - { name: 'Haikou Swampert', level: '75' }

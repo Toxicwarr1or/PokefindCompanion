@@ -1,6 +1,6 @@
 ---
 title: 'Purugly'
-subtitle: 'It is a brazen brute that barges its way into another Pokemon''s nest and claims it as its own.'
+subtitle: 'It is a brazen brute that barges its way into another Pokémon''s nest and claims it as its own.'
 date: 2026-04-28
 dex_number: '432'
 skins: ['Shiny']

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user makes a lunge at the target, attacking with full force. This also lowers the target''s Attack stat.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

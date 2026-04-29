@@ -5,7 +5,7 @@ layout: questguide
 gen: 5
 quest_key: 'gen5_main_quest_9_statera'
 slug: 'gen5-main-quest-9-statera'
-description: 'Some time has passed since the events of The Great War. Trainers and Pokemon are at peace. Can that peace be maintained as a new threat emerges?'
+description: 'Some time has passed since the events of The Great War. Trainers and Pokémon are at peace. Can that peace be maintained as a new threat emerges?'
 author: 'Toxicwarr1or'
 source_file: 'gen5-main-quest-9-statera.json'
 video_id: 'rMcCB1xq0sU'
@@ -18,7 +18,7 @@ start:
   "y": 53.0
   z: 300.5
 steps:
-  - text: 'Walk around Watterson until you start receiving Static from your Pokegear.'
+  - text: 'Walk around Watterson until you start receiving Static from your Pokégear.'
     location:
       kind: 'region'
       x: 71.5

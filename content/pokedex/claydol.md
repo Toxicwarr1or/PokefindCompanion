@@ -1,6 +1,6 @@
 ---
 title: 'Claydol'
-subtitle: 'Claydol are said to be dolls of mud made by primitive humans and brought to life by exposure to a mysterious ray. This Pokemon moves about while levitating.'
+subtitle: 'Claydol are said to be dolls of mud made by primitive humans and brought to life by exposure to a mysterious ray. This Pokémon moves about while levitating.'
 date: 2026-04-28
 dex_number: '344'
 skins: ['Shiny', 'Christmas', 'Disney']

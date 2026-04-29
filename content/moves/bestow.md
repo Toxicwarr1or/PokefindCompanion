@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user passes its held item to the target when the target isn''t holding an item.'
 learners_level:
   - { name: 'Plusle', level: '13' }

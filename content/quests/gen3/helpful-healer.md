@@ -5,7 +5,7 @@ layout: questguide
 gen: 3
 quest_key: 'HEALBALLQUEST'
 slug: 'helpful-healer'
-description: 'A little girl is lost, and her Pokemon is injured.'
+description: 'A little girl is lost, and her Pokémon is injured.'
 source_file: 'helpful-healer.json'
 start:
   npc: 'Vivian'
@@ -13,7 +13,7 @@ start:
   "y": 25.0
   z: 274.5
 steps:
-  - text: 'Take Vivian to the Pokemon Center'
+  - text: 'Take Vivian to the Pokémon Center'
     location:
       kind: 'npc'
       x: 715.5

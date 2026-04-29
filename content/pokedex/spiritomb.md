@@ -1,6 +1,6 @@
 ---
 title: 'Spiritomb'
-subtitle: 'A Pokemon that was formed by 108 spirits. It is bound to a fissure in an odd keystone.'
+subtitle: 'A Pokémon that was formed by 108 spirits. It is bound to a fissure in an odd keystone.'
 date: 2026-04-28
 dex_number: '442'
 skins: ['Shiny', 'Halloween', 'Valentine', 'Shadow']

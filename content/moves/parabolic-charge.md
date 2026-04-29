@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 drain: '+50%'
 effect: 'The user attacks everything around it. The user''s HP is restored by half the damage taken by those hit.'
 learners_level:

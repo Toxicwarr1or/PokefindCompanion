@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-33%'
 effect: 'The user tucks in its wings and charges from a low altitude. This also damages the user quite a lot.'
 learners_level:

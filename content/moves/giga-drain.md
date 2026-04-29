@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '+50%'
 effect: 'A nutrient-draining attack. The user''s HP is restored by half the damage taken by the target.'
 learners_level:

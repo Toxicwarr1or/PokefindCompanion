@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A corkscrewing attack with a sharp beak acting as a drill.'
 learners_level:
   - { name: 'Kyoto Dodrio', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A long body, vines, or the like are used to wrap and  squeeze the target for four to five turns.'
 learners_level:
   - { name: 'Arbok', level: '1' }

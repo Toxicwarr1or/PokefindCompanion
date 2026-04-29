@@ -1,6 +1,6 @@
 ---
 title: 'Seviper'
-subtitle: 'Seviper shares a generations-long feud with Zangoose. The scars on its body are evidence of vicious battles. This Pokemon attacks using its sword- edged tail.'
+subtitle: 'Seviper shares a generations-long feud with Zangoose. The scars on its body are evidence of vicious battles. This Pokémon attacks using its sword- edged tail.'
 date: 2026-04-28
 dex_number: '336'
 skins: ['Shiny', 'Shadow']

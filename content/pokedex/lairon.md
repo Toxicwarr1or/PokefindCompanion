@@ -1,6 +1,6 @@
 ---
 title: 'Lairon'
-subtitle: 'Lairon tempers its steel body by drinking highly nutritious mineral springwater until it is bloated. This Pokemon makes its nest close to springs of delicious water.'
+subtitle: 'Lairon tempers its steel body by drinking highly nutritious mineral springwater until it is bloated. This Pokémon makes its nest close to springs of delicious water.'
 date: 2026-04-28
 dex_number: '305'
 skins: ['Shiny']

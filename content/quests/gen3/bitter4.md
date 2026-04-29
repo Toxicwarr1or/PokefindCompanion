@@ -8,7 +8,7 @@ slug: 'bitter4'
 description: 'After passing through the Safari zone, you encounter your new friends, or are they your rivals?'
 source_file: 'bitter4.json'
 video_id: 'Ys_V7LncrQo'
-video_title: 'PokeFind Bitter Rivals Part 4 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part 4 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Lincoln'
   x: -1184.5

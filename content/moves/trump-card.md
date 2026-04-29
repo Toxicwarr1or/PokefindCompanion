@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '5'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The fewer PP this move has, the greater its power.'
 learners_level:
   - { name: 'Minun', level: '40' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user draws power to attack by using its held Berry. The Berry determines the move''s type and power.'
 learners_level:
   - { name: 'Arceus', level: '1' }

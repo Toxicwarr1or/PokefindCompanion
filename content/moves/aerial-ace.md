@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user confounds the target with speed, then slashes. This attack never misses.'
 learners_level:
   - { name: 'Farfetch''d', level: '9' }

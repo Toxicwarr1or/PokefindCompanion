@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user spits fluid that works to melt the target. This harshly lowers the target''s Sp. Def stat.'
 learners_level:
   - { name: 'Kyoto Muk', level: '0' }

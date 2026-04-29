@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with a shock wave. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Haikou Ludicolo', level: '0' }

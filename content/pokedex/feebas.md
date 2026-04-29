@@ -1,6 +1,6 @@
 ---
 title: 'Feebas'
-subtitle: 'Feebas''s fins are ragged and tattered from the start of its life. Because of its shoddy appearance, this Pokemon is largely ignored. It is capable of living in both the sea and in rivers.'
+subtitle: 'Feebas''s fins are ragged and tattered from the start of its life. Because of its shoddy appearance, this Pokémon is largely ignored. It is capable of living in both the sea and in rivers.'
 date: 2026-04-28
 dex_number: '349'
 skins: ['Shiny']

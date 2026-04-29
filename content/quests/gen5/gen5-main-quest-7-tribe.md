@@ -55,7 +55,7 @@ steps:
       "y": 57.0
       z: -191.5
       label: 'Need to get back to Danielle?'
-      town: 'Pokemon League'
+      town: 'Pokémon League'
   - text: 'Answer the secret word in chat! ''/secretword'' (Clues > ''-ro'' ''So-'' & ''-ph-'')'
   - text: 'Explore the pyramid and find Astrid'
     location:
@@ -107,7 +107,7 @@ steps:
       x: 104.5
       "y": 169.9
       z: -283.9
-      town: 'Pokemon League'
+      town: 'Pokémon League'
   - text: 'Defeat Danielle to become the Regional Champion'
     location:
       kind: 'battle'
@@ -116,7 +116,7 @@ steps:
         x: 107.5
         "y": 166.0
         z: -290.5
-        town: 'Pokemon League'
+        town: 'Pokémon League'
         team:
           - species: 'Emboar'
             level: 80

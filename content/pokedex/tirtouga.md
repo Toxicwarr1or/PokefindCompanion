@@ -1,6 +1,6 @@
 ---
 title: 'Tirtouga'
-subtitle: 'Restored from a fossil, this Pokemon can dive to depths beyond half a mile.'
+subtitle: 'Restored from a fossil, this Pokémon can dive to depths beyond half a mile.'
 date: 2026-04-28
 dex_number: '564'
 skins: ['Shiny', 'Summer']

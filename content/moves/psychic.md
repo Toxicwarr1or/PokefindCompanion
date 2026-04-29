@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is hit by a strong telekinetic force. This may also lower the target''s Sp. Def stat.'
 learners_level:
   - { name: 'Alolan Raichu', level: '1' }

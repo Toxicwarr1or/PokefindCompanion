@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slashes the target with huge sharp claws.'
 learners_level:
   - { name: 'Alolan Exeggutor', level: '1' }

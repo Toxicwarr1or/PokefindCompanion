@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is hit with wings of steel. This may also raise the user''s Defense stat.'
 learners_level:
   - { name: 'Shiloh Staraptor', level: '1' }

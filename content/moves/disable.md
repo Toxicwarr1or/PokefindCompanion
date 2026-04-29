@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'For four turns, this move prevents the target from using the move it last used.'
 learners_level:
   - { name: 'Jataro Blissey', level: '0' }

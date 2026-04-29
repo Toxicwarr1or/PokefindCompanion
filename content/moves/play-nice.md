@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user and the target become friends, and the target loses its will to fight. This lowers the target''s Attack stat.'
 learners_level:
   - { name: 'Audino', level: '1' }

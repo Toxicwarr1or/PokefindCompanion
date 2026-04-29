@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 hits: '2'
 effect: 'The target is quickly kicked twice in succession using both feet.'
 learners_level:

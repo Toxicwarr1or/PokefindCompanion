@@ -1,6 +1,6 @@
 ---
 title: 'Liepard'
-subtitle: 'These Pokemon vanish and appear unexpectedly. Many Trainers are drawn to their beautiful form and fur.'
+subtitle: 'These Pokémon vanish and appear unexpectedly. Many Trainers are drawn to their beautiful form and fur.'
 date: 2026-04-28
 dex_number: '510'
 skins: ['Shiny', 'Halloween']

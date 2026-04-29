@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 crit_rate: '+1'
 effect: 'A vortex of air is shot at the target to inflict damage. Critical hits land more easily.'
 learners_level:

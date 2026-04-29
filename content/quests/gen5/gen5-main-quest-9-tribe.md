@@ -5,7 +5,7 @@ layout: questguide
 gen: 5
 quest_key: 'gen5_main_quest_9_tribe'
 slug: 'gen5-main-quest-9-tribe'
-description: 'Some time has passed since the events of The Great War. Trainers and Pokemon are at peace. Can that peace be maintained as a new threat emerges?'
+description: 'Some time has passed since the events of The Great War. Trainers and Pokémon are at peace. Can that peace be maintained as a new threat emerges?'
 author: 'Toxicwarr1or'
 source_file: 'gen5-main-quest-9-tribe.json'
 video_id: 'nFHeMiHL5AM'
@@ -46,7 +46,7 @@ steps:
         "y2": 77.0
         z2: -9.0
       town: 'Greenholm'
-  - text: 'Defeat the Pokemon before they are able to hurt anyone. [Hint: Start with Jellicent]'
+  - text: 'Defeat the Pokémon before they are able to hurt anyone. [Hint: Start with Jellicent]'
     location:
       kind: 'npc'
       x: -340.5
@@ -62,7 +62,7 @@ steps:
       z: 59.5
       label: 'Astrid'
       town: 'Greenholm'
-  - text: 'Defeat Astrid''s Pokemon'
+  - text: 'Defeat Astrid''s Pokémon'
     location:
       kind: 'npc'
       x: -498.5

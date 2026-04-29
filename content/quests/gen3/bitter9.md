@@ -8,7 +8,7 @@ slug: 'bitter9'
 description: 'You arrive at Victor Island an old and forgotten town, undocumented on any recent map. While exploring this uncharted place you see Lincoln, Sarah and Casey standing outside a strange entrance, they look stronger than ever.'
 source_file: 'bitter9.json'
 video_id: 'uan5cCyNLEY'
-video_title: 'PokeFind Bitter Rivals Part 9 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part 9 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Casey'
   town: 'Victor Island'

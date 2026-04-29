@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is hit with rhythmically launched punches. This may also leave the target confused.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

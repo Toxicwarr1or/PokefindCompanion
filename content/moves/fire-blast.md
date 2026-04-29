@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '5'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with an intense blast of all-consuming fire. This may also leave the target with a burn.'
 learners_level:
   - { name: 'Pansear', level: '34' }

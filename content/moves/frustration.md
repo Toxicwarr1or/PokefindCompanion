@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'This full-power attack grows more powerful the less the user likes its Trainer.'
 learners_level:
   - { name: 'Buneary', level: '13' }

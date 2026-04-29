@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user hurls a shadowy blob at the target. This may also lower the target''s Sp. Def stat.'
 learners_level:
   - { name: 'Jataro Suicune', level: '22' }

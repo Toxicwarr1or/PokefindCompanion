@@ -1,6 +1,6 @@
 ---
 title: 'Basculin'
-subtitle: 'Red and blue Basculin get along so poorly, they''ll start fighting instantly. These Pokemon are very hostile.'
+subtitle: 'Red and blue Basculin get along so poorly, they''ll start fighting instantly. These Pokémon are very hostile.'
 date: 2026-04-28
 dex_number: '550'
 skins: ['Shiny']

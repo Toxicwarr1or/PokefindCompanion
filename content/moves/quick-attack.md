@@ -10,7 +10,7 @@ pp: '30'
 priority: '1'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lunges at the target at a speed that makes it almost invisible. This move always goes first.'
 learners_level:
   - { name: 'Jataro Kingdra', level: '0' }

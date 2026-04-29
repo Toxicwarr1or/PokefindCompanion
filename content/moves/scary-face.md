@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user frightens the target with a scary face to harshly lower its Speed stat.'
 learners_level:
   - { name: 'Kyoto Muk', level: '0' }

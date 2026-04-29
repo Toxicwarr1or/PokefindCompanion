@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user strikes everything around it by swamping the area with a giant sludge wave. This may also poison those hit.'
 learners_level:
   - { name: 'Zeinova Bisharp', level: '30' }

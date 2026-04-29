@@ -10,7 +10,7 @@ pp: '10'
 priority: '-1'
 contact: 'Yes'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks last. In return, this throw move never misses.'
 learners_level:
   - { name: 'Jataro Heracross', level: '0' }

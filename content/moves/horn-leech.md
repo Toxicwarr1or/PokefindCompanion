@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '+50%'
 effect: 'The user drains the target''s energy with its horns. The user''s HP is restored by half the damage taken by the target.'
 learners_level:

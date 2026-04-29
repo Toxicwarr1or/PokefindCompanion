@@ -8,7 +8,7 @@ slug: 'gen3-main-quest-4'
 description: 'Gordon has discovered that Minoru has created a very powerful weapon. You must stop her before she uses it!'
 source_file: 'gen3-main-quest-4.json'
 video_id: '1ZFm38ne5z4'
-video_title: 'PokeFind Observing the End (Main Quest 4: Generation 3)'
+video_title: 'PokéFind Observing the End (Main Quest 4: Generation 3)'
 start:
   npc: 'Gordon'
   town: 'Kinetic Island'
@@ -118,7 +118,7 @@ steps:
       kind: 'battle'
       town: 'Kinetic Island'
     battles:
-      - trainer: 'Mysterious Pokemon'
+      - trainer: 'Mysterious Pokémon'
         x: 1436.5
         "y": 105.0
         z: -604.5
@@ -136,7 +136,7 @@ steps:
       x: 1436.5
       "y": 105.0
       z: -604.5
-      label: 'Mysterious Pokemon'
+      label: 'Mysterious Pokémon'
       town: 'Kinetic Island'
     rewards:
       - '20000 Coins'

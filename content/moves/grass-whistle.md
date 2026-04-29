@@ -9,7 +9,7 @@ accuracy: '55'
 pp: '15'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'The user plays a pleasant melody that lulls the target into a deep sleep.'
 learners_level:

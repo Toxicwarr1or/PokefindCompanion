@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user stabs the target with a poisonous stinger. This may also poison the target.'
 learners_level:
   - { name: 'Ariados', level: '1' }

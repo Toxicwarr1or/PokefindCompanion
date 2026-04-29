@@ -1,6 +1,6 @@
 ---
 title: 'Lapras'
-subtitle: 'A Pokemon that has been overhunted almost to extinction. It can ferry people across the water.'
+subtitle: 'A Pokémon that has been overhunted almost to extinction. It can ferry people across the water.'
 date: 2026-04-28
 dex_number: '131'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Easter', 'Shadow', 'Aura', 'Disney']

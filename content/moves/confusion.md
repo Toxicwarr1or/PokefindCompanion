@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is hit by a weak telekinetic force. This may also confuse the target.'
 learners_level:
   - { name: 'Jataro Blissey', level: '0' }

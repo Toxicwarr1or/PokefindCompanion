@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user makes the target see a frightening mirage. It inflicts damage equal to the user''s level.'
 learners_level:
   - { name: 'Kyoto Aerodactyl', level: '0' }

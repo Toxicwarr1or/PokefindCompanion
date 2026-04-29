@@ -1,6 +1,6 @@
 ---
 title: 'Sharpedo'
-subtitle: 'Nicknamed "the bully of the sea," Sharpedo is widely feared. Its cruel fangs grow back immediately if they snap off. Just one of these Pokemon can thoroughly tear apart a supertanker.'
+subtitle: 'Nicknamed "the bully of the sea," Sharpedo is widely feared. Its cruel fangs grow back immediately if they snap off. Just one of these Pokémon can thoroughly tear apart a supertanker.'
 date: 2026-04-28
 dex_number: '319'
 skins: ['Shiny', 'Summer', 'Aura', 'Disney']

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is scorched with an intense blast of fire. This may also leave the target with a burn.'
 learners_level:
   - { name: 'Ninetales', level: '1' }

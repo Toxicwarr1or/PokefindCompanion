@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user attacks while simultaneously stitching the target''s shadow to the ground to prevent the target from escaping.'
 learners_level:
   - { name: 'Haikou Absol', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A seed is planted on the target. It steals some HP from the target every turn.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

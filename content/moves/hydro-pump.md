@@ -9,7 +9,7 @@ accuracy: '80'
 pp: '5'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is blasted by a huge volume of water launched under great pressure.'
 learners_level:
   - { name: 'Cloyster', level: '1' }

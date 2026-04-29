@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user soars and then strikes its target on the next turn.'
 learners_level:
   - { name: 'Salamence', level: '50' }

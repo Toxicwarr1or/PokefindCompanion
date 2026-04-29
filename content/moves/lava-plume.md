@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 4'
-target: 'All Other Pokemon'
+target: 'All Other Pokémon'
 effect: 'The user torches everything around it in an inferno of scarlet flames. This may also leave those it hits with a burn.'
 learners_level:
   - { name: 'Groudon', level: '20' }

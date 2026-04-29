@@ -1,6 +1,6 @@
 ---
 title: 'Psyduck'
-subtitle: 'While lulling its enemies with its vacant look, this wily Pokemon will use psychokinetic powers.'
+subtitle: 'While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers.'
 date: 2026-04-28
 dex_number: '54'
 skins: ['Shiny']

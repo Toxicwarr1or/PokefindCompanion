@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 6'
-target: 'All Pokemon'
+target: 'All Pokémon'
 effect: 'Tilling the soil, the user makes it easier for plants to grow. This raises the Attack and Sp. Atk stats of Grass-type Pokémon.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

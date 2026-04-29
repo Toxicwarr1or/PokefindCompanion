@@ -9,7 +9,7 @@ accuracy: '90'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead.'
 learners_level:
   - { name: 'Blaziken', level: '1' }

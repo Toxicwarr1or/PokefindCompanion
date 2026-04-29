@@ -1,6 +1,6 @@
 ---
 title: 'Rapidash'
-subtitle: 'Very competitive, this Pokemon will chase anything that moves fast in the hopes of racing it.'
+subtitle: 'Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it.'
 date: 2026-04-28
 dex_number: '78'
 skins: ['Shiny', 'Halloween', 'Christmas', 'Valentine', 'Shadow']

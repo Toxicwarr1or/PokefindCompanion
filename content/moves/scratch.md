@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '35'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Hard, pointed, sharp claws rake the target to inflict damage.'
 learners_level:
   - { name: 'Absol', level: '1' }

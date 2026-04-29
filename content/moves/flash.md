@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user flashes a bright light that cuts the target''s accuracy.'
 learners_level:
   - { name: 'Volbeat', level: '1' }

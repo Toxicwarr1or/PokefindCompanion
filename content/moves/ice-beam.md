@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is struck with an icy-cold beam of energy. This may also leave the target frozen.'
 learners_level:
   - { name: 'Alolan Ninetales', level: '1' }

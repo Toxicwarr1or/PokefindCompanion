@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user boasts its strength and attacks the target. The more the user''s stats are raised, the greater the move''s power.'
 learners_level:
   - { name: 'Jataro Ursaring', level: '0' }

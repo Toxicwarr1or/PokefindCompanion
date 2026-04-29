@@ -6,7 +6,7 @@ gen: 5
 quest_key: 'a_cosmic_discovery_main'
 slug: '0a-cosmic-discovery-main'
 description: 'Strange occurrences have been happening around the Zeinova Region! Are you and your Pokémon able to figure out what''s causing them?'
-author: 'Pokecrafter320'
+author: 'Pokécrafter320'
 source_file: '0a-cosmic-discovery-main.json'
 video_id: 'F-joH5oorY0'
 video_title: 'The Electrode Puzzle (A Cosmic Discovery Act 4)'

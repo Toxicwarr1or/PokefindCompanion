@@ -8,4 +8,4 @@ effect: ''         # one-line effect summary
 
 ## Description
 
-## Mechanics on Pokefind
+## Mechanics on Pokéfind

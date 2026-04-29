@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user shoots a torrent of water at the target and changes the target''s type to Water.'
 learners_level:
   - { name: 'Zeinova Crustle', level: '0' }

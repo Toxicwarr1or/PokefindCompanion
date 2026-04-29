@@ -1,6 +1,6 @@
 ---
 title: 'Skins'
-subtitle: 'Every alternate-look variant for the Pokemon in Pokefind'
+subtitle: 'Every alternate-look variant for the Pokémon in Pokéfind'
 date: 2026-04-28
 layout: skinslist
 skins:

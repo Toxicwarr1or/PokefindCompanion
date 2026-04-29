@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user''s mysterious psychic wave changes the target''s Ability to Simple.'
 learners_level:
   - { name: 'Beheeyem', level: '29' }

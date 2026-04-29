@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user hurls an electric orb at the target. The faster the user is than the target, the greater the move''s power.'
 learners_level:
   - { name: 'Jataro Meganium', level: '0' }

@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.'
 learners_level:
   - { name: 'Haikou Chimecho', level: '0' }

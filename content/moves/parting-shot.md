@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 sound_based: 'Yes'
 effect: 'With a parting threat, the user lowers the target''s Attack and Sp. Atk stats. Then it switches with a party Pokémon.'
 learners_level:

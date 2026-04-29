@@ -1,6 +1,6 @@
 ---
 title: 'Furret'
-subtitle: 'It makes a nest to suit its long and skinny body. The nest is impossible for other Pokemon to enter.'
+subtitle: 'It makes a nest to suit its long and skinny body. The nest is impossible for other Pokémon to enter.'
 date: 2026-04-28
 dex_number: '162'
 skins: ['Shiny']

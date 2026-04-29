@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '5'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user takes sure aim at the target. This ensures the next attack does not miss the target.'
 learners_level:
   - { name: 'Jataro Sunflora', level: '0' }

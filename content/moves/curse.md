@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A move that works differently for the Ghost type than for all other types.'
 learners_level:
   - { name: 'Haikou Slaking', level: '0' }

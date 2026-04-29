@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Unsanitary sludge is hurled at the target. This may also poison the target.'
 learners_level:
   - { name: 'Kyoto Snorlax', level: '1' }

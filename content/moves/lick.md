@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '30'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is licked with a long tongue, causing damage. This may also leave the target with paralysis.'
 learners_level:
   - { name: 'Jataro Porygon2', level: '0' }

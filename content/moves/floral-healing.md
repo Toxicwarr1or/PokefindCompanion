@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 healing: '50%'
 effect: 'The user restores the target''s HP by up to half of its max HP. It restores more HP when the terrain is grass.'
 learners_level:

@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '5'
 contact: 'No'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user blocks the target''s way with arms spread wide to prevent escape.'
 learners_level:
   - { name: 'Landorus', level: '1' }

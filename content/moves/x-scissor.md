@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors.'
 learners_level:
   - { name: 'Kricketune', level: '30' }

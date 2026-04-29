@@ -1,6 +1,6 @@
 ---
 title: 'Mightyena'
-subtitle: 'Mightyena gives obvious signals when it is preparing to attack. It starts to growl deeply and then flattens its body. This Pokemon will bite savagely with its sharply pointed fangs.'
+subtitle: 'Mightyena gives obvious signals when it is preparing to attack. It starts to growl deeply and then flattens its body. This Pokémon will bite savagely with its sharply pointed fangs.'
 date: 2026-04-28
 dex_number: '262'
 skins: ['Shiny', 'Aura']

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user uses its body like a hammer to attack the target and inflict damage.'
 learners_level:
   - { name: 'Jataro Heracross', level: '0' }

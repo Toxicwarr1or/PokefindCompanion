@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 2'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'A unique attack that varies in type depending on the Pokémon using it.'
 learners_level:
   - { name: 'Haikou Latias', level: '1' }

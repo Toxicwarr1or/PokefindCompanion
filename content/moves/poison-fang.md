@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 3'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user bites the target with toxic fangs. This may also leave the target badly poisoned.'
 learners_level:
   - { name: 'Jataro Ursaring', level: '0' }

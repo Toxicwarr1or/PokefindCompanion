@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'When the user knocks out a target with this move, the user''s Attack stat rises drastically.'
 learners_level:
   - { name: 'Zeinova Scolipede', level: '0' }

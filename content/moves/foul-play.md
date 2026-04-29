@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user turns the target''s power against it. The higher the target''s Attack stat, the greater the move''s power.'
 learners_level:
   - { name: 'Zoroark', level: '29' }

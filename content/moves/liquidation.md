@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user slams into the target using a full-force blast of water. This may also lower the target''s Defense stat.'
 learners_level:
   - { name: 'Kyoto Slowbro', level: '0' }

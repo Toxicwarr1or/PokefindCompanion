@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 drain: '-25%'
 effect: 'The user shrouds itself in electricity and smashes into its target. This also damages the user a little.'
 learners_level:

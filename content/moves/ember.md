@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '25'
 contact: 'No'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The target is attacked with small flames. This may also leave the target with a burn.'
 learners_level:
   - { name: 'Houndoom', level: '1' }

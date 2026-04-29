@@ -9,7 +9,7 @@ accuracy: '95'
 pp: '10'
 contact: 'Yes'
 generation: 'Gen 6'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user dives down onto the target from the sky. This move is Fighting and Flying type simultaneously.'
 learners_level:
   - { name: 'Jataro Donphan', level: '0' }

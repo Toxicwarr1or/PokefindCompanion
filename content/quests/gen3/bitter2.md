@@ -8,7 +8,7 @@ slug: 'bitter2'
 description: 'You cross paths with a trainer named Sarah, is she the friend Casey spoke of?'
 source_file: 'bitter2.json'
 video_id: 'Dk3Q2K7PJUM'
-video_title: 'PokeFind Bitter Rivals Part 1 - Part 3 (Bitter Rivals: Generation 3)'
+video_title: 'PokéFind Bitter Rivals Part 1 - Part 3 (Bitter Rivals: Generation 3)'
 start:
   npc: 'Sarah'
   x: -249.5

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user entangles the target with its anchor chain while attacking. The target becomes unable to flee.'
 learners_level:
   - { name: 'Haikou Wailord', level: '36' }

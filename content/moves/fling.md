@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user flings its held item at the target to attack. This move''s power and effects depend on the item.'
 learners_level:
   - { name: 'Primeape', level: '1' }

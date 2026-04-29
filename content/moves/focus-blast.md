@@ -9,7 +9,7 @@ accuracy: '70'
 pp: '5'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user heightens its mental focus and unleashes its power. This may also lower the target''s  Sp. Def stat.'
 learners_level:
   - { name: 'Shiloh Roserade', level: '59' }

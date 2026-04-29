@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'No'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user dances with an odd rhythm that compels the target to mimic it, making the target''s Ability the same as the user''s.'
 learners_level:
   - { name: 'Chingling', level: '19' }

@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'Cloaking itself in flame, the user attacks. Then, building up more power, the user raises its Speed stat.'
 learners_level:
   - { name: 'Shiloh Hippowdon', level: '0' }

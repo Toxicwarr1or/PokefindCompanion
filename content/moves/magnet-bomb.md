@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '20'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user launches steel bombs that stick to the target. This attack never misses.'
 learners_level:
   - { name: 'Shiloh Tangrowth', level: '0' }

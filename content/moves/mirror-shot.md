@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '10'
 contact: 'No'
 generation: 'Gen 4'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user lets loose a flash of energy at the target from its polished body. This may also lower the target''s accuracy.'
 learners_level:
   - { name: 'Zeinova Chandelure', level: '0' }

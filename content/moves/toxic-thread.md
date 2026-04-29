@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '20'
 contact: 'No'
 generation: 'Gen 7'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user shoots poisonous threads to poison the target and lower the target''s Speed stat.'
 learners_level:
   - { name: 'Kyoto Marowak', level: '13' }

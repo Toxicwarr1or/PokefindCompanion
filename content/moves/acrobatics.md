@@ -9,7 +9,7 @@ accuracy: '100'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 5'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 effect: 'The user nimbly strikes the target. If the user is not holding an item, this attack inflicts massive damage.'
 learners_level:
   - { name: 'Zeinova Emolga', level: '4' }

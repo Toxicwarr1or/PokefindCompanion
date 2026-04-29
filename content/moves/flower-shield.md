@@ -9,7 +9,7 @@ accuracy: '∞'
 pp: '10'
 contact: 'No'
 generation: 'Gen 6'
-target: 'All Pokemon'
+target: 'All Pokémon'
 effect: 'The user raises the Defense stat of all Grass-type Pokémon in battle with a mysterious power.'
 learners_level:
   - { name: 'Jataro Sunflora', level: '0' }

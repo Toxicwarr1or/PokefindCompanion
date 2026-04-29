@@ -9,7 +9,7 @@ accuracy: '85'
 pp: '15'
 contact: 'Yes'
 generation: 'Gen 1'
-target: 'Selected Pokemon'
+target: 'Selected Pokémon'
 flinch_chance: '30%'
 effect: 'The user lashes out with a quick, spinning kick. This may also make the target flinch.'
 learners_level:
