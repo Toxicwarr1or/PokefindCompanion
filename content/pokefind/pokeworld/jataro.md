@@ -30,14 +30,6 @@ Active rotation:
 | **Jessie** | Fog City (139, 86, 1257) · Cruxirt Port (-528, 66, 485) |
 | **James** | Findley (709, 79, 713) · Filora Town (-106, 68, 977) |
 
-Reserved (not in active rotation):
-
-| Trainer | Spawn locations |
-| --- | --- |
-| **Butch** | Caligo City (-501, 111, -1) · Treetop Village (-781, 73, 204) |
-| **Cassidy** | *near Rosolite City* (-335, 73, -242) · Filora Town (-65, 68, 960) |
-| **Morty** | Eerie City (-195, 102, -39) · Zephyrus City (7, 85, 389) |
-
 ## Mystery Man
 
 Cycles **every 2–4 hours**, picks **1 of 23 hidden coordinates** (largest spawn pool of any region), stays for **10 minutes**.

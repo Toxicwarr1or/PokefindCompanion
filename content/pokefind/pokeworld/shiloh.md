@@ -29,14 +29,6 @@ Active rotation:
 | **Jessie** | Shadow HQ (-1647, 27, 301) · Duskburn (-717, 23, 686) |
 | **James** | Marshbarrow (1273, 23, 188) · *near Marshbarrow* (886, 72, 202) |
 
-Reserved (not in active rotation):
-
-| Trainer | Spawn locations |
-| --- | --- |
-| **Haru** | Hearth Valley (-1213, 119, -131) · Silverkeep (-884, 33, 405) |
-| **Sora** | Seabrooke (631, 30, -262) · *near Diggers Peak* (-396, 23, -35) |
-| **Zoey** | Findville Cape (1003, 48, 1002) · Circuit City (-214, 30, 924) |
-
 ## Mystery Man
 
 Cycles **every 2–4 hours**, picks **1 of 13 hidden coordinates**, stays for **10 minutes**.
@@ -122,5 +114,5 @@ Notable static map zones used for evolution mechanics:
 | Location | Town | Bounding box |
 | --- | --- | --- |
 | **Icy Rock** *(evolves Eevee → Glaceon)* | Frostfort vicinity | (194, 26, 175) – (315, 106, 281) |
-| **Mossy Rock** *(evolves Eevee → Leafeon)* | Findville Cape vicinity | (149, 24, 732) – (233, 75, 792) |
+| **Mossy Rock** *(evolves Eevee → Leafeon)* | Woodburn | (149, 24, 732) – (233, 75, 792) |
 | **Magnetic Field** *(evolves Magneton, Nosepass)* | Circuit City | (-411, 16, 567) – (-180, 115, 978) |

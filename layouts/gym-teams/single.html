@@ -42,6 +42,9 @@
         {{ end }}
       </details>
       {{ end }}
+      {{ with .requirement }}
+      <p class="gym-requirement"><strong>Requirement:</strong> {{ . }}</p>
+      {{ end }}
       <h4 class="leader-label">Leader's team</h4>
       {{ with .team }}
       <table class="gym-team">

@@ -1,0 +1,46 @@
+{{- $pokemon := dict -}}
+{{- range where .Site.RegularPages "Section" "pokedex" -}}
+  {{- $slug := path.Base .RelPermalink -}}
+  {{- $forms := slice -}}
+  {{- range .Params.forms -}}
+    {{- if eq (.kind | default "skin") "form" -}}
+      {{- $bs := .base_stats | default dict -}}
+      {{- $form := dict
+            "name" (.name | default "Standard")
+            "types" (.types | default (slice "Normal"))
+            "abilities" (.abilities | default (slice))
+            "hidden" (.hidden_ability | default "")
+            "stats" (dict
+              "hp"  (index $bs "hp"  | default 0)
+              "atk" (index $bs "atk" | default 0)
+              "def" (index $bs "def" | default 0)
+              "spa" (index $bs "spa" | default 0)
+              "spd" (index $bs "spd" | default 0)
+              "spe" (index $bs "spe" | default 0))
+      -}}
+      {{- $forms = $forms | append $form -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $forms -}}
+    {{- $entry := dict "name" .Title "dex" (.Params.dex_number | default "0") "forms" $forms -}}
+    {{- $pokemon = merge $pokemon (dict $slug $entry) -}}
+  {{- end -}}
+{{- end -}}
+{{- $moves := dict -}}
+{{- range where .Site.RegularPages "Section" "moves" -}}
+  {{- if eq (.Params.entry_kind | default "move") "move" -}}
+    {{- $slug := path.Base .RelPermalink -}}
+    {{- $power := .Params.power | default "—" -}}
+    {{- $entry := dict
+          "name" .Title
+          "type" (.Params.move_type | default "Normal")
+          "category" (.Params.category | default "Status")
+          "power" $power
+          "accuracy" (.Params.accuracy | default "—")
+          "pp" (.Params.pp | default "—")
+          "drain" (.Params.drain | default "")
+    -}}
+    {{- $moves = merge $moves (dict $slug $entry) -}}
+  {{- end -}}
+{{- end -}}
+{{- dict "pokemon" $pokemon "moves" $moves | jsonify -}}

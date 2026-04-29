@@ -88,6 +88,13 @@
   {{ if eq $f.name "Galarian" }}{{ $variant = "galarian" }}{{ end }}
   {{ if eq $f.name "Female" }}{{ $variant = "female" }}{{ end }}
   {{ if eq $f.name "Origin" }}{{ $variant = "origin" }}{{ end }}
+  {{/* Shellos / Gastrodon East-West forms. West routes to the default
+        regular/ slot (form-index-0 already does this); East gets its own
+        east/east_shiny output dir staged from the pack's *_east.json
+        models. Gastrodon ships only one model — east/gastrodon/ is a copy
+        of regular/gastrodon/, so both tabs render the same model. */}}
+  {{ if eq $f.name "East Sea" }}{{ $variant = "east" }}{{ end }}
+  {{ if eq $f.name "West Sea" }}{{ $variant = "regular" }}{{ end }}
   {{/* Region forms route to the anniversary skin's output directory. */}}
   {{ if in $regionForms $f.name }}{{ $variant = "anniversary" }}{{ end }}
   {{/* Other cosmetic-skin forms: any form whose `name` matches a cosmetic
@@ -107,7 +114,7 @@
         — other cosmetic skins don't apply on those forms. */}}
   {{ $baseLabel := "Regular" }}
   {{ if eq $variant "anniversary" }}{{ $baseLabel = "Anniversary" }}{{ end }}
-  {{ if and $variant (or (eq $variant "regular") (eq $variant "female") (eq $variant "anniversary")) }}
+  {{ if and $variant (or (eq $variant "regular") (eq $variant "female") (eq $variant "anniversary") (eq $variant "east")) }}
     {{ range site.Data.cosmetic_skins }}
       {{ $skin := .key }}
       {{ $dir := $skin }}
@@ -117,6 +124,7 @@
         {{ $dir = "anniversary_shiny" }}
         {{ $label = "Shiny Anniversary" }}
       {{ end }}
+      {{ if and (eq $variant "east") (eq $skin "shiny") }}{{ $dir = "east_shiny" }}{{ end }}
       {{ $allowed := or (eq $variant "regular") (eq $skin "shiny") }}
       {{ $hasOwnFormTab := in $skinsClaimedByForms $skin }}
       {{ $path := printf "static/models-3d/%s/%s/%s.json" $dir $slug $slug }}

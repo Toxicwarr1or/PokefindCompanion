@@ -27,11 +27,6 @@ disableKinds = ["taxonomy", "term"]
   weight = 10
 
 [[menu.main]]
-  name = "Moves & Abilities"
-  url = "/moves/"
-  weight = 15
-
-[[menu.main]]
   name = "Quests"
   url = "/quests/"
   weight = 20
@@ -45,11 +40,6 @@ disableKinds = ["taxonomy", "term"]
   name = "Mechanics"
   url = "/mechanics/"
   weight = 40
-
-[[menu.main]]
-  name = "Breeding"
-  url = "/breeding/"
-  weight = 60
 
 [[menu.main]]
   name = "Skins"
@@ -67,5 +57,17 @@ disableKinds = ["taxonomy", "term"]
 
 # Build hardening
 [outputs]
-  home    = ["HTML", "RSS"]
+  home    = ["HTML", "RSS", "MOVETIPS", "CALCDATA"]
   section = ["HTML", "RSS"]
+
+[outputFormats.MOVETIPS]
+  mediaType   = "application/json"
+  baseName    = "movetips"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.CALCDATA]
+  mediaType   = "application/json"
+  baseName    = "calcdata"
+  isPlainText = true
+  notAlternative = true

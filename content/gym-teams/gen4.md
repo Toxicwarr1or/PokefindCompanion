@@ -4,6 +4,7 @@ date: 2026-04-27
 gyms:
   - index: 1
     leader: 'Fauner'
+    requirement: 'Complete Main Quest 2'
     team:
       - species: 'Cherubi'
         level: 15
@@ -44,6 +45,7 @@ gyms:
             moves: ['Absorb', 'Seed Bomb', 'Mega Drain', 'Stun Spore']
   - index: 2
     leader: 'Maxelle'
+    requirement: 'Complete Main Quest 3'
     team:
       - species: 'Mamoswine'
         level: 27
@@ -84,6 +86,7 @@ gyms:
             moves: ['Ice Beam', 'Shadow Ball', 'Toxic', 'Water Pulse']
   - index: 3
     leader: 'Chrissa'
+    requirement: 'Defeat Gym 2 (Maxelle)'
     team:
       - species: 'Empoleon'
         level: 36
@@ -124,6 +127,7 @@ gyms:
             moves: ['Water Pulse', 'Mud Bomb', 'Clear Smog', 'Sludge Wave']
   - index: 4
     leader: 'Coal'
+    requirement: 'Complete Main Quest 4'
     team:
       - species: 'Mamoswine'
         level: 40
@@ -168,6 +172,7 @@ gyms:
             moves: ['Bulldoze', 'Curse', 'Earthquake', 'Counter']
   - index: 5
     leader: 'Brenda'
+    requirement: 'Defeat Gym 4 (Coal)'
     team:
       - species: 'Gallade'
         level: 54
@@ -220,6 +225,7 @@ gyms:
             moves: ['Jump Kick', 'Blaze Kick', 'Poison Jab', 'Earthquake']
   - index: 6
     leader: 'Daemion'
+    requirement: 'Defeat Gym 5 (Brenda)'
     team:
       - species: 'Bronzong'
         level: 60
@@ -260,6 +266,7 @@ gyms:
             moves: ['Scald', 'Thunderbolt', 'Psychic', 'Ice Beam']
   - index: 7
     leader: 'Strom'
+    requirement: 'Complete the Main Quest 6 sidequest'
     team:
       - species: 'Magnezone'
         level: 67
@@ -300,6 +307,7 @@ gyms:
             moves: ['Thunderbolt', 'Overheat', 'Flamethrower', 'Crunch']
   - index: 8
     leader: 'Flare'
+    requirement: 'Complete Main Quest 7'
     team:
       - species: 'Arcanine'
         level: 84

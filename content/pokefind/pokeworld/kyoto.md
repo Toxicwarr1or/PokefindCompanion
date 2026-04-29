@@ -31,8 +31,6 @@ Active rotation:
 | **James** | Amp City (806, 82, 278) · *near Smog Town* (1359, 67, -362) |
 | **Michael** | Aether Village (-457, 85, 1277) |
 
-Reserved (not in the active rotation): **Ritchie** — *near Smog Town* (1527, 65, -656) · *near Foretree Village* (-618, 63, 306).
-
 ## Mystery Man
 
 Cycles **every 2–4 hours**, picks **1 of 15 hidden coordinates**, stays for **10 minutes**.

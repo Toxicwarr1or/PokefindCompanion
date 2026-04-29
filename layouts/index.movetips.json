@@ -1,0 +1,11 @@
+{{- $tips := dict -}}
+{{- range where .Site.RegularPages "Section" "moves" -}}
+  {{- $effect := .Params.effect -}}
+  {{- if $effect -}}
+    {{- $kind := .Params.entry_kind | default "move" -}}
+    {{- $slug := path.Base .RelPermalink -}}
+    {{- $entry := dict "n" .Title "k" $kind "e" $effect -}}
+    {{- $tips = merge $tips (dict $slug $entry) -}}
+  {{- end -}}
+{{- end -}}
+{{- $tips | jsonify -}}

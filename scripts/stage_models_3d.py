@@ -110,6 +110,13 @@ SLUG_OVERRIDES = {
     # "origin").
     "giratina_altered": "giratina",
     "giratina_origin":  ("origin", "giratina"),
+    # Shellos ships separate east/west static-cuboid models. The wiki page
+    # exposes "West Sea" (default tab) and "East Sea" form tabs. West routes
+    # to the canonical `regular/`/`shiny/` slots; East gets its own
+    # `east/`/`east_shiny/` output dirs (single.html maps form name "East
+    # Sea" → variant "east"; the shiny toggle picks up `east_shiny/`).
+    "shellos_west": "shellos",
+    "shellos_east": ({"regular": "east", "shiny": "east_shiny"}, "shellos"),
 }
 
 

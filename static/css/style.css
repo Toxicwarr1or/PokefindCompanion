@@ -598,6 +598,26 @@ pre code { background: transparent; padding: 0; }
     color: #0a0f12;
     border-color: var(--brand);
 }
+.dex-filter {
+    display: flex;
+    gap: 0.25rem;
+}
+.dex-filter button {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 0.45rem 0.8rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+.dex-filter button:hover { color: var(--text); border-color: var(--brand); }
+.dex-filter button.active {
+    background: var(--brand);
+    color: #0a0f12;
+    border-color: var(--brand);
+}
 .dex-count { color: var(--text-muted); font-size: 0.9rem; margin-left: auto; }
 
 /* ----- Pokedex grid ----- */
@@ -1169,6 +1189,405 @@ pre code { background: transparent; padding: 0; }
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
+.gym-requirement {
+    margin: 0.5rem 0 0.4rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+    background: rgba(62, 176, 69, 0.08);
+    border-left: 3px solid var(--brand);
+    border-radius: 3px;
+    color: var(--text);
+}
+.gym-requirement strong {
+    color: var(--brand);
+    margin-right: 0.25rem;
+}
+
+/* ----- Damage calculator ----- */
+.damage-calc-page .dc-help {
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+    max-width: 70ch;
+}
+/* Layout:
+   - Wide / medium (≥700px): Attacker and Defender side-by-side; Move panel
+     below them, spanning the full grid width. Move's interior is a
+     horizontal grid (chips + modifiers across the row) so it's wide and
+     short rather than tall and narrow.
+   - Narrow (<700px): single column for phones.
+   On every layout each side panel keeps a min width so the stat-builder
+   table never overflows its container.
+*/
+.damage-calc-page .dc-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+        "att  def"
+        "move move";
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+.damage-calc-page .dc-attacker { grid-area: att; }
+.damage-calc-page .dc-move     { grid-area: move; }
+.damage-calc-page .dc-defender { grid-area: def; }
+/* Inside the wide Move panel, lay the move picker out across the row and
+   put the modifier dropdowns (Crit / Weather / Terrain / Screen) in a
+   horizontal grid below the picker. */
+.damage-calc-page .dc-move-pick { grid-template-columns: 70px 1fr; }
+.damage-calc-page .dc-move-info {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+.damage-calc-page .dc-move-modifiers {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.6rem;
+    align-items: end;
+}
+.damage-calc-page .dc-move-modifiers .dc-row {
+    grid-template-columns: 1fr;        /* stack label above input */
+    margin-bottom: 0;
+    gap: 0.25rem;
+}
+.damage-calc-page .dc-move-modifiers .dc-checkbox {
+    grid-template-columns: auto auto;
+    align-self: center;
+    justify-content: start;
+}
+@media (max-width: 699px) {
+    .damage-calc-page .dc-grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "att"
+            "def"
+            "move";
+    }
+    .damage-calc-page .dc-row { grid-template-columns: 70px 1fr; }
+    .damage-calc-page .dc-move-modifiers {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .damage-calc-page .dc-stat-builder col.dc-col-label  { width: 26px; }
+    .damage-calc-page .dc-stat-builder col.dc-col-base   { width: 22px; }
+    .damage-calc-page .dc-stat-builder col.dc-col-final  { width: 34px; }
+    .damage-calc-page .dc-stat-builder input,
+    .damage-calc-page .dc-stat-builder select { padding: 0.3rem 0.25rem; }
+}
+.damage-calc-page .dc-side {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    min-width: 0;
+}
+/* Move panel sits wide across the bottom; selects need min-width:0 so the
+   long dropdown options can shrink with the cell. */
+.damage-calc-page .dc-move select,
+.damage-calc-page .dc-move input { min-width: 0; }
+.damage-calc-page .dc-side h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.05rem;
+    color: var(--brand);
+}
+.damage-calc-page .dc-attacker { border-top: 3px solid #d77; }
+.damage-calc-page .dc-defender { border-top: 3px solid #79d; }
+.damage-calc-page .dc-move { border-top: 3px solid var(--brand); }
+.damage-calc-page .dc-row {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.78rem;
+}
+.damage-calc-page .dc-row > span:first-child { color: var(--text-dim); }
+.damage-calc-page .dc-row input,
+.damage-calc-page .dc-row select {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.4rem 0.55rem;
+    font-size: 0.92rem;
+    width: 100%;
+}
+.damage-calc-page .dc-checkbox { grid-template-columns: auto auto; justify-content: start; }
+.damage-calc-page .dc-checkbox input { width: auto; }
+.damage-calc-page .dc-stat-builder {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin: 0.6rem 0;
+}
+.damage-calc-page .dc-stat-builder legend {
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0 0.4rem;
+}
+.damage-calc-page .dc-stat-builder table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.72rem;
+    table-layout: fixed;
+}
+.damage-calc-page .dc-stat-builder th,
+.damage-calc-page .dc-stat-builder td {
+    padding: 0.25rem 0.25rem;
+    text-align: left;
+}
+.damage-calc-page .dc-stat-builder thead th,
+.damage-calc-page .dc-stat-builder tbody th { text-align: left; }
+/* IV and EV columns (3rd and 4th) center their header text to match the
+   centered input values inside the cells below. */
+.damage-calc-page .dc-stat-builder th:nth-child(3),
+.damage-calc-page .dc-stat-builder td:nth-child(3),
+.damage-calc-page .dc-stat-builder th:nth-child(4),
+.damage-calc-page .dc-stat-builder td:nth-child(4) { text-align: center; }
+/* Inputs/selects should still center their numeric content for readability. */
+.damage-calc-page .dc-stat-builder input,
+.damage-calc-page .dc-stat-builder select { text-align: center; }
+/* Per-column widths so inputs/selects always have enough room. Order:
+   stat label · base · IV · EV · Boost · Final. The first three are
+   intrinsically narrow; EV needs space for 3 digits + spinner; Boost
+   is a select with up to 13 options (-6..+6); Final is a 3-digit number. */
+.damage-calc-page .dc-stat-builder col.dc-col-label  { width: 28px; }
+.damage-calc-page .dc-stat-builder col.dc-col-base   { width: 22px; }
+.damage-calc-page .dc-stat-builder col.dc-col-iv     { width: auto; }
+.damage-calc-page .dc-stat-builder col.dc-col-ev     { width: auto; }
+.damage-calc-page .dc-stat-builder col.dc-col-boost  { width: auto; }
+.damage-calc-page .dc-stat-builder col.dc-col-final  { width: 36px; }
+.damage-calc-page .dc-stat-builder thead th {
+    color: var(--text-dim);
+    font-weight: 500;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.damage-calc-page .dc-stat-builder tbody th {
+    text-align: left;
+    color: var(--brand);
+    font-weight: 600;
+}
+.damage-calc-page .dc-stat-builder input,
+.damage-calc-page .dc-stat-builder select {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 0.35rem 0.3rem;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 0.92rem;
+    text-align: center;
+}
+.damage-calc-page .dc-stat-builder { overflow-x: auto; }
+.damage-calc-page .dc-final {
+    color: var(--brand);
+    font-weight: 600;
+}
+.damage-calc-page .dc-nature-row {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+}
+.damage-calc-page .dc-nature-row select {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 0.4rem 0.55rem;
+    font-size: 0.92rem;
+}
+.damage-calc-page .dc-types-out span {
+    margin-right: 0.25rem;
+}
+.damage-calc-page .dc-move-info {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+}
+.damage-calc-page .dc-chip {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+}
+.damage-calc-page .dc-chip strong { color: var(--text); margin-left: 0.25rem; }
+.damage-calc-page .dc-output {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+}
+.damage-calc-page .dc-output h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.05rem;
+    color: var(--brand);
+}
+.damage-calc-page .dc-output-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 0.6rem;
+}
+.damage-calc-page .dc-output-block {
+    background: rgba(62, 176, 69, 0.06);
+    border-left: 3px solid var(--brand);
+    border-radius: 4px;
+    padding: 0.6rem 0.8rem;
+}
+.damage-calc-page .dc-output-label {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+}
+.damage-calc-page .dc-output-value {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+}
+.damage-calc-page .dc-result-note {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    margin: 0;
+}
+
+/* Searchable combobox — replaces the native <select> for the Pokémon
+   and Move pickers. The hidden <select> below stays as the source of truth. */
+.damage-calc-page .dc-combobox { position: relative; width: 100%; }
+.damage-calc-page .dc-hidden-select {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.damage-calc-page .dc-combobox-display {
+    width: 100%;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.4rem 0.55rem;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.92rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.damage-calc-page .dc-combobox-display::after {
+    content: '\25BE';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim);
+    pointer-events: none;
+}
+.damage-calc-page .dc-combobox-display:focus,
+.damage-calc-page .dc-combobox-display:hover {
+    border-color: var(--brand);
+    outline: none;
+}
+.damage-calc-page .dc-combobox-panel {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: var(--surface);
+    border: 1px solid var(--brand);
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+.damage-calc-page .dc-combobox-panel[hidden] { display: none; }
+.damage-calc-page .dc-combobox-search {
+    width: 100%;
+    padding: 0.45rem 0.6rem;
+    background: var(--bg);
+    color: var(--text);
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+    box-sizing: border-box;
+}
+.damage-calc-page .dc-combobox-search:focus { outline: none; }
+.damage-calc-page .dc-combobox-list {
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    max-height: 280px;
+    overflow-y: auto;
+}
+.damage-calc-page .dc-combobox-item {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.88rem;
+    color: var(--text);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.damage-calc-page .dc-combobox-item.active,
+.damage-calc-page .dc-combobox-item:hover {
+    background: rgba(62, 176, 69, 0.18);
+}
+.damage-calc-page .dc-combobox-item.selected {
+    color: var(--brand);
+    font-weight: 600;
+}
+
+/* ----- Move/ability hover tooltip ----- */
+.movetip {
+    position: absolute;
+    z-index: 9999;
+    max-width: 320px;
+    padding: 0.55rem 0.7rem;
+    background: #1a1d1f;
+    color: var(--text);
+    border: 1px solid var(--brand);
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    font-size: 0.85rem;
+    line-height: 1.35;
+    pointer-events: none;
+}
+.movetip[hidden] { display: none; }
+.movetip-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+.movetip-name {
+    font-weight: 600;
+    color: var(--brand);
+}
+.movetip-kind {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.55);
+}
+.movetip-body { color: rgba(255, 255, 255, 0.92); }
 
 /* ----- Quest log ----- */
 .quest-list {

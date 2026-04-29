@@ -26,12 +26,13 @@
         });
     }
 
-    // ---------- Pokedex list sort + search ----------
+    // ---------- Pokedex list sort + search + anim filter ----------
     function initDexList() {
         const grid = document.getElementById('dex-grid');
         if (!grid) return;
         const cards = Array.from(grid.querySelectorAll('.dex-card'));
         const sortButtons = document.querySelectorAll('.dex-sort button');
+        const filterButtons = document.querySelectorAll('.dex-filter button');
         const search = document.getElementById('dex-search');
         const visibleCount = document.getElementById('dex-visible');
 
@@ -49,13 +50,24 @@
             sorted.forEach(function (c) { grid.appendChild(c); });
         }
 
-        function applyFilter(query) {
-            const q = (query || '').trim().toLowerCase();
+        function activeAnimFilters() {
+            const set = new Set();
+            filterButtons.forEach(function (btn) {
+                if (btn.classList.contains('active')) set.add(btn.getAttribute('data-anim-filter'));
+            });
+            return set;
+        }
+
+        function applyFilter() {
+            const q = (search ? search.value : '').trim().toLowerCase();
+            const anims = activeAnimFilters();
             let shown = 0;
             cards.forEach(function (c) {
-                const match = !q || c.dataset.name.indexOf(q) !== -1;
-                c.style.display = match ? '' : 'none';
-                if (match) shown += 1;
+                const matchName = !q || c.dataset.name.indexOf(q) !== -1;
+                const matchAnim = anims.size === 0 || anims.has(c.dataset.anim || 'static');
+                const visible = matchName && matchAnim;
+                c.style.display = visible ? '' : 'none';
+                if (visible) shown += 1;
             });
             if (visibleCount) visibleCount.textContent = shown;
         }
@@ -68,8 +80,17 @@
             });
         });
 
+        filterButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const on = !btn.classList.contains('active');
+                btn.classList.toggle('active', on);
+                btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+                applyFilter();
+            });
+        });
+
         if (search) {
-            search.addEventListener('input', function () { applyFilter(search.value); });
+            search.addEventListener('input', applyFilter);
         }
 
         // Default sort = dex-asc (already rendered in dex order; this is a no-op if so)

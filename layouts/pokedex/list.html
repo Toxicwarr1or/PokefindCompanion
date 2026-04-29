@@ -11,6 +11,10 @@
     <label class="dex-search">
       <input type="search" id="dex-search" placeholder="Search by name…" autocomplete="off">
     </label>
+    <div class="dex-filter" role="group" aria-label="Filter by animation">
+      <button data-anim-filter="animated" class="active" aria-pressed="true">Animated Pokémon</button>
+      <button data-anim-filter="static"   class="active" aria-pressed="true">Static Pokémon</button>
+    </div>
     <div class="dex-sort" role="group" aria-label="Sort">
       <button data-sort="dex-asc"  class="active">Dex# ↑</button>
       <button data-sort="dex-desc">Dex# ↓</button>
@@ -31,10 +35,21 @@
     {{ $formCount := 0 }}
     {{ range .Params.forms }}{{ if eq (.kind | default "skin") "form" }}{{ $formCount = add $formCount 1 }}{{ end }}{{ end }}
     {{ $extraForms := sub $formCount 1 }}
+    {{/* Classify the species as animated (BetterModel exporter, bones-format
+          JSON) or static (cuboid `elements` JSON, or no model staged). The
+          dex filter toggles this attribute. */}}
+    {{ $slug := lower (replaceRE "[^a-zA-Z0-9]+" "-" .Title) }}
+    {{ $modelPath := printf "static/models-3d/regular/%s/%s.json" $slug $slug }}
+    {{ $anim := "static" }}
+    {{ if fileExists $modelPath }}
+      {{ $head := substr (readFile $modelPath) 0 200 }}
+      {{ if findRE "\"bones\"" $head }}{{ $anim = "animated" }}{{ end }}
+    {{ end }}
     <li class="dex-card"
         data-name="{{ $name }}"
         data-dex="{{ $dexNum }}"
-        data-display="{{ .Title }}">
+        data-display="{{ .Title }}"
+        data-anim="{{ $anim }}">
       <a href="{{ .RelPermalink }}">
         <div class="dex-card-sprite">
           {{ if $sprite }}<img loading="lazy" src="{{ $sprite | relURL }}" alt="{{ .Title }}">{{ else }}<span>?</span>{{ end }}

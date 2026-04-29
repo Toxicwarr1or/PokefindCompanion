@@ -26,8 +26,8 @@ A more involved currency than PokéCoins — typically reserved for bigger one-t
 - **What it is:** a secondary spending currency separate from PokéCoins.
 - **Earned from:** voting rewards and Vote-Shop bundles sold in 25 / 50 / 100 token packs.
 - **Spent on:**
-  - **Bikes** — purchased from the Bike menu at varying token prices per cosmetic.
-  - **Bags** — purchased from the Bag menu at **400 tokens** apiece.
+  - **Bags** — purchased from the **Bag shops** scattered across the region.
+  - **Bikes** — purchased from the **Bike shops** scattered across the region.
   - **Evolution stones** — traded for at the **Mystery Man** NPC.
   - **Breeding** — each breeding session at the Daycare costs **25 tokens**.
 
@@ -37,10 +37,23 @@ Pure PvE-tower reward.
 
 - **What it is:** the Battle Tower's payout currency, displayed in aqua.
 - **Earned from:** clearing rounds in the **Battle Tower** (with bonus payouts on Iconic-Trainer rounds at round 10), plus voting rewards.
-- **Spent at:** the **Battle Shop** NPC near the Battle Tower entrance — the NPC's greeting line, *"We only take Battle Points here!"*, makes the gate explicit. The shop's catalogue is **competitive Pokémon held items and battle items**, including:
-  - **Held items** — Focus Sash (48 BP), Focus Band & PP Up (168), Muscle Band & Silk Scarf (216), the type-boost stones (Black Belt, Black Glasses, Charcoal, Dragon Fang, Hard Stone, Magnet, Miracle Seed, Mystic Water, Never-Melt Ice, Odd Incense, Poison Barb, Sharp Beak, Silver Powder, Soft Sand, Spell Tag, Wise Glasses — all 288), Big Root, Black Sludge (378), Expert Belt, Flame Orb (456), Leftovers (468), Choice Band, Choice Scarf, Choice Specs, Eviolite, Life Orb (768), Destiny Knot (12 000)
-  - **Battle items** — Absorb Bulb, Cell Battery, Air Balloon (48 each)
-  - **Utility consumables** — Ability Capsule, Max PP (336)
+- **Spent at:** the **Battle Tower Shop** NPC near the Battle Tower entrance. The shop sells competitive held items, battle items, EV vitamins, all 17 type plates, and a few high-tier consumables. Items can be sold back at roughly 20% of buy price.
+
+The full catalogue, grouped by buy price (sell price in parentheses):
+
+| Buy | Sell | Items |
+| --- | --- | --- |
+| **24 BP** | (5) | Iron, Carbos, HP Up, Protein, Zinc, Calcium |
+| **48 BP** | (10) | Focus Sash, Cell Battery, Air Balloon, Absorb Bulb, Red Card, Eject Button, Luminous Moss, Snowball, Weakness Policy, Power Herb, Mental Herb, White Herb, Grassy Seed, Electric Seed, Misty Seed, Psychic Seed, Sticky Barb |
+| **168 BP** | (34) | Quick Claw, Lucky Punch, Metal Powder, Quick Powder, Focus Band, PP Up, Thick Club |
+| **216 BP** | (44) | Muscle Band, Silk Scarf, Float Stone |
+| **288 BP** | (58) | Iron Ball, Lagging Tail, Scope Lens, Wide Lens, Bright Powder, Full Incense, Terrain Extender, Reek, Safety Goggles, Shed Shell, the type-boost held items (Black Belt, Black Glasses, Charcoal, Dragon Fang, Hard Stone, Magnet, Miracle Seed, Mystic Water, Odd Incense, Poison Barb, Sharp Beak, Silver Powder, Soft Sand, Spell Tag, Wise Glasses), and all 17 Arceus plates (Draco, Dread, Earth, Fist, Flame, Icicle, Insect, Iron, Meadow, Mind, Pixie, Sky, Splash, Spooky, Stone, Toxic, Zap) |
+| **336 BP** | (68) | Ability Capsule, Max PP |
+| **378 BP** | (76) | Big Root, Black Sludge, Metronome, Grip Claw, Binding Band |
+| **456 BP** | (92) | Shell Bell, Rocky Helmet, Expert Belt, Flame Orb, Toxic Orb |
+| **468 BP** | (94) | Leftovers, Protective Pads |
+| **768 BP** | (154) | Choice Band, Choice Scarf, Choice Specs, Eviolite, Life Orb, Assault Vest |
+| **12 000 BP** | (2 400) | Destiny Knot |
 
 ---
 
@@ -74,9 +87,8 @@ The paid currency, bought outside the game.
   - **Manual** — staff-issued
   - **Awarded** — given out during events / promotions
   - **Spent** — outflows from the in-game PokéGems Store
-- **Spent at:** the in-game **PokéGems Store** menu, organised into categories of items with optional purchase-option variants.
+- **Spent at:** the in-game **`/store`** command, which opens the PokéGems Store menu. Donator **ranks** (PRO, EXPERT, ELITE) and other premium items are bought here, paid for in PokéGems.
 - **Display glyph:** the PokéGems Unicode character; chat colour green.
-- **Donator ranks** (PRO, EXPERT, ELITE) are also bought from the same web store, but as direct rank purchases — they aren't priced in PokéGems in-game.
 
 ---
 
@@ -85,8 +97,8 @@ The paid currency, bought outside the game.
 | Currency | Tier | Primary source | Primary sink |
 | --- | --- | --- | --- |
 | <img class="currency-icon" src="/images/currencies/coins.png" alt=""> **PokéCoins** | Main | Quests, voting, drops | Pokémart / general shops |
-| <img class="currency-icon" src="/images/currencies/tokens.png" alt=""> **Tokens** | Main | Vote rewards, vote-shop bundles | Bikes, bags, breeding, Mystery Man stones |
-| <img class="currency-icon" src="/images/currencies/bp.png" alt=""> **Battle Points** | Main | Battle Tower runs | Battle Shop (held items, battle items) |
+| <img class="currency-icon" src="/images/currencies/tokens.png" alt=""> **Tokens** | Main | Vote rewards, vote-shop bundles | Bag shops, Bike shops, breeding, Mystery Man stones |
+| <img class="currency-icon" src="/images/currencies/bp.png" alt=""> **Battle Points** | Main | Battle Tower runs | Battle Tower Shop (held items, plates, EV vitamins) |
 | **Challenge Coins** | Lesser | Challenge events | Challenge Shop (`/challenges`) |
 | **Wish Dust** | Lesser | Voting (with event multiplier) | Vote Shop (`/vote`) |
 | <img class="currency-icon" src="/images/currencies/pokegems.png" alt=""> **PokéGems** | Premium | `store.pokefind.co` purchase | In-game PokéGems Store |
@@ -98,7 +110,7 @@ The paid currency, bought outside the game.
 | Command | Shows |
 | --- | --- |
 | `/coins` (or any of its aliases) | PokéCoins, Tokens, Battle Points |
-| Talk to the **Battle Shop** NPC | BP balance + tower-shop catalogue |
+| Talk to the **Battle Tower Shop** NPC | BP balance + tower-shop catalogue |
 | `/vote` → Vote Shop | Wish Dust balance + voting-shop catalogue |
 | `/challenges` → Challenge Shop | Challenge Coin balance + challenge catalogue |
-| Open the **PokéGems Store** | PokéGems balance + premium catalogue |
+| `/store` | PokéGems balance + premium / rank catalogue |

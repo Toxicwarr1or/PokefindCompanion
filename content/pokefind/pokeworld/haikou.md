@@ -32,13 +32,6 @@ Active rotation:
 
 Two of the iconic spawns sit inside the area officially labeled `???` on the regional map.
 
-Reserved (not in active rotation):
-
-| Trainer | Spawn locations |
-| --- | --- |
-| **Lisia** | Wavemeet Bay (-953, 48, 1106) · *near Targaryen Keep* (605, 23, 277) |
-| **Wally** | Maya Keep (-1283, 60, 359) · Sleepy Hallow (-798, 31, 454) |
-
 ## Mystery Man
 
 Cycles **every 2–4 hours**, picks **1 of 21 hidden coordinates**, stays for **10 minutes**.
@@ -126,4 +119,4 @@ One tutor at a time, every 90–150 minutes, **20-minute** window.
 | **Pokémon Breeder Dominic** | Wavemeet Bay | (-954, 24, 992) |
 | **Pokémon Breeder Katie** | Wavemeet Bay | (-956, 24, 995) |
 
-Farmer Clark has a Point-of-Interest category in Haikou but no fixed NPC location — confirm in-server whether he's present in this region. The HM Tutor charges 1000 coins per HM.
+The HM Tutor charges 1000 coins per HM.

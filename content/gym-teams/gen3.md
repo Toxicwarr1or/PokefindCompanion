@@ -4,6 +4,7 @@ date: 2026-04-27
 gyms:
   - index: 1
     leader: 'Norman'
+    requirement: 'Complete Main Quest 1'
     team:
       - species: 'Delcatty'
         level: 16
@@ -19,6 +20,7 @@ gyms:
         moves: ['Hammer Arm', 'Night Slash', 'Chip Away', 'Earthquake']
   - index: 2
     leader: 'Roxanne'
+    requirement: 'Defeat Gym 1 (Norman)'
     team:
       - species: 'Graveler'
         level: 24
@@ -46,6 +48,7 @@ gyms:
         moves: ['X-Scissor', 'Brick Break', 'Earthquake', 'Stone Edge']
   - index: 3
     leader: 'Kristine'
+    requirement: 'Defeat Gym 2 (Roxanne)'
     team:
       - species: 'Houndoom'
         level: 35
@@ -73,6 +76,7 @@ gyms:
         moves: ['Flare Blitz', 'Blaze Kick', 'Brave Bird', 'Stone Edge']
   - index: 4
     leader: 'Wattson'
+    requirement: 'Defeat Gym 3 (Kristine)'
     team:
       - species: 'Magneton'
         level: 46
@@ -100,6 +104,7 @@ gyms:
         moves: ['Earthquake', 'Heavy Slam', 'Superpower', 'Dragon Claw']
   - index: 5
     leader: 'Winona'
+    requirement: 'Defeat Gym 4 (Wattson)'
     team:
       - species: 'Swellow'
         level: 58
@@ -127,6 +132,7 @@ gyms:
         moves: ['Draco Meteor', 'Moonblast', 'Flamethrower', 'Ice Beam']
   - index: 6
     leader: 'Wallace'
+    requirement: 'Defeat Gym 5 (Winona)'
     team:
       - species: 'Glalie'
         level: 68
@@ -154,6 +160,7 @@ gyms:
         moves: ['Surf', 'Dragon Pulse', 'Ice Beam', 'Recover']
   - index: 7
     leader: 'Brawly'
+    requirement: 'Defeat Gym 6 (Wallace)'
     team:
       - species: 'Ludicolo'
         level: 75

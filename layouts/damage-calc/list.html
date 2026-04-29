@@ -1,0 +1,268 @@
+{{ define "main" }}
+<section class="page damage-calc-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+
+  <p class="dc-help">
+    Pick an attacker and a defender, fill in their stats, choose a move, and the
+    calculator will compute the damage range, percentage of the defender's HP,
+    and the chance to OHKO / 2HKO. Type effectiveness, STAB, weather, terrain,
+    and common modifiers are applied automatically. Random factor: 0.85–1.00.
+  </p>
+
+  <div class="dc-grid">
+    <!-- Attacker side -->
+    <article class="dc-side dc-attacker">
+      <h2>Attacker</h2>
+      <label class="dc-row">
+        <span>Pokémon</span>
+        <select id="dc-att-mon"></select>
+      </label>
+      <label class="dc-row">
+        <span>Form</span>
+        <select id="dc-att-form"></select>
+      </label>
+      <div class="dc-row dc-types"><span>Types</span><span class="dc-types-out" id="dc-att-types"></span></div>
+      <label class="dc-row">
+        <span>Level</span>
+        <input type="number" id="dc-att-level" min="1" max="100" value="100">
+      </label>
+      <fieldset class="dc-stat-builder">
+        <legend>Attack stats</legend>
+        <table>
+          <colgroup>
+            <col class="dc-col-label"><col class="dc-col-base"><col class="dc-col-iv"><col class="dc-col-ev"><col class="dc-col-boost"><col class="dc-col-final">
+          </colgroup>
+          <thead><tr><th></th><th>Base</th><th>IV</th><th>EV</th><th>Boost</th><th>Final</th></tr></thead>
+          <tbody>
+            <tr data-stat="atk"><th>Atk</th><td class="dc-base"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="2" value="31"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="3" value="252"></td><td><select class="dc-stage"><option>-6</option><option>-5</option><option>-4</option><option>-3</option><option>-2</option><option>-1</option><option selected>0</option><option>+1</option><option>+2</option><option>+3</option><option>+4</option><option>+5</option><option>+6</option></select></td><td class="dc-final"></td></tr>
+            <tr data-stat="spa"><th>SpA</th><td class="dc-base"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="2" value="31"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="3" value="252"></td><td><select class="dc-stage"><option>-6</option><option>-5</option><option>-4</option><option>-3</option><option>-2</option><option>-1</option><option selected>0</option><option>+1</option><option>+2</option><option>+3</option><option>+4</option><option>+5</option><option>+6</option></select></td><td class="dc-final"></td></tr>
+          </tbody>
+        </table>
+        <label class="dc-nature-row">
+          <span>Nature</span>
+          <select class="dc-nature">
+            <option value="1.0">Neutral</option>
+            <option value="1.1|atk">+Atk</option>
+            <option value="1.1|spa">+SpA</option>
+            <option value="0.9|atk">-Atk</option>
+            <option value="0.9|spa">-SpA</option>
+          </select>
+        </label>
+      </fieldset>
+      <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-att-burn"><span>Burned (halves physical Atk)</span></label>
+      <label class="dc-row">
+        <span>Item</span>
+        <select id="dc-att-item">
+          <option value="none">None</option>
+          <optgroup label="General offensive">
+            <option value="life-orb">Life Orb (×1.3, all damaging)</option>
+            <option value="choice-band">Choice Band (×1.5 Atk)</option>
+            <option value="choice-specs">Choice Specs (×1.5 SpA)</option>
+            <option value="muscle-band">Muscle Band (×1.1 physical)</option>
+            <option value="wise-glasses">Wise Glasses (×1.1 special)</option>
+            <option value="expert-belt">Expert Belt (×1.2 super-effective)</option>
+            <option value="metronome">Metronome (×1.2 same-move first hit)</option>
+            <option value="shell-bell">Shell Bell (no damage modifier — heals 1/8)</option>
+          </optgroup>
+          <optgroup label="Type-boost — type plates &amp; trinkets (×1.2)">
+            <option value="black-belt">Black Belt (Fighting)</option>
+            <option value="black-glasses">Black Glasses (Dark)</option>
+            <option value="charcoal">Charcoal (Fire)</option>
+            <option value="dragon-fang">Dragon Fang (Dragon)</option>
+            <option value="hard-stone">Hard Stone (Rock)</option>
+            <option value="magnet">Magnet (Electric)</option>
+            <option value="metal-coat">Metal Coat (Steel)</option>
+            <option value="miracle-seed">Miracle Seed (Grass)</option>
+            <option value="mystic-water">Mystic Water (Water)</option>
+            <option value="never-melt-ice">Never-Melt Ice (Ice)</option>
+            <option value="odd-incense">Odd Incense (Psychic)</option>
+            <option value="poison-barb">Poison Barb (Poison)</option>
+            <option value="rose-incense">Rose Incense (Grass)</option>
+            <option value="sea-incense">Sea Incense (Water)</option>
+            <option value="sharp-beak">Sharp Beak (Flying)</option>
+            <option value="silk-scarf">Silk Scarf (Normal)</option>
+            <option value="silver-powder">Silver Powder (Bug)</option>
+            <option value="soft-sand">Soft Sand (Ground)</option>
+            <option value="spell-tag">Spell Tag (Ghost)</option>
+          </optgroup>
+          <optgroup label="Arceus plates (×1.2 of plate type)">
+            <option value="draco-plate">Draco Plate (Dragon)</option>
+            <option value="dread-plate">Dread Plate (Dark)</option>
+            <option value="earth-plate">Earth Plate (Ground)</option>
+            <option value="fist-plate">Fist Plate (Fighting)</option>
+            <option value="flame-plate">Flame Plate (Fire)</option>
+            <option value="icicle-plate">Icicle Plate (Ice)</option>
+            <option value="insect-plate">Insect Plate (Bug)</option>
+            <option value="iron-plate">Iron Plate (Steel)</option>
+            <option value="meadow-plate">Meadow Plate (Grass)</option>
+            <option value="mind-plate">Mind Plate (Psychic)</option>
+            <option value="pixie-plate">Pixie Plate (Fairy)</option>
+            <option value="sky-plate">Sky Plate (Flying)</option>
+            <option value="splash-plate">Splash Plate (Water)</option>
+            <option value="spooky-plate">Spooky Plate (Ghost)</option>
+            <option value="stone-plate">Stone Plate (Rock)</option>
+            <option value="toxic-plate">Toxic Plate (Poison)</option>
+            <option value="zap-plate">Zap Plate (Electric)</option>
+          </optgroup>
+          <optgroup label="Species-specific (must match holder)">
+            <option value="light-ball">Light Ball — Pikachu (×2 Atk &amp; SpA)</option>
+            <option value="thick-club">Thick Club — Cubone/Marowak (×2 Atk)</option>
+            <option value="deep-sea-tooth">Deep Sea Tooth — Clamperl (×2 SpA)</option>
+            <option value="metal-powder">Metal Powder — Ditto (×2 Def)</option>
+            <option value="lucky-punch">Lucky Punch — Chansey (crit boost)</option>
+          </optgroup>
+        </select>
+      </label>
+    </article>
+
+    <!-- Move panel -->
+    <article class="dc-side dc-move">
+      <h2>Move</h2>
+      <label class="dc-row dc-move-pick">
+        <span>Move</span>
+        <select id="dc-move-name"></select>
+      </label>
+      <div class="dc-move-info">
+        <span class="dc-chip" id="dc-move-type">—</span>
+        <span class="dc-chip" id="dc-move-cat">—</span>
+        <span class="dc-chip">Power <strong id="dc-move-power">—</strong></span>
+      </div>
+      <div class="dc-move-modifiers">
+        <label class="dc-row">
+          <span>Crit</span>
+          <select id="dc-crit">
+            <option value="1">Normal</option>
+            <option value="1.5">Critical hit (×1.5)</option>
+          </select>
+        </label>
+        <label class="dc-row">
+          <span>Weather</span>
+          <select id="dc-weather">
+            <option value="none">—</option>
+            <option value="sun">Harsh Sunlight</option>
+            <option value="rain">Rain</option>
+            <option value="sand">Sandstorm</option>
+            <option value="hail">Hail / Snow</option>
+          </select>
+        </label>
+        <label class="dc-row">
+          <span>Terrain</span>
+          <select id="dc-terrain">
+            <option value="none">—</option>
+            <option value="electric">Electric (×1.3 Electric, grounded)</option>
+            <option value="grassy">Grassy (×1.3 Grass, grounded)</option>
+            <option value="psychic">Psychic (×1.3 Psychic, grounded)</option>
+            <option value="misty">Misty (½ Dragon, grounded)</option>
+          </select>
+        </label>
+        <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-screen"><span>Reflect / Light Screen up</span></label>
+      </div>
+    </article>
+
+    <!-- Defender side -->
+    <article class="dc-side dc-defender">
+      <h2>Defender</h2>
+      <label class="dc-row">
+        <span>Pokémon</span>
+        <select id="dc-def-mon"></select>
+      </label>
+      <label class="dc-row">
+        <span>Form</span>
+        <select id="dc-def-form"></select>
+      </label>
+      <div class="dc-row dc-types"><span>Types</span><span class="dc-types-out" id="dc-def-types"></span></div>
+      <label class="dc-row">
+        <span>Level</span>
+        <input type="number" id="dc-def-level" min="1" max="100" value="100">
+      </label>
+      <fieldset class="dc-stat-builder">
+        <legend>Defense stats</legend>
+        <table>
+          <colgroup>
+            <col class="dc-col-label"><col class="dc-col-base"><col class="dc-col-iv"><col class="dc-col-ev"><col class="dc-col-boost"><col class="dc-col-final">
+          </colgroup>
+          <thead><tr><th></th><th>Base</th><th>IV</th><th>EV</th><th>Boost</th><th>Final</th></tr></thead>
+          <tbody>
+            <tr data-stat="hp"><th>HP</th><td class="dc-base"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="2" value="31"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="3" value="0"></td><td>—</td><td class="dc-final"></td></tr>
+            <tr data-stat="def"><th>Def</th><td class="dc-base"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="2" value="31"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="3" value="0"></td><td><select class="dc-stage"><option>-6</option><option>-5</option><option>-4</option><option>-3</option><option>-2</option><option>-1</option><option selected>0</option><option>+1</option><option>+2</option><option>+3</option><option>+4</option><option>+5</option><option>+6</option></select></td><td class="dc-final"></td></tr>
+            <tr data-stat="spd"><th>SpD</th><td class="dc-base"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="2" value="31"></td><td><input type="text" inputmode="numeric" pattern="\d*" maxlength="3" value="0"></td><td><select class="dc-stage"><option>-6</option><option>-5</option><option>-4</option><option>-3</option><option>-2</option><option>-1</option><option selected>0</option><option>+1</option><option>+2</option><option>+3</option><option>+4</option><option>+5</option><option>+6</option></select></td><td class="dc-final"></td></tr>
+          </tbody>
+        </table>
+        <label class="dc-nature-row">
+          <span>Nature</span>
+          <select class="dc-nature">
+            <option value="1.0">Neutral</option>
+            <option value="1.1|hp">+HP</option>
+            <option value="1.1|def">+Def</option>
+            <option value="1.1|spd">+SpD</option>
+            <option value="0.9|hp">-HP</option>
+            <option value="0.9|def">-Def</option>
+            <option value="0.9|spd">-SpD</option>
+          </select>
+        </label>
+      </fieldset>
+      <label class="dc-row">
+        <span>Item</span>
+        <select id="dc-def-item">
+          <option value="none">None</option>
+          <optgroup label="Defensive multipliers">
+            <option value="eviolite">Eviolite (×1.5 Def &amp; SpD, NFE assumed)</option>
+            <option value="assault-vest">Assault Vest (×1.5 SpD)</option>
+            <option value="deep-sea-scale">Deep Sea Scale — Clamperl (×2 SpD)</option>
+          </optgroup>
+          <optgroup label="Resist berries (½ damage from one super-effective hit)">
+            <option value="occa-berry">Occa Berry (Fire)</option>
+            <option value="passho-berry">Passho Berry (Water)</option>
+            <option value="wacan-berry">Wacan Berry (Electric)</option>
+            <option value="rindo-berry">Rindo Berry (Grass)</option>
+            <option value="yache-berry">Yache Berry (Ice)</option>
+            <option value="chople-berry">Chople Berry (Fighting)</option>
+            <option value="kebia-berry">Kebia Berry (Poison)</option>
+            <option value="shuca-berry">Shuca Berry (Ground)</option>
+            <option value="coba-berry">Coba Berry (Flying)</option>
+            <option value="payapa-berry">Payapa Berry (Psychic)</option>
+            <option value="tanga-berry">Tanga Berry (Bug)</option>
+            <option value="charti-berry">Charti Berry (Rock)</option>
+            <option value="kasib-berry">Kasib Berry (Ghost)</option>
+            <option value="haban-berry">Haban Berry (Dragon)</option>
+            <option value="colbur-berry">Colbur Berry (Dark)</option>
+            <option value="babiri-berry">Babiri Berry (Steel)</option>
+            <option value="roseli-berry">Roseli Berry (Fairy)</option>
+            <option value="chilan-berry">Chilan Berry (Normal — any hit, not just SE)</option>
+          </optgroup>
+        </select>
+      </label>
+    </article>
+  </div>
+
+  <!-- Output -->
+  <section class="dc-output" aria-live="polite">
+    <h2>Result</h2>
+    <div class="dc-output-grid">
+      <div class="dc-output-block">
+        <div class="dc-output-label">Damage range</div>
+        <div class="dc-output-value" id="dc-result-range">—</div>
+      </div>
+      <div class="dc-output-block">
+        <div class="dc-output-label">% of HP</div>
+        <div class="dc-output-value" id="dc-result-pct">—</div>
+      </div>
+      <div class="dc-output-block">
+        <div class="dc-output-label">Effectiveness</div>
+        <div class="dc-output-value" id="dc-result-eff">—</div>
+      </div>
+      <div class="dc-output-block">
+        <div class="dc-output-label">KO probability</div>
+        <div class="dc-output-value" id="dc-result-ko">—</div>
+      </div>
+    </div>
+    <p class="dc-result-note" id="dc-result-note"></p>
+  </section>
+
+</section>
+
+<script defer src="{{ "js/damage-calc.js" | relURL }}"></script>
+{{ end }}

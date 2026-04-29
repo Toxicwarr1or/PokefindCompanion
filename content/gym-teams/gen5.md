@@ -4,6 +4,7 @@ date: 2026-04-27
 gyms:
   - index: 1
     leader: 'Aeolus'
+    requirement: 'Complete Main Quest 1'
     team:
       - species: 'Vullaby'
         level: 10
@@ -44,6 +45,7 @@ gyms:
             moves: ['Uproar', 'Night Shade', 'Shadow Ball']
   - index: 2
     leader: 'Norris'
+    requirement: 'Complete Main Quest 1, defeat Gym 1 (Aeolus)'
     team:
       - species: 'Timburr'
         level: 22
@@ -84,6 +86,7 @@ gyms:
             moves: ['Mach Punch', 'Pursuit', 'Feint']
   - index: 3
     leader: 'Iris'
+    requirement: 'Complete Main Quest 2, defeat Gym 2 (Norris)'
     team:
       - species: 'Elgyem'
         level: 37
@@ -124,6 +127,7 @@ gyms:
             moves: ['Confusion', 'Bullet Punch', 'Ice Punch']
   - index: 4
     leader: 'Waythe'
+    requirement: 'Complete Main Quest 3, defeat Gym 3 (Iris)'
     team:
       - species: 'Cofagrigus'
         level: 45
@@ -172,6 +176,7 @@ gyms:
             moves: ['acrobatics', 'will-o-wisp', 'disable', 'destiny bond']
   - index: 5
     leader: 'Aella'
+    requirement: 'Complete Main Quest 4, defeat Gym 4 (Waythe)'
     team:
       - species: 'Jolteon'
         level: 54
@@ -228,6 +233,7 @@ gyms:
             moves: ['thunderbolt', 'hidden power', 'magnet rise', 'flash cannon']
   - index: 6
     leader: 'Circe'
+    requirement: 'Complete Main Quest 5, defeat Gym 5 (Aella)'
     team:
       - species: 'whimsicott'
         level: 64
@@ -300,6 +306,7 @@ gyms:
             moves: ['Bulldoze', 'Megahorn', 'Energy Ball', 'Play Rough']
   - index: 7
     leader: 'Calvin'
+    requirement: 'Complete Main Quest 6 (Statera or Tribe path), defeat Gym 6 (Circe)'
     team:
       - species: 'cloyster'
         level: 74
@@ -372,6 +379,7 @@ gyms:
             moves: ['nasty plot', 'freeze-dry', 'dark pulse', 'dazzling gleam']
   - index: 8
     leader: 'Haru'
+    requirement: 'Defeat Gym 7 (Calvin); additional Gym 8 unlock flag must be set'
     team:
       - species: 'Druddigon'
         level: 83
