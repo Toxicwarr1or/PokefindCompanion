@@ -22,7 +22,7 @@ forms:
       spa: 105
       spd: 66
       spe: 65
-    locations: ['Redgrove']
+    locations: ['Zeinova: Redgrove — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Mixed Attacker'
         tier: 'PU'

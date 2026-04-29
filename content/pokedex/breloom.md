@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 60
       spe: 70
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Haikou: Ivy Village — Pokémon Lv 23+', 'Shiloh: Woodburn — Pokémon Lv 23+', 'Zeinova: Breezelton Village — Pokémon Lv 23+']
     competitive_sets:
       - name: 'Technician Attacker'
         tier: 'OU'

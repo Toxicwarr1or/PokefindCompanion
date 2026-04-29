@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 40
       spe: 60
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Shiloh: Stronghaven', 'Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Offensive Swords Dance Sweeper'
         tier: 'LC'

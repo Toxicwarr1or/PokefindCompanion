@@ -23,7 +23,7 @@ forms:
       spa: 50
       spd: 70
       spe: 55
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Shiloh: Woodburn, Marshbarrow', 'Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Spikes'
         tier: 'LC'

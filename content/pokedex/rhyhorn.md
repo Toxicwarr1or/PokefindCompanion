@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 30
       spe: 25
-    locations: ['Sandgate']
+    locations: ['Kyoto: Amber City — Pokémon Lv 21+', 'Jataro: Mt; Iron Temple — Pokémon Lv 21+', 'Haikou: Kinetic Island — Pokémon Lv 21+', 'Shiloh: Diggers Peak — Pokémon Lv 21+', 'Zeinova: Sandgate — Pokémon Lv 21+']
     competitive_sets:
       - name: 'Tank'
         tier: 'LC'

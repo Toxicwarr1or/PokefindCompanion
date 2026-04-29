@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 95
       spe: 55
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Substitute'
         tier: 'PU'

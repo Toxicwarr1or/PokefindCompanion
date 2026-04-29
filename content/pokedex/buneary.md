@@ -23,7 +23,7 @@ forms:
       spa: 44
       spd: 56
       spe: 85
-    locations: ['Findale Harbor']
+    locations: ['Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'LC'

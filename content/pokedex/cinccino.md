@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 60
       spe: 115
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Physical Attacker'
         tier: 'RU'

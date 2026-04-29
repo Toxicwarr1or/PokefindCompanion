@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 110
       spe: 80
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Maya Keep — Pokémon Lv 32+', 'Shiloh: Crystal View — Pokémon Lv 32+', 'Zeinova: Pure Harbor Heights — Pokémon Lv 32+']
     competitive_sets:
       - name: 'Substitute + Calm Mind'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 45
       spe: 35
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Kyoto: Smog Town', 'Jataro: Misty Lake', 'Haikou: Ivy Village', 'Shiloh: Marshbarrow', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Defensive'
         tier: 'LC'

@@ -23,7 +23,7 @@ forms:
       spa: 50
       spd: 100
       spe: 70
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Aether Village', 'Jataro: Cruxirt Port', 'Haikou: Findview Port', 'Shiloh: Crystal View', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Rapid Spinner'
         tier: 'LC'

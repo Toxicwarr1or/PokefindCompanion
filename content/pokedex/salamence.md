@@ -22,7 +22,7 @@ forms:
       spa: 110
       spd: 80
       spe: 100
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Haikou: Targaryen Keep — trainer Lv 45+; Pokémon Lv 50+', 'Shiloh: Silverkeep — trainer Lv 45+; Pokémon Lv 50+', 'Zeinova: Everhallow — trainer Lv 45+; Pokémon Lv 50+']
     competitive_sets:
       - name: 'Mixed Attacker'
         tier: 'VGC2016'

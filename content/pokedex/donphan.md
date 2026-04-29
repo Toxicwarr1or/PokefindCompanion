@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 60
       spe: 50
-    locations: ['Sandgate']
+    locations: ['Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak', 'Zeinova: Sandgate']
     competitive_sets:
       - name: 'Defensive Spinner'
         tier: 'UU'

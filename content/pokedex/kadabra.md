@@ -22,7 +22,7 @@ forms:
       spa: 120
       spd: 70
       spe: 105
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Mystical Keep — Pokémon Lv 16+', 'Jataro: Fog City — Pokémon Lv 16+', 'Haikou: Maya Keep — Pokémon Lv 16+', 'Shiloh: Crystal View — Pokémon Lv 16+', 'Zeinova: Pure Harbor Heights — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Revenge Killer'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 100
       spe: 81
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Aether Village — trainer Lv 8+; Pokémon Lv 20+', 'Jataro: Cruxirt Port — trainer Lv 8+; Pokémon Lv 20+', 'Haikou: Findview Port — trainer Lv 20+; Pokémon Lv 20+', 'Shiloh: Crystal View — trainer Lv 20+; Pokémon Lv 20+', 'Zeinova: Baremaw — trainer Lv 20+; Pokémon Lv 20+']
     competitive_sets:
       - name: 'Dragon Dance'
         tier: 'VGC2014'

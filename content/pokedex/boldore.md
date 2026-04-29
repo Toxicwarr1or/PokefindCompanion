@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 40
       spe: 20
-    locations: ['Sandgate']
+    locations: ['Zeinova: Sandgate — Pokémon Lv 25–40']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

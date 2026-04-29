@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 80
       spe: 55
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Pure Harbor Heights', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Treetop Village, Draco Valley', 'Haikou: Ivy Village', 'Shiloh: Eastwind, Woodburn', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

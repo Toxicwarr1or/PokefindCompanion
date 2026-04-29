@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 50
       spe: 67
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Zeinova: Everhallow — trainer Lv 25+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Dragon Dance'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 80
       spd: 80
       spe: 80
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Watterson City']
+    locations: ['Haikou: Sleet City — Pokémon Lv 42+', 'Shiloh: Frostfort — Pokémon Lv 42+', 'Zeinova: Baremaw — Pokémon Lv 42+']
     competitive_sets:
       - name: 'Offensive Spikes'
         tier: 'ZU'

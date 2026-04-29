@@ -23,7 +23,7 @@ forms:
       spa: 56
       spd: 56
       spe: 67
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Jataro: Cruxirt Port', 'Haikou: Findview Port', 'Shiloh: Crystal View', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Defensive'
         tier: 'LC'

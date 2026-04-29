@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 40
       spe: 60
-    locations: ['Sparkmont City', 'Spiritvale', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City, Spiritvale — trainer Lv 15+']
     competitive_sets:
       - name: 'Physical Attacker'
         tier: 'PU'

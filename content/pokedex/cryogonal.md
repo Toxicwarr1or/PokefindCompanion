@@ -21,7 +21,7 @@ forms:
       spa: 95
       spd: 135
       spe: 105
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Watterson City']
+    locations: ['Zeinova: Baremaw — trainer Lv 15+']
     competitive_sets:
       - name: 'Offensive Rapid Spinner'
         tier: 'PU'

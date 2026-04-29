@@ -22,7 +22,7 @@ forms:
       spa: 110
       spd: 80
       spe: 95
-    locations: ['Redgrove']
+    locations: ['Jataro: Eerie City', 'Haikou: Flareridge — trainer Lv 20+', 'Shiloh: Hearth Valley — trainer Lv 20+', 'Zeinova: Redgrove — trainer Lv 20+']
     competitive_sets:
       - name: 'Nasty Plot'
         tier: 'RU'

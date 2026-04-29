@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 45
       spe: 42
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Shiloh: Silverkeep — trainer Lv 13+; Pokémon Lv 16+', 'Zeinova: Everhallow — trainer Lv 13+; Pokémon Lv 16+']
     competitive_sets:
       - name: 'Bulky Offensive'
         tier: 'LC'

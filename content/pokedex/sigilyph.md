@@ -22,7 +22,7 @@ forms:
       spa: 103
       spd: 80
       spe: 97
-    locations: ['Breezelton Village', 'Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Breezelton Village, Pure Harbor Heights']
     competitive_sets:
       - name: 'Life Orb Attacker'
         tier: 'RU'

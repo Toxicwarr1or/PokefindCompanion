@@ -22,7 +22,7 @@ forms:
       spa: 120
       spd: 70
       spe: 70
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Kyoto: Amp City, Chromium City — Pokémon Lv 30+', 'Jataro: Altus City, Cruxirt Port — Pokémon Lv 30+', 'Haikou: Arc City — Pokémon Lv 30+', 'Shiloh: Circuit City — Pokémon Lv 30+', 'Zeinova: Sparkmont City — Pokémon Lv 30+']
     competitive_sets:
       - name: 'Choice Specs'
         tier: 'UU'

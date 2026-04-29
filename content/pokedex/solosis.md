@@ -22,7 +22,7 @@ forms:
       spa: 105
       spd: 50
       spe: 20
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Trick Room Sweeper'
         tier: 'LC'

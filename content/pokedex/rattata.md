@@ -23,7 +23,7 @@ forms:
       spa: 25
       spd: 35
       spe: 72
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village', 'Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Hustle'
         tier: 'LC'

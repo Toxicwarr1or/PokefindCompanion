@@ -23,7 +23,7 @@ forms:
       spa: 50
       spd: 50
       spe: 40
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Quick Feet'
         tier: 'LC'

@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 45
       spe: 60
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Haikou: Findview Port — trainer Lv 30+; Pokémon Lv 40+', 'Shiloh: Crystal View — trainer Lv 30+; Pokémon Lv 40+', 'Zeinova: Baremaw — trainer Lv 30+; Pokémon Lv 40+']
     competitive_sets:
       - name: 'StallLord'
         tier: 'PU'

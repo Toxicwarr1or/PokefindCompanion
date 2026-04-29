@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 65
       spe: 85
-    locations: ['Breezelton Village', 'Pure Harbor Heights', 'Sandgate']
+    locations: ['Jataro: Treetop Village, Mt; Iron Temple — trainer Lv 35+', 'Haikou: Ivy Village, Kinetic Island — trainer Lv 15+', 'Shiloh: Eastwind, Diggers Peak — trainer Lv 15+', 'Zeinova: Breezelton Village, Sandgate — trainer Lv 15+']
     competitive_sets:
       - name: 'Pivot'
         tier: 'UU'

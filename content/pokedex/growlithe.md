@@ -23,7 +23,7 @@ forms:
       spa: 70
       spd: 50
       spe: 60
-    locations: ['Redgrove']
+    locations: ['Kyoto: Amber City', 'Jataro: Eerie City', 'Haikou: Flareridge', 'Shiloh: Hearth Valley', 'Zeinova: Redgrove']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'LC'

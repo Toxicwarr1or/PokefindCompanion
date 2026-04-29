@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 75
       spe: 115
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Voltaris Island', 'Watterson City']
+    locations: ['Jataro: Dracaena, Caligo City — trainer Lv 33+', 'Haikou: Sleet City, Sleepy Hallow — trainer Lv 10+', 'Shiloh: Frostfort, Duskburn — trainer Lv 10+', 'Zeinova: Baremaw, Spiritvale — trainer Lv 10+']
     competitive_sets:
       - name: 'All-Out Attacker'
         tier: 'RU'

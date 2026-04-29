@@ -23,7 +23,7 @@ forms:
       spa: 42
       spd: 37
       spe: 85
-    locations: ['Findale Harbor']
+    locations: ['Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Life Orb Attacker'
         tier: 'LC'

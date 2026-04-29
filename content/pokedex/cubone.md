@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 50
       spe: 35
-    locations: ['Sandgate', 'Spiritvale', 'Voltaris Island']
+    locations: ['Kyoto: Amber City, Amethyst Town', 'Jataro: Mt; Iron Temple, Caligo City', 'Haikou: Kinetic Island, Sleepy Hallow', 'Shiloh: Diggers Peak, Duskburn', 'Zeinova: Sandgate, Spiritvale']
     competitive_sets:
       - name: 'Physical Attacker'
         tier: 'LC'

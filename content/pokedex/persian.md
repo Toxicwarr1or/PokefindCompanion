@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 65
       spe: 115
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village — Pokémon Lv 28+', 'Jataro: Caligo City — Pokémon Lv 28+', 'Haikou: Findview Port — Pokémon Lv 28+', 'Shiloh: Findville Cape — Pokémon Lv 28+', 'Zeinova: Findale Harbor — Pokémon Lv 28+']
     competitive_sets:
       - name: 'Nasty Plot'
         tier: 'PU'

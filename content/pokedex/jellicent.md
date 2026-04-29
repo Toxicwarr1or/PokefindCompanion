@@ -22,7 +22,7 @@ forms:
       spa: 85
       spd: 105
       spe: 60
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Zeinova: Baremaw — Pokémon Lv 40+']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'UU'

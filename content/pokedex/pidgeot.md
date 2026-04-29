@@ -22,7 +22,7 @@ forms:
       spa: 70
       spd: 70
       spe: 101
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Aether Village, Aura Village — Pokémon Lv 36+', 'Jataro: Treetop Village, Caligo City — Pokémon Lv 36+', 'Haikou: Ivy Village, Findview Port — Pokémon Lv 36+', 'Shiloh: Eastwind, Findville Cape — Pokémon Lv 36+', 'Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 36+']
     competitive_sets:
       - name: 'Offensive Defog'
         tier: 'PU'

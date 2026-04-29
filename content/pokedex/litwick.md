@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 55
       spe: 20
-    locations: ['Redgrove', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Redgrove, Spiritvale']
     competitive_sets:
       - name: 'Trick Room Sweeper'
         tier: 'LC'

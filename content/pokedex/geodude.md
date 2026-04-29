@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 30
       spe: 20
-    locations: ['Sandgate']
+    locations: ['Kyoto: Amber City', 'Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak', 'Zeinova: Sandgate']
     competitive_sets:
       - name: 'Stealth Rock Lead'
         tier: 'LC'

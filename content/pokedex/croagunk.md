@@ -23,7 +23,7 @@ forms:
       spa: 61
       spd: 40
       spe: 50
-    locations: ['Baremaw', 'Bridgerun', 'Greenholm', 'Sparkmont City']
+    locations: ['Shiloh: Stronghaven, Marshbarrow — trainer Lv 15+', 'Zeinova: Bridgerun, Baremaw — trainer Lv 15+']
     competitive_sets:
       - name: 'Mixed Utility'
         tier: 'LC'

@@ -21,7 +21,7 @@ forms:
       spa: 45
       spd: 50
       spe: 38
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Zeinova: Everhallow — trainer Lv 13+; Pokémon Lv 16+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'LC'

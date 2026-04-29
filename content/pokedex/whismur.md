@@ -23,7 +23,7 @@ forms:
       spa: 51
       spd: 23
       spe: 28
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Haikou: Lodestar Port — trainer Lv 7+', 'Shiloh: Stronghaven — trainer Lv 7+', 'Zeinova: Bridgerun — trainer Lv 7+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

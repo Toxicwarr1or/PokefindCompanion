@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 110
       spe: 87
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Kyoto: Aura Village', 'Jataro: Hollow Village', 'Haikou: Lodestar Port', 'Shiloh: Stronghaven', 'Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Wallbreaker'
         tier: 'UU'

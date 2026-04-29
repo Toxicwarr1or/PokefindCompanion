@@ -4,6 +4,7 @@ date: 2026-04-27
 gyms:
   - index: 1
     leader: 'Aeolus'
+    town: 'Breezelton Village'
     requirement: 'Complete Main Quest 1'
     team:
       - species: 'Vullaby'
@@ -45,6 +46,7 @@ gyms:
             moves: ['Uproar', 'Night Shade', 'Shadow Ball']
   - index: 2
     leader: 'Norris'
+    town: 'Bridgerun'
     requirement: 'Complete Main Quest 1, defeat Gym 1 (Aeolus)'
     team:
       - species: 'Timburr'
@@ -86,6 +88,7 @@ gyms:
             moves: ['Mach Punch', 'Pursuit', 'Feint']
   - index: 3
     leader: 'Iris'
+    town: 'Pure Harbor Heights'
     requirement: 'Complete Main Quest 2, defeat Gym 2 (Norris)'
     team:
       - species: 'Elgyem'
@@ -127,6 +130,7 @@ gyms:
             moves: ['Confusion', 'Bullet Punch', 'Ice Punch']
   - index: 4
     leader: 'Waythe'
+    town: 'Spiritvale'
     requirement: 'Complete Main Quest 3, defeat Gym 3 (Iris)'
     team:
       - species: 'Cofagrigus'
@@ -176,6 +180,7 @@ gyms:
             moves: ['acrobatics', 'will-o-wisp', 'disable', 'destiny bond']
   - index: 5
     leader: 'Aella'
+    town: 'Watterson City'
     requirement: 'Complete Main Quest 4, defeat Gym 4 (Waythe)'
     team:
       - species: 'Jolteon'
@@ -233,6 +238,7 @@ gyms:
             moves: ['thunderbolt', 'hidden power', 'magnet rise', 'flash cannon']
   - index: 6
     leader: 'Circe'
+    town: 'Greenholm'
     requirement: 'Complete Main Quest 5, defeat Gym 5 (Aella)'
     team:
       - species: 'whimsicott'
@@ -306,6 +312,7 @@ gyms:
             moves: ['Bulldoze', 'Megahorn', 'Energy Ball', 'Play Rough']
   - index: 7
     leader: 'Calvin'
+    town: 'Northrun'
     requirement: 'Complete Main Quest 6 (Statera or Tribe path), defeat Gym 6 (Circe)'
     team:
       - species: 'cloyster'
@@ -379,6 +386,7 @@ gyms:
             moves: ['nasty plot', 'freeze-dry', 'dark pulse', 'dazzling gleam']
   - index: 8
     leader: 'Haru'
+    town: 'Everhallow'
     requirement: 'Defeat Gym 7 (Calvin); additional Gym 8 unlock flag must be set'
     team:
       - species: 'Druddigon'

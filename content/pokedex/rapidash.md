@@ -22,7 +22,7 @@ forms:
       spa: 80
       spd: 80
       spe: 105
-    locations: ['Redgrove']
+    locations: ['Kyoto: Amber City — Pokémon Lv 40+', 'Jataro: Eerie City — Pokémon Lv 40+', 'Haikou: Flareridge — Pokémon Lv 40+', 'Shiloh: Hearth Valley — Pokémon Lv 40+', 'Zeinova: Redgrove — Pokémon Lv 40+']
     competitive_sets:
       - name: 'Physical Attacker'
         tier: 'PU'

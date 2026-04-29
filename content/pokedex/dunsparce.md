@@ -23,7 +23,7 @@ forms:
       spa: 65
       spd: 65
       spe: 45
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Stealth Rock'
         tier: 'PU'

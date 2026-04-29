@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 55
       spe: 15
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Baremaw — trainer Lv 8+']
     competitive_sets:
       - name: 'Defensive'
         tier: 'LC'

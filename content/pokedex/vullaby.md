@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 65
       spe: 60
-    locations: ['Breezelton Village', 'Pure Harbor Heights', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Spiritvale']
     competitive_sets:
       - name: 'Offensive Berry Juice'
         tier: 'LC'

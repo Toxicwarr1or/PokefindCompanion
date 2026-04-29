@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 65
       spe: 45
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights — trainer Lv 13+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'LC'

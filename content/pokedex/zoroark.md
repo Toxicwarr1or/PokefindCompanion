@@ -21,7 +21,7 @@ forms:
       spa: 120
       spd: 60
       spe: 105
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Spiritvale — trainer Lv 24+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Choice Specs'
         tier: 'UU'

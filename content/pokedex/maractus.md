@@ -22,7 +22,7 @@ forms:
       spa: 106
       spd: 67
       spe: 60
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sandgate', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Sandgate', 'Zeinova: Breezelton Village — Pokémon Lv 15+']
     competitive_sets:
       - name: 'Spikes Lead'
         tier: 'PU'

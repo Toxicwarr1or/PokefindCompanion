@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 72
       spe: 46
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Shiloh: Woodburn', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Offensive'
         tier: 'PU'

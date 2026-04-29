@@ -22,7 +22,7 @@ forms:
       spa: 86
       spd: 96
       spe: 70
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Jataro: Treetop Village, Caligo City', 'Haikou: Ivy Village, Findview Port', 'Shiloh: Eastwind, Findville Cape', 'Zeinova: Breezelton Village, Findale Harbor']
     competitive_sets:
       - name: 'Defensive Defog'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 55
       spe: 60
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Redgrove', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Redgrove, Breezelton Village — trainer Lv 25+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Pivot'
         tier: 'LC'

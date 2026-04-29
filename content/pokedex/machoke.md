@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 60
       spe: 45
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Kyoto: Aura Village — Pokémon Lv 28+', 'Jataro: Hollow Village — Pokémon Lv 28+', 'Haikou: Lodestar Port — Pokémon Lv 28+', 'Shiloh: Stronghaven — Pokémon Lv 28+', 'Zeinova: Bridgerun — Pokémon Lv 28+']
     competitive_sets:
       - name: 'Bulky Attacker'
         tier: 'NU'

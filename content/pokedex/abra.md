@@ -23,7 +23,7 @@ forms:
       spa: 105
       spd: 55
       spe: 90
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Mystical Keep', 'Jataro: Fog City', 'Haikou: Maya Keep', 'Shiloh: Crystal View', 'Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Focus Sash'
         tier: 'LC'

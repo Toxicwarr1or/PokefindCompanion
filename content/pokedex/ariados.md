@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 70
       spe: 40
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Draco Valley, Misty Lake', 'Haikou: Ivy Village', 'Shiloh: Woodburn, Marshbarrow', 'Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Lead'
         tier: 'PU'

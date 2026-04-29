@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 90
       spe: 65
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Maya Keep — trainer Lv 10+; Pokémon Lv 14+', 'Shiloh: Crystal View — trainer Lv 10+; Pokémon Lv 14+', 'Zeinova: Pure Harbor Heights — trainer Lv 10+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'Defensive Healing Wish'
         tier: 'PU'

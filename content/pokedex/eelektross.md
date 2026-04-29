@@ -21,7 +21,7 @@ forms:
       spa: 105
       spd: 80
       spe: 50
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City — trainer Lv 35+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Assault Vest'
         tier: 'RU'

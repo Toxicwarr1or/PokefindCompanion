@@ -23,7 +23,7 @@ forms:
       spa: 10
       spd: 45
       spe: 10
-    locations: ['Sandgate']
+    locations: ['Shiloh: Diggers Peak', 'Zeinova: Sandgate']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

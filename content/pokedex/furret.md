@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 55
       spe: 90
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'PU'

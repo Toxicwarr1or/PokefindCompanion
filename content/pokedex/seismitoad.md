@@ -22,7 +22,7 @@ forms:
       spa: 85
       spd: 75
       spe: 74
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale']
+    locations: ['Zeinova: Baremaw', 'Zeinova: Sandgate — trainer Lv 5+; Pokémon Lv 36+']
     competitive_sets:
       - name: 'Support'
         tier: 'UU'

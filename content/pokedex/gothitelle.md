@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 110
       spe: 65
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights — trainer Lv 30+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Trapper'
         tier: 'PU'

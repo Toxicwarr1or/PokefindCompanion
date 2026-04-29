@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 61
       spe: 100
-    locations: ['Findale Harbor']
+    locations: ['Haikou: Findview Port — Pokémon Lv 20+', 'Shiloh: Findville Cape — Pokémon Lv 20+', 'Zeinova: Findale Harbor — Pokémon Lv 20+']
     competitive_sets:
       - name: 'Belly Drum'
         tier: 'NU'

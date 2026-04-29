@@ -23,7 +23,7 @@ forms:
       spa: 85
       spd: 65
       spe: 85
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City — trainer Lv 34+', 'Haikou: Findview Port — trainer Lv 13+', 'Shiloh: Findville Cape — trainer Lv 13+', 'Zeinova: Findale Harbor — trainer Lv 13+']
     competitive_sets:
       - name: 'Wallbreaker'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 85
       spd: 55
       spe: 30
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Bulky Attacker'
         tier: 'LC'

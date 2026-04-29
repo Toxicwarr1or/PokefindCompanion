@@ -21,7 +21,7 @@ forms:
       spa: 115
       spd: 55
       spe: 95
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Kyoto: Amethyst Town — Pokémon Lv 25+', 'Jataro: Caligo City — Pokémon Lv 25+', 'Haikou: Sleepy Hallow — Pokémon Lv 25+', 'Shiloh: Duskburn — Pokémon Lv 25+', 'Zeinova: Spiritvale — Pokémon Lv 25+']
     competitive_sets:
       - name: 'Life Orb Attacker'
         tier: 'NU'

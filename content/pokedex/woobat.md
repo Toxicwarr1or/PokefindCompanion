@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 43
       spe: 72
-    locations: ['Breezelton Village', 'Caves', 'Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Breezelton Village, Pure Harbor Heights', 'Caves']
     competitive_sets:
       - name: 'Simple Sweeper'
         tier: 'LC'

@@ -21,7 +21,7 @@ forms:
       spa: 50
       spd: 50
       spe: 70
-    locations: ['Sandgate']
+    locations: ['Haikou: Kinetic Island — trainer Lv 25+; Pokémon Lv 35+', 'Shiloh: Diggers Peak — trainer Lv 25+; Pokémon Lv 35+', 'Zeinova: Sandgate — trainer Lv 25+; Pokémon Lv 35+']
     competitive_sets:
       - name: 'Defog'
         tier: 'PU'

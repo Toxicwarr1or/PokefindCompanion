@@ -22,7 +22,7 @@ forms:
       spa: 71
       spd: 61
       spe: 84
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Shiloh: Marshbarrow — Pokémon Lv 34+', 'Zeinova: Baremaw — Pokémon Lv 34+']
     competitive_sets:
       - name: 'Support Wonder Guard'
         tier: 'PUREHACKMONS'

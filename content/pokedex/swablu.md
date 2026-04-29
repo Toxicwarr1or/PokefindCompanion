@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 75
       spe: 50
-    locations: ['Breezelton Village', 'Pure Harbor Heights']
+    locations: ['Haikou: Ivy Village', 'Shiloh: Eastwind', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Cotton Guard'
         tier: 'LC'

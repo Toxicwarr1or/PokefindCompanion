@@ -23,7 +23,7 @@ forms:
       spa: 55
       spd: 50
       spe: 25
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale', 'Watterson City']
+    locations: ['Haikou: Sleet City, Findview Port', 'Shiloh: Frostfort, Crystal View', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

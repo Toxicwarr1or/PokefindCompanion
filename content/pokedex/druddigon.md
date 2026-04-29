@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 90
       spe: 48
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Zeinova: Everhallow — trainer Lv 18+']
     competitive_sets:
       - name: 'Stealth Rock Setter'
         tier: 'UU'

@@ -23,7 +23,7 @@ forms:
       spa: 75
       spd: 65
       spe: 30
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City, Smog Town', 'Jataro: Draco Valley, Misty Lake', 'Haikou: Ivy Village', 'Shiloh: Woodburn, Marshbarrow', 'Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Chlorophyll Sweeper'
         tier: 'LC'

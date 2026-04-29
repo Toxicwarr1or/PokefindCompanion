@@ -22,7 +22,7 @@ forms:
       spa: 83
       spd: 63
       spe: 65
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow — Pokémon Lv 37+', 'Shiloh: Duskburn — Pokémon Lv 37+', 'Zeinova: Spiritvale — Pokémon Lv 37+']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'ZU'

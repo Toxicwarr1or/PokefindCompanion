@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 90
       spe: 80
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor — Pokémon Lv 32+']
     competitive_sets:
       - name: 'Wallbreaker'
         tier: 'PU'

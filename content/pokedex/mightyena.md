@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 60
       spe: 70
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow — Pokémon Lv 18+', 'Shiloh: Duskburn — Pokémon Lv 18+', 'Zeinova: Spiritvale — Pokémon Lv 18+']
     competitive_sets:
       - name: 'Life Orb Cleaner'
         tier: 'PU'

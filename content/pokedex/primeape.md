@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 70
       spe: 95
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Kyoto: Aura Village — Pokémon Lv 28+', 'Jataro: Hollow Village — Pokémon Lv 28+', 'Haikou: Lodestar Port — Pokémon Lv 28+', 'Shiloh: Stronghaven — Pokémon Lv 28+', 'Zeinova: Bridgerun — Pokémon Lv 28+']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'NU'

@@ -23,7 +23,7 @@ forms:
       spa: 20
       spd: 30
       spe: 40
-    locations: ['Sandgate']
+    locations: ['Kyoto: Amber City', 'Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak', 'Zeinova: Sandgate']
     competitive_sets:
       - name: 'Rapid Spin'
         tier: 'LC'

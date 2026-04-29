@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 55
       spe: 93
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 36+']
     competitive_sets:
       - name: 'Tailwind Support'
         tier: 'PU'

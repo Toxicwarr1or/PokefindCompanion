@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 95
       spe: 85
-    locations: ['Baremaw', 'Breezelton Village', 'Bridgerun', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Hollow Village, Draco Valley — trainer Lv 35+', 'Haikou: Lodestar Port, Ivy Village — trainer Lv 15+', 'Shiloh: Stronghaven, Woodburn — trainer Lv 15+', 'Zeinova: Bridgerun, Breezelton Village — trainer Lv 15+']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'UU'

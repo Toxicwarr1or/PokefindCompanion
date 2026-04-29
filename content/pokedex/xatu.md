@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 70
       spe: 95
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Jataro: Treetop Village, Caligo City', 'Haikou: Ivy Village, Findview Port', 'Shiloh: Eastwind, Findville Cape', 'Zeinova: Breezelton Village, Findale Harbor']
     competitive_sets:
       - name: 'Defensive Pivot'
         tier: 'RU'

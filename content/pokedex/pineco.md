@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 35
       spe: 15
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Draco Valley — trainer Lv 33+', 'Haikou: Ivy Village — trainer Lv 10+', 'Shiloh: Woodburn — trainer Lv 10+', 'Zeinova: Breezelton Village — trainer Lv 10+']
     competitive_sets:
       - name: 'Entry Hazard Lead'
         tier: 'LC'

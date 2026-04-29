@@ -23,7 +23,7 @@ forms:
       spa: 63
       spd: 33
       spe: 45
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow', 'Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Offensive Trick Room'
         tier: 'LC'

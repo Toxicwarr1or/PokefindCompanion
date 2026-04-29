@@ -23,7 +23,7 @@ forms:
       spa: 90
       spd: 65
       spe: 85
-    locations: ['Findale Harbor', 'Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Jataro: Caligo City, Fog City', 'Haikou: Findview Port, Maya Keep', 'Shiloh: Findville Cape, Crystal View', 'Zeinova: Findale Harbor, Pure Harbor Heights']
     competitive_sets:
       - name: 'Nasty Plot'
         tier: 'PU'

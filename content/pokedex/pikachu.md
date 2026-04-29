@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 50
       spe: 90
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Kyoto: Amp City, Chromium City — Pokémon Lv 16+', 'Jataro: Altus City, Cruxirt Port — Pokémon Lv 16+', 'Haikou: Arc City — Pokémon Lv 16+', 'Shiloh: Circuit City — Pokémon Lv 16+', 'Zeinova: Sparkmont City — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Revenge Killer'
         tier: 'ZU'

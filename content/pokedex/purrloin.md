@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 37
       spe: 66
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Disruptive Pivot'
         tier: 'LC'

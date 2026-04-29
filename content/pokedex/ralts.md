@@ -23,7 +23,7 @@ forms:
       spa: 45
       spd: 35
       spe: 40
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Maya Keep — trainer Lv 13+', 'Shiloh: Crystal View — trainer Lv 13+', 'Zeinova: Pure Harbor Heights — trainer Lv 13+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

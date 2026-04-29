@@ -22,7 +22,7 @@ forms:
       spa: 30
       spd: 55
       spe: 95
-    locations: ['Redgrove']
+    locations: ['Zeinova: Redgrove']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'UU'

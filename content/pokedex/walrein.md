@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 90
       spe: 65
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale', 'Watterson City']
+    locations: ['Haikou: Sleet City, Findview Port — Pokémon Lv 44+', 'Shiloh: Frostfort, Crystal View — Pokémon Lv 44+', 'Zeinova: Baremaw — Pokémon Lv 44+']
     competitive_sets:
       - name: 'Specially Defensive'
         tier: 'PU'

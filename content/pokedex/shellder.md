@@ -23,7 +23,7 @@ forms:
       spa: 45
       spd: 25
       spe: 40
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Aether Village', 'Jataro: Cruxirt Port', 'Haikou: Findview Port', 'Shiloh: Crystal View', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Shell Smash'
         tier: 'LC'

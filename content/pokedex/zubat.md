@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 40
       spe: 55
-    locations: ['Baremaw', 'Breezelton Village', 'Caves', 'Greenholm', 'Pure Harbor Heights']
+    locations: ['Kyoto: Aether Village, Smog Town', 'Jataro: Treetop Village, Misty Lake', 'Haikou: Ivy Village', 'Shiloh: Eastwind, Marshbarrow', 'Zeinova: Breezelton Village, Baremaw', 'Caves']
     competitive_sets:
       - name: 'Support'
         tier: 'LC'

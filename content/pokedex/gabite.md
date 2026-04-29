@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 55
       spe: 82
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Shiloh: Silverkeep — trainer Lv 25+; Pokémon Lv 30+', 'Zeinova: Everhallow — trainer Lv 25+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Offensive Stealth Rock'
         tier: 'PU'

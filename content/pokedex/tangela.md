@@ -23,7 +23,7 @@ forms:
       spa: 100
       spd: 40
       spe: 60
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City', 'Jataro: Draco Valley', 'Haikou: Ivy Village', 'Shiloh: Woodburn', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Defensive'
         tier: 'UU'

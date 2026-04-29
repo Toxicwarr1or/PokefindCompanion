@@ -22,7 +22,7 @@ forms:
       spa: 30
       spd: 85
       spe: 45
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Phazer'
         tier: 'NU'

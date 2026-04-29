@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 115
       spe: 58
-    locations: ['Bridgerun', 'Sparkmont City', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Bridgerun, Spiritvale — trainer Lv 12+']
     competitive_sets:
       - name: 'Dragon Dance'
         tier: 'RU'

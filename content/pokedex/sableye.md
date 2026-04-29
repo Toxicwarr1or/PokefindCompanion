@@ -23,7 +23,7 @@ forms:
       spa: 65
       spd: 65
       spe: 50
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow', 'Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Prankster'
         tier: 'UU'

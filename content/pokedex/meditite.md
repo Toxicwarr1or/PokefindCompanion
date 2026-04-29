@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 55
       spe: 60
-    locations: ['Bridgerun', 'Pure Harbor', 'Pure Harbor Heights', 'Sparkmont City']
+    locations: ['Haikou: Lodestar Port, Maya Keep', 'Shiloh: Stronghaven, Crystal View', 'Zeinova: Bridgerun, Pure Harbor Heights']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'ZU'

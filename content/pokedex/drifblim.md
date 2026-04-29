@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 54
       spe: 80
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'AcroBlim'
         tier: 'PU'

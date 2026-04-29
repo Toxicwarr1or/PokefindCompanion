@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 65
       spe: 30
-    locations: ['Sandgate']
+    locations: ['Jataro: Mt; Iron Temple — trainer Lv 35+', 'Haikou: Kinetic Island — trainer Lv 15+', 'Shiloh: Diggers Peak — trainer Lv 15+', 'Zeinova: Sandgate — trainer Lv 15+']
     competitive_sets:
       - name: 'Suicide Lead'
         tier: 'PU'

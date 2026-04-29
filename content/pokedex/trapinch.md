@@ -23,7 +23,7 @@ forms:
       spa: 45
       spd: 45
       spe: 10
-    locations: ['Sandgate']
+    locations: ['Haikou: Kinetic Island — trainer Lv 15+', 'Shiloh: Diggers Peak — trainer Lv 15+', 'Zeinova: Sandgate — trainer Lv 15+']
     competitive_sets:
       - name: 'Trapper'
         tier: 'LC'

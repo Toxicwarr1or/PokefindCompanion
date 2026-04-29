@@ -23,7 +23,7 @@ forms:
       spa: 50
       spd: 50
       spe: 50
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Wyvern Village, Aether Village — trainer Lv 12+; Pokémon Lv 16+', 'Jataro: Dracaena, Cruxirt Port — trainer Lv 12+; Pokémon Lv 16+', 'Haikou: Targaryen Keep, Findview Port — trainer Lv 13+; Pokémon Lv 16+', 'Shiloh: Silverkeep, Crystal View — trainer Lv 13+; Pokémon Lv 16+', 'Zeinova: Everhallow, Baremaw — trainer Lv 13+; Pokémon Lv 16+']
     competitive_sets:
       - name: 'Mixed Attacker'
         tier: 'LC'

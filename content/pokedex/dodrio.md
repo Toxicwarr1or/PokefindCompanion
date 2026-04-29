@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 60
       spe: 110
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Aether Village, Aura Village — Pokémon Lv 31+', 'Jataro: Treetop Village, Caligo City — Pokémon Lv 31+', 'Haikou: Ivy Village, Findview Port — Pokémon Lv 31+', 'Shiloh: Eastwind, Findville Cape — Pokémon Lv 31+', 'Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 31+']
     competitive_sets:
       - name: 'Wallbreaker'
         tier: 'PU'

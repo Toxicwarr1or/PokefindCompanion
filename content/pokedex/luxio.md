@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 49
       spe: 60
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Shiloh: Circuit City — Pokémon Lv 15+', 'Zeinova: Sparkmont City — Pokémon Lv 15+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

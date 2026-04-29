@@ -22,7 +22,7 @@ forms:
       spa: 107
       spd: 95
       spe: 29
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Calm Mind'
         tier: 'NU'

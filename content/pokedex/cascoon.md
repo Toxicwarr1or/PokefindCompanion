@@ -21,7 +21,7 @@ forms:
       spa: 25
       spd: 25
       spe: 15
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Haikou: Ivy Village — Pokémon Lv 7+', 'Shiloh: Woodburn — Pokémon Lv 7+', 'Zeinova: Breezelton Village — Pokémon Lv 7+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

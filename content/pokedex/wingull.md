@@ -23,7 +23,7 @@ forms:
       spa: 55
       spd: 30
       spe: 85
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Haikou: Ivy Village, Findview Port', 'Shiloh: Eastwind, Crystal View', 'Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'LC'

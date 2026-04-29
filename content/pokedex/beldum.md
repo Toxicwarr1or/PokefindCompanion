@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 60
       spe: 30
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Arc City — trainer Lv 13+; Pokémon Lv 12+', 'Shiloh: Circuit City — trainer Lv 13+; Pokémon Lv 12+', 'Zeinova: Sparkmont City — trainer Lv 13+; Pokémon Lv 12+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

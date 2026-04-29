@@ -22,7 +22,7 @@ forms:
       spa: 70
       spd: 70
       spe: 70
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Wyvern Village, Aether Village — trainer Lv 16+; Pokémon Lv 30+', 'Jataro: Dracaena, Cruxirt Port — trainer Lv 16+; Pokémon Lv 30+', 'Haikou: Targaryen Keep, Findview Port — trainer Lv 25+; Pokémon Lv 30+', 'Shiloh: Silverkeep, Crystal View — trainer Lv 25+; Pokémon Lv 30+', 'Zeinova: Everhallow, Baremaw — trainer Lv 25+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Bulky Dragon Dance'
         tier: 'ZU'

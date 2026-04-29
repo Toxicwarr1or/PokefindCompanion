@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 50
       spe: 45
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Shiloh: Crystal View', 'Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 60
       spe: 100
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Shiloh: Eastwind, Findville Cape — Pokémon Lv 36+', 'Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 36+']
     competitive_sets:
       - name: 'Physically Defensive Defog (Normal)'
         tier: 'MONOTYPE'

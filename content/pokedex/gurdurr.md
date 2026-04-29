@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 50
       spe: 40
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Zeinova: Bridgerun — Pokémon Lv 25+']
     competitive_sets:
       - name: 'Bulk Up'
         tier: 'RU'

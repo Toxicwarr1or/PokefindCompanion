@@ -22,7 +22,7 @@ forms:
       spa: 30
       spd: 45
       spe: 68
-    locations: ['Sandgate']
+    locations: ['Zeinova: Sandgate — trainer Lv 15+']
     competitive_sets:
       - name: 'Spinner'
         tier: 'LC'

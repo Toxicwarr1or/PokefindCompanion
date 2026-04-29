@@ -23,7 +23,7 @@ forms:
       spa: 70
       spd: 40
       spe: 20
-    locations: ['Redgrove']
+    locations: ['Jataro: Eerie City', 'Haikou: Flareridge', 'Shiloh: Hearth Valley', 'Zeinova: Redgrove']
     competitive_sets:
       - name: 'Status Spreader'
         tier: 'LC'

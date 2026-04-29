@@ -23,7 +23,7 @@ forms:
       spa: 60
       spd: 75
       spe: 30
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village', 'Jataro: Caligo City — Pokémon Lv 16+', 'Haikou: Findview Port — Pokémon Lv 16+', 'Shiloh: Findville Cape — Pokémon Lv 16+', 'Zeinova: Findale Harbor — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Wish Support'
         tier: 'LC'

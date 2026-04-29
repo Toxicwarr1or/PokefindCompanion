@@ -23,7 +23,7 @@ forms:
       spa: 72
       spd: 87
       spe: 51
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Haikou: Ivy Village — trainer Lv 10+; Pokémon Lv 14+', 'Shiloh: Woodburn — trainer Lv 10+; Pokémon Lv 14+', 'Zeinova: Breezelton Village — trainer Lv 10+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'SubSeed'
         tier: 'PU'

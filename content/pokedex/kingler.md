@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 50
       spe: 75
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Aether Village — Pokémon Lv 28+', 'Jataro: Cruxirt Port — Pokémon Lv 28+', 'Haikou: Findview Port — Pokémon Lv 28+', 'Shiloh: Crystal View — Pokémon Lv 28+', 'Zeinova: Baremaw — Pokémon Lv 28+']
     competitive_sets:
       - name: 'Agility Sweeper'
         tier: 'PU'

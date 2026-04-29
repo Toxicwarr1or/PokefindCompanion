@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 105
       spe: 50
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village — trainer Lv 14+; Pokémon Lv 18+', 'Jataro: Caligo City — trainer Lv 14+; Pokémon Lv 18+', 'Haikou: Findview Port — trainer Lv 25+; Pokémon Lv 18+', 'Shiloh: Findville Cape — trainer Lv 25+; Pokémon Lv 18+', 'Zeinova: Findale Harbor — trainer Lv 25+; Pokémon Lv 18+']
     competitive_sets:
       - name: 'Support'
         tier: 'MONOTYPE'

@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 45
       spe: 95
-    locations: ['Caves', 'Sandgate']
+    locations: ['Kyoto: Amber City', 'Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak', 'Zeinova: Sandgate', 'Caves']
     competitive_sets:
       - name: 'Eviolite'
         tier: 'LC'

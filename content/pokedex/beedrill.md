@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 80
       spe: 75
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City, Smog Town — Pokémon Lv 10+', 'Jataro: Draco Valley, Misty Lake — Pokémon Lv 10+', 'Haikou: Ivy Village — Pokémon Lv 10+', 'Shiloh: Woodburn, Marshbarrow — Pokémon Lv 10+', 'Zeinova: Breezelton Village, Baremaw — Pokémon Lv 10+']
     competitive_sets:
       - name: 'Toxic Spikes'
         tier: 'ZU'

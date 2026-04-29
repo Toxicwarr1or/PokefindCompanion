@@ -22,7 +22,7 @@ forms:
       spa: 100
       spd: 80
       spe: 30
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Mystical Keep, Aether Village — Pokémon Lv 37+', 'Jataro: Fog City, Cruxirt Port — Pokémon Lv 37+', 'Haikou: Maya Keep, Findview Port — Pokémon Lv 37+', 'Shiloh: Crystal View — Pokémon Lv 37+', 'Zeinova: Pure Harbor Heights, Baremaw — Pokémon Lv 37+']
     competitive_sets:
       - name: 'Colbur Berry'
         tier: 'MONOTYPE'

@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 41
       spe: 60
-    locations: ['Findale Harbor']
+    locations: ['Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Belly Drum'
         tier: 'LC'

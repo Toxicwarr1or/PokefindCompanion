@@ -22,7 +22,7 @@ forms:
       spa: 75
       spd: 50
       spe: 125
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Ivy Village, Findview Port — Pokémon Lv 22+', 'Shiloh: Eastwind, Findville Cape — Pokémon Lv 22+', 'Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 22+']
     competitive_sets:
       - name: 'Choice Specs'
         tier: 'NU'

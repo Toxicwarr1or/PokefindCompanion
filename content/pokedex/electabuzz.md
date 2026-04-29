@@ -23,7 +23,7 @@ forms:
       spa: 95
       spd: 85
       spe: 105
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Kyoto: Amp City — Pokémon Lv 18+', 'Jataro: Altus City — Pokémon Lv 18+', 'Haikou: Arc City — Pokémon Lv 18+', 'Shiloh: Circuit City — Pokémon Lv 18+', 'Zeinova: Sparkmont City — Pokémon Lv 18+']
     competitive_sets:
       - name: 'Eviolite'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 61
       spd: 61
       spe: 100
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Aether Village, Aura Village — Pokémon Lv 20+', 'Jataro: Treetop Village, Caligo City — Pokémon Lv 20+', 'Haikou: Ivy Village, Findview Port — Pokémon Lv 20+', 'Shiloh: Eastwind, Findville Cape — Pokémon Lv 20+', 'Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 20+']
     competitive_sets:
       - name: 'Physical Attacker'
         tier: 'PU'

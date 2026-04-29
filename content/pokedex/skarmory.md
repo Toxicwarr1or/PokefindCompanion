@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 70
       spe: 70
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Jataro: Cruxirt Port — trainer Lv 38+', 'Haikou: Arc City — trainer Lv 25+', 'Shiloh: Circuit City — trainer Lv 25+', 'Zeinova: Sparkmont City — trainer Lv 25+']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'UBERS'

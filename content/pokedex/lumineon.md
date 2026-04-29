@@ -22,7 +22,7 @@ forms:
       spa: 69
       spd: 86
       spe: 91
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Shiloh: Crystal View', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Defog'
         tier: 'PU'

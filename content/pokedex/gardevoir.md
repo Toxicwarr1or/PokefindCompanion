@@ -22,7 +22,7 @@ forms:
       spa: 125
       spd: 115
       spe: 80
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Maya Keep — trainer Lv 30+; Pokémon Lv 30+', 'Shiloh: Crystal View — trainer Lv 30+; Pokémon Lv 30+', 'Zeinova: Pure Harbor Heights — trainer Lv 30+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Choice Attacker'
         tier: 'VGC2014'

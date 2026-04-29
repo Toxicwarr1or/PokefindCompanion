@@ -22,7 +22,7 @@ forms:
       spa: 44
       spd: 50
       spe: 55
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

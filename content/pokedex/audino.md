@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 86
       spe: 50
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Defensive'
         tier: 'RU'

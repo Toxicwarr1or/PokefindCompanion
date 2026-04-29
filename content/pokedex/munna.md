@@ -22,7 +22,7 @@ forms:
       spa: 67
       spd: 55
       spe: 24
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Trick Room'
         tier: 'LC'

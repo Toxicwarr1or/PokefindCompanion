@@ -22,7 +22,7 @@ forms:
       spa: 54
       spd: 96
       spe: 105
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Shiloh: Stronghaven', 'Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Offensive Utility'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 48
       spd: 48
       spe: 109
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Breezelton Village, Sparkmont City — Pokémon Lv 20+']
     competitive_sets:
       - name: 'All-Out Attacker'
         tier: 'UU'

@@ -23,7 +23,7 @@ forms:
       spa: 85
       spd: 70
       spe: 20
-    locations: ['Redgrove']
+    locations: ['Haikou: Flareridge — trainer Lv 10+', 'Shiloh: Hearth Valley — trainer Lv 10+', 'Zeinova: Redgrove — trainer Lv 10+']
     competitive_sets:
       - name: 'Offensive Rapid Spin'
         tier: 'PU'

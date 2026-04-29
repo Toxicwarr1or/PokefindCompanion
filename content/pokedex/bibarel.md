@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 60
       spe: 71
-    locations: ['Findale Harbor']
+    locations: ['Shiloh: Findville Cape — Pokémon Lv 20+', 'Zeinova: Findale Harbor — Pokémon Lv 20+']
     competitive_sets:
       - name: 'Curse'
         tier: 'PU'

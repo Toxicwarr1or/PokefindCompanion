@@ -23,7 +23,7 @@ forms:
       spa: 65
       spd: 45
       spe: 35
-    locations: ['Redgrove']
+    locations: ['Haikou: Flareridge', 'Shiloh: Hearth Valley', 'Zeinova: Redgrove']
     competitive_sets:
       - name: 'Defensive'
         tier: 'LC'

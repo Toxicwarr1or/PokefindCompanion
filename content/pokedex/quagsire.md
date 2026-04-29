@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 65
       spe: 35
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale']
+    locations: ['Jataro: Mt; Iron Temple, Cruxirt Port', 'Haikou: Kinetic Island, Findview Port', 'Shiloh: Diggers Peak, Crystal View', 'Zeinova: Sandgate, Baremaw']
     competitive_sets:
       - name: 'Unaware Wall'
         tier: 'UU'

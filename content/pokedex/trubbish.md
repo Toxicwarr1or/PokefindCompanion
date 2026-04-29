@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 62
       spe: 65
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Zeinova: Baremaw']
     competitive_sets:
       - name: 'Spikes'
         tier: 'LC'

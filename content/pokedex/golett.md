@@ -22,7 +22,7 @@ forms:
       spa: 35
       spd: 50
       spe: 35
-    locations: ['Sandgate', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Spiritvale, Sandgate — trainer Lv 12+']
     competitive_sets:
       - name: 'Tank'
         tier: 'LC'

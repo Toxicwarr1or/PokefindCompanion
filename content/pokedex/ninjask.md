@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 50
       spe: 160
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Haikou: Ivy Village — Pokémon Lv 20+', 'Shiloh: Woodburn — Pokémon Lv 20+', 'Zeinova: Breezelton Village — Pokémon Lv 20+']
     competitive_sets:
       - name: 'Offensive'
         tier: 'PU'

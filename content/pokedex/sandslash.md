@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 55
       spe: 65
-    locations: ['Sandgate']
+    locations: ['Kyoto: Amber City — Pokémon Lv 22+', 'Jataro: Mt; Iron Temple — Pokémon Lv 22+', 'Haikou: Kinetic Island — Pokémon Lv 22+', 'Shiloh: Diggers Peak — Pokémon Lv 22+', 'Zeinova: Sandgate — Pokémon Lv 22+']
     competitive_sets:
       - name: 'Sand Rush'
         tier: 'NU'

@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 40
       spe: 40
-    locations: ['Sandgate']
+    locations: ['Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak', 'Zeinova: Sandgate']
     competitive_sets:
       - name: 'Utility'
         tier: 'LC'

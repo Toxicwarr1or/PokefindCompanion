@@ -23,7 +23,7 @@ forms:
       spa: 80
       spd: 50
       spe: 65
-    locations: ['Redgrove']
+    locations: ['Jataro: Eerie City', 'Haikou: Flareridge — trainer Lv 10+', 'Shiloh: Hearth Valley — trainer Lv 10+', 'Zeinova: Redgrove — trainer Lv 10+']
     competitive_sets:
       - name: 'Mixed Attacker'
         tier: 'LC'

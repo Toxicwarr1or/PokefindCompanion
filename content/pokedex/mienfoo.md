@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 50
       spe: 65
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Fast Pivot'
         tier: 'LC'

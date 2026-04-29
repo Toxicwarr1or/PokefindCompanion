@@ -22,7 +22,7 @@ forms:
       spa: 105
       spd: 75
       spe: 40
-    locations: ['Redgrove']
+    locations: ['Haikou: Flareridge — Pokémon Lv 33+', 'Shiloh: Hearth Valley — Pokémon Lv 33+', 'Zeinova: Redgrove — Pokémon Lv 33+']
     competitive_sets:
       - name: 'Wallbreaker'
         tier: 'UU'

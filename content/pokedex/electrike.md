@@ -23,7 +23,7 @@ forms:
       spa: 65
       spd: 40
       spe: 65
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Arc City', 'Shiloh: Circuit City', 'Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Choice'
         tier: 'LC'

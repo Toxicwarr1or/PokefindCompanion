@@ -23,7 +23,7 @@ forms:
       spa: 65
       spd: 45
       spe: 35
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Jataro: Altus City — trainer Lv 32+', 'Haikou: Arc City — trainer Lv 10+', 'Shiloh: Circuit City — trainer Lv 10+', 'Zeinova: Sparkmont City — trainer Lv 10+']
     competitive_sets:
       - name: 'Dual Screens'
         tier: 'LC'

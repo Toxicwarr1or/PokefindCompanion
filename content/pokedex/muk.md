@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 100
       spe: 50
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Kyoto: Smog Town — Pokémon Lv 38+', 'Jataro: Misty Lake — Pokémon Lv 38+', 'Haikou: Ivy Village — Pokémon Lv 38+', 'Shiloh: Marshbarrow — Pokémon Lv 38+', 'Zeinova: Baremaw — Pokémon Lv 38+']
     competitive_sets:
       - name: 'CroMuk'
         tier: 'PU'

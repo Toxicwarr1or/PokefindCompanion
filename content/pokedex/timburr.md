@@ -22,7 +22,7 @@ forms:
       spa: 25
       spd: 35
       spe: 35
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Tank'
         tier: 'LC'

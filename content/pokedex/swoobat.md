@@ -22,7 +22,7 @@ forms:
       spa: 77
       spd: 55
       spe: 114
-    locations: ['Breezelton Village', 'Caves', 'Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Breezelton Village, Pure Harbor Heights — Pokémon Lv 32+', 'Caves']
     competitive_sets:
       - name: 'Calm Mind'
         tier: 'PU'

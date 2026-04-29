@@ -23,7 +23,7 @@ forms:
       spa: 55
       spd: 55
       spe: 100
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Kyoto: Amp City, Chromium City', 'Jataro: Altus City, Cruxirt Port', 'Haikou: Arc City', 'Shiloh: Circuit City', 'Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Lead'
         tier: 'LC'

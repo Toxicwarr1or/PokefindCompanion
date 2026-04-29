@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 79
       spe: 80
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Kyoto: Smog Town — Pokémon Lv 22+', 'Jataro: Misty Lake — Pokémon Lv 22+', 'Haikou: Ivy Village — Pokémon Lv 22+', 'Shiloh: Marshbarrow — Pokémon Lv 22+', 'Zeinova: Baremaw — Pokémon Lv 22+']
     competitive_sets:
       - name: 'Offensive Coil'
         tier: 'PU'

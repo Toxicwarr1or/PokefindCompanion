@@ -22,7 +22,7 @@ forms:
       spa: 105
       spd: 85
       spe: 30
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Draco Valley — trainer Lv 35+', 'Haikou: Ivy Village — trainer Lv 15+', 'Shiloh: Woodburn — trainer Lv 15+', 'Zeinova: Breezelton Village — trainer Lv 15+']
     competitive_sets:
       - name: 'Synthesis + 3 Attacks'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 55
       spe: 55
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Haikou: Findview Port — Pokémon Lv 30+', 'Shiloh: Crystal View — Pokémon Lv 30+', 'Zeinova: Baremaw — Pokémon Lv 30+']
     competitive_sets:
       - name: 'Swords Dance'
         tier: 'UU'

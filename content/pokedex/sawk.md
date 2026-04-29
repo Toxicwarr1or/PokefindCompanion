@@ -22,7 +22,7 @@ forms:
       spa: 30
       spd: 75
       spe: 85
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'RU'

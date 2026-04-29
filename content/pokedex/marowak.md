@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 80
       spe: 45
-    locations: ['Sandgate', 'Spiritvale', 'Voltaris Island']
+    locations: ['Kyoto: Amber City, Amethyst Town — Pokémon Lv 28+', 'Jataro: Mt; Iron Temple, Caligo City — Pokémon Lv 28+', 'Haikou: Kinetic Island, Sleepy Hallow — Pokémon Lv 28+', 'Shiloh: Diggers Peak, Duskburn — Pokémon Lv 28+', 'Zeinova: Sandgate, Spiritvale — Pokémon Lv 28+']
     competitive_sets:
       - name: 'Offensive'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 130
       spe: 25
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow — Pokémon Lv 37+', 'Shiloh: Duskburn — Pokémon Lv 37+', 'Zeinova: Spiritvale — Pokémon Lv 37+']
     competitive_sets:
       - name: 'Calm Mind'
         tier: 'PU'

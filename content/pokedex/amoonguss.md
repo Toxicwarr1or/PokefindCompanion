@@ -22,7 +22,7 @@ forms:
       spa: 85
       spd: 80
       spe: 30
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Baremaw — trainer Lv 14+']
     competitive_sets:
       - name: 'Support'
         tier: 'VGC2016'

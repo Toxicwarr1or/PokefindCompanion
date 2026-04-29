@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 75
       spe: 90
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City, Smog Town — Pokémon Lv 31+', 'Jataro: Draco Valley, Misty Lake — Pokémon Lv 31+', 'Haikou: Ivy Village — Pokémon Lv 31+', 'Shiloh: Woodburn, Marshbarrow — Pokémon Lv 31+', 'Zeinova: Breezelton Village, Baremaw — Pokémon Lv 31+']
     competitive_sets:
       - name: 'Mono-Attacker'
         tier: 'UU'

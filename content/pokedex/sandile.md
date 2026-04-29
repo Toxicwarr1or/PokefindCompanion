@@ -22,7 +22,7 @@ forms:
       spa: 35
       spd: 35
       spe: 65
-    locations: ['Sandgate']
+    locations: ['Zeinova: Sandgate — trainer Lv 8+']
     competitive_sets:
       - name: 'Bulky Stealth Rock'
         tier: 'LC'

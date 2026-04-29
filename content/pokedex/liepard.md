@@ -22,7 +22,7 @@ forms:
       spa: 88
       spd: 50
       spe: 106
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Prankster Support'
         tier: 'VGC2016'

@@ -22,7 +22,7 @@ forms:
       spa: 48
       spd: 48
       spe: 48
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: anywhere — trainer Lv 12+', 'Jataro: anywhere — trainer Lv 12+', 'Haikou: anywhere — trainer Lv 21+', 'Shiloh: anywhere — trainer Lv 21+', 'Zeinova: anywhere — trainer Lv 21+']
     competitive_sets:
       - name: 'Revenge Killer'
         tier: 'STABMONS'

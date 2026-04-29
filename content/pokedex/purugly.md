@@ -22,7 +22,7 @@ forms:
       spa: 64
       spd: 59
       spe: 112
-    locations: ['Findale Harbor']
+    locations: ['Shiloh: Findville Cape — Pokémon Lv 38+', 'Zeinova: Findale Harbor — Pokémon Lv 38+']
     competitive_sets:
       - name: 'Physical Attacker'
         tier: 'PU'

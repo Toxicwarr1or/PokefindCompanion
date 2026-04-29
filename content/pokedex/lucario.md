@@ -22,7 +22,7 @@ forms:
       spa: 115
       spd: 70
       spe: 90
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Shiloh: Stronghaven', 'Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Swords Dance'
         tier: 'UU'

@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 30
       spe: 35
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow', 'Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Quick Feet'
         tier: 'LC'

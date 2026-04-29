@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 42
       spe: 70
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Shiloh: Woodburn, Marshbarrow', 'Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

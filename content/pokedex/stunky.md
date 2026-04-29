@@ -23,7 +23,7 @@ forms:
       spa: 41
       spd: 41
       spe: 74
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Shiloh: Marshbarrow', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Bulky Pursuit'
         tier: 'LC'

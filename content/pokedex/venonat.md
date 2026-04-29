@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 55
       spe: 45
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City, Smog Town', 'Jataro: Draco Valley, Misty Lake', 'Haikou: Ivy Village', 'Shiloh: Woodburn, Marshbarrow', 'Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Toxic Spikes Setter'
         tier: 'LC'

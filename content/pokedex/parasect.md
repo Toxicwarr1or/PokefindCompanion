@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 80
       spe: 30
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City — Pokémon Lv 24+', 'Jataro: Draco Valley — Pokémon Lv 24+', 'Haikou: Ivy Village — Pokémon Lv 24+', 'Shiloh: Woodburn — Pokémon Lv 24+', 'Zeinova: Breezelton Village — Pokémon Lv 24+']
     competitive_sets:
       - name: 'Spore'
         tier: 'PU'

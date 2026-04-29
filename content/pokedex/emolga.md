@@ -22,7 +22,7 @@ forms:
       spa: 75
       spd: 60
       spe: 103
-    locations: ['Breezelton Village', 'Pure Harbor Heights', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City, Breezelton Village — trainer Lv 8+']
     competitive_sets:
       - name: 'Support'
         tier: 'PU'

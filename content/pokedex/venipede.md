@@ -22,7 +22,7 @@ forms:
       spa: 30
       spd: 39
       spe: 57
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Baremaw']
     competitive_sets:
       - name: 'Entry Hazard Setter'
         tier: 'LC'

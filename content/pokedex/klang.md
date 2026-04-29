@@ -22,7 +22,7 @@ forms:
       spa: 70
       spd: 85
       spe: 50
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'RestTalk'
         tier: 'PU'

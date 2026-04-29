@@ -22,7 +22,7 @@ forms:
       spa: 145
       spd: 90
       spe: 80
-    locations: ['Redgrove', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Redgrove, Spiritvale — trainer Lv 30+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'UU'

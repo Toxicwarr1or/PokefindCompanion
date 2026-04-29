@@ -22,7 +22,7 @@ forms:
       spa: 79
       spd: 105
       spe: 36
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Shiloh: Woodburn', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Drag Worm'
         tier: 'PU'

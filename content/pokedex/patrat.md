@@ -22,7 +22,7 @@ forms:
       spa: 35
       spd: 39
       spe: 42
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

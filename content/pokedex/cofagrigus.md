@@ -21,7 +21,7 @@ forms:
       spa: 95
       spd: 105
       spe: 30
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Spiritvale — trainer Lv 22+']
     competitive_sets:
       - name: 'Trick Room'
         tier: 'UU'

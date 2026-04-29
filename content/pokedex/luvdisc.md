@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 65
       spe: 97
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Haikou: Findview Port — trainer Lv 10+', 'Shiloh: Crystal View — trainer Lv 10+', 'Zeinova: Baremaw — trainer Lv 10+']
     competitive_sets:
       - name: '#LuvdiscWins'
         tier: 'PU'

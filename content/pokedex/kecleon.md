@@ -23,7 +23,7 @@ forms:
       spa: 60
       spd: 120
       spe: 40
-    locations: ['Findale Harbor']
+    locations: ['Haikou: Findview Port — trainer Lv 10+; Pokémon Lv 14+', 'Shiloh: Findville Cape — trainer Lv 10+; Pokémon Lv 14+', 'Zeinova: Findale Harbor — trainer Lv 10+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'Mixed Wallbreaker'
         tier: 'NU'

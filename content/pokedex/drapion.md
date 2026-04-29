@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 75
       spe: 95
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Shiloh: Marshbarrow', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Swords Dance'
         tier: 'RU'

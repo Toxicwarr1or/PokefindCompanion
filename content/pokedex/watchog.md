@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 69
       spe: 77
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Wallbreaker'
         tier: 'PU'

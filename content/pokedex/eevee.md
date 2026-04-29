@@ -23,7 +23,7 @@ forms:
       spa: 45
       spd: 65
       spe: 55
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village', 'Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Wish Passer'
         tier: 'LC'

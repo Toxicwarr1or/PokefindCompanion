@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 70
       spe: 70
-    locations: ['Sparkmont City', 'Spiritvale', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City, Spiritvale — trainer Lv 30+']
     competitive_sets:
       - name: 'Swords Dance'
         tier: 'OU'

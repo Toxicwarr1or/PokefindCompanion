@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 79
       spe: 70
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Shiloh: Circuit City — trainer Lv 35+; Pokémon Lv 30+', 'Zeinova: Sparkmont City — trainer Lv 35+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'PU'

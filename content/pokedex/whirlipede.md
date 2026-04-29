@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 79
       spe: 47
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village', 'Zeinova: Baremaw — trainer Lv 12+']
     competitive_sets:
       - name: 'Suicide Lead'
         tier: 'PU'

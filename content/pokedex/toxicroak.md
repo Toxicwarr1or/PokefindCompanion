@@ -22,7 +22,7 @@ forms:
       spa: 86
       spd: 65
       spe: 85
-    locations: ['Baremaw', 'Bridgerun', 'Greenholm', 'Sparkmont City']
+    locations: ['Shiloh: Stronghaven, Marshbarrow — trainer Lv 15+', 'Zeinova: Bridgerun, Baremaw — trainer Lv 15+']
     competitive_sets:
       - name: 'Swords Dance'
         tier: 'UU'

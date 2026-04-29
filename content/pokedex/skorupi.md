@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 55
       spe: 65
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Shiloh: Marshbarrow', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Support'
         tier: 'LC'

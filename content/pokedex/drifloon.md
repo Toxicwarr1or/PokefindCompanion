@@ -23,7 +23,7 @@ forms:
       spa: 60
       spd: 44
       spe: 70
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

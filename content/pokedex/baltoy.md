@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 70
       spe: 55
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Maya Keep', 'Shiloh: Crystal View', 'Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Rapid Spin'
         tier: 'LC'

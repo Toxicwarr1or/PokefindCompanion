@@ -23,7 +23,7 @@ forms:
       spa: 50
       spd: 50
       spe: 50
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Watterson City']
+    locations: ['Haikou: Sleet City — Pokémon Lv 16+', 'Shiloh: Frostfort — Pokémon Lv 16+', 'Zeinova: Baremaw — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Spikes'
         tier: 'LC'

@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 35
       spe: 35
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Jataro: Hollow Village', 'Haikou: Lodestar Port', 'Shiloh: Stronghaven', 'Zeinova: Bridgerun']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

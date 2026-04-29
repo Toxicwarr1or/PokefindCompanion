@@ -23,7 +23,7 @@ forms:
       spa: 10
       spd: 230
       spe: 5
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sandgate', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Draco Valley, Mt; Iron Temple', 'Haikou: Ivy Village, Kinetic Island', 'Shiloh: Woodburn, Diggers Peak', 'Zeinova: Breezelton Village, Sandgate']
     competitive_sets:
       - name: 'Holy Shuck!'
         tier: 'UU'

@@ -23,7 +23,7 @@ forms:
       spa: 36
       spd: 56
       spe: 50
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Jataro: Treetop Village, Caligo City', 'Haikou: Ivy Village, Findview Port', 'Shiloh: Eastwind, Findville Cape', 'Zeinova: Breezelton Village, Findale Harbor']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

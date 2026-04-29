@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 50
       spe: 25
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Kyoto: Smog Town', 'Jataro: Misty Lake', 'Haikou: Ivy Village', 'Shiloh: Marshbarrow', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Bulky Attacker'
         tier: 'LC'

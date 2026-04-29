@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 80
       spe: 90
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village — trainer Lv 6+; Pokémon Lv 14+', 'Jataro: Caligo City — trainer Lv 6+; Pokémon Lv 14+', 'Haikou: Findview Port — trainer Lv 13+; Pokémon Lv 14+', 'Shiloh: Findville Cape — trainer Lv 13+; Pokémon Lv 14+', 'Zeinova: Findale Harbor — trainer Lv 13+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'Offensive'
         tier: 'NU'

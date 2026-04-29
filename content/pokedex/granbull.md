@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 60
       spe: 45
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Defensive'
         tier: 'UU'

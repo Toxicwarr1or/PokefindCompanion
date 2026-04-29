@@ -22,7 +22,7 @@ forms:
       spa: 85
       spd: 50
       spe: 115
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Shiloh: Crystal View', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Special Attacker'
         tier: 'PU'

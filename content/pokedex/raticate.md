@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 70
       spe: 97
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village', 'Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Guts'
         tier: 'PU'

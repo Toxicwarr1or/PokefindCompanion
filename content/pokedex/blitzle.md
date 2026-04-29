@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 32
       spe: 76
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'LC'

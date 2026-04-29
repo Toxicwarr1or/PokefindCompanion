@@ -22,7 +22,7 @@ forms:
       spa: 80
       spd: 60
       spe: 45
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Jataro: Altus City — trainer Lv 34+', 'Haikou: Arc City — trainer Lv 15+', 'Shiloh: Circuit City — trainer Lv 15+', 'Zeinova: Sparkmont City — trainer Lv 15+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

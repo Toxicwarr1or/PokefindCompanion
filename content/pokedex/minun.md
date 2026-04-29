@@ -23,7 +23,7 @@ forms:
       spa: 75
       spd: 85
       spe: 95
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Arc City — trainer Lv 13+', 'Shiloh: Circuit City — trainer Lv 13+', 'Zeinova: Sparkmont City — trainer Lv 13+']
     competitive_sets:
       - name: 'Cheerleader'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 45
       spe: 65
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Zeinova: Baremaw — trainer Lv 12+']
     competitive_sets:
       - name: 'Sunfish Wish'
         tier: 'UU'

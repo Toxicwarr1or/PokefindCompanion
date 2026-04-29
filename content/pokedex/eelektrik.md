@@ -21,7 +21,7 @@ forms:
       spa: 75
       spd: 70
       spe: 40
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City — Pokémon Lv 15+']
     competitive_sets:
       - name: 'Defensive Pivot'
         tier: 'ZU'

@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 60
       spe: 50
-    locations: ['Sandgate', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Kinetic Island, Arc City — trainer Lv 35+; Pokémon Lv 42+', 'Shiloh: Diggers Peak, Circuit City — trainer Lv 35+; Pokémon Lv 42+', 'Zeinova: Sandgate, Sparkmont City — trainer Lv 35+; Pokémon Lv 42+']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'RU'

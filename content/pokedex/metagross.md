@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 90
       spe: 70
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Arc City — trainer Lv 45+; Pokémon Lv 45+', 'Shiloh: Circuit City — trainer Lv 45+; Pokémon Lv 45+', 'Zeinova: Sparkmont City — trainer Lv 45+; Pokémon Lv 45+']
     competitive_sets:
       - name: 'Offensive Stealth Rock'
         tier: 'UU'

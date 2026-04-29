@@ -22,7 +22,7 @@ forms:
       spa: 125
       spd: 95
       spe: 40
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights — Pokémon Lv 36+']
     competitive_sets:
       - name: 'Defensive Nasty Plot'
         tier: 'PU'

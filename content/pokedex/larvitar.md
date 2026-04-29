@@ -23,7 +23,7 @@ forms:
       spa: 45
       spd: 50
       spe: 41
-    locations: ['Sandgate']
+    locations: ['Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak — trainer Lv 13+', 'Zeinova: Sandgate — trainer Lv 13+']
     competitive_sets:
       - name: 'Dragon Dance'
         tier: 'LC'

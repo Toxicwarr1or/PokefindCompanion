@@ -23,7 +23,7 @@ forms:
       spa: 45
       spd: 90
       spe: 95
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Shiloh: Circuit City', 'Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Pachiraichu'
         tier: 'PU'

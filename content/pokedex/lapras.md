@@ -23,7 +23,7 @@ forms:
       spa: 85
       spd: 95
       spe: 60
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale', 'Watterson City']
+    locations: ['Kyoto: Snowtip City, Aether Village — trainer Lv 15+; Pokémon Lv 18+', 'Jataro: Dracaena, Cruxirt Port — trainer Lv 15+; Pokémon Lv 18+', 'Haikou: Sleet City, Findview Port — trainer Lv 25+; Pokémon Lv 18+', 'Shiloh: Frostfort, Crystal View — trainer Lv 25+; Pokémon Lv 18+', 'Zeinova: Baremaw — trainer Lv 25+; Pokémon Lv 18+']
     competitive_sets:
       - name: 'Choice Specs'
         tier: 'PU'

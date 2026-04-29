@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 75
       spe: 80
-    locations: ['Bridgerun', 'Pure Harbor', 'Pure Harbor Heights', 'Sparkmont City']
+    locations: ['Haikou: Lodestar Port, Maya Keep — Pokémon Lv 37+', 'Shiloh: Stronghaven, Crystal View — Pokémon Lv 37+', 'Zeinova: Bridgerun, Pure Harbor Heights — Pokémon Lv 37+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'RU'

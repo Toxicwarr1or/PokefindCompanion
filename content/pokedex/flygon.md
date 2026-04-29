@@ -21,7 +21,7 @@ forms:
       spa: 80
       spd: 80
       spe: 100
-    locations: ['Sandgate']
+    locations: ['Haikou: Kinetic Island — trainer Lv 35+; Pokémon Lv 45+', 'Shiloh: Diggers Peak — trainer Lv 35+; Pokémon Lv 45+', 'Zeinova: Sandgate — trainer Lv 35+; Pokémon Lv 45+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'UU'

@@ -22,7 +22,7 @@ forms:
       spa: 25
       spd: 25
       spe: 15
-    locations: ['Sandgate']
+    locations: ['Zeinova: Sandgate']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

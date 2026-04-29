@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 69
       spe: 112
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village', 'Zeinova: Baremaw — trainer Lv 25+']
     competitive_sets:
       - name: 'Spikes Anti-Lead'
         tier: 'UBERS'

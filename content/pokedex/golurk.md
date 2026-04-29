@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 80
       spe: 55
-    locations: ['Sandgate', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Spiritvale, Sandgate — trainer Lv 40+']
     competitive_sets:
       - name: 'Stealth Rock'
         tier: 'NU'

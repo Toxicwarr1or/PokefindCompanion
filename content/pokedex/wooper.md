@@ -23,7 +23,7 @@ forms:
       spa: 25
       spd: 25
       spe: 15
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale']
+    locations: ['Jataro: Mt; Iron Temple, Cruxirt Port', 'Haikou: Kinetic Island, Findview Port', 'Shiloh: Diggers Peak, Crystal View', 'Zeinova: Sandgate, Baremaw']
     competitive_sets:
       - name: 'Water Absorb'
         tier: 'LC'

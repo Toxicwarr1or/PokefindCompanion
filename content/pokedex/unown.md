@@ -22,7 +22,7 @@ forms:
       spa: 72
       spd: 48
       spe: 48
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Jataro: Fog City', 'Haikou: Maya Keep', 'Shiloh: Crystal View', 'Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'For Reasons Unown'
         tier: 'PU'

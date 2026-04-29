@@ -22,7 +22,7 @@ forms:
       spa: 100
       spd: 50
       spe: 65
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Haikou: Ivy Village — Pokémon Lv 10+', 'Shiloh: Woodburn — Pokémon Lv 10+', 'Zeinova: Breezelton Village — Pokémon Lv 10+']
     competitive_sets:
       - name: 'The Ugly Bar-Butter-fly'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 45
       spe: 40
-    locations: ['Sandgate']
+    locations: ['Kyoto: Amber City — Pokémon Lv 42+', 'Jataro: Mt; Iron Temple — Pokémon Lv 42+', 'Haikou: Kinetic Island — Pokémon Lv 42+', 'Shiloh: Diggers Peak — Pokémon Lv 42+', 'Zeinova: Sandgate — Pokémon Lv 42+']
     competitive_sets:
       - name: 'Dancing Dino'
         tier: 'NU'

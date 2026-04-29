@@ -21,7 +21,7 @@ forms:
       spa: 125
       spd: 90
       spe: 98
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Zeinova: Everhallow — trainer Lv 45+; Pokémon Lv 50+']
     competitive_sets:
       - name: 'Special Attacker'
         tier: 'VGC2014'

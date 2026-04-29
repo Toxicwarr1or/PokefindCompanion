@@ -22,7 +22,7 @@ forms:
       spa: 43
       spd: 90
       spe: 42
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Mystical Keep', 'Jataro: Fog City', 'Haikou: Maya Keep', 'Shiloh: Crystal View', 'Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Specially Defensive'
         tier: 'LC'

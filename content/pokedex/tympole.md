@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 40
       spe: 64
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale']
+    locations: ['Zeinova: Baremaw, Sandgate']
     competitive_sets:
       - name: 'Rain Sweeper'
         tier: 'LC'

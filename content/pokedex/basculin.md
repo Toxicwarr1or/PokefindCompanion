@@ -22,7 +22,7 @@ forms:
       spa: 80
       spd: 55
       spe: 98
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Zeinova: Baremaw']
     competitive_sets:
       - name: 'All-Out Attacker'
         tier: 'PU'

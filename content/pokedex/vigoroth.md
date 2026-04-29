@@ -21,7 +21,7 @@ forms:
       spa: 55
       spd: 55
       spe: 90
-    locations: ['Findale Harbor']
+    locations: ['Haikou: Findview Port — trainer Lv 17+; Pokémon Lv 18+', 'Shiloh: Findville Cape — trainer Lv 17+; Pokémon Lv 18+', 'Zeinova: Findale Harbor — trainer Lv 17+; Pokémon Lv 18+']
     competitive_sets:
       - name: 'Bulk Up'
         tier: 'NU'

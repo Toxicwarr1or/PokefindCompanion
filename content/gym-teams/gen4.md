@@ -4,6 +4,7 @@ date: 2026-04-27
 gyms:
   - index: 1
     leader: 'Fauner'
+    town: 'Woodburn'
     requirement: 'Complete Main Quest 2'
     team:
       - species: 'Cherubi'
@@ -45,6 +46,7 @@ gyms:
             moves: ['Absorb', 'Seed Bomb', 'Mega Drain', 'Stun Spore']
   - index: 2
     leader: 'Maxelle'
+    town: 'near Frostfort'
     requirement: 'Complete Main Quest 3'
     team:
       - species: 'Mamoswine'
@@ -86,6 +88,7 @@ gyms:
             moves: ['Ice Beam', 'Shadow Ball', 'Toxic', 'Water Pulse']
   - index: 3
     leader: 'Chrissa'
+    town: 'Seabrooke'
     requirement: 'Defeat Gym 2 (Maxelle)'
     team:
       - species: 'Empoleon'
@@ -127,6 +130,7 @@ gyms:
             moves: ['Water Pulse', 'Mud Bomb', 'Clear Smog', 'Sludge Wave']
   - index: 4
     leader: 'Coal'
+    town: 'Diggers Peak'
     requirement: 'Complete Main Quest 4'
     team:
       - species: 'Mamoswine'
@@ -172,6 +176,7 @@ gyms:
             moves: ['Bulldoze', 'Curse', 'Earthquake', 'Counter']
   - index: 5
     leader: 'Brenda'
+    town: 'Stronghaven'
     requirement: 'Defeat Gym 4 (Coal)'
     team:
       - species: 'Gallade'
@@ -225,6 +230,7 @@ gyms:
             moves: ['Jump Kick', 'Blaze Kick', 'Poison Jab', 'Earthquake']
   - index: 6
     leader: 'Daemion'
+    town: 'Crystal View'
     requirement: 'Defeat Gym 5 (Brenda)'
     team:
       - species: 'Bronzong'
@@ -266,6 +272,7 @@ gyms:
             moves: ['Scald', 'Thunderbolt', 'Psychic', 'Ice Beam']
   - index: 7
     leader: 'Strom'
+    town: 'Circuit City'
     requirement: 'Complete the Main Quest 6 sidequest'
     team:
       - species: 'Magnezone'
@@ -307,6 +314,7 @@ gyms:
             moves: ['Thunderbolt', 'Overheat', 'Flamethrower', 'Crunch']
   - index: 8
     leader: 'Flare'
+    town: 'Hearth Valley'
     requirement: 'Complete Main Quest 7'
     team:
       - species: 'Arcanine'

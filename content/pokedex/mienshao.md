@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 60
       spe: 105
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Zeinova: Bridgerun — Pokémon Lv 35+']
     competitive_sets:
       - name: 'Offensive Support'
         tier: 'VGC2014'

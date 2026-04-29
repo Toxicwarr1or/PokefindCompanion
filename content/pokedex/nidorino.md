@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 55
       spe: 65
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Kyoto: Smog Town — Pokémon Lv 16+', 'Jataro: Misty Lake — Pokémon Lv 16+', 'Haikou: Ivy Village — Pokémon Lv 16+', 'Shiloh: Marshbarrow — Pokémon Lv 16+', 'Zeinova: Baremaw — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

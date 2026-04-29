@@ -23,7 +23,7 @@ forms:
       spa: 60
       spd: 120
       spe: 50
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Shiloh: Crystal View', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Rain Dance'
         tier: 'LC'

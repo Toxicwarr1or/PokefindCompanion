@@ -23,7 +23,7 @@ forms:
       spa: 55
       spd: 55
       spe: 50
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Arc City', 'Shiloh: Circuit City', 'Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Taunt'
         tier: '1V1'

@@ -21,7 +21,7 @@ forms:
       spa: 65
       spd: 70
       spe: 51
-    locations: ['Sandgate']
+    locations: ['Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak — trainer Lv 25+', 'Zeinova: Sandgate — trainer Lv 25+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

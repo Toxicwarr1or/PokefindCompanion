@@ -21,7 +21,7 @@ forms:
       spa: 85
       spd: 70
       spe: 60
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Kyoto: Smog Town — Pokémon Lv 35+', 'Jataro: Misty Lake — Pokémon Lv 35+', 'Haikou: Ivy Village — Pokémon Lv 35+', 'Shiloh: Marshbarrow — Pokémon Lv 35+', 'Zeinova: Baremaw — Pokémon Lv 35+']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'UU'

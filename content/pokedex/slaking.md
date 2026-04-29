@@ -21,7 +21,7 @@ forms:
       spa: 95
       spd: 65
       spe: 100
-    locations: ['Findale Harbor']
+    locations: ['Haikou: Findview Port — trainer Lv 30+; Pokémon Lv 36+', 'Shiloh: Findville Cape — trainer Lv 30+; Pokémon Lv 36+', 'Zeinova: Findale Harbor — trainer Lv 30+; Pokémon Lv 36+']
     competitive_sets:
       - name: 'Support Wonder Guard'
         tier: 'PUREHACKMONS'

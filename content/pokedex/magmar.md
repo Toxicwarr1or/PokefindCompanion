@@ -23,7 +23,7 @@ forms:
       spa: 100
       spd: 85
       spe: 93
-    locations: ['Redgrove', 'Sandgate']
+    locations: ['Kyoto: Amber City — Pokémon Lv 16+', 'Jataro: Eerie City, Mt; Iron Temple — Pokémon Lv 16+', 'Haikou: Flareridge, Kinetic Island — Pokémon Lv 16+', 'Shiloh: Hearth Valley, Diggers Peak — Pokémon Lv 16+', 'Zeinova: Redgrove, Sandgate — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Life Orb Attacker'
         tier: 'MIDDLECUP'

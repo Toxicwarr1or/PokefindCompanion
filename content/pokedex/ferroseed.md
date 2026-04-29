@@ -21,7 +21,7 @@ forms:
       spa: 24
       spd: 86
       spe: 10
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Breezelton Village, Sparkmont City — trainer Lv 10+']
     competitive_sets:
       - name: 'Defensive Support'
         tier: 'RU'

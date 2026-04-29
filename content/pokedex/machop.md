@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 35
       spe: 35
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Kyoto: Aura Village — trainer Lv 3+', 'Jataro: Hollow Village — trainer Lv 3+', 'Haikou: Lodestar Port — trainer Lv 3+', 'Shiloh: Stronghaven — trainer Lv 3+', 'Zeinova: Bridgerun — trainer Lv 3+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'LC'

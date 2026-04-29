@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 30
       spe: 50
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Haikou: Targaryen Keep — trainer Lv 13+; Pokémon Lv 16+', 'Shiloh: Silverkeep — trainer Lv 13+; Pokémon Lv 16+', 'Zeinova: Everhallow — trainer Lv 13+; Pokémon Lv 16+']
     competitive_sets:
       - name: 'Dragon Dance'
         tier: 'LC'

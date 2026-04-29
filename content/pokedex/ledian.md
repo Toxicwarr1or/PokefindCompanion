@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 110
       spe: 85
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Pure Harbor Heights', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Treetop Village, Draco Valley', 'Haikou: Ivy Village', 'Shiloh: Eastwind, Woodburn', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Dual Screens'
         tier: 'PU'

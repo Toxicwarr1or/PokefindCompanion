@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 70
       spe: 120
-    locations: ['Caves', 'Sandgate']
+    locations: ['Kyoto: Amber City — Pokémon Lv 26+', 'Jataro: Mt; Iron Temple — Pokémon Lv 26+', 'Haikou: Kinetic Island — Pokémon Lv 26+', 'Shiloh: Diggers Peak — Pokémon Lv 26+', 'Zeinova: Sandgate — Pokémon Lv 26+', 'Caves']
     competitive_sets:
       - name: 'Mole Man'
         tier: 'OU'

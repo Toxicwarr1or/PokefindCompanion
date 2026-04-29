@@ -22,7 +22,7 @@ forms:
       spa: 80
       spd: 63
       spe: 116
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City — Pokémon Lv 27+']
     competitive_sets:
       - name: 'All-Out Attacker'
         tier: 'PU'

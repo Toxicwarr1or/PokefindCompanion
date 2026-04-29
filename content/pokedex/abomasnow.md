@@ -22,7 +22,7 @@ forms:
       spa: 92
       spd: 85
       spe: 60
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Watterson City']
+    locations: ['Shiloh: Frostfort', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Barack Aboma (Swords Dance)'
         tier: 'UU'

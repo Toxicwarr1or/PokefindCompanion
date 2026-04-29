@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 60
       spe: 40
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Jataro: Draco Valley, Cruxirt Port — trainer Lv 39+', 'Haikou: Ivy Village, Arc City — trainer Lv 25+', 'Shiloh: Woodburn, Circuit City — trainer Lv 25+', 'Zeinova: Breezelton Village, Sparkmont City — trainer Lv 25+']
     competitive_sets:
       - name: 'Defensive Rapid Spin'
         tier: 'UU'

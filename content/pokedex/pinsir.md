@@ -23,7 +23,7 @@ forms:
       spa: 55
       spd: 70
       spe: 85
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City — Pokémon Lv 16+', 'Jataro: Draco Valley — Pokémon Lv 16+', 'Haikou: Ivy Village — Pokémon Lv 16+', 'Shiloh: Woodburn — Pokémon Lv 16+', 'Zeinova: Breezelton Village — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Swords Dance'
         tier: 'OU'

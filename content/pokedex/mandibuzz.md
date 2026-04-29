@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 95
       spe: 80
-    locations: ['Breezelton Village', 'Pure Harbor Heights', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Spiritvale — Pokémon Lv 54+']
     competitive_sets:
       - name: 'Specially Defensive'
         tier: 'UU'

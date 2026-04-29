@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 45
       spe: 35
-    locations: ['Sandgate']
+    locations: ['Kyoto: Amber City — Pokémon Lv 25–40', 'Jataro: Mt; Iron Temple — Pokémon Lv 25–40', 'Haikou: Kinetic Island — Pokémon Lv 25–40', 'Shiloh: Diggers Peak — Pokémon Lv 25–40', 'Zeinova: Sandgate — Pokémon Lv 25–40']
     competitive_sets:
       - name: 'Suicide Lead'
         tier: 'ZU'

@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 70
       spe: 100
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City — trainer Lv 34+', 'Haikou: Findview Port — trainer Lv 13+', 'Shiloh: Findville Cape — trainer Lv 13+', 'Zeinova: Findale Harbor — trainer Lv 13+']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'NU'

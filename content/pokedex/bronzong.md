@@ -22,7 +22,7 @@ forms:
       spa: 79
       spd: 116
       spe: 33
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Shiloh: Circuit City', 'Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Tank'
         tier: 'UU'

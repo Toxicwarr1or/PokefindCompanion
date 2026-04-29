@@ -22,7 +22,7 @@ forms:
       spa: 75
       spd: 85
       spe: 55
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Pure Harbor Heights — trainer Lv 17+; Pokémon Lv 20+']
     competitive_sets:
       - name: 'Nasty Plot'
         tier: 'NFE'

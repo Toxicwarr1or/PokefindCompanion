@@ -22,7 +22,7 @@ forms:
       spa: 70
       spd: 50
       spe: 30
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Sun Support'
         tier: 'LC'

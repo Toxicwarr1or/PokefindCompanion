@@ -14,10 +14,12 @@
 // is created. Loading is lazy: the viewer initializes on first viewport
 // intersection so off-screen species don't pay the cost.
 
-// esm.sh transparently rewrites bare specifiers, so we don't need an
-// import map and three.js's example modules resolve cleanly.
-import * as THREE from 'https://esm.sh/three@0.160.0';
-import { OrbitControls } from 'https://esm.sh/three@0.160.0/examples/jsm/controls/OrbitControls.js';
+// Bare specifiers route through the page-level importmap (in
+// _default/baseof.html), which points "three" and "three/addons/" at
+// jsdelivr. Earlier hardcoded https://esm.sh/three URLs sometimes failed
+// to load on mobile networks, leaving the viewer blank.
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // ---------- Java-MC face order (matches the JSON spec) ----------
 // Each face is a quad over the cuboid spanned by `from` → `to`. Per Mojang's
@@ -294,20 +296,121 @@ async function buildModelGroup(modelUrl) {
   return root;
 }
 
+// ====================================================================
+// Shared singleton renderer.
+//
+// We allocate ONE WebGLRenderer per page and hop its <canvas> between
+// viewer containers. Browsers cap WebGL contexts (8 on Chrome, 4 on
+// some mobile Safari builds) and each context keeps a heavy GPU
+// allocation alive — the per-form-tab renderer was crashing phones.
+// With a single context the cost is constant regardless of how many
+// pokedex tabs / dex pages exist.
+//
+// Each container still owns its own scene + camera + OrbitControls
+// (so the user's orbit position survives tab switches), but they
+// rebind to the shared canvas + renderer when activated.
+// ====================================================================
+
+const isMobile = window.matchMedia('(max-width: 768px)').matches
+              || (window.matchMedia('(pointer: coarse)').matches
+                  && (navigator.hardwareConcurrency || 8) <= 6);
+
+let sharedRenderer = null;
+let sharedCanvas = null;
+let activeViewer = null;        // currently-mounted viewer state (see startViewer)
+let rafScheduled = false;
+
+function getSharedRenderer() {
+  if (sharedRenderer) return sharedRenderer;
+  // antialias off on mobile (huge pixel-shader cost on 3x DPI screens),
+  // pixel ratio capped so a 360px CSS box doesn't get a 1080² backbuffer.
+  sharedRenderer = new THREE.WebGLRenderer({
+    antialias: !isMobile,
+    alpha: true,
+    powerPreference: 'low-power',
+  });
+  sharedRenderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2));
+  sharedCanvas = sharedRenderer.domElement;
+  // The canvas needs to fill its current container; the container itself
+  // sets the size via aspect-ratio CSS, so block-level + 100% is enough.
+  sharedCanvas.style.display = 'block';
+  sharedCanvas.style.width = '100%';
+  sharedCanvas.style.height = '100%';
+  return sharedRenderer;
+}
+
+function scheduleRender() {
+  if (rafScheduled) return;
+  rafScheduled = true;
+  requestAnimationFrame(renderActive);
+}
+
+function renderActive() {
+  rafScheduled = false;
+  if (!activeViewer || !activeViewer.visible) return;
+  const damping = activeViewer.controls.update();
+  if (damping || activeViewer.needsRender) {
+    sharedRenderer.render(activeViewer.scene, activeViewer.camera);
+    activeViewer.needsRender = false;
+    if (damping) scheduleRender();   // keep ticking until damping settles
+  }
+}
+
+// Move the shared canvas + OrbitControls binding into `viewer`. The
+// previously-active viewer keeps its scene/camera state but stops
+// rendering until re-activated.
+function activateViewer(viewer) {
+  if (activeViewer === viewer) return;
+  if (activeViewer) {
+    activeViewer.controls.dispose();
+    activeViewer.controls = null;
+  }
+  activeViewer = viewer;
+  const renderer = getSharedRenderer();
+  viewer.container.appendChild(sharedCanvas);
+  // Fresh OrbitControls bound to the (now-reparented) canvas; restore
+  // the camera position the previous controls left behind.
+  const controls = new OrbitControls(viewer.camera, sharedCanvas);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.08;
+  controls.target.copy(viewer.target);
+  controls.addEventListener('change', () => {
+    viewer.target.copy(controls.target);
+    viewer.needsRender = true;
+    scheduleRender();
+  });
+  viewer.controls = controls;
+
+  // Size the renderer to the new container.
+  const w = viewer.container.clientWidth || 320;
+  const h = viewer.container.clientHeight || 320;
+  renderer.setSize(w, h, false);
+  viewer.camera.aspect = w / h;
+  viewer.camera.updateProjectionMatrix();
+  viewer.needsRender = true;
+  scheduleRender();
+}
+
+// ====================================================================
+// Per-container viewer state. The container owns scene + camera but not
+// the renderer — that's the shared singleton above.
+// ====================================================================
+
 function startViewer(container) {
   const baseUrl = container.dataset.mcModel;
   if (!baseUrl) return;
-  if (container.dataset.mcStarted === '1') return;
+  if (container.dataset.mcStarted === '1') {
+    // Already initialized; just re-bind the shared canvas to it.
+    if (container._mcViewer) activateViewer(container._mcViewer);
+    return;
+  }
   container.dataset.mcStarted = '1';
+  container.classList.add('mc-model-loading');
+  container.dataset.mcMessage = 'Loading model…';
 
   // The page passes every available skin URL in a single
-  // `data-mc-model-skins` JSON attribute. The structurally per-skin attr
-  // we tried first (`data-mc-model-<skin>`) collided with Hugo's
-  // html/template autoescape: any underscore in the attribute name was
-  // rewritten to `ZgotmplZ`, which collapsed `april_fools`,
-  // `lunar_new_year`, and `sword_and_shield` onto the same broken attr
-  // and made those buttons no-ops. JSON in an attribute *value* dodges
-  // the rule.
+  // `data-mc-model-skins` JSON attribute (per-skin attrs collided with
+  // Hugo's html/template autoescape, which rewrote underscores).
   const skinUrls = { regular: baseUrl };
   if (container.dataset.mcModelSkins) {
     try {
@@ -317,32 +420,33 @@ function startViewer(container) {
     }
   }
 
-  // Create renderer fresh per container so multiple viewers can coexist.
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setPixelRatio(window.devicePixelRatio || 1);
-  const initialW = container.clientWidth || 320;
-  const initialH = container.clientHeight || 320;
-  renderer.setSize(initialW, initialH, false);
-  container.appendChild(renderer.domElement);
-
   const scene = new THREE.Scene();
   scene.add(new THREE.AmbientLight(0xffffff, 0.95));
   const dir = new THREE.DirectionalLight(0xffffff, 0.55);
   dir.position.set(8, 12, 8);
   scene.add(dir);
 
+  const initialW = container.clientWidth || 320;
+  const initialH = container.clientHeight || 320;
   const camera = new THREE.PerspectiveCamera(28, initialW / initialH, 0.1, 200);
   camera.position.set(22, 14, 28);
 
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.08;
-  controls.target.set(0, 0, 0);
-
-  // Tracks the currently-mounted model so we can swap it without rebuilding
-  // the entire scene/camera/controls when the user toggles the skin.
-  let currentGroup = null;
-  let cameraFramed = false;
+  // Per-viewer state object. `controls` is filled in by activateViewer
+  // when this viewer becomes the active one; `target` persists the
+  // OrbitControls focal point across activations.
+  const viewer = {
+    container,
+    scene,
+    camera,
+    controls: null,
+    target: new THREE.Vector3(0, 0, 0),
+    needsRender: true,
+    visible: true,
+    currentGroup: null,
+    cameraFramed: false,
+    skinUrls,
+  };
+  container._mcViewer = viewer;
 
   function countMeshes(obj) {
     let n = 0;
@@ -369,19 +473,17 @@ function startViewer(container) {
   function loadSkin(url) {
     container.classList.remove('mc-model-error');
     return buildModelGroup(url).then((group) => {
-      console.log('mc-model-viewer:', url, 'children =', group.children.length,
-                  'meshes =', countMeshes(group));
       if (countMeshes(group) === 0) {
         container.dataset.mcMessage = 'model parsed but produced no geometry';
         container.classList.add('mc-model-error');
+        container.classList.remove('mc-model-loading');
         return;
       }
-      unmount(currentGroup);
-      currentGroup = group;
+      container.classList.remove('mc-model-loading');
+      unmount(viewer.currentGroup);
+      viewer.currentGroup = group;
       scene.add(group);
-      // Frame the camera once on the first model so that toggling skins
-      // doesn't reset the user's orbit position.
-      if (!cameraFramed) {
+      if (!viewer.cameraFramed) {
         const box = new THREE.Box3().setFromObject(group);
         const size = box.getSize(new THREE.Vector3()).length();
         const d = size * 1.6;
@@ -389,22 +491,22 @@ function startViewer(container) {
         camera.near = Math.max(d * 0.01, 0.1);
         camera.far = d * 10;
         camera.updateProjectionMatrix();
-        controls.target.set(0, 0, 0);
-        controls.update();
-        cameraFramed = true;
+        viewer.target.set(0, 0, 0);
+        if (viewer.controls) viewer.controls.target.set(0, 0, 0);
+        viewer.cameraFramed = true;
       }
+      viewer.needsRender = true;
+      if (activeViewer === viewer) scheduleRender();
     }).catch((err) => {
       console.error('mc-model-viewer:', err);
       container.dataset.mcMessage = err.message || String(err);
       container.classList.add('mc-model-error');
+      container.classList.remove('mc-model-loading');
     });
   }
 
   loadSkin(baseUrl);
 
-  // Wire the skin-toggle buttons that sit just above the viewer in the same
-  // form panel. Buttons are matched by document position, not parent, since
-  // the toggle and viewer are siblings inside the visuals column.
   const panel = container.closest('.form-panel') || document;
   const buttons = panel.querySelectorAll('.mc-skin-btn');
   buttons.forEach((btn) => {
@@ -421,35 +523,104 @@ function startViewer(container) {
     });
   });
 
-  function resize() {
-    const w = container.clientWidth || 320;
-    const h = container.clientHeight || 320;
-    renderer.setSize(w, h, false);
-    camera.aspect = w / h;
-    camera.updateProjectionMatrix();
-  }
-  window.addEventListener('resize', resize, { passive: true });
+  // Pause rendering when this viewer scrolls out of view; resume on re-entry.
+  const visIo = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      viewer.visible = entry.isIntersecting;
+      if (viewer.visible && activeViewer === viewer) {
+        viewer.needsRender = true;
+        scheduleRender();
+      }
+    }
+  }, { threshold: 0 });
+  visIo.observe(container);
 
-  function render() {
-    controls.update();
-    renderer.render(scene, camera);
-    requestAnimationFrame(render);
-  }
-  render();
+  // Take ownership of the shared canvas immediately; subsequent viewers
+  // (other form tabs, etc.) only steal it when their tab is selected.
+  activateViewer(viewer);
+}
+
+// Window-level resize forwards to the active viewer (the shared renderer
+// is sized per-container, so only the active one cares).
+window.addEventListener('resize', () => {
+  if (!activeViewer || !sharedRenderer) return;
+  const w = activeViewer.container.clientWidth || 320;
+  const h = activeViewer.container.clientHeight || 320;
+  sharedRenderer.setSize(w, h, false);
+  activeViewer.camera.aspect = w / h;
+  activeViewer.camera.updateProjectionMatrix();
+  activeViewer.needsRender = true;
+  scheduleRender();
+}, { passive: true });
+
+// Form-tab clicks need to re-bind the shared canvas to whichever viewer's
+// tab just became active. The pokedex page swaps `.form-panel[hidden]`
+// attributes — we listen for clicks on the tab buttons in the same panel
+// and activate the matching viewer (if any).
+document.addEventListener('click', (e) => {
+  const tab = e.target.closest('.form-tab');
+  if (!tab) return;
+  const tabsParent = tab.closest('[role="tablist"]')?.parentElement || document;
+  // Defer to next tick so the form-tab click handler in pokedex.js has
+  // already toggled `[hidden]` and we can find the now-active panel.
+  setTimeout(() => {
+    const activePanel = tabsParent.querySelector('.form-panel.active, .form-panel:not([hidden])');
+    if (!activePanel) return;
+    const viewerEl = activePanel.querySelector('[data-mc-model]');
+    if (!viewerEl) return;
+    if (viewerEl._mcViewer) {
+      // Existing viewer: re-bind the shared canvas to it.
+      activateViewer(viewerEl._mcViewer);
+    } else if (viewerEl.dataset.mcDeferred !== '1') {
+      // Lazy-init on tab activation (desktop path).
+      startViewer(viewerEl);
+    }
+  }, 0);
+});
+
+// Build the "Tap to load 3D model" placeholder. Mobile users get this so
+// the WebGL pipeline never spins up unless they opt in.
+function mountDeferredPlaceholder(container) {
+  if (container.dataset.mcDeferred === '1') return;
+  container.dataset.mcDeferred = '1';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'mc-model-load-btn';
+  btn.textContent = 'Tap to load 3D model';
+  btn.setAttribute('aria-label', 'Load interactive 3D model');
+  container.appendChild(btn);
+  btn.addEventListener('click', () => {
+    btn.remove();
+    container.dataset.mcDeferred = '';
+    startViewer(container);
+  });
 }
 
 function init() {
   const targets = document.querySelectorAll('[data-mc-model]');
   if (!targets.length) return;
+  if (isMobile) {
+    targets.forEach((el) => mountDeferredPlaceholder(el));
+    return;
+  }
+  // Desktop: only auto-init the first viewer that scrolls into view. Other
+  // viewers (form tabs that aren't the default) wait for their tab click —
+  // the document-level tab listener above starts them lazily.
   const io = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       if (entry.isIntersecting) {
+        // Only one renderer; start the first visible viewer and let the
+        // tab-click listener handle the rest as the user navigates.
         startViewer(entry.target);
         io.unobserve(entry.target);
+        return;
       }
     }
   }, { rootMargin: '200px' });
-  targets.forEach((el) => io.observe(el));
+  // Observe only viewers in the active panel — the rest will get started
+  // on first tab-click. Picks the standard form's viewer on initial load.
+  const initial = document.querySelector('.form-panel.active [data-mc-model], [data-mc-model]');
+  if (initial) io.observe(initial);
 }
 
 if (document.readyState === 'loading') {

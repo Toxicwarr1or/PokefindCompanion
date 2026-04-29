@@ -22,7 +22,7 @@ forms:
       spa: 100
       spd: 35
       spe: 80
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Kyoto: Amethyst Town', 'Jataro: Caligo City', 'Haikou: Sleepy Hallow', 'Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'LC'

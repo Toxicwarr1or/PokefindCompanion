@@ -22,7 +22,7 @@ forms:
       spa: 105
       spd: 60
       spe: 105
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Arc City — Pokémon Lv 26+', 'Shiloh: Circuit City — Pokémon Lv 26+', 'Zeinova: Sparkmont City — Pokémon Lv 26+']
     competitive_sets:
       - name: 'Special Attacker'
         tier: 'RU'

@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 90
       spe: 25
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow — trainer Lv 10+; Pokémon Lv 14+', 'Shiloh: Duskburn — trainer Lv 10+; Pokémon Lv 14+', 'Zeinova: Spiritvale — trainer Lv 10+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'Utility'
         tier: 'LC'

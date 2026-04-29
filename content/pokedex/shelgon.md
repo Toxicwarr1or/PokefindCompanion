@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 50
       spe: 50
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Haikou: Targaryen Keep — trainer Lv 25+; Pokémon Lv 30+', 'Shiloh: Silverkeep — trainer Lv 25+; Pokémon Lv 30+', 'Zeinova: Everhallow — trainer Lv 25+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Cleric'
         tier: 'ZU'

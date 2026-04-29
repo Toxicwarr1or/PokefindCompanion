@@ -23,7 +23,7 @@ forms:
       spa: 80
       spd: 140
       spe: 70
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Jataro: Cruxirt Port — trainer Lv 35+', 'Haikou: Findview Port — trainer Lv 15+', 'Shiloh: Crystal View — trainer Lv 15+', 'Zeinova: Baremaw — trainer Lv 15+']
     competitive_sets:
       - name: 'SubToxic'
         tier: 'NU'

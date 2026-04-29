@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 40
       spe: 30
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Berry Juice'
         tier: 'LC'

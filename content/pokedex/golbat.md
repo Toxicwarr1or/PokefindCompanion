@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 75
       spe: 90
-    locations: ['Baremaw', 'Breezelton Village', 'Caves', 'Greenholm', 'Pure Harbor Heights']
+    locations: ['Kyoto: Aether Village, Smog Town — Pokémon Lv 22+', 'Jataro: Treetop Village, Misty Lake — Pokémon Lv 22+', 'Haikou: Ivy Village — Pokémon Lv 22+', 'Shiloh: Eastwind, Marshbarrow — Pokémon Lv 22+', 'Zeinova: Breezelton Village, Baremaw — Pokémon Lv 22+', 'Caves']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'RU'

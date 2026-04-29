@@ -22,7 +22,7 @@ forms:
       spa: 110
       spd: 95
       spe: 79
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Watterson City']
+    locations: ['Zeinova: Baremaw']
     competitive_sets:
       - name: 'Autotomize'
         tier: 'PU'

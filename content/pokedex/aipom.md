@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 55
       spe: 85
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Wallbreaker'
         tier: 'LC'

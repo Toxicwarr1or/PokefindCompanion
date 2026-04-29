@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 40
       spe: 30
-    locations: ['Sandgate', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Kinetic Island, Arc City — trainer Lv 15+', 'Shiloh: Diggers Peak, Circuit City — trainer Lv 15+', 'Zeinova: Sandgate, Sparkmont City — trainer Lv 15+']
     competitive_sets:
       - name: 'Sturdy Lead'
         tier: 'LC'

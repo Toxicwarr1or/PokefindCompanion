@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 65
       spe: 88
-    locations: ['Sandgate', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sandgate, Sparkmont City — trainer Lv 15+; Pokémon Lv 31+']
     competitive_sets:
       - name: 'Choice Band (Ground)'
         tier: 'MONOTYPE'

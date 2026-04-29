@@ -22,7 +22,7 @@ forms:
       spa: 70
       spd: 80
       spe: 92
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village — Pokémon Lv 35+']
     competitive_sets:
       - name: 'Sticky Web'
         tier: 'PU'

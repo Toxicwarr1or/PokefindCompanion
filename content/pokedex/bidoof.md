@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 40
       spe: 31
-    locations: ['Findale Harbor']
+    locations: ['Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Curse'
         tier: 'LC'

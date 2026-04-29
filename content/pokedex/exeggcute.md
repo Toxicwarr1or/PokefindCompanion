@@ -23,7 +23,7 @@ forms:
       spa: 60
       spd: 45
       spe: 40
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Pure Harbor', 'Pure Harbor Heights', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Battle City, Mystical Keep', 'Jataro: Draco Valley, Fog City', 'Haikou: Ivy Village, Maya Keep', 'Shiloh: Woodburn, Crystal View', 'Zeinova: Breezelton Village, Pure Harbor Heights']
     competitive_sets:
       - name: 'Harvest Abuser'
         tier: 'LC'

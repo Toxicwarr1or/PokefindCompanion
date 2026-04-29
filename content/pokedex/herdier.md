@@ -22,7 +22,7 @@ forms:
       spa: 35
       spd: 65
       spe: 60
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

@@ -22,7 +22,7 @@ forms:
       spa: 35
       spd: 70
       spe: 48
-    locations: ['Bridgerun', 'Sparkmont City', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Bridgerun, Spiritvale — trainer Lv 6+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'LC'

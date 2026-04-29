@@ -13,6 +13,7 @@
       <header class="gym-card-head">
         <span class="gym-badge">Gym {{ .index }}</span>
         <h3 class="gym-leader">{{ .leader }}</h3>
+        {{ with .town }}<span class="gym-town">{{ . }}</span>{{ end }}
       </header>
       {{ with .trainers }}
       <details class="gym-trainers">

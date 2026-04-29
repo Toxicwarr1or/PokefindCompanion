@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 80
       spe: 85
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Aether Village — Pokémon Lv 33+', 'Jataro: Cruxirt Port — Pokémon Lv 33+', 'Haikou: Findview Port — Pokémon Lv 33+', 'Shiloh: Crystal View — Pokémon Lv 33+', 'Zeinova: Baremaw — Pokémon Lv 33+']
     competitive_sets:
       - name: 'Rain Dance'
         tier: 'PU'

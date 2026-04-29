@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 45
       spe: 70
-    locations: ['Sandgate']
+    locations: ['Kyoto: Amber City — Pokémon Lv 18+', 'Jataro: Mt; Iron Temple — Pokémon Lv 18+', 'Haikou: Kinetic Island — Pokémon Lv 18+', 'Shiloh: Diggers Peak — Pokémon Lv 18+', 'Zeinova: Sandgate — Pokémon Lv 18+']
     competitive_sets:
       - name: 'SturdyJuice'
         tier: 'LC'

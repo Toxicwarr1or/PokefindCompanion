@@ -22,7 +22,7 @@ forms:
       spa: 91
       spd: 73
       spe: 68
-    locations: ['Bridgerun', 'Sparkmont City']
+    locations: ['Haikou: Lodestar Port — Pokémon Lv 40+', 'Shiloh: Stronghaven — Pokémon Lv 40+', 'Zeinova: Bridgerun — Pokémon Lv 40+']
     competitive_sets:
       - name: 'Choice Specs'
         tier: 'UU'

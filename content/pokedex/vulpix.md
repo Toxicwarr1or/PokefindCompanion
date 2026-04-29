@@ -23,7 +23,7 @@ forms:
       spa: 50
       spd: 65
       spe: 65
-    locations: ['Redgrove']
+    locations: ['Kyoto: Amber City', 'Jataro: Eerie City', 'Haikou: Flareridge', 'Shiloh: Hearth Valley', 'Zeinova: Redgrove']
     competitive_sets:
       - name: 'Sun Setter'
         tier: 'LC'

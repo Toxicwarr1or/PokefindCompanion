@@ -22,7 +22,7 @@ forms:
       spa: 81
       spd: 99
       spe: 32
-    locations: ['Sandgate', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City, Sandgate']
     competitive_sets:
       - name: 'Support'
         tier: 'PU'

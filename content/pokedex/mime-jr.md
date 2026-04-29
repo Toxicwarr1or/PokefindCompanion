@@ -22,7 +22,7 @@ forms:
       spa: 70
       spd: 90
       spe: 60
-    locations: ['Findale Harbor', 'Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Shiloh: Crystal View, Findville Cape', 'Zeinova: Pure Harbor Heights, Findale Harbor']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'LC'

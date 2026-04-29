@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 80
       spe: 70
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Pure Harbor Heights', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Aether Village, Battle City — Pokémon Lv 10+', 'Jataro: Treetop Village, Draco Valley — Pokémon Lv 10+', 'Haikou: Ivy Village — Pokémon Lv 10+', 'Shiloh: Eastwind, Woodburn — Pokémon Lv 10+', 'Zeinova: Breezelton Village — Pokémon Lv 10+']
     competitive_sets:
       - name: 'Quiver Dance'
         tier: 'PU'

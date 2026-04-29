@@ -21,7 +21,7 @@ forms:
       spa: 70
       spd: 120
       spe: 75
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Maya Keep — Pokémon Lv 36+', 'Shiloh: Crystal View — Pokémon Lv 36+', 'Zeinova: Pure Harbor Heights — Pokémon Lv 36+']
     competitive_sets:
       - name: 'Offensive Spinner'
         tier: 'NU'

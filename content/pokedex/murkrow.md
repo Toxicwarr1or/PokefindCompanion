@@ -23,7 +23,7 @@ forms:
       spa: 85
       spd: 42
       spe: 91
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Jataro: Caligo City', 'Haikou: Sleepy Hallow', 'Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'PU'

@@ -23,7 +23,7 @@ forms:
       spa: 92
       spd: 108
       spe: 35
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Shiloh: Duskburn', 'Zeinova: Spiritvale']
     competitive_sets:
       - name: 'Offensive Support'
         tier: 'UU'

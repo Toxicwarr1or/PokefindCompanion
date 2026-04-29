@@ -22,7 +22,7 @@ forms:
       spa: 30
       spd: 30
       spe: 85
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Haikou: Ivy Village, Findview Port', 'Shiloh: Eastwind, Findville Cape', 'Zeinova: Breezelton Village, Findale Harbor']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'LC'

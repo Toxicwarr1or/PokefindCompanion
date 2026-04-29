@@ -21,7 +21,7 @@ forms:
       spa: 55
       spd: 65
       spe: 30
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Spiritvale — trainer Lv 12+']
     competitive_sets:
       - name: 'Support'
         tier: 'LC'

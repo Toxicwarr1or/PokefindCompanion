@@ -23,7 +23,7 @@ forms:
       spa: 35
       spd: 35
       spe: 50
-    locations: ['Findale Harbor']
+    locations: ['Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

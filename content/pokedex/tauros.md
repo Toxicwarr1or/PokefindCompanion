@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 70
       spe: 110
-    locations: ['Findale Harbor']
+    locations: ['Kyoto: Aura Village — Pokémon Lv 16+', 'Jataro: Caligo City — Pokémon Lv 16+', 'Haikou: Findview Port — Pokémon Lv 16+', 'Shiloh: Findville Cape — Pokémon Lv 16+', 'Zeinova: Findale Harbor — Pokémon Lv 16+']
     competitive_sets:
       - name: 'All-Out Attacker'
         tier: 'NU'

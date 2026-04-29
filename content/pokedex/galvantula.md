@@ -22,7 +22,7 @@ forms:
       spa: 97
       spd: 60
       spe: 108
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Breezelton Village', 'Zeinova: Sparkmont City — Pokémon Lv 40+']
     competitive_sets:
       - name: 'Life Orb Attacker'
         tier: 'UU'

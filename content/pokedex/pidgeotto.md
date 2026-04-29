@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 50
       spe: 71
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Aether Village, Aura Village — Pokémon Lv 18+', 'Jataro: Treetop Village, Caligo City — Pokémon Lv 18+', 'Haikou: Ivy Village, Findview Port — Pokémon Lv 18+', 'Shiloh: Eastwind, Findville Cape — Pokémon Lv 18+', 'Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 18+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

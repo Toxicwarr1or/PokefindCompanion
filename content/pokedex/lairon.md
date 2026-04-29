@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 50
       spe: 40
-    locations: ['Sandgate', 'Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Haikou: Kinetic Island, Arc City — trainer Lv 25+; Pokémon Lv 32+', 'Shiloh: Diggers Peak, Circuit City — trainer Lv 25+; Pokémon Lv 32+', 'Zeinova: Sandgate, Sparkmont City — trainer Lv 25+; Pokémon Lv 32+']
     competitive_sets:
       - name: 'Offensive Stealth Rock'
         tier: 'ZU'

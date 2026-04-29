@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 40
       spe: 15
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Mystical Keep, Aether Village', 'Jataro: Fog City, Cruxirt Port', 'Haikou: Maya Keep, Findview Port', 'Shiloh: Crystal View', 'Zeinova: Pure Harbor Heights, Baremaw']
     competitive_sets:
       - name: 'Tank'
         tier: 'LC'

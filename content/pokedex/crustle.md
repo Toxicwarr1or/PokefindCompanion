@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 75
       spe: 45
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sandgate', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Sandgate — Pokémon Lv 35+']
     competitive_sets:
       - name: 'Crustap'
         tier: 'PU'

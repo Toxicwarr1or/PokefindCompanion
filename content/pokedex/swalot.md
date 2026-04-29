@@ -22,7 +22,7 @@ forms:
       spa: 73
       spd: 83
       spe: 55
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Haikou: Ivy Village — Pokémon Lv 26+', 'Shiloh: Marshbarrow — Pokémon Lv 26+', 'Zeinova: Baremaw — Pokémon Lv 26+']
     competitive_sets:
       - name: 'Tank'
         tier: 'PU'

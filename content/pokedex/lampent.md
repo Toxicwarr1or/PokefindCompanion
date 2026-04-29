@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 60
       spe: 55
-    locations: ['Redgrove', 'Spiritvale', 'Voltaris Island']
+    locations: ['Zeinova: Redgrove, Spiritvale — trainer Lv 18+']
     competitive_sets:
       - name: 'Substitute + Calm Mind'
         tier: 'ZU'

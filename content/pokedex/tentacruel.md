@@ -22,7 +22,7 @@ forms:
       spa: 80
       spd: 120
       spe: 100
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Aether Village — Pokémon Lv 30+', 'Jataro: Cruxirt Port — Pokémon Lv 30+', 'Haikou: Findview Port — Pokémon Lv 30+', 'Shiloh: Crystal View — Pokémon Lv 30+', 'Zeinova: Baremaw — Pokémon Lv 30+']
     competitive_sets:
       - name: 'Utility'
         tier: 'UU'

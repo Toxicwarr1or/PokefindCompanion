@@ -23,7 +23,7 @@ forms:
       spa: 65
       spd: 45
       spe: 75
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Watterson City']
+    locations: ['Jataro: Dracaena — trainer Lv 32+', 'Haikou: Sleet City — trainer Lv 10+', 'Shiloh: Frostfort — trainer Lv 10+', 'Zeinova: Baremaw — trainer Lv 10+']
     competitive_sets:
       - name: 'Spikes Lead'
         tier: 'PU'

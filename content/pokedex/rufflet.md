@@ -22,7 +22,7 @@ forms:
       spa: 37
       spd: 50
       spe: 60
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Breezelton Village, Findale Harbor']
     competitive_sets:
       - name: 'Bulk Up'
         tier: 'LC'

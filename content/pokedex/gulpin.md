@@ -23,7 +23,7 @@ forms:
       spa: 43
       spd: 53
       spe: 40
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Haikou: Ivy Village', 'Shiloh: Marshbarrow', 'Zeinova: Baremaw']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

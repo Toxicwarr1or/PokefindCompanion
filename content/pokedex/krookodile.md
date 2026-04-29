@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 70
       spe: 92
-    locations: ['Sandgate']
+    locations: ['Zeinova: Sandgate — trainer Lv 24+']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'UU'

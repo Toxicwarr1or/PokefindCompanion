@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 50
       spe: 75
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village — trainer Lv 4+']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'LC'

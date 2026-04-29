@@ -4,6 +4,7 @@ date: 2026-04-27
 gyms:
   - index: 1
     leader: 'Norman'
+    town: 'Springdale'
     requirement: 'Complete Main Quest 1'
     team:
       - species: 'Delcatty'
@@ -20,6 +21,7 @@ gyms:
         moves: ['Hammer Arm', 'Night Slash', 'Chip Away', 'Earthquake']
   - index: 2
     leader: 'Roxanne'
+    town: 'near Rockford Bay'
     requirement: 'Defeat Gym 1 (Norman)'
     team:
       - species: 'Graveler'
@@ -48,6 +50,7 @@ gyms:
         moves: ['X-Scissor', 'Brick Break', 'Earthquake', 'Stone Edge']
   - index: 3
     leader: 'Kristine'
+    town: 'Searing Peak Volcano'
     requirement: 'Defeat Gym 2 (Roxanne)'
     team:
       - species: 'Houndoom'
@@ -76,6 +79,7 @@ gyms:
         moves: ['Flare Blitz', 'Blaze Kick', 'Brave Bird', 'Stone Edge']
   - index: 4
     leader: 'Wattson'
+    town: 'Ironview'
     requirement: 'Defeat Gym 3 (Kristine)'
     team:
       - species: 'Magneton'
@@ -104,6 +108,7 @@ gyms:
         moves: ['Earthquake', 'Heavy Slam', 'Superpower', 'Dragon Claw']
   - index: 5
     leader: 'Winona'
+    town: 'Misty Falls'
     requirement: 'Defeat Gym 4 (Wattson)'
     team:
       - species: 'Swellow'
@@ -132,6 +137,7 @@ gyms:
         moves: ['Draco Meteor', 'Moonblast', 'Flamethrower', 'Ice Beam']
   - index: 6
     leader: 'Wallace'
+    town: 'near Sleet City'
     requirement: 'Defeat Gym 5 (Winona)'
     team:
       - species: 'Glalie'
@@ -160,6 +166,7 @@ gyms:
         moves: ['Surf', 'Dragon Pulse', 'Ice Beam', 'Recover']
   - index: 7
     leader: 'Brawly'
+    town: 'Lodestar Port'
     requirement: 'Defeat Gym 6 (Wallace)'
     team:
       - species: 'Ludicolo'

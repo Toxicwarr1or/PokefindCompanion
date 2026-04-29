@@ -23,7 +23,7 @@ forms:
       spa: 75
       spd: 60
       spe: 75
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Haikou: Sleepy Hallow — trainer Lv 10+; Pokémon Lv 14+', 'Shiloh: Duskburn — trainer Lv 10+; Pokémon Lv 14+', 'Zeinova: Spiritvale — trainer Lv 10+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'Swords Dance'
         tier: 'UU'

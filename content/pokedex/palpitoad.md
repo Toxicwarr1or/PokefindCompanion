@@ -22,7 +22,7 @@ forms:
       spa: 65
       spd: 55
       spe: 69
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sandgate', 'Sparkmont City', 'Spiritvale']
+    locations: ['Zeinova: Baremaw', 'Zeinova: Sandgate — Pokémon Lv 25+']
     competitive_sets:
       - name: 'Defensive Stealth Rock'
         tier: 'ZU'

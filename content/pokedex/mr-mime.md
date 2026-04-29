@@ -22,7 +22,7 @@ forms:
       spa: 100
       spd: 120
       spe: 90
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Mystical Keep — Pokémon Lv 16+', 'Jataro: Fog City — Pokémon Lv 16+', 'Haikou: Maya Keep — Pokémon Lv 16+', 'Shiloh: Crystal View — Pokémon Lv 16+', 'Zeinova: Pure Harbor Heights — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'PU'

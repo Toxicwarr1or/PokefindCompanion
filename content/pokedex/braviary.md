@@ -22,7 +22,7 @@ forms:
       spa: 57
       spd: 75
       spe: 80
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 54+']
     competitive_sets:
       - name: 'Revenge Killer'
         tier: 'STABMONS'

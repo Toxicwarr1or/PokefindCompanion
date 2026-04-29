@@ -22,7 +22,7 @@ forms:
       spa: 25
       spd: 45
       spe: 55
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Thunder Wave Support'
         tier: 'LC'

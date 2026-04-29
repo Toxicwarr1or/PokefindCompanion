@@ -22,7 +22,7 @@ forms:
       spa: 115
       spd: 90
       spe: 55
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Jataro: Altus City — Pokémon Lv 40+', 'Haikou: Arc City — Pokémon Lv 40+', 'Shiloh: Circuit City — Pokémon Lv 40+', 'Zeinova: Sparkmont City — Pokémon Lv 40+']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'UU'

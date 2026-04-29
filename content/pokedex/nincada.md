@@ -23,7 +23,7 @@ forms:
       spa: 30
       spd: 30
       spe: 40
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sandgate', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Haikou: Ivy Village, Kinetic Island', 'Shiloh: Woodburn, Diggers Peak', 'Zeinova: Breezelton Village, Sandgate']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

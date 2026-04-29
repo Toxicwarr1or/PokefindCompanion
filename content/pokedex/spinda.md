@@ -23,7 +23,7 @@ forms:
       spa: 60
       spd: 60
       spe: 60
-    locations: ['Findale Harbor']
+    locations: ['Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Drowning in Sorrow... and Berry Juice'
         tier: 'PU'

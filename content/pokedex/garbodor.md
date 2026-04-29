@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 82
       spe: 75
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Zeinova: Baremaw — Pokémon Lv 36+']
     competitive_sets:
       - name: 'Defensive Hazard Stack'
         tier: 'RU'

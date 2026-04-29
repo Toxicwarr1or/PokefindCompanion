@@ -22,7 +22,7 @@ forms:
       spa: 24
       spd: 86
       spe: 23
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Shiloh: Circuit City', 'Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Defensive'
         tier: 'PU'

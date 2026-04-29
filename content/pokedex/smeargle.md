@@ -23,7 +23,7 @@ forms:
       spa: 20
       spd: 45
       spe: 75
-    locations: ['Findale Harbor']
+    locations: ['Jataro: Caligo City', 'Haikou: Findview Port', 'Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Suicide Lead'
         tier: 'UU'

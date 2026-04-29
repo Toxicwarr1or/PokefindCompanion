@@ -22,7 +22,7 @@ forms:
       spa: 50
       spd: 42
       spe: 65
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Zeinova: Breezelton Village, Findale Harbor — Pokémon Lv 18+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

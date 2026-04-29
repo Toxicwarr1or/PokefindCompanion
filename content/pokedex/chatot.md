@@ -23,7 +23,7 @@ forms:
       spa: 92
       spd: 42
       spe: 91
-    locations: ['Breezelton Village', 'Findale Harbor', 'Pure Harbor Heights']
+    locations: ['Shiloh: Eastwind, Findville Cape', 'Zeinova: Breezelton Village, Findale Harbor']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'PU'

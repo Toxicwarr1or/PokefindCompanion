@@ -22,7 +22,7 @@ forms:
       spa: 40
       spd: 40
       spe: 75
-    locations: ['Findale Harbor']
+    locations: ['Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'LC'

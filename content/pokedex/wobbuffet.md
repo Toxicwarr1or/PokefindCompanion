@@ -23,7 +23,7 @@ forms:
       spa: 33
       spd: 58
       spe: 33
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Jataro: Fog City', 'Haikou: Maya Keep', 'Shiloh: Crystal View', 'Zeinova: Pure Harbor Heights']
     competitive_sets:
       - name: 'Bulky Death Fodder'
         tier: 'PU'

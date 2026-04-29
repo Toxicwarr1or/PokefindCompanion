@@ -22,7 +22,7 @@ forms:
       spa: 45
       spd: 60
       spe: 30
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

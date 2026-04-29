@@ -22,7 +22,7 @@ forms:
       spa: 90
       spd: 80
       spe: 30
-    locations: ['Redgrove']
+    locations: ['Jataro: Eerie City', 'Haikou: Flareridge', 'Shiloh: Hearth Valley', 'Zeinova: Redgrove']
     competitive_sets:
       - name: 'Support'
         tier: 'PU'

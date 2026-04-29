@@ -21,7 +21,7 @@ forms:
       spa: 65
       spd: 70
       spe: 58
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Zeinova: Everhallow — trainer Lv 25+; Pokémon Lv 30+']
     competitive_sets:
       - name: 'Choice Band'
         tier: 'PU'

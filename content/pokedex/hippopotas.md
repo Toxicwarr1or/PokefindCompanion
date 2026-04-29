@@ -23,7 +23,7 @@ forms:
       spa: 38
       spd: 42
       spe: 32
-    locations: ['Sandgate']
+    locations: ['Shiloh: Diggers Peak', 'Zeinova: Sandgate']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'PU'

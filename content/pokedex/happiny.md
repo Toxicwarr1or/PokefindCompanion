@@ -22,7 +22,7 @@ forms:
       spa: 15
       spd: 65
       spe: 30
-    locations: ['Findale Harbor']
+    locations: ['Shiloh: Findville Cape — trainer Lv 25+; Pokémon Lv 18+', 'Zeinova: Findale Harbor — trainer Lv 25+; Pokémon Lv 18+']
     competitive_sets:
       - name: 'Auto-built (no Smogon set)'
         tier: '—'

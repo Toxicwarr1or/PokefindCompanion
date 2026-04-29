@@ -22,7 +22,7 @@ forms:
       spa: 55
       spd: 65
       spe: 70
-    locations: ['Pure Harbor', 'Pure Harbor Heights', 'Sandgate']
+    locations: ['Haikou: Kinetic Island, Maya Keep — trainer Lv 12+; Pokémon Lv 14+', 'Shiloh: Diggers Peak, Crystal View — trainer Lv 12+; Pokémon Lv 14+', 'Zeinova: Sandgate, Pure Harbor Heights — trainer Lv 12+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'Wall'
         tier: 'PU'

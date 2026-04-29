@@ -22,7 +22,7 @@ forms:
       spa: 37
       spd: 50
       spe: 66
-    locations: ['Baremaw', 'Breezelton Village', 'Findale Harbor', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Findale Harbor']
     competitive_sets:
       - name: 'Utility'
         tier: 'LC'

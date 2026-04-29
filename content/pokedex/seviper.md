@@ -23,7 +23,7 @@ forms:
       spa: 100
       spd: 60
       spe: 65
-    locations: ['Baremaw', 'Greenholm']
+    locations: ['Haikou: Ivy Village — trainer Lv 10+; Pokémon Lv 14+', 'Shiloh: Marshbarrow — trainer Lv 10+; Pokémon Lv 14+', 'Zeinova: Baremaw — trainer Lv 10+; Pokémon Lv 14+']
     competitive_sets:
       - name: 'Mixed Attacker'
         tier: 'PU'

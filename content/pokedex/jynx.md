@@ -23,7 +23,7 @@ forms:
       spa: 115
       spd: 95
       spe: 95
-    locations: ['Baremaw', 'Battle Tower', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Icy Stone', 'Mossy Stone', 'Northrun', 'Pokemon League', 'Pure Harbor', 'Pure Harbor Heights', 'Redgrove', 'Sandgate', 'Spiritvale', 'Watterson City']
+    locations: ['Kyoto: Snowtip City, Mystical Keep — Pokémon Lv 16+', 'Jataro: Dracaena, Fog City — Pokémon Lv 16+', 'Haikou: Sleet City, Maya Keep — Pokémon Lv 16+', 'Shiloh: Frostfort, Crystal View — Pokémon Lv 16+', 'Zeinova: Baremaw, Pure Harbor Heights — Pokémon Lv 16+']
     competitive_sets:
       - name: 'Focus Sash'
         tier: 'NU'

@@ -22,7 +22,7 @@ forms:
       spa: 60
       spd: 70
       spe: 95
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village — trainer Lv 12+']
     competitive_sets:
       - name: 'Choice Scarf'
         tier: 'PU'

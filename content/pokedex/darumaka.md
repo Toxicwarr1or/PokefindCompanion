@@ -22,7 +22,7 @@ forms:
       spa: 15
       spd: 45
       spe: 50
-    locations: ['Redgrove']
+    locations: ['Zeinova: Redgrove']
     competitive_sets:
       - name: 'Choice'
         tier: 'LC'

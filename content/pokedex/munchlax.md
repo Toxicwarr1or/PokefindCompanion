@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 85
       spe: 5
-    locations: ['Findale Harbor']
+    locations: ['Shiloh: Findville Cape', 'Zeinova: Findale Harbor']
     competitive_sets:
       - name: 'Physically Offensive Tank'
         tier: 'LC'

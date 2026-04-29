@@ -22,7 +22,7 @@ forms:
       spa: 73
       spd: 115
       spe: 67
-    locations: ['Pure Harbor', 'Pure Harbor Heights']
+    locations: ['Kyoto: Mystical Keep — Pokémon Lv 26+', 'Jataro: Fog City — Pokémon Lv 26+', 'Haikou: Maya Keep — Pokémon Lv 26+', 'Shiloh: Crystal View — Pokémon Lv 26+', 'Zeinova: Pure Harbor Heights — Pokémon Lv 26+']
     competitive_sets:
       - name: 'Wish Passer'
         tier: 'PU'

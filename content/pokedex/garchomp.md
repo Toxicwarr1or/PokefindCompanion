@@ -22,7 +22,7 @@ forms:
       spa: 80
       spd: 85
       spe: 102
-    locations: ['Everhallow', 'Pokemon League', 'Sparkmont City']
+    locations: ['Shiloh: Silverkeep — trainer Lv 45+; Pokémon Lv 50+', 'Zeinova: Everhallow — trainer Lv 45+; Pokémon Lv 50+']
     competitive_sets:
       - name: 'Tank Chomp'
         tier: 'OU'

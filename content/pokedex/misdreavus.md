@@ -22,7 +22,7 @@ forms:
       spa: 85
       spd: 85
       spe: 85
-    locations: ['Spiritvale', 'Voltaris Island']
+    locations: ['Jataro: Caligo City — trainer Lv 33+', 'Haikou: Sleepy Hallow — trainer Lv 10+', 'Shiloh: Duskburn — trainer Lv 10+', 'Zeinova: Spiritvale — trainer Lv 10+']
     competitive_sets:
       - name: 'Defensive'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 110
       spd: 75
       spe: 90
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Quiver Dance'
         tier: 'NU'

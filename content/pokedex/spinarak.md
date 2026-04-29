@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 40
       spe: 30
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Jataro: Draco Valley', 'Haikou: Ivy Village', 'Shiloh: Woodburn', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Sticky Web'
         tier: 'LC'

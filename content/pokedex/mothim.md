@@ -22,7 +22,7 @@ forms:
       spa: 94
       spd: 50
       spe: 66
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Shiloh: Woodburn', 'Zeinova: Breezelton Village']
     competitive_sets:
       - name: 'Choice Specs'
         tier: 'PU'

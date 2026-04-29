@@ -23,7 +23,7 @@ forms:
       spa: 55
       spd: 80
       spe: 105
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Pure Harbor Heights', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Kyoto: Aether Village, Battle City — Pokémon Lv 18+', 'Jataro: Treetop Village, Draco Valley — Pokémon Lv 18+', 'Haikou: Ivy Village — Pokémon Lv 18+', 'Shiloh: Eastwind, Woodburn — Pokémon Lv 18+', 'Zeinova: Breezelton Village — Pokémon Lv 18+']
     competitive_sets:
       - name: 'Choice Band Pivot'
         tier: 'RU'

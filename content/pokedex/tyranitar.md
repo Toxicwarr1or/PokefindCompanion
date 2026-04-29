@@ -22,7 +22,7 @@ forms:
       spa: 95
       spd: 100
       spe: 61
-    locations: ['Sandgate']
+    locations: ['Jataro: Mt; Iron Temple', 'Haikou: Kinetic Island', 'Shiloh: Diggers Peak — trainer Lv 45+', 'Zeinova: Sandgate — trainer Lv 45+']
     competitive_sets:
       - name: 'Utility (Dark)'
         tier: 'MONOTYPE'

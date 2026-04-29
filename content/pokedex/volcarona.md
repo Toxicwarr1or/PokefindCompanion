@@ -22,7 +22,7 @@ forms:
       spa: 135
       spd: 105
       spe: 100
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Redgrove', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Redgrove, Breezelton Village — trainer Lv 45+; Pokémon Lv 50+']
     competitive_sets:
       - name: 'Life Orb'
         tier: 'OU'

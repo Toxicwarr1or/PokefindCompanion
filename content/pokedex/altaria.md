@@ -22,7 +22,7 @@ forms:
       spa: 70
       spd: 105
       spe: 80
-    locations: ['Breezelton Village', 'Everhallow', 'Pokemon League', 'Pure Harbor Heights', 'Sparkmont City']
+    locations: ['Haikou: Targaryen Keep, Ivy Village — Pokémon Lv 35+', 'Shiloh: Silverkeep, Eastwind — Pokémon Lv 35+', 'Zeinova: Everhallow, Breezelton Village — Pokémon Lv 35+']
     competitive_sets:
       - name: 'Physically Defensive'
         tier: 'PU'

@@ -22,7 +22,7 @@ forms:
       spa: 100
       spd: 100
       spe: 80
-    locations: ['Baremaw', 'Baywharf Cove', 'Breezelton Village', 'Bridgerun', 'Everhallow', 'Findale Harbor', 'Greenholm', 'Icy Plains', 'Mossy Stone', 'Pokemon League', 'Pure Harbor', 'Redgrove', 'Sparkmont City', 'Spiritvale']
+    locations: ['Kyoto: Wyvern Village, Aether Village — trainer Lv 25+; Pokémon Lv 55+', 'Jataro: Dracaena, Cruxirt Port — trainer Lv 25+; Pokémon Lv 55+', 'Haikou: Targaryen Keep, Findview Port — trainer Lv 45+; Pokémon Lv 55+', 'Shiloh: Silverkeep, Crystal View — trainer Lv 45+; Pokémon Lv 55+', 'Zeinova: Everhallow, Baremaw — trainer Lv 45+; Pokémon Lv 55+']
     competitive_sets:
       - name: 'Dragon Dance + Three Attacks'
         tier: 'OU'

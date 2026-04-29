@@ -22,7 +22,7 @@ forms:
       spa: 35
       spd: 35
       spe: 55
-    locations: ['Baremaw', 'Breezelton Village', 'Greenholm', 'Honey''s Shop', 'Mossy Stone', 'Sandgate', 'Sparkmont City', 'Voltaris Island']
+    locations: ['Zeinova: Breezelton Village, Sandgate']
     competitive_sets:
       - name: 'Entry Hazard Lead'
         tier: 'LC'

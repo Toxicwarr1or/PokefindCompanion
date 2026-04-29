@@ -23,7 +23,7 @@ forms:
       spa: 40
       spd: 34
       spe: 45
-    locations: ['Sparkmont City', 'Voltaris Island', 'Watterson City']
+    locations: ['Shiloh: Circuit City', 'Zeinova: Sparkmont City']
     competitive_sets:
       - name: 'Intimidate Pivot'
         tier: 'LC'
