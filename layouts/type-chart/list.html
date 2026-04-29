@@ -1,0 +1,59 @@
+{{ define "main" }}
+<article class="page type-chart-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+
+  <nav class="tc-tabs" role="tablist" aria-label="Type-chart mode">
+    <button class="tc-tab active" type="button" role="tab" data-tc-mode="calc"    aria-selected="true">Type vs. Type</button>
+    <button class="tc-tab"        type="button" role="tab" data-tc-mode="dex"     aria-selected="false">Defense Profile</button>
+    <button class="tc-tab"        type="button" role="tab" data-tc-mode="grid"    aria-selected="false">Full Chart</button>
+  </nav>
+
+  {{/* Mode 1 — single matchup with one attacker + 1-or-2 defender types. */}}
+  <section class="tc-panel active" data-tc-mode="calc">
+    <div class="tc-control">
+      <label>Attacker type</label>
+      <div class="tc-type-row" id="tc-att" role="radiogroup" aria-label="Attacker type"></div>
+    </div>
+    <div class="tc-control">
+      <label>Defender — primary type</label>
+      <div class="tc-type-row" id="tc-def1" role="radiogroup" aria-label="Defender primary type"></div>
+    </div>
+    <div class="tc-control">
+      <label>Defender — secondary type (optional)</label>
+      <div class="tc-type-row" id="tc-def2" role="radiogroup" aria-label="Defender secondary type">
+        <button type="button" class="tc-type-btn tc-type-none active" data-type="">None</button>
+      </div>
+    </div>
+    <div class="tc-result" id="tc-calc-result" aria-live="polite">—</div>
+  </section>
+
+  {{/* Mode 2 — pick a Pokémon, render its 18-type defense profile. */}}
+  <section class="tc-panel" data-tc-mode="dex" hidden>
+    <div class="tc-mon-picker">
+      <input type="search" id="tc-mon-search" placeholder="Search Pokémon by name…" autocomplete="off" aria-label="Search Pokémon">
+      <select id="tc-mon-select" aria-label="Pick a Pokémon"></select>
+    </div>
+    <div class="tc-mon-types" id="tc-mon-types" aria-live="polite"></div>
+    <div class="tc-mon-grid" id="tc-mon-grid"></div>
+  </section>
+
+  {{/* Mode 3 — classic 18×18 reference grid for single-type defenders. */}}
+  <section class="tc-panel" data-tc-mode="grid" hidden>
+    <p class="tc-grid-help">Rows = the attacking type, columns = the defender's <em>single</em> type. Multiply across both halves of a dual-type defender.</p>
+    <div class="table-scroll">
+      <table class="tc-grid" id="tc-grid"></table>
+    </div>
+    <div class="tc-grid-legend" aria-hidden="true">
+      <span class="tc-eff-chip x2">×2 super effective</span>
+      <span class="tc-eff-chip x1">×1 neutral</span>
+      <span class="tc-eff-chip x05">×½ resisted</span>
+      <span class="tc-eff-chip x0">×0 immune</span>
+    </div>
+  </section>
+</article>
+<script defer src="{{ "js/type-chart.js" | relURL }}"></script>
+{{ end }}

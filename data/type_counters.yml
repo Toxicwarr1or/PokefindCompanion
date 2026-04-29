@@ -1,0 +1,21 @@
+# Per-type list of attacking types that hit it super-effectively (×2).
+# Used by the gym-team Counters tab to recommend counter typings.
+# Source: standard Gen 6+ type chart (matches the damage-calc CHART table).
+Normal:   ['Fighting']
+Fire:     ['Water', 'Ground', 'Rock']
+Water:    ['Electric', 'Grass']
+Electric: ['Ground']
+Grass:    ['Fire', 'Ice', 'Poison', 'Flying', 'Bug']
+Ice:      ['Fire', 'Fighting', 'Rock', 'Steel']
+Fighting: ['Flying', 'Psychic', 'Fairy']
+Poison:   ['Ground', 'Psychic']
+Ground:   ['Water', 'Grass', 'Ice']
+Flying:   ['Electric', 'Ice', 'Rock']
+Psychic:  ['Bug', 'Ghost', 'Dark']
+Bug:      ['Fire', 'Flying', 'Rock']
+Rock:     ['Water', 'Grass', 'Fighting', 'Ground', 'Steel']
+Ghost:    ['Ghost', 'Dark']
+Dragon:   ['Ice', 'Dragon', 'Fairy']
+Dark:     ['Fighting', 'Bug', 'Fairy']
+Steel:    ['Fire', 'Fighting', 'Ground']
+Fairy:    ['Poison', 'Steel']

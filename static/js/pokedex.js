@@ -165,12 +165,42 @@
             initFormTabs();
             initDexList();
             initSectionOverlay();
+            initGymTabs();
+            initQuestSubtabs();
         });
     } else {
         initFormTabs();
         initDexList();
         initSectionOverlay();
+        initGymTabs();
         initQuestSubtabs();
+    }
+
+    // ---------- Gym card tabs (Team / Counters) ----------
+    // Each `.gym-card` on the gym-teams page hosts its own tab strip — we
+    // scope queries to the card so cards don't fight over each other's
+    // active state. Mirrors the form-tab pattern but per-card-scoped.
+    function initGymTabs() {
+        document.querySelectorAll('.gym-card').forEach(function (card) {
+            const tabs = card.querySelectorAll('.gym-tab');
+            const panels = card.querySelectorAll('.gym-panel');
+            if (!tabs.length) return;
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    const target = tab.getAttribute('data-gym-tab');
+                    tabs.forEach(function (t) {
+                        const active = t.getAttribute('data-gym-tab') === target;
+                        t.classList.toggle('active', active);
+                        t.setAttribute('aria-selected', active ? 'true' : 'false');
+                    });
+                    panels.forEach(function (p) {
+                        const active = p.getAttribute('data-gym-tab') === target;
+                        p.classList.toggle('active', active);
+                        if (active) p.removeAttribute('hidden'); else p.setAttribute('hidden', '');
+                    });
+                });
+            });
+        });
     }
 
     // ---------- Main Quests vs Side Quests sub-tabs (Quests page) ----------

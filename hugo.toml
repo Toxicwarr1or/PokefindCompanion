@@ -27,14 +27,9 @@ disableKinds = ["taxonomy", "term"]
   weight = 10
 
 [[menu.main]]
-  name = "Quests"
-  url = "/quests/"
+  name = "Guides"
+  url = "/guides/"
   weight = 20
-
-[[menu.main]]
-  name = "Gym Teams"
-  url = "/gym-teams/"
-  weight = 30
 
 [[menu.main]]
   name = "Mechanics"
@@ -42,6 +37,9 @@ disableKinds = ["taxonomy", "term"]
   weight = 40
 # "Skins" used to live here as a top-level entry; it's now reachable via
 # the "Skindex" link inside the Pokédex group sidebar (see partials/sidebar.html).
+# "Quests" and "Gym Teams" were also top-level entries; they now sit under
+# the Guides group sidebar (see partials/sidebar.html). Their URL paths
+# (/quests/ and /gym-teams/) are unchanged so existing links still resolve.
 
 # Markdown rendering
 [markup]

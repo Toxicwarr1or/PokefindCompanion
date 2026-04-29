@@ -137,6 +137,7 @@ gyms:
         moves: ['Draco Meteor', 'Moonblast', 'Flamethrower', 'Ice Beam']
   - index: 6
     leader: 'Wallace'
+    theme: 'Ice'
     town: 'near Sleet City'
     requirement: 'Defeat Gym 5 (Winona)'
     team:

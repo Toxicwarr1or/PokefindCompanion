@@ -502,6 +502,7 @@ pre code { background: transparent; padding: 0; }
 .type-dark     { background: #705848 !important; color: #fff !important; }
 .type-steel    { background: #b8b8d0 !important; color: #1a1a1a !important; }
 .type-fairy    { background: #ee99ac !important; color: #1a1a1a !important; }
+.type-shadow   { background: #7b78b8 !important; color: #fff !important; }
 
 .dex-profile .anniversary { color: var(--accent-rare); font-weight: 700; }
 
@@ -1180,6 +1181,102 @@ pre code { background: transparent; padding: 0; }
 }
 .gym-team tr:last-child td { border-bottom: none; }
 .gym-moves { color: var(--text-dim); font-size: 0.85rem; line-height: 1.4; }
+
+/* Gym card tabs (Team / Counters). Scoped per `.gym-card` so each card's
+   tab state is independent — see initGymTabs in pokedex.js. */
+.gym-tabs {
+    display: flex;
+    gap: 0.35rem;
+    margin: 0 0 0.75rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+}
+.gym-tab {
+    background: var(--surface-elev);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.gym-tab:hover { color: var(--text); border-color: var(--brand); }
+.gym-tab.active {
+    background: var(--brand);
+    color: #0a0f12;
+    border-color: var(--brand);
+}
+.gym-panel { animation: fade-in 140ms ease; }
+.gym-panel[hidden] { display: none; }
+
+/* Counters panel content. */
+.counters-summary,
+.counters-recommend {
+    margin: 0 0 0.6rem;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+.counters-summary .type-pill-sm { margin-right: 0.25rem; }
+.counters-types {
+    list-style: none;
+    margin: 0 0 0.8rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+.counters-types li {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.45rem 0.6rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+.counters-types .type-pill-sm { margin-right: 0.4rem; }
+.counters-hits {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-style: italic;
+}
+.counters-region {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+.counters-region-none { color: var(--text-muted); font-style: italic; }
+.counters-lv {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+}
+.counters-notes {
+    margin: 0.8rem 0 0;
+    padding: 0.5rem 0.75rem;
+    border-left: 3px solid var(--brand);
+    background: var(--bg);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+.counters-notes h4 {
+    margin: 0 0 0.3rem;
+    color: var(--brand);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.counters-notes p { margin: 0; line-height: 1.55; }
+.counters-empty { color: var(--text-muted); font-size: 0.88rem; font-style: italic; }
+.counters-disclaimer {
+    margin: 0.8rem 0 0;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-style: italic;
+    line-height: 1.5;
+}
 
 .gym-trainers {
     margin: 0 0 0.8rem;
@@ -2489,6 +2586,175 @@ pre code { background: transparent; padding: 0; }
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     margin-right: 0.35rem;
+}
+
+/* ===== Type chart page — interactive matchup lookup ===== */
+.type-chart-page .tc-tabs {
+    display: flex;
+    gap: 0.4rem;
+    margin: 1rem 0 1.25rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+.type-chart-page .tc-tab {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 0.4rem 0.95rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.type-chart-page .tc-tab:hover { color: var(--text); border-color: var(--brand); }
+.type-chart-page .tc-tab.active {
+    background: var(--brand);
+    color: #0a0f12;
+    border-color: var(--brand);
+}
+.type-chart-page .tc-panel { animation: fade-in 140ms ease; }
+.type-chart-page .tc-panel[hidden] { display: none; }
+
+.tc-control { margin: 0 0 1rem; }
+.tc-control label {
+    display: block;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+.tc-type-row {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+/* The type-* classes already supply !important background/colour, so we
+   just style layout + active state here. Inactive buttons fade to ~40%
+   so the picked one stands out. */
+.tc-type-btn {
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 120ms ease, border-color 120ms ease, transform 80ms ease;
+}
+.tc-type-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.tc-type-btn.active { opacity: 1; border-color: var(--text); }
+.tc-type-none {
+    background: var(--surface-elev) !important;
+    color: var(--text-dim) !important;
+}
+
+.tc-result {
+    margin: 1rem 0 1.5rem;
+    padding: 1.1rem 1.25rem;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 800;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    letter-spacing: 0.02em;
+}
+
+/* Effectiveness colour palette — shared by the result chip, the per-cell
+   defense profile grid, and the full chart. */
+.tc-eff.x0,    .tc-eff-chip.x0    { background: #1c1c1c; color: #888; }
+.tc-eff.x025,  .tc-eff-chip.x025  { background: #4a1a1a; color: #ff9c9c; }
+.tc-eff.x05,   .tc-eff-chip.x05   { background: #5a3030; color: #ffc080; }
+.tc-eff.x1,    .tc-eff-chip.x1    { background: var(--surface-elev); color: var(--text); }
+.tc-eff.x2,    .tc-eff-chip.x2    { background: #2c5a2c; color: #c0ff9c; }
+.tc-eff.x4,    .tc-eff-chip.x4    { background: #1a4a1a; color: #5dff5d; }
+
+/* Defense profile (mode 2). */
+.tc-mon-picker {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0.5rem 0 1rem;
+}
+.tc-mon-picker input,
+.tc-mon-picker select {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+.tc-mon-picker input { flex: 1 1 220px; min-width: 180px; }
+.tc-mon-picker select { flex: 2 1 240px; min-width: 200px; }
+.tc-mon-types {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+    color: var(--text-dim);
+}
+.tc-mon-types strong { color: var(--text); margin-right: 0.5rem; font-size: 1.1rem; }
+.tc-mon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.4rem;
+    margin: 0.5rem 0 1.5rem;
+}
+.tc-mon-cell {
+    padding: 0.5rem 0.4rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    border: 1px solid var(--border);
+}
+.tc-mon-factor {
+    font-weight: 800;
+    font-size: 1.05rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Full chart (mode 3). The wrapper handles horizontal scroll on mobile
+   via the existing .table-scroll class. */
+.tc-grid-help {
+    margin: 0 0 0.75rem;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+}
+.tc-grid {
+    border-collapse: collapse;
+    margin: 0.25rem 0 0.75rem;
+    font-variant-numeric: tabular-nums;
+}
+.tc-grid th, .tc-grid td {
+    padding: 0.3rem 0.45rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    font-size: 0.78rem;
+    min-width: 42px;
+    height: 36px;
+}
+.tc-grid-corner { background: var(--surface); }
+.tc-grid-head, .tc-grid-row-head { background: var(--surface); padding: 0.35rem 0.4rem; }
+.tc-grid-row-head { text-align: left; padding-right: 0.6rem; }
+.tc-grid td.tc-eff { font-weight: 700; }
+.tc-grid-legend {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin: 0.25rem 0 0;
+    font-size: 0.78rem;
+}
+.tc-eff-chip {
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 700;
 }
 
 /* ===== Mobile responsive — pokedex list, single page, tables =====

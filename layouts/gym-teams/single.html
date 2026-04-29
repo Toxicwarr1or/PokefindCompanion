@@ -5,66 +5,245 @@
     <p class="meta"><a href="{{ "/gym-teams/" | relURL }}">← All generations</a></p>
   </header>
 
+  {{/* Map this gen page's title to its region name. The gym pages are
+        named "Gen 3" / "Gen 4" / "Gen 5"; the Counters tab uses the
+        region to filter wild encounters. Gens 1–2 have no gyms in the
+        corpus, so they're not mapped. */}}
+  {{ $title := lower .Title }}
+  {{ $region := "" }}
+  {{ $genKey := "" }}
+  {{ if eq $title "gen 3" }}{{ $region = "Haikou"  }}{{ $genKey = "gen3" }}{{ end }}
+  {{ if eq $title "gen 4" }}{{ $region = "Shiloh"  }}{{ $genKey = "gen4" }}{{ end }}
+  {{ if eq $title "gen 5" }}{{ $region = "Zeinova" }}{{ $genKey = "gen5" }}{{ end }}
+  {{ $genGates := dict }}
+  {{ if $genKey }}{{ $genGates = index .Site.Data.spawn_gates $genKey | default (dict) }}{{ end }}
+
+  {{/* Pre-compute a map of `Type → [species]` for wild encounters in this
+        gen's region. Done once per page (not per gym card) to keep the
+        build cost reasonable. We only consider each species' standard
+        form (forms[0]) since that's where the canonical types live. */}}
+  {{ $regionByType := dict }}
+  {{ if $region }}
+    {{ $prefix := printf "%s:" $region }}
+    {{ range where .Site.RegularPages "Section" "pokedex" }}
+      {{ $species := .Title }}
+      {{ $forms := .Params.forms | default (slice) }}
+      {{ if gt (len $forms) 0 }}
+        {{ $f := index $forms 0 }}
+        {{ $matched := false }}
+        {{ with $f.locations }}
+          {{ range . }}
+            {{ if hasPrefix . $prefix }}{{ $matched = true }}{{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if $matched }}
+          {{ range $f.types }}
+            {{ $t := . }}
+            {{ $list := index $regionByType $t | default (slice) }}
+            {{ $list = $list | append $species }}
+            {{ $regionByType = merge $regionByType (dict $t $list) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
   {{ with .Params.gyms }}
   <h2>Gym Leaders</h2>
   <div class="gym-grid">
-    {{ range . }}
+    {{ range $i, $gym := . }}
+
+    {{/* Count occurrences of each type across the leader's team (a
+          dual-type Pokémon contributes once to each of its types). The
+          "gym theme" is the type with the highest count — i.e. the type
+          this gym specializes in. Ties are kept (e.g. a gym that runs
+          equal Rock and Ground gets both as theme types). */}}
+    {{ $typeCounts := dict }}
+    {{ range $gym.team }}
+      {{ $slug := lower (replaceRE "[^a-zA-Z0-9]+" "-" .species) }}
+      {{ with $.Site.GetPage (printf "/pokedex/%s" $slug) }}
+        {{ $forms := .Params.forms | default (slice) }}
+        {{ if gt (len $forms) 0 }}
+          {{ range (index $forms 0).types }}
+            {{ $existing := index $typeCounts . | default 0 }}
+            {{ $typeCounts = merge $typeCounts (dict . (add $existing 1)) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $maxCount := 0 }}
+    {{ range $t, $c := $typeCounts }}
+      {{ if gt $c $maxCount }}{{ $maxCount = $c }}{{ end }}
+    {{ end }}
+    {{ $themeTypes := slice }}
+    {{ range $t, $c := $typeCounts }}
+      {{ if eq $c $maxCount }}{{ $themeTypes = $themeTypes | append $t }}{{ end }}
+    {{ end }}
+    {{ $themeTypes = sort $themeTypes }}
+
+    {{/* Counter types: SE attackers against the theme type(s). When
+          two themes tie, prefer types that hit both (hits=2). */}}
+    {{ $counterHits := dict }}
+    {{ range $themeTypes }}
+      {{ with index $.Site.Data.type_counters . }}
+        {{ range . }}
+          {{ $existing := index $counterHits . | default 0 }}
+          {{ $counterHits = merge $counterHits (dict . (add $existing 1)) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $counterRanked := slice }}
+    {{ range $t, $h := $counterHits }}
+      {{ $counterRanked = $counterRanked | append (dict "type" $t "hits" $h) }}
+    {{ end }}
+    {{ $counterRanked = sort $counterRanked "type" "asc" }}
+    {{ $counterRanked = sort $counterRanked "hits" "desc" }}
+
     <div class="gym-card">
       <header class="gym-card-head">
-        <span class="gym-badge">Gym {{ .index }}</span>
-        <h3 class="gym-leader">{{ .leader }}</h3>
-        {{ with .town }}<span class="gym-town">{{ . }}</span>{{ end }}
+        <span class="gym-badge">Gym {{ $gym.index }}</span>
+        <h3 class="gym-leader">{{ $gym.leader }}</h3>
+        {{ with $gym.town }}<span class="gym-town">{{ . }}</span>{{ end }}
       </header>
-      {{ with .trainers }}
-      <details class="gym-trainers">
-        <summary>{{ len . }} gym trainer{{ if ne (len .) 1 }}s{{ end }}</summary>
-        {{ range . }}
-        <div class="trainer-block">
-          <h4 class="trainer-name">{{ .name }}</h4>
-          {{ with .team }}
-          <table class="gym-team">
-            <thead><tr><th>Pokémon</th><th>Lv</th><th>Moves</th></tr></thead>
-            <tbody>
-              {{ range . }}
-              <tr>
-                <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
-                <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
-                <td class="gym-moves">
-                  {{ with .moves }}
-                    {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
-                  {{ else }}—{{ end }}
-                </td>
-              </tr>
-              {{ end }}
-            </tbody>
-          </table>
+
+      {{/* Tab strip: Team (default) and Counters. Each card scopes its
+            own tabs via .gym-card so the JS handler can match panels
+            within the same card. */}}
+      <nav class="gym-tabs" role="tablist" aria-label="Gym view">
+        <button class="gym-tab active" type="button" role="tab" data-gym-tab="team" aria-selected="true">Team</button>
+        <button class="gym-tab"        type="button" role="tab" data-gym-tab="counters" aria-selected="false">Counters</button>
+      </nav>
+
+      <section class="gym-panel active" data-gym-tab="team">
+        {{ with $gym.trainers }}
+        <details class="gym-trainers">
+          <summary>{{ len . }} gym trainer{{ if ne (len .) 1 }}s{{ end }}</summary>
+          {{ range . }}
+          <div class="trainer-block">
+            <h4 class="trainer-name">{{ .name }}</h4>
+            {{ with .team }}
+            <div class="table-scroll"><table class="gym-team">
+              <thead><tr><th>Pokémon</th><th>Lv</th><th>Moves</th></tr></thead>
+              <tbody>
+                {{ range . }}
+                <tr>
+                  <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
+                  <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
+                  <td class="gym-moves">
+                    {{ with .moves }}
+                      {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
+                    {{ else }}—{{ end }}
+                  </td>
+                </tr>
+                {{ end }}
+              </tbody>
+            </table></div>
+            {{ end }}
+          </div>
           {{ end }}
+        </details>
+        {{ end }}
+
+        {{ with $gym.requirement }}
+        <p class="gym-requirement"><strong>Requirement:</strong> {{ . }}</p>
+        {{ end }}
+
+        <h4 class="leader-label">Leader's team</h4>
+        {{ with $gym.team }}
+        <div class="table-scroll"><table class="gym-team">
+          <thead><tr><th>Pokémon</th><th>Lv</th><th>Nature</th><th>Moves</th></tr></thead>
+          <tbody>
+            {{ range . }}
+            <tr>
+              <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
+              <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
+              <td>{{ with .nature }}{{ . }}{{ else }}—{{ end }}</td>
+              <td class="gym-moves">
+                {{ with .moves }}
+                  {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
+                {{ else }}—{{ end }}
+              </td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table></div>
+        {{ end }}
+      </section>
+
+      {{ $playerCap := add 15 (mul 10 $gym.index) }}
+
+      {{ $displayTheme := $themeTypes }}
+      {{ $themeOverride := false }}
+      {{ with $gym.theme }}
+        {{ $themeOverride = true }}
+        {{ if reflect.IsSlice . }}{{ $displayTheme = . }}{{ else }}{{ $displayTheme = slice . }}{{ end }}
+      {{ end }}
+
+      <section class="gym-panel" data-gym-tab="counters" hidden>
+        {{ if $displayTheme }}
+        <p class="counters-summary">
+          <strong>Gym theme:</strong>
+          {{ range $j, $t := $displayTheme }}{{ if $j }} {{ end }}<span class="type-{{ lower $t }} type-pill-sm">{{ $t }}</span>{{ end }}
+          {{ if and (not $themeOverride) (gt (len $themeTypes) 1) }}<span class="counters-hits">(both types appear equally on the leader's team)</span>{{ end }}
+        </p>
+        {{ $earned := sub $gym.index 1 }}
+        <p class="counters-summary">
+          <strong>Party level cap going in:</strong> Lv {{ $playerCap }}
+          ({{ if eq $earned 0 }}no badges yet{{ else if eq $earned 1 }}1 badge earned{{ else }}{{ $earned }} badges earned{{ end }})
+        </p>
+        {{ end }}
+
+        {{ if $counterRanked }}
+        <p class="counters-recommend"><strong>Bring attackers of these types:</strong></p>
+        <ul class="counters-types">
+          {{ range $counterRanked }}
+          <li>
+            <span class="type-{{ lower .type }} type-pill-sm">{{ .type }}</span>
+            {{ if and (gt (len $themeTypes) 1) (eq .hits (len $themeTypes)) }}<span class="counters-hits">hits both</span>{{ end }}
+            {{ if $region }}
+              {{ $regionList := index $regionByType .type | default (slice) }}
+              {{ $accessible := slice }}
+              {{ $locked := slice }}
+              {{ range $regionList }}
+                {{ $species := . }}
+                {{ $gate := index $genGates $species }}
+                {{ $tl := 0 }}
+                {{ if $gate }}{{ $tl = int $gate.trainer_level }}{{ end }}
+                {{ if le $tl $playerCap }}
+                  {{ $accessible = $accessible | append $species }}
+                {{ else }}
+                  {{ $locked = $locked | append (dict "species" $species "tl" $tl) }}
+                {{ end }}
+              {{ end }}
+              {{ if $accessible }}
+              <span class="counters-region">— available now in {{ $region }}:
+                {{ $picks := first 6 (sort $accessible) }}
+                {{ range $j, $s := $picks }}{{ if $j }}, {{ end }}{{ $g := index $genGates $s }}<a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $s)) | relURL }}" class="movelink">{{ $s }}</a>{{ if and $g (or (gt $g.min_level 0) (gt $g.max_level 0)) }}<span class="counters-lv">&nbsp;Lv {{ if gt $g.min_level 0 }}{{ $g.min_level }}{{ if and (gt $g.max_level 0) (ne $g.min_level $g.max_level) }}–{{ $g.max_level }}{{ end }}{{ else }}≤{{ $g.max_level }}{{ end }}</span>{{ end }}{{ end }}
+                {{ if gt (len $accessible) 6 }}, …{{ end }}
+              </span>
+              {{ else if $locked }}
+              {{ $locked = sort $locked "tl" "asc" }}
+              {{ $next := index $locked 0 }}
+              <span class="counters-region counters-region-none">— no {{ $region }} wild encounters of this type are unlocked yet (earliest: <a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $next.species)) | relURL }}" class="movelink">{{ $next.species }}</a> at trainer Lv {{ $next.tl }})</span>
+              {{ else }}
+              <span class="counters-region counters-region-none">— no recorded {{ $region }} wild encounters of this type</span>
+              {{ end }}
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+        {{ else }}
+        <p class="counters-empty">No counter recommendations could be generated — the leader's team types weren't found in the pokedex data.</p>
+        {{ end }}
+
+        {{ with $gym.counter_notes }}
+        <div class="counters-notes">
+          <h4>Notes</h4>
+          <p>{{ . | markdownify }}</p>
         </div>
         {{ end }}
-      </details>
-      {{ end }}
-      {{ with .requirement }}
-      <p class="gym-requirement"><strong>Requirement:</strong> {{ . }}</p>
-      {{ end }}
-      <h4 class="leader-label">Leader's team</h4>
-      {{ with .team }}
-      <table class="gym-team">
-        <thead><tr><th>Pokémon</th><th>Lv</th><th>Nature</th><th>Moves</th></tr></thead>
-        <tbody>
-          {{ range . }}
-          <tr>
-            <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
-            <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
-            <td class="gym-moves">
-              {{ with .moves }}
-                {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
-              {{ else }}—{{ end }}
-            </td>
-          </tr>
-          {{ end }}
-        </tbody>
-      </table>
-      {{ end }}
+
+      </section>
     </div>
     {{ end }}
   </div>
@@ -80,13 +259,14 @@
         <h3 class="gym-leader">{{ .name }}</h3>
       </header>
       {{ with .team }}
-      <table class="gym-team">
+      <div class="table-scroll"><table class="gym-team">
         <thead><tr><th>Pokémon</th><th>Lv</th><th>Nature</th><th>Moves</th></tr></thead>
         <tbody>
           {{ range . }}
           <tr>
             <td><a href="{{ printf "/pokedex/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" .species)) | relURL }}" class="movelink">{{ .species }}</a></td>
             <td>{{ with .level }}{{ . }}{{ else }}—{{ end }}</td>
+            <td>{{ with .nature }}{{ . }}{{ else }}—{{ end }}</td>
             <td class="gym-moves">
               {{ with .moves }}
                 {{ range $j, $m := . }}{{ if $j }}, {{ end }}<a href="{{ printf "/moves/%s/" (lower (replaceRE "[^a-zA-Z0-9]+" "-" $m)) | relURL }}" class="movelink">{{ $m }}</a>{{ end }}
@@ -95,7 +275,7 @@
           </tr>
           {{ end }}
         </tbody>
-      </table>
+      </table></div>
       {{ end }}
     </div>
     {{ end }}
