@@ -475,14 +475,189 @@
     return refreshDisplay;
   }
 
+  // ---- Shared item list (populates both Attacker and Defender pickers) ----
+  // Damage-relevant held items extracted from
+  //   PokemonWorld-master/.../co/pokefind/pokemon/item/Item.java
+  // The label includes a category prefix so the combobox search matches both
+  // by item name ("life orb") and by category ("plate", "berry").
+  const ITEMS = [
+    { value: 'none', label: 'None' },
+    // ---- General offensive ----
+    { value: 'life-orb',     label: '[Offensive] Life Orb (×1.3, all damaging)' },
+    { value: 'choice-band',  label: '[Offensive] Choice Band (×1.5 Atk)' },
+    { value: 'choice-specs', label: '[Offensive] Choice Specs (×1.5 SpA)' },
+    { value: 'muscle-band',  label: '[Offensive] Muscle Band (×1.1 physical)' },
+    { value: 'wise-glasses', label: '[Offensive] Wise Glasses (×1.1 special)' },
+    { value: 'expert-belt',  label: '[Offensive] Expert Belt (×1.2 super-effective)' },
+    { value: 'metronome',    label: '[Offensive] Metronome (×1.2 same-move first hit)' },
+    { value: 'shell-bell',   label: '[Offensive] Shell Bell (heals 1/8 — no damage mod)' },
+    // ---- Type-boost trinkets (×1.2 of matching type) ----
+    { value: 'black-belt',     label: '[Type-boost] Black Belt (Fighting)' },
+    { value: 'black-glasses',  label: '[Type-boost] Black Glasses (Dark)' },
+    { value: 'charcoal',       label: '[Type-boost] Charcoal (Fire)' },
+    { value: 'dragon-fang',    label: '[Type-boost] Dragon Fang (Dragon)' },
+    { value: 'hard-stone',     label: '[Type-boost] Hard Stone (Rock)' },
+    { value: 'magnet',         label: '[Type-boost] Magnet (Electric)' },
+    { value: 'metal-coat',     label: '[Type-boost] Metal Coat (Steel)' },
+    { value: 'miracle-seed',   label: '[Type-boost] Miracle Seed (Grass)' },
+    { value: 'mystic-water',   label: '[Type-boost] Mystic Water (Water)' },
+    { value: 'never-melt-ice', label: '[Type-boost] Never-Melt Ice (Ice)' },
+    { value: 'odd-incense',    label: '[Type-boost] Odd Incense (Psychic)' },
+    { value: 'poison-barb',    label: '[Type-boost] Poison Barb (Poison)' },
+    { value: 'rose-incense',   label: '[Type-boost] Rose Incense (Grass)' },
+    { value: 'sea-incense',    label: '[Type-boost] Sea Incense (Water)' },
+    { value: 'sharp-beak',     label: '[Type-boost] Sharp Beak (Flying)' },
+    { value: 'silk-scarf',     label: '[Type-boost] Silk Scarf (Normal)' },
+    { value: 'silver-powder',  label: '[Type-boost] Silver Powder (Bug)' },
+    { value: 'soft-sand',      label: '[Type-boost] Soft Sand (Ground)' },
+    { value: 'spell-tag',      label: '[Type-boost] Spell Tag (Ghost)' },
+    // ---- Arceus plates (×1.2 of plate type) ----
+    { value: 'draco-plate',  label: '[Plate] Draco Plate (Dragon)' },
+    { value: 'dread-plate',  label: '[Plate] Dread Plate (Dark)' },
+    { value: 'earth-plate',  label: '[Plate] Earth Plate (Ground)' },
+    { value: 'fist-plate',   label: '[Plate] Fist Plate (Fighting)' },
+    { value: 'flame-plate',  label: '[Plate] Flame Plate (Fire)' },
+    { value: 'icicle-plate', label: '[Plate] Icicle Plate (Ice)' },
+    { value: 'insect-plate', label: '[Plate] Insect Plate (Bug)' },
+    { value: 'iron-plate',   label: '[Plate] Iron Plate (Steel)' },
+    { value: 'meadow-plate', label: '[Plate] Meadow Plate (Grass)' },
+    { value: 'mind-plate',   label: '[Plate] Mind Plate (Psychic)' },
+    { value: 'pixie-plate',  label: '[Plate] Pixie Plate (Fairy)' },
+    { value: 'sky-plate',    label: '[Plate] Sky Plate (Flying)' },
+    { value: 'splash-plate', label: '[Plate] Splash Plate (Water)' },
+    { value: 'spooky-plate', label: '[Plate] Spooky Plate (Ghost)' },
+    { value: 'stone-plate',  label: '[Plate] Stone Plate (Rock)' },
+    { value: 'toxic-plate',  label: '[Plate] Toxic Plate (Poison)' },
+    { value: 'zap-plate',    label: '[Plate] Zap Plate (Electric)' },
+    // ---- Species-specific ----
+    { value: 'light-ball',     label: '[Species] Light Ball — Pikachu (×2 Atk & SpA)' },
+    { value: 'thick-club',     label: '[Species] Thick Club — Cubone/Marowak (×2 Atk)' },
+    { value: 'deep-sea-tooth', label: '[Species] Deep Sea Tooth — Clamperl (×2 SpA)' },
+    { value: 'metal-powder',   label: '[Species] Metal Powder — Ditto (×2 Def)' },
+    { value: 'lucky-punch',    label: '[Species] Lucky Punch — Chansey (crit boost)' },
+    // ---- Defensive multipliers ----
+    { value: 'eviolite',       label: '[Defensive] Eviolite (×1.5 Def & SpD, NFE)' },
+    { value: 'assault-vest',   label: '[Defensive] Assault Vest (×1.5 SpD)' },
+    { value: 'rocky-helmet',   label: '[Defensive] Rocky Helmet (chip on contact — no damage mod)' },
+    { value: 'deep-sea-scale', label: '[Defensive] Deep Sea Scale — Clamperl (×2 SpD)' },
+    // ---- Resist berries ----
+    { value: 'occa-berry',    label: '[Berry] Occa (½ super-effective Fire)' },
+    { value: 'passho-berry',  label: '[Berry] Passho (½ super-effective Water)' },
+    { value: 'wacan-berry',   label: '[Berry] Wacan (½ super-effective Electric)' },
+    { value: 'rindo-berry',   label: '[Berry] Rindo (½ super-effective Grass)' },
+    { value: 'yache-berry',   label: '[Berry] Yache (½ super-effective Ice)' },
+    { value: 'chople-berry',  label: '[Berry] Chople (½ super-effective Fighting)' },
+    { value: 'kebia-berry',   label: '[Berry] Kebia (½ super-effective Poison)' },
+    { value: 'shuca-berry',   label: '[Berry] Shuca (½ super-effective Ground)' },
+    { value: 'coba-berry',    label: '[Berry] Coba (½ super-effective Flying)' },
+    { value: 'payapa-berry',  label: '[Berry] Payapa (½ super-effective Psychic)' },
+    { value: 'tanga-berry',   label: '[Berry] Tanga (½ super-effective Bug)' },
+    { value: 'charti-berry',  label: '[Berry] Charti (½ super-effective Rock)' },
+    { value: 'kasib-berry',   label: '[Berry] Kasib (½ super-effective Ghost)' },
+    { value: 'haban-berry',   label: '[Berry] Haban (½ super-effective Dragon)' },
+    { value: 'colbur-berry',  label: '[Berry] Colbur (½ super-effective Dark)' },
+    { value: 'babiri-berry',  label: '[Berry] Babiri (½ super-effective Steel)' },
+    { value: 'roseli-berry',  label: '[Berry] Roseli (½ super-effective Fairy)' },
+    { value: 'chilan-berry',  label: '[Berry] Chilan (½ any Normal hit)' },
+  ];
+  function populateItemSelects() {
+    ['dc-att-item', 'dc-def-item'].forEach(id => {
+      const sel = $(id);
+      sel.innerHTML = '';
+      ITEMS.forEach(it => {
+        const o = document.createElement('option');
+        o.value = it.value;
+        o.textContent = it.label;
+        sel.appendChild(o);
+      });
+    });
+  }
+
+  // ---- Speed Calculator ---------------------------------------------------
+  const SPEED_ITEM_MULT = {
+    'choice-scarf': 1.5,
+    'iron-ball':    0.5,
+    'macho-brace':  0.5,
+    'quick-powder': 2.0,        // Ditto only (gated below)
+    'lagging-tail': 1.0,        // ranking handled separately ("always last")
+    'full-incense': 1.0
+  };
+  function readSpeedSide(prefix) {
+    const sideClass = prefix === 'att' ? 'dc-speed-attacker' : 'dc-speed-defender';
+    const dmgSide = readSide(prefix);              // share Pokémon, level, form
+    const form = dmgSide.form;
+    const base = (form && form.stats.spe) || 0;
+    const row = document.querySelector('.' + sideClass + ' .dc-stat-builder tbody tr[data-stat="spe"]');
+    const baseCell = row.querySelector('.dc-base');
+    baseCell.textContent = base || '—';
+    const inputs = row.querySelectorAll('input');
+    const iv = intVal(inputs[0], 31);
+    const ev = intVal(inputs[1], 0);
+    const stage = parseInt(row.querySelector('.dc-stage').value.replace('+', ''), 10) || 0;
+    const natureRaw = document.querySelector('.' + sideClass + ' .dc-nature').value;
+    const natureMult = (natureRaw.indexOf('|') !== -1 && natureRaw.split('|')[1] === 'spe')
+      ? parseFloat(natureRaw.split('|')[0])
+      : 1.0;
+    let speed = computeStat('spe', base, iv, ev, dmgSide.level, natureMult);
+    // Stage modifier
+    speed = Math.floor(speed * STAGE_MULT[applyStage('s', stage)]);
+    // Item
+    const item = $('dc-' + prefix + '-spd-item').value;
+    const monName = (dmgSide.mon && dmgSide.mon.name || '').toLowerCase();
+    if (item === 'quick-powder' && monName !== 'ditto') {
+      // Quick Powder only doubles for Ditto; otherwise no effect.
+    } else if (SPEED_ITEM_MULT[item]) {
+      speed = Math.floor(speed * SPEED_ITEM_MULT[item]);
+    }
+    // Status
+    if ($('dc-' + prefix + '-paralysis').checked)  speed = Math.floor(speed * 0.5);
+    if ($('dc-' + prefix + '-tailwind').checked)   speed = Math.floor(speed * 2);
+    row.querySelector('.dc-final').textContent = speed;
+    const movesLast = item === 'lagging-tail' || item === 'full-incense';
+    return { speed, movesLast };
+  }
+
+  function recomputeSpeed() {
+    if (!DATA) return;
+    const att = readSpeedSide('att');
+    const def = readSpeedSide('def');
+    $('dc-speed-att').textContent = att.speed;
+    $('dc-speed-def').textContent = def.speed;
+    const trickRoom = $('dc-trick-room').checked;
+    let outcome;
+    // "Always-last" items override the speed comparison entirely.
+    if (att.movesLast && def.movesLast) {
+      outcome = att.speed === def.speed ? 'Speed tie (both move last)' :
+        (att.speed > def.speed ? 'Defender first (both move last; slower wins)' : 'Attacker first (both move last; slower wins)');
+    } else if (att.movesLast) {
+      outcome = 'Defender moves first (Attacker holds an "always last" item)';
+    } else if (def.movesLast) {
+      outcome = 'Attacker moves first (Defender holds an "always last" item)';
+    } else if (att.speed === def.speed) {
+      outcome = 'Speed tie — 50/50 coin flip';
+    } else {
+      const attFaster = att.speed > def.speed;
+      const winner = trickRoom ? !attFaster : attFaster;
+      outcome = (winner ? 'Attacker' : 'Defender') + ' moves first' +
+        (trickRoom ? ' (Trick Room: slower goes first)' : '');
+    }
+    $('dc-speed-result').textContent = outcome;
+  }
+
+  // Hook speed recompute into the main recompute pipeline.
+  const _origRecompute = recompute;
+  recompute = function () { _origRecompute(); recomputeSpeed(); };
+
   function init() {
+    populateItemSelects();
     document.querySelectorAll('.damage-calc-page input, .damage-calc-page select')
       .forEach(el => el.addEventListener('input', recompute));
     document.querySelectorAll('.damage-calc-page input, .damage-calc-page select')
       .forEach(el => el.addEventListener('change', recompute));
     load().then(() => {
       // Attach combobox UI after the selects are populated and defaults applied.
-      ['dc-att-mon', 'dc-def-mon', 'dc-move-name'].forEach(id => attachCombobox($(id)));
+      ['dc-att-mon', 'dc-def-mon', 'dc-move-name', 'dc-att-item', 'dc-def-item']
+        .forEach(id => attachCombobox($(id)));
     });
   }
   if (document.readyState === 'loading') {

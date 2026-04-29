@@ -55,66 +55,7 @@
       <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-att-burn"><span>Burned (halves physical Atk)</span></label>
       <label class="dc-row">
         <span>Item</span>
-        <select id="dc-att-item">
-          <option value="none">None</option>
-          <optgroup label="General offensive">
-            <option value="life-orb">Life Orb (×1.3, all damaging)</option>
-            <option value="choice-band">Choice Band (×1.5 Atk)</option>
-            <option value="choice-specs">Choice Specs (×1.5 SpA)</option>
-            <option value="muscle-band">Muscle Band (×1.1 physical)</option>
-            <option value="wise-glasses">Wise Glasses (×1.1 special)</option>
-            <option value="expert-belt">Expert Belt (×1.2 super-effective)</option>
-            <option value="metronome">Metronome (×1.2 same-move first hit)</option>
-            <option value="shell-bell">Shell Bell (no damage modifier — heals 1/8)</option>
-          </optgroup>
-          <optgroup label="Type-boost — type plates &amp; trinkets (×1.2)">
-            <option value="black-belt">Black Belt (Fighting)</option>
-            <option value="black-glasses">Black Glasses (Dark)</option>
-            <option value="charcoal">Charcoal (Fire)</option>
-            <option value="dragon-fang">Dragon Fang (Dragon)</option>
-            <option value="hard-stone">Hard Stone (Rock)</option>
-            <option value="magnet">Magnet (Electric)</option>
-            <option value="metal-coat">Metal Coat (Steel)</option>
-            <option value="miracle-seed">Miracle Seed (Grass)</option>
-            <option value="mystic-water">Mystic Water (Water)</option>
-            <option value="never-melt-ice">Never-Melt Ice (Ice)</option>
-            <option value="odd-incense">Odd Incense (Psychic)</option>
-            <option value="poison-barb">Poison Barb (Poison)</option>
-            <option value="rose-incense">Rose Incense (Grass)</option>
-            <option value="sea-incense">Sea Incense (Water)</option>
-            <option value="sharp-beak">Sharp Beak (Flying)</option>
-            <option value="silk-scarf">Silk Scarf (Normal)</option>
-            <option value="silver-powder">Silver Powder (Bug)</option>
-            <option value="soft-sand">Soft Sand (Ground)</option>
-            <option value="spell-tag">Spell Tag (Ghost)</option>
-          </optgroup>
-          <optgroup label="Arceus plates (×1.2 of plate type)">
-            <option value="draco-plate">Draco Plate (Dragon)</option>
-            <option value="dread-plate">Dread Plate (Dark)</option>
-            <option value="earth-plate">Earth Plate (Ground)</option>
-            <option value="fist-plate">Fist Plate (Fighting)</option>
-            <option value="flame-plate">Flame Plate (Fire)</option>
-            <option value="icicle-plate">Icicle Plate (Ice)</option>
-            <option value="insect-plate">Insect Plate (Bug)</option>
-            <option value="iron-plate">Iron Plate (Steel)</option>
-            <option value="meadow-plate">Meadow Plate (Grass)</option>
-            <option value="mind-plate">Mind Plate (Psychic)</option>
-            <option value="pixie-plate">Pixie Plate (Fairy)</option>
-            <option value="sky-plate">Sky Plate (Flying)</option>
-            <option value="splash-plate">Splash Plate (Water)</option>
-            <option value="spooky-plate">Spooky Plate (Ghost)</option>
-            <option value="stone-plate">Stone Plate (Rock)</option>
-            <option value="toxic-plate">Toxic Plate (Poison)</option>
-            <option value="zap-plate">Zap Plate (Electric)</option>
-          </optgroup>
-          <optgroup label="Species-specific (must match holder)">
-            <option value="light-ball">Light Ball — Pikachu (×2 Atk &amp; SpA)</option>
-            <option value="thick-club">Thick Club — Cubone/Marowak (×2 Atk)</option>
-            <option value="deep-sea-tooth">Deep Sea Tooth — Clamperl (×2 SpA)</option>
-            <option value="metal-powder">Metal Powder — Ditto (×2 Def)</option>
-            <option value="lucky-punch">Lucky Punch — Chansey (crit boost)</option>
-          </optgroup>
-        </select>
+        <select id="dc-att-item"></select>
       </label>
     </article>
 
@@ -195,10 +136,8 @@
           <span>Nature</span>
           <select class="dc-nature">
             <option value="1.0">Neutral</option>
-            <option value="1.1|hp">+HP</option>
             <option value="1.1|def">+Def</option>
             <option value="1.1|spd">+SpD</option>
-            <option value="0.9|hp">-HP</option>
             <option value="0.9|def">-Def</option>
             <option value="0.9|spd">-SpD</option>
           </select>
@@ -206,39 +145,127 @@
       </fieldset>
       <label class="dc-row">
         <span>Item</span>
-        <select id="dc-def-item">
-          <option value="none">None</option>
-          <optgroup label="Defensive multipliers">
-            <option value="eviolite">Eviolite (×1.5 Def &amp; SpD, NFE assumed)</option>
-            <option value="assault-vest">Assault Vest (×1.5 SpD)</option>
-            <option value="deep-sea-scale">Deep Sea Scale — Clamperl (×2 SpD)</option>
-          </optgroup>
-          <optgroup label="Resist berries (½ damage from one super-effective hit)">
-            <option value="occa-berry">Occa Berry (Fire)</option>
-            <option value="passho-berry">Passho Berry (Water)</option>
-            <option value="wacan-berry">Wacan Berry (Electric)</option>
-            <option value="rindo-berry">Rindo Berry (Grass)</option>
-            <option value="yache-berry">Yache Berry (Ice)</option>
-            <option value="chople-berry">Chople Berry (Fighting)</option>
-            <option value="kebia-berry">Kebia Berry (Poison)</option>
-            <option value="shuca-berry">Shuca Berry (Ground)</option>
-            <option value="coba-berry">Coba Berry (Flying)</option>
-            <option value="payapa-berry">Payapa Berry (Psychic)</option>
-            <option value="tanga-berry">Tanga Berry (Bug)</option>
-            <option value="charti-berry">Charti Berry (Rock)</option>
-            <option value="kasib-berry">Kasib Berry (Ghost)</option>
-            <option value="haban-berry">Haban Berry (Dragon)</option>
-            <option value="colbur-berry">Colbur Berry (Dark)</option>
-            <option value="babiri-berry">Babiri Berry (Steel)</option>
-            <option value="roseli-berry">Roseli Berry (Fairy)</option>
-            <option value="chilan-berry">Chilan Berry (Normal — any hit, not just SE)</option>
-          </optgroup>
-        </select>
+        <select id="dc-def-item"></select>
       </label>
     </article>
   </div>
 
-  <!-- Output -->
+  <!-- Speed Calculator (uses the Pokémon picks above; needs its own
+       speed-stat inputs and modifiers since the damage calc above only
+       tracks Atk/SpA/HP/Def/SpD). -->
+  <section class="dc-speed-calc">
+    <h2>Speed Calculator</h2>
+    <p class="dc-help">Determines whether the Attacker or the Defender moves first. The speed stat is computed from the same Pokémon you picked above; tweak IV / EV / nature / stage / item / status to match your scenario.</p>
+    <div class="dc-speed-grid">
+      <article class="dc-side dc-speed-side dc-speed-attacker">
+        <h3>Attacker speed</h3>
+        <fieldset class="dc-stat-builder">
+          <table>
+            <colgroup>
+              <col class="dc-col-label"><col class="dc-col-base"><col class="dc-col-iv"><col class="dc-col-ev"><col class="dc-col-boost"><col class="dc-col-final">
+            </colgroup>
+            <thead><tr><th></th><th>Base</th><th>IV</th><th>EV</th><th>Boost</th><th>Final</th></tr></thead>
+            <tbody>
+              <tr data-stat="spe">
+                <th>Spe</th>
+                <td class="dc-base"></td>
+                <td><input type="text" inputmode="numeric" pattern="\d*" maxlength="2" value="31"></td>
+                <td><input type="text" inputmode="numeric" pattern="\d*" maxlength="3" value="252"></td>
+                <td><select class="dc-stage"><option>-6</option><option>-5</option><option>-4</option><option>-3</option><option>-2</option><option>-1</option><option selected>0</option><option>+1</option><option>+2</option><option>+3</option><option>+4</option><option>+5</option><option>+6</option></select></td>
+                <td class="dc-final"></td>
+              </tr>
+            </tbody>
+          </table>
+          <label class="dc-nature-row">
+            <span>Nature</span>
+            <select class="dc-nature">
+              <option value="1.0">Neutral</option>
+              <option value="1.1|spe">+Speed</option>
+              <option value="0.9|spe">-Speed</option>
+            </select>
+          </label>
+        </fieldset>
+        <label class="dc-row">
+          <span>Item</span>
+          <select id="dc-att-spd-item">
+            <option value="none">None</option>
+            <option value="choice-scarf">Choice Scarf (×1.5)</option>
+            <option value="iron-ball">Iron Ball (×0.5)</option>
+            <option value="macho-brace">Macho Brace (×0.5)</option>
+            <option value="quick-powder">Quick Powder — Ditto (×2)</option>
+            <option value="lagging-tail">Lagging Tail (always last)</option>
+            <option value="full-incense">Full Incense (always last)</option>
+          </select>
+        </label>
+        <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-att-paralysis"><span>Paralyzed (×0.5)</span></label>
+        <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-att-tailwind"><span>Tailwind active (×2)</span></label>
+      </article>
+      <article class="dc-side dc-speed-side dc-speed-defender">
+        <h3>Defender speed</h3>
+        <fieldset class="dc-stat-builder">
+          <table>
+            <colgroup>
+              <col class="dc-col-label"><col class="dc-col-base"><col class="dc-col-iv"><col class="dc-col-ev"><col class="dc-col-boost"><col class="dc-col-final">
+            </colgroup>
+            <thead><tr><th></th><th>Base</th><th>IV</th><th>EV</th><th>Boost</th><th>Final</th></tr></thead>
+            <tbody>
+              <tr data-stat="spe">
+                <th>Spe</th>
+                <td class="dc-base"></td>
+                <td><input type="text" inputmode="numeric" pattern="\d*" maxlength="2" value="31"></td>
+                <td><input type="text" inputmode="numeric" pattern="\d*" maxlength="3" value="0"></td>
+                <td><select class="dc-stage"><option>-6</option><option>-5</option><option>-4</option><option>-3</option><option>-2</option><option>-1</option><option selected>0</option><option>+1</option><option>+2</option><option>+3</option><option>+4</option><option>+5</option><option>+6</option></select></td>
+                <td class="dc-final"></td>
+              </tr>
+            </tbody>
+          </table>
+          <label class="dc-nature-row">
+            <span>Nature</span>
+            <select class="dc-nature">
+              <option value="1.0">Neutral</option>
+              <option value="1.1|spe">+Speed</option>
+              <option value="0.9|spe">-Speed</option>
+            </select>
+          </label>
+        </fieldset>
+        <label class="dc-row">
+          <span>Item</span>
+          <select id="dc-def-spd-item">
+            <option value="none">None</option>
+            <option value="choice-scarf">Choice Scarf (×1.5)</option>
+            <option value="iron-ball">Iron Ball (×0.5)</option>
+            <option value="macho-brace">Macho Brace (×0.5)</option>
+            <option value="quick-powder">Quick Powder — Ditto (×2)</option>
+            <option value="lagging-tail">Lagging Tail (always last)</option>
+            <option value="full-incense">Full Incense (always last)</option>
+          </select>
+        </label>
+        <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-def-paralysis"><span>Paralyzed (×0.5)</span></label>
+        <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-def-tailwind"><span>Tailwind active (×2)</span></label>
+      </article>
+    </div>
+    <div class="dc-speed-globals">
+      <label class="dc-checkbox"><input type="checkbox" id="dc-trick-room"><span>Trick Room active (slower goes first)</span></label>
+    </div>
+    <div class="dc-output dc-speed-output" aria-live="polite">
+      <div class="dc-output-grid">
+        <div class="dc-output-block">
+          <div class="dc-output-label">Attacker speed</div>
+          <div class="dc-output-value" id="dc-speed-att">—</div>
+        </div>
+        <div class="dc-output-block">
+          <div class="dc-output-label">Defender speed</div>
+          <div class="dc-output-value" id="dc-speed-def">—</div>
+        </div>
+        <div class="dc-output-block">
+          <div class="dc-output-label">Outcome</div>
+          <div class="dc-output-value" id="dc-speed-result">—</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Damage Output -->
   <section class="dc-output" aria-live="polite">
     <h2>Result</h2>
     <div class="dc-output-grid">

@@ -108,7 +108,11 @@ pre code { background: transparent; padding: 0; }
 }
 @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; }
-    .sidebar { order: 2; }
+    /* Sidebar appears above the main content on mobile so the section nav
+       (Pokedex / Moves & Abilities / Damage Calc, Mechanics children, etc.)
+       is reachable without scrolling past the entire page first. */
+    .sidebar { order: 1; position: static; top: auto; }
+    .content  { order: 2; }
 }
 
 .sidebar {
@@ -1462,6 +1466,53 @@ pre code { background: transparent; padding: 0; }
     color: var(--text-muted);
     font-size: 0.82rem;
     margin: 0;
+}
+
+/* Speed Calculator — same panel idiom as Attacker/Defender, two columns
+   side-by-side with a shared Trick Room toggle below and a result strip. */
+.damage-calc-page .dc-speed-calc {
+    margin-top: 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+}
+.damage-calc-page .dc-speed-calc h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    color: var(--brand);
+}
+.damage-calc-page .dc-speed-calc h3 {
+    margin: 0 0 0.6rem;
+    font-size: 0.92rem;
+    color: var(--brand);
+}
+.damage-calc-page .dc-speed-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+.damage-calc-page .dc-speed-side {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.75rem;
+}
+.damage-calc-page .dc-speed-attacker { border-top: 3px solid #d77; }
+.damage-calc-page .dc-speed-defender { border-top: 3px solid #79d; }
+.damage-calc-page .dc-speed-globals {
+    margin-bottom: 0.75rem;
+    font-size: 0.88rem;
+}
+.damage-calc-page .dc-speed-globals .dc-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.damage-calc-page .dc-speed-output { padding: 0.75rem 1rem; }
+@media (max-width: 699px) {
+    .damage-calc-page .dc-speed-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* Searchable combobox — replaces the native <select> for the Pokémon
