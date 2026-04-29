@@ -5,11 +5,20 @@
   {{- range .Params.forms -}}
     {{- if eq (.kind | default "skin") "form" -}}
       {{- $bs := .base_stats | default dict -}}
+      {{- /* Build a flat learnset for the team builder: level-up + TMs +
+              move tutors + egg moves. The frontmatter stores each entry
+              as a dict with a `move` key — we extract just the names. */ -}}
+      {{- $learnset := slice -}}
+      {{- range .notable_moves -}}{{- with .move -}}{{- $learnset = $learnset | append . -}}{{- end -}}{{- end -}}
+      {{- range .tms          -}}{{- with .move -}}{{- $learnset = $learnset | append . -}}{{- end -}}{{- end -}}
+      {{- range .tutor_moves  -}}{{- with .move -}}{{- $learnset = $learnset | append . -}}{{- end -}}{{- end -}}
+      {{- range .egg_moves    -}}{{- with .move -}}{{- $learnset = $learnset | append . -}}{{- end -}}{{- end -}}
       {{- $form := dict
             "name" (.name | default "Standard")
             "types" (.types | default (slice "Normal"))
             "abilities" (.abilities | default (slice))
             "hidden" (.hidden_ability | default "")
+            "learnset" (uniq $learnset)
             "stats" (dict
               "hp"  (index $bs "hp"  | default 0)
               "atk" (index $bs "atk" | default 0)
@@ -21,8 +30,27 @@
       {{- $forms = $forms | append $form -}}
     {{- end -}}
   {{- end -}}
+  {{- /* Pre-evolution slugs from this species's evolution_family. The
+          team builder walks this chain and merges ancestor learnsets so
+          e.g. Cloyster's pickable moves include Shellder's level-up
+          moves like Icicle Spear. */ -}}
+  {{- /* evolution_family lives inside forms[0] in this site's frontmatter,
+          not at the top level. */ -}}
+  {{- $rawForms := .Params.forms | default (slice) -}}
+  {{- $family := slice -}}
+  {{- if gt (len $rawForms) 0 -}}
+    {{- $family = (index $rawForms 0).evolution_family | default (slice) -}}
+  {{- end -}}
+  {{- $self := where $family "slug" $slug -}}
+  {{- $preEvos := slice -}}
+  {{- if $self -}}
+    {{- $myDepth := (index $self 0).depth -}}
+    {{- range $family -}}
+      {{- if lt .depth $myDepth -}}{{- $preEvos = $preEvos | append .slug -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
   {{- if $forms -}}
-    {{- $entry := dict "name" .Title "dex" (.Params.dex_number | default "0") "forms" $forms -}}
+    {{- $entry := dict "name" .Title "dex" (.Params.dex_number | default "0") "forms" $forms "preEvos" $preEvos -}}
     {{- $pokemon = merge $pokemon (dict $slug $entry) -}}
   {{- end -}}
 {{- end -}}

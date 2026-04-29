@@ -13,7 +13,7 @@
 {{- /* Pokedex group: a single sidebar shared by /pokedex/ and /moves/.
        Header reads "Pokedex"; two tabs route between the two lists. The
        FAB+overlay below still renders so the long entry list is searchable. */ -}}
-{{ $inPokedexGroup := or (eq $section "pokedex") (or (eq $section "moves") (eq $section "damage-calc")) }}
+{{ $inPokedexGroup := or (eq $section "pokedex") (or (eq $section "moves") (or (eq $section "damage-calc") (eq $section "team-builder"))) }}
 {{ if $inPokedexGroup }}
 <nav class="section-nav" aria-label="Section">
   <h4>Pokedex</h4>
@@ -21,6 +21,7 @@
     <li><a href="{{ "/pokedex/" | relURL }}"{{ if eq $section "pokedex" }} class="active"{{ end }}>Pokedex</a></li>
     <li><a href="{{ "/moves/" | relURL }}"{{ if eq $section "moves" }} class="active"{{ end }}>Moves &amp; Abilities</a></li>
     <li><a href="{{ "/damage-calc/" | relURL }}"{{ if eq $section "damage-calc" }} class="active"{{ end }}>Damage Calc</a></li>
+    <li><a href="{{ "/team-builder/" | relURL }}"{{ if eq $section "team-builder" }} class="active"{{ end }}>Team Builder</a></li>
   </ul>
 </nav>
 {{ end }}

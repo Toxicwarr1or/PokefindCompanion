@@ -30,6 +30,90 @@
   };
   const STAGE_MULT = [0.25, 0.285714, 0.333333, 0.4, 0.5, 0.666667, 1, 1.5, 2, 2.5, 3, 3.5, 4]; // -6..+6
 
+  // ---- Ability effects ---------------------------------------------------
+  // Each entry encodes a single ability's contribution to the damage formula.
+  //   stab:           override the STAB multiplier (Adaptability sets ×2)
+  //   normalToType:   re-type Normal-type moves to the given type, ×mult
+  //   atkMult:        multiply attacker's effective Atk/SpA
+  //   typeMult:       per-move-type damage multiplier (offensive)
+  //   resistedMult:   multiplier when the target resists (eff < 1)
+  //   superEffMult:   multiplier when the move is super-effective (eff > 1).
+  //                   Used by both attacker (Neuroforce ×1.25) and defender
+  //                   (Filter / Solid Rock / Prism Armor ×0.75).
+  //   defTypeMult:    incoming-damage multiplier by move type (defender)
+  //   specialMult:    incoming-special multiplier (defender)
+  //   sandTypes:      apply mult to these types when sandstorm is active
+  //   sunSpaMult:     SpA multiplier in harsh sun (Solar Power)
+  //   immune:         move-type immunity (defender)
+  //   wonderGuard:    only super-effective hits land
+  //   mult:           generic flat damage multiplier (offensive or defensive,
+  //                   tagged via `side`)
+  const ABILITY_EFFECTS = {
+    'Adaptability':         { side: 'att', stab: 2.0 },
+    'Aerilate':             { side: 'att', normalToType: 'Flying', mult: 1.2 },
+    'Pixilate':             { side: 'att', normalToType: 'Fairy',  mult: 1.2 },
+    'Galvanize':            { side: 'att', normalToType: 'Electric', mult: 1.2 },
+    'Refrigerate':          { side: 'att', normalToType: 'Ice',    mult: 1.2 },
+    'Huge Power':           { side: 'att', atkMult: 2 },
+    'Pure Power':           { side: 'att', atkMult: 2 },
+    'Gorilla Tactics':      { side: 'att', atkMult: 1.5 },
+    'Hustle':               { side: 'att', atkMult: 1.5 },
+    'Guts':                 { side: 'att', atkMult: 1.5 },     // assumes statused
+    'Tinted Lens':          { side: 'att', resistedMult: 2 },
+    'Sheer Force':          { side: 'att', mult: 1.3 },        // assumes secondary-effect move
+    'Sand Force':           { side: 'att', sandTypes: ['Rock', 'Ground', 'Steel'], mult: 1.3 },
+    'Solar Power':          { side: 'att', sunSpaMult: 1.5 },
+    'Flash Fire':           { side: 'att', typeMult: { Fire: 1.5 } },     // attacker — assumes powered up
+    'Steelworker':          { side: 'att', typeMult: { Steel: 1.5 } },
+    'Steely Spirit':        { side: 'att', typeMult: { Steel: 1.5 } },
+    'Transistor':           { side: 'att', typeMult: { Electric: 1.5 } },
+    'Water Bubble':         { side: 'both', typeMult: { Water: 2 }, defTypeMult: { Fire: 0.5 } },
+    "Dragon's Maw":         { side: 'att', typeMult: { Dragon: 1.5 } },
+    'Dragons Maw':          { side: 'att', typeMult: { Dragon: 1.5 } },
+    'Neuroforce':           { side: 'att', superEffMult: 1.25 },
+    'Blaze':                { side: 'att', typeMult: { Fire: 1.5 } },     // pinch trigger; we apply blanketly
+    'Overgrow':             { side: 'att', typeMult: { Grass: 1.5 } },
+    'Torrent':              { side: 'att', typeMult: { Water: 1.5 } },
+    'Swarm':                { side: 'att', typeMult: { Bug: 1.5 } },
+    'Multiscale':           { side: 'def', mult: 0.5 },
+    'Shadow Shield':        { side: 'def', mult: 0.5 },
+    'Filter':               { side: 'def', superEffMult: 0.75 },
+    'Solid Rock':           { side: 'def', superEffMult: 0.75 },
+    'Prism Armor':          { side: 'def', superEffMult: 0.75 },
+    'Heatproof':            { side: 'def', defTypeMult: { Fire: 0.5 } },
+    'Thick Fat':            { side: 'def', defTypeMult: { Fire: 0.5, Ice: 0.5 } },
+    'Ice Scales':           { side: 'def', specialMult: 0.5 },
+    'Fluffy':               { side: 'def', defTypeMult: { Fire: 2 } },     // contact halving omitted (no contact flag)
+    'Levitate':             { side: 'def', immune: 'Ground' },
+    'Sap Sipper':           { side: 'def', immune: 'Grass' },
+    'Volt Absorb':          { side: 'def', immune: 'Electric' },
+    'Lightning Rod':        { side: 'def', immune: 'Electric' },
+    'Motor Drive':          { side: 'def', immune: 'Electric' },
+    'Water Absorb':         { side: 'def', immune: 'Water' },
+    'Storm Drain':          { side: 'def', immune: 'Water' },
+    'Dry Skin':             { side: 'def', immune: 'Water', defTypeMult: { Fire: 1.25 } },
+    'Wonder Guard':         { side: 'def', wonderGuard: true }
+  };
+  function abilityEffect(name) { return name ? ABILITY_EFFECTS[name] : null; }
+
+  // ---- Hazard damage on switch-in ----------------------------------------
+  // Stealth Rock: Rock-type effectiveness on the defender × maxHP / 8.
+  // Spikes: 1/8, 1/6, 1/4 maxHP for 1/2/3 layers (assumes grounded).
+  // Sticky Web: no damage (-1 Speed handled separately in the speed calc).
+  function rockEffectiveness(types) {
+    let m = 1;
+    (types || []).forEach(t => { const v = (CHART['Rock'] || {})[t]; m *= (v === undefined ? 1 : v); });
+    return m;
+  }
+  function hazardDamage(hp, hazards, types) {
+    if (!hp || !hazards) return 0;
+    let dmg = 0;
+    if (hazards.sr) dmg += Math.floor(hp * rockEffectiveness(types) / 8);
+    const spikesTable = [0, 1 / 8, 1 / 6, 1 / 4];
+    if (hazards.spikes >= 1 && hazards.spikes <= 3) dmg += Math.floor(hp * spikesTable[hazards.spikes]);
+    return Math.min(hp, dmg);
+  }
+
   // ---- DOM helpers --------------------------------------------------------
   function $(id) { return document.getElementById(id); }
   function intVal(el, def) { const v = parseInt(el.value, 10); return isFinite(v) ? v : def; }
@@ -98,6 +182,12 @@
     const level = intVal($('dc-' + prefix + '-level'), 100);
     const burn = $('dc-' + prefix + '-burn') ? $('dc-' + prefix + '-burn').checked : false;
     const item = ($('dc-' + prefix + '-item') || {}).value || 'none';
+    const ability = ($('dc-' + prefix + '-ability') || {}).value || '';
+    const hazards = {
+      sr:     $('dc-' + prefix + '-sr') ? $('dc-' + prefix + '-sr').checked : false,
+      spikes: $('dc-' + prefix + '-spikes') ? parseInt($('dc-' + prefix + '-spikes').value || '0', 10) : 0,
+      web:    $('dc-' + prefix + '-web') ? $('dc-' + prefix + '-web').checked : false
+    };
 
     // Nature parsing: stored as "<mult>|<stat>" (e.g. "1.1|atk") or "1.0".
     const natureSel = document.querySelector('.' + sideClass + ' .dc-nature');
@@ -109,7 +199,7 @@
       natureBoosted = s;
     }
 
-    const result = { mon, form, level, burn, item, stats: {}, stages: {} };
+    const result = { mon, form, level, burn, item, ability, hazards, stats: {}, stages: {} };
     const rows = document.querySelectorAll('.' + sideClass + ' .dc-stat-builder tbody tr');
     rows.forEach(row => {
       const stat = row.dataset.stat;
@@ -175,6 +265,20 @@
     const attackStatKey = isPhysical ? 'atk' : 'spa';
     const defenseStatKey = isPhysical ? 'def' : 'spd';
 
+    // ---- Ability lookups ----
+    const aEff = abilityEffect(att.ability);
+    const dEff = abilityEffect(def.ability);
+
+    // Aerilate / Pixilate / Galvanize / Refrigerate retype Normal moves to
+    // the matching type, with a ×1.2 power boost. We apply both the type
+    // change (so STAB/effectiveness recompute) and the multiplier later.
+    let moveType = move.type;
+    let aerilateMult = 1;
+    if (aEff && aEff.normalToType && moveType === 'Normal') {
+      moveType = aEff.normalToType;
+      aerilateMult = aEff.mult || 1;
+    }
+
     // Stat with stage boost (crit ignores defender's positive boosts and
     // attacker's negative boosts, per Gen-6+).
     const crit = parseFloat($('dc-crit').value);
@@ -189,6 +293,13 @@
     A = Math.floor(A * STAGE_MULT[applyStage('a', aStage)]);
     D = Math.floor(D * STAGE_MULT[applyStage('d', dStage)]);
 
+    // Attacker ability stat multipliers (Huge Power / Pure Power / Hustle /
+    // Gorilla Tactics / Guts × Atk; Solar Power × SpA in sun).
+    if (aEff && aEff.atkMult) A = Math.floor(A * aEff.atkMult);
+    if (aEff && aEff.sunSpaMult && !isPhysical && $('dc-weather').value === 'sun') {
+      A = Math.floor(A * aEff.sunSpaMult);
+    }
+
     // Burn halves physical Atk (unless ability prevents — out of scope).
     if (isPhysical && att.burn) A = Math.floor(A / 2);
 
@@ -200,28 +311,52 @@
 
     // Weather — sun/rain ×1.5 same-type, ×0.5 opposite. Ice/Rock immune to its-own-weather residual but that's HP, not damage.
     const weather = $('dc-weather').value;
-    if (weather === 'sun')  { if (move.type === 'Fire')  mod *= 1.5; if (move.type === 'Water') mod *= 0.5; }
-    if (weather === 'rain') { if (move.type === 'Water') mod *= 1.5; if (move.type === 'Fire')  mod *= 0.5; }
+    if (weather === 'sun')  { if (moveType === 'Fire')  mod *= 1.5; if (moveType === 'Water') mod *= 0.5; }
+    if (weather === 'rain') { if (moveType === 'Water') mod *= 1.5; if (moveType === 'Fire')  mod *= 0.5; }
     if (weather === 'sand' && def.form.types.indexOf('Rock') !== -1 && !isPhysical) mod *= 1.5; // sand SpD boost
 
     // Terrain (Gen 8 multiplier ×1.3, only if user is "grounded" — the calc assumes grounded).
     const terrain = $('dc-terrain').value;
-    if (terrain === 'electric' && move.type === 'Electric') mod *= 1.3;
-    if (terrain === 'grassy'   && move.type === 'Grass')    mod *= 1.3;
-    if (terrain === 'psychic'  && move.type === 'Psychic')  mod *= 1.3;
-    if (terrain === 'misty'    && move.type === 'Dragon')   mod *= 0.5;
+    if (terrain === 'electric' && moveType === 'Electric') mod *= 1.3;
+    if (terrain === 'grassy'   && moveType === 'Grass')    mod *= 1.3;
+    if (terrain === 'psychic'  && moveType === 'Psychic')  mod *= 1.3;
+    if (terrain === 'misty'    && moveType === 'Dragon')   mod *= 0.5;
 
     // Screens (Reflect/Light Screen). Ignored on crits.
     if ($('dc-screen').checked && crit === 1) mod *= 0.5;
 
-    // STAB (Gen 8: ×1.5; Adaptability is ×2 — not modeled).
-    if (att.form.types.indexOf(move.type) !== -1) mod *= 1.5;
+    // STAB. Adaptability bumps it from ×1.5 to ×2.
+    if (att.form.types.indexOf(moveType) !== -1) {
+      mod *= (aEff && aEff.stab) ? aEff.stab : 1.5;
+    }
 
-    // Type effectiveness.
-    const eff = effectiveness(move.type, def.form.types);
+    // Aerilate-style retype boost (the type change is reflected in moveType).
+    if (aerilateMult !== 1) mod *= aerilateMult;
+
+    // Defender ability immunities and Wonder Guard (computed before eff).
+    let eff = effectiveness(moveType, def.form.types);
+    if (dEff && dEff.immune && dEff.immune === moveType) eff = 0;
+    if (dEff && dEff.wonderGuard && eff <= 1) eff = 0;
 
     // Crit.
     mod *= crit;
+
+    // ---- Attacker ability mods ----
+    if (aEff && aEff.typeMult && aEff.typeMult[moveType]) mod *= aEff.typeMult[moveType];
+    if (aEff && aEff.sandTypes && aEff.sandTypes.indexOf(moveType) !== -1 && weather === 'sand') mod *= aEff.mult;
+    if (aEff && aEff.superEffMult && eff > 1) mod *= aEff.superEffMult;
+    if (aEff && aEff.resistedMult && eff < 1 && eff > 0) mod *= aEff.resistedMult;
+    if (aEff && aEff.mult && !aEff.sandTypes && !aEff.normalToType) mod *= aEff.mult;
+
+    // ---- Defender ability mods ----
+    if (dEff && dEff.defTypeMult && dEff.defTypeMult[moveType]) mod *= dEff.defTypeMult[moveType];
+    if (dEff && dEff.specialMult && !isPhysical) mod *= dEff.specialMult;
+    if (dEff && dEff.superEffMult && eff > 1) mod *= dEff.superEffMult;
+    if (dEff && dEff.mult) mod *= dEff.mult;
+
+    // Water Bubble (attacker ×2 Water; defender ×0.5 Fire) — already covered
+    // by typeMult / defTypeMult depending on which side selected it.
+
 
     // ---- Attacker items ----
     const aItem = att.item;
@@ -321,6 +456,41 @@
     if (previousValue && formSel.querySelector('option[value="' + previousValue + '"]')) {
       formSel.value = previousValue;
     }
+    rebuildAbilities(prefix);
+  }
+
+  // Repopulate the ability dropdown from the chosen Pokémon's abilities
+  // + hidden ability. Preserves the previous selection when still legal.
+  function rebuildAbilities(prefix) {
+    const abilSel = $('dc-' + prefix + '-ability');
+    if (!abilSel) return;
+    const slug = $('dc-' + prefix + '-mon').value;
+    const formIdx = parseInt($('dc-' + prefix + '-form').value || '0', 10);
+    const mon = slug && DATA.pokemon[slug];
+    const form = mon && mon.forms[formIdx];
+    const previous = abilSel.value;
+    abilSel.innerHTML = '';
+    const none = document.createElement('option');
+    none.value = '';
+    none.textContent = 'None';
+    abilSel.appendChild(none);
+    if (form) {
+      (form.abilities || []).forEach(a => {
+        const o = document.createElement('option');
+        o.value = a; o.textContent = a;
+        abilSel.appendChild(o);
+      });
+      if (form.hidden) {
+        const o = document.createElement('option');
+        o.value = form.hidden;
+        o.textContent = form.hidden + ' (Hidden)';
+        abilSel.appendChild(o);
+      }
+    }
+    if (previous && abilSel.querySelector('option[value="' + previous.replace(/"/g, '\\"') + '"]')) {
+      abilSel.value = previous;
+    }
+    abilSel.dispatchEvent(new Event('change'));
   }
 
   // ---- Main update --------------------------------------------------------
@@ -341,23 +511,27 @@
       return;
     }
     const hp = def.stats.hp;
+    // Effective HP after the defender's hazards have chipped on switch-in.
+    const hzDmg = hazardDamage(hp, def.hazards, def.form.types);
+    const effectiveHp = Math.max(1, hp - hzDmg);
     $('dc-result-range').textContent = out.min + ' – ' + out.max;
-    $('dc-result-pct').textContent = ((out.min / hp) * 100).toFixed(1) + '% – ' + ((out.max / hp) * 100).toFixed(1) + '%';
+    $('dc-result-pct').textContent = ((out.min / effectiveHp) * 100).toFixed(1) + '% – ' +
+                                      ((out.max / effectiveHp) * 100).toFixed(1) + '%';
     let effLabel;
     if (out.eff === 0) effLabel = 'Immune (×0)';
     else if (out.eff < 1) effLabel = 'Not very effective (×' + out.eff + ')';
     else if (out.eff > 1) effLabel = 'Super effective (×' + out.eff + ')';
     else effLabel = 'Neutral (×1)';
     $('dc-result-eff').textContent = effLabel;
-    const ko = koProbability(out.rolls, hp);
+    const ko = koProbability(out.rolls, effectiveHp);
     if (ko === null) $('dc-result-ko').textContent = '—';
     else if (ko === 1) $('dc-result-ko').textContent = 'Guaranteed OHKO';
     else if (ko === 0) $('dc-result-ko').textContent = 'No OHKO chance';
     else $('dc-result-ko').textContent = (ko * 100).toFixed(1) + '% OHKO';
-    $('dc-result-note').textContent =
-      'Defender HP: ' + hp +
-      ' · Attacker level: ' + att.level +
-      ' · Random factor 0.85–1.00 (16 rolls)';
+    let note = 'Defender HP: ' + hp;
+    if (hzDmg > 0) note += ' · After hazards: ' + effectiveHp + ' (-' + hzDmg + ')';
+    note += ' · Attacker level: ' + att.level + ' · Random factor 0.85–1.00 (16 rolls)';
+    $('dc-result-note').textContent = note;
   }
 
   // ---- Event wiring -------------------------------------------------------
@@ -599,6 +773,8 @@
       ? parseFloat(natureRaw.split('|')[0])
       : 1.0;
     let speed = computeStat('spe', base, iv, ev, dmgSide.level, natureMult);
+    // Sticky Web on this side drops 1 Speed stage on switch-in.
+    if (dmgSide.hazards && dmgSide.hazards.web) stage -= 1;
     // Stage modifier
     speed = Math.floor(speed * STAGE_MULT[applyStage('s', stage)]);
     // Item
@@ -645,8 +821,19 @@
   }
 
   // Hook speed recompute into the main recompute pipeline.
+  // Re-entry guard: rebuildAbilities() dispatches a `change` event on the
+  // ability <select> so the combobox display updates, but the global
+  // change listener (every input/select on the page) calls recompute,
+  // which re-runs rebuildForms → rebuildAbilities → dispatch — an
+  // infinite loop that hangs the page. The flag breaks that cycle.
   const _origRecompute = recompute;
-  recompute = function () { _origRecompute(); recomputeSpeed(); };
+  let _recomputeInFlight = false;
+  recompute = function () {
+    if (_recomputeInFlight) return;
+    _recomputeInFlight = true;
+    try { _origRecompute(); recomputeSpeed(); }
+    finally { _recomputeInFlight = false; }
+  };
 
   function init() {
     populateItemSelects();
@@ -656,7 +843,9 @@
       .forEach(el => el.addEventListener('change', recompute));
     load().then(() => {
       // Attach combobox UI after the selects are populated and defaults applied.
-      ['dc-att-mon', 'dc-def-mon', 'dc-move-name', 'dc-att-item', 'dc-def-item']
+      ['dc-att-mon', 'dc-def-mon', 'dc-move-name',
+       'dc-att-item', 'dc-def-item',
+       'dc-att-ability', 'dc-def-ability']
         .forEach(id => attachCombobox($(id)));
     });
   }

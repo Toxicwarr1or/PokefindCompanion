@@ -1037,6 +1037,12 @@ pre code { background: transparent; padding: 0; }
     font-weight: 400;
     font-size: 0.95rem;
 }
+.movepool-note {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0 0 0.6rem;
+    font-style: italic;
+}
 .move-chips {
     list-style: none;
     margin: 0;
@@ -1299,7 +1305,10 @@ pre code { background: transparent; padding: 0; }
 .damage-calc-page .dc-move { border-top: 3px solid var(--brand); }
 .damage-calc-page .dc-row {
     display: grid;
-    grid-template-columns: 70px 1fr;
+    /* `minmax(0, 1fr)` lets the input column shrink below its content's
+       natural width — without it, the long item-combobox labels force the
+       column (and the side panel) to grow past its allotted grid cell. */
+    grid-template-columns: 70px minmax(0, 1fr);
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
@@ -1395,7 +1404,7 @@ pre code { background: transparent; padding: 0; }
 }
 .damage-calc-page .dc-nature-row {
     display: grid;
-    grid-template-columns: 70px 1fr;
+    grid-template-columns: 70px minmax(0, 1fr);
     gap: 0.5rem;
     align-items: center;
     margin-top: 0.4rem;
@@ -1468,6 +1477,31 @@ pre code { background: transparent; padding: 0; }
     margin: 0;
 }
 
+/* Hazards fieldset — sub-card inside each side panel, lists the entry
+   hazards on that side. Stealth Rock + Spikes layers reduce defender's
+   effective HP for the OHKO calc; Sticky Web on a side drops that
+   side's Speed by 1 stage in the speed calc. */
+.damage-calc-page .dc-hazards {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0.6rem;
+    margin: 0.6rem 0 0;
+    font-size: 0.78rem;
+}
+.damage-calc-page .dc-hazards legend {
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0 0.4rem;
+}
+.damage-calc-page .dc-hazards .dc-checkbox {
+    grid-template-columns: auto auto;
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+}
+.damage-calc-page .dc-hazards .dc-spikes-row { font-size: 0.85rem; margin-bottom: 0.3rem; }
+
 /* Speed Calculator — same panel idiom as Attacker/Defender, two columns
    side-by-side with a shared Trick Room toggle below and a result strip. */
 .damage-calc-page .dc-speed-calc {
@@ -1517,7 +1551,7 @@ pre code { background: transparent; padding: 0; }
 
 /* Searchable combobox — replaces the native <select> for the Pokémon
    and Move pickers. The hidden <select> below stays as the source of truth. */
-.damage-calc-page .dc-combobox { position: relative; width: 100%; }
+.damage-calc-page .dc-combobox { position: relative; width: 100%; min-width: 0; }
 .damage-calc-page .dc-hidden-select {
     position: absolute;
     opacity: 0;
@@ -1593,9 +1627,14 @@ pre code { background: transparent; padding: 0; }
     font-size: 0.88rem;
     color: var(--text);
     cursor: pointer;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* Long item labels (e.g. "[Type-boost] Never-Melt Ice (Ice)") wrap to a
+       second line inside the dropdown rather than overflowing the panel's
+       right edge. The closed display still ellipses to a single line. */
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.3;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 .damage-calc-page .dc-combobox-item.active,
 .damage-calc-page .dc-combobox-item:hover {
@@ -1605,6 +1644,245 @@ pre code { background: transparent; padding: 0; }
     color: var(--brand);
     font-weight: 600;
 }
+
+/* ----- Team Builder ----- */
+.team-builder-page .tb-help { color: var(--text-muted); margin: 0 0 1rem; max-width: 80ch; }
+.team-builder-page .tb-io {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+@media (max-width: 800px) { .team-builder-page .tb-io { grid-template-columns: 1fr; } }
+.team-builder-page .tb-io-side {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.team-builder-page .tb-io-side h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+    color: var(--brand);
+}
+.team-builder-page textarea {
+    flex: 1;
+    min-height: 140px;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0.6rem;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.85rem;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+.team-builder-page .tb-btn {
+    align-self: flex-start;
+    background: var(--brand);
+    color: #0a0f12;
+    border: 0;
+    border-radius: 4px;
+    padding: 0.45rem 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.88rem;
+}
+.team-builder-page .tb-btn:hover { filter: brightness(1.1); }
+.team-builder-page .tb-btn-danger { background: #c45757; color: #fff; }
+.team-builder-page .tb-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+    flex-wrap: wrap;
+}
+
+.team-builder-page .tb-slots {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+}
+@media (max-width: 900px) { .team-builder-page .tb-slots { grid-template-columns: 1fr; } }
+.team-builder-page .tb-slot {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    border-top: 3px solid var(--brand);
+    padding: 0.85rem;
+    position: relative;
+}
+.team-builder-page .tb-slot-head {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 80px 32px;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: end;
+}
+.team-builder-page .tb-slot-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: end;
+}
+@media (max-width: 600px) {
+    .team-builder-page .tb-slot-head { grid-template-columns: 1fr 1fr; }
+    .team-builder-page .tb-slot-row  { grid-template-columns: 1fr; }
+}
+.team-builder-page .tb-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    min-width: 0;
+}
+.team-builder-page .tb-field input,
+.team-builder-page .tb-field select {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.4rem 0.55rem;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    min-width: 0;
+}
+.team-builder-page .tb-slot-remove {
+    background: var(--bg);
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 1rem;
+    align-self: end;
+}
+.team-builder-page .tb-slot-remove:hover { background: #c45757; color: #fff; border-color: #c45757; }
+
+.team-builder-page .tb-stats {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.team-builder-page .tb-stats-head,
+.team-builder-page .tb-stats-row {
+    display: grid;
+    grid-template-columns: 50px repeat(6, minmax(0, 1fr));
+    gap: 0.3rem;
+    align-items: center;
+    font-size: 0.78rem;
+}
+.team-builder-page .tb-stats-head span {
+    text-align: center;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.team-builder-page .tb-stats-row { margin-top: 0.3rem; }
+.team-builder-page .tb-stats-label {
+    color: var(--brand);
+    font-weight: 600;
+    text-align: left;
+    font-size: 0.82rem;
+}
+.team-builder-page .tb-stats input {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 0.3rem 0.25rem;
+    font-size: 0.88rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+.team-builder-page .tb-moves {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.4rem 0.6rem;
+}
+.team-builder-page .tb-moves-title {
+    grid-column: 1 / -1;
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.1rem;
+}
+.team-builder-page .tb-moves-hint {
+    color: var(--text-muted);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.team-builder-page .tb-field-move > span {
+    display: inline-block;
+    width: 12px;
+    color: var(--text-dim);
+}
+
+/* Searchable combobox — Team Builder copy of the damage-calc widget. */
+.team-builder-page .tb-combobox { position: relative; width: 100%; }
+.team-builder-page .tb-hidden-select {
+    position: absolute; opacity: 0; pointer-events: none;
+    width: 1px; height: 1px; overflow: hidden;
+}
+.team-builder-page .tb-combobox-display {
+    width: 100%;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.4rem 0.55rem;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.team-builder-page .tb-combobox-display::after {
+    content: '\25BE';
+    position: absolute; right: 0.5rem; top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim); pointer-events: none;
+}
+.team-builder-page .tb-combobox-display:focus,
+.team-builder-page .tb-combobox-display:hover { border-color: var(--brand); outline: none; }
+.team-builder-page .tb-combobox-panel {
+    position: absolute; top: calc(100% + 0.25rem); left: 0; right: 0; z-index: 50;
+    background: var(--surface); border: 1px solid var(--brand); border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45); overflow: hidden;
+}
+.team-builder-page .tb-combobox-panel[hidden] { display: none; }
+.team-builder-page .tb-combobox-search {
+    width: 100%; padding: 0.45rem 0.6rem; background: var(--bg); color: var(--text);
+    border: 0; border-bottom: 1px solid var(--border);
+    font-size: 0.9rem; box-sizing: border-box;
+}
+.team-builder-page .tb-combobox-search:focus { outline: none; }
+.team-builder-page .tb-combobox-list {
+    list-style: none; margin: 0; padding: 0.25rem 0;
+    max-height: 280px; overflow-y: auto;
+}
+.team-builder-page .tb-combobox-item {
+    padding: 0.4rem 0.6rem; font-size: 0.86rem; color: var(--text);
+    cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.team-builder-page .tb-combobox-item.active,
+.team-builder-page .tb-combobox-item:hover { background: rgba(62, 176, 69, 0.18); }
+.team-builder-page .tb-combobox-item.selected { color: var(--brand); font-weight: 600; }
 
 /* ----- Move/ability hover tooltip ----- */
 .movetip {

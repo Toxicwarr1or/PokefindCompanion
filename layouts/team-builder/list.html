@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="page team-builder-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+
+  <p class="tb-help">
+    Build up to six Pokémon. Each slot lets you pick a Pokémon, item, ability,
+    nature, level, IVs, EVs, and four moves. Use <strong>Import</strong> to
+    paste a team in Pokémon Showdown text format and <strong>Export</strong>
+    to copy the same format to your clipboard so you can share it with
+    friends.
+  </p>
+
+  <div class="tb-io">
+    <div class="tb-io-side">
+      <h3>Import</h3>
+      <textarea id="tb-import" placeholder="Paste Showdown team text here&#10;(one Pokémon per block, blocks separated by a blank line)"></textarea>
+      <button type="button" id="tb-import-btn" class="tb-btn">Load into builder</button>
+    </div>
+    <div class="tb-io-side">
+      <h3>Export</h3>
+      <textarea id="tb-export" readonly placeholder="Your team will appear here…"></textarea>
+      <button type="button" id="tb-copy-btn" class="tb-btn">Copy to clipboard</button>
+    </div>
+  </div>
+
+  <div class="tb-actions">
+    <button type="button" id="tb-clear-btn" class="tb-btn tb-btn-danger">Clear all slots</button>
+    <button type="button" id="tb-fill-btn"  class="tb-btn">Fill empty IVs to 31, level to 100</button>
+  </div>
+
+  <div id="tb-slots" class="tb-slots"></div>
+</section>
+
+<script defer src="{{ "js/team-builder.js" | relURL }}"></script>
+{{ end }}

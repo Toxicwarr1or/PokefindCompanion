@@ -43,6 +43,44 @@
   </header>
 
   {{ $forms := .Params.forms }}
+
+  {{/* Pre-compute the egg moves inherited from this species's
+        pre-evolutions. Mainline games store egg moves on the lowest
+        breeding form only — Cloyster carries no egg_moves of its own,
+        but inherits Shellder's. We walk evolution_family for entries at
+        a smaller depth than this page and pull each pre-evo's standard
+        form (forms[0]) egg_moves. Deduplicated by move name; the form
+        loop below merges these alongside the form's own egg_moves. */}}
+  {{ $pageSlug := .File.BaseFileName }}
+  {{/* evolution_family is nested inside forms[0] in this site's frontmatter. */}}
+  {{ $rawForms := .Params.forms | default (slice) }}
+  {{ $family := slice }}
+  {{ if gt (len $rawForms) 0 }}{{ $family = (index $rawForms 0).evolution_family | default (slice) }}{{ end }}
+  {{ $myDepth := -1 }}
+  {{ range $family }}
+    {{ if eq .slug $pageSlug }}{{ $myDepth = .depth }}{{ end }}
+  {{ end }}
+  {{ $inheritedEggMoves := slice }}
+  {{ $inheritedFrom := slice }}
+  {{ if ge $myDepth 0 }}
+    {{ range $family }}
+      {{ if and (lt .depth $myDepth) .slug }}
+        {{ with $.Site.GetPage (printf "/pokedex/%s" .slug) }}
+          {{ $preForms := .Params.forms | default (slice) }}
+          {{ if gt (len $preForms) 0 }}
+            {{ $preForm := index $preForms 0 }}
+            {{ with $preForm.egg_moves }}
+              {{ range . }}
+                {{ $inheritedEggMoves = $inheritedEggMoves | append . }}
+              {{ end }}
+              {{ $inheritedFrom = $inheritedFrom | append $.Title }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
   {{ if and $forms (gt (len $forms) 1) }}
   <nav class="form-tabs" role="tablist">
     {{ range $i, $f := $forms }}
@@ -319,9 +357,28 @@
     </details>
     {{ end }}
 
-    {{ with $f.egg_moves }}
+    {{/* Merge this form's own egg moves with those inherited from
+          pre-evolutions, deduplicated by move name. */}}
+    {{ $allEggMoves := slice }}
+    {{ $eggSeen := dict }}
+    {{ with $f.egg_moves }}{{ range . }}
+      {{ if not (index $eggSeen .move) }}
+        {{ $allEggMoves = $allEggMoves | append . }}
+        {{ $eggSeen = merge $eggSeen (dict .move true) }}
+      {{ end }}
+    {{ end }}{{ end }}
+    {{ range $inheritedEggMoves }}
+      {{ if not (index $eggSeen .move) }}
+        {{ $allEggMoves = $allEggMoves | append . }}
+        {{ $eggSeen = merge $eggSeen (dict .move true) }}
+      {{ end }}
+    {{ end }}
+    {{ with $allEggMoves }}
     <details class="movepool" open>
       <summary><h2>Egg Moves <span class="movepool-count">({{ len . }})</span></h2></summary>
+      {{ if $inheritedEggMoves }}
+      <p class="movepool-note">Includes egg moves inherited from this Pokémon's pre-evolution chain.</p>
+      {{ end }}
       <table class="learnset-table">
         <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Power</th><th>Acc.</th><th>PP</th></tr></thead>
         <tbody>
