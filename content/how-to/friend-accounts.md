@@ -19,7 +19,7 @@ On **Minecraft Bedrock** you can join Pokéfind by adding one of the server's bo
 
 ## Current friend accounts
 
-- ▷ `PokeFind1149`
-- ▶ `PokeFind1150`
+- ▷ `PokeFind1151`
+- ▶ `PokeFind1152`
 
 This list is mirrored from Discord and will be updated as accounts rotate. If none of the accounts above work, check the Discord announcements channel for the latest set.
