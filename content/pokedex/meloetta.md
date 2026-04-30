@@ -628,7 +628,7 @@ forms:
     kind: 'form'
     types: ['Normal', 'Fighting']
     abilities: ['Serene Grace']
-    sprite: ''
+    sprite: 'images/pokedex/meloetta-pirouette.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 0.6

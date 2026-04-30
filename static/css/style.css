@@ -2491,6 +2491,19 @@ pre code { background: transparent; padding: 0; }
     color: #1a0a14;
 }
 
+/* Frontmatter-declared skins that don't have a bundled 3D model. Rendered
+   alongside the interactive `.mc-skin-btn` chips so users see the full
+   list of skins the species has in-game, even if we can't preview them
+   in 3D yet. Slightly dimmer + dashed border to signal "non-interactive
+   info" without screaming "broken". */
+.skin-chip-info {
+    background: transparent !important;
+    color: var(--text-muted) !important;
+    border: 1px dashed var(--border) !important;
+    cursor: help;
+    font-weight: 600;
+}
+
 /* ----- Quest sub-tabs (Main vs Side within a gen) ----- */
 .quest-subtabs {
     display: flex;

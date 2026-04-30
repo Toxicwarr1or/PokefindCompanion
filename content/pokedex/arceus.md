@@ -3,7 +3,7 @@ title: 'Arceus'
 subtitle: 'It is described in mythology as the Pokémon that shaped the universe with its 1,000 arms.'
 date: 2026-04-28
 dex_number: '493'
-skins: ['Shiny', 'Halloween', 'Shadow', 'Gamer', 'Mecha']
+skins: ['Shiny', 'Halloween', 'Shadow', 'Mecha']
 forms:
   - name: 'Standard'
     kind: 'form'

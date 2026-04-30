@@ -86,7 +86,25 @@ def _load_canonical_skin_keys() -> tuple[str, ...]:
     return tuple(keys)
 
 
+def _load_canonical_label_to_key() -> dict[str, str]:
+    """Parse the {label_lowercase: key} map from cosmetic_skins.yaml.
+    Used to convert frontmatter labels ('Lunar New Year') back to the
+    canonical snake_case key ('lunar_new_year') the staging script uses."""
+    out: dict[str, str] = {}
+    last_key: str | None = None
+    for line in COSMETIC_SKINS_YAML.read_text().splitlines():
+        s = line.strip()
+        if s.startswith("- key:"):
+            last_key = s.split(":", 1)[1].strip()
+        elif s.startswith("label:") and last_key:
+            label = s.split(":", 1)[1].strip()
+            out[label.lower()] = last_key
+            last_key = None
+    return out
+
+
 CANONICAL_SKIN_KEYS = _load_canonical_skin_keys()
+CANONICAL_LABEL_TO_KEY = _load_canonical_label_to_key()
 
 # Token → canonical key. Identity entries cover the simple single-word
 # skins (`shiny`, `aura`, `halloween`, …); explicit aliases bridge
@@ -410,6 +428,150 @@ def walk_bbmodel_to_bones(bb: dict, root_name: str, uv_scale_for, tex_remap,
     return bones
 
 
+def collect_all_bbmodel_bone_names(bb: dict) -> set[str]:
+    """Return every group name present anywhere in the bbmodel outliner —
+    including bones nested under skin-overlay groups (`christmas`, `easter`,
+    etc.). Also includes prefix-stripped *cube* names: many older bbmodels
+    (Mewtwo, e.g.) leave groups unnamed and instead bake the bone identity
+    into per-cube names like `h_head_1`, `h_head_2`, ... — the BetterModel
+    exporter then emits one part file per name prefix. Stripping the
+    trailing `_<n>` from each element name recovers the implicit bone-name
+    set so `gather_supplementary_bones` doesn't re-inject those bones."""
+    out: set[str] = set()
+    # Older bbmodels keep group metadata in a top-level `groups` array;
+    # outliner nodes carry only `{uuid, isOpen, children}`. Build a
+    # uuid → group dict so we can resolve names for both formats.
+    groups_by_uuid = {g['uuid']: g for g in (bb.get('groups') or []) if 'uuid' in g}
+    def walk(n: dict) -> None:
+        nm = (n.get("name") or "").lower()
+        if not nm and n.get("uuid"):
+            g = groups_by_uuid.get(n["uuid"]) or {}
+            nm = (g.get("name") or "").lower()
+        if nm:
+            out.add(nm)
+        for c in n.get("children") or []:
+            if isinstance(c, dict):
+                walk(c)
+    for top in bb.get("outliner") or []:
+        if isinstance(top, dict):
+            walk(top)
+    # Element-name prefixes (cube names like `h_head_5` → bone `h_head`).
+    for e in bb.get("elements") or []:
+        nm = (e.get("name") or "").lower()
+        if not nm:
+            continue
+        # Strip the BetterModel-style trailing `_<n>` index so cubes
+        # `body_1`, `body_2`, ... all map to one bone `body`.
+        if "_" in nm:
+            head, tail = nm.rsplit("_", 1)
+            if tail.isdigit():
+                out.add(head)
+                continue
+        out.add(nm)
+    return out
+
+
+def gather_supplementary_bones(species: str, skin: str,
+                               existing_names: set[str]) -> list[dict]:
+    """Some bbmodels (older than the resource pack) are missing accessory
+    bones that the pack's exporter ships as standalone part files (Gyarados's
+    hat / l_horn / r_horn / l_lunar_new_year_horn / eyes / fingers, etc.).
+    For each part file matching `<species>_(v_<skin>_)?<bone>_<n>.json`
+    whose bone name isn't already in the bbmodel walk, gather its elements
+    and emit a top-level bone with display rotation honored.
+
+    Multiple part files for the same bone (`hat_1`, `hat_2`) get combined
+    into a single bone — the BetterModel exporter splits a bone's cubes
+    across files when one bone has too many cubes for a single item-display
+    model. Each part contributes its own `display.fixed.rotation` so we
+    end up with one bone per part-file index, each named `<bone>` (or
+    `<bone>_<n>` when there's more than one)."""
+    if not PACK_BM_MODELS.is_dir():
+        return []
+    prefix = f"{species}_" + (f"v_{skin}_" if skin != "regular" else "")
+    # The pattern matches part files for this (species, skin). We exclude
+    # part files for OTHER skins by ensuring the path between species and
+    # bone name is exactly the v_<skin>_ infix (or empty for regular).
+    candidates: dict[str, list[Path]] = {}
+    for p in PACK_BM_MODELS.glob(f"{prefix}*_*.json"):
+        stem = p.stem[len(prefix):]
+        # stem looks like "<bone>_<n>". Pull off the trailing `_<n>` digits.
+        if "_" not in stem:
+            continue
+        bone_part, idx_part = stem.rsplit("_", 1)
+        if not idx_part.isdigit():
+            continue
+        # For regular skin, exclude files that have a `v_<skin>_` infix in
+        # the bone name itself — those are other-skin files that share the
+        # species prefix.
+        if skin == "regular" and bone_part.startswith("v_"):
+            continue
+        # Skip non-render bones (collision geometry, etc.) and any bone
+        # already present in the bbmodel walk. Also skip part files whose
+        # bone name equals the species — those are the BetterModel exporter's
+        # convenience "<species>_<species>_1.json" alias for the body, which
+        # would duplicate the bbmodel's root bone.
+        if bone_part == "hitbox":
+            continue
+        if bone_part == species:
+            continue
+        if bone_part in existing_names:
+            continue
+        candidates.setdefault(bone_part, []).append(p)
+    out: list[dict] = []
+    for bone_name in sorted(candidates):
+        # Sort by index to keep `hat_1` before `hat_2`. We emit each part
+        # as its own bone (`hat`, `hat_2`, …) so per-part display rotations
+        # apply individually.
+        parts = sorted(candidates[bone_name], key=lambda p: int(p.stem.rsplit("_", 1)[-1]))
+        for i, p in enumerate(parts):
+            try:
+                m = json.loads(p.read_text())
+            except json.JSONDecodeError:
+                continue
+            elements = m.get("elements") or []
+            if not elements:
+                continue
+            # display.fixed.rotation, when present, is the bone's rest-pose
+            # rotation. Other display modes (gui/head/etc.) describe in-game
+            # display poses we don't want at rest.
+            rot = [0.0, 0.0, 0.0]
+            disp = (m.get("display") or {}).get("fixed") or {}
+            r = disp.get("rotation")
+            if isinstance(r, list) and len(r) == 3:
+                rot = [float(x) for x in r]
+            # Force every face to texture #0 — the supplementary parts each
+            # reference the same single-atlas texture as the body, and #0
+            # is already mapped to that atlas in the staged JSON.
+            new_elements: list[dict] = []
+            for e in elements:
+                ne = {k: v for k, v in e.items() if k != "faces"}
+                ne["faces"] = {fk: {**fv, "texture": "#0"} for fk, fv in (e.get("faces") or {}).items() if (fv or {}).get("uv") is not None}
+                new_elements.append(ne)
+            name = bone_name if i == 0 else f"{bone_name}_{i+1}"
+            out.append({
+                "name": name,
+                "origin": [0.0, 0.0, 0.0],
+                "rotation": rot,
+                "elements": new_elements,
+                "children": [],
+            })
+    return out
+
+
+def collect_bone_names(bones: list[dict]) -> set[str]:
+    out: set[str] = set()
+    def walk(b: dict) -> None:
+        n = b.get("name")
+        if n:
+            out.add(n)
+        for c in b.get("children") or []:
+            walk(c)
+    for b in bones:
+        walk(b)
+    return out
+
+
 def walk_skin_addon_group(bb: dict, skin_key: str, uv_scale_for, tex_remap,
                           skip_groups: set[str]) -> dict | None:
     """Find a top-level bbmodel group that adds skin-specific geometry
@@ -509,13 +671,35 @@ def derive_textures(bb: dict, species: str, skin: str) -> tuple[dict[str, str], 
         elif s == "regular" and r == "flame" and skin != "regular":
             if regular_flame_fallback is None:
                 regular_flame_fallback = n
-    # A non-regular skin is only "real" if the bbmodel ships a *body*
-    # atlas for it — flame is a per-cube particle layer, sharing it with
-    # the regular skin alone doesn't constitute a recolor. Without this
-    # guard, the regular-flame fallback below would cause every skin in
-    # SKINS to produce a flame-only output for fire types (Charizard ends
-    # up with chips for cosmic, gamer, mecha, etc. it doesn't have).
+    # A non-regular skin is only "real" if a *body* atlas exists for it.
+    # The bbmodel's embedded textures are the primary source, but the
+    # resource pack also ships standalone per-skin PNGs for many species
+    # (Gyarados has gyarados_v_aura_gyarados_aura.png, _christmas_, _easter_,
+    # etc. — none of which are listed in the bbmodel's textures map).
+    # Fall back to the pack directly when the bbmodel doesn't declare it.
     if skin != "regular" and not body_name:
+        # Pack convention: `<species>_v_<skin>_<species>_<skin>.png`. Some
+        # species use a slight variant (Mew valentine ships as
+        # `mew_v_valentine_mew_valentines.png`) — fall back to a glob if
+        # the strict match misses, picking the shortest-named candidate
+        # (so we don't grab a `_<other_skin>` file by accident).
+        pack_path = PACK_BM_TEXTURES / "item" / f"{species}_v_{skin}_{species}_{skin}.png"
+        if not pack_path.exists():
+            candidates = list((PACK_BM_TEXTURES / "item").glob(f"{species}_v_{skin}_*.png"))
+            candidates = [c for c in candidates if "_flame" not in c.stem]
+            if candidates:
+                pack_path = sorted(candidates, key=lambda p: len(p.name))[0]
+        if pack_path.exists():
+            ref = f"bettermodel/item/{pack_path.stem}"
+            textures: dict[str, str] = {"0": ref, "particle": ref}
+            srcs: list[Path] = [pack_path]
+            # Carry the regular flame fallback if one exists (Charizard etc.).
+            if regular_flame_fallback:
+                src = resolve_texture_file(species, regular_flame_fallback)
+                if src is not None:
+                    textures["1"] = f"bettermodel/item/{src.stem}"
+                    srcs.append(src)
+            return textures, srcs
         return {}, []
     if not flame_name and skin != "regular":
         flame_name = regular_flame_fallback
@@ -599,6 +783,35 @@ def resolve_output_path(species: str) -> tuple[str, str]:
     return "regular", species.replace("_", "-")
 
 
+def read_frontmatter_skins(slug: str) -> set[str] | None:
+    """Read the species's pokedex page and return its `skins:` frontmatter
+    as a set of cosmetic-skin keys (lowercase, snake_case, e.g. 'shiny',
+    'lunar_new_year'). Returns None if the page has no `skins:` line — in
+    that case the staging script reverts to its old "stage every skin the
+    pack ships" behavior. Otherwise the script will only stage skins
+    present in the frontmatter (the server's truth source for which skins
+    the species actually has implemented)."""
+    import re as _re
+    md = POKEDEX_DIR / f"{slug}.md"
+    if not md.is_file():
+        return None
+    for line in md.read_text(encoding="utf-8").splitlines():
+        m = _re.match(r"^\s*skins\s*:\s*\[(.*)\]\s*$", line)
+        if not m:
+            continue
+        out: set[str] = set()
+        for raw in _re.findall(r"['\"]([^'\"]+)['\"]", m.group(1)):
+            key = CANONICAL_LABEL_TO_KEY.get(raw.lower())
+            if key:
+                out.add(key)
+        # Always include `regular` and `shiny` — they're implicit on every
+        # species page (regular is the base, shiny is the universal recolor).
+        out.add("regular")
+        out.add("shiny")
+        return out
+    return None
+
+
 def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
     """Stage a single bbmodel for every applicable skin. Returns a dict
     keyed by skin (e.g. 'regular', 'shiny') with per-skin status strings —
@@ -609,6 +822,11 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
     variant, slug = resolve_output_path(species)
     if slug not in pokedex_pages:
         return {"regular": "no-page"}
+    # The species's frontmatter is the truth source for which skins are
+    # actually implemented on the server. None = no `skins:` line present;
+    # in that case fall through to staging every skin the pack ships
+    # (legacy behavior, used by species whose page predates the convention).
+    allowed_skins = read_frontmatter_skins(slug)
     bb = json.loads(bb_path.read_text())
     # The UV scaler depends on the *resourcepack* file dimensions (see
     # `make_uv_scaler` for why), so resolve regular textures up front to get
@@ -633,6 +851,12 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
         # `regular` form variant — alolan/galarian forms don't have shipped
         # aura/shiny atlases in the pack.
         if skin != "regular" and variant != "regular":
+            continue
+        # Honor the species's frontmatter `skins:` list — the server's
+        # truth source for which skins are actually implemented. The pack
+        # may ship a texture (e.g. anniversary Mew) that the server hasn't
+        # released; we don't want to stage those as interactive chips.
+        if allowed_skins is not None and skin not in allowed_skins:
             continue
 
         # If this (species, skin) is in PART_FILE_OVERRIDES, build the
@@ -678,6 +902,16 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
             addon = walk_skin_addon_group(bb, skin, uv_scale_for, tex_remap, SKIP_BONES)
             if addon is not None:
                 bones_payload.append(addon)
+        # Append any per-bone part files the resource pack ships that the
+        # bbmodel doesn't have (older bbmodels miss the latest accessory
+        # bones — Gyarados's hat/horns/eyes/fingers, for instance). The
+        # exclusion set is the union of (a) bones we've already emitted on
+        # this variant and (b) every bone name that appears anywhere in the
+        # bbmodel outliner — the latter so skin-overlay bones (Ditto's
+        # chest_xmas / chest_cosmic / chest_gamer, scoped to a specific
+        # skin via their parent group) don't leak onto every variant.
+        existing_names = collect_bone_names(bones_payload) | collect_all_bbmodel_bone_names(bb)
+        bones_payload.extend(gather_supplementary_bones(species, skin, existing_names))
         out_dir = (OUT_BASE / skin / slug) if skin != "regular" else (OUT_BASE / variant / slug)
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / f"{slug}.json").write_text(

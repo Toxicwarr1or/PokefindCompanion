@@ -441,7 +441,7 @@ forms:
     kind: 'form'
     types: ['Water', 'Fighting']
     abilities: ['Justified']
-    sprite: ''
+    sprite: 'images/pokedex/keldeo-resolute.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.4

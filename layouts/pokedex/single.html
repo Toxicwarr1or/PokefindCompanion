@@ -120,6 +120,7 @@
         up-front so both the viewer (visuals column) and the Available
         Skins row (stats column) can use them. */}}
   {{ $slug := lower (replaceRE "[^a-zA-Z0-9]+" "-" $.Title) }}
+  {{ $slug = trim $slug "-" }}
   {{ $variant := "" }}
   {{ if eq $i 0 }}{{ $variant = "regular" }}{{ end }}
   {{ if eq $f.name "Alolan" }}{{ $variant = "alolan" }}{{ end }}
@@ -133,6 +134,13 @@
         of regular/gastrodon/, so both tabs render the same model. */}}
   {{ if eq $f.name "East Sea" }}{{ $variant = "east" }}{{ end }}
   {{ if eq $f.name "West Sea" }}{{ $variant = "regular" }}{{ end }}
+  {{/* Basculin Red-Striped / Blue-Striped forms. Red routes to the default
+        regular/ slot; Blue gets its own blue/blue_shiny output dir. */}}
+  {{ if eq $f.name "Red-Striped" }}{{ $variant = "regular" }}{{ end }}
+  {{ if eq $f.name "Blue-Striped" }}{{ $variant = "blue" }}{{ end }}
+  {{/* Meloetta Pirouette form. Standard (Aria) is the default regular slot;
+        Pirouette gets its own pirouette/pirouette_shiny output dirs. */}}
+  {{ if eq $f.name "Pirouette" }}{{ $variant = "pirouette" }}{{ end }}
   {{/* Region forms route to the anniversary skin's output directory. */}}
   {{ if in $regionForms $f.name }}{{ $variant = "anniversary" }}{{ end }}
   {{/* Other cosmetic-skin forms: any form whose `name` matches a cosmetic
@@ -152,7 +160,7 @@
         — other cosmetic skins don't apply on those forms. */}}
   {{ $baseLabel := "Regular" }}
   {{ if eq $variant "anniversary" }}{{ $baseLabel = "Anniversary" }}{{ end }}
-  {{ if and $variant (or (eq $variant "regular") (eq $variant "female") (eq $variant "anniversary") (eq $variant "east")) }}
+  {{ if and $variant (or (eq $variant "regular") (eq $variant "female") (eq $variant "anniversary") (eq $variant "east") (eq $variant "blue") (eq $variant "pirouette")) }}
     {{ range site.Data.cosmetic_skins }}
       {{ $skin := .key }}
       {{ $dir := $skin }}
@@ -163,13 +171,18 @@
         {{ $label = "Shiny Anniversary" }}
       {{ end }}
       {{ if and (eq $variant "east") (eq $skin "shiny") }}{{ $dir = "east_shiny" }}{{ end }}
+      {{ if and (eq $variant "blue") (eq $skin "shiny") }}{{ $dir = "blue_shiny" }}{{ end }}
+      {{ if and (eq $variant "pirouette") (eq $skin "shiny") }}{{ $dir = "pirouette_shiny" }}{{ end }}
       {{ $allowed := or (eq $variant "regular") (eq $skin "shiny") }}
       {{ $hasOwnFormTab := in $skinsClaimedByForms $skin }}
       {{ $path := printf "static/models-3d/%s/%s/%s.json" $dir $slug $slug }}
       {{ if and $allowed (not $hasOwnFormTab) (fileExists $path) }}
         {{ $availableSkins = $availableSkins | append $skin }}
         {{ $skinLabels = merge $skinLabels (dict $skin $label) }}
-        {{ $skinUrls = merge $skinUrls (dict $skin (printf "/models-3d/%s/%s/%s.json" $dir $slug $slug | relURL)) }}
+        {{/* Same content-hash cache-buster as the primary data-mc-model URL,
+             so skin-swap fetches pick up file edits without manual reload. */}}
+        {{ $skinHash := substr (sha256 (readFile $path)) 0 8 }}
+        {{ $skinUrls = merge $skinUrls (dict $skin (printf "/models-3d/%s/%s/%s.json?v=%s" $dir $slug $slug $skinHash | relURL)) }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -192,8 +205,14 @@
         {{ if $variant }}
         {{ $modelPath := printf "static/models-3d/%s/%s/%s.json" $variant $slug $slug }}
         {{ if (fileExists $modelPath) }}
+        {{/* Cache-buster: the browser caches model JSON aggressively, so an
+             edit to the model file would otherwise stay invisible until a
+             manual hard-refresh. Hashing the file's content (substring of
+             SHA-256, takes ~ms during build) gives every published edit a
+             fresh URL the browser must refetch. */}}
+        {{ $modelHash := substr (sha256 (readFile $modelPath)) 0 8 }}
         <div class="mc-model-viewer"
-             data-mc-model="{{ printf "/models-3d/%s/%s/%s.json" $variant $slug $slug | relURL }}"
+             data-mc-model="{{ printf "/models-3d/%s/%s/%s.json?v=%s" $variant $slug $slug $modelHash | relURL }}"
              {{/* All skin URLs travel in one JSON attribute. Per-skin
                  `data-mc-model-<skin>` attrs were collapsed to ZgotmplZ
                  by Hugo's html/template autoescape whenever a skin key
@@ -220,17 +239,39 @@
              Only emitted on form tabs that actually have a 3D viewer with
              cosmetic skin variants — falls back to the frontmatter skins
              list (informational only) when the form has no viewer. */}}
-        {{ if gt (len $availableSkins) 0 }}
+        {{/* Build a list of skin labels that already have a 3D-model
+             button so we can surface frontmatter-declared skins (which
+             ship as PNG-only or come straight from the upstream pack
+             without bbmodel coverage) as non-interactive info chips next
+             to the model buttons. Otherwise a Pokémon like Gyarados
+             whose frontmatter lists 10 skins but only has bbmodel coverage
+             for shiny/halloween would show only those two. */}}
+        {{/* Build the covered-labels set lower-cased so frontmatter labels
+             with a different casing ('Sword And Shield' vs canonical
+             'Sword and Shield') still dedupe against the staged buttons. */}}
+        {{ $coveredLabels := slice (lower $baseLabel) }}
+        {{ range $availableSkins }}
+          {{ $coveredLabels = $coveredLabels | append (lower (index $skinLabels .)) }}
+        {{ end }}
+        {{ $extraSkins := slice }}
+        {{ if and (eq $i 0) $.Params.skins }}
+          {{ range $.Params.skins }}
+            {{ if not (in $coveredLabels (lower .)) }}{{ $extraSkins = $extraSkins | append . }}{{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if or (gt (len $availableSkins) 0) (gt (len $extraSkins) 0) }}
         <dt>Available Skins</dt>
         <dd class="skins-inline" role="tablist" aria-label="Model skin">
+          {{ if gt (len $availableSkins) 0 }}
           <button type="button" class="mc-skin-btn skin-chip active" data-skin="regular" aria-selected="true">{{ $baseLabel }}</button>
           {{ range $availableSkins }}
             <button type="button" class="mc-skin-btn skin-chip" data-skin="{{ . }}" aria-selected="false">{{ index $skinLabels . }}</button>
           {{ end }}
+          {{ end }}
+          {{ range $extraSkins }}
+            <span class="skin-chip skin-chip-info" title="Skin exists in-game; 3D model not yet bundled here">{{ . }}</span>
+          {{ end }}
         </dd>
-        {{ else if and (eq $i 0) $.Params.skins }}
-        <dt>Available Skins</dt>
-        <dd class="skins-inline">{{ range $.Params.skins }}<span class="skin-chip">{{ . }}</span>{{ end }}</dd>
         {{ end }}
       </dl>
     </div>

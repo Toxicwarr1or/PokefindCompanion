@@ -135,17 +135,30 @@ function buildElementMesh(element, materialMap, textureWidth, textureHeight) {
 
   const mesh = new THREE.Mesh(geometry, usedMaterials.length === 1 ? usedMaterials[0] : usedMaterials);
 
-  // Apply element rotation (MC: angle is degrees; axis is one of x/y/z;
-  // origin is the pivot point in pixel space).
+  // Apply element rotation. Two formats are supported:
+  //   { axis: 'x'|'y'|'z', angle: deg,         origin: [x,y,z] } — legacy single-axis (Java MC native).
+  //   { angles: [rx, ry, rz],                  origin: [x,y,z] } — 3-axis Euler XYZ (free-format
+  //                                                                 bbmodel exports, e.g. Entei spikes).
+  // Both wrap the cube in a pivot group positioned at `origin` so the
+  // rotation pivots about that world point.
   if (element.rotation) {
-    const { angle, axis, origin } = element.rotation;
-    const rad = (angle * Math.PI) / 180;
+    const { angle, axis, angles, origin } = element.rotation;
     const pivot = new THREE.Group();
     pivot.position.set(origin[0], origin[1], origin[2]);
     mesh.position.set(-origin[0], -origin[1], -origin[2]);
-    if (axis === 'x') pivot.rotation.x = rad;
-    else if (axis === 'y') pivot.rotation.y = rad;
-    else if (axis === 'z') pivot.rotation.z = rad;
+    if (Array.isArray(angles)) {
+      pivot.rotation.set(
+        THREE.MathUtils.degToRad(angles[0] || 0),
+        THREE.MathUtils.degToRad(angles[1] || 0),
+        THREE.MathUtils.degToRad(angles[2] || 0),
+        'XYZ',
+      );
+    } else {
+      const rad = (angle * Math.PI) / 180;
+      if (axis === 'x') pivot.rotation.x = rad;
+      else if (axis === 'y') pivot.rotation.y = rad;
+      else if (axis === 'z') pivot.rotation.z = rad;
+    }
     pivot.add(mesh);
     return pivot;
   }
@@ -270,18 +283,20 @@ async function buildModelGroup(modelUrl) {
     }
   }
 
-  // Apply only the Y (yaw) and Z (roll) parts of `display.gui.rotation`.
-  // Some species — notably Kyurem — author their cuboids on a diagonal (Z
-  // rotations of ±45°) and use the GUI rotation's Z to put the model
-  // upright; the Y component handles facing direction. The X component is
-  // a 3/4-from-above pitch used for inventory icons, which makes the
-  // standalone viewer look as if the species is leaning forward — skip it.
+  // Apply `display.gui.rotation`. We default to applying only the Y (yaw)
+  // and Z (roll) components — the X component is usually MC's 3/4-view
+  // inventory-icon pitch and makes the standalone viewer look as if the
+  // species is leaning forward. Some models (notably Masquerain's static
+  // summer/valentine variants) author their cuboids assuming the full
+  // inventory rotation will compose with them, so they need X too. Opt
+  // in via `model.wiki_apply_full_gui_rotation: true` in the JSON.
   const guiRot = (((model.display || {}).gui || {}).rotation) || null;
+  const applyFull = model.wiki_apply_full_gui_rotation === true;
   const root = new THREE.Group();
   if (guiRot && Array.isArray(guiRot) && guiRot.length >= 3) {
-    const [, ry, rz] = guiRot;
+    const [rx, ry, rz] = guiRot;
     inner.rotation.set(
-      0,
+      applyFull ? THREE.MathUtils.degToRad(rx) : 0,
       THREE.MathUtils.degToRad(ry),
       THREE.MathUtils.degToRad(rz),
     );
