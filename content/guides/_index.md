@@ -10,5 +10,6 @@ A growing collection of guides for various aspects of the Pokéfind server. Pick
 - **[Type Chart](/type-chart/)** — interactive matchup lookup: type vs type, type vs Pokémon, or the full reference grid.
 - **[Shadow](/shadow/)** — the Shadow type, Shadow Pokémon, Reverse Mode, the full Shadow movepool, and purification.
 - **[How To](/how-to/)** — setup and connection guides (e.g. joining the server from Xbox / PlayStation via Bedrock Together).
+- **[Save Slot Challenges](/save-slot-challenges/)** — optional, permanent self-imposed difficulty modes (Just Walk It Off, Evolution Outlaw, Lone Survivor, Nuzlocke).
 
 More guide categories will land here as the corpus grows.

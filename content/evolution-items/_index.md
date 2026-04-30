@@ -34,6 +34,8 @@ The classic evolution stones — apply directly to a compatible Pokémon to evol
 
 Pokéfind handles trade evolutions the standard way: another player trades the Pokémon to you, and the evolution triggers on the receive side. Some require the Pokémon to be **holding a specific item** during the trade.
 
+> **No trade partner needed:** the **[Mystery Man](/pokefind/pokeworld/)** also acts as a trade-evolution stand-in — bring the Pokémon (with the right held item if applicable) and he'll perform the trade for you. He works on every save *except* the **Evolution Outlaw** [challenge](/save-slot-challenges/), which blocks evolutions of any kind.
+
 ### Trade alone (no item)
 
 - [Kadabra](/pokedex/kadabra/) → [Alakazam](/pokedex/alakazam/)

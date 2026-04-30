@@ -54,6 +54,8 @@ Hand the Pokémon off to another player. The evolution fires on the receive side
 
 - **Trade alone:** [Kadabra](/pokedex/kadabra/) → [Alakazam](/pokedex/alakazam/). [Machoke](/pokedex/machoke/) → [Machamp](/pokedex/machamp/). [Graveler](/pokedex/graveler/) → [Golem](/pokedex/golem/). [Haunter](/pokedex/haunter/) → [Gengar](/pokedex/gengar/). [Boldore](/pokedex/boldore/) → [Gigalith](/pokedex/gigalith/). [Gurdurr](/pokedex/gurdurr/) → [Conkeldurr](/pokedex/conkeldurr/).
 
+> **No trade partner? Use the Mystery Man.** If you can't find another player to trade with — or your save is on a [challenge](/save-slot-challenges/) other than **Evolution Outlaw**, where `/trade` is disabled — the **[Mystery Man](/pokefind/pokeworld/)** acts as a stand-in trade partner specifically for evolution. Bring the Pokémon (holding the right item if needed) and he'll perform the trade-evolution. Works on every challenge except Evolution Outlaw, which blocks evolutions outright.
+
 ---
 
 ## 6. Trade while holding an item
@@ -119,6 +121,7 @@ If a region's special evolution location isn't obvious, ask in chat — most reg
 
 - **Holding an [Everstone](/evolution-items/).** This is the most common reason a Pokémon "won't evolve." Pop the [Everstone](/evolution-items/) out of the held-item slot and try again.
 - **Cancel-evolution.** When a Pokémon is about to evolve on level-up, the prompt usually accepts B / sneak to cancel — that single attempt is skipped. The next level-up will retry.
+- **Save Slot Challenge Mode: Evolution Outlaw.** If your active save slot picked the **Evolution Outlaw** challenge, every evolution path is permanently disabled on that save. Stones, trades, level-ups — none of them will trigger. Challenges are **permanent**: they can't be abandoned or completed away. The only way to remove an Evolution Outlaw save is to **delete the save slot entirely** and start fresh on a new one. Note that *every* challenge (not just Evolution Outlaw) **disables trading** for the save, which closes off trade-evolutions specifically — see [Save Slot Challenges](/save-slot-challenges/).
 
 ---
 
