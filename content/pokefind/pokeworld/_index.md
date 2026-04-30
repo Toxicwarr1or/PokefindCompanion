@@ -11,52 +11,33 @@ subtitle: "Pokéfind's main trainer gamemode — five regions, each with their o
 
 ### Kyoto — Generation 1
 
-The Kyoto Region is inhabited by the **first generation** of Pokémon (Bulbasaur through Mew, dex 1–151).
+When Jovi's brother Michael and his friends vanish into Smog Town under the spell of a stranger named Cipher, the player chases them through swamps, the Pokémon Tower and a volcano monorail, freeing each from Shadow Pokémon corruption before facing Michael's Shadow Lugia at the summit. Team Rocket grunts work the legendary-bird subplots in parallel, kidnapping each team's Zapdos / Articuno / Moltres for region-wide blackouts. Bright kid-adventure energy laced with possession-horror imagery; Cipher escapes, leaving Michael as a recurring ally and the player with a Shadow Egg.
 
-- **Server:** `poké`
-- **Tonal palette:** civic and besieged. Familiar safe spaces — Pokémon Centers, the Pokémart, towns — get violated. Authority figures (Nurse Iris, Officer Jenny) coordinate the response. Where every player's PokéWorld journey starts.
-- **Central conflict (main quests):** Team Rocket resurgence running parallel to a Cipher / Shadow-corruption arc.
-- **Signature device:** Pokégear long-distance calls ("ring ring") used to ratchet urgency from offscreen.
-- [More information →](kyoto/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
+[More information →](kyoto/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
 
 ### Jataro — Generation 2
 
-The Jataro Region is inhabited by the **first and second** generations of Pokémon (dex 1–251).
+A reformed Trudly opens a shadow portal at Zephyrus Tower, sending the player up through Cipher's Admins — Folly, Reath, Dakim, Venus, Mirror B., Nascour — toward a final lab confrontation, while a parallel Eusine arc tracks Entei, Suicune and Ho-Oh from pirate ships off Kouga Academy to a giant nest above Eerie City. Even after Cipher falls, the Roso Crystal keeps the Shadows bound to him and he slips away, leaving an unfinished win the region quietly carries forward.
 
-- **Server:** `poké2`
-- **Tonal palette:** the widest range of any region — mythic (Eusine's legendary hunt), apocalyptic (Cipher continuation), comic (Funley Theme Park), redemptive (Trudly's arc), educational (Honey's fishing tutorials). Carnival games coexist with mythic legend hunts.
-- **Central conflict:** Shadow Quest 2 picking up Cipher's thread, plus a parallel Eusine legendary-hunt arc and recurring iconic-trainer encounters (Gold, Silver, Crystal, Ash).
-- **Signature device:** procedural personality on repeatable encounters; multi-position recurring NPCs (Eusine shows up in five or six places).
-- [More information →](jataro/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
+[More information →](jataro/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
 
 ### Haikou — Generation 3
 
-The Haikou Region is inhabited by the **first, second, and third** generations of Pokémon (dex 1–386).
+The gym leaders disappear all at once, and the trail leads through Fortaare Prison — where Warden Blair, her daughter Beth, the guards and the Elite Four have all been hollowed out by Minoru's Mind Globe and her prophecy that her son Haru must burn the world and her daughter Sora wash it clean to "purify" it. The climax on Occult Island reveals Minoru as a Pokémon orchestrating the cult so its story will be told forever; even after defeat, Sora and Haru insist they still hear their mother. Melodramatic psychological horror with children weaponized into eager martyrs.
 
-- **Server:** `poké3`
-- **Tonal palette:** psychological horror with melodrama. Cult indoctrination, false prophecy, mind control. Children corrupted into eager destruction. Formal speech even at emotional peaks.
-- **Central conflict:** Minoru's cult — a legendary trainer who has manipulated gym leaders into a "purification" doomsday plot, weaponizing fire and water crystals (a Groudon / Kyogre echo).
-- **Signature device:** every defeated cult member experiences a moment of disillusionment in their loss line; the villain doesn't appear in true form until the final reveal.
-- [More information →](haikou/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
+[More information →](haikou/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
 
 ### Shiloh — Generation 4
 
-The Shiloh Region is inhabited by the **first, second, third, and fourth** generations of Pokémon (dex 1–493).
+Hemlock's friend Isaac recruits the player and rival Danielle to "discover the fabric of the universe," but he is quietly feeding Minoru's resurrected children Sora and Haru and Team Cosmic Star's General Karminrot, who use captured Lake Guardians to harness Palkia, Dialga and Giratina; each main quest pairs a staged disaster with a legendary sighting before Cynthia joins the player at a volcanic mountain. Running alongside it, Shadow Quest 5 has Cipher kidnap and brainwash the player into his Shadow champion to steal the Lustrous and Adamant Orbs and Arceus itself, until Cresselia and an old man break the conditioning. Investigative tone with a slow-burn betrayal sting.
 
-- **Server:** `poké4`
-- **Tonal palette:** investigation + crisis-management. The world *visibly* responds to the player's progress — environmental hazards (fires, floods) clear as quests advance.
-- **Central conflict:** Team Cosmic Star orchestrating natural disasters tied to legendary Pokémon. Each main quest pairs a disaster (fire, flood) with a legendary appearance (Groudon, Kyogre, Mesprit).
-- [More information →](shiloh/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
+[More information →](shiloh/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
 
 ### Zeinova — Generation 5
 
-The Zeinova Region is inhabited by **all five generations** of Pokémon (dex 1–649). This is currently the most-developed region narratively.
+A Statera-corporate Hemlock dispatches the player to a Breezelton cave to investigate an Audino, where an old man's bedtime story about a 100-year-old engineering disaster — radicals waking Kyogre and Groudon to forge new land — becomes the through-line as Team Plasma quietly captures Tornadus, Thundurus and Therian Landorus to finish that work. The climax sends the player and Danielle through sewers and a puzzle-locked Plasma HQ tower to defeat Ghetsis in a Landorus battle, after which N steps in, drops Ghetsis with a Hypno, and tells them to take the Trio and go. Restrained and atmospheric; Danielle's parting line warns the win is only for today.
 
-- **Server:** `poké5`
-- **Geography:** archipelago. Towns are on separate islands; travel is by ferry rather than road. Sparkmont Bridge is the historic exception.
-- **Tonal palette:** restrained, atmospheric, morally complex. Silence has weight. No villain monologues. No on-screen death — characters fall into comas, go missing, or are quietly contained.
-- **Central conflict (main quests 1–12):** Team Plasma's quiet resurgence under Ghetsis. The Weather Trio (Tornadus, Thundurus, Landorus) is captured along the way; the climax at Plasma HQ has N put Ghetsis into indefinite sleep with a Hypno. The player walks out with one of the three Weather Trio members.
-- [More information →](zeinova/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
+[More information →](zeinova/) — recurring NPC locations: iconic trainers, Mystery Man, move tutors.
 
 ---
 

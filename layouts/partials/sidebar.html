@@ -29,7 +29,7 @@
 {{- /* Guides group: shared sidebar across the /guides/ landing page and
        the migrated subsections (/quests/ and /gym-teams/). Add new guide
        sections here as the corpus grows. */ -}}
-{{ $inGuidesGroup := or (eq $section "guides") (or (eq $section "quests") (or (eq $section "gym-teams") (or (eq $section "type-chart") (eq $section "shadow")))) }}
+{{ $inGuidesGroup := or (eq $section "guides") (or (eq $section "quests") (or (eq $section "gym-teams") (or (eq $section "type-chart") (or (eq $section "shadow") (eq $section "how-to"))))) }}
 {{ if $inGuidesGroup }}
 <nav class="section-nav" aria-label="Section">
   <h4>Guides</h4>
@@ -38,11 +38,14 @@
     <li><a href="{{ "/gym-teams/"  | relURL }}"{{ if eq $section "gym-teams"  }} class="active"{{ end }}>Gym Teams</a></li>
     <li><a href="{{ "/type-chart/" | relURL }}"{{ if eq $section "type-chart" }} class="active"{{ end }}>Type Chart</a></li>
     <li><a href="{{ "/shadow/"     | relURL }}"{{ if eq $section "shadow"     }} class="active"{{ end }}>Shadow</a></li>
+    <li><a href="{{ "/how-to/"     | relURL }}"{{ if eq $section "how-to"     }} class="active"{{ end }}>How To</a></li>
   </ul>
 </nav>
 {{ end }}
 {{ with .Site.GetPage (printf "/%s" $section) }}
-{{ $pages := .Pages.ByTitle }}
+{{- /* How To pages use frontmatter `weight` to control sidebar order so
+       "Join on Java" lands first; other sections still sort alphabetically. */ -}}
+{{ $pages := cond (eq $section "how-to") .Pages.ByWeight .Pages.ByTitle }}
 {{ $isLong := gt (len $pages) 30 }}
 
 {{ if $isLong }}
