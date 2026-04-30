@@ -13,13 +13,15 @@
 {{- /* Pokedex group: a single sidebar shared by /pokedex/ and /moves/.
        Header reads "Pokedex"; two tabs route between the two lists. The
        FAB+overlay below still renders so the long entry list is searchable. */ -}}
-{{ $inPokedexGroup := or (eq $section "pokedex") (or (eq $section "skins") (or (eq $section "moves") (or (eq $section "damage-calc") (eq $section "team-builder")))) }}
+{{ $inPokedexGroup := or (eq $section "pokedex") (or (eq $section "skins") (or (eq $section "moves") (or (eq $section "damage-calc") (or (eq $section "team-builder") (or (eq $section "items") (eq $section "evolution-items")))))) }}
 {{ if $inPokedexGroup }}
 <nav class="section-nav" aria-label="Section">
   <h4>Pokédex</h4>
   <ul>
     <li><a href="{{ "/pokedex/" | relURL }}"{{ if eq $section "pokedex" }} class="active"{{ end }}>Pokédex</a></li>
     <li><a href="{{ "/skins/"   | relURL }}"{{ if eq $section "skins"   }} class="active"{{ end }}>Skindex</a></li>
+    <li><a href="{{ "/items/"   | relURL }}"{{ if eq $section "items"   }} class="active"{{ end }}>Pokémon Items</a></li>
+    <li><a href="{{ "/evolution-items/" | relURL }}"{{ if eq $section "evolution-items" }} class="active"{{ end }}>Evolution Items</a></li>
     <li><a href="{{ "/moves/" | relURL }}"{{ if eq $section "moves" }} class="active"{{ end }}>Moves &amp; Abilities</a></li>
     <li><a href="{{ "/damage-calc/" | relURL }}"{{ if eq $section "damage-calc" }} class="active"{{ end }}>Damage Calc</a></li>
     <li><a href="{{ "/team-builder/" | relURL }}"{{ if eq $section "team-builder" }} class="active"{{ end }}>Team Builder</a></li>
