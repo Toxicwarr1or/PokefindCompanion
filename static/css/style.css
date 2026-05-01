@@ -2951,3 +2951,66 @@ pre, code { max-width: 100%; }
     .stat-table, .learnset-table { font-size: 0.8rem; }
     .form-tab { padding: 0.3rem 0.55rem; font-size: 0.8rem; }
 }
+
+/* Suggestions page — Google Form iframe container */
+.form-embed {
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid var(--border, #2a2f37);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface, #1c1f24);
+}
+.form-embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
+
+/* Pokédex skin filter — collapsible chip-row */
+.dex-skin-filter-wrap {
+  width: 100%;
+  margin-top: 0.4rem;
+}
+.dex-skin-filter-wrap > summary {
+  cursor: pointer;
+  padding: 0.35rem 0.7rem;
+  background: var(--surface, #1c1f24);
+  border: 1px solid var(--border, #2a2f37);
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.85rem;
+  user-select: none;
+}
+.dex-skin-filter-wrap[open] > summary {
+  margin-bottom: 0.5rem;
+}
+.dex-skin-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.4rem 0;
+}
+.dex-skin-filter button {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.6rem;
+  background: transparent;
+  border: 1px solid var(--border, #2a2f37);
+  border-radius: 999px;
+  color: inherit;
+  cursor: pointer;
+}
+.dex-skin-filter button.active {
+  background: var(--brand, #3eb045);
+  border-color: var(--brand, #3eb045);
+  color: #fff;
+}
+.dex-skin-filter-clear {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.7rem;
+  background: transparent;
+  border: 1px dashed var(--border, #2a2f37);
+  border-radius: 6px;
+  color: inherit;
+  cursor: pointer;
+}

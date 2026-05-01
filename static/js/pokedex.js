@@ -26,13 +26,15 @@
         });
     }
 
-    // ---------- Pokedex list sort + search + anim filter ----------
+    // ---------- Pokedex list sort + search + anim/skin filter ----------
     function initDexList() {
         const grid = document.getElementById('dex-grid');
         if (!grid) return;
         const cards = Array.from(grid.querySelectorAll('.dex-card'));
         const sortButtons = document.querySelectorAll('.dex-sort button');
         const filterButtons = document.querySelectorAll('.dex-filter button');
+        const skinFilterButtons = document.querySelectorAll('.dex-skin-filter button');
+        const skinFilterClear = document.querySelector('.dex-skin-filter-clear');
         const search = document.getElementById('dex-search');
         const visibleCount = document.getElementById('dex-visible');
 
@@ -58,14 +60,29 @@
             return set;
         }
 
+        function activeSkinFilters() {
+            const set = new Set();
+            skinFilterButtons.forEach(function (btn) {
+                if (btn.classList.contains('active')) set.add(btn.getAttribute('data-skin-filter'));
+            });
+            return set;
+        }
+
         function applyFilter() {
             const q = (search ? search.value : '').trim().toLowerCase();
             const anims = activeAnimFilters();
+            const skins = activeSkinFilters();
             let shown = 0;
             cards.forEach(function (c) {
                 const matchName = !q || c.dataset.name.indexOf(q) !== -1;
                 const matchAnim = anims.size === 0 || anims.has(c.dataset.anim || 'static');
-                const visible = matchName && matchAnim;
+                let matchSkin = true;
+                if (skins.size > 0) {
+                    const cardSkins = (c.dataset.skins || '').split(/\s+/).filter(Boolean);
+                    // OR semantics: card matches if it has ANY of the selected skins
+                    matchSkin = cardSkins.some(function (s) { return skins.has(s); });
+                }
+                const visible = matchName && matchAnim && matchSkin;
                 c.style.display = visible ? '' : 'none';
                 if (visible) shown += 1;
             });
@@ -88,6 +105,25 @@
                 applyFilter();
             });
         });
+
+        skinFilterButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const on = !btn.classList.contains('active');
+                btn.classList.toggle('active', on);
+                btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+                applyFilter();
+            });
+        });
+
+        if (skinFilterClear) {
+            skinFilterClear.addEventListener('click', function () {
+                skinFilterButtons.forEach(function (btn) {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
+                applyFilter();
+            });
+        }
 
         if (search) {
             search.addEventListener('input', applyFilter);
