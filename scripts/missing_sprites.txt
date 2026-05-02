@@ -231,7 +231,6 @@ Pineco
 Forretress
 Jataro Forretress
 Dunsparce
-Jataro Dunsparce
 Gligar
 Steelix
 Jataro Steelix

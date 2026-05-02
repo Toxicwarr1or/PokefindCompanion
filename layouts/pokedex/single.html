@@ -81,12 +81,20 @@
     {{ end }}
   {{ end }}
 
+  {{/* Skin-gated form tabs: a form whose frontmatter declares
+        `skin_gate: '<key>'` is hidden by default and only revealed when the
+        Standard form's `<key>` skin chip is active (rendered as a special
+        gate chip — see the chip-render block below). Used for Pichu /
+        Pikachu / Raichu Surfing tabs which surface only after the user
+        selects the Summer chip. The `hidden` attribute starts them
+        non-rendered; pokedex.js toggles it from the gate chip click. */}}
   {{ if and $forms (gt (len $forms) 1) }}
   <nav class="form-tabs" role="tablist">
     {{ range $i, $f := $forms }}
     <button class="form-tab{{ if eq $i 0 }} active{{ end }}"
             role="tab"
             data-form-index="{{ $i }}"
+            {{ with $f.skin_gate }}data-skin-gate="{{ . }}" hidden{{ end }}
             aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
       {{ $f.name }}
     </button>
@@ -141,6 +149,17 @@
   {{/* Meloetta Pirouette form. Standard (Aria) is the default regular slot;
         Pirouette gets its own pirouette/pirouette_shiny output dirs. */}}
   {{ if eq $f.name "Pirouette" }}{{ $variant = "pirouette" }}{{ end }}
+  {{/* Burmy / Wormadam cloak forms. Plant is the default regular slot
+        (form-index-0 already does this); Sandy and Trash get their own
+        sandy/sandy_shiny and trash/trash_shiny output dirs (staged from
+        the pack's *_sandy.json / *_trash.json model files). */}}
+  {{ if eq $f.name "Sandy" }}{{ $variant = "sandy" }}{{ end }}
+  {{ if eq $f.name "Trash" }}{{ $variant = "trash" }}{{ end }}
+  {{/* Pichu Surfing forms. Five distinct in-game outfits (Ash Hat,
+        Azumarill, Green, Pink, Pokeball) routed to surfing_1/.../surfing_5.
+        Form names are "Surfing 1" .. "Surfing N"; the variant key is
+        derived by lowercasing and replacing the space with underscore. */}}
+  {{ if hasPrefix $f.name "Surfing " }}{{ $variant = lower (replace $f.name " " "_") }}{{ end }}
   {{/* Region forms route to the anniversary skin's output directory. */}}
   {{ if in $regionForms $f.name }}{{ $variant = "anniversary" }}{{ end }}
   {{/* Other cosmetic-skin forms: any form whose `name` matches a cosmetic
@@ -160,7 +179,7 @@
         — other cosmetic skins don't apply on those forms. */}}
   {{ $baseLabel := "Regular" }}
   {{ if eq $variant "anniversary" }}{{ $baseLabel = "Anniversary" }}{{ end }}
-  {{ if and $variant (or (eq $variant "regular") (eq $variant "female") (eq $variant "anniversary") (eq $variant "east") (eq $variant "blue") (eq $variant "pirouette")) }}
+  {{ if and $variant (or (eq $variant "regular") (eq $variant "female") (eq $variant "anniversary") (eq $variant "east") (eq $variant "blue") (eq $variant "pirouette") (eq $variant "sandy") (eq $variant "trash") (eq $variant "alolan") (eq $variant "galarian") (eq $variant "origin")) }}
     {{ range site.Data.cosmetic_skins }}
       {{ $skin := .key }}
       {{ $dir := $skin }}
@@ -173,7 +192,22 @@
       {{ if and (eq $variant "east") (eq $skin "shiny") }}{{ $dir = "east_shiny" }}{{ end }}
       {{ if and (eq $variant "blue") (eq $skin "shiny") }}{{ $dir = "blue_shiny" }}{{ end }}
       {{ if and (eq $variant "pirouette") (eq $skin "shiny") }}{{ $dir = "pirouette_shiny" }}{{ end }}
-      {{ $allowed := or (eq $variant "regular") (eq $skin "shiny") }}
+      {{ if and (eq $variant "sandy")     (eq $skin "shiny") }}{{ $dir = "sandy_shiny" }}{{ end }}
+      {{ if and (eq $variant "trash")     (eq $skin "shiny") }}{{ $dir = "trash_shiny" }}{{ end }}
+      {{/* Alolan / Galarian tabs pull reskins from `<form>_<skin>/` so the
+            regional body (not the standard one) is the canvas — e.g. the
+            Alolan-only Sandslash christmas overlay lives at
+            `alolan_christmas/sandslash/`, and Alolan/Galarian shiny variants
+            live at `alolan_shiny/` / `galarian_shiny/`. fileExists on the
+            per-skin path naturally filters out skins the pack didn't
+            author for that body. */}}
+      {{ if eq $variant "alolan" }}{{ $dir = printf "alolan_%s" $skin }}{{ end }}
+      {{ if eq $variant "galarian" }}{{ $dir = printf "galarian_%s" $skin }}{{ end }}
+      {{/* Giratina Origin tab pulls chips from `origin_<skin>/` so the
+            Origin Forme body is the canvas (separate from Altered's
+            `<skin>/giratina/`). Currently exposes Shiny + Summer. */}}
+      {{ if eq $variant "origin" }}{{ $dir = printf "origin_%s" $skin }}{{ end }}
+      {{ $allowed := or (eq $variant "regular") (eq $skin "shiny") (eq $variant "alolan") (eq $variant "galarian") (eq $variant "origin") }}
       {{ $hasOwnFormTab := in $skinsClaimedByForms $skin }}
       {{ $path := printf "static/models-3d/%s/%s/%s.json" $dir $slug $slug }}
       {{ if and $allowed (not $hasOwnFormTab) (fileExists $path) }}
@@ -186,7 +220,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  <section class="form-panel{{ if eq $i 0 }} active{{ end }}" data-form-index="{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
+  <section class="form-panel{{ if eq $i 0 }} active{{ end }}" data-form-index="{{ $i }}"{{ if or (ne $i 0) $f.skin_gate }} hidden{{ end }}{{ with $f.skin_gate }} data-skin-gate="{{ . }}"{{ end }}>
     <div class="dex-profile">
       <div class="dex-visuals">
         <div class="sprite">
@@ -259,7 +293,21 @@
             {{ if not (in $coveredLabels (lower .)) }}{{ $extraSkins = $extraSkins | append . }}{{ end }}
           {{ end }}
         {{ end }}
-        {{ if or (gt (len $availableSkins) 0) (gt (len $extraSkins) 0) }}
+        {{/* Skin-gate chips: collect every distinct `skin_gate` declared
+              by sibling forms, and on the Standard form panel emit a chip
+              for each one. Clicking a gate chip toggles visibility of the
+              gated form tabs/panels (handled by pokedex.js). The chip's
+              label uses the cosmetic_skins.yaml display label when the
+              gate key matches a known skin. */}}
+        {{ $gateChips := slice }}
+        {{ if eq $i 0 }}
+          {{ range $forms }}
+            {{ with .skin_gate }}
+              {{ if not (in $gateChips .) }}{{ $gateChips = $gateChips | append . }}{{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if or (gt (len $availableSkins) 0) (gt (len $extraSkins) 0) (gt (len $gateChips) 0) }}
         <dt>Available Skins</dt>
         <dd class="skins-inline" role="tablist" aria-label="Model skin">
           {{ if gt (len $availableSkins) 0 }}
@@ -267,6 +315,17 @@
           {{ range $availableSkins }}
             <button type="button" class="mc-skin-btn skin-chip" data-skin="{{ . }}" aria-selected="false">{{ index $skinLabels . }}</button>
           {{ end }}
+          {{ end }}
+          {{ range $gateChips }}
+            {{ $gateKey := . }}
+            {{ $gateLabel := title $gateKey }}
+            {{ range site.Data.cosmetic_skins }}
+              {{ if eq .key $gateKey }}{{ $gateLabel = .label }}{{ end }}
+            {{ end }}
+            <button type="button" class="mc-skin-btn skin-chip mc-skin-gate"
+                    data-skin-gate="{{ $gateKey }}"
+                    aria-selected="false"
+                    title="Reveal {{ $gateLabel }} form tabs">{{ $gateLabel }}</button>
           {{ end }}
           {{ range $extraSkins }}
             <span class="skin-chip skin-chip-info" title="Skin exists in-game; 3D model not yet bundled here">{{ . }}</span>

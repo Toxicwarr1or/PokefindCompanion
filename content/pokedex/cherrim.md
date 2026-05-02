@@ -348,7 +348,7 @@ forms:
     kind: 'form'
     types: ['Grass']
     abilities: ['Flower Gift']
-    sprite: ''
+    sprite: 'images/pokedex/cherrim-sunshine.png'
     egg_groups: ['grass', 'fairy']
     growth_rate: 'medium_fast'
     height_m: 0.5

@@ -446,7 +446,7 @@ forms:
     kind: 'form'
     types: ['Normal', 'Grass']
     abilities: ['Chlorophyll']
-    sprite: ''
+    sprite: 'images/pokedex/deerling-summer.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.6
@@ -463,7 +463,7 @@ forms:
     kind: 'form'
     types: ['Normal', 'Grass']
     abilities: ['Chlorophyll']
-    sprite: ''
+    sprite: 'images/pokedex/deerling-autumn.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.6
@@ -480,7 +480,7 @@ forms:
     kind: 'form'
     types: ['Normal', 'Grass']
     abilities: ['Chlorophyll']
-    sprite: ''
+    sprite: 'images/pokedex/deerling-winter.png'
     egg_groups: ['field']
     growth_rate: 'medium_fast'
     height_m: 0.6

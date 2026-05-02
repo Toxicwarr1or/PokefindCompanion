@@ -488,6 +488,23 @@ def gather_supplementary_bones(species: str, skin: str,
     `<bone>_<n>` when there's more than one)."""
     if not PACK_BM_MODELS.is_dir():
         return []
+    # When the bbmodel is itself a regional-form variant (alolan_exeggutor,
+    # galarian_weezing, …), the BetterModel exporter ships a *doubled-up*
+    # set of part files for cosmetic-skin variants whose bone names are
+    # prefixed with the form's in-game token (e.g.
+    # `galarian_weezing_v_shiny_galarian_body_1.json` next to
+    # `galarian_weezing_v_shiny_body_1.json`). Both encode the same body
+    # geometry; ingesting both adds one full duplicate skeleton at the
+    # top level. Identify the species's form token so we can drop the
+    # `<token>_*` duplicates below. Tokens differ from the bbmodel filename
+    # prefix (alolan → alola, hisuian → hisui).
+    DOUBLED_FORM_TOKENS = {"alolan": "alola", "galarian": "galarian", "hisuian": "hisui"}
+    species_form_token: str | None = None
+    for prefix_form, doubled in DOUBLED_FORM_TOKENS.items():
+        if species.startswith(prefix_form + "_"):
+            species_form_token = doubled
+            break
+
     prefix = f"{species}_" + (f"v_{skin}_" if skin != "regular" else "")
     # The pattern matches part files for this (species, skin). We exclude
     # part files for OTHER skins by ensuring the path between species and
@@ -514,6 +531,13 @@ def gather_supplementary_bones(species: str, skin: str,
         if bone_part == "hitbox":
             continue
         if bone_part == species:
+            continue
+        # Drop the doubled-up `<form_token>_<bone>_<n>` part files described
+        # above. These re-emit the bbmodel walk's body cubes verbatim
+        # under prefixed names, so they'd land as orphan top-level bones
+        # alongside the legitimate body tree (visible as cluttered duplicate
+        # geometry in the viewer).
+        if species_form_token and bone_part.startswith(species_form_token + "_"):
             continue
         if bone_part in existing_names:
             continue
@@ -846,17 +870,28 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
     if not base_bones:
         return {"regular": "no-root"}
     statuses: dict[str, str] = {}
+    # Output-dir routing helper. Cosmetic skins on the base (regular) form
+    # variant land at `<skin>/<slug>/` (christmas/<slug>/, …). Regional form
+    # variants (alolan/galarian/hisuian) get the `<variant>/` slot for their
+    # own base skin and `<variant>_<skin>/` for cosmetic reskins of the
+    # regional body — e.g. Alolan Exeggutor's thanksgiving texture stages
+    # to `alolan_thanksgiving/exeggutor/exeggutor.json`. Layout in
+    # pokedex/single.html maps `<variant> + <skin>` chips to those paths.
+    def _out_dir_for(skin_name: str) -> Path:
+        if skin_name == "regular":
+            return OUT_BASE / variant / slug
+        return OUT_BASE / (skin_name if variant == "regular" else f"{variant}_{skin_name}") / slug
+
     for skin in SKINS:
-        # Skin-as-overlay variants (shiny, aura) only ship for the base
-        # `regular` form variant — alolan/galarian forms don't have shipped
-        # aura/shiny atlases in the pack.
-        if skin != "regular" and variant != "regular":
-            continue
         # Honor the species's frontmatter `skins:` list — the server's
         # truth source for which skins are actually implemented. The pack
         # may ship a texture (e.g. anniversary Mew) that the server hasn't
         # released; we don't want to stage those as interactive chips.
-        if allowed_skins is not None and skin not in allowed_skins:
+        # The frontmatter is per-species, scoped to the base form, so we
+        # only consult it for regular-form staging — regional variants
+        # (alolan/galarian) trust pack presence as the gate, since the
+        # species-level skins list doesn't enumerate per-form availability.
+        if variant == "regular" and allowed_skins is not None and skin not in allowed_skins:
             continue
 
         # If this (species, skin) is in PART_FILE_OVERRIDES, build the
@@ -865,7 +900,7 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
         # geometry than the bbmodel's body (Rotom meme).
         override_parts = PART_FILE_OVERRIDES.get((species, skin))
         if override_parts is not None:
-            out_dir = OUT_BASE / skin / slug
+            out_dir = _out_dir_for(skin)
             statuses[skin] = stage_from_part_files(species, skin, slug, out_dir,
                                                    override_parts)
             continue
@@ -912,7 +947,7 @@ def stage_one(bb_path: Path, pokedex_pages: set[str]) -> dict[str, str]:
         # skin via their parent group) don't leak onto every variant.
         existing_names = collect_bone_names(bones_payload) | collect_all_bbmodel_bone_names(bb)
         bones_payload.extend(gather_supplementary_bones(species, skin, existing_names))
-        out_dir = (OUT_BASE / skin / slug) if skin != "regular" else (OUT_BASE / variant / slug)
+        out_dir = _out_dir_for(skin)
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / f"{slug}.json").write_text(
             json.dumps({"textures": textures, "bones": bones_payload})

@@ -3,7 +3,7 @@ title: 'Klink'
 subtitle: 'The two minigears that mesh together are predetermined. Each will rebound from other minigears without meshing.'
 date: 2026-04-28
 dex_number: '599'
-skins: ['Shiny', 'Easter', 'Aura']
+skins: ['Shiny', 'Easter']
 forms:
   - name: 'Standard'
     kind: 'form'

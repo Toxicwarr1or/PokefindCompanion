@@ -3,7 +3,7 @@ title: 'Litwick'
 subtitle: 'Litwick shines a light that absorbs the life energy of people and Pokémon, which becomes the fuel that it burns.'
 date: 2026-04-28
 dex_number: '607'
-skins: ['Shiny', 'Christmas', 'Thanksgiving']
+skins: ['Shiny', 'Thanksgiving']
 forms:
   - name: 'Standard'
     kind: 'form'

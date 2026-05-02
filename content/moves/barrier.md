@@ -12,7 +12,6 @@ generation: 'Gen 1'
 target: 'User'
 effect: 'The user throws up a sturdy wall that sharply raises its Defense stat.'
 learners_level:
-  - { name: 'Jataro Dunsparce', level: '0' }
   - { name: 'Zeinova Musharna', level: '0' }
   - { name: 'Kyoto Alakazam', level: '1' }
   - { name: 'Magnezone', level: '1' }

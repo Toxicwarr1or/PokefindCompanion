@@ -13,7 +13,6 @@ target: 'User'
 effect: 'The user temporarily empties its mind to forget its concerns. This sharply raises the user''s Sp. Def stat.'
 learners_level:
   - { name: 'Jataro Crobat', level: '0' }
-  - { name: 'Jataro Dunsparce', level: '0' }
   - { name: 'Kyoto Tentacruel', level: '0' }
   - { name: 'Zeinova Hydreigon', level: '0' }
   - { name: 'Zeinova Musharna', level: '0' }

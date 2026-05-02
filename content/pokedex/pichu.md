@@ -3,7 +3,7 @@ title: 'Pichu'
 subtitle: 'It is not yet skilled at storing electricity. It may send out a jolt if amused or startled.'
 date: 2026-04-28
 dex_number: '172'
-skins: ['Shiny', 'Summer']
+skins: ['Shiny']
 forms:
   - name: 'Standard'
     kind: 'form'
@@ -403,6 +403,101 @@ forms:
         slug: 'raichu'
         depth: 2
         method: 'Use Thunder Stone'
+  - name: 'Surfing 1'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pichu.png'
+    egg_groups: ['undiscovered']
+    growth_rate: 'medium_fast'
+    height_m: 0.3
+    weight_kg: 2
+    note: 'Surfing — Ash Hat outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 20
+      atk: 40
+      def: 15
+      spa: 35
+      spd: 35
+      spe: 60
+  - name: 'Surfing 2'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pichu.png'
+    egg_groups: ['undiscovered']
+    growth_rate: 'medium_fast'
+    height_m: 0.3
+    weight_kg: 2
+    note: 'Surfing — Azumarill float outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 20
+      atk: 40
+      def: 15
+      spa: 35
+      spd: 35
+      spe: 60
+  - name: 'Surfing 3'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pichu.png'
+    egg_groups: ['undiscovered']
+    growth_rate: 'medium_fast'
+    height_m: 0.3
+    weight_kg: 2
+    note: 'Surfing — Green outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 20
+      atk: 40
+      def: 15
+      spa: 35
+      spd: 35
+      spe: 60
+  - name: 'Surfing 4'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pichu.png'
+    egg_groups: ['undiscovered']
+    growth_rate: 'medium_fast'
+    height_m: 0.3
+    weight_kg: 2
+    note: 'Surfing — Pink outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 20
+      atk: 40
+      def: 15
+      spa: 35
+      spd: 35
+      spe: 60
+  - name: 'Surfing 5'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pichu.png'
+    egg_groups: ['undiscovered']
+    growth_rate: 'medium_fast'
+    height_m: 0.3
+    weight_kg: 2
+    note: 'Surfing — Pokeball outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 20
+      atk: 40
+      def: 15
+      spa: 35
+      spd: 35
+      spe: 60
 region: ''
 anniversary: ''
 tier: ''

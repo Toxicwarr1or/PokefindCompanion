@@ -542,7 +542,7 @@ forms:
     kind: 'form'
     types: ['Bug', 'Steel']
     abilities: ['Download']
-    sprite: ''
+    sprite: 'images/pokedex/genesect-burn.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.5
@@ -559,7 +559,7 @@ forms:
     kind: 'form'
     types: ['Bug', 'Steel']
     abilities: ['Download']
-    sprite: ''
+    sprite: 'images/pokedex/genesect-chill.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.5
@@ -576,7 +576,7 @@ forms:
     kind: 'form'
     types: ['Bug', 'Steel']
     abilities: ['Download']
-    sprite: ''
+    sprite: 'images/pokedex/genesect-douse.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.5
@@ -593,7 +593,7 @@ forms:
     kind: 'form'
     types: ['Bug', 'Steel']
     abilities: ['Download']
-    sprite: ''
+    sprite: 'images/pokedex/genesect-shock.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.5

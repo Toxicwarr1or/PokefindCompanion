@@ -8,9 +8,13 @@ deployed to Cloudflare Pages. Companion to the WarriorToxic YouTube channel.
 Requires Hugo extended ≥ 0.123.
 
 ```bash
-hugo server          # local dev server with live reload at :1313
+./dev.sh             # local dev server with live reload at :1717 (LAN-bound)
 hugo --minify        # production build → public/
 ```
+
+`dev.sh` is the canonical launcher; pass `HUGO_HOST_IP=<ip>` to override the
+LAN baseURL host. Port 1717 is fixed there — change it in `dev.sh` if you
+ever need to move it again.
 
 ## Cloudflare Pages build settings
 

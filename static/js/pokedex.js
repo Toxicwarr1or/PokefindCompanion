@@ -9,9 +9,48 @@
         const tabs = document.querySelectorAll('.form-tab');
         if (!tabs.length) return;
         const panels = document.querySelectorAll('.form-panel');
+
+        // Skin-gated forms (e.g. Pichu/Pikachu/Raichu Surfing tabs) are
+        // hidden until their gate chip is activated. Single source of truth
+        // for the active gate (or null when no gate is engaged).
+        let activeGate = null;
+
+        function applyGateVisibility() {
+            tabs.forEach(function (t) {
+                const gate = t.getAttribute('data-skin-gate');
+                if (!gate) return;
+                if (gate === activeGate) t.removeAttribute('hidden');
+                else t.setAttribute('hidden', '');
+            });
+            // Gated panels are always `hidden` unless they're the active
+            // form. The form-tab click handler removes `hidden` when the
+            // user actually selects the tab; until then they stay hidden
+            // even after their gate is revealed.
+            panels.forEach(function (p) {
+                const gate = p.getAttribute('data-skin-gate');
+                if (!gate) return;
+                if (gate !== activeGate || !p.classList.contains('active')) {
+                    p.setAttribute('hidden', '');
+                }
+            });
+        }
+
+        function setGateChipState(newGate) {
+            activeGate = newGate;
+            gateChips.forEach(function (c) {
+                const isActive = c.getAttribute('data-skin-gate') === newGate;
+                c.classList.toggle('active', isActive);
+                c.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+            applyGateVisibility();
+        }
+
         tabs.forEach(function (tab) {
             tab.addEventListener('click', function () {
                 const idx = tab.getAttribute('data-form-index');
+                const tabGate = tab.getAttribute('data-skin-gate');
+                const previousGate = activeGate;
+
                 tabs.forEach(function (t) {
                     const active = t.getAttribute('data-form-index') === idx;
                     t.classList.toggle('active', active);
@@ -22,8 +61,52 @@
                     p.classList.toggle('active', active);
                     if (active) p.removeAttribute('hidden'); else p.setAttribute('hidden', '');
                 });
+
+                // Transitioning out of a gated form (e.g. Surfing N) by
+                // clicking a non-gated tab (e.g. Standard) deactivates the
+                // gate AND resets the new panel's skin selector to Regular.
+                // This is the only path that auto-resets the chip — clicks
+                // on individual skin chips don't touch the gate.
+                if (previousGate !== null && !tabGate) {
+                    setGateChipState(null);
+                    const newActivePanel = document.querySelector('.form-panel.active');
+                    if (newActivePanel) {
+                        const regularChip = newActivePanel.querySelector(
+                            '.mc-skin-btn[data-skin="regular"]:not(.mc-skin-gate)'
+                        );
+                        if (regularChip) regularChip.click();
+                    }
+                }
             });
         });
+
+        // Skin-gate chips live in the Standard panel's `.skins-inline` row
+        // alongside Regular/Shiny/etc.
+        //   - Clicking a gate chip activates the gate, reveals matching
+        //     gated tabs, AND auto-switches to the first matching tab
+        //     (e.g. Summer → Surfing 1).
+        //   - Clicking it again falls through to a Standard-tab click,
+        //     which the form-tab handler above interprets as the
+        //     gate-clear + reset-to-Regular transition.
+        const gateChips = document.querySelectorAll('.mc-skin-gate');
+
+        gateChips.forEach(function (chip) {
+            chip.addEventListener('click', function () {
+                const gate = chip.getAttribute('data-skin-gate');
+                if (activeGate === gate) {
+                    const standardTab = document.querySelector('.form-tab[data-form-index="0"]');
+                    if (standardTab) standardTab.click();
+                    return;
+                }
+                setGateChipState(gate);
+                const firstGatedTab = document.querySelector(
+                    '.form-tab[data-skin-gate="' + gate + '"]'
+                );
+                if (firstGatedTab) firstGatedTab.click();
+            });
+        });
+
+        applyGateVisibility();
     }
 
     // ---------- Pokedex list sort + search + anim/skin filter ----------

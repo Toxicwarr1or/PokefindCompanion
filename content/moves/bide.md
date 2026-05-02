@@ -13,7 +13,6 @@ generation: 'Gen 1'
 target: 'User'
 effect: 'The user endures attacks for two turns, then strikes back to cause double the damage taken.'
 learners_level:
-  - { name: 'Jataro Dunsparce', level: '0' }
   - { name: 'Beartic', level: '1' }
   - { name: 'Carracosta', level: '1' }
   - { name: 'Flygon', level: '1' }

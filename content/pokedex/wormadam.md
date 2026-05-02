@@ -427,7 +427,7 @@ forms:
     kind: 'form'
     types: ['Bug', 'Ground']
     abilities: ['Anticipation']
-    sprite: ''
+    sprite: 'images/pokedex/wormadam-sandy.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 0.5
@@ -444,7 +444,7 @@ forms:
     kind: 'form'
     types: ['Bug', 'Steel']
     abilities: ['Anticipation']
-    sprite: ''
+    sprite: 'images/pokedex/wormadam-trash.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 0.5

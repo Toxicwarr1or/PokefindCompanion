@@ -542,6 +542,101 @@ forms:
         slug: 'raichu'
         depth: 2
         method: 'Use Thunder Stone'
+  - name: 'Surfing 1'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pikachu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.4
+    weight_kg: 6
+    note: 'Surfing — Ash Hat outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 35
+      atk: 55
+      def: 40
+      spa: 50
+      spd: 50
+      spe: 90
+  - name: 'Surfing 2'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pikachu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.4
+    weight_kg: 6
+    note: 'Surfing — Azumarill float outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 35
+      atk: 55
+      def: 40
+      spa: 50
+      spd: 50
+      spe: 90
+  - name: 'Surfing 3'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pikachu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.4
+    weight_kg: 6
+    note: 'Surfing — Green outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 35
+      atk: 55
+      def: 40
+      spa: 50
+      spd: 50
+      spe: 90
+  - name: 'Surfing 4'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pikachu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.4
+    weight_kg: 6
+    note: 'Surfing — Pink outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 35
+      atk: 55
+      def: 40
+      spa: 50
+      spd: 50
+      spe: 90
+  - name: 'Surfing 5'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/pikachu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.4
+    weight_kg: 6
+    note: 'Surfing — Pokeball outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 35
+      atk: 55
+      def: 40
+      spa: 50
+      spd: 50
+      spe: 90
 region: ''
 anniversary: ''
 tier: ''

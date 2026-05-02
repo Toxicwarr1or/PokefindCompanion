@@ -429,7 +429,7 @@ forms:
     types: ['Poison', 'Fairy']
     abilities: ['Levitate', 'Queenly Majesty']
     hidden_ability: 'Corrosion'
-    sprite: ''
+    sprite: 'images/pokedex/vespiquen-shiloh.png'
     egg_groups: ['bug']
     growth_rate: 'medium_slow'
     height_m: 1.2

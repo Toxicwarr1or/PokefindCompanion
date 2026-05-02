@@ -3,7 +3,7 @@ title: 'Marowak'
 subtitle: 'The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.'
 date: 2026-04-28
 dex_number: '105'
-skins: ['Shiny', 'Christmas', 'Shadow']
+skins: ['Shiny', 'Shadow']
 forms:
   - name: 'Standard'
     kind: 'form'

@@ -12,7 +12,6 @@ generation: 'Gen 2'
 target: 'Selected Pokémon'
 effect: 'The user gazes at the target rather charmingly, making it less wary. This harshly lowers its Attack stat.'
 learners_level:
-  - { name: 'Jataro Dunsparce', level: '0' }
   - { name: 'Jataro Kingdra', level: '0' }
   - { name: 'Zeinova Gothitelle', level: '0' }
   - { name: 'Zeinova Musharna', level: '0' }

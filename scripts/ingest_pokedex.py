@@ -135,6 +135,54 @@ BETTERMODEL_SKIN_ALIAS = {
 # Form prefixes that map to the anniversary icon set in the pack.
 ANNIVERSARY_PREFIXES = {"Kyoto", "Jataro", "Haikou", "Shiloh", "Zeinova"}
 
+# Cosmetic skins that exist in the resource pack but are gated to a regional
+# (Alolan / Galarian) form's body, not the standard form. The pack ships
+# these as `pokemon_skins/<skin>/<dex>_<species>_<region>.json` (the
+# texture-dir heuristic flags the skin for the standard species), but the
+# model only applies on the regional body. Excluded from the *base*
+# species's `skins:` list so the Standard tab doesn't surface a chip/badge
+# with no model behind it. Layout's Alolan / Galarian tab handles the chip
+# via `alolan_<skin>/` / `galarian_<skin>/` staging (see stage_models_3d's
+# SLUG_OVERRIDES). Keep this set in sync with that file.
+# Cosmetic skins detected in the resource pack but suppressed on the base
+# species's `skins:` list because the in-game effect doesn't translate to a
+# 3D-viewer chip. Canonical case: aura — the in-game aura is a separate
+# particle system, not a body recolor; the static stager's visual-difference
+# filter rejects these models (only `particle`/auxiliary texture keys are
+# overridden, no element face references them), so the chip would otherwise
+# render as an empty "skin exists in-game; 3D model not yet bundled here"
+# placeholder. Add (species, skin) pairs here as users surface them.
+NO_VISIBLE_MODEL_COSMETICS = {
+    # Aura: in-game effect is a particle system, not a body recolor —
+    # staged models would be no-ops or near-identical reskins.
+    ("Weezing",   "aura"),
+    ("Mudkip",    "aura"),
+    ("Klink",     "aura"),
+    ("Klang",     "aura"),
+    ("Klinklang", "aura"),
+    # Texture-only assets (no model JSON in the pack) — would surface as an
+    # empty info chip on the Standard tab.
+    ("Krookodile", "valentine"),
+    ("Trubbish",   "halloween"),
+    ("Litwick",    "christmas"),
+}
+
+REGIONAL_ONLY_COSMETICS = {
+    # The pack ships a `<skin>/<dex>_<species>_<region>.json` for these
+    # combos but NO matching base-form model — the cosmetic was authored
+    # only for the regional body. Audited against the pack at
+    # /tmp/devhelditem/.../pokemon_skins/<skin>/ on 2026-05-02. When both a
+    # base and a regional model exist (e.g. Vulpix christmas, Ninetales
+    # christmas, Exeggutor summer, Weezing christmas, Rapidash valentine),
+    # the skin stays on the base list — DO NOT add those here.
+    ("Sandslash", "christmas"),
+    ("Marowak",   "christmas"),
+    ("Marowak",   "summer"),
+    ("Golem",     "christmas"),
+    ("Muk",       "christmas"),
+    ("Exeggutor", "easter"),
+}
+
 # Cosmetic skins of the Standard form, in display order. Each becomes its own tab when an
 # icon exists for the species. "regular" is the Standard tab itself; the rest are cosmetic
 # variants. Server-region anniversary forms get tabs named after the prefix (Kyoto / etc.)
@@ -239,7 +287,8 @@ POKEAPI_FORM_IDS = {
 # Each form provides: ability set, type override, base-stat override, sprite-suffix,
 # and an editorial note describing how the form change is triggered in-game.
 
-def _form(name, types, abilities, stats, suffix, note, hidden=""):
+def _form(name, types, abilities, stats, suffix, note, hidden="",
+          pokeapi_form_id=None, pokeapi_filename=None):
     return {
         "name": name,
         "types": types,
@@ -248,6 +297,13 @@ def _form(name, types, abilities, stats, suffix, note, hidden=""):
         "base_stats": dict(zip(("hp", "atk", "def", "spa", "spd", "spe"), stats)),
         "sprite_suffix": suffix,
         "note": note,
+        # Optional PokeAPI fallbacks used by the EXTRA_FORMS sprite resolver
+        # when no manual file exists. `pokeapi_form_id` is the numeric form ID
+        # (10000-range, e.g. Castform-Sunny=10013). `pokeapi_filename` is the
+        # bare sprite filename for forms PokeAPI ships under non-numeric names
+        # (e.g. Burmy cloaks live at `412-sandy.png`, not a 10000-range entry).
+        "pokeapi_form_id": pokeapi_form_id,
+        "pokeapi_filename": pokeapi_filename,
     }
 
 # Arceus's 17 plates (default Normal stays as Standard form). Stats are identical
@@ -306,13 +362,16 @@ EXTRA_FORMS = {
     "Deoxys": [
         _form("Attack", ["Psychic"], ["Pressure"],
               (50, 180, 20, 180, 20, 150), "-attack",
-              "Form change via the Meteorite. Glass-cannon offensive build."),
+              "Form change via the Meteorite. Glass-cannon offensive build.",
+              pokeapi_form_id=10001),
         _form("Defense", ["Psychic"], ["Pressure"],
               (50, 70, 160, 70, 160, 90), "-defense",
-              "Form change via the Meteorite. Walls and recovers."),
+              "Form change via the Meteorite. Walls and recovers.",
+              pokeapi_form_id=10002),
         _form("Speed", ["Psychic"], ["Pressure"],
               (50, 95, 90, 95, 90, 180), "-speed",
-              "Form change via the Meteorite. Out-runs anything in the game."),
+              "Form change via the Meteorite. Out-runs anything in the game.",
+              pokeapi_form_id=10003),
     ],
     "Shaymin": [
         _form("Sky", ["Grass", "Flying"], ["Serene Grace"],
@@ -322,29 +381,36 @@ EXTRA_FORMS = {
     "Wormadam": [
         _form("Sandy", ["Bug", "Ground"], ["Anticipation"],
               (60, 79, 105, 59, 85, 36), "-sandy",
-              "Cloak determined by the environment Burmy was last in before evolving."),
+              "Cloak determined by the environment Burmy was last in before evolving.",
+              pokeapi_form_id=10004),
         _form("Trash", ["Bug", "Steel"], ["Anticipation"],
               (60, 69, 95, 69, 95, 36), "-trash",
-              "Cloak determined by the environment Burmy was last in before evolving."),
+              "Cloak determined by the environment Burmy was last in before evolving.",
+              pokeapi_form_id=10005),
     ],
     "Burmy": [
         _form("Sandy", ["Bug"], ["Shed Skin"],
               (40, 29, 45, 29, 45, 36), "-sandy",
-              "Cloak changes after each battle based on the surrounding terrain."),
+              "Cloak changes after each battle based on the surrounding terrain.",
+              pokeapi_filename="412-sandy"),
         _form("Trash", ["Bug"], ["Shed Skin"],
               (40, 29, 45, 29, 45, 36), "-trash",
-              "Cloak changes after each battle based on the surrounding terrain."),
+              "Cloak changes after each battle based on the surrounding terrain.",
+              pokeapi_filename="412-trash"),
     ],
     "Castform": [
         _form("Sunny", ["Fire"], ["Forecast"],
               (70, 70, 70, 70, 70, 70), "-sunny",
-              "Forecast triggers in harsh sunlight. Type changes; stats unchanged."),
+              "Forecast triggers in harsh sunlight. Type changes; stats unchanged.",
+              pokeapi_form_id=10013),
         _form("Rainy", ["Water"], ["Forecast"],
               (70, 70, 70, 70, 70, 70), "-rainy",
-              "Forecast triggers in rain. Type changes; stats unchanged."),
+              "Forecast triggers in rain. Type changes; stats unchanged.",
+              pokeapi_form_id=10014),
         _form("Snowy", ["Ice"], ["Forecast"],
               (70, 70, 70, 70, 70, 70), "-snowy",
-              "Forecast triggers in hail or snow. Type changes; stats unchanged."),
+              "Forecast triggers in hail or snow. Type changes; stats unchanged.",
+              pokeapi_form_id=10015),
     ],
     "Darmanitan": [
         _form("Zen", ["Fire", "Psychic"], ["Zen Mode"],
@@ -354,7 +420,8 @@ EXTRA_FORMS = {
     "Cherrim": [
         _form("Sunshine", ["Grass"], ["Flower Gift"],
               (70, 60, 70, 87, 78, 85), "-sunshine",
-              "Bloom form active in harsh sunlight. Boosts party Atk and SpD."),
+              "Bloom form active in harsh sunlight. Boosts party Atk and SpD.",
+              pokeapi_filename="421-sunshine"),
     ],
     "Tornadus": [
         _form("Therian", ["Flying"], ["Regenerator"],
@@ -390,27 +457,34 @@ EXTRA_FORMS = {
     "Deerling": [
         _form("Summer", ["Normal", "Grass"], ["Chlorophyll"],
               (60, 60, 50, 40, 50, 75), "-summer",
-              "Coat changes with the season."),
+              "Coat changes with the season.",
+              pokeapi_filename="585-summer"),
         _form("Autumn", ["Normal", "Grass"], ["Chlorophyll"],
               (60, 60, 50, 40, 50, 75), "-autumn",
-              "Coat changes with the season."),
+              "Coat changes with the season.",
+              pokeapi_filename="585-autumn"),
         _form("Winter", ["Normal", "Grass"], ["Chlorophyll"],
               (60, 60, 50, 40, 50, 75), "-winter",
-              "Coat changes with the season."),
+              "Coat changes with the season.",
+              pokeapi_filename="585-winter"),
     ],
     "Genesect": [
         _form("Burn", ["Bug", "Steel"], ["Download"],
               (71, 120, 95, 120, 95, 99), "-burn",
-              "Holding the Burn Drive. Techno Blast becomes Fire-type."),
+              "Holding the Burn Drive. Techno Blast becomes Fire-type.",
+              pokeapi_filename="649-burn"),
         _form("Chill", ["Bug", "Steel"], ["Download"],
               (71, 120, 95, 120, 95, 99), "-chill",
-              "Holding the Chill Drive. Techno Blast becomes Ice-type."),
+              "Holding the Chill Drive. Techno Blast becomes Ice-type.",
+              pokeapi_filename="649-chill"),
         _form("Douse", ["Bug", "Steel"], ["Download"],
               (71, 120, 95, 120, 95, 99), "-douse",
-              "Holding the Douse Drive. Techno Blast becomes Water-type."),
+              "Holding the Douse Drive. Techno Blast becomes Water-type.",
+              pokeapi_filename="649-douse"),
         _form("Shock", ["Bug", "Steel"], ["Download"],
               (71, 120, 95, 120, 95, 99), "-shock",
-              "Holding the Shock Drive. Techno Blast becomes Electric-type."),
+              "Holding the Shock Drive. Techno Blast becomes Electric-type.",
+              pokeapi_filename="649-shock"),
     ],
 }
 
@@ -587,6 +661,37 @@ class SpriteCache:
 
     def fetch_pokeapi_shiny(self, dex_id: int, save_as: str) -> str | None:
         return self._fetch_pokeapi(dex_id, save_as, variant="shiny")
+
+    def fetch_pokeapi_named(self, filename_stem: str, save_as: str) -> str | None:
+        """Fetch a PokeAPI sprite by bare filename stem (e.g. `412-sandy` for
+        Burmy's Sandy Cloak, which lives at sprites/pokemon/412-sandy.png and
+        has no 10000-range numeric ID). Skips the dex-id range guards used by
+        `_fetch_pokeapi`."""
+        if not self.enable_pokeapi or not filename_stem:
+            return None
+        target = self.images_dir / f"{save_as}.png"
+        if target.exists():
+            return f"images/pokedex/{save_as}.png"
+        cache_key = ("named", filename_stem)
+        if self.pokeapi_tried.get(cache_key) is False:
+            return None
+        url = f"{POKEAPI_SPRITE_BASE}/{filename_stem}.png"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "PokefindWikiIngest/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                target.write_bytes(r.read())
+            self.pokeapi_tried[cache_key] = True
+            time.sleep(0.05)
+            return f"images/pokedex/{save_as}.png"
+        except urllib.error.HTTPError as e:
+            self.pokeapi_tried[cache_key] = False
+            if e.code != 404:
+                print(f"  PokeAPI fetch {url}: HTTP {e.code}", file=sys.stderr)
+            return None
+        except Exception as e:
+            self.pokeapi_tried[cache_key] = False
+            print(f"  PokeAPI fetch {url}: {e}", file=sys.stderr)
+            return None
 
     def render_from_models(self, dex_id: int, skin: str, species_name: str, save_as: str) -> str | None:
         """Render a 64x64 icon from the model JSON + textures in pokemon_skins/.
@@ -1049,6 +1154,10 @@ def main() -> int:
             for skin in COSMETIC_SKINS:
                 if skin == "regular":
                     continue
+                if (base_name, skin) in REGIONAL_ONLY_COSMETICS:
+                    continue
+                if (base_name, skin) in NO_VISIBLE_MODEL_COSMETICS:
+                    continue
                 if sprite_cache.has_pack_skin(standard_id, skin) or \
                    sprite_cache.has_skins_dir(skin, slug_candidates):
                     skins.append(skin_label(skin))
@@ -1119,6 +1228,7 @@ def main() -> int:
                     **extra,
                 }
                 expected_filename = f"{content_slug(base_name)}{extra['sprite_suffix']}.png"
+                save_as = expected_filename[:-len(".png")]
                 manual_path = IMAGES_DIR / expected_filename
                 if not manual_path.exists():
                     src_filename = TOXIC_FORM_FILES.get((base_name, extra["name"]))
@@ -1127,6 +1237,18 @@ def main() -> int:
                         if src.exists():
                             manual_path.parent.mkdir(parents=True, exist_ok=True)
                             manual_path.write_bytes(src.read_bytes())
+                # PokeAPI fallback for forms not shipped in the resource pack
+                # (Castform/Deoxys/Wormadam via 10000-range IDs; Burmy via the
+                # named-filename slot since its cloaks live at `412-sandy.png`,
+                # `412-trash.png`, not as 10000-range numeric IDs).
+                if not manual_path.exists():
+                    fid = extra.get("pokeapi_form_id")
+                    if fid:
+                        sprite_cache.fetch_pokeapi(fid, save_as)
+                if not manual_path.exists():
+                    fname = extra.get("pokeapi_filename")
+                    if fname:
+                        sprite_cache.fetch_pokeapi_named(fname, save_as)
                 form_sprite = f"images/pokedex/{expected_filename}" if manual_path.exists() else None
                 harvest(merged)
                 forms_yaml.append(render_form_yaml(extra["name"], merged, form_sprite, kind="form",

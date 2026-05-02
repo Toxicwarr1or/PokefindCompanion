@@ -111,7 +111,7 @@ forms:
     kind: 'form'
     types: ['Bug']
     abilities: ['Shed Skin']
-    sprite: ''
+    sprite: 'images/pokedex/burmy-sandy.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 0.2
@@ -128,7 +128,7 @@ forms:
     kind: 'form'
     types: ['Bug']
     abilities: ['Shed Skin']
-    sprite: ''
+    sprite: 'images/pokedex/burmy-trash.png'
     egg_groups: ['bug']
     growth_rate: 'medium_fast'
     height_m: 0.2

@@ -596,7 +596,7 @@ forms:
     kind: 'form'
     types: ['Psychic']
     abilities: ['Pressure']
-    sprite: ''
+    sprite: 'images/pokedex/deoxys-attack.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.7
@@ -613,7 +613,7 @@ forms:
     kind: 'form'
     types: ['Psychic']
     abilities: ['Pressure']
-    sprite: ''
+    sprite: 'images/pokedex/deoxys-defense.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.7
@@ -630,7 +630,7 @@ forms:
     kind: 'form'
     types: ['Psychic']
     abilities: ['Pressure']
-    sprite: ''
+    sprite: 'images/pokedex/deoxys-speed.png'
     egg_groups: ['undiscovered']
     growth_rate: 'slow'
     height_m: 1.7

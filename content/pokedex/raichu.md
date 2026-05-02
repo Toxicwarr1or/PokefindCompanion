@@ -918,6 +918,101 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+  - name: 'Surfing 1'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/raichu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.8
+    weight_kg: 30
+    note: 'Surfing — Ash Hat outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 60
+      atk: 90
+      def: 55
+      spa: 90
+      spd: 80
+      spe: 110
+  - name: 'Surfing 2'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/raichu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.8
+    weight_kg: 30
+    note: 'Surfing — Azumarill float outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 60
+      atk: 90
+      def: 55
+      spa: 90
+      spd: 80
+      spe: 110
+  - name: 'Surfing 3'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/raichu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.8
+    weight_kg: 30
+    note: 'Surfing — Green outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 60
+      atk: 90
+      def: 55
+      spa: 90
+      spd: 80
+      spe: 110
+  - name: 'Surfing 4'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/raichu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.8
+    weight_kg: 30
+    note: 'Surfing — Pink outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 60
+      atk: 90
+      def: 55
+      spa: 90
+      spd: 80
+      spe: 110
+  - name: 'Surfing 5'
+    kind: 'form'
+    skin_gate: 'summer'
+    types: ['Electric']
+    abilities: ['Static']
+    hidden_ability: 'Lightning Rod'
+    sprite: 'images/pokedex/raichu.png'
+    egg_groups: ['fairy', 'field']
+    growth_rate: 'medium_fast'
+    height_m: 0.8
+    weight_kg: 30
+    note: 'Surfing — Pokeball outfit. Summer event cosmetic.'
+    base_stats:
+      hp: 60
+      atk: 90
+      def: 55
+      spa: 90
+      spd: 80
+      spe: 110
 region: ''
 anniversary: ''
 tier: ''

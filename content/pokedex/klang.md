@@ -3,7 +3,7 @@ title: 'Klang'
 subtitle: 'By changing the direction in which it rotates, it communicates its feelings to others. When angry, it rotates faster.'
 date: 2026-04-28
 dex_number: '600'
-skins: ['Shiny', 'Easter', 'Aura']
+skins: ['Shiny', 'Easter']
 forms:
   - name: 'Standard'
     kind: 'form'

@@ -3,7 +3,7 @@ title: 'Krookodile'
 subtitle: 'They never allow prey to escape. Their jaws are so powerful, they can crush the body of an automobile.'
 date: 2026-04-28
 dex_number: '553'
-skins: ['Shiny', 'Christmas', 'Valentine', 'Aura', 'Meme']
+skins: ['Shiny', 'Christmas', 'Aura', 'Meme']
 forms:
   - name: 'Standard'
     kind: 'form'

@@ -3,7 +3,7 @@ title: 'Weezing'
 subtitle: 'Where two kinds of poison gases meet, 2 Koffings can fuse into a Weezing over many years.'
 date: 2026-04-28
 dex_number: '110'
-skins: ['Shiny', 'Christmas', 'Aura', 'Cosmic', 'Monochrome']
+skins: ['Shiny', 'Christmas', 'Cosmic', 'Monochrome']
 forms:
   - name: 'Standard'
     kind: 'form'

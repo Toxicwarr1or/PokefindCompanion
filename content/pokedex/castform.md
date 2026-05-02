@@ -441,7 +441,7 @@ forms:
     kind: 'form'
     types: ['Fire']
     abilities: ['Forecast']
-    sprite: ''
+    sprite: 'images/pokedex/castform-sunny.png'
     egg_groups: ['amorphous', 'fairy']
     growth_rate: 'medium_fast'
     height_m: 0.3
@@ -458,7 +458,7 @@ forms:
     kind: 'form'
     types: ['Water']
     abilities: ['Forecast']
-    sprite: ''
+    sprite: 'images/pokedex/castform-rainy.png'
     egg_groups: ['amorphous', 'fairy']
     growth_rate: 'medium_fast'
     height_m: 0.3
@@ -475,7 +475,7 @@ forms:
     kind: 'form'
     types: ['Ice']
     abilities: ['Forecast']
-    sprite: ''
+    sprite: 'images/pokedex/castform-snowy.png'
     egg_groups: ['amorphous', 'fairy']
     growth_rate: 'medium_fast'
     height_m: 0.3
