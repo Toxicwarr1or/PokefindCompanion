@@ -229,9 +229,10 @@ POKEAPI_FORM_IDS = {
     ("Zigzagoon",  "Galarian"): 10174,
     ("Linoone",    "Galarian"): 10175,
     ("Darumaka",   "Galarian"): 10176,
-    ("Darmanitan", "Galarian"): 10177,
-    ("Yamask",     "Galarian"): 10178,
-    ("Stunfisk",   "Galarian"): 10179,
+    ("Darmanitan", "Galarian"):     10177,
+    ("Darmanitan", "Galarian Zen"): 10178,
+    ("Yamask",     "Galarian"):     10179,
+    ("Stunfisk",   "Galarian"):     10180,
 }
 
 # Manually-injected forms not present in the species data file. Keyed by base name.

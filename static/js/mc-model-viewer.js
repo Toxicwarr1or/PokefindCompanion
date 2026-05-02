@@ -204,7 +204,25 @@ function buildBoneGroup(bone, materialMap, inheritedOpacity) {
     }
   }
   for (const el of bone.elements || []) {
-    const m = buildElementMesh(el, childMaterialMap, 0, 0);
+    // Per-element `opacity` lets a single cuboid render translucent without
+    // restructuring the bone tree — used by the gamer Mewtwo skin's glow
+    // halos (head/hands/feet/tail wrappers), where the glow cubes live in
+    // the same bones as the opaque body cubes. Same material-clone +
+    // transparent/alphaTest=0/depthWrite=false recipe as the bone-level
+    // opacity above; just scoped to this element only.
+    let elMaterialMap = childMaterialMap;
+    if (el.opacity != null && el.opacity < 1) {
+      elMaterialMap = {};
+      for (const [k, mat] of Object.entries(childMaterialMap)) {
+        const clone = mat.clone();
+        clone.opacity = el.opacity;
+        clone.transparent = true;
+        clone.alphaTest = 0;
+        clone.depthWrite = false;
+        elMaterialMap[k] = clone;
+      }
+    }
+    const m = buildElementMesh(el, elMaterialMap, 0, 0);
     if (m) group.add(m);
   }
   for (const child of bone.children || []) {

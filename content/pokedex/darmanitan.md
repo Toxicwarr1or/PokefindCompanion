@@ -1342,6 +1342,23 @@ forms:
       spa: 140
       spd: 105
       spe: 55
+  - name: 'Galarian Zen'
+    kind: 'form'
+    types: ['Ice', 'Fire']
+    abilities: ['Zen Mode']
+    sprite: 'images/pokedex/darmanitan-galarian-zen.png'
+    egg_groups: ['field']
+    growth_rate: 'medium_slow'
+    height_m: 1.7
+    weight_kg: 120
+    note: 'Galarian Darmanitan switches to Zen Mode automatically below 50% HP when holding the Galarica Wreath / Zen Mode ability is active.'
+    base_stats:
+      hp: 105
+      atk: 160
+      def: 55
+      spa: 30
+      spd: 55
+      spe: 135
 region: ''
 anniversary: ''
 tier: ''
