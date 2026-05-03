@@ -1,0 +1,53 @@
+{{- $entries := slice -}}
+{{- $pages := .Site.RegularPages -}}
+{{- /* Also pick up single-file sections (e.g. items, skins, shadow, guides)
+       where the entire page is the content. Skip section list pages whose
+       children are already indexed. */ -}}
+{{- range .Site.Sections -}}
+  {{- if eq (len .RegularPages) 0 -}}
+    {{- $pages = $pages | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- range $pages -}}
+  {{- $section := .Section -}}
+  {{- $title := .Title -}}
+  {{- $url := .RelPermalink -}}
+  {{- $summary := .Params.subtitle | default .Params.description | default "" -}}
+  {{- if eq $summary "" -}}
+    {{- $summary = .Summary | plainify | truncate 160 -}}
+  {{- end -}}
+
+  {{- /* Per-section keyword extraction so fuzzy search has something to bite. */ -}}
+  {{- $keywords := slice -}}
+
+  {{- if eq $section "pokedex" -}}
+    {{- with .Params.dex_number -}}{{- $keywords = $keywords | append (printf "#%s" .) -}}{{- end -}}
+    {{- range .Params.forms -}}
+      {{- if eq (.kind | default "skin") "form" -}}
+        {{- range .types -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+        {{- range .abilities -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+        {{- with .hidden_ability -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- range .Params.skins -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+  {{- else if eq $section "moves" -}}
+    {{- with .Params.move_type -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+    {{- with .Params.category -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+    {{- with .Params.generation -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+  {{- else if eq $section "items" -}}
+    {{- with .Params.category -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+  {{- else if eq $section "skins" -}}
+    {{- with .Params.event -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+    {{- with .Params.rarity -}}{{- $keywords = $keywords | append . -}}{{- end -}}
+  {{- end -}}
+
+  {{- $entry := dict
+        "title"    $title
+        "url"      $url
+        "section"  $section
+        "summary"  $summary
+        "keywords" $keywords
+  -}}
+  {{- $entries = $entries | append $entry -}}
+{{- end -}}
+{{- $entries | jsonify (dict "indent" "  ") -}}

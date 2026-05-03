@@ -57,8 +57,9 @@ disableKinds = ["taxonomy", "term"]
 
 # Build hardening
 [outputs]
-  home    = ["HTML", "RSS", "MOVETIPS", "CALCDATA"]
+  home    = ["HTML", "RSS", "MOVETIPS", "CALCDATA", "SEARCHINDEX"]
   section = ["HTML", "RSS"]
+  page    = ["HTML", "ENTRY"]
 
 [outputFormats.MOVETIPS]
   mediaType   = "application/json"
@@ -69,5 +70,18 @@ disableKinds = ["taxonomy", "term"]
 [outputFormats.CALCDATA]
   mediaType   = "application/json"
   baseName    = "calcdata"
+  isPlainText = true
+  notAlternative = true
+
+# Mobile-app data feeds (consumed by the Pokéfind Companion app)
+[outputFormats.SEARCHINDEX]
+  mediaType   = "application/json"
+  baseName    = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.ENTRY]
+  mediaType   = "application/json"
+  baseName    = "entry"
   isPlainText = true
   notAlternative = true

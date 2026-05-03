@@ -1,0 +1,8 @@
+{{- $payload := dict
+      "title"   .Title
+      "url"     .RelPermalink
+      "section" .Section
+      "params"  .Params
+      "content" (.Content | plainify)
+-}}
+{{- $payload | jsonify (dict "indent" "  ") -}}
