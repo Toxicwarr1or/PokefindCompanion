@@ -404,7 +404,7 @@ forms:
         depth: 2
         method: 'Use Thunder Stone'
   - name: 'Surfing 1'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -423,7 +423,7 @@ forms:
       spd: 35
       spe: 60
   - name: 'Surfing 2'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -442,7 +442,7 @@ forms:
       spd: 35
       spe: 60
   - name: 'Surfing 3'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -461,7 +461,7 @@ forms:
       spd: 35
       spe: 60
   - name: 'Surfing 4'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -480,7 +480,7 @@ forms:
       spd: 35
       spe: 60
   - name: 'Surfing 5'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']

@@ -919,7 +919,7 @@ forms:
         accuracy: '∞'
         pp: '10'
   - name: 'Surfing 1'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -938,7 +938,7 @@ forms:
       spd: 80
       spe: 110
   - name: 'Surfing 2'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -957,7 +957,7 @@ forms:
       spd: 80
       spe: 110
   - name: 'Surfing 3'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -976,7 +976,7 @@ forms:
       spd: 80
       spe: 110
   - name: 'Surfing 4'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']
@@ -995,7 +995,7 @@ forms:
       spd: 80
       spe: 110
   - name: 'Surfing 5'
-    kind: 'form'
+    kind: 'skin'
     skin_gate: 'summer'
     types: ['Electric']
     abilities: ['Static']

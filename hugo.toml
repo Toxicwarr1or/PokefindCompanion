@@ -58,7 +58,7 @@ disableKinds = ["taxonomy", "term"]
 # Build hardening
 [outputs]
   home    = ["HTML", "RSS", "MOVETIPS", "CALCDATA", "SEARCHINDEX"]
-  section = ["HTML", "RSS"]
+  section = ["HTML", "RSS", "ENTRY"]
   page    = ["HTML", "ENTRY"]
 
 [outputFormats.MOVETIPS]
