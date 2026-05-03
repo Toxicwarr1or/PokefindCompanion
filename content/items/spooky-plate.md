@@ -1,0 +1,10 @@
+---
+title: 'Spooky Plate'
+date: 2026-05-03
+category: 'Arceus Plate'
+boost: 'Multiplies Ghost-type move power by 1.2× (+20%); changes Arceus''s type to Ghost via Multitype.'
+description: 'One of the seventeen elemental Plates. Held by Arceus, the Spooky Plate switches its type to Ghost. Held by anything else, it boosts Ghost-type moves by ×1.2 — same numbers as the standard type-boosters, just packaged as a stone tablet.'
+locations:
+  - 'Quest reward: **Daily Login Rewards**'
+  - 'Shop: **Battle Tower Shop** (288 BP)'
+---

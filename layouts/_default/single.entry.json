@@ -3,6 +3,6 @@
       "url"     .RelPermalink
       "section" .Section
       "params"  .Params
-      "content" (.Content | plainify | htmlUnescape)
+      "content" .RawContent
 -}}
 {{- $payload | jsonify (dict "indent" "  ") -}}

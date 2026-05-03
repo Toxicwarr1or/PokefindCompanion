@@ -1,0 +1,44 @@
+{{ define "main" }}
+<article class="page item-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.category }}<p class="subtitle">{{ . }}</p>{{ end }}
+    {{ with .Date }}<p class="meta">Updated {{ .Format "Jan 2, 2006" }}</p>{{ end }}
+  </header>
+
+  {{ if or .Params.boost .Params.holder .Params.duration .Params.consumed }}
+  <section class="item-meta">
+    <dl>
+      {{ with .Params.holder }}<dt>Holder</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.boost }}<dt>Effect</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.duration }}<dt>Duration</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with .Params.consumed }}<dt>Consumed</dt><dd>{{ . }}</dd>{{ end }}
+    </dl>
+  </section>
+  {{ end }}
+
+  {{ with .Params.description }}
+  <section class="item-description">
+    <p>{{ . | safeHTML }}</p>
+  </section>
+  {{ end }}
+
+  {{ if .Params.locations }}
+  <section class="item-locations">
+    <h2>Where to find</h2>
+    <ul>
+      {{ range .Params.locations }}<li>{{ . | markdownify }}</li>{{ end }}
+    </ul>
+  </section>
+  {{ else }}
+  <section class="item-locations item-locations-empty">
+    <h2>Where to find</h2>
+    <p class="muted">No quest reward, drop, or shop source has been catalogued for this item yet — it may only be available via admin commands or events.</p>
+  </section>
+  {{ end }}
+
+  {{ with .Content }}{{ . }}{{ end }}
+
+  <p class="back-link"><a href="{{ "/items/" | relURL }}">← All items</a></p>
+</article>
+{{ end }}

@@ -1,0 +1,27 @@
+---
+title: 'Lucky Egg'
+date: 2026-05-03
+category: 'Out-of-battle XP'
+boost: 'Activates double XP for the holding player for 30 minutes per use.'
+duration: '30 minutes per activation.'
+description: 'The grind accelerator. Right-click while held to double the *player''s* earned XP for the next thirty minutes — the activation is announced server-wide so everyone knows you''ve started the timer. Useful when burning through a backlog of party levels or the EV-trained set you just finished IV-cloning. The buff is per-player (unlike XP Boost Elixir, which is server-wide), so multiple players can each have one active without stepping on each other.'
+locations:
+  - 'Quest reward: **Gen1 Pokedex Check**'
+  - 'Quest reward: **Legendary Bird Rescue Instinct**'
+  - 'Quest reward: **Legendary Bird Rescue Mystic**'
+  - 'Quest reward: **Legendary Bird Rescue Valor**'
+  - 'Quest reward: **Gen2 Pokedex Check**'
+  - 'Quest reward: **Striking Thunder**'
+  - 'Quest reward: **Gen3 Pokedex Check**'
+  - 'Quest reward: **Gen4 Pokedex Check**'
+  - 'Quest reward: **Pokestop Event**'
+  - 'Quest reward: **Reward Crate Tier2**'
+  - 'Quest reward: **Reward Crate Tier3**'
+  - 'Quest reward: **Popularmmo Main Quest 2**'
+  - 'Quest reward: **Popularmmo Main Quest 7**'
+  - 'Quest reward: **Popularmmo Pokedex Check**'
+  - 'Quest reward: **Legendary Bird Rescue**'
+  - 'Shop: **Challenge Shop** (2 ⛀)'
+  - 'Shop: **Wish Shop** (20 ✨)'
+  - 'Shop: **Premium /store**'
+---
