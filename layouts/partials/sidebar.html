@@ -31,7 +31,7 @@
 {{- /* Guides group: shared sidebar across the /guides/ landing page and
        the migrated subsections (/quests/ and /gym-teams/). Add new guide
        sections here as the corpus grows. */ -}}
-{{ $inGuidesGroup := or (eq $section "guides") (or (eq $section "quests") (or (eq $section "gym-teams") (or (eq $section "type-chart") (or (eq $section "shadow") (or (eq $section "how-to") (eq $section "save-slot-challenges")))))) }}
+{{ $inGuidesGroup := or (eq $section "guides") (or (eq $section "quests") (or (eq $section "gym-teams") (or (eq $section "type-chart") (or (eq $section "shadow") (or (eq $section "how-to") (or (eq $section "save-slot-challenges") (eq $section "safari-zone"))))))) }}
 {{ if $inGuidesGroup }}
 <nav class="section-nav" aria-label="Section">
   <h4>Guides</h4>
@@ -42,6 +42,7 @@
     <li><a href="{{ "/shadow/"     | relURL }}"{{ if eq $section "shadow"     }} class="active"{{ end }}>Shadow</a></li>
     <li><a href="{{ "/how-to/"     | relURL }}"{{ if eq $section "how-to"     }} class="active"{{ end }}>How To</a></li>
     <li><a href="{{ "/save-slot-challenges/" | relURL }}"{{ if eq $section "save-slot-challenges" }} class="active"{{ end }}>Save Slot Challenges</a></li>
+    <li><a href="{{ "/safari-zone/" | relURL }}"{{ if eq $section "safari-zone" }} class="active"{{ end }}>Safari Zone</a></li>
   </ul>
 </nav>
 {{ end }}
