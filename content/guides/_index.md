@@ -12,5 +12,6 @@ A growing collection of guides for various aspects of the Pokéfind server. Pick
 - **[How To](/how-to/)** — setup and connection guides (e.g. joining the server from Xbox / PlayStation via Bedrock Together).
 - **[Save Slot Challenges](/save-slot-challenges/)** — optional, permanent self-imposed difficulty modes (Just Walk It Off, Evolution Outlaw, Lone Survivor, Nuzlocke).
 - **[Safari Zone](/safari-zone/)** — paid catch-only minigame: 500 coins for thirty Safari Balls, seven biome-themed areas, full spawn list by rarity tier.
+- **[Caves and Bridges](/caves-and-bridges/)** — player-specific spawn pockets across eight named caves and bridges, each with its own pool and tier list.
 
 More guide categories will land here as the corpus grows.
