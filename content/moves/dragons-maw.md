@@ -1,5 +1,5 @@
 ---
-title: 'Dragon's Maw'
+title: 'Dragon''s Maw'
 entry_kind: 'ability'
 date: 2026-05-05
 effect: 'This Pokemon''s offensive stat is multiplied by 1.5 while using a Dragon-type attack.'
