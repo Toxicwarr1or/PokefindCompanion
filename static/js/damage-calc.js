@@ -47,6 +47,46 @@
   //   immune:         move-type immunity (defender)
   //   wonderGuard:    only super-effective hits land
   //   pulseMult:      multiply damage of pulse moves (Mega Launcher)
+  //   lowBpMult:      multiplier applied when the move's base power is at or
+  //                   below `lowBpThreshold` (Technician: ×1.5 for ≤60 BP)
+  //   punchMult:      multiplier on punch moves (Iron Fist ×1.2)
+  //   recoilMult:     multiplier on recoil moves (Reckless ×1.2)
+  //   immuneSound:    defender is immune to sound-based moves (Soundproof)
+  //   physStatusMult: { <status>: mult } — applied to physical moves when
+  //                   attacker has the listed status (Toxic Boost: poison →
+  //                   ×1.5)
+  //   specStatusMult: same as physStatusMult but for special moves
+  //                   (Flare Boost: burn → ×1.5)
+  //   defStatusMult:  defender's Def is multiplied by this against physical
+  //                   moves while the defender is statused (Marvel Scale ×1.5)
+  //   sunAtkMult:     attacker Atk multiplier in harsh sun (Flower Gift)
+  //   sunSpdMult:     defender SpD multiplier in harsh sun, applied as a
+  //                   division on incoming special damage (Flower Gift)
+  //   critDmgMult:    extra multiplier applied to crit damage (Sniper ×1.5,
+  //                   making crits effectively ×2.25 instead of ×1.5)
+  //   rivalry:        Rivalry — ±0.25 power based on attacker/defender
+  //                   gender match (Pokéfind: ×0.75 same-gender, ×1.25
+  //                   opposite-gender; genderless either side disables it)
+  //   scrappy:        attacker's Normal/Fighting moves bypass Ghost immunity
+  //   protean:        attacker gains STAB on every move (re-types before use)
+  //   ballMult:       multiplier on ball/bomb moves (none currently — slot is
+  //                   reserved). Bulletproof uses `immuneBall` instead.
+  //   immuneBall:     defender immune to ball/bomb moves (Bulletproof)
+  //   biteMult:       multiplier on biting moves (Strong Jaw ×1.5)
+  //   slicingMult:    multiplier on slicing moves (Sharpness ×1.5)
+  //   contactMult:    multiplier on contact moves (Tough Claws ×1.3)
+  //   soundToType:    re-type sound moves to the given type (Liquid Voice →
+  //                   Water)
+  //   allToType:      re-type every move to the given type (Normalize →
+  //                   Normal)
+  //   soundDefMult:   defender takes incoming sound moves at this multiplier
+  //                   (Punk Rock ×0.5)
+  //   soundAtkMult:   attacker boosts sound-move power (Punk Rock ×1.3)
+  //   stakeout:       ×2 when the defender just switched in this turn
+  //                   (gated on the `dc-stakeout` toggle)
+  //   typeAuraMult:   { Type: mult } — boost a type globally regardless of
+  //                   which side carries the ability (Dark Aura / Fairy Aura
+  //                   ×1.33)
   //   unaware:        ignore the opposing Pokémon's stat stages during damage
   //                   calc — applied symmetrically: defender's Unaware zeros
   //                   the attacker's Atk/SpA stage, attacker's Unaware zeros
@@ -68,7 +108,7 @@
     'Sheer Force':          { side: 'att', mult: 1.3 },        // assumes secondary-effect move
     'Sand Force':           { side: 'att', sandTypes: ['Rock', 'Ground', 'Steel'], mult: 1.3 },
     'Solar Power':          { side: 'att', sunSpaMult: 1.5 },
-    'Flash Fire':           { side: 'att', typeMult: { Fire: 1.5 } },     // attacker — assumes powered up
+    'Flash Fire':           { side: 'both', typeMult: { Fire: 1.5 }, immune: 'Fire' },     // attacker assumed powered up; defender side grants Fire immunity
     'Steelworker':          { side: 'att', typeMult: { Steel: 1.5 } },
     'Steely Spirit':        { side: 'att', typeMult: { Steel: 1.5 } },
     'Transistor':           { side: 'att', typeMult: { Electric: 1.5 } },
@@ -99,6 +139,34 @@
     'Dry Skin':             { side: 'def', immune: 'Water', defTypeMult: { Fire: 1.25 } },
     'Wonder Guard':         { side: 'def', wonderGuard: true },
     'Mega Launcher':        { side: 'att', pulseMult: 1.5 },
+    'Technician':           { side: 'att', lowBpMult: 1.5, lowBpThreshold: 60 },
+    'Iron Fist':            { side: 'att', punchMult: 1.2 },
+    'Reckless':             { side: 'att', recoilMult: 1.2 },
+    'Toxic Boost':          { side: 'att', physStatusMult: { poison: 1.5 } },
+    'Flare Boost':          { side: 'att', specStatusMult: { burn: 1.5 } },
+    'Rivalry':              { side: 'att', rivalry: true },
+    'Sniper':               { side: 'att', critDmgMult: 1.5 },
+    'Scrappy':              { side: 'att', scrappy: true },
+    'Protean':              { side: 'att', protean: true },
+    'Flower Gift':          { side: 'both', sunAtkMult: 1.5, sunSpdMult: 1.5 },
+    'Soundproof':           { side: 'def', immuneSound: true },
+    'Marvel Scale':         { side: 'def', defStatusMult: 1.5 },
+    'Bulletproof':          { side: 'def', immuneBall: true },
+    'Tough Claws':          { side: 'att', contactMult: 1.3 },
+    'Strong Jaw':           { side: 'att', biteMult: 1.5 },
+    'Punk Rock':            { side: 'both', soundAtkMult: 1.3, soundDefMult: 0.5 },
+    'Liquid Voice':         { side: 'att', soundToType: 'Water' },
+    'Normalize':            { side: 'att', allToType: 'Normal' },
+    'Stakeout':             { side: 'att', stakeout: true },
+    'Infiltrator':          { side: 'att', bypassScreens: true },
+    'Mold Breaker':         { side: 'att', moldBreaker: true },
+    // NOTE: Sharpness, Dark Aura, Fairy Aura, Merciless, Earth Eater, Good as
+    // Gold, Toxic Debris, Regenerator and ~100 other abilities listed in the
+    // species data have no battle-simulator handler on Pokéfind. Modeling
+    // them in the calc would silently mislead players about real in-battle
+    // damage. Leave them un-modeled until the server grows the corresponding
+    // handler — see SLICING_MOVES set above for the canonical Sharpness move
+    // list, ready to wire up if/when that lands.
     'Unaware':              { unaware: true }     // applies on whichever side has it
   };
   function abilityEffect(name) { return name ? ABILITY_EFFECTS[name] : null; }
@@ -108,6 +176,102 @@
   const PULSE_MOVES = new Set([
     'Aura Sphere', 'Dark Pulse', 'Dragon Pulse',
     'Origin Pulse', 'Terrain Pulse', 'Water Pulse'
+  ]);
+
+  // Punch moves boosted by Iron Fist (×1.2). Mirrors AbilityFactory's hardcoded
+  // list; Heal Pulse and other Status punches don't reach here.
+  const PUNCH_MOVES = new Set([
+    'Bullet Punch', 'Comet Punch', 'Dizzy Punch', 'Drain Punch',
+    'Dynamic Punch', 'Fire Punch', 'Focus Punch', 'Hammer Arm',
+    'Ice Hammer', 'Ice Punch', 'Mach Punch', 'Mega Punch',
+    'Meteor Mash', 'Power-Up Punch', 'Shadow Punch',
+    'Sky Uppercut', 'Thunder Punch'
+  ]);
+
+  // Recoil moves boosted by Reckless (×1.2). Source: AbilityFactory list.
+  const RECOIL_MOVES = new Set([
+    'Brave Bird', 'Double-Edge', 'Flare Blitz', 'Head Charge',
+    'Head Smash', 'High Jump Kick', 'Jump Kick', 'Light of Ruin',
+    'Submission', 'Take Down', 'Volt Tackle', 'Wild Charge', 'Wood Hammer'
+  ]);
+
+  // Sound-based moves (subset that can deal damage). Soundproof grants full
+  // immunity to any of these; Punk Rock attacker / defender modify them. List
+  // pulled from moves.json `sound_based: true` entries, filtered to damaging.
+  const SOUND_MOVES = new Set([
+    'Boomburst', 'Bug Buzz', 'Chatter', 'Clanging Scales',
+    'Clangorous Soul', 'Clangorous Soulblaze', 'Diamond Death',
+    'Disarming Voice', 'Echoed Voice', 'Eerie Spell', 'Hyper Voice',
+    'Overdrive', 'Relic Song', 'Round', 'Shadow Panic', 'Snarl',
+    'Snore', 'Sparkling Aria', 'Uproar'
+  ]);
+
+  // Ball / bomb / pulse-shaped moves. Bulletproof grants full immunity.
+  // Source: AbilityFactory's hardcoded list (server-canonical for Pokéfind).
+  const BALL_BOMB_MOVES = new Set([
+    'Acid Spray', 'Aura Sphere', 'Barrage', 'Beak Blast', 'Bullet Seed',
+    'Egg Bomb', 'Electro Ball', 'Energy Ball', 'Focus Blast', 'Ice Ball',
+    'Magnet Bomb', 'Mist Ball', 'Mud Bomb', 'Octazooka', 'Pollen Puff',
+    'Pyro Ball', 'Rock Blast', 'Rock Wrecker', 'Searing Shot', 'Seed Bomb',
+    'Shadow Ball', 'Sludge Bomb', 'Weather Ball', 'Zap Cannon'
+  ]);
+
+  // Biting moves boosted by Strong Jaw (×1.5). Server's hardcoded list.
+  const BITE_MOVES = new Set([
+    'Bite', 'Crunch', 'Fire Fang', 'Hyper Fang', 'Ice Fang',
+    'Poison Fang', 'Psychic Fangs', 'Thunder Fang',
+    'Fishious Rend', 'Jaw Lock'
+  ]);
+
+  // Slicing moves boosted by Sharpness (×1.5). Canonical Gen 9 list.
+  const SLICING_MOVES = new Set([
+    'Aerial Ace', 'Air Slash', 'Aqua Cutter', 'Air Cutter', 'Bitter Blade',
+    'Ceaseless Edge', 'Cross Poison', 'Cut', 'Fury Cutter', 'Kowtow Cleave',
+    'Leaf Blade', 'Mighty Cleave', 'Night Slash', 'Population Bomb',
+    'Psyblade', 'Psycho Cut', 'Razor Leaf', 'Razor Shell', 'Sacred Sword',
+    'Secret Sword', 'Slash', 'Solar Blade', 'Stone Axe', 'X-Scissor'
+  ]);
+
+  // Contact moves — boosted ×1.3 by Tough Claws, also relevant to Tangling
+  // Hair / Iron Barbs / Rough Skin (residuals — not modeled). Sourced from
+  // showdown's moves.ts `flags.contact: 1` and trimmed to gen 1-5 plus the
+  // gen 6+ contacts an anniversary pool can plausibly carry.
+  const CONTACT_MOVES = new Set([
+    'Accelerock', 'Acrobatics', 'Aerial Ace', 'Aqua Jet', 'Aqua Tail',
+    'Arm Thrust', 'Assurance', 'Astonish', 'Avalanche', 'Bind', 'Bite',
+    'Body Slam', 'Bounce', 'Brave Bird', 'Brutal Swing', 'Bug Bite',
+    'Bullet Punch', 'Circle Throw', 'Clamp', 'Close Combat', 'Comet Punch',
+    'Constrict', 'Counter', 'Covet', 'Crabhammer', 'Cross Poison', 'Crunch',
+    'Crush Claw', 'Crush Grip', 'Cut', 'Dig', 'Dive', 'Dizzy Punch',
+    'Double Hit', 'Double Kick', 'Double Slap', 'Double-Edge', 'Dragon Claw',
+    'Dragon Rush', 'Dragon Tail', 'Drain Punch', 'Drill Peck', 'Drill Run',
+    'Dual Chop', 'Dynamic Punch', 'Endeavor', 'Facade', 'Fake Out',
+    'False Swipe', 'Feint Attack', 'Fell Stinger', 'Fire Fang', 'Fire Punch',
+    'Flame Charge', 'Flame Wheel', 'Flare Blitz', 'Flip Turn', 'Fly',
+    'Focus Punch', 'Force Palm', 'Foul Play', 'Frustration', 'Fury Attack',
+    'Fury Cutter', 'Fury Swipes', 'Gear Grind', 'Giga Impact', 'Guillotine',
+    'Gyro Ball', 'Hammer Arm', 'Head Charge', 'Head Smash', 'Headbutt',
+    'Heart Stamp', 'Heat Crash', 'Heavy Slam', 'High Jump Kick', 'Horn Attack',
+    'Horn Drill', 'Horn Leech', 'Hyper Fang', 'Ice Ball', 'Ice Fang',
+    'Ice Punch', 'Iron Head', 'Iron Tail', 'Jump Kick', 'Karate Chop',
+    'Knock Off', 'Last Resort', 'Leaf Blade', 'Leech Life', 'Lick', 'Low Kick',
+    'Low Sweep', 'Mach Punch', 'Mega Kick', 'Mega Punch', 'Megahorn',
+    'Metal Claw', 'Meteor Mash', 'Needle Arm', 'Night Slash', 'Outrage',
+    'Payback', 'Peck', 'Petal Dance', 'Phantom Force', 'Play Rough', 'Pluck',
+    'Poison Fang', 'Poison Jab', 'Poison Tail', 'Pound', 'Power Trip',
+    'Power Whip', 'Power-Up Punch', 'Psychic Fangs', 'Punishment', 'Pursuit',
+    'Quick Attack', 'Rage', 'Rapid Spin', 'Razor Shell', 'Retaliate', 'Return',
+    'Revenge', 'Reversal', 'Rock Climb', 'Rock Smash', 'Rolling Kick',
+    'Rollout', 'Sacred Sword', 'Scratch', 'Seismic Toss', 'Shadow Claw',
+    'Shadow Force', 'Shadow Punch', 'Shadow Sneak', 'Sky Drop', 'Sky Uppercut',
+    'Slam', 'Slash', 'Smart Strike', 'Smelling Salts', 'Solar Blade', 'Spark',
+    'Steamroller', 'Steel Wing', 'Stomping Tantrum', 'Storm Throw', 'Strength',
+    'Struggle', 'Submission', 'Sucker Punch', 'Super Fang', 'Superpower',
+    'Tackle', 'Tail Slap', 'Take Down', 'Thief', 'Thrash', 'Throat Chop',
+    'Thunder Fang', 'Thunder Punch', 'U-turn', 'V-create', 'Vine Whip',
+    'Vise Grip', 'Vital Throw', 'Volt Tackle', 'Wake-Up Slap', 'Waterfall',
+    'Wild Charge', 'Wing Attack', 'Wood Hammer', 'Wrap', 'X-Scissor',
+    'Zen Headbutt'
   ]);
 
   // Terrain Pulse: outside terrain it's Normal-type 50 BP. When the user is
@@ -203,7 +367,14 @@
     const formIdx = formSel.value !== '' ? parseInt(formSel.value, 10) : 0;
     const form = mon && mon.forms[formIdx];
     const level = intVal($('dc-' + prefix + '-level'), 100);
-    const burn = $('dc-' + prefix + '-burn') ? $('dc-' + prefix + '-burn').checked : false;
+    // Status: select with values none/burn/poison/paralyze/sleep/freeze.
+    // The legacy `dc-att-burn` checkbox is honoured as a fallback so older
+    // markup keeps working; otherwise read from the new status select.
+    const statusSel = $('dc-' + prefix + '-status');
+    let status = statusSel ? (statusSel.value || 'none') : 'none';
+    if (status === 'none' && $('dc-' + prefix + '-burn') && $('dc-' + prefix + '-burn').checked) status = 'burn';
+    const burn = status === 'burn';
+    const gender = ($('dc-' + prefix + '-gender') || {}).value || 'unknown';
     const item = ($('dc-' + prefix + '-item') || {}).value || 'none';
     const ability = ($('dc-' + prefix + '-ability') || {}).value || '';
     const hazards = {
@@ -222,7 +393,7 @@
       natureBoosted = s;
     }
 
-    const result = { mon, form, level, burn, item, ability, hazards, stats: {}, stages: {} };
+    const result = { mon, form, level, burn, status, gender, item, ability, hazards, stats: {}, stages: {} };
     const rows = document.querySelectorAll('.' + sideClass + ' .dc-stat-builder tbody tr');
     rows.forEach(row => {
       const stat = row.dataset.stat;
@@ -306,12 +477,20 @@
 
     // ---- Ability lookups ----
     const aEff = abilityEffect(att.ability);
-    const dEff = abilityEffect(def.ability);
+    let dEff = abilityEffect(def.ability);
+    // Mold Breaker — attacker ignores all defender ability effects. Wipe
+    // dEff so every dEff.* check below short-circuits to false.
+    if (aEff && aEff.moldBreaker) dEff = null;
 
     // Aerilate / Pixilate / Galvanize / Refrigerate retype Normal moves to
     // the matching type, with a ×1.2 power boost. We apply both the type
     // change (so STAB/effectiveness recompute) and the multiplier later.
     let moveType = move.type;
+    // Normalize re-types every move first (matches server: type-only, no
+    // power boost), so subsequent retypes see "Normal" already.
+    if (aEff && aEff.allToType) moveType = aEff.allToType;
+    // Liquid Voice retypes sound-based moves to Water before the -ate group.
+    if (aEff && aEff.soundToType && SOUND_MOVES.has(move.name)) moveType = aEff.soundToType;
     let aerilateMult = 1;
     if (aEff && aEff.normalToType && moveType === 'Normal') {
       moveType = aEff.normalToType;
@@ -342,6 +521,18 @@
     if (aEff && aEff.sunSpaMult && !isPhysical && $('dc-weather').value === 'sun') {
       A = Math.floor(A * aEff.sunSpaMult);
     }
+    // Flower Gift — attacker Atk ×1.5 in sun (physical only).
+    if (aEff && aEff.sunAtkMult && isPhysical && $('dc-weather').value === 'sun') {
+      A = Math.floor(A * aEff.sunAtkMult);
+    }
+    // Marvel Scale — defender Def ×1.5 vs physical when statused.
+    if (dEff && dEff.defStatusMult && isPhysical && def.status && def.status !== 'none') {
+      D = Math.floor(D * dEff.defStatusMult);
+    }
+    // Flower Gift — defender SpD ×1.5 in sun (special only).
+    if (dEff && dEff.sunSpdMult && !isPhysical && $('dc-weather').value === 'sun') {
+      D = Math.floor(D * dEff.sunSpdMult);
+    }
 
     // Burn halves physical Atk (unless ability prevents — out of scope).
     if (isPhysical && att.burn) A = Math.floor(A / 2);
@@ -365,11 +556,14 @@
     if (terrain === 'psychic'  && moveType === 'Psychic')  mod *= 1.3;
     if (terrain === 'misty'    && moveType === 'Dragon')   mod *= 0.5;
 
-    // Screens (Reflect/Light Screen). Ignored on crits.
-    if ($('dc-screen').checked && crit === 1) mod *= 0.5;
+    // Screens (Reflect/Light Screen). Ignored on crits and on attackers
+    // with Infiltrator.
+    if ($('dc-screen').checked && crit === 1 && !(aEff && aEff.bypassScreens)) mod *= 0.5;
 
     // STAB. Adaptability bumps it from ×1.5 to ×2.
-    if (att.form.types.indexOf(moveType) !== -1) {
+    // Protean re-types the user before each move, so STAB always applies.
+    const hasStab = (aEff && aEff.protean) || (att.form.types.indexOf(moveType) !== -1);
+    if (hasStab) {
       mod *= (aEff && aEff.stab) ? aEff.stab : 1.5;
     }
 
@@ -377,12 +571,25 @@
     if (aerilateMult !== 1) mod *= aerilateMult;
 
     // Defender ability immunities and Wonder Guard (computed before eff).
-    let eff = effectiveness(moveType, def.form.types);
+    // Scrappy: when the attacker has it, Normal/Fighting moves bypass the
+    // Ghost-type immunity. We recompute effectiveness against the defender's
+    // types with Ghost stripped out.
+    let defenderTypes = def.form.types;
+    if (aEff && aEff.scrappy && (moveType === 'Normal' || moveType === 'Fighting') && defenderTypes.indexOf('Ghost') !== -1) {
+      defenderTypes = defenderTypes.filter(t => t !== 'Ghost');
+    }
+    let eff = effectiveness(moveType, defenderTypes);
     if (dEff && dEff.immune && dEff.immune === moveType) eff = 0;
     if (dEff && dEff.wonderGuard && eff <= 1) eff = 0;
+    // Soundproof — defender is immune to any sound-based move.
+    if (dEff && dEff.immuneSound && SOUND_MOVES.has(move.name)) eff = 0;
+    // Bulletproof — defender is immune to ball/bomb shaped moves.
+    if (dEff && dEff.immuneBall && BALL_BOMB_MOVES.has(move.name)) eff = 0;
 
-    // Crit.
+    // Crit. Sniper bumps the crit damage from ×1.5 to ×2.25 (×1.5 of the
+    // base crit multiplier).
     mod *= crit;
+    if (aEff && aEff.critDmgMult && crit > 1) mod *= aEff.critDmgMult;
 
     // ---- Attacker ability mods ----
     if (aEff && aEff.typeMult && aEff.typeMult[moveType]) mod *= aEff.typeMult[moveType];
@@ -390,12 +597,32 @@
     if (aEff && aEff.superEffMult && eff > 1) mod *= aEff.superEffMult;
     if (aEff && aEff.resistedMult && eff < 1 && eff > 0) mod *= aEff.resistedMult;
     if (aEff && aEff.pulseMult && PULSE_MOVES.has(move.name)) mod *= aEff.pulseMult;
+    if (aEff && aEff.lowBpMult && power <= aEff.lowBpThreshold) mod *= aEff.lowBpMult;
+    if (aEff && aEff.punchMult && PUNCH_MOVES.has(move.name)) mod *= aEff.punchMult;
+    if (aEff && aEff.recoilMult && RECOIL_MOVES.has(move.name)) mod *= aEff.recoilMult;
+    if (aEff && aEff.biteMult && BITE_MOVES.has(move.name)) mod *= aEff.biteMult;
+    if (aEff && aEff.slicingMult && SLICING_MOVES.has(move.name)) mod *= aEff.slicingMult;
+    if (aEff && aEff.contactMult && CONTACT_MOVES.has(move.name)) mod *= aEff.contactMult;
+    if (aEff && aEff.soundAtkMult && SOUND_MOVES.has(move.name)) mod *= aEff.soundAtkMult;
+    if (aEff && aEff.stakeout && $('dc-stakeout') && $('dc-stakeout').checked) mod *= 2;
+    // Aura abilities — boost a type globally regardless of which side has it.
+    const auraEff = (aEff && aEff.typeAuraMult) || (dEff && dEff.typeAuraMult);
+    if (auraEff && auraEff[moveType]) mod *= auraEff[moveType];
+    if (aEff && aEff.physStatusMult && isPhysical && aEff.physStatusMult[att.status]) mod *= aEff.physStatusMult[att.status];
+    if (aEff && aEff.specStatusMult && !isPhysical && aEff.specStatusMult[att.status]) mod *= aEff.specStatusMult[att.status];
+    // Rivalry — needs both genders known and neither genderless.
+    if (aEff && aEff.rivalry && att.gender && def.gender
+        && att.gender !== 'unknown' && def.gender !== 'unknown'
+        && att.gender !== 'genderless' && def.gender !== 'genderless') {
+      mod *= (att.gender === def.gender) ? 0.75 : 1.25;
+    }
     if (aEff && aEff.mult && !aEff.sandTypes && !aEff.normalToType) mod *= aEff.mult;
 
     // ---- Defender ability mods ----
     if (dEff && dEff.defTypeMult && dEff.defTypeMult[moveType]) mod *= dEff.defTypeMult[moveType];
     if (dEff && dEff.specialMult && !isPhysical) mod *= dEff.specialMult;
     if (dEff && dEff.superEffMult && eff > 1) mod *= dEff.superEffMult;
+    if (dEff && dEff.soundDefMult && SOUND_MOVES.has(move.name)) mod *= dEff.soundDefMult;
     if (dEff && dEff.mult) mod *= dEff.mult;
 
     // Water Bubble (attacker ×2 Water; defender ×0.5 Fire) — already covered

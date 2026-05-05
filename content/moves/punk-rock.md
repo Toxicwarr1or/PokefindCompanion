@@ -6,3 +6,10 @@ effect: 'Boosts the power of sound-based moves. The Pokémon also takes half the
 learners_ability: ['Jataro Typhlosion']
 ---
 
+## Description
+
+This Pokemon's sound-based moves have their power multiplied by 1.3. This Pokemon takes halved damage from sound-based moves.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

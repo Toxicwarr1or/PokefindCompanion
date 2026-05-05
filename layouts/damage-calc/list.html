@@ -52,7 +52,26 @@
           </select>
         </label>
       </fieldset>
-      <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-att-burn"><span>Burned (halves physical Atk)</span></label>
+      <label class="dc-row">
+        <span>Status</span>
+        <select id="dc-att-status">
+          <option value="none">None</option>
+          <option value="burn">Burn</option>
+          <option value="poison">Poison</option>
+          <option value="paralyze">Paralysis</option>
+          <option value="sleep">Sleep</option>
+          <option value="freeze">Freeze</option>
+        </select>
+      </label>
+      <label class="dc-row">
+        <span>Gender</span>
+        <select id="dc-att-gender">
+          <option value="unknown">Unknown</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="genderless">Genderless</option>
+        </select>
+      </label>
       <label class="dc-row">
         <span>Item</span>
         <select id="dc-att-item"></select>
@@ -118,6 +137,7 @@
           </select>
         </label>
         <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-screen"><span>Reflect / Light Screen up</span></label>
+        <label class="dc-row dc-checkbox"><input type="checkbox" id="dc-stakeout"><span>Defender just switched in (Stakeout)</span></label>
       </div>
     </article>
 
@@ -161,6 +181,26 @@
           </select>
         </label>
       </fieldset>
+      <label class="dc-row">
+        <span>Status</span>
+        <select id="dc-def-status">
+          <option value="none">None</option>
+          <option value="burn">Burn</option>
+          <option value="poison">Poison</option>
+          <option value="paralyze">Paralysis</option>
+          <option value="sleep">Sleep</option>
+          <option value="freeze">Freeze</option>
+        </select>
+      </label>
+      <label class="dc-row">
+        <span>Gender</span>
+        <select id="dc-def-gender">
+          <option value="unknown">Unknown</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="genderless">Genderless</option>
+        </select>
+      </label>
       <label class="dc-row">
         <span>Item</span>
         <select id="dc-def-item"></select>

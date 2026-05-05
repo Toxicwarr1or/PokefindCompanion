@@ -6,3 +6,10 @@ effect: 'Its majesty pressures the opposing Pokémon, making it unable to attack
 learners_ability: ['Shiloh Vespiquen']
 ---
 
+## Description
+
+Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

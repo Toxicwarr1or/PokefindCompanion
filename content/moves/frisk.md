@@ -6,3 +6,10 @@ effect: 'When it enters a battle, the Pokémon can check an opposing Pokémon''s
 learners_ability: ['Alolan Exeggutor', 'Banette', 'Dusclops', 'Dusknoir', 'Duskull', 'Furret', 'Gothita', 'Gothitelle', 'Gothorita', 'Sentret', 'Shuppet', 'Stantler', 'Wigglytuff', 'Yanma', 'Yanmega']
 ---
 
+## Description
+
+On switch-in, this Pokemon identifies the held items of all opposing Pokemon.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

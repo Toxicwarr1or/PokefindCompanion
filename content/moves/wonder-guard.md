@@ -6,3 +6,10 @@ effect: 'Its mysterious power only lets supereffective moves hit the Pokémon.'
 learners_ability: ['Shedinja']
 ---
 
+## Description
+
+This Pokemon can only be damaged by supereffective moves and indirect damage.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

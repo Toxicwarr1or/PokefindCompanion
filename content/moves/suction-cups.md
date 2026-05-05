@@ -6,3 +6,10 @@ effect: 'This Pokémon uses suction cups to stay in one spot to negate all moves
 learners_ability: ['Cradily', 'Lileep', 'Octillery']
 ---
 
+## Description
+
+This Pokemon cannot be forced to switch out by another Pokemon's attack or item.
+
+## Mechanics on Pokéfind
+
+Listed in the Pokéfind ability registry but currently has **no in-battle effect** — the battle simulator does not implement the trigger. Treat as flavor only until the behaviour is added.

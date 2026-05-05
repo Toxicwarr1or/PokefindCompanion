@@ -6,3 +6,10 @@ effect: 'Powers up special attacks when the Pokémon is burned.'
 learners_ability: ['Drifblim', 'Drifloon', 'Shiloh Magmortar']
 ---
 
+## Description
+
+While this Pokemon is burned, the power of its special attacks is multiplied by 1.5.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

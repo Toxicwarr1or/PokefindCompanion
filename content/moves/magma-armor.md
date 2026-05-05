@@ -6,3 +6,10 @@ effect: 'The Pokémon is covered with hot magma, which prevents the Pokémon fro
 learners_ability: ['Camerupt', 'Magcargo', 'Slugma']
 ---
 
+## Description
+
+This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

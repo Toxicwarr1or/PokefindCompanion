@@ -6,3 +6,10 @@ effect: 'The attacker will receive the same status condition if it inflicts a bu
 learners_ability: ['Abra', 'Alakazam', 'Beheeyem', 'Elgyem', 'Espeon', 'Gardevoir', 'Kadabra', 'Kirlia', 'Mew', 'Munna', 'Musharna', 'Natu', 'Ralts', 'Umbreon', 'Xatu']
 ---
 
+## Description
+
+If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

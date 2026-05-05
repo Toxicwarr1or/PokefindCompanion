@@ -6,3 +6,10 @@ effect: 'The Pokémon''s proud of its powerful pincers. They prevent other Poké
 learners_ability: ['Corphish', 'Crawdaunt', 'Gligar', 'Gliscor', 'Kingler', 'Krabby', 'Mawile', 'Pinsir', 'Trapinch']
 ---
 
+## Description
+
+Prevents other Pokemon from lowering this Pokemon's Attack stat stage.
+
+## Mechanics on Pokéfind
+
+Listed in the Pokéfind ability registry but currently has **no in-battle effect** — the battle simulator does not implement the trigger. Treat as flavor only until the behaviour is added.

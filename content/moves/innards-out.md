@@ -6,3 +6,10 @@ effect: 'Damages the attacker landing the finishing hit by the amount equal to i
 learners_ability: ['Kyoto Arcanine']
 ---
 
+## Description
+
+If this Pokemon is knocked out with a move, that move's user loses HP equal to the amount of damage inflicted on this Pokemon.
+
+## Mechanics on Pokéfind
+
+Listed in the Pokéfind ability registry but currently has **no in-battle effect** — the battle simulator does not implement the trigger. Treat as flavor only until the behaviour is added.

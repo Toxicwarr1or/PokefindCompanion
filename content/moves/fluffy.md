@@ -6,3 +6,10 @@ effect: 'Halves the damage taken from moves that make direct contact, but double
 learners_ability: ['Jataro Ampharos']
 ---
 
+## Description
+
+This Pokemon receives 1/2 damage from contact moves, but double damage from Fire moves.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

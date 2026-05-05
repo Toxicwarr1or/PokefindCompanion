@@ -1,14 +1,13 @@
 ---
-title: 'Stalwart'
+title: 'Dragon's Maw'
 entry_kind: 'ability'
-date: 2026-04-27
-effect: 'Ignores the effects of opposing Pokémon''s Abilities and moves that draw in moves.'
-learners_ability: ['Zeinova Golurk']
+date: 2026-05-05
+effect: 'This Pokemon''s offensive stat is multiplied by 1.5 while using a Dragon-type attack.'
 ---
 
 ## Description
 
-This Pokemon's moves cannot be redirected to a different target by any effect.
+This Pokemon's offensive stat is multiplied by 1.5 while using a Dragon-type attack.
 
 ## Mechanics on Pokéfind
 

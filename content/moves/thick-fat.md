@@ -6,3 +6,10 @@ effect: 'The Pokémon is protected by a layer of thick fat, which halves the dam
 learners_ability: ['Alolan Raticate', 'Alolan Rattata', 'Azumarill', 'Azurill', 'Dewgong', 'Grumpig', 'Haikou Slaking', 'Hariyama', 'Jataro Blissey', 'Kyoto Chansey', 'Makuhita', 'Mamoswine', 'Marill', 'Miltank', 'Munchlax', 'Pignite', 'Piloswine', 'Purugly', 'Sealeo', 'Seel', 'Shiloh Magnezone', 'Snorlax', 'Spheal', 'Spoink', 'Swinub', 'Tepig', 'Walrein', 'Zeinova Conkeldurr']
 ---
 
+## Description
+
+If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

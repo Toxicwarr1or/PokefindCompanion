@@ -6,3 +6,10 @@ effect: 'The Pokémon is so lucky that the critical-hit ratios of its moves are 
 learners_ability: ['Absol', 'Honchkrow', 'Murkrow', 'Pidove', 'Togekiss', 'Togepi', 'Togetic', 'Tranquill', 'Unfezant']
 ---
 
+## Description
+
+This Pokemon's critical hit ratio is raised by 1 stage.
+
+## Mechanics on Pokéfind
+
+Listed in the Pokéfind ability registry but currently has **no in-battle effect** — the battle simulator does not implement the trigger. Treat as flavor only until the behaviour is added.

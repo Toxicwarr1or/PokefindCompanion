@@ -6,3 +6,10 @@ effect: 'Halves the Pokémon''s Attack and Sp. Atk stats when its HP becomes hal
 learners_ability: ['Archen', 'Archeops']
 ---
 
+## Description
+
+While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

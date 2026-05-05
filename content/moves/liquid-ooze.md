@@ -6,3 +6,10 @@ effect: 'Oozed liquid has strong stench, which damages attackers using any drain
 learners_ability: ['Gulpin', 'Kyoto Muk', 'Shiloh Spiritomb', 'Swalot', 'Tentacool', 'Tentacruel']
 ---
 
+## Description
+
+This Pokemon damages those draining HP from it for as much as they would heal. This effect does not consider Dream Eater.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.

@@ -6,3 +6,10 @@ effect: 'Becomes competitive and deals more damage to Pokémon of the same gende
 learners_ability: ['Axew', 'Beautifly', 'Fraxure', 'Haxorus', 'Luxio', 'Luxray', 'Nidoking', 'Nidoqueen', 'Nidoran-F', 'Nidoran-M', 'Nidorina', 'Nidorino', 'Pidove', 'Shinx', 'Tranquill', 'Unfezant']
 ---
 
+## Description
+
+This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless.
+
+## Mechanics on Pokéfind
+
+Functions on Pokéfind as described above. Implemented in the battle simulator.
