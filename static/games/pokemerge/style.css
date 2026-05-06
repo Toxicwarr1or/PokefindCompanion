@@ -1,0 +1,674 @@
+/* Generated from /home/jack/ClaudeProjects/PokeMerge/style.css. */
+/* Edit the source and re-run tools/namespace_pm_css.py if you change anything. */
+
+.pokemerge-app {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #f5f5f5;
+  background:
+    radial-gradient(1200px 800px at 20% 10%, #2b3a55 0%, transparent 60%),
+    radial-gradient(900px 700px at 80% 90%, #2a4d3a 0%, transparent 55%),
+    linear-gradient(135deg, #0f1320 0%, #1a1f33 100%);
+  min-height: 100%;
+  user-select: none;
+  image-rendering: pixelated;
+}
+
+@keyframes pm-auraFrames {
+  from { background-position-y: 0%; }
+  to   { background-position-y: 100%; }
+}
+@keyframes pm-legendFrames {
+  from { background-position-y: 0%; }
+  to   { background-position-y: 100%; }
+}
+@keyframes pm-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+@keyframes pm-shardPulse {
+  0%, 100% { opacity: 0.30; transform: scale(0.85); }
+  50%      { opacity: 0.55; transform: scale(1.00); }
+}
+@keyframes pm-offerArrive {
+  0%   { transform: translateY(-6px); opacity: 0; }
+  100% { transform: translateY(0);     opacity: 1; }
+}
+@keyframes pm-burst {
+  0% { transform: scale(0.4); opacity: 0.9; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+@keyframes pm-pop {
+  0% { box-shadow: 0 0 0 0 rgba(255,206,77,0.9); }
+  100% { box-shadow: 0 0 0 30px rgba(255,206,77,0); }
+}
+@keyframes pm-auraPop {
+  0%   { box-shadow: 0 0 0 0  rgba(180,110,255,0.9); transform: scale(0.6); opacity: 0.95; }
+  100% { box-shadow: 0 0 0 36px rgba(180,110,255,0); transform: scale(1.4); opacity: 0; }
+}
+@keyframes pm-coinPop {
+  0%   { box-shadow: 0 0 0 0  rgba(255,206,77,0.9); transform: scale(0.6); opacity: 0.95; }
+  100% { box-shadow: 0 0 0 30px rgba(255,206,77,0); transform: scale(1.35); opacity: 0; }
+}
+@keyframes pm-genPop {
+  0%   { box-shadow: 0 0 0 0  rgba(95,220,139,0.95); transform: scale(0.5); opacity: 1; }
+  60%  { box-shadow: 0 0 0 28px rgba(95,220,139,0.25); transform: scale(1.25); opacity: 0.6; }
+  100% { box-shadow: 0 0 0 48px rgba(95,220,139,0);   transform: scale(1.55); opacity: 0; }
+}
+@keyframes pm-coinPulseSlow {
+  0%, 100% { opacity: 0.45; transform: scale(0.9); }
+  50%      { opacity: 0.85; transform: scale(1.05); }
+}
+@keyframes pm-coinPulseFast {
+  0%, 100% { opacity: 0.7; transform: scale(0.92); }
+  50%      { opacity: 1.0; transform: scale(1.10); }
+}
+
+@scope (.pokemerge-app) {
+* { box-sizing: border-box; }
+#app {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 16px 20px 32px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+h1 {
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+h1 span { color: #ffce4d; }
+
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.coins {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #1d2336; padding: 6px 12px; border-radius: 10px;
+  border: 1px solid #2d3552;
+  font-weight: 700; font-size: 18px; color: #ffce4d;
+}
+.coins img { width: 22px; height: 22px; }
+
+.shop-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 10px;
+  background: #243047;
+  color: #f5f5f5;
+  border: 1px solid #3a4a6a;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  transition: transform 0.06s ease, background 0.15s ease;
+}
+.shop-btn:hover { background: #2c3a55; }
+.shop-btn:active { transform: scale(0.97); }
+.shop-btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+.shop-btn img { width: 22px; height: 22px; }
+.shop-btn .label { font-size: 13px; }
+.shop-btn .price { font-weight: 700; color: #ffce4d; margin-left: 4px; }
+
+#reset {
+  background: transparent; color: #aab; border: 1px solid #3a4a6a;
+  border-radius: 10px; padding: 6px 10px; cursor: pointer; font: inherit;
+}
+#reset:hover { color: #fff; border-color: #6a7aa0; }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+}
+@media (max-width: 900px) {
+  main { grid-template-columns: 1fr; }
+}
+
+#board {
+  --cols: 7;
+  --rows: 6;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+  gap: 6px;
+  padding: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid #2d3552;
+  border-radius: 14px;
+  aspect-ratio: 7 / 6;
+  min-height: 460px;
+}
+
+.cell {
+  background: rgba(255,255,255,0.03);
+  border: 1px dashed rgba(255,255,255,0.10);
+  border-radius: 10px;
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+.cell.drop-ok { background: rgba(80, 200, 120, 0.18); border-color: #4ec77a; }
+.cell.drop-merge { background: rgba(255, 206, 77, 0.22); border-color: #ffce4d; }
+.cell.drop-bad { background: rgba(220, 80, 80, 0.18); border-color: #d05050; }
+
+.item {
+  width: 86%;
+  height: 86%;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  cursor: grab;
+}
+.item.dragging { opacity: 0.45; }
+.item img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.4));
+}
+
+/* Animated sprite sheets. egg_aura/egg_shiny are 64x576 (9 frames stacked
+   vertically). egg_legendary is 64x256 (4 frames). The browser would show
+   the whole sheet without these animations. */
+.sprite.aura-sprite,
+.sprite.shiny-sprite {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 900%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  pointer-events: none;
+  animation: pm-auraFrames 0.9s steps(9, jump-none) infinite;
+}
+.sprite.legend-sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/eggs/egg_legendary.png');
+  background-size: 100% 400%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  pointer-events: none;
+  animation: pm-legendFrames 0.6s steps(4, jump-none) infinite;
+  filter: drop-shadow(0 0 6px rgba(255, 220, 100, 0.7))
+          drop-shadow(0 0 14px rgba(255, 130, 80, 0.4))
+          drop-shadow(0 2px 3px rgba(0,0,0,0.4));
+}
+.sprite.aura-sprite {
+  background-image: url('assets/eggs/egg_aura.png');
+  filter: drop-shadow(0 0 4px rgba(180, 110, 255, 0.55))
+          drop-shadow(0 2px 3px rgba(0,0,0,0.4));
+}
+.sprite.shiny-sprite {
+  background-image: url('assets/eggs/egg_shiny.png');
+  filter: drop-shadow(0 0 6px rgba(255, 230, 130, 0.75))
+          drop-shadow(0 0 14px rgba(255, 200, 80, 0.45))
+          drop-shadow(0 2px 3px rgba(0,0,0,0.4));
+}
+
+
+.item.egg img {
+  animation: pm-bob 2.4s ease-in-out infinite;
+}
+.item.egg.empty img { filter: grayscale(0.85) brightness(0.55); }
+.item.egg.ready { cursor: pointer; }
+
+
+.charges {
+  position: absolute;
+  bottom: -2px;
+  left: 6px; right: 6px;
+  display: flex;
+  gap: 2px;
+}
+.charge-pip {
+  flex: 1;
+  height: 4px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.charge-pip.full { background: #4ec77a; }
+.charge-pip .fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #ffce4d;
+  /* No CSS transition — width is recomputed each tick (~10Hz),
+     and the initial width is set inline at render time so a
+     re-render does not visually snap progress back to zero. */
+}
+
+.tier-badge {
+  position: absolute;
+  top: 2px; right: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #fff;
+  background: rgba(0,0,0,0.65);
+  padding: 1px 5px;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 3;
+}
+.tier-badge.aura {
+  background: linear-gradient(135deg, #6a3aff, #ff5cf0);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.tier-badge.gen2 {
+  background: linear-gradient(135deg, #1ea96b, #5fdc8b);
+  color: #04210f;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+}
+.tier-badge.gen3 {
+  background: linear-gradient(135deg, #1f8fb0, #5fd3ec);
+  color: #03212a;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+}
+.tier-badge.gen4 {
+  background: linear-gradient(135deg, #b87a14, #ffd05a);
+  color: #2b1a00;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+}
+.tier-badge.gen5 {
+  background: linear-gradient(135deg, #b03050, #ff7090);
+  color: #220308;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+}
+.tier-badge.coin {
+  background: linear-gradient(135deg, #c98a14, #ffd95a);
+  color: #2b1f00;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.45);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.item.egg.aura .sprite {
+  filter: drop-shadow(0 0 8px rgba(180, 110, 255, 0.65))
+          drop-shadow(0 0 16px rgba(255, 130, 240, 0.35))
+          drop-shadow(0 4px 4px rgba(0,0,0,0.4));
+}
+.item.egg.aura.aura-gen-3 .sprite {
+  filter: drop-shadow(0 0 8px rgba(80, 200, 230, 0.7))
+          drop-shadow(0 0 16px rgba(120, 220, 255, 0.4))
+          drop-shadow(0 4px 4px rgba(0,0,0,0.4));
+}
+.item.egg.aura.aura-gen-4 .sprite {
+  filter: drop-shadow(0 0 8px rgba(255, 210, 90, 0.8))
+          drop-shadow(0 0 18px rgba(255, 170, 60, 0.5))
+          drop-shadow(0 4px 4px rgba(0,0,0,0.4));
+}
+.item.egg.aura.aura-gen-5 .sprite {
+  filter: drop-shadow(0 0 8px rgba(255, 110, 140, 0.85))
+          drop-shadow(0 0 20px rgba(255, 70, 110, 0.55))
+          drop-shadow(0 4px 4px rgba(0,0,0,0.4));
+}
+
+.item.shard {
+  cursor: grab;
+}
+.item.shard .sprite {
+  position: relative;
+  z-index: 2;
+  transform: scale(var(--shard-scale, 0.6));
+  opacity: var(--shard-opacity, 0.85);
+}
+.item.shard-t2 .sprite {
+  filter: drop-shadow(0 0 6px rgba(255, 130, 240, 0.7))
+          drop-shadow(0 0 12px rgba(180, 110, 255, 0.5))
+          drop-shadow(0 2px 3px rgba(0,0,0,0.4));
+}
+/* Gen-tinted halos — match the aura-egg gen colors */
+.item.shard.shard-gen-2::after { background: radial-gradient(circle, rgba(180,110,255,0.30), transparent 65%); }
+.item.shard.shard-gen-3::after { background: radial-gradient(circle, rgba(80,200,230,0.32),  transparent 65%); }
+.item.shard.shard-gen-4::after { background: radial-gradient(circle, rgba(255,210,90,0.32),  transparent 65%); }
+.item.shard.shard-gen-5::after { background: radial-gradient(circle, rgba(255,110,140,0.32), transparent 65%); }
+.item.shard.shard-gen-3 .sprite { filter: hue-rotate(140deg)
+                                            drop-shadow(0 0 4px rgba(80,200,230,0.6))
+                                            drop-shadow(0 2px 3px rgba(0,0,0,0.4)); }
+.item.shard.shard-gen-4 .sprite { filter: hue-rotate(280deg) saturate(1.2)
+                                            drop-shadow(0 0 4px rgba(255,210,90,0.65))
+                                            drop-shadow(0 2px 3px rgba(0,0,0,0.4)); }
+.item.shard.shard-gen-5 .sprite { filter: hue-rotate(330deg) saturate(1.3)
+                                            drop-shadow(0 0 4px rgba(255,110,140,0.7))
+                                            drop-shadow(0 2px 3px rgba(0,0,0,0.4)); }
+.item.shard::after {
+  content: '';
+  position: absolute;
+  inset: 22%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(180,110,255,0.30), transparent 65%);
+  pointer-events: none;
+  z-index: 1;
+  animation: pm-shardPulse 2.2s ease-in-out infinite;
+}
+.item.shard-t2::after {
+  inset: 14%;
+  background: radial-gradient(circle, rgba(255,130,240,0.32), rgba(180,110,255,0.18) 50%, transparent 70%);
+}
+
+
+#side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.trash {
+  background: linear-gradient(180deg, #3a1f23 0%, #281418 100%);
+  border: 2px dashed #b3505a;
+  border-radius: 14px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.trash.drop-ok { border-color: #ffce4d; background: linear-gradient(180deg,#3a3520 0%, #28230f 100%); }
+.trash-icon { font-size: 36px; font-weight: 800; color: #ffce4d; line-height: 1; }
+.trash-label { font-weight: 700; letter-spacing: 1px; color: #f0c9ce; }
+#trash-tip { font-size: 12px; color: #c79da3; margin-top: 4px; }
+
+#offers {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid #2d3552;
+  border-radius: 14px;
+  padding: 10px 12px 4px;
+}
+#offers h3 {
+  margin: 2px 0 8px;
+  font-size: 13px;
+  color: #ffce4d;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+#offer-list { display: flex; flex-direction: column; gap: 8px; }
+.offer-empty {
+  font-size: 12px;
+  color: #889;
+  font-style: italic;
+  padding: 6px 2px 10px;
+  text-align: center;
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 8px;
+  padding: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #3a4a6a;
+  border-radius: 10px;
+  position: relative;
+}
+.offer.just-arrived { animation: pm-offerArrive 0.35s ease-out; }
+
+
+.offer-portrait {
+  grid-row: 1 / span 2;
+  width: 44px; height: 44px;
+  background: #1a1f33;
+  border: 1px solid #2d3552;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.offer-portrait img {
+  width: 100%; height: 100%;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+.offer-name {
+  grid-column: 2;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffce4d;
+  line-height: 1.1;
+}
+.offer-quote {
+  grid-column: 2;
+  font-size: 11px;
+  color: #aab;
+  font-style: italic;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+.offer-items {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.offer-item {
+  display: flex; align-items: center; gap: 3px;
+  background: #1d2336;
+  padding: 2px 6px 2px 4px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #cdd;
+  border: 1px solid #2d3552;
+}
+.offer-item.have { border-color: #4ec77a; }
+.offer-item.miss { opacity: 0.65; }
+.offer-item .thumb {
+  width: 22px; height: 22px;
+  position: relative;
+  flex-shrink: 0;
+}
+.offer-item .thumb img,
+.offer-item .thumb .sprite {
+  width: 100%; height: 100%;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+.offer-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+.offer-buy {
+  flex: 1;
+  background: linear-gradient(180deg, #4ec77a 0%, #34a85f 100%);
+  border: none; color: #02220e;
+  padding: 7px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font: inherit;
+  font-size: 12px;
+  transition: transform 0.05s ease, filter 0.15s ease;
+}
+.offer-buy:not([disabled]):hover { filter: brightness(1.1); }
+.offer-buy:not([disabled]):active { transform: scale(0.97); }
+.offer-buy[disabled] {
+  background: #2a3548;
+  color: #889;
+  cursor: not-allowed;
+}
+.offer-skip {
+  background: transparent;
+  color: #889;
+  border: 1px solid #3a4a6a;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+}
+.offer-skip:hover { color: #fff; border-color: #6a7aa0; }
+
+#legend-wrap {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid #2d3552;
+  border-radius: 14px;
+}
+#legend-wrap > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #ffce4d;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  user-select: none;
+}
+#legend-wrap > summary::-webkit-details-marker { display: none; }
+#legend-wrap > summary::after {
+  content: '▸';
+  float: right;
+  transition: transform 0.15s ease;
+}
+#legend-wrap[open] > summary::after { transform: rotate(90deg); }
+#legend-wrap[open] > summary { border-bottom: 1px solid #2d3552; }
+#legend {
+  padding: 10px 14px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+#legend h3 { margin: 4px 0 6px; font-size: 13px; color: #ffce4d; letter-spacing: 0.5px; text-transform: uppercase; }
+#legend ul { padding-left: 18px; margin: 0 0 10px; }
+#legend ul.prices { padding-left: 16px; }
+#legend li { margin-bottom: 3px; }
+
+#toast {
+  position: fixed;
+  bottom: 24px; left: 50%; transform: translateX(-50%);
+  background: #ffce4d; color: #2b1f00;
+  padding: 8px 16px; border-radius: 999px;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+#toast.show { opacity: 1; transform: translate(-50%, -8px); }
+
+.spawn-burst {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  animation: pm-burst 0.45s ease-out forwards;
+  background: radial-gradient(circle, rgba(255,206,77,0.55), transparent 70%);
+}
+
+
+.merge-pop {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 rgba(255,206,77,0.8);
+  animation: pm-pop 0.45s ease-out forwards;
+}
+
+
+.aura-pop {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 rgba(180,110,255,0.85);
+  animation: pm-auraPop 0.6s ease-out forwards;
+  background: radial-gradient(circle, rgba(180,110,255,0.35), transparent 70%);
+}
+
+
+.coin-pop {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 rgba(255,206,77,0.9);
+  animation: pm-coinPop 0.55s ease-out forwards;
+  background: radial-gradient(circle, rgba(255,206,77,0.45), transparent 70%);
+}
+
+
+.gen-pop {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 rgba(95, 220, 139, 0.9);
+  animation: pm-genPop 0.85s ease-out forwards;
+  background: radial-gradient(circle, rgba(95,220,139,0.45), rgba(255,230,120,0.20) 50%, transparent 75%);
+}
+
+
+/* Coins ----------------------------------------------------------------- */
+.item.coin img {
+  position: relative;
+  z-index: 2;
+  image-rendering: pixelated;
+}
+
+/* Tier glow scales with rarity (T0 desaturated, T4 max sparkle). */
+.item.coin.coin-t0 img { filter: grayscale(0.55) brightness(0.88)
+                                   drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.coin.coin-t1 img { filter: drop-shadow(0 0 3px rgba(255,210,90,0.55))
+                                   drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.coin.coin-t2 img { filter: drop-shadow(0 0 5px rgba(255,210,90,0.75))
+                                   drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.coin.coin-t3 img { filter: drop-shadow(0 0 7px rgba(255,210,90,0.9))
+                                   drop-shadow(0 0 14px rgba(255,160,40,0.55))
+                                   drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.coin.coin-t4 img { filter: drop-shadow(0 0 9px rgba(255,230,120,1))
+                                   drop-shadow(0 0 22px rgba(255,160,40,0.8))
+                                   drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+
+/* Mult tints stack on top of tier glow via filter additions on the halo. */
+.item.coin::after {
+  content: '';
+  position: absolute;
+  inset: 18%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+}
+.item.coin.coin-t2::after { opacity: 0.55; }
+.item.coin.coin-t3::after { opacity: 0.75; animation: pm-coinPulseSlow 2.4s ease-in-out infinite; }
+.item.coin.coin-t4::after { opacity: 1;    animation: pm-coinPulseFast 1.6s ease-in-out infinite; }
+
+.item.coin.mult-1::after { background: radial-gradient(circle, rgba(255,210,90,0.30), transparent 65%); }
+.item.coin.mult-2::after { background: radial-gradient(circle, rgba(255,150,60,0.35),  transparent 65%); }
+.item.coin.mult-4::after { background: radial-gradient(circle, rgba(255,90,60,0.40),   transparent 65%); }
+.item.coin.mult-8::after { background: radial-gradient(circle, rgba(220,80,255,0.45),  rgba(255,90,60,0.20) 50%, transparent 75%); }
+
+/* Mult also tints the badge so high-mult coins read as special at a glance. */
+.tier-badge.coin {
+  background: linear-gradient(135deg, #c98a14, #ffd95a);
+  color: #2b1f00;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.45);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+.item.coin.mult-2 .tier-badge.coin { background: linear-gradient(135deg, #b85a14, #ffaa55); }
+.item.coin.mult-4 .tier-badge.coin { background: linear-gradient(135deg, #8a1010, #ff5c50); color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.4); }
+.item.coin.mult-8 .tier-badge.coin {
+  background: linear-gradient(135deg, #6a1ad5, #ff5cb0 50%, #ffaa30);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 4px rgba(220,80,255,0.6), 0 1px 3px rgba(0,0,0,0.45);
+}
+}

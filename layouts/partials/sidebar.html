@@ -47,6 +47,17 @@
   </ul>
 </nav>
 {{ end }}
+{{- /* Games group: shared sidebar for /games/ landing and each game's
+       single page. Add new tabs here as more games ship. */ -}}
+{{ $inGamesGroup := eq $section "games" }}
+{{ if $inGamesGroup }}
+<nav class="section-nav" aria-label="Section">
+  <h4>Games</h4>
+  <ul>
+    <li><a href="{{ "/games/pokemerge/" | relURL }}"{{ if eq .RelPermalink (relURL "/games/pokemerge/") }} class="active"{{ end }}>PokéMerge</a></li>
+  </ul>
+</nav>
+{{ end }}
 {{ with .Site.GetPage (printf "/%s" $section) }}
 {{- /* How To pages use frontmatter `weight` to control sidebar order so
        "Join on Java" lands first; other sections still sort alphabetically. */ -}}
@@ -86,14 +97,14 @@
     </ul>
   </div>
 </div>
-{{ if not (or $inPokedexGroup $inGuidesGroup) }}
+{{ if not (or $inPokedexGroup (or $inGuidesGroup $inGamesGroup)) }}
 <nav class="section-nav" aria-label="Section">
   <h4>{{ .Title }}</h4>
   <p class="section-nav-hint">Browse all entries via the search button (bottom-right).</p>
 </nav>
 {{ end }}
 {{ else }}
-{{ if not (or $inPokedexGroup $inGuidesGroup) }}
+{{ if not (or $inPokedexGroup (or $inGuidesGroup $inGamesGroup)) }}
 <nav class="section-nav" aria-label="Section">
   <h4>{{ .Title }}</h4>
   <ul>

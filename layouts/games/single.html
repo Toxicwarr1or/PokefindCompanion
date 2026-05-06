@@ -1,0 +1,137 @@
+{{ define "main" }}
+<section class="page pokemerge-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+
+  <link rel="stylesheet" href="{{ "games/pokemerge/style.css" | relURL }}">
+
+  {{- /* Wiki-context overrides. The standalone game assumes a 1180px-wide
+         viewport and 280px side panel; the wiki content area is narrower,
+         so we tighten the layout, remove `min-height: 100%` (which doesn't
+         resolve in the wiki's auto-height parent), and turn the wrapper
+         into a self-contained card so its dark gradient frames the whole
+         game including the side column. */ -}}
+  <style>
+    .pokemerge-app {
+      display: block;
+      width: 100%;
+      margin: 0 0 1rem;
+      padding: 14px 16px 18px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.07);
+      background-color: #1a1f33;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .pokemerge-app #app {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .pokemerge-app header h1 { font-size: 22px; }
+    .pokemerge-app main {
+      grid-template-columns: 1fr 240px;
+      gap: 12px;
+    }
+    .pokemerge-app #board { min-height: 380px; }
+    @media (max-width: 760px) {
+      .pokemerge-app main { grid-template-columns: 1fr; }
+    }
+    /* Toast is fixed-positioned and lives in document space — keep it
+       legible against the wiki's lighter chrome. */
+    .pokemerge-app #toast { z-index: 1000; }
+  </style>
+
+  {{- /* The game's own DOM is wrapped in .pokemerge-app so the CSS rules
+         (loaded above with @scope) apply only inside this subtree. The
+         markup is a near-verbatim copy of the standalone game's index.html
+         body, with relative asset paths that resolve under
+         /games/pokemerge/. */ -}}
+  <div class="pokemerge-app">
+    <div id="app">
+      <header>
+        <h1>Poké<span>Merge</span></h1>
+        <div class="hud">
+          <div class="coins"><img src="{{ "games/pokemerge/assets/eggs/egg_common.png" | relURL }}" alt=""><span id="coins">0</span></div>
+          <button id="buy-common" class="shop-btn" data-tier="1">
+            <img src="{{ "games/pokemerge/assets/eggs/egg_common.png" | relURL }}" alt=""><span class="label">Common Egg</span><span class="price">50</span>
+          </button>
+          <button id="buy-rare" class="shop-btn" data-tier="2">
+            <img src="{{ "games/pokemerge/assets/eggs/egg_rare.png" | relURL }}" alt=""><span class="label">Rare Egg</span><span class="price">300</span>
+          </button>
+          <button id="reset" title="Reset save">Reset</button>
+        </div>
+      </header>
+
+      <main>
+        <div id="board"></div>
+        <aside id="side">
+          <div id="trash" class="trash" title="Drag a Pokémon, coin, shard, fragment, or Aura Egg here to sell">
+            <div class="trash-icon">$</div>
+            <div class="trash-label">Sell</div>
+            <div id="trash-tip">Pokémon · Coins · Shards · Aura Eggs</div>
+          </div>
+          <div id="offers">
+            <h3>Special Offers</h3>
+            <div id="offer-list"></div>
+            <div id="offer-empty" class="offer-empty">Waiting for buyers…</div>
+          </div>
+          <details id="legend-wrap">
+            <summary>How to play</summary>
+            <div id="legend">
+              <h3>How to play</h3>
+              <ul>
+                <li><b>Click</b> an egg to spawn a Pokémon (uses one charge).</li>
+                <li><b>Drag</b> two of the same Pokémon together to evolve it.</li>
+                <li><b>Drag</b> two of the same egg together to upgrade it.</li>
+                <li><b>Drag</b> a Pokémon to the Sell zone for coins.</li>
+                <li>Eggs slowly recharge over time.</li>
+              </ul>
+              <h3>Egg ladder</h3>
+              <ul>
+                <li>Each gen has T1 → T2 → T3 (merge twos to step up).</li>
+                <li>Two T3 eggs promote into T1 of the next gen.</li>
+                <li>Gen 1 → 2 → 3 → 4 → 5 (Common all the way to Apex).</li>
+                <li>T3 eggs roll ~70% S3, 25% S2, 5% S1.</li>
+              </ul>
+              <h3>Aura Eggs</h3>
+              <ul>
+                <li>Aura Shards drop only from <b>Gen 2+</b> eggs (basic eggs don't).</li>
+                <li>Shards are gen-stamped; same-gen Shards merge into a Fragment, then an <b>Aura Egg of that gen</b>.</li>
+                <li>Aura Eggs share the same Pokémon pool but drop coins worth more per gen.</li>
+              </ul>
+              <h3>Coins from Aura Eggs</h3>
+              <ul>
+                <li>Aura Eggs sometimes drop a Coin Fragment with a multiplier:
+                  G2 ×1, G3 ×2, G4 ×4, G5 ×8.</li>
+                <li>Frag → 1 → 10 → 50 → 100 coins, multiplied by the stamp.</li>
+                <li>Coins only merge with the same multiplier.</li>
+              </ul>
+              <h3>Sell prices (Pokémon)</h3>
+              <ul class="prices">
+                <li>Gen 1 — <b>2</b> / <b>10</b> / <b>60</b></li>
+                <li>Gen 2 — <b>4</b> / <b>20</b> / <b>120</b></li>
+                <li>Gen 3 — <b>7</b> / <b>35</b> / <b>210</b></li>
+                <li>Gen 4 — <b>12</b> / <b>60</b> / <b>360</b></li>
+                <li>Gen 5 — <b>20</b> / <b>100</b> / <b>600</b></li>
+                <li>Aura — <b>5</b> / <b>25</b> / <b>150</b></li>
+              </ul>
+              <h3>Sell prices (Aura items)</h3>
+              <ul class="prices">
+                <li>Shard / Fragment / Egg base — <b>3</b> / <b>8</b> / <b>25</b></li>
+                <li>×1 G2, ×2 G3, ×4 G4, ×8 G5</li>
+              </ul>
+            </div>
+          </details>
+        </aside>
+      </main>
+    </div>
+    <div id="toast"></div>
+  </div>
+
+  <script defer src="{{ "games/pokemerge/game.js" | relURL }}"></script>
+</section>
+{{ end }}

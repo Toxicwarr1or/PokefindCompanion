@@ -1,0 +1,45 @@
+{{ define "main" }}
+<section class="page games-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="games-grid">
+    {{ range .Pages.ByWeight }}
+    <a class="game-card" href="{{ .RelPermalink }}">
+      <h3>{{ .Title }}</h3>
+      {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+    </a>
+    {{ else }}
+    <p>No games yet — check back soon.</p>
+    {{ end }}
+  </div>
+</section>
+
+<style>
+  .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .game-card {
+    display: block;
+    padding: 14px 16px;
+    background: rgba(0,0,0,0.04);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.08s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  .game-card:hover {
+    border-color: var(--brand-color, #3eb045);
+    background: rgba(62, 176, 69, 0.06);
+    transform: translateY(-1px);
+  }
+  .game-card h3 { margin: 0 0 4px; font-size: 18px; }
+  .game-card p  { margin: 0; font-size: 14px; opacity: 0.75; }
+</style>
+{{ end }}
