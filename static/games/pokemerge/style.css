@@ -2,15 +2,31 @@
 /* Edit the source and re-run tools/namespace_pm_css.py if you change anything. */
 
 .pokemerge-app {
+  /* Maximum width for the centered column (Pass / Offers / Board / Sell /
+     Legend). On phones the column shrinks to fit; on desktops it caps here.
+     Tweak in one place to retune the whole layout. */
+  --pm-col-width: 900px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: #f5f5f5;
-  background:
-    radial-gradient(1200px 800px at 20% 10%, #2b3a55 0%, transparent 60%),
-    radial-gradient(900px 700px at 80% 90%, #2a4d3a 0%, transparent 55%),
+  /* Solid fallback so any area the gradients don't cover still reads as
+     "in-theme" rather than browser default. */
+  background-color: #161a2c;
+  /* Use viewport-relative sizes + fixed attachment so the gradient always
+     fills the visible area regardless of how tall the page becomes (the
+     7-wide × 9-tall board is much taller than wide). */
+  background-image:
+    radial-gradient(80vw 80vh at 20% 10%, #2b3a55 0%, transparent 70%),
+    radial-gradient(70vw 70vh at 80% 90%, #2a4d3a 0%, transparent 65%),
     linear-gradient(135deg, #0f1320 0%, #1a1f33 100%);
-  min-height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
   user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
   image-rendering: pixelated;
+  overflow-x: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 @keyframes pm-auraFrames {
@@ -137,18 +153,126 @@ h1 span { color: #ffce4d; }
 }
 #reset:hover { color: #fff; border-color: #6a7aa0; }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 16px;
+/* Special Offers — horizontal strip below the Pass bar. Three cards share
+   the row equally; they're flex-1 with a min/max so the row never needs a
+   scroll bar at the locked column width. */
+#offers { margin-bottom: 14px; }
+#offers #offer-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-bottom: 0;
+  overflow: visible;
 }
-@media (max-width: 900px) {
-  main { grid-template-columns: 1fr; }
+#offers .offer {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Single-column stack: header → pass → offers → board → sell → how to play.
+   Every below-the-header section is centered and width-locked to the board,
+   so the column reads as a tidy strip down the middle.
+   --pm-col-width is declared on body (above) so the namespacer can lift it
+   onto .pokemerge-app for the wiki — :root wouldn't reach descendants of
+   the @scope. */
+
+#pass-bar,
+#offers,
+main,
+.trash,
+#legend-wrap {
+  max-width: var(--pm-col-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  display: block;
+  margin-bottom: 14px;
+}
+/* (board sizing lives below in its main rule) */
+.trash {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 14px;
+  flex-direction: row;
+  gap: 14px;
+}
+.trash-icon  { font-size: 32px; }
+.trash-label { font-size: 18px; }
+#trash-tip   { margin-top: 0; }
+#legend-wrap { width: 100%; }
+
+/* ---------- Compact mobile layout (≤640px) ----------
+   Tightens paddings, fonts, and HUD chrome so the 9×7 board and side
+   panel fit comfortably in a phone's viewport without horizontal scroll. */
+@media (max-width: 640px) {
+  #app { padding: 10px 10px 24px; }
+  h1 { font-size: 22px; }
+  header { gap: 8px; margin-bottom: 8px; }
+  .hud { gap: 6px; }
+  .coins {
+    padding: 4px 8px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .coins img { width: 18px; height: 18px; }
+  .shop-btn {
+    padding: 4px 7px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  .shop-btn img { width: 18px; height: 18px; }
+  .shop-btn .label { font-size: 11px; }
+  .shop-btn .price { font-size: 12px; }
+  #reset { padding: 4px 8px; font-size: 12px; border-radius: 8px; }
+
+  #board {
+    padding: 6px;
+    gap: 4px;
+    border-radius: 10px;
+    min-height: 0;     /* let aspect-ratio drive height entirely */
+  }
+  .cell { border-radius: 7px; }
+  .item img { object-fit: contain; }
+  .tier-badge { font-size: 9px; padding: 1px 4px; }
+
+  #pass-bar {
+    flex-wrap: wrap;
+    padding: 6px 10px;
+    gap: 8px;
+  }
+  .pass-meta { min-width: 0; flex: 1; }
+  .pass-meta-label { font-size: 12px; }
+  .pass-meta-xp    { font-size: 11px; }
+  .pass-track { order: 3; flex-basis: 100%; height: 8px; }
+  #pass-open { padding: 5px 12px; font-size: 13px; }
+
+  .trash { height: 92px; }
+  .trash-icon { font-size: 28px; }
+
+  #offers { padding: 8px 10px 4px; }
+  #offers h3 { font-size: 12px; }
+  .offer { padding: 6px; }
+  .offer-name { font-size: 12px; }
+  .offer-quote { font-size: 10px; }
+  .offer-buy, .offer-skip { padding: 5px 8px; font-size: 11px; }
+
+  .pass-modal-panel { max-height: 86vh; }
+  .pass-modal-header { padding: 10px 14px; }
+  .pass-modal-header h2 { font-size: 16px; }
+  .pass-modal-body { padding: 10px 14px 14px; }
+  .pass-row { grid-template-columns: 32px 1fr auto; padding: 5px 8px; gap: 8px; }
+  .pass-row-num { font-size: 14px; }
+  .pass-row-reward { font-size: 12px; gap: 6px; }
+  .pass-row-reward img { width: 24px; height: 24px; }
+  .pass-claim-btn { padding: 5px 10px; font-size: 11px; }
 }
 
 #board {
   --cols: 7;
-  --rows: 6;
+  --rows: 9;
   display: grid;
   grid-template-columns: repeat(var(--cols), 1fr);
   grid-template-rows: repeat(var(--rows), 1fr);
@@ -157,8 +281,13 @@ main {
   background: rgba(255,255,255,0.04);
   border: 1px solid #2d3552;
   border-radius: 14px;
-  aspect-ratio: 7 / 6;
-  min-height: 460px;
+  aspect-ratio: 7 / 9;
+  /* Fill the centered column. Height is derived from width × 9/7, so on a
+     wide column the board can run taller than the viewport — that's fine,
+     the page scrolls. */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cell {
@@ -179,8 +308,24 @@ main {
   display: flex; align-items: center; justify-content: center;
   position: relative;
   cursor: grab;
+  /* Touch handling: pointer events drive drag, so the browser must NOT
+     interpret a touch on an item as scroll/zoom/select. */
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .item.dragging { opacity: 0.45; }
+.drag-ghost {
+  /* The ghost mirrors the source .item; it floats above everything else
+     while a drag is active. */
+  border-radius: 10px;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.45));
+  transform: scale(1.06);
+  transform-origin: center;
+}
+.drag-ghost::after, .drag-ghost::before { display: none; }
 .item img {
   width: 100%; height: 100%;
   object-fit: contain;
@@ -353,7 +498,9 @@ main {
   align-items: center;
   gap: 12px;
   padding: 8px 12px;
-  margin: 0 0 12px;
+  /* margin-left/right: auto come from the column-width block above. */
+  margin-top: 0;
+  margin-bottom: 12px;
   background: rgba(255,255,255,0.04);
   border: 1px solid #2d3552;
   border-radius: 12px;
@@ -637,16 +784,19 @@ main {
   background: rgba(255,255,255,0.04);
   border: 1px solid #2d3552;
   border-radius: 14px;
-  padding: 10px 12px 4px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 110px;
 }
 #offers h3 {
-  margin: 2px 0 8px;
-  font-size: 13px;
+  margin: 0 0 6px;
+  font-size: 12px;
   color: #ffce4d;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
-#offer-list { display: flex; flex-direction: column; gap: 8px; }
+#offer-list { display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .offer-empty {
   font-size: 12px;
   color: #889;

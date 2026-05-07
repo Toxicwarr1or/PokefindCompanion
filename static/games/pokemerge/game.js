@@ -19,7 +19,7 @@
 //   Coin merge: same tier + same mult → next tier, same mult, capped at T4.
 
 const COLS = 7;
-const ROWS = 6;
+const ROWS = 9;
 const TOTAL = COLS * ROWS;
 
 // ---------- Pokémon evolution chains, keyed by pool ----------
@@ -456,6 +456,8 @@ function save() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify({
     coins: state.coins,
     cells: state.cells,
+    cols: COLS,         // recorded so future grid expansions can remap correctly
+    rows: ROWS,
     maxGen: state.maxGen,
     hasAura: state.hasAura,
     hasBush: state.hasBush,
@@ -511,9 +513,19 @@ function load() {
     }
     if (!raw) return false;
     const data = JSON.parse(raw);
-    if (!data || !Array.isArray(data.cells) || data.cells.length !== TOTAL) return false;
+    if (!data || !Array.isArray(data.cells)) return false;
     state.coins = data.coins | 0;
-    state.cells = migrate(data.cells);
+    // Remap from the save's recorded grid shape to the current one. Saves
+    // pre-dating the cols/rows field default to 7×6 (the original shape).
+    const oldCols = data.cols  | 0 || 7;
+    const cellsIn = data.cells;
+    const fresh = new Array(TOTAL).fill(null);
+    for (let i = 0; i < cellsIn.length; i++) {
+      const r = Math.floor(i / oldCols);
+      const c = i % oldCols;
+      if (r < ROWS && c < COLS) fresh[r * COLS + c] = cellsIn[i];
+    }
+    state.cells = migrate(fresh);
     state.maxGen = Math.max(1, data.maxGen | 0);
     state.hasAura = !!data.hasAura;
     state.hasBush = !!data.hasBush;
@@ -1103,7 +1115,6 @@ function render() {
     const cell = document.createElement('div');
     cell.className = 'cell';
     cell.dataset.idx = String(i);
-    attachCellDnd(cell, i);
     const item = state.cells[i];
     if (item) renderItemInto(cell, item, i, now, marks);
     boardEl.appendChild(cell);
@@ -1263,9 +1274,8 @@ function computeRecipeMarks() {
 function renderItemInto(cell, item, idx, now, marks) {
   const el = document.createElement('div');
   el.className = 'item';
-  el.draggable = true;
   el.dataset.idx = String(idx);
-  attachItemDnd(el, idx);
+  attachItemPointerHandlers(el, idx);
   if (marks && marks.fulfilling.has(idx)) el.classList.add('fulfills-offer');
   if (marks && marks.matched.has(idx))    el.classList.add('matches-offer');
 
@@ -1341,10 +1351,8 @@ function renderItemInto(cell, item, idx, now, marks) {
     }
     el.appendChild(chargeBar);
 
-    el.addEventListener('click', () => {
-      if (el.classList.contains('dragging')) return;
-      clickEgg(idx);
-    });
+    // (Click-to-spawn is now handled by attachItemPointerHandlers — a
+    // pointerup with no preceding drag fires clickEgg.)
   } else if (item.kind === 'mon') {
     const img = document.createElement('img');
     img.src = spritePathForMon(item);
@@ -1472,26 +1480,120 @@ function toast(msg) {
   toastTimer = setTimeout(() => el.classList.remove('show'), 1300);
 }
 
-// ---------- Drag and drop ----------
-let dragSrcIdx = -1;
+// ---------- Drag and drop (Pointer Events) ----------
+// One unified handler covers mouse, touch, and pen via the Pointer Events
+// API. Distinguishes tap vs drag by movement threshold, follows the pointer
+// with a cloned "ghost" so the player can see what's being held, and
+// dispatches drops to either tryMerge/tryMove (cells) or sellAt (trash).
+const DRAG_THRESHOLD_PX = 8;   // tuned for finger jitter; mouse easily exceeds
 
-function attachItemDnd(el, idx) {
-  el.addEventListener('dragstart', (e) => {
-    dragSrcIdx = idx;
-    el.classList.add('dragging');
-    try {
-      e.dataTransfer.setData('text/plain', String(idx));
-      e.dataTransfer.effectAllowed = 'move';
-    } catch (_) {}
-  });
-  el.addEventListener('dragend', () => {
+function attachItemPointerHandlers(el, idx) {
+  let pointerId = null;
+  let startX = 0, startY = 0;
+  let dragging = false;
+  let ghost = null;
+
+  const cleanup = () => {
     el.classList.remove('dragging');
-    dragSrcIdx = -1;
     boardEl.querySelectorAll('.cell').forEach(c => {
       c.classList.remove('drop-ok', 'drop-merge', 'drop-bad');
     });
     trashEl.classList.remove('drop-ok');
+    if (ghost) { ghost.remove(); ghost = null; }
+    if (pointerId !== null) {
+      try { el.releasePointerCapture(pointerId); } catch (_) {}
+    }
+    pointerId = null;
+    dragging = false;
+  };
+
+  // Hide the ghost briefly so document.elementFromPoint can see what's
+  // under it. Without this the ghost itself reports as the topmost element.
+  const elementUnder = (x, y) => {
+    if (ghost) ghost.style.display = 'none';
+    const under = document.elementFromPoint(x, y);
+    if (ghost) ghost.style.display = '';
+    return under;
+  };
+
+  el.addEventListener('pointerdown', (e) => {
+    if (pointerId !== null) return;
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    pointerId = e.pointerId;
+    startX = e.clientX;
+    startY = e.clientY;
+    dragging = false;
+    try { el.setPointerCapture(pointerId); } catch (_) {}
+    e.preventDefault();   // also suppresses synthetic mouse events on touch
   });
+
+  el.addEventListener('pointermove', (e) => {
+    if (e.pointerId !== pointerId) return;
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    if (!dragging) {
+      if (Math.hypot(dx, dy) < DRAG_THRESHOLD_PX) return;
+      dragging = true;
+      el.classList.add('dragging');
+      const rect = el.getBoundingClientRect();
+      ghost = el.cloneNode(true);
+      ghost.classList.add('drag-ghost');
+      ghost.style.cssText =
+        'position:fixed;pointer-events:none;z-index:9999;'
+        + `width:${rect.width}px;height:${rect.height}px;`
+        + 'transition:none;opacity:0.92;';
+      document.body.appendChild(ghost);
+    }
+    ghost.style.left = (e.clientX - ghost.offsetWidth / 2) + 'px';
+    ghost.style.top  = (e.clientY - ghost.offsetHeight / 2) + 'px';
+    // Re-evaluate drop target highlights
+    const under = elementUnder(e.clientX, e.clientY);
+    const cellUnder = under && under.closest ? under.closest('.cell') : null;
+    const onTrash   = under && under.closest ? !!under.closest('.trash') : false;
+    boardEl.querySelectorAll('.cell').forEach(c => {
+      c.classList.remove('drop-ok', 'drop-merge', 'drop-bad');
+    });
+    if (cellUnder) {
+      const ti = parseInt(cellUnder.dataset.idx, 10);
+      const kind = classifyDrop(idx, ti);
+      if (kind === 'move') cellUnder.classList.add('drop-ok');
+      else if (kind === 'merge') cellUnder.classList.add('drop-merge');
+      else if (kind === 'bad')  cellUnder.classList.add('drop-bad');
+    }
+    trashEl.classList.toggle('drop-ok', onTrash && isSellable(state.cells[idx]));
+  });
+
+  el.addEventListener('pointerup', (e) => {
+    if (e.pointerId !== pointerId) return;
+    if (!dragging) {
+      // Tap — fire the egg click if applicable
+      const item = state.cells[idx];
+      if (item && item.kind === 'egg') clickEgg(idx);
+      cleanup();
+      return;
+    }
+    const under   = elementUnder(e.clientX, e.clientY);
+    const cellUnder = under && under.closest ? under.closest('.cell') : null;
+    const onTrash   = under && under.closest ? !!under.closest('.trash') : false;
+    let acted = false;
+    if (onTrash && isSellable(state.cells[idx])) {
+      acted = sellAt(idx);
+    } else if (cellUnder) {
+      const ti = parseInt(cellUnder.dataset.idx, 10);
+      const kind = classifyDrop(idx, ti);
+      if (kind === 'merge')     acted = tryMerge(idx, ti);
+      else if (kind === 'move') acted = tryMove(idx, ti);
+    }
+    cleanup();
+    if (acted) { save(); render(); }
+  });
+
+  el.addEventListener('pointercancel', (e) => {
+    if (e.pointerId !== pointerId) return;
+    cleanup();
+  });
+
+  el.addEventListener('contextmenu', (e) => e.preventDefault());
 }
 
 function classifyDrop(srcIdx, dstIdx) {
@@ -1519,37 +1621,9 @@ function classifyDrop(srcIdx, dstIdx) {
   return 'bad';
 }
 
-function attachCellDnd(cell, idx) {
-  cell.addEventListener('dragover', (e) => {
-    if (dragSrcIdx < 0) return;
-    const kind = classifyDrop(dragSrcIdx, idx);
-    if (kind === 'none') return;
-    e.preventDefault();
-    cell.classList.remove('drop-ok', 'drop-merge', 'drop-bad');
-    if (kind === 'move') cell.classList.add('drop-ok');
-    else if (kind === 'merge') cell.classList.add('drop-merge');
-    else cell.classList.add('drop-bad');
-  });
-  cell.addEventListener('dragleave', () => {
-    cell.classList.remove('drop-ok', 'drop-merge', 'drop-bad');
-  });
-  cell.addEventListener('drop', (e) => {
-    e.preventDefault();
-    const srcIdx = dragSrcIdx >= 0 ? dragSrcIdx : parseInt(e.dataTransfer.getData('text/plain') || '-1', 10);
-    cell.classList.remove('drop-ok', 'drop-merge', 'drop-bad');
-    if (srcIdx < 0) return;
-    const kind = classifyDrop(srcIdx, idx);
-    if (kind === 'merge') {
-      tryMerge(srcIdx, idx);
-    } else if (kind === 'move') {
-      tryMove(srcIdx, idx);
-    } else {
-      return;
-    }
-    save();
-    render();
-  });
-}
+// (Cells no longer need their own listeners — the pointer-event drag system
+// finds the drop target via document.elementFromPoint, so the .cell needs
+// only its data-idx attribute.)
 
 function isSellable(item) {
   if (!item) return false;
@@ -1561,25 +1635,8 @@ function isSellable(item) {
   return false;
 }
 
-function attachTrashDnd() {
-  trashEl.addEventListener('dragover', (e) => {
-    if (dragSrcIdx < 0) return;
-    if (!isSellable(state.cells[dragSrcIdx])) return;
-    e.preventDefault();
-    trashEl.classList.add('drop-ok');
-  });
-  trashEl.addEventListener('dragleave', () => trashEl.classList.remove('drop-ok'));
-  trashEl.addEventListener('drop', (e) => {
-    e.preventDefault();
-    trashEl.classList.remove('drop-ok');
-    const srcIdx = dragSrcIdx >= 0 ? dragSrcIdx : parseInt(e.dataTransfer.getData('text/plain') || '-1', 10);
-    if (srcIdx < 0) return;
-    if (sellAt(srcIdx)) {
-      save();
-      render();
-    }
-  });
-}
+// (Trash drop handling is now part of the item's pointer handler — drop
+// over any element matching `.trash` triggers sellAt.)
 
 // ---------- Season Pass: claim flow ----------
 function passUnlockedTier() {
@@ -1654,12 +1711,29 @@ function applyReward(reward) {
 function claimPassTier(tier) {
   if (tier <= state.passClaimed) return;
   if (tier > passUnlockedTier()) { toast('That tier is still locked.'); return; }
-  const reward = PASS_REWARDS[tier - 1];
-  if (!reward) return;
-  const res = applyReward(reward);
-  if (!res.ok) { toast(res.label); return; }
-  state.passClaimed = tier;
-  toast(`Tier ${tier}: ${res.label}`);
+  // Claim every unclaimed tier from passClaimed+1 up through the requested
+  // tier in sequence. Rewards stack one at a time; if any placement fails
+  // (e.g. board full) we stop, persist progress so far, and surface the
+  // failure so the player can make space and try again.
+  const claimed = [];
+  for (let t = state.passClaimed + 1; t <= tier; t++) {
+    const reward = PASS_REWARDS[t - 1];
+    if (!reward) continue;
+    const res = applyReward(reward);
+    if (!res.ok) {
+      if (claimed.length) toast(`Claimed ${claimed.length} tier${claimed.length > 1 ? 's' : ''}; T${t}: ${res.label}`);
+      else toast(`T${t}: ${res.label}`);
+      save(); render();
+      return;
+    }
+    state.passClaimed = t;
+    claimed.push({ t, label: res.label });
+  }
+  if (claimed.length === 1) {
+    toast(`Tier ${claimed[0].t}: ${claimed[0].label}`);
+  } else if (claimed.length > 1) {
+    toast(`Claimed ${claimed.length} tiers (up to T${claimed[claimed.length - 1].t})`);
+  }
   save();
   render();
 }
@@ -1871,7 +1945,6 @@ function boot() {
     save();
   }
   render();
-  attachTrashDnd();
   startTicking();
   // Pause the loop when the tab is hidden — browsers throttle setInterval
   // there anyway, but explicit pause avoids any GPU work for animated

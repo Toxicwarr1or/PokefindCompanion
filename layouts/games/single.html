@@ -32,14 +32,11 @@
       width: 100%;
     }
     .pokemerge-app header h1 { font-size: 22px; }
-    .pokemerge-app main {
-      grid-template-columns: 1fr 240px;
-      gap: 12px;
-    }
-    .pokemerge-app #board { min-height: 380px; }
-    @media (max-width: 760px) {
-      .pokemerge-app main { grid-template-columns: 1fr; }
-    }
+    /* Single-column stack: header → pass → offers → board → sell → legend.
+       The board's intrinsic sizing (width: min(100%, 80vh*7/9) + aspect-ratio)
+       is fine here too; just clear the wiki's old max-width override. */
+    .pokemerge-app main { display: block; }
+    .pokemerge-app #board { min-height: 0; max-width: none; }
     /* Toast is fixed-positioned and lives in document space — keep it
        legible against the wiki's lighter chrome. */
     .pokemerge-app #toast { z-index: 1000; }
@@ -78,20 +75,23 @@
         <button id="pass-open" type="button">Open Pass</button>
       </div>
 
+      <div id="offers">
+        <h3>Special Offers</h3>
+        <div id="offer-list"></div>
+        <div id="offer-empty" class="offer-empty">Waiting for buyers…</div>
+      </div>
+
       <main>
         <div id="board"></div>
-        <aside id="side">
-          <div id="trash" class="trash" title="Drag a Pokémon, coin, shard, fragment, or Aura Egg here to sell">
-            <div class="trash-icon">$</div>
-            <div class="trash-label">Sell</div>
-            <div id="trash-tip">Pokémon · Coins · Shards · Aura Eggs</div>
-          </div>
-          <div id="offers">
-            <h3>Special Offers</h3>
-            <div id="offer-list"></div>
-            <div id="offer-empty" class="offer-empty">Waiting for buyers…</div>
-          </div>
-          <details id="legend-wrap">
+      </main>
+
+      <div id="trash" class="trash" title="Drag a Pokémon, coin, shard, fragment, or Aura Egg here to sell">
+        <div class="trash-icon">$</div>
+        <div class="trash-label">Sell</div>
+        <div id="trash-tip">Pokémon · Coins · Shards · Aura Eggs</div>
+      </div>
+
+      <details id="legend-wrap">
             <summary>How to play</summary>
             <div id="legend">
               <h3>How to play</h3>
@@ -145,9 +145,7 @@
                 <li>×1 G2, ×2 G3, ×4 G4, ×8 G5</li>
               </ul>
             </div>
-          </details>
-        </aside>
-      </main>
+      </details>
     </div>
     <div id="toast"></div>
 
