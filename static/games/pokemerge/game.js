@@ -2,11 +2,12 @@
 //
 // Item shapes on the board:
 //   { kind: 'egg', pool, tier, gen?, charges, maxCharges, regenAt }
-//     pool: 'basic' | 'gen2' | 'gen3' | 'gen4' | 'gen5' | 'aura'
+//     pool: 'basic' | 'gen2' | 'gen3' | 'gen4' | 'gen5' | 'aura' | 'bush'
 //     gen:  only set for pool='aura' (2..5) — controls coin multiplier
 //   { kind: 'mon',   chain, tier: 1|2|3 }
 //   { kind: 'shard', tier: 1|2, gen: 2..5 }
 //   { kind: 'coin',  tier: 0|1|2|3|4, mult: 1|2|4|8 }
+//   { kind: 'berry', species: '<name>' }   // see BERRIES + BERRY_COMBOS
 //
 // Ladders:
 //   basic → gen2 → gen3 → gen4 → gen5 by merging two T3s (egg promotion).
@@ -121,10 +122,18 @@ const AURA_EGG = {
   1: { sprite: 'assets/eggs/egg_aura.png',   name: 'Aura Egg',
        maxCharges: 4, regenMs: 9000,  shardChance: 0,    anim: 'aura' },
 };
+// Bushes are finite: 6 charges, no regen. After the last harvest the bush
+// wilts away and the slot opens up. (`regenMs: 0` is the signal everywhere
+// else in the code that this generator doesn't recharge.)
+const BUSH_EGG = {
+  1: { sprite: 'assets/eggs/bush.png',       name: 'Berry Bush',
+       maxCharges: 6, regenMs: 0,     shardChance: 0,    anim: null },
+};
 
 const EGG_DEFS = {
   basic: BASIC_EGG, gen2: GEN2_EGG, gen3: GEN3_EGG,
   gen4: GEN4_EGG,  gen5: GEN5_EGG, aura: AURA_EGG,
+  bush: BUSH_EGG,
 };
 
 // Each non-aura pool's T3 promotes to the next pool's T1 when merged.
@@ -182,7 +191,40 @@ const MON_SELL_PRICE = {
   gen5:  { 1: 20, 2: 100, 3: 600  },
   aura:  { 1: 5,  2: 25,  3: 150  },
 };
-const SHOP_PRICES = { 1: 50, 2: 300 };
+const SHOP_PRICES = { 1: 50, 2: 300, bush: 200 };
+
+// ---------- Berries ----------
+// Each bush is locked to one of five base species at purchase time and only
+// drops that species. Two same-species, same-tier berries merge into the
+// next berry in their chain (six tiers per chain).
+const BERRY_CHAINS = {
+  cheri:  ['cheri',  'razz',   'tamato', 'spelon', 'petaya', 'starf'  ],
+  chesto: ['chesto', 'oran',   'hondew', 'watmel', 'ganlon', 'lansat' ],
+  pecha:  ['pecha',  'mago',   'persim', 'pomeg',  'apicot', 'enigma' ],
+  rawst:  ['rawst',  'leppa',  'bluk',   'wepear', 'salac',  'micle'  ],
+  aspear: ['aspear', 'sitrus', 'pinap',  'kelpsy', 'liechi', 'custap' ],
+};
+const BERRY_CHAIN_KEYS = Object.keys(BERRY_CHAINS);
+const BERRY_INFO = {};   // species → { chain, tier (1..6) }
+for (const k of BERRY_CHAIN_KEYS) {
+  BERRY_CHAINS[k].forEach((sp, i) => { BERRY_INFO[sp] = { chain: k, tier: i + 1 }; });
+}
+const BERRY_NAMES = {
+  cheri:'Cheri',  razz:'Razz',     tamato:'Tamato', spelon:'Spelon', petaya:'Petaya', starf:'Starf',
+  chesto:'Chesto', oran:'Oran',    hondew:'Hondew', watmel:'Watmel', ganlon:'Ganlon', lansat:'Lansat',
+  pecha:'Pecha',   mago:'Mago',    persim:'Persim', pomeg:'Pomeg',   apicot:'Apicot', enigma:'Enigma',
+  rawst:'Rawst',   leppa:'Leppa',  bluk:'Bluk',     wepear:'Wepear', salac:'Salac',   micle:'Micle',
+  aspear:'Aspear', sitrus:'Sitrus', pinap:'Pinap',  kelpsy:'Kelpsy', liechi:'Liechi', custap:'Custap',
+};
+const BERRY_SELL = { 1: 3, 2: 10, 3: 30, 4: 100, 5: 300, 6: 1000 };
+
+const BUSH_SPRITE = {
+  cheri:  'assets/eggs/bush_cheri.png',
+  chesto: 'assets/eggs/bush_chesto.png',
+  pecha:  'assets/eggs/bush_pecha.png',
+  rawst:  'assets/eggs/bush_rawst.png',
+  aspear: 'assets/eggs/bush_aspear.png',
+};
 
 // Aura-egg secondary drops.
 const AURA_COIN_FRAG_CHANCE = 0.15;
@@ -245,6 +287,7 @@ const state = {
   // Progression — drives what offers can request.
   maxGen: 1,           // highest non-aura gen ever reached (1..5)
   hasAura: false,      // ever forged any aura egg
+  hasBush: false,      // ever bought a berry bush
   // Offer marketplace.
   offers: [],          // active offer cards (max MAX_OFFERS)
   nextOfferAt: 0,      // timestamp at which we next try to fill a slot
@@ -261,7 +304,11 @@ function updateProgress(item) {
 }
 
 function rescanProgress() {
-  for (const c of state.cells) updateProgress(c);
+  for (const c of state.cells) {
+    updateProgress(c);
+    if (c && c.kind === 'egg' && c.pool === 'bush') state.hasBush = true;
+    if (c && c.kind === 'berry') state.hasBush = true;
+  }
 }
 
 // ---------- Save / load ----------
@@ -271,21 +318,41 @@ function save() {
     cells: state.cells,
     maxGen: state.maxGen,
     hasAura: state.hasAura,
+    hasBush: state.hasBush,
     offers: state.offers,
     nextOfferAt: state.nextOfferAt,
   }));
 }
 
 function migrate(cells) {
-  for (const c of cells) {
+  for (let i = 0; i < cells.length; i++) {
+    const c = cells[i];
     if (!c) continue;
     if (c.kind === 'egg') {
       if (!c.pool) c.pool = 'basic';
       if (c.pool === 'aura' && !c.gen) c.gen = 2;
+      // Old bushes (pre-chain redesign) had no species — randomize.
+      if (c.pool === 'bush' && !c.species) {
+        c.species = BERRY_CHAIN_KEYS[Math.floor(Math.random() * BERRY_CHAIN_KEYS.length)];
+      }
+      // Old bushes (pre-finite redesign) had 4 regen-charges. Promote to the
+      // new 6-charge consumable shape and grant the difference as a bonus
+      // so existing bushes aren't penalized by the change.
+      if (c.pool === 'bush' && c.maxCharges !== 6) {
+        c.charges = Math.min(6, (c.charges || 0) + 2);
+        c.maxCharges = 6;
+        c.regenAt = 0;
+      }
     } else if (c.kind === 'shard') {
       if (!c.gen) c.gen = 2;
     } else if (c.kind === 'coin') {
       if (c.mult == null) c.mult = 1;
+    } else if (c.kind === 'berry') {
+      // Berries from the old combine system that aren't part of any chain
+      // (figy/wiki/aguav/nanab) become coins so the slot isn't lost.
+      if (!BERRY_INFO[c.species]) {
+        cells[i] = { kind: 'coin', tier: 1, mult: 1 };
+      }
     }
   }
   return cells;
@@ -307,6 +374,7 @@ function load() {
     state.cells = migrate(data.cells);
     state.maxGen = Math.max(1, data.maxGen | 0);
     state.hasAura = !!data.hasAura;
+    state.hasBush = !!data.hasBush;
     state.offers = Array.isArray(data.offers) ? data.offers : [];
     state.nextOfferAt = data.nextOfferAt | 0;
     rescanProgress();
@@ -328,7 +396,17 @@ function load() {
 // ---------- Helpers ----------
 function eggDef(item) {
   const defs = EGG_DEFS[item.pool] || BASIC_EGG;
-  return defs[item.tier];
+  const def = defs[item.tier];
+  // Bushes pick a color-matched sprite based on which berry species they
+  // produce; the rest of the def (charges, regen) is shared.
+  if (item.pool === 'bush' && item.species) {
+    return {
+      ...def,
+      sprite: BUSH_SPRITE[item.species] || def.sprite,
+      name: `${BERRY_NAMES[item.species] || 'Berry'} Bush`,
+    };
+  }
+  return def;
 }
 
 function findFirstEmpty() {
@@ -367,6 +445,10 @@ function newEgg(pool, tier, opts = {}) {
     regenAt: 0,
   };
   if (pool === 'aura') item.gen = opts.gen || 2;
+  if (pool === 'bush') {
+    item.species = opts.species
+      || BERRY_CHAIN_KEYS[Math.floor(Math.random() * BERRY_CHAIN_KEYS.length)];
+  }
   return item;
 }
 function newAuraEgg(gen) { return newEgg('aura', 1, { gen }); }
@@ -412,12 +494,22 @@ function sellValue(item) {
     const pool = chain ? chain.pool : 'basic';
     return (MON_SELL_PRICE[pool] && MON_SELL_PRICE[pool][item.tier]) || 0;
   }
-  if (item.kind === 'coin') return item.tier === 0 ? 0 : coinValue(item);
+  if (item.kind === 'coin') {
+    // Coin Fragments now sell for 1 — same as a tier-1 coin so merging up
+    // is still strictly better but you can clear board space if desired.
+    if (item.tier === 0) return 1 * (item.mult || 1);
+    return coinValue(item);
+  }
   if (item.kind === 'shard') {
     return (SHARD_BASE_SELL[item.tier] || 0) * (AURA_COIN_MULT[item.gen] || 1);
   }
   if (item.kind === 'egg' && item.pool === 'aura') {
     return AURA_EGG_BASE_SELL * (AURA_COIN_MULT[item.gen] || 1);
+  }
+  if (item.kind === 'berry') {
+    const info = BERRY_INFO[item.species];
+    if (!info) return 1;   // orphan from old combine system → token value
+    return BERRY_SELL[info.tier] || 0;
   }
   return 0;
 }
@@ -496,6 +588,19 @@ function tryMerge(srcIdx, dstIdx) {
     }
   }
 
+  // Berry merge: same-species + same-tier → next berry in the chain.
+  // Six tiers per chain; T6 is terminal.
+  if (src.kind === 'berry' && dst.kind === 'berry' && src.species === dst.species) {
+    const info = BERRY_INFO[src.species];
+    if (!info || info.tier >= 6) return false;
+    const next = BERRY_CHAINS[info.chain][info.tier]; // 0-indexed → next tier
+    state.cells[dstIdx] = { kind: 'berry', species: next };
+    state.cells[srcIdx] = null;
+    flashCell(dstIdx, 'merge-pop');
+    toast(`Grew a ${BERRY_NAMES[next]} Berry!`);
+    return true;
+  }
+
   // Coin merge: tier+mult must both match; merged result keeps mult.
   if (src.kind === 'coin' && dst.kind === 'coin'
       && src.tier === dst.tier && (src.mult || 1) === (dst.mult || 1)) {
@@ -523,10 +628,6 @@ function tryMove(srcIdx, dstIdx) {
 function sellAt(idx) {
   const it = state.cells[idx];
   if (!it) return false;
-  if (it.kind === 'coin' && it.tier === 0) {
-    toast('Coin Fragments must be merged first.');
-    return false;
-  }
   const price = sellValue(it);
   if (price <= 0) return false;
   state.coins += price;
@@ -549,12 +650,22 @@ function clickEgg(idx) {
   }
   const def = eggDef(it);
   it.charges -= 1;
-  if (it.charges < it.maxCharges && !it.regenAt) {
+  if (def.regenMs > 0 && it.charges < it.maxCharges && !it.regenAt) {
     it.regenAt = Date.now() + def.regenMs;
   }
 
   let drop;
-  if (it.pool === 'aura') {
+  if (it.pool === 'bush') {
+    drop = { kind: 'berry', species: it.species };
+    state.cells[target] = drop;
+    flashCell(target, 'spawn-burst');
+    // Finite generator: when the last charge is spent, the bush wilts away.
+    if (it.charges <= 0) {
+      flashCell(idx, 'wilt-pop');
+      state.cells[idx] = null;
+      toast(`${BERRY_NAMES[it.species] || 'Berry'} Bush wilted away.`);
+    }
+  } else if (it.pool === 'aura') {
     if (Math.random() < AURA_COIN_FRAG_CHANCE) {
       drop = { kind: 'coin', tier: 0, mult: AURA_COIN_MULT[it.gen] || 1 };
       state.cells[target] = drop;
@@ -604,6 +715,10 @@ function reqUnitValue(req) {
   if (req.kind === 'shard') {
     return (SHARD_BASE_SELL[req.match.tier] || 0) * (AURA_COIN_MULT[req.match.gen] || 1);
   }
+  if (req.kind === 'berry') {
+    const info = BERRY_INFO[req.match.species];
+    return info ? (BERRY_SELL[info.tier] || 0) : 0;
+  }
   return 0;
 }
 
@@ -628,6 +743,17 @@ function buildOfferCandidates() {
     for (const chain of EVOLUTION_CHAINS.aura) {
       cands.push({ kind: 'mon', match: { chain: chain.id, tier: 1 }, weight: 2 });
       cands.push({ kind: 'mon', match: { chain: chain.id, tier: 2 }, weight: 1 });
+    }
+  }
+  if (state.hasBush) {
+    // Lower tiers more common; T1 berries get the highest weight, T6 quite
+    // rare. Across 5 chains this adds 5×6=30 candidates with sliding weight.
+    for (const chainKey of BERRY_CHAIN_KEYS) {
+      const stages = BERRY_CHAINS[chainKey];
+      for (let t = 1; t <= stages.length; t++) {
+        const weight = Math.max(1, 7 - t);   // T1=6 down to T6=1
+        cands.push({ kind: 'berry', match: { species: stages[t - 1] }, weight });
+      }
     }
   }
   return cands;
@@ -675,6 +801,7 @@ function itemMatchesReq(item, req) {
   const m = req.match;
   if (req.kind === 'mon')   return item.chain === m.chain && item.tier === m.tier;
   if (req.kind === 'shard') return item.tier === m.tier && item.gen === m.gen;
+  if (req.kind === 'berry') return item.species === m.species;
   return false;
 }
 
@@ -754,6 +881,7 @@ function tick() {
         continue;
       }
       const def = eggDef(c);
+      if (def.regenMs <= 0) continue;        // finite generator (e.g. bush) — never regens
       if (!c.regenAt) c.regenAt = now + def.regenMs;
       while (c.regenAt && now >= c.regenAt && c.charges < c.maxCharges) {
         c.charges += 1;
@@ -794,18 +922,21 @@ function render() {
   boardEl.style.setProperty('--rows', ROWS);
   boardEl.innerHTML = '';
   const now = Date.now();
+  const marks = computeRecipeMarks();
   for (let i = 0; i < TOTAL; i++) {
     const cell = document.createElement('div');
     cell.className = 'cell';
     cell.dataset.idx = String(i);
     attachCellDnd(cell, i);
     const item = state.cells[i];
-    if (item) renderItemInto(cell, item, i, now);
+    if (item) renderItemInto(cell, item, i, now, marks);
     boardEl.appendChild(cell);
   }
   coinsEl.textContent = state.coins;
   document.getElementById('buy-common').toggleAttribute('disabled', state.coins < SHOP_PRICES[1]);
   document.getElementById('buy-rare').toggleAttribute('disabled', state.coins < SHOP_PRICES[2]);
+  const bushBtn = document.getElementById('buy-bush');
+  if (bushBtn) bushBtn.toggleAttribute('disabled', state.coins < SHOP_PRICES.bush);
   renderOffers();
 }
 
@@ -823,6 +954,15 @@ function reqDisplayInfo(req) {
       type: 'sprite',
       cls: 'sprite aura-sprite shard-gen-' + req.match.gen,
       name: `Gen ${req.match.gen} Aura ${label}`,
+    };
+  }
+  if (req.kind === 'berry') {
+    const info = BERRY_INFO[req.match.species];
+    const tier = info ? info.tier : 1;
+    return {
+      type: 'img',
+      src: `assets/berries/${req.match.species}.png`,
+      name: `${BERRY_NAMES[req.match.species] || req.match.species} Berry (T${tier})`,
     };
   }
   return { type: 'img', src: '', name: '?' };
@@ -920,12 +1060,34 @@ function countAvailableForReq(req) {
   return n;
 }
 
-function renderItemInto(cell, item, idx, now) {
+// Compute per-cell recipe-match indicators for the board:
+//   matched    — cells whose item matches *any* request in *any* active offer
+//                (gets a green checkmark in the top-left corner)
+//   fulfilling — cells that planFulfillment chose for an offer that can be
+//                fully completed right now (gets a green border)
+function computeRecipeMarks() {
+  const matched = new Set();
+  const fulfilling = new Set();
+  for (const offer of state.offers) {
+    for (const req of offer.requests) {
+      for (let i = 0; i < TOTAL; i++) {
+        if (itemMatchesReq(state.cells[i], req)) matched.add(i);
+      }
+    }
+    const plan = planFulfillment(offer);
+    if (plan) for (const i of plan) fulfilling.add(i);
+  }
+  return { matched, fulfilling };
+}
+
+function renderItemInto(cell, item, idx, now, marks) {
   const el = document.createElement('div');
   el.className = 'item';
   el.draggable = true;
   el.dataset.idx = String(idx);
   attachItemDnd(el, idx);
+  if (marks && marks.fulfilling.has(idx)) el.classList.add('fulfills-offer');
+  if (marks && marks.matched.has(idx))    el.classList.add('matches-offer');
 
   if (item.kind === 'egg') {
     const def = eggDef(item);
@@ -955,6 +1117,8 @@ function renderItemInto(cell, item, idx, now) {
     }
     if (item.pool === 'aura') {
       sprite.title = `${def.name} (Gen ${item.gen}) — sell for ${sellValue(item)}`;
+    } else if (item.pool === 'bush') {
+      sprite.title = `${def.name} — click to harvest a berry`;
     } else {
       sprite.title = def.name;
     }
@@ -969,6 +1133,7 @@ function renderItemInto(cell, item, idx, now) {
     else if (item.pool === 'gen3') { badge.classList.add('gen3'); badge.textContent = 'G3·T' + item.tier; }
     else if (item.pool === 'gen4') { badge.classList.add('gen4'); badge.textContent = 'G4·T' + item.tier; }
     else if (item.pool === 'gen5') { badge.classList.add('gen5'); badge.textContent = 'G5·T' + item.tier; }
+    else if (item.pool === 'bush') { badge.classList.add('bush'); badge.textContent = 'BUSH'; }
     else { badge.textContent = 'T' + item.tier; }
     el.appendChild(badge);
 
@@ -1019,6 +1184,20 @@ function renderItemInto(cell, item, idx, now) {
     badge.className = 'tier-badge aura';
     badge.textContent = (item.tier === 1 ? 'SHARD' : 'FRAG') + '·G' + item.gen;
     el.appendChild(badge);
+  } else if (item.kind === 'berry') {
+    const info = BERRY_INFO[item.species];
+    const tier = info ? info.tier : 1;
+    el.classList.add('berry');
+    el.classList.add('berry-t' + tier);
+    const img = document.createElement('img');
+    img.src = `assets/berries/${item.species}.png`;
+    img.alt = BERRY_NAMES[item.species] || item.species;
+    img.title = `${BERRY_NAMES[item.species] || item.species} Berry — T${tier}, sell for ${sellValue(item)}`;
+    el.appendChild(img);
+    const badge = document.createElement('div');
+    badge.className = 'tier-badge berry';
+    badge.textContent = 'T' + tier;
+    el.appendChild(badge);
   } else if (item.kind === 'coin') {
     const mult = item.mult || 1;
     el.classList.add('coin');
@@ -1040,6 +1219,16 @@ function renderItemInto(cell, item, idx, now) {
     badge.className = 'tier-badge coin';
     badge.textContent = item.tier === 0 ? `FRAG×${mult}` : String(value);
     el.appendChild(badge);
+  }
+
+  if (marks && marks.matched.has(idx)) {
+    const check = document.createElement('div');
+    check.className = 'offer-check';
+    check.textContent = '✓';
+    check.title = marks.fulfilling.has(idx)
+      ? 'Part of a recipe ready to fulfill'
+      : 'Matches an active offer';
+    el.appendChild(check);
   }
 
   cell.appendChild(el);
@@ -1138,6 +1327,9 @@ function classifyDrop(srcIdx, dstIdx) {
   if (src.kind === 'coin' && dst.kind === 'coin'
       && src.tier === dst.tier && (src.mult || 1) === (dst.mult || 1)
       && src.tier < COIN_MAX_TIER) return 'merge';
+  if (src.kind === 'berry' && dst.kind === 'berry'
+      && src.species === dst.species
+      && BERRY_INFO[src.species] && BERRY_INFO[src.species].tier < 6) return 'merge';
   return 'bad';
 }
 
@@ -1176,9 +1368,10 @@ function attachCellDnd(cell, idx) {
 function isSellable(item) {
   if (!item) return false;
   if (item.kind === 'mon') return true;
-  if (item.kind === 'coin' && item.tier >= 1) return true;
+  if (item.kind === 'coin') return true;   // includes T0 fragments now
   if (item.kind === 'shard') return true;
   if (item.kind === 'egg' && item.pool === 'aura') return true;
+  if (item.kind === 'berry') return true;
   return false;
 }
 
@@ -1224,8 +1417,26 @@ function buyEgg(tier) {
   render();
 }
 
+function buyBush() {
+  const price = SHOP_PRICES.bush;
+  if (state.coins < price) { toast('Not enough coins.'); return; }
+  const slot = findFirstEmpty();
+  if (slot < 0) { toast('Board is full!'); return; }
+  state.coins -= price;
+  const bush = newEgg('bush', 1);     // species randomized inside newEgg
+  state.cells[slot] = bush;
+  state.hasBush = true;
+  toast(`Planted a ${BERRY_NAMES[bush.species]} Bush!`);
+  save();
+  render();
+}
+
 document.getElementById('buy-common').addEventListener('click', () => buyEgg(1));
 document.getElementById('buy-rare').addEventListener('click', () => buyEgg(2));
+{
+  const btn = document.getElementById('buy-bush');
+  if (btn) btn.addEventListener('click', buyBush);
+}
 document.getElementById('reset').addEventListener('click', () => {
   if (!confirm('Reset all progress?')) return;
   localStorage.removeItem(STORAGE_KEY);
@@ -1235,6 +1446,7 @@ document.getElementById('reset').addEventListener('click', () => {
   state.cells[Math.floor(TOTAL / 2)] = newEgg('basic', 1);
   state.maxGen = 1;
   state.hasAura = false;
+  state.hasBush = false;
   state.offers = [];
   state.nextOfferAt = Date.now() + OFFER_INITIAL_DELAY;
   save();
@@ -1261,6 +1473,7 @@ function boot() {
     state.cells[Math.floor(TOTAL / 2)] = newEgg('basic', 1);
     state.maxGen = 1;
     state.hasAura = false;
+    state.hasBush = false;
     state.offers = [];
     state.nextOfferAt = Date.now() + OFFER_INITIAL_DELAY;
     save();

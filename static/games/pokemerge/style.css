@@ -25,6 +25,10 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-3px); }
 }
+@keyframes pm-fulfillPulse {
+  0%, 100% { box-shadow: 0 0 0 2px #4ec77a, 0 0 8px  rgba(78,199,122,0.40); }
+  50%      { box-shadow: 0 0 0 2px #4ec77a, 0 0 16px rgba(78,199,122,0.75); }
+}
 @keyframes pm-shardPulse {
   0%, 100% { opacity: 0.30; transform: scale(0.85); }
   50%      { opacity: 0.55; transform: scale(1.00); }
@@ -48,6 +52,10 @@
 @keyframes pm-coinPop {
   0%   { box-shadow: 0 0 0 0  rgba(255,206,77,0.9); transform: scale(0.6); opacity: 0.95; }
   100% { box-shadow: 0 0 0 30px rgba(255,206,77,0); transform: scale(1.35); opacity: 0; }
+}
+@keyframes pm-wiltPop {
+  0%   { transform: scale(1);   opacity: 1; }
+  100% { transform: scale(0.6); opacity: 0; }
 }
 @keyframes pm-genPop {
   0%   { box-shadow: 0 0 0 0  rgba(95,220,139,0.95); transform: scale(0.5); opacity: 1; }
@@ -261,6 +269,38 @@ main {
   pointer-events: none;
   z-index: 3;
 }
+
+/* Recipe-fulfillment indicators (driven by computeRecipeMarks() in game.js).
+   `matches-offer` = at least one active offer is asking for this kind of item.
+   `fulfills-offer` = this specific cell is one of the cells planFulfillment
+   would consume to complete an offer right now. */
+.offer-check {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+  background: #4ec77a;
+  color: #02220e;
+  border: 1px solid #02220e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  pointer-events: none;
+  z-index: 4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.45);
+}
+.item.fulfills-offer {
+  border-radius: 10px;
+  box-shadow:
+    0 0 0 2px #4ec77a,
+    0 0 12px rgba(78, 199, 122, 0.55);
+  animation: pm-fulfillPulse 1.8s ease-in-out infinite;
+}
+
 .tier-badge.aura {
   background: linear-gradient(135deg, #6a3aff, #ff5cf0);
   color: #fff;
@@ -289,6 +329,54 @@ main {
   color: #220308;
   box-shadow: 0 1px 3px rgba(0,0,0,0.5);
   text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+}
+.tier-badge.bush {
+  background: linear-gradient(135deg, #2f7a2f, #6cd06c);
+  color: #061d06;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* Berries — six-tier chains. Glow ramps up with tier so a column of
+   high-tier berries reads as visually distinct from base drops. */
+.item.berry img {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.45));
+}
+.item.berry-t2 img { filter: drop-shadow(0 0 4px rgba(160,230,160,0.55))
+                              drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.berry-t3 img { filter: drop-shadow(0 0 6px rgba(120,220,180,0.7))
+                              drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.berry-t4 img { filter: drop-shadow(0 0 7px rgba(120,200,255,0.75))
+                              drop-shadow(0 0 14px rgba(120,200,255,0.4))
+                              drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.berry-t5 img { filter: drop-shadow(0 0 8px rgba(255,160,90,0.85))
+                              drop-shadow(0 0 18px rgba(255,140,60,0.5))
+                              drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.berry-t6 img { filter: drop-shadow(0 0 10px rgba(255,230,120,1))
+                              drop-shadow(0 0 22px rgba(255,90,200,0.65))
+                              drop-shadow(0 2px 3px rgba(0,0,0,0.45)); }
+.item.berry::after {
+  content: '';
+  position: absolute;
+  inset: 18%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+}
+.item.berry-t2::after { opacity: 0.45; background: radial-gradient(circle, rgba(160,230,160,0.30), transparent 65%); }
+.item.berry-t3::after { opacity: 0.6;  background: radial-gradient(circle, rgba(120,220,180,0.32), transparent 65%); }
+.item.berry-t4::after { opacity: 0.75; background: radial-gradient(circle, rgba(120,200,255,0.35), transparent 65%); animation: pm-coinPulseSlow 2.6s ease-in-out infinite; }
+.item.berry-t5::after { opacity: 0.85; background: radial-gradient(circle, rgba(255,160,90,0.40),  transparent 65%); animation: pm-coinPulseSlow 2.0s ease-in-out infinite; }
+.item.berry-t6::after { opacity: 1;    background: radial-gradient(circle, rgba(255,230,120,0.5), rgba(255,90,200,0.25) 50%, transparent 75%); animation: pm-coinPulseFast 1.6s ease-in-out infinite; }
+
+.tier-badge.berry {
+  background: linear-gradient(135deg, #2f7a2f, #6cd06c);
+  color: #061d06;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
 .tier-badge.coin {
   background: linear-gradient(135deg, #c98a14, #ffd95a);
@@ -602,6 +690,16 @@ main {
   box-shadow: 0 0 0 0 rgba(255,206,77,0.9);
   animation: pm-coinPop 0.55s ease-out forwards;
   background: radial-gradient(circle, rgba(255,206,77,0.45), transparent 70%);
+}
+
+
+.wilt-pop {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(140,90,40,0.45), transparent 70%);
+  animation: pm-wiltPop 0.5s ease-out forwards;
 }
 
 

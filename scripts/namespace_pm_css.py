@@ -5,7 +5,7 @@ src = open('/home/jack/ClaudeProjects/PokeMerge/style.css').read()
 # Rename keyframes (defs + references) so they can't clash with wiki ones.
 KEYFRAMES = ['auraFrames','legendFrames','bob','pop','auraPop',
              'coinPop','genPop','coinPulseSlow','coinPulseFast',
-             'shardPulse','burst','offerArrive']
+             'shardPulse','burst','offerArrive','fulfillPulse','wiltPop']
 for name in KEYFRAMES:
     # @keyframes <name>
     src = re.sub(rf'(@(?:-webkit-|-moz-)?keyframes\s+){name}\b', rf'\1pm-{name}', src)
