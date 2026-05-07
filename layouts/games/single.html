@@ -69,6 +69,15 @@
         </div>
       </header>
 
+      <div id="pass-bar">
+        <div class="pass-meta">
+          <span class="pass-meta-label">Season Pass · Tier <b id="pass-tier">0</b></span>
+          <span class="pass-meta-xp"><b id="pass-xp">0</b> / <span id="pass-xp-next">100</span> XP</span>
+        </div>
+        <div class="pass-track"><div id="pass-fill" class="pass-fill"></div></div>
+        <button id="pass-open" type="button">Open Pass</button>
+      </div>
+
       <main>
         <div id="board"></div>
         <aside id="side">
@@ -141,6 +150,23 @@
       </main>
     </div>
     <div id="toast"></div>
+
+    <div id="pass-modal" hidden>
+      <div class="pass-modal-backdrop" data-pass-close></div>
+      <div class="pass-modal-panel" role="dialog" aria-label="Season Pass">
+        <header class="pass-modal-header">
+          <h2>Season Pass</h2>
+          <button class="pass-modal-close" data-pass-close aria-label="Close">×</button>
+        </header>
+        <div class="pass-modal-body">
+          <p class="pass-modal-hint">
+            Earn XP from every merge and from completing Special Offers. Each tier
+            unlocks a reward — coins, generators, boxes, or rare assets.
+          </p>
+          <div id="pass-tier-list" class="pass-tier-list"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script defer src="{{ "games/pokemerge/game.js" | relURL }}"></script>

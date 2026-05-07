@@ -29,6 +29,10 @@
   0%, 100% { box-shadow: 0 0 0 2px #4ec77a, 0 0 8px  rgba(78,199,122,0.40); }
   50%      { box-shadow: 0 0 0 2px #4ec77a, 0 0 16px rgba(78,199,122,0.75); }
 }
+@keyframes pm-passClaimable {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(78,199,122,0); }
+  50%      { box-shadow: 0 0 0 6px rgba(78,199,122,0.5); }
+}
 @keyframes pm-shardPulse {
   0%, 100% { opacity: 0.30; transform: scale(0.85); }
   50%      { opacity: 0.55; transform: scale(1.00); }
@@ -336,6 +340,162 @@ main {
   box-shadow: 0 1px 3px rgba(0,0,0,0.5);
   text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
+.tier-badge.box {
+  background: linear-gradient(135deg, #6e4a14, #d6a04a);
+  color: #2b1700;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* ---------- Season Pass UI ---------- */
+#pass-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  margin: 0 0 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid #2d3552;
+  border-radius: 12px;
+}
+.pass-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 200px;
+}
+.pass-meta-label { font-weight: 700; font-size: 13px; letter-spacing: 0.4px; color: #ffce4d; }
+.pass-meta-xp    { font-size: 12px; color: #cdd; }
+.pass-track {
+  flex: 1;
+  height: 10px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+.pass-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ffce4d, #4ec77a);
+  transition: width 0.25s ease-out;
+  box-shadow: 0 0 8px rgba(255,206,77,0.3);
+}
+#pass-open {
+  background: linear-gradient(180deg, #ffce4d 0%, #d8a420 100%);
+  color: #2b1f00;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: filter 0.12s ease, transform 0.05s ease;
+}
+#pass-open:hover { filter: brightness(1.07); }
+#pass-open:active { transform: scale(0.97); }
+#pass-open.has-claimable {
+  animation: pm-passClaimable 1.4s ease-in-out infinite;
+}
+
+
+#pass-modal[hidden] { display: none; }
+#pass-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.pass-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+.pass-modal-panel {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: 80vh;
+  background: linear-gradient(180deg, #1d2336 0%, #151a2b 100%);
+  border: 1px solid #3a4a6a;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+}
+.pass-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid #2d3552;
+}
+.pass-modal-header h2 { margin: 0; font-size: 18px; color: #ffce4d; letter-spacing: 0.5px; }
+.pass-modal-close {
+  background: transparent; color: #aab; border: none;
+  font-size: 24px; cursor: pointer; line-height: 1;
+}
+.pass-modal-close:hover { color: #fff; }
+.pass-modal-body {
+  padding: 12px 18px 18px;
+  overflow-y: auto;
+}
+.pass-modal-hint { margin: 0 0 12px; font-size: 13px; color: #aab; line-height: 1.4; }
+
+.pass-tier-list { display: flex; flex-direction: column; gap: 4px; }
+.pass-row {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid #2d3552;
+  border-radius: 8px;
+}
+.pass-row-num {
+  font-weight: 800;
+  font-size: 16px;
+  color: #aab;
+  text-align: center;
+}
+.pass-row-reward {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #f0f0f0;
+}
+.pass-row-reward img {
+  width: 28px;
+  height: 28px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+.pass-row-action { font-size: 12px; }
+.pass-claim-btn {
+  background: linear-gradient(180deg, #4ec77a 0%, #34a85f 100%);
+  color: #02220e;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.pass-claim-btn:hover { filter: brightness(1.08); }
+.pass-claim-btn:active { transform: scale(0.97); }
+.pass-claimed-tag { color: #4ec77a; font-weight: 700; opacity: 0.85; }
+.pass-locked-tag  { color: #889; }
+.pass-row.pass-row-claimed { opacity: 0.65; }
+.pass-row.pass-row-claimable {
+  border-color: #4ec77a;
+  background: rgba(78,199,122,0.08);
+}
+.pass-row.pass-row-claimable .pass-row-num { color: #4ec77a; }
 
 /* Berries — six-tier chains. Glow ramps up with tier so a column of
    high-tier berries reads as visually distinct from base drops. */

@@ -134,6 +134,9 @@ const EGG_DEFS = {
   basic: BASIC_EGG, gen2: GEN2_EGG, gen3: GEN3_EGG,
   gen4: GEN4_EGG,  gen5: GEN5_EGG, aura: AURA_EGG,
   bush: BUSH_EGG,
+  // BOX_EGG is added below the box-generator section so it can reference
+  // BOX_EGG by name without a forward declaration; we populate this slot
+  // immediately after definition.
 };
 
 // Each non-aura pool's T3 promotes to the next pool's T1 when merged.
@@ -275,6 +278,135 @@ const OFFER_INTERVAL_MS  = 30_000;
 const OFFER_INITIAL_DELAY = 12_000;
 const OFFER_BONUS_RANGE  = [1.4, 1.8];
 
+// ---------- Season Pass ----------
+// 50 tiers. Each tier costs (50 + 50*tier) XP individually, so cumulative
+// XP to unlock tier T is 25*T*T + 75*T (T=1 → 100, T=50 → 66250).
+const PASS_MAX_TIER = 50;
+function xpForTier(t) {
+  if (t <= 0) return 0;
+  return 25 * t * t + 75 * t;
+}
+
+// Reward shapes: see applyReward(). Designed to give a steady mix of coins,
+// generators, shards, and box rewards, with fancier prizes deeper in the pass.
+const PASS_REWARDS = [
+  /* T1  */ { kind: 'coins',  amount: 25 },
+  /* T2  */ { kind: 'coin',   tier: 0, mult: 1 },
+  /* T3  */ { kind: 'egg',    pool: 'basic', tier: 1 },
+  /* T4  */ { kind: 'box',    boxType: 'coin',  boxTier: 1 },
+  /* T5  */ { kind: 'coins',  amount: 50 },
+  /* T6  */ { kind: 'berry',  species: 'cheri' },
+  /* T7  */ { kind: 'bush' },
+  /* T8  */ { kind: 'egg',    pool: 'basic', tier: 1 },
+  /* T9  */ { kind: 'coins',  amount: 100 },
+  /* T10 */ { kind: 'box',    boxType: 'coin',  boxTier: 1 },
+  /* T11 */ { kind: 'box',    boxType: 'asset', boxTier: 1 },
+  /* T12 */ { kind: 'egg',    pool: 'basic', tier: 2 },
+  /* T13 */ { kind: 'coins',  amount: 150 },
+  /* T14 */ { kind: 'shard',  tier: 1, gen: 2 },
+  /* T15 */ { kind: 'box',    boxType: 'coin',  boxTier: 2 },
+  /* T16 */ { kind: 'bush' },
+  /* T17 */ { kind: 'egg',    pool: 'basic', tier: 2 },
+  /* T18 */ { kind: 'box',    boxType: 'asset', boxTier: 1 },
+  /* T19 */ { kind: 'coins',  amount: 250 },
+  /* T20 */ { kind: 'shard',  tier: 1, gen: 2 },
+  /* T21 */ { kind: 'egg',    pool: 'basic', tier: 3 },
+  /* T22 */ { kind: 'box',    boxType: 'coin',  boxTier: 2 },
+  /* T23 */ { kind: 'shard',  tier: 2, gen: 2 },
+  /* T24 */ { kind: 'box',    boxType: 'asset', boxTier: 2 },
+  /* T25 */ { kind: 'coins',  amount: 500 },
+  /* T26 */ { kind: 'auraEgg', gen: 2 },
+  /* T27 */ { kind: 'bush' },
+  /* T28 */ { kind: 'box',    boxType: 'coin',  boxTier: 2 },
+  /* T29 */ { kind: 'shard',  tier: 1, gen: 3 },
+  /* T30 */ { kind: 'box',    boxType: 'asset', boxTier: 2 },
+  /* T31 */ { kind: 'coins',  amount: 1000 },
+  /* T32 */ { kind: 'egg',    pool: 'gen2', tier: 1 },
+  /* T33 */ { kind: 'shard',  tier: 1, gen: 3 },
+  /* T34 */ { kind: 'box',    boxType: 'coin',  boxTier: 3 },
+  /* T35 */ { kind: 'box',    boxType: 'asset', boxTier: 2 },
+  /* T36 */ { kind: 'auraEgg', gen: 3 },
+  /* T37 */ { kind: 'coins',  amount: 2000 },
+  /* T38 */ { kind: 'shard',  tier: 1, gen: 4 },
+  /* T39 */ { kind: 'egg',    pool: 'gen3', tier: 1 },
+  /* T40 */ { kind: 'box',    boxType: 'asset', boxTier: 3 },
+  /* T41 */ { kind: 'auraEgg', gen: 4 },
+  /* T42 */ { kind: 'box',    boxType: 'coin',  boxTier: 3 },
+  /* T43 */ { kind: 'shard',  tier: 1, gen: 5 },
+  /* T44 */ { kind: 'coins',  amount: 5000 },
+  /* T45 */ { kind: 'egg',    pool: 'gen4', tier: 1 },
+  /* T46 */ { kind: 'box',    boxType: 'asset', boxTier: 3 },
+  /* T47 */ { kind: 'auraEgg', gen: 5 },
+  /* T48 */ { kind: 'coins',  amount: 10000 },
+  /* T49 */ { kind: 'egg',    pool: 'gen5', tier: 1 },
+  /* T50 */ { kind: 'mon',    pool: 'gen5', stage: 3 },
+];
+
+// ---------- Box generators (Coin Box / Asset Box) ----------
+const BOX_EGG = {
+  1: { sprite: 'assets/eggs/chest1.png', name: 'Box',
+       maxCharges: 6, regenMs: 0, shardChance: 0, anim: null },
+};
+const COIN_BOX_TABLES = {
+  1: [{ tier: 0, w: 60 }, { tier: 1, w: 30 }, { tier: 2, w: 9  }, { tier: 3, w: 1  }],
+  2: [{ tier: 0, w: 40 }, { tier: 1, w: 35 }, { tier: 2, w: 20 }, { tier: 3, w: 5  }],
+  3: [{ tier: 0, w: 20 }, { tier: 1, w: 35 }, { tier: 2, w: 30 }, { tier: 3, w: 14 }, { tier: 4, w: 1 }],
+};
+function rollWeightedCoinTier(boxTier) {
+  const tbl = COIN_BOX_TABLES[boxTier] || COIN_BOX_TABLES[1];
+  let total = 0;
+  for (const e of tbl) total += e.w;
+  let r = Math.random() * total;
+  for (const e of tbl) { r -= e.w; if (r <= 0) return e.tier; }
+  return tbl[tbl.length - 1].tier;
+}
+function rollAssetBoxItem(boxTier) {
+  // Each draw is a function that returns an item — keeps the table
+  // declarative even when items need randomness inside (random chain etc).
+  const draws = ASSET_BOX_DRAWS[boxTier] || ASSET_BOX_DRAWS[1];
+  let total = 0;
+  for (const d of draws) total += d.w;
+  let r = Math.random() * total;
+  for (const d of draws) { r -= d.w; if (r <= 0) return d.draw(); }
+  return draws[draws.length - 1].draw();
+}
+const ASSET_BOX_DRAWS = {
+  1: [
+    { w: 40, draw: () => randomMonFromPool('basic', 1) },
+    { w: 25, draw: () => ({ kind: 'berry', species: BERRY_CHAIN_KEYS[Math.floor(Math.random()*5)] }) },
+    { w: 20, draw: () => ({ kind: 'coin', tier: 1, mult: 1 }) },
+    { w: 15, draw: () => randomMonFromPool('basic', 2) },
+  ],
+  2: [
+    { w: 30, draw: () => randomMonFromPool('basic', 2) },
+    { w: 25, draw: () => randomMonFromPool('gen2', 1) },
+    { w: 18, draw: () => randomTierBerry(2) },
+    { w: 15, draw: () => ({ kind: 'shard', tier: 1, gen: 2 }) },
+    { w: 12, draw: () => ({ kind: 'coin', tier: 2, mult: 1 }) },
+  ],
+  3: [
+    { w: 20, draw: () => randomMonFromPool('basic', 3) },
+    { w: 18, draw: () => randomMonFromPool('gen2', 2) },
+    { w: 15, draw: () => randomMonFromPool('gen3', 1) },
+    { w: 15, draw: () => randomMonFromPool('aura',  1) },
+    { w: 12, draw: () => ({ kind: 'shard', tier: 1, gen: 3 }) },
+    { w: 10, draw: () => randomTierBerry(3) },
+    { w: 10, draw: () => ({ kind: 'coin', tier: 3, mult: 1 }) },
+  ],
+};
+function randomTierBerry(tier) {
+  const k = BERRY_CHAIN_KEYS[Math.floor(Math.random() * BERRY_CHAIN_KEYS.length)];
+  return { kind: 'berry', species: BERRY_CHAINS[k][tier - 1] };
+}
+function newBox(boxType, boxTier) {
+  return {
+    kind: 'egg', pool: 'box', tier: 1,
+    boxType, boxTier,
+    charges: 6, maxCharges: 6, regenAt: 0,
+  };
+}
+EGG_DEFS.box = BOX_EGG;
+
 const STORAGE_KEY = 'pokemerge.save.v3';
 const LEGACY_KEYS = ['pokemerge.save.v2', 'pokemerge.save.v1'];
 
@@ -291,6 +423,9 @@ const state = {
   // Offer marketplace.
   offers: [],          // active offer cards (max MAX_OFFERS)
   nextOfferAt: 0,      // timestamp at which we next try to fill a slot
+  // Season Pass.
+  xp: 0,               // accumulated XP (never decreases)
+  passClaimed: 0,      // highest tier reward already claimed
 };
 
 const POOL_GEN_NUM = { basic: 1, gen2: 2, gen3: 3, gen4: 4, gen5: 5 };
@@ -311,6 +446,11 @@ function rescanProgress() {
   }
 }
 
+function awardXp(amount) {
+  if (amount <= 0) return;
+  state.xp += amount;
+}
+
 // ---------- Save / load ----------
 function save() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify({
@@ -321,6 +461,8 @@ function save() {
     hasBush: state.hasBush,
     offers: state.offers,
     nextOfferAt: state.nextOfferAt,
+    xp: state.xp,
+    passClaimed: state.passClaimed,
   }));
 }
 
@@ -377,6 +519,8 @@ function load() {
     state.hasBush = !!data.hasBush;
     state.offers = Array.isArray(data.offers) ? data.offers : [];
     state.nextOfferAt = data.nextOfferAt | 0;
+    state.xp = Math.max(0, data.xp | 0);
+    state.passClaimed = Math.max(0, data.passClaimed | 0);
     rescanProgress();
     if (!state.nextOfferAt) state.nextOfferAt = Date.now() + OFFER_INITIAL_DELAY;
     const now = Date.now();
@@ -404,6 +548,15 @@ function eggDef(item) {
       ...def,
       sprite: BUSH_SPRITE[item.species] || def.sprite,
       name: `${BERRY_NAMES[item.species] || 'Berry'} Bush`,
+    };
+  }
+  // Boxes share one base def but choose a sprite + name by box tier and type.
+  if (item.pool === 'box') {
+    const tier = item.boxTier || 1;
+    return {
+      ...def,
+      sprite: `assets/eggs/chest${Math.min(3, Math.max(1, tier))}.png`,
+      name: (item.boxType === 'coin' ? 'Coin' : 'Asset') + ' Box T' + tier,
     };
   }
   return def;
@@ -538,6 +691,7 @@ function tryMerge(srcIdx, dstIdx) {
       state.cells[dstIdx] = merged;
       state.cells[srcIdx] = null;
       updateProgress(merged);
+      awardXp(merged.tier + 1);  // T1→T2 gives 3, T2→T3 gives 4
       flashCell(dstIdx, 'merge-pop');
       toast(`Merged into ${nextDef.name}!`);
       return true;
@@ -550,6 +704,7 @@ function tryMerge(srcIdx, dstIdx) {
     state.cells[dstIdx] = promoted;
     state.cells[srcIdx] = null;
     updateProgress(promoted);
+    awardXp(15);   // cross-gen promotion is a milestone
     flashCell(dstIdx, 'gen-pop');
     toast(prog.promoteToast || `Hatched a ${promotedDef.name}!`);
     return true;
@@ -562,6 +717,7 @@ function tryMerge(srcIdx, dstIdx) {
     const evolved = { kind: 'mon', chain: src.chain, tier: src.tier + 1 };
     state.cells[dstIdx] = evolved;
     state.cells[srcIdx] = null;
+    awardXp(evolved.tier);   // S2 = 2 XP, S3 = 3 XP
     flashCell(dstIdx, 'merge-pop');
     toast(`Evolved into ${monDisplayName(evolved)}!`);
     return true;
@@ -573,6 +729,7 @@ function tryMerge(srcIdx, dstIdx) {
     if (src.tier === 1) {
       state.cells[dstIdx] = { kind: 'shard', tier: 2, gen: src.gen };
       state.cells[srcIdx] = null;
+      awardXp(3);
       flashCell(dstIdx, 'merge-pop');
       toast('Combined into Aura Fragment!');
       return true;
@@ -582,6 +739,7 @@ function tryMerge(srcIdx, dstIdx) {
       state.cells[dstIdx] = auraEgg;
       state.cells[srcIdx] = null;
       updateProgress(auraEgg);
+      awardXp(10);
       flashCell(dstIdx, 'aura-pop');
       toast(`Forged a Gen ${src.gen} Aura Egg!`);
       return true;
@@ -596,6 +754,7 @@ function tryMerge(srcIdx, dstIdx) {
     const next = BERRY_CHAINS[info.chain][info.tier]; // 0-indexed → next tier
     state.cells[dstIdx] = { kind: 'berry', species: next };
     state.cells[srcIdx] = null;
+    awardXp(info.tier + 1);   // T1+T1→T2 gives 2 XP, T5+T5→T6 gives 6
     flashCell(dstIdx, 'merge-pop');
     toast(`Grew a ${BERRY_NAMES[next]} Berry!`);
     return true;
@@ -609,6 +768,7 @@ function tryMerge(srcIdx, dstIdx) {
     const merged = { kind: 'coin', tier: src.tier + 1, mult };
     state.cells[dstIdx] = merged;
     state.cells[srcIdx] = null;
+    awardXp(merged.tier);
     flashCell(dstIdx, 'coin-pop');
     toast(`Merged into ${COIN_DEF[merged.tier].value * mult} coins!`);
     return true;
@@ -664,6 +824,21 @@ function clickEgg(idx) {
       flashCell(idx, 'wilt-pop');
       state.cells[idx] = null;
       toast(`${BERRY_NAMES[it.species] || 'Berry'} Bush wilted away.`);
+    }
+  } else if (it.pool === 'box') {
+    if (it.boxType === 'coin') {
+      const tier = rollWeightedCoinTier(it.boxTier || 1);
+      drop = { kind: 'coin', tier, mult: 1 };
+      flashCell(target, 'coin-pop');
+    } else {
+      drop = rollAssetBoxItem(it.boxTier || 1);
+      flashCell(target, 'spawn-burst');
+    }
+    state.cells[target] = drop;
+    // Boxes are also finite — they vanish when empty.
+    if (it.charges <= 0) {
+      flashCell(idx, 'wilt-pop');
+      state.cells[idx] = null;
     }
   } else if (it.pool === 'aura') {
     if (Math.random() < AURA_COIN_FRAG_CHANCE) {
@@ -838,6 +1013,7 @@ function fulfillOffer(offerId) {
     state.cells[i] = null;
   }
   state.coins += offer.reward;
+  awardXp(10 + Math.floor(offer.reward / 5));   // base 10 + reward-scaled
   state.offers = state.offers.filter(o => o.id !== offerId);
   toast(`+${offer.reward} coins from ${offer.npc.name}!`);
   save();
@@ -938,6 +1114,10 @@ function render() {
   const bushBtn = document.getElementById('buy-bush');
   if (bushBtn) bushBtn.toggleAttribute('disabled', state.coins < SHOP_PRICES.bush);
   renderOffers();
+  updatePassBar();
+  // Live-refresh modal contents if it happens to be open.
+  const passModal = document.getElementById('pass-modal');
+  if (passModal && !passModal.hidden) renderPassModal();
 }
 
 function reqDisplayInfo(req) {
@@ -1119,6 +1299,8 @@ function renderItemInto(cell, item, idx, now, marks) {
       sprite.title = `${def.name} (Gen ${item.gen}) — sell for ${sellValue(item)}`;
     } else if (item.pool === 'bush') {
       sprite.title = `${def.name} — click to harvest a berry`;
+    } else if (item.pool === 'box') {
+      sprite.title = `${def.name} — click to open (${item.charges}/${item.maxCharges} left)`;
     } else {
       sprite.title = def.name;
     }
@@ -1134,6 +1316,10 @@ function renderItemInto(cell, item, idx, now, marks) {
     else if (item.pool === 'gen4') { badge.classList.add('gen4'); badge.textContent = 'G4·T' + item.tier; }
     else if (item.pool === 'gen5') { badge.classList.add('gen5'); badge.textContent = 'G5·T' + item.tier; }
     else if (item.pool === 'bush') { badge.classList.add('bush'); badge.textContent = 'BUSH'; }
+    else if (item.pool === 'box') {
+      badge.classList.add('box');
+      badge.textContent = (item.boxType === 'coin' ? 'COIN' : 'ASSET') + '·T' + (item.boxTier || 1);
+    }
     else { badge.textContent = 'T' + item.tier; }
     el.appendChild(badge);
 
@@ -1395,6 +1581,198 @@ function attachTrashDnd() {
   });
 }
 
+// ---------- Season Pass: claim flow ----------
+function passUnlockedTier() {
+  // Highest tier whose XP threshold has been met. Capped at PASS_MAX_TIER.
+  let t = 0;
+  while (t < PASS_MAX_TIER && state.xp >= xpForTier(t + 1)) t++;
+  return t;
+}
+
+function applyReward(reward) {
+  // Rewards that just credit coins don't need a slot.
+  if (reward.kind === 'coins') {
+    state.coins += reward.amount;
+    return { ok: true, label: `+${reward.amount} coins` };
+  }
+  const slot = findFirstEmpty();
+  if (slot < 0) return { ok: false, label: 'Board is full — make space first.' };
+
+  let item = null;
+  let label = '';
+  switch (reward.kind) {
+    case 'egg': {
+      item = newEgg(reward.pool, reward.tier);
+      updateProgress(item);
+      label = (EGG_DEFS[reward.pool] || {})[reward.tier]?.name || 'Egg';
+      break;
+    }
+    case 'auraEgg': {
+      item = newAuraEgg(reward.gen);
+      updateProgress(item);
+      label = `Gen ${reward.gen} Aura Egg`;
+      break;
+    }
+    case 'shard': {
+      item = { kind: 'shard', tier: reward.tier, gen: reward.gen };
+      label = `Gen ${reward.gen} Aura ${reward.tier === 1 ? 'Shard' : 'Fragment'}`;
+      break;
+    }
+    case 'coin': {
+      item = { kind: 'coin', tier: reward.tier, mult: reward.mult || 1 };
+      label = COIN_DEF[reward.tier].name;
+      break;
+    }
+    case 'berry': {
+      item = { kind: 'berry', species: reward.species };
+      label = `${BERRY_NAMES[reward.species] || reward.species} Berry`;
+      break;
+    }
+    case 'bush': {
+      item = newEgg('bush', 1);
+      state.hasBush = true;
+      label = `${BERRY_NAMES[item.species]} Bush`;
+      break;
+    }
+    case 'box': {
+      item = newBox(reward.boxType, reward.boxTier);
+      label = (reward.boxType === 'coin' ? 'Coin' : 'Asset') + ` Box T${reward.boxTier}`;
+      break;
+    }
+    case 'mon': {
+      item = randomMonFromPool(reward.pool, reward.stage);
+      label = monDisplayName(item);
+      break;
+    }
+    default: return { ok: false, label: 'Unknown reward.' };
+  }
+  state.cells[slot] = item;
+  flashCell(slot, 'gen-pop');
+  return { ok: true, label };
+}
+
+function claimPassTier(tier) {
+  if (tier <= state.passClaimed) return;
+  if (tier > passUnlockedTier()) { toast('That tier is still locked.'); return; }
+  const reward = PASS_REWARDS[tier - 1];
+  if (!reward) return;
+  const res = applyReward(reward);
+  if (!res.ok) { toast(res.label); return; }
+  state.passClaimed = tier;
+  toast(`Tier ${tier}: ${res.label}`);
+  save();
+  render();
+}
+
+function rewardSummary(reward) {
+  if (!reward) return { icon: null, label: '?' };
+  switch (reward.kind) {
+    case 'coins':  return { src: 'assets/coins.png',                                label: `${reward.amount} coins` };
+    case 'coin':   return { src: 'assets/coins.png',                                label: COIN_DEF[reward.tier].name };
+    case 'egg':    return { src: ((EGG_DEFS[reward.pool] || {})[reward.tier] || {}).sprite || '',
+                            label: ((EGG_DEFS[reward.pool] || {})[reward.tier] || {}).name || 'Egg' };
+    case 'auraEgg': return { src: 'assets/eggs/egg_aura.png',                       label: `Gen ${reward.gen} Aura Egg` };
+    case 'shard':  return { src: 'assets/eggs/egg_aura.png',
+                            label: `Gen ${reward.gen} ${reward.tier === 1 ? 'Shard' : 'Fragment'}` };
+    case 'berry':  return { src: `assets/berries/${reward.species}.png`,
+                            label: `${BERRY_NAMES[reward.species] || reward.species} Berry` };
+    case 'bush':   return { src: 'assets/eggs/bush.png',                            label: 'Berry Bush (random species)' };
+    case 'box':    return { src: `assets/eggs/chest${reward.boxTier}.png`,
+                            label: (reward.boxType === 'coin' ? 'Coin' : 'Asset') + ` Box T${reward.boxTier}` };
+    case 'mon':    return { src: '',                                                label: `Random ${reward.pool} S${reward.stage} mon` };
+  }
+  return { icon: null, label: '?' };
+}
+
+function renderPassModal() {
+  const list = document.getElementById('pass-tier-list');
+  if (!list) return;
+  list.innerHTML = '';
+  const unlocked = passUnlockedTier();
+  for (let t = 1; t <= PASS_MAX_TIER; t++) {
+    const reward = PASS_REWARDS[t - 1];
+    const status = t <= state.passClaimed ? 'claimed'
+                 : t <= unlocked          ? 'claimable'
+                 : 'locked';
+    const row = document.createElement('div');
+    row.className = 'pass-row pass-row-' + status;
+    const num = document.createElement('div');
+    num.className = 'pass-row-num';
+    num.textContent = t;
+    row.appendChild(num);
+
+    const summary = rewardSummary(reward);
+    const reward_el = document.createElement('div');
+    reward_el.className = 'pass-row-reward';
+    if (summary.src) {
+      const img = document.createElement('img');
+      img.src = summary.src;
+      img.alt = '';
+      reward_el.appendChild(img);
+    }
+    const lbl = document.createElement('span');
+    lbl.textContent = summary.label;
+    reward_el.appendChild(lbl);
+    row.appendChild(reward_el);
+
+    const action = document.createElement('div');
+    action.className = 'pass-row-action';
+    if (status === 'claimed') {
+      action.innerHTML = '<span class="pass-claimed-tag">Claimed</span>';
+    } else if (status === 'claimable') {
+      const btn = document.createElement('button');
+      btn.className = 'pass-claim-btn';
+      btn.textContent = 'Claim';
+      btn.addEventListener('click', () => claimPassTier(t));
+      action.appendChild(btn);
+    } else {
+      const need = xpForTier(t) - state.xp;
+      action.innerHTML = `<span class="pass-locked-tag">${need} XP</span>`;
+    }
+    row.appendChild(action);
+
+    list.appendChild(row);
+  }
+}
+
+function updatePassBar() {
+  // The bar tracks progress toward the next *unclaimed* tier rather than the
+  // next *unlocked* one. This way XP earned past an unclaimed tier visibly
+  // banks (bar caps at 100%) instead of cycling the bar back to 0% — players
+  // never feel their XP got eaten by a tier they haven't claimed yet.
+  const tierShown = state.passClaimed;
+  const next = Math.min(PASS_MAX_TIER, tierShown + 1);
+  const xpStart = xpForTier(tierShown);
+  const xpEnd = xpForTier(next);
+  const span = Math.max(1, xpEnd - xpStart);
+  const pct = Math.max(0, Math.min(100, ((state.xp - xpStart) / span) * 100));
+
+  const tEl = document.getElementById('pass-tier');
+  const xEl = document.getElementById('pass-xp');
+  const nEl = document.getElementById('pass-xp-next');
+  const fEl = document.getElementById('pass-fill');
+  if (tEl) tEl.textContent = String(tierShown);
+  if (xEl) xEl.textContent = String(Math.min(state.xp, xpEnd));   // cap displayed XP at next-tier threshold
+  if (nEl) nEl.textContent = tierShown >= PASS_MAX_TIER ? 'MAX' : String(xpEnd);
+  if (fEl) fEl.style.width = pct.toFixed(1) + '%';
+
+  // Highlight the Open Pass button whenever any tier is ready to claim.
+  const unlocked = passUnlockedTier();
+  const btn = document.getElementById('pass-open');
+  if (btn) btn.classList.toggle('has-claimable', unlocked > state.passClaimed);
+}
+
+function openPassModal() {
+  const m = document.getElementById('pass-modal');
+  if (!m) return;
+  m.hidden = false;
+  renderPassModal();
+}
+function closePassModal() {
+  const m = document.getElementById('pass-modal');
+  if (m) m.hidden = true;
+}
+
 // ---------- Shop ----------
 function buyEgg(tier) {
   const price = SHOP_PRICES[tier];
@@ -1437,6 +1815,16 @@ document.getElementById('buy-rare').addEventListener('click', () => buyEgg(2));
   const btn = document.getElementById('buy-bush');
   if (btn) btn.addEventListener('click', buyBush);
 }
+{
+  const open = document.getElementById('pass-open');
+  if (open) open.addEventListener('click', openPassModal);
+  document.querySelectorAll('[data-pass-close]').forEach(el => {
+    el.addEventListener('click', closePassModal);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePassModal();
+  });
+}
 document.getElementById('reset').addEventListener('click', () => {
   if (!confirm('Reset all progress?')) return;
   localStorage.removeItem(STORAGE_KEY);
@@ -1449,6 +1837,8 @@ document.getElementById('reset').addEventListener('click', () => {
   state.hasBush = false;
   state.offers = [];
   state.nextOfferAt = Date.now() + OFFER_INITIAL_DELAY;
+  state.xp = 0;
+  state.passClaimed = 0;
   save();
   render();
   toast('Save cleared.');
@@ -1476,6 +1866,8 @@ function boot() {
     state.hasBush = false;
     state.offers = [];
     state.nextOfferAt = Date.now() + OFFER_INITIAL_DELAY;
+    state.xp = 0;
+    state.passClaimed = 0;
     save();
   }
   render();
