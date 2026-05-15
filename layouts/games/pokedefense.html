@@ -1,0 +1,79 @@
+{{ define "main" }}
+<section class="page pokedefense-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+
+  <link rel="stylesheet" href="{{ "games/pokedefense/style.css" | relURL }}">
+
+  <div class="pokedefense-app"
+       data-sprite-base="{{ "images/pokedex/" | relURL }}"
+       data-games-href="{{ "games/" | relURL }}">
+
+    <div class="pd-topbar">
+      <div class="pd-title">Poké<span>Defense</span></div>
+      <div class="pd-hud">
+        <span class="pd-stat pd-lives" title="Lives"><span class="pd-stat-icon">♥</span><span id="pd-lives">20</span></span>
+        <span class="pd-stat pd-coins" title="Coins"><span class="pd-stat-icon">🪙</span><span id="pd-coins">150</span></span>
+        <span class="pd-stat pd-best" title="Best score"><span class="pd-stat-icon">★</span>Best: Wave <span id="pd-best-wave">0</span></span>
+      </div>
+    </div>
+
+    <div id="pd-shop" class="pd-shop pd-shop-strip" aria-label="Tower shop">
+      <div class="pd-shop-label">Tower Shop</div>
+      <div id="pd-shop-list" class="pd-shop-list"></div>
+    </div>
+
+    <div class="pd-stage">
+      <canvas id="pd-canvas" width="800" height="500" aria-label="PokéDefense game board"></canvas>
+      <div id="pd-overlay" class="pd-overlay" hidden>
+        <div class="pd-overlay-panel">
+          <h2 id="pd-overlay-title">—</h2>
+          <p id="pd-overlay-text">—</p>
+          <dl id="pd-overlay-stats" class="pd-overlay-stats"></dl>
+          <div class="pd-overlay-actions">
+            <button id="pd-overlay-primary" type="button" class="pd-btn pd-btn-primary">Play Again</button>
+            <a id="pd-overlay-menu" href="#" class="pd-btn pd-btn-ghost">Back to Menu</a>
+          </div>
+        </div>
+      </div>
+      <div id="pd-wave-banner" class="pd-wave-banner" hidden></div>
+    </div>
+
+    <div id="pd-selected" class="pd-selected" hidden>
+      <div id="pd-selected-body" class="pd-selected-info"></div>
+      <div class="pd-selected-actions">
+        <button id="pd-upgrade" type="button" class="pd-btn pd-btn-primary">Upgrade</button>
+        <button id="pd-sell" type="button" class="pd-btn pd-btn-ghost">Sell</button>
+      </div>
+    </div>
+
+    <div class="pd-footer">
+      <div class="pd-wave-meta">
+        Wave <span id="pd-wave-num">1</span> / 20
+        <span class="pd-wave-remaining" id="pd-wave-remaining"></span>
+      </div>
+      <button id="pd-send-wave" type="button" class="pd-btn pd-btn-primary">Send Wave ▶</button>
+      <div class="pd-speed" role="group" aria-label="Game speed">
+        <button type="button" data-speed="1" class="pd-speed-btn is-active">1×</button>
+        <button type="button" data-speed="2" class="pd-speed-btn">2×</button>
+        <button type="button" data-speed="3" class="pd-speed-btn">3×</button>
+      </div>
+    </div>
+
+    <details class="pd-help">
+      <summary>How to play</summary>
+      <ul>
+        <li><b>Click a tower card</b>, then click a grass tile to place it.</li>
+        <li><b>Click a placed tower</b> to upgrade or sell.</li>
+        <li>Press <b>Send Wave</b> to start the next wave — early sends pay a 10-coin bonus.</li>
+        <li>Enemies that reach the base cost you a life. Lose all 20 and the run ends.</li>
+        <li>Types follow the standard chart. Some towers ignore resistances (see the tower card).</li>
+      </ul>
+    </details>
+  </div>
+
+  <script defer src="{{ "games/pokedefense/game.js" | relURL }}"></script>
+</section>
+{{ end }}

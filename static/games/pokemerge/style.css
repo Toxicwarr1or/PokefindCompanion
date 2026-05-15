@@ -236,7 +236,30 @@ main {
   }
   .cell { border-radius: 7px; }
   .item img { object-fit: contain; }
-  .tier-badge { font-size: 9px; padding: 1px 4px; }
+  /* Smaller corner overlays on mobile — at ~40-48px cells the desktop sizes
+     covered roughly half the sprite. Position with negative offsets so the
+     overlay sits in the cell's padding (the gap between .cell and .item is
+     7% of the cell), keeping the actual sprite uncovered. */
+  /* Anchor the badges exactly on the cell's dotted corners. .item is 86%
+     of the cell (centered with 7% padding on each side), so an offset of
+     -8% of item-dimension lines the badge edge up with the cell edge. The
+     badge's outer corner lands precisely on the cell's outer corner
+     regardless of cell size, so they always sit at the same spot. */
+  .tier-badge {
+    font-size: 8px;
+    padding: 0 3px;
+    border-radius: 5px;
+    top: -8%; right: -8%;
+    line-height: 1.3;
+  }
+  .offer-check {
+    width: 11px;
+    height: 11px;
+    font-size: 8px;
+    top: -8%; left: -8%;
+    border-width: 1px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
 
   #pass-bar {
     flex-wrap: wrap;

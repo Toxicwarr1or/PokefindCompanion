@@ -1485,7 +1485,8 @@ function toast(msg) {
 // API. Distinguishes tap vs drag by movement threshold, follows the pointer
 // with a cloned "ghost" so the player can see what's being held, and
 // dispatches drops to either tryMerge/tryMove (cells) or sellAt (trash).
-const DRAG_THRESHOLD_PX = 8;   // tuned for finger jitter; mouse easily exceeds
+const DRAG_THRESHOLD_PX = 10;  // ≥ Android's default touch-slop so a tap
+                                // never accidentally registers as a micro-drag.
 
 function attachItemPointerHandlers(el, idx) {
   let pointerId = null;
