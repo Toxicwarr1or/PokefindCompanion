@@ -10,5 +10,6 @@ This section is the orientation guide: pick a gamemode from the sidebar to see w
 ## Currently documented
 
 - **PokéWorld** — the flagship Pokémon-trainer gamemode. Five regions (Kyoto, Jataro, Haikou, Shiloh, Zeinova), each with their own quests and potential stories.
+- **PokéSurvival** — the seasonal survival gamemode. One open world, an eight-gym gauntlet at spawn, crafting and claims, and a season reset with a persistent vault.
 
 More gamemode pages will land here over time.

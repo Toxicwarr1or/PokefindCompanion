@@ -3,6 +3,8 @@ title: 'Safari Zone'
 subtitle: 'Pay once, swing for thirty Safari Balls, and try your luck across seven biome-themed areas.'
 ---
 
+*This page covers the PokéWorld Safari Zone. PokéSurvival has its own, with a different price and a rotating roster — see [PokéSurvival › Safari Zone](/pokefind/pokesurvival/safari-zone/).*
+
 The **Safari Zone** is a paid catch-only minigame run by the **Safari Ranger** at the entrance lodge. You hand over **500 coins**, get a stack of Safari Balls, and have until the balls run out (or you walk out of bounds) to catch as many Pokémon as you can. Encounters here use Safari Balls only — you can't bring your team in and battle, and you can't pick a Safari Ball back up off the ground once it's been thrown.
 
 When the run ends — either because you ran out of balls or stepped over the boundary — the Ranger tallies up everything you caught and you're teleported back to the lobby.
