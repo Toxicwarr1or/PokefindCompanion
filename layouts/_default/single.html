@@ -6,7 +6,9 @@
     {{ with .Date }}<p class="meta">Updated {{ .Format "Jan 2, 2006" }}</p>{{ end }}
   </header>
   <div class="prose">
-    {{ .Content }}
+    {{- /* Wrap markdown tables in the same horizontal-scroll shell the Pokédex
+         layouts use, so wide tables scroll on phones instead of being clipped. */ -}}
+    {{ .Content | replaceRE "<table>" "<div class=\"table-scroll\"><table>" | replaceRE "</table>" "</table></div>" | safeHTML }}
   </div>
 </article>
 {{ end }}

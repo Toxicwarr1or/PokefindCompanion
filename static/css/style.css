@@ -2807,6 +2807,22 @@ pre, code { max-width: 100%; }
 .table-scroll::-webkit-scrollbar-track { background: var(--surface); }
 .table-scroll::-webkit-scrollbar-thumb { background: var(--brand); border-radius: 3px; }
 
+/* Markdown tables (default single/list layouts) are wrapped in .table-scroll
+   by the template. Tables with five or more columns — the Safari Zone
+   quarter grids, trainer tier tables — get a floor width so each column
+   keeps a readable wrap width on phones, and a sticky first column so the
+   row label stays in view while scrolling sideways. Narrow tables are left
+   alone and never scroll. (:has() is unsupported on very old browsers; they
+   still get the scroll wrapper, just without the floor.) */
+.prose .table-scroll table:has(tr > :nth-child(5)) { min-width: 46rem; }
+.prose .table-scroll table:has(tr > :nth-child(5)) th:first-child,
+.prose .table-scroll table:has(tr > :nth-child(5)) td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--surface);
+}
+
 @media (max-width: 768px) {
     /* Page chrome: reclaim padding from the layout edges and shrink page H1s. */
     .layout { padding: 1rem 0.6rem; gap: 1rem; }
