@@ -55,13 +55,19 @@ Streak-based NPC battles in six Showdown-style formats (UU, UU+, OU, OU+, Ubers,
 
 [More information →](battle-tower/)
 
-### Crafting and machines
+### Crafting
 
-Grow Apricorns and Berries in a Berry Pot, smelt and craft your own Poké Balls, unlock recipes as you progress, and use the Breeding, Fossil and Trading machines instead of NPC services.
+Grow Apricorns and Berries in a Berry Pot, craft your own Poké Balls and potions, and unlock more recipes as your traits grow. Breeding, fossils, trading, healing and the PC are handled by NPCs at spawn or by commands on your own claim.
 
-[More information →](crafting/) — the Poké Ball recipe chain, `/recipes`, the machines.
+[More information →](crafting/) — the Poké Ball loop, `/recipes`, where each service lives.
 
 [Recipe browser →](recipes/) — every recipe drawn in its crafting table, brewing stand, furnace or smithing table.
+
+### Markets
+
+Two player markets, both by command: the **Auction House** (`/ah`) for timed auctions of items and Pokémon, and the **Marketplace** (`/mp`) for bulk materials at a fixed unit price. Both take a 5% cut and lock down in the final week of a season.
+
+[More information →](markets/) — listing rules, bidding, claiming, rank limits.
 
 ### Jobs
 

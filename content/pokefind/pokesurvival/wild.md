@@ -57,11 +57,15 @@ Portals at spawn route you straight into the corresponding wild dimension.
 | `/home …` | Homes | everyone |
 | `/group` | Groups and claims | everyone |
 | `/vault` | Season-safe vault (see [Seasons](../seasons/)) | everyone |
+| `/pheal` | Heal your party, on your own claim | everyone |
+| `/pc` | Open your PC, on your own claim | everyone |
+| `/trade` | Trade Pokémon with another player | everyone |
+| `/ah` | Auction House (see [Markets](../markets/)) | everyone |
+| `/mp` | Marketplace (see [Markets](../markets/)) | everyone |
 | `/recipes` | Recipes you have unlocked | everyone |
 | `/shop` | Survival shop | everyone |
 | `/mobdex` | Your MobDex of custom mobs | everyone |
 | `/traits` | Your trait progress | everyone |
-| `/berryinfo` | Berry growing info | everyone |
 | `/toggleparty` | Toggle your Pokémon party following you | everyone |
 | `/offhand` | Swap held item to offhand | everyone |
 | `/kit` | Daily kit | Pro |

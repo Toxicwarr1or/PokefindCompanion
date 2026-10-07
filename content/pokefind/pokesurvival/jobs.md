@@ -22,7 +22,7 @@ Mining stone and ore can turn up two kinds of extra find:
 
 Digging through dirt, sand, gravel and similar blocks can turn up **fossil shards**. Combine a full set into a **fossil**, then take it to **Scientist Petra** at spawn, who revives it into the Pokémon.
 
-*TODO: which fossils, shards per fossil, whether the Fossil Incubator machine is still used.*
+*TODO: which fossils, shards per fossil.*
 
 ## Fisherman
 

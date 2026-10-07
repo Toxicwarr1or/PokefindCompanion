@@ -60,4 +60,4 @@ The gyms are not on the warp list — **Cletus Jr.**, the Gym Official, escorts 
 | **Battle Tower Registrar / Judge** | Battle Tower entry and rounds | (137, 85, 1) |
 | **Battle Shop** | Spends Battle Points | (140, 85, -2) |
 
-The Marketplace and Auction House have no NPCs — both are opened by command. See [Seasons](../seasons/) for how they behave in the last week of a season.
+The Marketplace and Auction House have no NPCs — open them with `/mp` and `/ah`. See [Auction House & Marketplace](../markets/).

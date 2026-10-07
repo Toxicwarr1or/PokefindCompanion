@@ -31,7 +31,7 @@ PokéSurvival runs in **seasons**. When a season ends the world is replaced and 
 
 | When | What happens |
 | --- | --- |
-| 7 days before | Marketplace and Auction House switch to **claim-only** — you can collect items and money but not list anything new. Daily countdown reminders begin in Discord. |
+| 7 days before | Marketplace and Auction House switch to **claim-only** — you can collect items and money but not list anything new (see [Markets](../markets/)). Daily countdown reminders begin in Discord. |
 | 1 day before | An in-game boss bar shows the countdown. |
 | Final hours | Reminders at 12h, 6h, 3h, 1h, 30m and 15m. |
 | Season end | World swap; new season begins. |
