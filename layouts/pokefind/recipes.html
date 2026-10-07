@@ -5,7 +5,7 @@
     {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
   </header>
 
-  <link rel="stylesheet" href="{{ "recipes/style.css" | relURL }}">
+  {{ partial "recipes-style.html" . }}
 
   {{- /* Data, icons and station panels are built by scripts/build_survival_recipes.py
          into static/recipes/. The browser fetches recipes.json and draws each

@@ -13,7 +13,7 @@
   const EXTRA_GROUPS = ['Everyday crafting', 'Old-season conversions'];
   const UNLOCKS_TAB = 'How to unlock';
 
-  let DATA, byId, byOutputName, usesOf, icons, gui, unlocks, activeCat = null, activeId = null;
+  let DATA, byId, byOutputName, usesOf, icons, gui, unlocks, sheet, activeCat = null, activeId = null;
 
   function unlockInfo(key) { return key ? (unlocks[key] || { label: 'Unlock required', how: 'How to earn this is not documented yet.' }) : null; }
   function unlockShort(key) {           // compact text for list cards: "Catch 25", "Defeat 100 wild"
@@ -27,7 +27,10 @@
   });
 
   function init(data) {
-    DATA = data; icons = data.icons; gui = data.gui; unlocks = data.unlocks || {};
+    DATA = data; icons = data.icons; gui = data.gui.slots; unlocks = data.unlocks || {}; sheet = data.sheet;
+    app.style.setProperty('--rb-cols', sheet.cols); app.style.setProperty('--rb-rows', sheet.rows);
+    app.style.setProperty('--rb-icons', `url('${BASE}icons.png')`); app.style.setProperty('--rb-gui', `url('${BASE}gui.png')`);
+    DATA.guiRects = data.gui.rects;
     byId = new Map(data.recipes.map(r => [r.id, r]));
     byOutputName = new Map();
     usesOf = new Map();
@@ -68,10 +71,15 @@
     if (r.grid) for (const row of r.grid) for (const s of row) if (s) out.push(s);
     return out;
   }
-  function iconFor(id) { return id && icons[id] ? BASE + 'icons/' + icons[id] : null; }
+  function iconFor(id) { return id && icons[id] ? icons[id] : null; }          // [col, row] in the sheet
   function iconForSlot(slot) {
     for (const a of slot.accepts) { const u = iconFor(a); if (u) return u; }
     return null;
+  }
+  // An icon from the sprite sheet. `cell` is [col,row]; null draws the generic "?" tile.
+  function ic(cell, cls = '', alt = '') {
+    const c = cell || icons.any;
+    return `<span class="rb-ic ${cls}" style="--ix:${c[0]};--iy:${c[1]}" role="img" aria-label="${esc(alt)}"></span>`;
   }
   function recipeFor(slot) {  // a recipe that produces this ingredient, for cross-linking
     for (const a of slot.accepts) for (const r of DATA.recipes) if (r.output.id === a) return r;
@@ -93,8 +101,8 @@
       if (q && !n && !c.unlocksView) continue;
       const b = document.createElement('button');
       b.type = 'button'; b.className = 'rb-tab' + (c.name === activeCat ? ' is-active' : '');
-      const ic = iconFor(c.icon);
-      b.innerHTML = (ic ? `<img src="${ic}" alt="">` : (c.unlocksView ? '🔒 ' : '')) + esc(c.name) + (q && !c.unlocksView ? ` <small>(${n})</small>` : '');
+      const ic0 = iconFor(c.icon);
+      b.innerHTML = (ic0 ? ic(ic0, 'rb-ic-tab') : (c.unlocksView ? '🔒 ' : '')) + esc(c.name) + (q && !c.unlocksView ? ` <small>(${n})</small>` : '');
       b.addEventListener('click', () => { activeCat = c.name; renderTabs(); renderList(); });
       tabsEl.appendChild(b);
     }
@@ -124,7 +132,7 @@
           b.className = 'rb-item' + (r.unlock ? ' is-locked' : '') + (r.id === activeId ? ' is-active' : '');
           b.dataset.id = r.id;
           const sub = r.unlock ? unlockShort(r.unlock) : (n > 1 ? `${n} recipes` : '');
-          b.innerHTML = `<img src="${iconFor(r.output.id) || BASE + 'icons/any.png'}" alt=""><span>${esc(r.title || r.output.name)}${sub ? `<small>${esc(sub)}</small>` : ''}</span>`;
+          b.innerHTML = `${ic(iconFor(r.output.id), 'rb-ic-card')}<span>${esc(r.title || r.output.name)}${sub ? `<small>${esc(sub)}</small>` : ''}</span>`;
           b.addEventListener('click', () => { location.hash = r.id; });
           grid.appendChild(b); shown++;
         }
@@ -152,7 +160,7 @@
     const variants = byOutputName.get(r.output.name) || [r];
     const vi = variants.indexOf(r);
     const out = r.output;
-    let html = `<div class="rb-result"><img src="${iconFor(out.id) || BASE + 'icons/any.png'}" alt="">
+    let html = `<div class="rb-result">${ic(iconFor(out.id), 'rb-ic-result')}
       <div><h2>${esc(r.title || out.name)}${out.count > 1 ? ` <span class="rb-count">×${out.count}</span>` : ''}</h2>
       <small>${esc(stationLabel(r.station))}${r.station === 'crafting_table' ? (r.shaped ? ' · shaped' : ' · shapeless, any arrangement') : ''}</small></div></div>`;
     const badges = [];
@@ -202,18 +210,29 @@
     if (!slot.accepts || !slot.accepts.length) {
       return `<div class="rb-slot rb-any" ${style} data-tip="${tip}">?</div>`;
     }
-    const ic = iconForSlot(slot);
+    const cell = iconForSlot(slot);
     const link = recipeFor(slot);
     const qty = opts.count && opts.count > 1 ? `<span class="rb-qty">${opts.count}</span>` : '';
-    const inner = `<img src="${ic || BASE + 'icons/any.png'}" alt="${esc(names)}">${qty}`;
+    const inner = `${ic(cell, 'rb-ic-slot', names)}${qty}`;
     const cls = 'rb-slot' + (opts.faded ? ' rb-faded' : '');
     return link && link.id !== activeId
       ? `<a class="${cls}" ${style} href="#${esc(link.id)}" data-tip="${tip}\n<small>Click for its recipe</small>">${inner}</a>`
       : `<div class="${cls}" ${style} data-tip="${tip}">${inner}</div>`;
   }
 
+  // background-image/size/position for a rectangle of the packed GUI sheet, scaled by --s
+  function guiStyle(name) {
+    const [x, y, w, h] = DATA.guiRects[name];
+    const sheetW = Math.max(...Object.values(DATA.guiRects).map(r => r[0] + r[2]));
+    const sheetH = Math.max(...Object.values(DATA.guiRects).map(r => r[1] + r[3]));
+    return `background-image:var(--rb-gui);background-repeat:no-repeat;background-size:calc(${sheetW}px*var(--s)) calc(${sheetH}px*var(--s));background-position:calc(${-x}px*var(--s)) calc(${-y}px*var(--s))`;
+  }
+
   function panelHtml(r) {
-    const st = r.station, g = gui[st]; const bg = `style="background-image:url('${BASE}gui/${st}.png')"`;
+    const st = r.station, g = gui[st];
+    const R = DATA.guiRects;
+    const bg = `style="${guiStyle(st)}"`;
+    const sprite = (name, x, y) => { const [sx, sy, w, h] = R[name]; return `<span class="rb-sprite" style="${guiStyle(name)};left:calc(${x}px*var(--s));top:calc(${y}px*var(--s));width:calc(${w}px*var(--s));height:calc(${h}px*var(--s))"></span>`; };
     let s = '';
     const outSlot = r.output.id || r.rule ? { name: r.output.name + (r.output.count > 1 ? ` ×${r.output.count}` : ''), accepts: r.output.id ? [r.output.id] : [] } : null;
     if (st === 'crafting_table') {
@@ -224,7 +243,7 @@
       s += slotHtml(r.ingredient, g.ingredient[0], g.ingredient[1]);
       for (const b of g.bottles) s += slotHtml(r.bottle, b[0], b[1], { tip: 'Each bottle becomes one ' + r.output.name });
       s += slotHtml({ name: 'Blaze Powder (fuel)', accepts: ['minecraft:BLAZE_POWDER'] }, g.fuel[0], g.fuel[1], { faded: true });
-      s += `<img class="rb-sprite" src="${BASE}gui/brew_arrow.png" alt="" style="left:calc(${g.arrow[0]}px*var(--s));top:calc(${g.arrow[1]}px*var(--s));width:calc(9px*var(--s));height:calc(28px*var(--s))">`;
+      s += sprite('brew_arrow', g.arrow[0], g.arrow[1]);
     } else if (st === 'smithing_table') {
       s += slotHtml(r.template, g.template[0], g.template[1]);
       s += slotHtml(r.base, g.base[0], g.base[1]);
@@ -234,8 +253,8 @@
       s += slotHtml(r.input, g.in[0], g.in[1]);
       s += slotHtml({ name: 'Any fuel', accepts: ['minecraft:COAL'] }, g.fuel[0], g.fuel[1], { faded: true });
       s += slotHtml(outSlot, g.out[0], g.out[1], { count: r.output.count });
-      s += `<img class="rb-sprite" src="${BASE}gui/furnace_flame.png" alt="" style="left:calc(${g.flame[0]}px*var(--s));top:calc(${g.flame[1]}px*var(--s));width:calc(14px*var(--s));height:calc(14px*var(--s))">`;
-      s += `<img class="rb-sprite" src="${BASE}gui/furnace_arrow.png" alt="" style="left:calc(${g.arrow[0]}px*var(--s));top:calc(${g.arrow[1]}px*var(--s));width:calc(24px*var(--s));height:calc(17px*var(--s))">`;
+      s += sprite('furnace_flame', g.flame[0], g.flame[1]);
+      s += sprite('furnace_arrow', g.arrow[0], g.arrow[1]);
     }
     return `<div class="rb-panel" ${bg} role="img" aria-label="${esc(stationLabel(st))} layout">${s}</div>`;
   }
@@ -247,9 +266,9 @@
     }
     if (r.station === 'brewing_stand') { const b = counts.get(r.bottle.name); if (b) b.n = 3; }
     const rows = [...counts.entries()].map(([name, e]) => {
-      const ic = iconForSlot(e.slot); const link = recipeFor(e.slot);
+      const cell = iconForSlot(e.slot); const link = recipeFor(e.slot);
       const label = link && link.id !== r.id ? `<a href="#${esc(link.id)}">${esc(name)}</a>` : esc(name);
-      return `<li><span class="rb-n">${e.n}×</span>${ic ? `<img src="${ic}" alt="">` : ''}<span>${label}</span></li>`;
+      return `<li><span class="rb-n">${e.n}×</span>${ic(cell, 'rb-ic-row')}<span>${label}</span></li>`;
     });
     return `<ul class="rb-ingredients">${rows.join('')}</ul>`;
   }
@@ -277,7 +296,7 @@
         const grid = document.createElement('div'); grid.className = 'rb-grid';
         for (const r of items) {
           const b = document.createElement('button'); b.type = 'button'; b.className = 'rb-item'; b.dataset.id = r.id;
-          b.innerHTML = `<img src="${iconFor(r.output.id) || BASE + 'icons/any.png'}" alt=""><span>${esc(r.output.name)}</span>`;
+          b.innerHTML = `${ic(iconFor(r.output.id), 'rb-ic-card')}<span>${esc(r.output.name)}</span>`;
           b.addEventListener('click', () => { location.hash = r.id; });
           grid.appendChild(b);
         }
@@ -299,7 +318,7 @@
         for (const r of recs) {
           if (seen.has(r.output.name)) continue; seen.add(r.output.name);
           const b = document.createElement('button'); b.type = 'button'; b.className = 'rb-item'; b.dataset.id = r.id;
-          b.innerHTML = `<img src="${iconFor(r.output.id) || BASE + 'icons/any.png'}" alt=""><span>${esc(r.output.name)}</span>`;
+          b.innerHTML = `${ic(iconFor(r.output.id), 'rb-ic-card')}<span>${esc(r.output.name)}</span>`;
           b.addEventListener('click', () => { location.hash = r.id; });
           grid.appendChild(b);
         }

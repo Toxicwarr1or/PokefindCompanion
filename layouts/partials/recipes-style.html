@@ -1,0 +1,143 @@
+<style>
+/* PokéSurvival recipe browser. Scoped to .rb-app so nothing bleeds into the wiki chrome.
+   The station panels are the game's own container textures at integer scale
+   (--s), with item icons absolutely positioned on their slot origins. */
+.rb-app {
+  --rb-accent: var(--brand, #3eb045);
+  --rb-surface: var(--surface, #1a1f33);
+  --rb-border: var(--border, rgba(255,255,255,0.08));
+  --s: 2;                      /* panel scale; JS lowers it on narrow screens */
+  position: relative;
+}
+/* Item icons come from one sprite sheet (icons.png, uniform cells). --ix/--iy
+   pick the cell; --e is the rendered size. Background-size scales the whole
+   sheet so one cell fills the element, keeping nearest-neighbour crispness. */
+.rb-ic {
+  display: inline-block; width: var(--e, 32px); height: var(--e, 32px); vertical-align: middle;
+  background-image: var(--rb-icons); background-repeat: no-repeat; image-rendering: pixelated;
+  background-size: calc(var(--rb-cols) * var(--e, 32px)) calc(var(--rb-rows) * var(--e, 32px));
+  background-position: calc(var(--ix) * var(--e, 32px) * -1) calc(var(--iy) * var(--e, 32px) * -1);
+}
+.rb-status { color: var(--text-muted, #889); font-style: italic; }
+.rb-app.is-ready .rb-status { display: none; }
+
+/* ---- toolbar ---- */
+.rb-toolbar { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+.rb-search {
+  width: 100%; box-sizing: border-box; padding: 0.55rem 0.8rem; font: inherit; font-size: 1rem;
+  background: var(--rb-surface); color: inherit; border: 1px solid var(--rb-border); border-radius: 8px;
+}
+.rb-search:focus { outline: 2px solid var(--rb-accent); outline-offset: 1px; }
+.rb-tabs { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.rb-tab {
+  display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.7rem 0.35rem 0.5rem;
+  background: var(--rb-surface); border: 1px solid var(--rb-border); border-radius: 999px;
+  color: inherit; font: inherit; font-size: 0.9rem; cursor: pointer;
+}
+.rb-ic-tab { --e: 20px; }
+.rb-tab.is-active { border-color: var(--rb-accent); box-shadow: inset 0 0 0 1px var(--rb-accent); }
+.rb-tab:hover { border-color: var(--rb-accent); }
+
+/* ---- two-pane body ---- */
+.rb-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 440px); gap: 1.2rem; align-items: start; }
+.rb-list h3 { margin: 1.2rem 0 0.5rem; font-size: 1rem; color: var(--rb-accent); }
+.rb-list h3:first-child { margin-top: 0; }
+.rb-list p.rb-cat-desc { margin: 0 0 0.6rem; color: var(--text-muted, #889); font-size: 0.92rem; }
+.rb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.45rem; }
+.rb-item {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.5rem; text-align: left;
+  background: var(--rb-surface); border: 1px solid var(--rb-border); border-radius: 8px;
+  color: inherit; font: inherit; font-size: 0.88rem; line-height: 1.2; cursor: pointer; min-width: 0;
+}
+.rb-item:hover { border-color: var(--rb-accent); }
+.rb-item.is-active { border-color: var(--rb-accent); box-shadow: inset 0 0 0 1px var(--rb-accent); }
+.rb-ic-card { --e: 32px; flex: none; }
+.rb-item span { overflow: hidden; text-overflow: ellipsis; }
+.rb-item small { display: block; color: var(--text-muted, #889); font-size: 0.75rem; }
+.rb-item.is-locked::after { content: "🔒"; margin-left: auto; font-size: 0.75rem; opacity: 0.8; }
+.rb-item.is-nocraft { opacity: 0.55; cursor: default; }
+.rb-empty { color: var(--text-muted, #889); font-style: italic; padding: 1rem 0; }
+
+/* ---- detail panel ---- */
+.rb-detail {
+  position: sticky; top: 1rem; background: var(--rb-surface); border: 1px solid var(--rb-border);
+  border-radius: 12px; padding: 1rem; min-width: 0;
+}
+.rb-close { display: none; }
+.rb-result { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.8rem; }
+.rb-ic-result { --e: 48px; flex: none; }
+.rb-result h2 { margin: 0; font-size: 1.15rem; line-height: 1.2; }
+.rb-result .rb-count { color: var(--rb-accent); font-weight: 700; }
+.rb-result small { display: block; color: var(--text-muted, #889); font-size: 0.8rem; margin-top: 0.15rem; }
+.rb-badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 0.8rem; }
+.rb-badge { font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 999px; border: 1px solid var(--rb-border); color: var(--text-muted, #889); }
+.rb-badge.lock { border-color: #c9a227; color: #e3c04b; }
+.rb-variants { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.8rem; }
+.rb-variant { padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px solid var(--rb-border); background: none; color: inherit; font: inherit; font-size: 0.78rem; cursor: pointer; }
+.rb-variant.is-active { border-color: var(--rb-accent); color: var(--rb-accent); }
+
+/* The in-game panel. Width/height are the cropped texture size × scale. */
+.rb-panel-wrap { display: flex; justify-content: center; margin: 0.4rem 0 0.8rem; }
+.rb-panel {
+  position: relative; width: calc(176px * var(--s)); height: calc(83px * var(--s));
+  background-size: 100% 100%; image-rendering: pixelated; flex: none;
+}
+.rb-slot {
+  position: absolute; width: calc(16px * var(--s)); height: calc(16px * var(--s));
+  left: calc(var(--x) * 1px * var(--s)); top: calc(var(--y) * 1px * var(--s));
+}
+.rb-slot .rb-ic-slot { --e: calc(16px * var(--s)); display: block; }
+.rb-slot .rb-qty {
+  position: absolute; right: 0; bottom: 0; font-size: calc(7px * var(--s)); line-height: 1; font-weight: 700;
+  color: #fff; text-shadow: calc(1px * var(--s) / 2) calc(1px * var(--s) / 2) 0 #3f3f3f; pointer-events: none;
+}
+.rb-slot.rb-any {
+  box-sizing: border-box; border: 2px dashed rgba(255,255,255,0.45); border-radius: 2px;
+  display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7);
+  font-size: calc(9px * var(--s)); font-weight: 700;
+}
+.rb-slot.rb-faded .rb-ic { opacity: 0.35; }
+.rb-sprite { position: absolute; image-rendering: pixelated; pointer-events: none; }
+
+/* MC-style tooltip */
+.rb-tip {
+  position: fixed; z-index: 50; pointer-events: none; max-width: 260px;
+  background: rgba(16, 0, 16, 0.94); color: #fff; border: 2px solid #26045d; outline: 1px solid #100010;
+  border-radius: 2px; padding: 0.3rem 0.5rem; font-size: 0.85rem; line-height: 1.3; white-space: pre-line;
+}
+.rb-tip small { color: #aaa; font-size: 0.75rem; }
+
+.rb-ingredients { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.3rem; }
+.rb-ingredients li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; }
+.rb-ic-row { --e: 24px; flex: none; }
+.rb-ingredients .rb-n { color: var(--text-muted, #889); min-width: 2.2em; text-align: right; font-variant-numeric: tabular-nums; }
+.rb-ingredients a { color: var(--rb-accent); text-decoration: none; }
+.rb-ingredients a:hover { text-decoration: underline; }
+.rb-note { margin: 0.8rem 0 0; font-size: 0.85rem; color: var(--text-muted, #889); }
+.rb-uses { margin-top: 0.8rem; font-size: 0.85rem; }
+.rb-uses a { color: var(--rb-accent); text-decoration: none; }
+.rb-uses a:hover { text-decoration: underline; }
+
+/* ---- phones: detail becomes a bottom sheet ---- */
+@media (max-width: 860px) {
+  .rb-body { grid-template-columns: minmax(0, 1fr); }
+  .rb-detail {
+    position: fixed; inset: auto 0 0 0; top: auto; max-height: 88vh; overflow-y: auto; z-index: 40;
+    border-radius: 14px 14px 0 0; box-shadow: 0 -8px 30px rgba(0,0,0,0.5); padding-top: 2.2rem;
+  }
+  .rb-close {
+    display: block; position: absolute; top: 0.4rem; right: 0.6rem; width: 2rem; height: 2rem;
+    border: 0; border-radius: 50%; background: rgba(255,255,255,0.08); color: inherit; font-size: 1.3rem; cursor: pointer;
+  }
+  .rb-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+
+/* ---- unlocks view ---- */
+.rb-unlock-tier { margin: 0.4rem 0 0.9rem; padding: 0.6rem 0.7rem; border: 1px solid var(--rb-border); border-radius: 10px; }
+.rb-unlock-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; margin-bottom: 0.5rem; }
+.rb-unlock-head strong { color: #e3c04b; }
+.rb-unlock-head small { color: var(--text-muted, #889); }
+
+/* With no recipe open, let the list use the whole width. */
+.rb-body:has(> .rb-detail[hidden]) { grid-template-columns: minmax(0, 1fr); }
+</style>

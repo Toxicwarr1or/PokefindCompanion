@@ -7,7 +7,8 @@ canonifyURLs = false
 relativeURLs = false
 
 # Don't generate noisy default pages we don't want
-disableKinds = ["taxonomy", "term"]
+# RSS is off: the site is within a few hundred files of Cloudflare Pages' 20,000-file cap.
+disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
   description = "An editorially curated Pokéfind reference, paired with the WarriorToxic YouTube channel."
@@ -62,8 +63,8 @@ disableKinds = ["taxonomy", "term"]
 
 # Build hardening
 [outputs]
-  home    = ["HTML", "RSS", "MOVETIPS", "CALCDATA", "SEARCHINDEX"]
-  section = ["HTML", "RSS", "ENTRY"]
+  home    = ["HTML", "MOVETIPS", "CALCDATA", "SEARCHINDEX"]
+  section = ["HTML", "ENTRY"]
   page    = ["HTML", "ENTRY"]
 
 [outputFormats.MOVETIPS]

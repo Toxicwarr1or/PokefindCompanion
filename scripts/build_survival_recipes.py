@@ -4,10 +4,14 @@
 Reads the recipe export and two unpacked texture trees, then writes everything the
 page at /pokefind/pokesurvival/recipes/ needs into static/recipes/:
 
-  recipes.json      the export, with an `icon` filename stamped on every item id
-  icons/<slug>.png  one icon per distinct item id (native resolution, scaled by CSS)
-  gui/<station>.png the in-game container panels, cropped from the vanilla textures
-  MISSING.txt       ids that fell back to a stand-in icon (give these a real texture)
+  recipes.json      the export plus `icons` (id → sprite cell), `sheet`, `gui` (panel
+                    crops + slot origins) and `unlocks`
+  icons.png         every item icon packed into one sprite sheet of 64px cells
+  gui.png           the in-game container panels and progress sprites, packed
+  (scripts/data/recipe_icons_missing.txt lists ids that use a stand-in icon)
+
+Everything is packed into two PNGs because Cloudflare Pages caps a deployment
+at 20,000 files and the site sits just under it.
 
 Usage:
   python3 scripts/build_survival_recipes.py \
@@ -26,7 +30,7 @@ Item id resolution, in order:
                 vanilla-named gear (Diamond_Sword …) uses the vanilla texture.
 Anything unresolved gets a labelled stand-in and is listed in MISSING.txt.
 """
-import argparse, json, os, re, shutil, sys
+import argparse, json, math, os, re, shutil, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
 
@@ -275,13 +279,14 @@ GUI = {
     'smithing_table': {'crop': (0, 0, 176, 83), 'slots': {'template': (8, 48), 'base': (26, 48), 'addition': (44, 48), 'out': (98, 48)}},
 }
 
-def build_gui(van_dir, out_dir):
+def build_gui(van_dir, out_png):
+    """Pack the station panels and progress sprites into one PNG; return slot
+    origins plus each sprite's [x, y, w, h] rectangle in that sheet."""
     src = Path(van_dir) / 'assets/minecraft/textures/gui'
-    out_dir.mkdir(parents=True, exist_ok=True)
+    sprites = {}
     for station, spec in GUI.items():
         fn = 'smithing' if station == 'smithing_table' else station
-        im = load_png(src / 'container' / f'{fn}.png').crop(spec['crop'])
-        im.save(out_dir / f'{station}.png')
+        sprites[station] = load_png(src / 'container' / f'{fn}.png').crop(spec['crop'])
     # progress sprites, shown "complete" so the panel looks like a finished craft
     for name, rel in {'furnace_flame': 'sprites/container/furnace/lit_progress.png',
                       'furnace_arrow': 'sprites/container/furnace/burn_progress.png',
@@ -289,8 +294,19 @@ def build_gui(van_dir, out_dir):
                       'brew_bubbles': 'sprites/container/brewing_stand/bubbles.png'}.items():
         p = src / rel
         if p.exists():
-            load_png(p).save(out_dir / f'{name}.png')
-    return {k: v['slots'] for k, v in GUI.items()}
+            sprites[name] = load_png(p)
+    # stack vertically, panels first
+    width = max(im.width for im in sprites.values())
+    height = sum(im.height for im in sprites.values())
+    sheet = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+    rects = {}
+    y = 0
+    for name, im in sprites.items():
+        sheet.alpha_composite(im, (0, y))
+        rects[name] = [0, y, im.width, im.height]
+        y += im.height
+    sheet.save(out_png)
+    return {'slots': {k: v['slots'] for k, v in GUI.items()}, 'rects': rects}
 
 # ---------------------------------------------------------------- unlocks
 
@@ -367,18 +383,11 @@ def main():
     item_defs = json.load(open(a.item_defs)) if os.path.exists(a.item_defs) else {}
     res = Resolver(a.pack, a.vanilla, item_defs)
 
-    icons_dir = OUT / 'icons'
-    if icons_dir.exists():
-        shutil.rmtree(icons_dir)
-    icons_dir.mkdir(parents=True)
-
-    icon_map = {}
-    ids = all_ids(data['recipes']) + [c['icon'] for c in data['menu'] if c.get('icon')] + ['minecraft:BLAZE_POWDER', 'minecraft:COAL']
-    for item_id in sorted(set(ids)):
-        img = res.resolve(item_id)
-        slug = icon_slug(item_id)
-        img.save(icons_dir / f'{slug}.png')
-        icon_map[item_id] = f'{slug}.png'
+    OUT.mkdir(parents=True, exist_ok=True)
+    for stale in ('icons', 'gui'):                      # layout before the sprite sheets
+        if (OUT / stale).exists():
+            shutil.rmtree(OUT / stale)
+    (OUT / 'MISSING.txt').unlink(missing_ok=True)
 
     any_tile = Image.new('RGBA', (16, 16), (0, 0, 0, 0))   # generic 'any item' tile for pattern recipes
     dr = ImageDraw.Draw(any_tile)
@@ -386,20 +395,41 @@ def main():
         dr.line((i, 0, i + 1, 0), fill=(255, 255, 255, 180)); dr.line((i, 15, i + 1, 15), fill=(255, 255, 255, 180))
         dr.line((0, i, 0, i + 1), fill=(255, 255, 255, 180)); dr.line((15, i, 15, i + 1), fill=(255, 255, 255, 180))
     dr.text((5, 2), '?', fill=(255, 255, 255, 220))
-    any_tile.save(icons_dir / 'any.png')
-    slots = build_gui(a.vanilla, OUT / 'gui')
+
+    ids = sorted(set(all_ids(data['recipes']) + [c['icon'] for c in data['menu'] if c.get('icon')] + ['minecraft:BLAZE_POWDER', 'minecraft:COAL']))
+    images = {'any': any_tile}
+    for item_id in ids:
+        images[item_id] = res.resolve(item_id)
+
+    # One sprite sheet of uniform cells. Icons are 16, 32 or 64px; smaller ones are
+    # upscaled nearest-neighbour (exact multiples) so every cell is pixel-crisp.
+    CELL = 64
+    cols = math.ceil(math.sqrt(len(images)))
+    rows = math.ceil(len(images) / cols)
+    sheet = Image.new('RGBA', (cols * CELL, rows * CELL), (0, 0, 0, 0))
+    icon_map = {}
+    for i, (key, img) in enumerate(images.items()):
+        if img.size != (CELL, CELL):
+            img = img.resize((CELL, CELL), Image.NEAREST)
+        cx, cy = (i % cols) * CELL, (i // cols) * CELL
+        sheet.alpha_composite(img, (cx, cy))
+        icon_map[key] = [i % cols, i // cols]
+    sheet.save(OUT / 'icons.png', optimize=True)
+
+    gui = build_gui(a.vanilla, OUT / 'gui.png')
 
     export = dict(data)
     export['icons'] = icon_map
-    export['gui'] = slots
+    export['sheet'] = {'cols': cols, 'rows': rows, 'cell': CELL}
+    export['gui'] = gui
     export['unlocks'] = build_unlocks(a.attributes)
     json.dump(export, open(OUT / 'recipes.json', 'w'), ensure_ascii=False, separators=(',', ':'))
-    (OUT / 'MISSING.txt').write_text('\n'.join(res.missing) + '\n')
+    (HERE / 'data' / 'recipe_icons_missing.txt').write_text('\n'.join(res.missing) + '\n')
     used = {r['unlock'] for r in data['recipes'] if r.get('unlock')}
     unknown = sorted(k for k in used if k not in export['unlocks'])
     if unknown:
         print('unlock keys with no known source:', ', '.join(unknown))
-    print(f'{len(icon_map)} icons, {len(res.missing)} stand-ins (see static/recipes/MISSING.txt), '
+    print(f'{len(icon_map)} icons, {len(res.missing)} stand-ins (see scripts/data/recipe_icons_missing.txt), '
           f'{len(data["recipes"])} recipes → {OUT}')
 
 if __name__ == '__main__':
