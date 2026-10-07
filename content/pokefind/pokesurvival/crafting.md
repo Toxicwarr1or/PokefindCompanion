@@ -5,10 +5,12 @@ subtitle: "Poké Balls from Apricorns, unlockable recipes, and the Breeding, Fos
 
 <!--
   STATUS: scaffold 2026-09-25. Poké Ball chain verified against Survival Tutorials/survival-pokeball-tutorial.json (Sep 9).
-  Machines/blocks from the survival.world.blocks package. TODO: other ball recipes, berry list, recipe unlock rules, Smith/Fletcher menus.
+  Machines/blocks from the survival.world.blocks package. TODO: other ball recipes, berry list, recipe unlock rules.
 -->
 
-PokéSurvival replaces a lot of PokéWorld's NPC services with things you grow, craft or build yourself. `/recipes` shows every recipe you have unlocked so far; recipes unlock as your trainer attributes progress (`/attributes`).
+PokéSurvival replaces a lot of PokéWorld's NPC services with things you grow, craft or build yourself. `/recipes` shows every recipe you have unlocked so far; recipes unlock as your traits progress (`/traits`).
+
+**Looking for a specific recipe?** The [Recipe browser](../recipes/) draws every one of them in its crafting table, brewing stand, furnace or smithing table, exactly as you lay it out in game.
 
 ---
 
@@ -36,15 +38,11 @@ Place-able blocks that replace NPC services in the wild:
 | Machine | Does |
 | --- | --- |
 | **Breeding Machine** | Breed two compatible Pokémon for an egg |
-| **Fossil Incubator** | Revive fossils found while mining |
+| **Fossil Incubator** | *TODO: confirm — fossils are revived by Scientist Petra at spawn (see [Jobs](../jobs/))* |
 | **Trading Machine** | Trade Pokémon with another player |
 
 *TODO: recipes, timings, fossil list.*
 
-## Smith and Fletcher
+## Evolution Stones and fossils
 
-The **Smith** at spawn handles gear; the **Fletcher** *TODO*. Both open a menu on click.
-
-## Evolution Stones
-
-Found in the world rather than bought. *TODO: where.*
+Neither is bought. Miners dig up **evolution-stone shards** that craft into stones, and Excavators dig up **fossil shards** that combine into a fossil — see [Jobs](../jobs/).

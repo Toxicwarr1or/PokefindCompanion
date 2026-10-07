@@ -47,6 +47,7 @@ The gyms are not on the warp list — **Cletus Jr.**, the Gym Official, escorts 
 | **Cletus** | League Official — Elite Four gatekeeper | Elite Four |
 | **Ryder** | Warps | Spawn point |
 | **Scientist Fred** | IV Checker | (46, 75, -68) |
+| **Scientist Petra** | Revives fossils (see [Jobs](../jobs/)) | *TODO* |
 | **Uncle Jesse** | EV Checker; hands out free Berry Pots | (70, 70, 27) |
 | **Clemont** | EV Trainer | (3, 75, 1) |
 | **Aunty Bibby** | Happiness Checker | (-156, 79, 31) |
@@ -54,7 +55,7 @@ The gyms are not on the warp list — **Cletus Jr.**, the Gym Official, escorts 
 | **June** | Trade Evolve | (78, 71, 56) |
 | **Farmer Clark** | Hidden Power checker | (-72, 70, -49) |
 | **Fisherman Ted** | Custom Fishing | (-198, 71, -3) |
-| **Employer Michael** | Employment Office (jobs) | (-69, 70, 16) |
+| **Employer Michael** | Employment Office — pick a [job](../jobs/) | (-69, 70, 16) |
 | **Pokémon Breeders** | Breeding Center | (-157, 85, -44) |
 | **Battle Tower Registrar / Judge** | Battle Tower entry and rounds | (137, 85, 1) |
 | **Battle Shop** | Spends Battle Points | (140, 85, -2) |

@@ -60,7 +60,7 @@ Portals at spawn route you straight into the corresponding wild dimension.
 | `/recipes` | Recipes you have unlocked | everyone |
 | `/shop` | Survival shop | everyone |
 | `/mobdex` | Your MobDex of custom mobs | everyone |
-| `/attributes` | Trainer attribute progress | everyone |
+| `/traits` | Your trait progress | everyone |
 | `/berryinfo` | Berry growing info | everyone |
 | `/toggleparty` | Toggle your Pokémon party following you | everyone |
 | `/offhand` | Swap held item to offhand | everyone |

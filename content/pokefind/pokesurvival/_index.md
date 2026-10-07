@@ -59,7 +59,15 @@ Streak-based NPC battles in six Showdown-style formats (UU, UU+, OU, OU+, Ubers,
 
 Grow Apricorns and Berries in a Berry Pot, smelt and craft your own Poké Balls, unlock recipes as you progress, and use the Breeding, Fossil and Trading machines instead of NPC services.
 
-[More information →](crafting/) — the Poké Ball recipe chain, `/recipes`, the Smith and the Fletcher.
+[More information →](crafting/) — the Poké Ball recipe chain, `/recipes`, the machines.
+
+[Recipe browser →](recipes/) — every recipe drawn in its crafting table, brewing stand, furnace or smithing table.
+
+### Jobs
+
+Three jobs from the Employment Office at spawn — **Miner**, **Excavation** and **Fisherman** — each with its own custom finds: gemstones and evolution-stone shards, fossil shards, and fishing loot and gear enchants.
+
+[More information →](jobs/) — what each job digs or hauls up, and where to turn it in.
 
 ### Seasons
 

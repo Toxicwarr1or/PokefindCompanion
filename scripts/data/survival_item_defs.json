@@ -1,0 +1,521 @@
+{
+ "AGUAV_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 14
+ },
+ "ANTIDOTE": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 28
+ },
+ "ASPEAR_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 5
+ },
+ "AWAKENING": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 29
+ },
+ "BLACK_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 120
+ },
+ "BLUE_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 121
+ },
+ "BREEDING_INCUBATOR": {
+  "kind": "cmd",
+  "material": "PRISMARINE_SHARD",
+  "cmd": 9
+ },
+ "BURN_HEAL": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 31
+ },
+ "CHERI_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 1
+ },
+ "CHESTO_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 2
+ },
+ "COOKED_BLACK_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 47
+ },
+ "COOKED_BLUE_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 57
+ },
+ "COOKED_GREEN_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 58
+ },
+ "COOKED_PINK_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 71
+ },
+ "COOKED_RED_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 78
+ },
+ "COOKED_WHITE_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 82
+ },
+ "COOKED_YELLOW_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 127
+ },
+ "CRAFTING_TERMINAL": null,
+ "DAWN_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 6
+ },
+ "DAWN_STONE_SHARD": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 36
+ },
+ "DIVE_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 15
+ },
+ "DIVE_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 99
+ },
+ "DUSK_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 8
+ },
+ "DUSK_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 100
+ },
+ "DUSK_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 7
+ },
+ "ELIXIR": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 25
+ },
+ "ETHER": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 11
+ },
+ "FAST_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 5
+ },
+ "FAST_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 101
+ },
+ "FIGY_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 11
+ },
+ "FIRE_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 1
+ },
+ "FRESH_WATER": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 32
+ },
+ "FRIEND_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 11
+ },
+ "FRIEND_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 102
+ },
+ "FULL_HEAL": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 27
+ },
+ "FULL_RESTORE": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 5
+ },
+ "GREAT_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 2
+ },
+ "GREAT_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 23
+ },
+ "GREEN_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 122
+ },
+ "HEAL_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 10
+ },
+ "HEAL_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 107
+ },
+ "HEAVY_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 20
+ },
+ "HEAVY_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 108
+ },
+ "HYPER_POTION": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 3
+ },
+ "IAPAPA_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 15
+ },
+ "ICE_HEAL": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 34
+ },
+ "ICE_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 8
+ },
+ "IRON_DISC": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 116
+ },
+ "LEAF_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 2
+ },
+ "LEPPA_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 6
+ },
+ "LEVEL_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 18
+ },
+ "LEVEL_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 111
+ },
+ "LOVE_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 12
+ },
+ "LOVE_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 112
+ },
+ "LUM_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 9
+ },
+ "LURE_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 23
+ },
+ "LURE_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 113
+ },
+ "LUXURY_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 21
+ },
+ "LUXURY_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 114
+ },
+ "MAGO_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 13
+ },
+ "MASTER_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 4
+ },
+ "MASTER_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 98
+ },
+ "MAX_ELIXIR": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 26
+ },
+ "MAX_ETHER": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 12
+ },
+ "MAX_POTION": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 4
+ },
+ "MAX_REVIVE": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 7
+ },
+ "MILK_BOTTLE": {
+  "kind": "damage",
+  "material": "IRON_AXE",
+  "damage": 13
+ },
+ "MOON_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 9
+ },
+ "MOON_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 109
+ },
+ "MOON_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 3
+ },
+ "NEST_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 14
+ },
+ "NEST_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 105
+ },
+ "NET_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 7
+ },
+ "NET_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 110
+ },
+ "ORAN_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 7
+ },
+ "OVAL_STONE": {
+  "kind": "cmd",
+  "material": "NETHER_STAR",
+  "cmd": 37
+ },
+ "PARALYZE_HEAL": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 38
+ },
+ "PECHA_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 3
+ },
+ "PINK_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 123
+ },
+ "POKEDEX": {
+  "kind": "cmd",
+  "material": "PRISMARINE_SHARD",
+  "cmd": 3
+ },
+ "POKE_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 1
+ },
+ "POKE_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 22
+ },
+ "POTION": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 1
+ },
+ "QUICK_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 16
+ },
+ "QUICK_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 103
+ },
+ "RAWST_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 4
+ },
+ "RED_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 124
+ },
+ "REPEAT_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 6
+ },
+ "REPEAT_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 106
+ },
+ "REVIVE": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 6
+ },
+ "RUNNING_SHOES": {
+  "kind": "plain",
+  "material": "LEATHER_BOOTS"
+ },
+ "SHINY_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 9
+ },
+ "SITRUS_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 10
+ },
+ "SUN_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 10
+ },
+ "SUPER_POTION": {
+  "kind": "cmd",
+  "material": "NETHER_BRICK",
+  "cmd": 2
+ },
+ "THUNDER_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 4
+ },
+ "TIMER_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 17
+ },
+ "TIMER_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 104
+ },
+ "TRACKER": {
+  "kind": "plain",
+  "material": "COMPASS"
+ },
+ "ULTRA_BALL": {
+  "kind": "cmd",
+  "material": "STICK",
+  "cmd": 3
+ },
+ "ULTRA_BALL_LID": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 46
+ },
+ "WATER_STONE": {
+  "kind": "cmd",
+  "material": "GOLD_NUGGET",
+  "cmd": 5
+ },
+ "WHITE_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 125
+ },
+ "WIKI_BERRY": {
+  "kind": "cmd",
+  "material": "SLIME_BALL",
+  "cmd": 12
+ },
+ "YELLOW_APRICORN": {
+  "kind": "damage",
+  "material": "IRON_HOE",
+  "damage": 126
+ }
+}

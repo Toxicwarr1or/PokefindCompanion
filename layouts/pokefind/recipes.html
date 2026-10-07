@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="page recipes-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+  </header>
+
+  <link rel="stylesheet" href="{{ "recipes/style.css" | relURL }}">
+
+  {{- /* Data, icons and station panels are built by scripts/build_survival_recipes.py
+         into static/recipes/. The browser fetches recipes.json and draws each
+         recipe on the matching container texture. */ -}}
+  <div class="prose">
+    <p>Pick a category, then a recipe, and it is drawn on the station exactly as you place it in game. Hover or tap a slot for the item name; an ingredient with its own recipe is a link. A padlock means the recipe is locked until one of your <strong>traits</strong> reaches a threshold — the <em>How to unlock</em> tab lists every threshold and what it opens.</p>
+    <p>In game, <code>/recipe</code> opens the same menu and marks which ones you have unlocked so far.</p>
+  </div>
+
+  <div class="rb-app" data-base="{{ "recipes/" | relURL }}">
+    <div class="rb-toolbar">
+      <input type="search" class="rb-search" placeholder="Search recipes and ingredients…" aria-label="Search recipes" autocomplete="off">
+      <nav class="rb-tabs" aria-label="Recipe categories"></nav>
+    </div>
+    <div class="rb-body">
+      <div class="rb-list" aria-live="polite"></div>
+      <aside class="rb-detail" hidden>
+        <button type="button" class="rb-close" aria-label="Close">×</button>
+        <div class="rb-detail-inner"></div>
+      </aside>
+    </div>
+    <p class="rb-status">Loading recipes…</p>
+  </div>
+
+  <script src="{{ "recipes/recipes.js" | relURL }}" defer></script>
+</section>
+{{ end }}

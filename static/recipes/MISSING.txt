@@ -1,0 +1,58 @@
+item:CRAFTING_TERMINAL	crafter block stand-in
+item:TM01	music disc stand-in (menu icon)
+mythic:BlankArmorTemplate	paper stand-in
+mythic:BlankMoveTemplate	paper stand-in
+mythic:BugCrystal	type gem used as stand-in
+mythic:BugImbuement	enchanted book stand-in
+mythic:BugImbuementArmor	enchanted book stand-in
+mythic:DarkCrystal	type gem used as stand-in
+mythic:DarkImbuement	enchanted book stand-in
+mythic:DarkImbuementArmor	enchanted book stand-in
+mythic:DragonCrystal	type gem used as stand-in
+mythic:DragonImbuement	enchanted book stand-in
+mythic:DragonImbuementArmor	enchanted book stand-in
+mythic:ElectricCrystal	type gem used as stand-in
+mythic:ElectricImbuement	enchanted book stand-in
+mythic:ElectricImbuementArmor	enchanted book stand-in
+mythic:FairyCrystal	type gem used as stand-in
+mythic:FairyImbuement	enchanted book stand-in
+mythic:FairyImbuementArmor	enchanted book stand-in
+mythic:FightingCrystal	type gem used as stand-in
+mythic:FightingImbuement	enchanted book stand-in
+mythic:FightingImbuementArmor	enchanted book stand-in
+mythic:FireCrystal	type gem used as stand-in
+mythic:FireImbuement	enchanted book stand-in
+mythic:FireImbuementArmor	enchanted book stand-in
+mythic:FlyingCrystal	type gem used as stand-in
+mythic:FlyingImbuement	enchanted book stand-in
+mythic:FlyingImbuementArmor	enchanted book stand-in
+mythic:GhostCrystal	type gem used as stand-in
+mythic:GhostImbuement	enchanted book stand-in
+mythic:GhostImbuementArmor	enchanted book stand-in
+mythic:GrassCrystal	type gem used as stand-in
+mythic:GrassImbuement	enchanted book stand-in
+mythic:GrassImbuementArmor	enchanted book stand-in
+mythic:GroundCrystal	type gem used as stand-in
+mythic:GroundImbuement	enchanted book stand-in
+mythic:GroundImbuementArmor	enchanted book stand-in
+mythic:IceCrystal	type gem used as stand-in
+mythic:IceImbuement	enchanted book stand-in
+mythic:IceImbuementArmor	enchanted book stand-in
+mythic:NormalCrystal	type gem used as stand-in
+mythic:NormalImbuement	enchanted book stand-in
+mythic:NormalImbuementArmor	enchanted book stand-in
+mythic:PoisonCrystal	type gem used as stand-in
+mythic:PoisonImbuement	enchanted book stand-in
+mythic:PoisonImbuementArmor	enchanted book stand-in
+mythic:PsychicCrystal	type gem used as stand-in
+mythic:PsychicImbuement	enchanted book stand-in
+mythic:PsychicImbuementArmor	enchanted book stand-in
+mythic:RockCrystal	type gem used as stand-in
+mythic:RockImbuement	enchanted book stand-in
+mythic:RockImbuementArmor	enchanted book stand-in
+mythic:SteelCrystal	type gem used as stand-in
+mythic:SteelImbuement	enchanted book stand-in
+mythic:SteelImbuementArmor	enchanted book stand-in
+mythic:WaterCrystal	type gem used as stand-in
+mythic:WaterImbuement	enchanted book stand-in
+mythic:WaterImbuementArmor	enchanted book stand-in

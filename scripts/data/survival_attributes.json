@@ -1,0 +1,125 @@
+{
+    "CATCH": [
+        {
+            "PROGRESS": 5,
+            "REWARD": {
+                "Name": "&aPok\u00e9dex, Name Tag, Running Shoes",
+                "ShowReward": "&fPok\u00e9dex, Name Tag, Running Shoes",
+                "HideReward": "catch 5",
+                "GiveCosmetic": "survival_beta_recipe_catch_5"
+            }
+        },
+        {
+            "PROGRESS": 25,
+            "REWARD": {
+                "Name": "&aFast, Level, Lure Balls",
+                "ShowReward": "&fFast, Level, Lure Balls",
+                "HideReward": "catch 25",
+                "GiveCosmetic": "survival_beta_recipe_catch_25"
+            }
+        },
+        {
+            "PROGRESS": 50,
+            "REWARD": {
+                "Name": "&aGreat, Heavy, Love, Friend, Moon Balls",
+                "ShowReward": "&fGreat, Heavy, Love, Friend, Moon Balls",
+                "HideReward": "catch 50",
+                "GiveCosmetic": "survival_beta_recipe_catch_50"
+            }
+        },
+        {
+            "PROGRESS": 100,
+            "REWARD": {
+                "Name": "&aNet, Repeat, Dive, Nest, Luxury Balls",
+                "ShowReward": "&fNet, Repeat, Dive, Nest, Luxury Balls",
+                "HideReward": "catch 100",
+                "GiveCosmetic": "survival_beta_recipe_catch_100"
+            }
+        },
+        {
+            "PROGRESS": 250,
+            "REWARD": {
+                "Name": "&aHeal, Ultra, Quick Balls",
+                "ShowReward": "&fHeal, Ultra, Quick Balls",
+                "HideReward": "catch 250",
+                "GiveCosmetic": "survival_beta_recipe_catch_250"
+            }
+        },
+        {
+            "PROGRESS": 500,
+            "REWARD": {
+                "Name": "&aDusk, Timer Balls",
+                "ShowReward": "&fDusk, Timer Balls",
+                "HideReward": "catch 500",
+                "GiveCosmetic": "survival_beta_recipe_catch_500"
+            }
+        }
+    ],
+    "DEFEAT_WILD": [
+        {
+            "PROGRESS": 5,
+            "REWARD": {
+                "Name": "&aPotion, Antidote, Burn Heal, Awakening, Paralyze Heal, Ice Heal",
+                "ShowReward": "&fPotion, Antidote, Burn Heal, Awakening, Paralyze Heal, Ice Heal",
+                "HideReward": "wild 5",
+                "GiveCosmetic": "survival_beta_recipe_wild_5"
+            }
+        },
+        {
+            "PROGRESS": 25,
+            "REWARD": {
+                "Name": "&aRevive, Super Potion, Ether",
+                "ShowReward": "&fRevive, Super Potion, Ether",
+                "HideReward": "wild 25",
+                "GiveCosmetic": "survival_beta_recipe_wild_25"
+            }
+        },
+        {
+            "PROGRESS": 100,
+            "REWARD": {
+                "Name": "&aHyper Potion, Full Heal, Elixir",
+                "ShowReward": "&fHyper Potion, Full Heal, Elixir",
+                "HideReward": "wild 100",
+                "GiveCosmetic": "survival_beta_recipe_wild_100"
+            }
+        },
+        {
+            "PROGRESS": 250,
+            "REWARD": {
+                "Name": "&aMax Potion, Full Restore, Max Revive, Max Ether, Max Elixir",
+                "ShowReward": "&fMax Potion, Full Restore, Max Revive, Max Ether, Max Elixir",
+                "HideReward": "wild 250",
+                "GiveCosmetic": "survival_beta_recipe_wild_250"
+            }
+        }
+    ],
+    "DEFEAT_TRAINER": [
+        {
+            "PROGRESS": 25,
+            "REWARD": {
+                "Name": "&aTier 1 TMs at the TM trader",
+                "ShowReward": "&fTier 1 TMs at the TM trader",
+                "HideReward": "t1 tm",
+                "GiveCosmetic": "survival_beta_t1_tm"
+            }
+        },
+        {
+            "PROGRESS": 100,
+            "REWARD": {
+                "Name": "&aTier 2 TMs at the TM trader",
+                "ShowReward": "&fTier 2 TMs at the TM trader",
+                "HideReward": "t2 tm",
+                "GiveCosmetic": "survival_beta_t2_tm"
+            }
+        },
+        {
+            "PROGRESS": 500,
+            "REWARD": {
+                "Name": "&aTier 3 TMs at the TM trader",
+                "ShowReward": "&fTier 3 TMs at the TM trader",
+                "HideReward": "t3 tm",
+                "GiveCosmetic": "survival_beta_t3_tm"
+            }
+        }
+    ]
+}
