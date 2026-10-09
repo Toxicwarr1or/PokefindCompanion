@@ -549,6 +549,7 @@ forms:
         slug: 'exploud'
         depth: 2
         method: 'Level 40'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — Pokémon Lv 40+']
 region: ''
 anniversary: ''
 tier: ''

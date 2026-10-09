@@ -410,6 +410,7 @@ forms:
         slug: 'yanmega'
         depth: 1
         method: 'Level up, knowing Ancient Power'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Flying: Skylands Autumn, Skylands Spring', 'Safari Zone: Central Meadow — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -485,6 +485,7 @@ forms:
         slug: 'quagsire'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Desert Oasis — Apr–Sep', 'Safari Zone: North River — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -433,6 +433,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 12+', 'Safari Zone: West Pond — Jan–Jun']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Psychic', 'Fairy']

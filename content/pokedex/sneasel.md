@@ -622,6 +622,7 @@ forms:
         slug: 'weavile'
         depth: 1
         method: 'Level up, holding Razor Claw, at night'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — trainer Lv 10+', 'Ghost: End Barrens (End), End Midlands (End) — trainer Lv 10+', 'Safari Zone: East Pond — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

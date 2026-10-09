@@ -394,6 +394,7 @@ forms:
         slug: 'braviary'
         depth: 1
         method: 'Level 54'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Entrance — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

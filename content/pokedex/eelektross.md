@@ -488,6 +488,7 @@ forms:
         slug: 'eelektross'
         depth: 2
         method: 'Use Thunder Stone'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — trainer Lv 35+; Pokémon Lv 30+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Bug', 'Dark']

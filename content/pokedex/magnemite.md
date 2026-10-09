@@ -415,6 +415,7 @@ forms:
         slug: 'magnezone'
         depth: 2
         method: 'Level up, near Special Magnetic Field'
+    survival_locations: ['Steel: Granite Cliffs, Badlands', 'Electric: Highlands, Rocky Shrubland', 'Safari Zone: Deep Jungle — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

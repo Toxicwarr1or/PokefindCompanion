@@ -429,6 +429,7 @@ forms:
         slug: 'ledian'
         depth: 1
         method: 'Level 18'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Flying: Skylands Autumn, Skylands Spring']
 region: ''
 anniversary: ''
 tier: ''

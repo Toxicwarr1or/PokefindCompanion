@@ -522,6 +522,7 @@ forms:
         slug: 'jynx'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Safari Zone: East Pond — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -336,6 +336,7 @@ forms:
         slug: 'luxray'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 15+']
 region: ''
 anniversary: ''
 tier: ''

@@ -549,6 +549,7 @@ forms:
         slug: 'lucario'
         depth: 1
         method: 'Level up, at day, high friendship'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau']
   - name: 'Shiloh'
     kind: 'form'
     types: ['Electric', 'Poison']

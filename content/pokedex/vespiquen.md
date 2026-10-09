@@ -424,6 +424,7 @@ forms:
         slug: 'vespiquen'
         depth: 1
         method: 'Level 21, (female)'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp']
   - name: 'Shiloh'
     kind: 'form'
     types: ['Poison', 'Fairy']

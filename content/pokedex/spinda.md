@@ -575,6 +575,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Central Meadow — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

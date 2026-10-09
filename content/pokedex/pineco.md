@@ -455,6 +455,7 @@ forms:
         slug: 'forretress'
         depth: 1
         method: 'Level 31'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 10+', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

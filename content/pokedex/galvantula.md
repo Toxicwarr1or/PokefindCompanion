@@ -436,6 +436,7 @@ forms:
         slug: 'galvantula'
         depth: 1
         method: 'Level 36'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 40+', 'Grass/Bug: Birch Forest, Forest']
 region: ''
 anniversary: ''
 tier: ''

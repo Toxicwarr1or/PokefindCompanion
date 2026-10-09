@@ -439,6 +439,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Entrance — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

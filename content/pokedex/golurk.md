@@ -548,6 +548,7 @@ forms:
         slug: 'golurk'
         depth: 1
         method: 'Level 43'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 40+', 'Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 40+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Ghost', 'Steel']

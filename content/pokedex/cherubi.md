@@ -400,6 +400,7 @@ forms:
         slug: 'cherrim'
         depth: 1
         method: 'Level 25'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Deep Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

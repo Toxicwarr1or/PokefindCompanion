@@ -392,6 +392,7 @@ forms:
         slug: 'zebstrika'
         depth: 1
         method: 'Level 27'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland', 'Safari Zone: Entrance — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

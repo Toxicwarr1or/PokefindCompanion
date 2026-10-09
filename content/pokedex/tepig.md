@@ -469,6 +469,7 @@ forms:
         slug: 'emboar'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: Eastern Desert — Jan–Mar']
 region: ''
 anniversary: ''
 tier: ''

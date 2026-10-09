@@ -463,6 +463,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 15+', 'Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Jungle — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -532,6 +532,7 @@ forms:
         slug: 'cacturne'
         depth: 1
         method: 'Level 32'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Jungle — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -523,6 +523,7 @@ forms:
         slug: 'darmanitan'
         depth: 1
         method: 'Level 35'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether)']
   - name: 'Galarian'
     kind: 'form'
     description: 'The thick arms of this hot-blooded Pokémon can deliver punches capable of obliterating a dump truck.'

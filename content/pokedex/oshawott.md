@@ -457,6 +457,7 @@ forms:
         slug: 'samurott'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: North River — Jan–Mar']
 region: ''
 anniversary: ''
 tier: ''

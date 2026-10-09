@@ -479,6 +479,7 @@ forms:
         slug: 'bibarel'
         depth: 1
         method: 'Level 15'
+    survival_locations: ['Normal: Brushland, Plains — Pokémon Lv 20+']
 region: ''
 anniversary: ''
 tier: ''

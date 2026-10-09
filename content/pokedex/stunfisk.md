@@ -527,6 +527,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Electric: Highlands, Rocky Shrubland', 'Safari Zone: Eastern Desert — Jan–Jun']
   - name: 'Galarian'
     kind: 'form'
     description: 'Living in mud with a high iron content has given it a strong steel body.'

@@ -443,6 +443,7 @@ forms:
         slug: 'manectric'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland', 'Safari Zone: Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

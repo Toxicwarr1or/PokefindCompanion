@@ -559,6 +559,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Safari Zone: Orange Desert — Jul–Dec']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Dragon', 'Ghost']

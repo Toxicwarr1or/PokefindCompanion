@@ -556,6 +556,7 @@ forms:
         slug: 'simipour'
         depth: 1
         method: 'Use Water Stone'
+    survival_locations: ['Safari Zone: Desert Oasis — Jul–Dec', 'Safari Zone: North River — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

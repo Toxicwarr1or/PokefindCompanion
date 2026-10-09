@@ -410,6 +410,7 @@ forms:
         slug: 'seaking'
         depth: 1
         method: 'Level 33'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

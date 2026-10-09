@@ -414,6 +414,7 @@ forms:
         slug: 'cloyster'
         depth: 1
         method: 'Use Water Stone'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: West Pond — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

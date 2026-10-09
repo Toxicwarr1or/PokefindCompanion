@@ -390,6 +390,7 @@ forms:
         power: '90'
         accuracy: '100'
         pp: '10'
+    survival_locations: ['Safari Zone: Central Meadow — Jan–Jun']
   - name: 'Heat'
     kind: 'form'
     types: ['Electric', 'Fire']

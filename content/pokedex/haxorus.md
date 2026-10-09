@@ -516,6 +516,7 @@ forms:
         slug: 'haxorus'
         depth: 2
         method: 'Level 48'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 45+; Pokémon Lv 55+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Dark', 'Steel']

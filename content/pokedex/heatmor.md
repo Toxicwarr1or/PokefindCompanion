@@ -542,6 +542,7 @@ forms:
         power: '15'
         accuracy: '90'
         pp: '20'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — Pokémon Lv 16+', 'Safari Zone: Eastern Desert — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

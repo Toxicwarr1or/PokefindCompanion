@@ -557,6 +557,7 @@ forms:
         slug: 'mismagius'
         depth: 1
         method: 'Use Dusk Stone'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 10+', 'Safari Zone: Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

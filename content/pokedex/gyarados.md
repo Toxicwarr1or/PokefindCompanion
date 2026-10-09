@@ -472,6 +472,7 @@ forms:
         slug: 'gyarados'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 20+; Pokémon Lv 20+']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Rock', 'Dragon']

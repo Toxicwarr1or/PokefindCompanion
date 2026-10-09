@@ -465,6 +465,7 @@ forms:
         slug: 'ferrothorn'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 10+', 'Steel: Granite Cliffs, Badlands — trainer Lv 10+', 'Safari Zone: Deep Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

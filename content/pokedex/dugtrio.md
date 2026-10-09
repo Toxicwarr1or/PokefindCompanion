@@ -412,6 +412,7 @@ forms:
         slug: 'dugtrio'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 26+']
   - name: 'Alolan'
     kind: 'form'
     types: ['Ground', 'Steel']

@@ -466,6 +466,7 @@ forms:
         slug: 'blaziken'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: Orange Desert — Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

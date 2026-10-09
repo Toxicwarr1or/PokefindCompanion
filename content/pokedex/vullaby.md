@@ -479,6 +479,7 @@ forms:
         slug: 'mandibuzz'
         depth: 1
         method: 'Level 54'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Orange Desert — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

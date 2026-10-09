@@ -372,6 +372,7 @@ forms:
         slug: 'accelgor'
         depth: 1
         method: 'Trade, trade for Karrablast'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Entrance — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

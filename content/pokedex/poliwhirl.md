@@ -383,6 +383,7 @@ forms:
         slug: 'politoed'
         depth: 2
         method: 'Trade, holding King''s Rock'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 25+']
 region: ''
 anniversary: ''
 tier: ''

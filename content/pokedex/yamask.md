@@ -491,6 +491,7 @@ forms:
         slug: 'cofagrigus'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 12+', 'Safari Zone: Entrance — Jan–Jun']
   - name: 'Galarian'
     kind: 'form'
     description: 'A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask’s dark power.'

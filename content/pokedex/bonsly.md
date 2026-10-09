@@ -425,6 +425,7 @@ forms:
         slug: 'sudowoodo'
         depth: 1
         method: 'Level up, knowing Mimic'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Eastern Desert — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

@@ -391,6 +391,7 @@ forms:
         slug: 'electrode'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland', 'Steel: Granite Cliffs, Badlands', 'Safari Zone: Central Meadow — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

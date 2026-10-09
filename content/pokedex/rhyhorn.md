@@ -576,6 +576,7 @@ forms:
         slug: 'rhyperior'
         depth: 2
         method: 'Trade, holding Protector'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 21+', 'Safari Zone: Eastern Desert — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

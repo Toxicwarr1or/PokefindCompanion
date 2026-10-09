@@ -566,6 +566,7 @@ forms:
         slug: 'machamp'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 3+', 'Safari Zone: Central Meadow — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

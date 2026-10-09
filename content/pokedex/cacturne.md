@@ -503,6 +503,7 @@ forms:
         slug: 'cacturne'
         depth: 1
         method: 'Level 32'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 32+']
 region: ''
 anniversary: ''
 tier: ''

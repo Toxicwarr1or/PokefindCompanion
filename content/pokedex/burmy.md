@@ -107,6 +107,7 @@ forms:
         slug: 'mothim'
         depth: 1
         method: 'Level 20, (male)'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Entrance — Jan–Mar, Oct–Dec']
   - name: 'Sandy'
     kind: 'form'
     types: ['Bug']

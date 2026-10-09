@@ -423,6 +423,7 @@ forms:
         slug: 'mothim'
         depth: 1
         method: 'Level 20, (male)'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest']
   - name: 'Sandy'
     kind: 'form'
     types: ['Bug', 'Ground']

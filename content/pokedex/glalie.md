@@ -423,6 +423,7 @@ forms:
         slug: 'froslass'
         depth: 1
         method: 'Use Dawn Stone, (female)'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — Pokémon Lv 42+']
 region: ''
 anniversary: ''
 tier: ''

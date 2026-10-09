@@ -455,6 +455,7 @@ forms:
         slug: 'victreebel'
         depth: 2
         method: 'Use Leaf Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp', 'Safari Zone: Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

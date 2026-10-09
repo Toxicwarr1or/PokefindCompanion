@@ -461,6 +461,7 @@ forms:
         slug: 'electivire'
         depth: 2
         method: 'Trade, holding Electirizer'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 18+']
 region: ''
 anniversary: ''
 tier: ''

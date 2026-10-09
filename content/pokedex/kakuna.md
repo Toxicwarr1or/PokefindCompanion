@@ -68,6 +68,7 @@ forms:
         slug: 'beedrill'
         depth: 2
         method: 'Level 10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 7+', 'Poison: Swamp, Mangrove Swamp — Pokémon Lv 7+']
 region: ''
 anniversary: ''
 tier: ''

@@ -404,6 +404,7 @@ forms:
         slug: 'manectric'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 26+']
 region: ''
 anniversary: ''
 tier: ''

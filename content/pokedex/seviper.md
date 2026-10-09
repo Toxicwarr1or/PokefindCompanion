@@ -511,6 +511,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '5'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp — trainer Lv 10+; Pokémon Lv 14+', 'Safari Zone: Central Meadow — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

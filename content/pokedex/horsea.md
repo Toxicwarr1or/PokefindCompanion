@@ -403,6 +403,7 @@ forms:
         slug: 'kingdra'
         depth: 2
         method: 'Trade, holding Dragon Scale'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: Desert Oasis — Jan–Mar, Jul–Sep', 'Safari Zone: North River — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

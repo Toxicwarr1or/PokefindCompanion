@@ -405,6 +405,7 @@ forms:
         slug: 'ampharos'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — trainer Lv 15+']
 region: ''
 anniversary: ''
 tier: ''

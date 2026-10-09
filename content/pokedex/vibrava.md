@@ -449,6 +449,7 @@ forms:
         slug: 'flygon'
         depth: 2
         method: 'Level 45'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 25+; Pokémon Lv 35+']
 region: ''
 anniversary: ''
 tier: ''

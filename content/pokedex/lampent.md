@@ -443,6 +443,7 @@ forms:
         slug: 'chandelure'
         depth: 2
         method: 'Use Dusk Stone'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 18+', 'Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — trainer Lv 18+']
 region: ''
 anniversary: ''
 tier: ''

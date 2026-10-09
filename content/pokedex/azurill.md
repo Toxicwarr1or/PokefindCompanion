@@ -398,6 +398,7 @@ forms:
         slug: 'azumarill'
         depth: 2
         method: 'Level 18'
+    survival_locations: ['Safari Zone: Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

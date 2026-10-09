@@ -468,6 +468,7 @@ forms:
         slug: 'raichu'
         depth: 2
         method: 'Use Thunder Stone'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 30+', 'Steel: Granite Cliffs, Badlands — Pokémon Lv 30+']
   - name: 'Alolan'
     kind: 'form'
     types: ['Electric', 'Psychic']

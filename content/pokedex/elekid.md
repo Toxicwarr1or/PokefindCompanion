@@ -498,6 +498,7 @@ forms:
         slug: 'electivire'
         depth: 2
         method: 'Trade, holding Electirizer'
+    survival_locations: ['Safari Zone: Jungle — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

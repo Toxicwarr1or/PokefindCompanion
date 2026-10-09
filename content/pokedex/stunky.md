@@ -486,6 +486,7 @@ forms:
         slug: 'skuntank'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp', 'Safari Zone: Orange Desert — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

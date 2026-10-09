@@ -483,6 +483,7 @@ forms:
         slug: 'arcanine'
         depth: 1
         method: 'Use Fire Stone'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether)', 'Safari Zone: Orange Desert — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -603,6 +603,7 @@ forms:
         slug: 'lickilicky'
         depth: 1
         method: 'Level up, knowing Rollout'
+    survival_locations: ['Normal: Brushland, Plains — Pokémon Lv 16+', 'Safari Zone: Deep Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

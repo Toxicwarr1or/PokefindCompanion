@@ -355,6 +355,7 @@ forms:
         slug: 'shedinja'
         depth: 1
         method: 'Shed'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Orange Desert — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

@@ -405,6 +405,7 @@ forms:
         slug: 'ariados'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp']
 region: ''
 anniversary: ''
 tier: ''

@@ -515,6 +515,7 @@ forms:
         slug: 'beartic'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes']
 region: ''
 anniversary: ''
 tier: ''

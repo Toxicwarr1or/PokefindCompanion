@@ -462,6 +462,7 @@ forms:
         slug: 'mightyena'
         depth: 1
         method: 'Level 18'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Eastern Desert — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

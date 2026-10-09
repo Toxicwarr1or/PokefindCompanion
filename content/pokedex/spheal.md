@@ -455,6 +455,7 @@ forms:
         slug: 'walrein'
         depth: 2
         method: 'Level 44'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Ice: Frozen Peaks, Ice Spikes', 'Safari Zone: East Pond — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

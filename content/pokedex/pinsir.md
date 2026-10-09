@@ -498,6 +498,7 @@ forms:
         power: '120'
         accuracy: '100'
         pp: '5'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 16+', 'Safari Zone: Central Meadow — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

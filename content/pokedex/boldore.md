@@ -350,6 +350,7 @@ forms:
         slug: 'gigalith'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 25–40']
 region: ''
 anniversary: ''
 tier: ''

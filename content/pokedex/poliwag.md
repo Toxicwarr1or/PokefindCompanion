@@ -414,6 +414,7 @@ forms:
         slug: 'politoed'
         depth: 2
         method: 'Trade, holding King''s Rock'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

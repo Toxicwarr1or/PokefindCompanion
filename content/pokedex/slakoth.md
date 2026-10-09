@@ -492,6 +492,7 @@ forms:
         slug: 'slaking'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

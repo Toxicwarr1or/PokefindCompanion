@@ -531,6 +531,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 15+', 'Grass/Bug: Birch Forest, Forest — trainer Lv 15+', 'Safari Zone: Entrance — Jan–Jun']
   - name: 'Jataro'
     kind: 'form'
     types: ['Dragon', 'Fighting']

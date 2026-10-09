@@ -540,6 +540,7 @@ forms:
         slug: 'sceptile'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: Entrance — Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

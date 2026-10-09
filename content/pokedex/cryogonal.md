@@ -401,6 +401,7 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — trainer Lv 15+', 'Safari Zone: East Pond — Jan–Mar, Oct–Dec']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Ice', 'Steel']

@@ -504,6 +504,7 @@ forms:
         slug: 'mantine'
         depth: 1
         method: 'Level up, with Remoraid in party'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 15+']
 region: ''
 anniversary: ''
 tier: ''

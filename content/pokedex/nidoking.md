@@ -574,6 +574,7 @@ forms:
         slug: 'nidoking'
         depth: 2
         method: 'Use Moon Stone'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp — Pokémon Lv 16+']
 region: ''
 anniversary: ''
 tier: ''

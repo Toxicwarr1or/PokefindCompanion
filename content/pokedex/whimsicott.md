@@ -376,6 +376,7 @@ forms:
         slug: 'whimsicott'
         depth: 1
         method: 'Use Sun Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Normal: Brushland, Plains']
 region: ''
 anniversary: ''
 tier: ''

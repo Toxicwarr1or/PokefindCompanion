@@ -668,6 +668,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    survival_locations: ['Normal: Brushland, Plains — trainer Lv 10+; Pokémon Lv 14+', 'Safari Zone: Deep Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

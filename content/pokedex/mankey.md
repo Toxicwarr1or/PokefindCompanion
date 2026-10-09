@@ -597,6 +597,7 @@ forms:
         slug: 'primeape'
         depth: 1
         method: 'Level 28'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau', 'Safari Zone: Deep Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

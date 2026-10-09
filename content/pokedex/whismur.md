@@ -435,6 +435,7 @@ forms:
         slug: 'exploud'
         depth: 2
         method: 'Level 40'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 7+', 'Safari Zone: Entrance — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

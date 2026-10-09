@@ -431,6 +431,7 @@ forms:
         slug: 'typhlosion'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: Eastern Desert — Apr–Jun']
 region: ''
 anniversary: ''
 tier: ''

@@ -551,6 +551,7 @@ forms:
         slug: 'delcatty'
         depth: 1
         method: 'Use Moon Stone'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

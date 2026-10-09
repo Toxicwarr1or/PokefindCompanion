@@ -593,6 +593,7 @@ forms:
         slug: 'slowking'
         depth: 1
         method: 'Trade, holding King''s Rock'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: North River — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -483,6 +483,7 @@ forms:
         slug: 'liepard'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)']
 region: ''
 anniversary: ''
 tier: ''

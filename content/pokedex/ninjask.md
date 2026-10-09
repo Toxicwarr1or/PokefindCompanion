@@ -401,6 +401,7 @@ forms:
         slug: 'shedinja'
         depth: 1
         method: 'Shed'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 20+']
 region: ''
 anniversary: ''
 tier: ''

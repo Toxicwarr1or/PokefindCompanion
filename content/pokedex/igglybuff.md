@@ -481,6 +481,7 @@ forms:
         slug: 'wigglytuff'
         depth: 2
         method: 'Use Moon Stone'
+    survival_locations: ['Safari Zone: Jungle — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -340,6 +340,7 @@ forms:
         slug: 'swellow'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 22+', 'Normal: Brushland, Plains — Pokémon Lv 22+']
   - name: 'Haikou'
     kind: 'form'
     description: 'Swellow skims storm-tossed seas, charging itself with lightning as it dives. Sailors claim its wings crackle moments before sudden squalls form.'

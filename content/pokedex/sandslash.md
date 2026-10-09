@@ -478,6 +478,7 @@ forms:
         slug: 'sandslash'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 22+']
   - name: 'Alolan'
     kind: 'form'
     types: ['Ice', 'Steel']

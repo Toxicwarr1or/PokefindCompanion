@@ -103,6 +103,7 @@ forms:
         slug: 'wobbuffet'
         depth: 1
         method: 'Level 15'
+    survival_locations: ['Safari Zone: Deep Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

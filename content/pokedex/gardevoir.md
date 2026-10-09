@@ -588,6 +588,7 @@ forms:
         slug: 'gallade'
         depth: 2
         method: 'Use Dawn Stone, (male)'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — trainer Lv 30+; Pokémon Lv 30+']
   - name: 'Haikou'
     kind: 'form'
     types: ['Steel', 'Flying']

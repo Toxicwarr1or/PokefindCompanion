@@ -388,6 +388,7 @@ forms:
         slug: 'cinccino'
         depth: 1
         method: 'Use Shiny Stone'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

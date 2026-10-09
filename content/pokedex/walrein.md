@@ -444,6 +444,7 @@ forms:
         slug: 'walrein'
         depth: 2
         method: 'Level 44'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — Pokémon Lv 44+', 'Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 44+']
 region: ''
 anniversary: ''
 tier: ''

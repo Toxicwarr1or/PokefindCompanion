@@ -468,6 +468,7 @@ forms:
         slug: 'azumarill'
         depth: 2
         method: 'Level 18'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean']
 region: ''
 anniversary: ''
 tier: ''

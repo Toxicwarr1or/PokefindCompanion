@@ -382,6 +382,7 @@ forms:
         slug: 'froslass'
         depth: 1
         method: 'Use Dawn Stone, (female)'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — Pokémon Lv 16+', 'Safari Zone: East Pond — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

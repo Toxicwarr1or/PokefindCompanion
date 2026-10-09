@@ -444,6 +444,7 @@ forms:
         slug: 'donphan'
         depth: 1
         method: 'Level 25'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands']
   - name: 'Jataro'
     kind: 'form'
     types: ['Ice', 'Flying']

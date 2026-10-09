@@ -447,6 +447,7 @@ forms:
         slug: 'volcarona'
         depth: 1
         method: 'Level 59'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 45+; Pokémon Lv 50+', 'Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — trainer Lv 45+; Pokémon Lv 50+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Ice', 'Bug']

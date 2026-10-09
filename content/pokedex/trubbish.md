@@ -432,6 +432,7 @@ forms:
         slug: 'garbodor'
         depth: 1
         method: 'Level 36'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp', 'Safari Zone: Central Meadow — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

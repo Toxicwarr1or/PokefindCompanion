@@ -418,6 +418,7 @@ forms:
         slug: 'amoonguss'
         depth: 1
         method: 'Level 39'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 8+', 'Poison: Swamp, Mangrove Swamp — trainer Lv 8+', 'Safari Zone: Central Meadow — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

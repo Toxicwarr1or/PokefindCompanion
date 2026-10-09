@@ -497,12 +497,30 @@
     </details>
     {{ end }}
 
-    {{ with $f.locations }}
+    {{/* Where it spawns — two tabs so PokéWorld towns and PokéSurvival biomes
+          never get mixed up. `locations` = PokéWorld (build_pokedex_extras.py),
+          `survival_locations` = PokéSurvival (build_survival_locations.py).
+          A tab with no data still renders, with a one-line note, so a reader
+          can see the species is absent from that gamemode. */}}
+    {{ if or $f.locations $f.survival_locations }}
+    {{ $world := $f.locations | default slice }}
+    {{ $surv := $f.survival_locations | default slice }}
+    {{ $first := cond (gt (len $world) 0) "world" "survival" }}
     <section class="dex-locations">
-      <h2>Where it spawns <span class="learners-count">({{ len . }})</span></h2>
-      <ul class="learners-list">
-        {{ range . }}<li>{{ . }}</li>{{ end }}
-      </ul>
+      <h2>Where it spawns</h2>
+      <nav class="loc-tabs" role="tablist" aria-label="Gamemode">
+        <button type="button" class="loc-tab{{ if eq $first "world" }} active{{ end }}" role="tab" data-loc="world" aria-selected="{{ eq $first "world" }}">PokéWorld <span class="learners-count">({{ len $world }})</span></button>
+        <button type="button" class="loc-tab{{ if eq $first "survival" }} active{{ end }}" role="tab" data-loc="survival" aria-selected="{{ eq $first "survival" }}">PokéSurvival <span class="learners-count">({{ len $surv }})</span></button>
+      </nav>
+      <div class="loc-panel" data-loc="world"{{ if ne $first "world" }} hidden{{ end }}>
+        {{ if $world }}<ul class="learners-list">{{ range $world }}<li>{{ . }}</li>{{ end }}</ul>
+        {{ else }}<p class="loc-empty">Not found in the wild on PokéWorld.</p>{{ end }}
+      </div>
+      <div class="loc-panel" data-loc="survival"{{ if ne $first "survival" }} hidden{{ end }}>
+        {{ if $surv }}<ul class="learners-list">{{ range $surv }}<li>{{ . }}</li>{{ end }}</ul>
+        <p class="loc-note">Pools are typing groups the biome rolls; the biomes named are where that pool comes up most. Nether needs badge 3, the End badge 7 — see <a href="{{ "pokefind/pokesurvival/wild/" | relURL }}">The Wild</a>.</p>
+        {{ else }}<p class="loc-empty">Not found in the wild on PokéSurvival.</p>{{ end }}
+      </div>
     </section>
     {{ end }}
 

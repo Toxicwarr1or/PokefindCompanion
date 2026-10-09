@@ -435,6 +435,7 @@ forms:
         slug: 'garbodor'
         depth: 1
         method: 'Level 36'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp — Pokémon Lv 36+']
 region: ''
 anniversary: ''
 tier: ''

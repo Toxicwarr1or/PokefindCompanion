@@ -494,6 +494,7 @@ forms:
         slug: 'exeggutor'
         depth: 1
         method: 'Use Leaf Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

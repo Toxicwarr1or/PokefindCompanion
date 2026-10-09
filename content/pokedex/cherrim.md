@@ -344,6 +344,7 @@ forms:
         slug: 'cherrim'
         depth: 1
         method: 'Level 25'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest']
   - name: 'Sunshine'
     kind: 'form'
     types: ['Grass']

@@ -597,6 +597,7 @@ forms:
         slug: 'medicham'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Fighting: Savanna, Savanna Plateau', 'Safari Zone: Central Meadow — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

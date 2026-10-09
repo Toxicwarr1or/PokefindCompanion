@@ -553,6 +553,7 @@ forms:
         slug: 'feraligatr'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Safari Zone: North River — Apr–Jun']
 region: ''
 anniversary: ''
 tier: ''

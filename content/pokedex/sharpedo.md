@@ -472,6 +472,7 @@ forms:
         slug: 'sharpedo'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 25+; Pokémon Lv 30+']
   - name: 'Haikou'
     kind: 'form'
     types: ['Steel', 'Poison']

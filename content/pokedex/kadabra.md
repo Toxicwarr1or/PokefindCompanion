@@ -527,6 +527,7 @@ forms:
         slug: 'alakazam'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 16+']
 region: ''
 anniversary: ''
 tier: ''

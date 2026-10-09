@@ -70,6 +70,7 @@ forms:
         slug: 'metagross'
         depth: 2
         method: 'Level 45'
+    survival_locations: ['Steel: Granite Cliffs, Badlands — trainer Lv 13+; Pokémon Lv 12+', 'Safari Zone: Central Meadow — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

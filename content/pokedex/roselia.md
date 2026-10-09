@@ -481,6 +481,7 @@ forms:
         slug: 'roserade'
         depth: 2
         method: 'Use Shiny Stone'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp', 'Grass/Bug: Birch Forest, Forest']
 region: ''
 anniversary: ''
 tier: ''

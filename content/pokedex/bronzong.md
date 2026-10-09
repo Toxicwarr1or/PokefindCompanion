@@ -535,6 +535,7 @@ forms:
         slug: 'bronzong'
         depth: 1
         method: 'Level 33'
+    survival_locations: ['Steel: Granite Cliffs, Badlands', 'Electric: Highlands, Rocky Shrubland']
   - name: 'Shiloh'
     kind: 'form'
     types: ['Electric', 'Ghost']

@@ -414,6 +414,7 @@ forms:
         slug: 'kricketune'
         depth: 1
         method: 'Level 10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest']
 region: ''
 anniversary: ''
 tier: ''

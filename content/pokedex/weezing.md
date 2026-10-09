@@ -418,6 +418,7 @@ forms:
         slug: 'weezing'
         depth: 1
         method: 'Level 35'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp — Pokémon Lv 35+']
   - name: 'Galarian'
     kind: 'form'
     description: 'This Pokémon consumes particles that contaminate the air. Instead of leaving droppings, it expels clean air'

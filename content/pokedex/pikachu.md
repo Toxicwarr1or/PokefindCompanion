@@ -542,6 +542,7 @@ forms:
         slug: 'raichu'
         depth: 2
         method: 'Use Thunder Stone'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 16+', 'Steel: Granite Cliffs, Badlands — Pokémon Lv 16+']
   - name: 'Surfing 1'
     kind: 'skin'
     skin_gate: 'summer'

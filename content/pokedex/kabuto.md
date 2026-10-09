@@ -463,6 +463,7 @@ forms:
         slug: 'kabutops'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Safari Zone: West Pond — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

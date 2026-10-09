@@ -355,6 +355,7 @@ forms:
         slug: 'staraptor'
         depth: 2
         method: 'Level 34'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 36+', 'Normal: Brushland, Plains — Pokémon Lv 36+']
   - name: 'Shiloh'
     kind: 'form'
     types: ['Fighting', 'Flying']

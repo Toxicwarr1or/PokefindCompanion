@@ -483,6 +483,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Orange Desert — Apr–Jun, Oct–Dec']
   - name: 'Shiloh'
     kind: 'form'
     description: 'Spiritomb drifts lazily through warm sands, its bound spirits resting beneath the surface. Despite its eerie origin, it thrives in calm waters, absorbing moisture and draining energy from anything that disturbs its peace.'

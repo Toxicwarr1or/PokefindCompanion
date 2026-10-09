@@ -454,6 +454,7 @@ forms:
         slug: 'mamoswine'
         depth: 2
         method: 'Level up, knowing Ancient Power'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes', 'Safari Zone: East Pond — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

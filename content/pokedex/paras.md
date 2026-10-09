@@ -491,6 +491,7 @@ forms:
         slug: 'parasect'
         depth: 1
         method: 'Level 24'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Entrance — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

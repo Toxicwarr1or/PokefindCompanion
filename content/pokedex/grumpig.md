@@ -546,6 +546,7 @@ forms:
         slug: 'grumpig'
         depth: 1
         method: 'Level 32'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 32+']
 region: ''
 anniversary: ''
 tier: ''

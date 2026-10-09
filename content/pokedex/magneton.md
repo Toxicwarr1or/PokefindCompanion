@@ -440,6 +440,7 @@ forms:
         slug: 'magnezone'
         depth: 2
         method: 'Level up, near Special Magnetic Field'
+    survival_locations: ['Steel: Granite Cliffs, Badlands — Pokémon Lv 30+', 'Electric: Highlands, Rocky Shrubland — Pokémon Lv 30+']
 region: ''
 anniversary: ''
 tier: ''

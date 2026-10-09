@@ -474,6 +474,7 @@ forms:
         slug: 'breloom'
         depth: 1
         method: 'Level 23'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 23+']
   - name: 'Haikou'
     kind: 'form'
     description: 'Breloom closes in on its foe with light and sprightly footwork, then throws punches with its stretchy arms. This Pokémon’s fighting technique puts boxers to shame.'

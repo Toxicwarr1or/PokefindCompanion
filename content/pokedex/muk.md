@@ -514,6 +514,7 @@ forms:
         slug: 'muk'
         depth: 1
         method: 'Level 38'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp — Pokémon Lv 38+']
   - name: 'Alolan'
     kind: 'form'
     types: ['Poison', 'Dark']

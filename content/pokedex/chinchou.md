@@ -477,6 +477,7 @@ forms:
         slug: 'lanturn'
         depth: 1
         method: 'Level 27'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: Desert Oasis — Jan–Mar, Oct–Dec', 'Safari Zone: West Pond — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

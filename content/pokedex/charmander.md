@@ -511,6 +511,7 @@ forms:
         slug: 'charizard'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: Orange Desert — Jan–Mar']
 region: ''
 anniversary: ''
 tier: ''

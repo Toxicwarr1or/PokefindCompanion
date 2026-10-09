@@ -391,6 +391,7 @@ forms:
         slug: 'dewgong'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — Pokémon Lv 34+', 'Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 34+']
 region: ''
 anniversary: ''
 tier: ''

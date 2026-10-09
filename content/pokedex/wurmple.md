@@ -102,6 +102,7 @@ forms:
         slug: 'dustox'
         depth: 2
         method: 'Level 10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

@@ -561,6 +561,7 @@ forms:
         slug: 'infernape'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: Eastern Desert — Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

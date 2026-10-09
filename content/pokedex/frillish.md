@@ -480,6 +480,7 @@ forms:
         slug: 'jellicent'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: West Pond — Jul–Dec']
   - name: 'Female'
     kind: 'form'
     types: ['Water', 'Ghost']

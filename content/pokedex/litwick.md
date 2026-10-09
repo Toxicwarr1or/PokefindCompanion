@@ -483,6 +483,7 @@ forms:
         slug: 'chandelure'
         depth: 2
         method: 'Use Dusk Stone'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)', 'Fire: Basalt Deltas (Nether), Nether Wastes (Nether)', 'Safari Zone: Orange Desert — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

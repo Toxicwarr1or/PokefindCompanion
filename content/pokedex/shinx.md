@@ -438,6 +438,7 @@ forms:
         slug: 'luxray'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland', 'Safari Zone: Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

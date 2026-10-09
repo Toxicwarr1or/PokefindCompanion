@@ -693,6 +693,7 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 10+; Pokémon Lv 14+', 'Safari Zone: Orange Desert — Apr–Sep']
   - name: 'Haikou'
     kind: 'form'
     types: ['Ghost', 'Bug']

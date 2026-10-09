@@ -451,6 +451,7 @@ forms:
         slug: 'hitmontop'
         depth: 1
         method: 'Level 20, Atk = Def'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau']
 region: ''
 anniversary: ''
 tier: ''

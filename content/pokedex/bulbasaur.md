@@ -485,6 +485,7 @@ forms:
         slug: 'venusaur'
         depth: 2
         method: 'Level 32'
+    survival_locations: ['Safari Zone: Entrance — Jan–Mar']
 region: ''
 anniversary: ''
 tier: ''

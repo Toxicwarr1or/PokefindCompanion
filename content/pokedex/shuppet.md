@@ -527,6 +527,7 @@ forms:
         slug: 'banette'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Entrance — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

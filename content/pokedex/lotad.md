@@ -436,6 +436,7 @@ forms:
         slug: 'ludicolo'
         depth: 2
         method: 'Use Water Stone'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

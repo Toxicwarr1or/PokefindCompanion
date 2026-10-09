@@ -411,6 +411,7 @@ forms:
         slug: 'parasect'
         depth: 1
         method: 'Level 24'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 24+']
 region: ''
 anniversary: ''
 tier: ''

@@ -444,6 +444,7 @@ forms:
         slug: 'shiftry'
         depth: 2
         method: 'Use Leaf Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 14+']
 region: ''
 anniversary: ''
 tier: ''

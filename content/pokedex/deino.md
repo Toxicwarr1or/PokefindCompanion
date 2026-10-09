@@ -466,6 +466,7 @@ forms:
         slug: 'hydreigon'
         depth: 2
         method: 'Level 64'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 13+; Pokémon Lv 16+', 'Safari Zone: Orange Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

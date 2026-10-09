@@ -582,6 +582,7 @@ forms:
         slug: 'granbull'
         depth: 1
         method: 'Level 23'
+    survival_locations: ['Normal: Brushland, Plains']
 region: ''
 anniversary: ''
 tier: ''

@@ -524,6 +524,7 @@ forms:
         slug: 'watchog'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Normal: Brushland, Plains']
 region: ''
 anniversary: ''
 tier: ''

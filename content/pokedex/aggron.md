@@ -662,6 +662,7 @@ forms:
         slug: 'aggron'
         depth: 2
         method: 'Level 42'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 35+; Pokémon Lv 42+', 'Steel: Granite Cliffs, Badlands — trainer Lv 35+; Pokémon Lv 42+']
   - name: 'Haikou'
     kind: 'form'
     types: ['Dragon', 'Poison']

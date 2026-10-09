@@ -678,6 +678,7 @@ forms:
         slug: 'clefable'
         depth: 2
         method: 'Use Moon Stone'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Central Meadow — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

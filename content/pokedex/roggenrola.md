@@ -398,6 +398,7 @@ forms:
         slug: 'gigalith'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Orange Desert — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

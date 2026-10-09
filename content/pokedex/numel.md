@@ -496,6 +496,7 @@ forms:
         slug: 'camerupt'
         depth: 1
         method: 'Level 33'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether)', 'Safari Zone: Orange Desert — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

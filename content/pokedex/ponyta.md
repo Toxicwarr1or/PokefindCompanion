@@ -417,6 +417,7 @@ forms:
         slug: 'rapidash'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether)', 'Safari Zone: Orange Desert — Jan–Mar, Oct–Dec']
   - name: 'Galarian'
     kind: 'form'
     description: 'Its small horn hides a healing power. With a few rubs from this Pokémon''s horn, any slight wound you have will be healed.'

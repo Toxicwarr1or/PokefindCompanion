@@ -454,6 +454,7 @@ forms:
         slug: 'conkeldurr'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — Pokémon Lv 25+']
 region: ''
 anniversary: ''
 tier: ''

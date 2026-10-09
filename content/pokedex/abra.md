@@ -513,6 +513,7 @@ forms:
         slug: 'alakazam'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Entrance — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

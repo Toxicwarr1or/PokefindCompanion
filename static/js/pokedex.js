@@ -4,6 +4,31 @@
 (function () {
     'use strict';
 
+    // ---------- "Where it spawns" gamemode tabs (single Pokemon page) ----------
+    // Each .dex-locations section has PokéWorld / PokéSurvival tabs that show
+    // the matching .loc-panel. Scoped per section because every form panel
+    // carries its own copy.
+    function initLocTabs() {
+        document.querySelectorAll('.dex-locations').forEach(function (section) {
+            const tabs = section.querySelectorAll('.loc-tab');
+            const panels = section.querySelectorAll('.loc-panel');
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    const key = tab.getAttribute('data-loc');
+                    tabs.forEach(function (t) {
+                        const on = t === tab;
+                        t.classList.toggle('active', on);
+                        t.setAttribute('aria-selected', on ? 'true' : 'false');
+                    });
+                    panels.forEach(function (p) {
+                        if (p.getAttribute('data-loc') === key) p.removeAttribute('hidden');
+                        else p.setAttribute('hidden', '');
+                    });
+                });
+            });
+        });
+    }
+
     // ---------- Form tabs (single Pokemon page) ----------
     function initFormTabs() {
         const tabs = document.querySelectorAll('.form-tab');
@@ -286,6 +311,7 @@
             initSectionOverlay();
             initGymTabs();
             initQuestSubtabs();
+            initLocTabs();
         });
     } else {
         initFormTabs();
@@ -293,6 +319,7 @@
         initSectionOverlay();
         initGymTabs();
         initQuestSubtabs();
+        initLocTabs();
     }
 
     // ---------- Gym card tabs (Team / Counters) ----------

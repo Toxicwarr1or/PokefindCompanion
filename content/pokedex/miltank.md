@@ -580,6 +580,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Normal: Brushland, Plains — trainer Lv 13+', 'Safari Zone: Deep Jungle — Jan–Mar, Oct–Dec']
   - name: 'Jataro'
     kind: 'form'
     description: 'Miltank wanders arid deserts with a pouch full of cactus fruit, storing nourishment for long journeys. When threatened, it kicks up clouds of sand before calmly snacking to regain its strength.'

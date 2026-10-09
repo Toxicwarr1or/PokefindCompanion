@@ -521,6 +521,7 @@ forms:
         slug: 'swoobat'
         depth: 1
         method: 'Level up, high friendship'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 32+', 'Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 32+']
 region: ''
 anniversary: ''
 tier: ''

@@ -440,6 +440,7 @@ forms:
         slug: 'sharpedo'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 15+', 'Safari Zone: North River — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

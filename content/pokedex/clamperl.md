@@ -318,6 +318,7 @@ forms:
         slug: 'gorebyss'
         depth: 1
         method: 'Trade, holding Deep Sea Scale'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 15+', 'Safari Zone: Desert Oasis — Apr–Sep', 'Safari Zone: West Pond — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

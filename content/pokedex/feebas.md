@@ -312,6 +312,7 @@ forms:
         slug: 'milotic'
         depth: 1
         method: 'Trade, holding Prism Scale, high beauty'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 10+', 'Safari Zone: West Pond — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

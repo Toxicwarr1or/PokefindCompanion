@@ -368,6 +368,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '40'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — trainer Lv 10+', 'Safari Zone: East Pond — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

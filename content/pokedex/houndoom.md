@@ -463,6 +463,7 @@ forms:
         slug: 'houndoom'
         depth: 1
         method: 'Level 24'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — trainer Lv 20+']
   - name: 'Jataro'
     kind: 'form'
     types: ['Water', 'Psychic']

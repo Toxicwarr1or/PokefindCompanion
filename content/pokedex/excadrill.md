@@ -439,6 +439,7 @@ forms:
         slug: 'excadrill'
         depth: 1
         method: 'Level 31'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 15+; Pokémon Lv 31+', 'Steel: Granite Cliffs, Badlands — trainer Lv 15+; Pokémon Lv 31+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Rock', 'Grass']

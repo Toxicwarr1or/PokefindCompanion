@@ -535,6 +535,7 @@ forms:
         slug: 'bisharp'
         depth: 1
         method: 'Level 52'
+    survival_locations: ['Steel: Granite Cliffs, Badlands — trainer Lv 30+', 'Ghost: End Barrens (End), End Midlands (End) — trainer Lv 30+']
   - name: 'Zeinova'
     kind: 'form'
     description: 'Bisharp''s bladed body exudes a deadly toxin, and its scales repel damage until its guard is broken. When it strikes, its draconic power surges, leaving corrosive wounds that refuse to heal.'

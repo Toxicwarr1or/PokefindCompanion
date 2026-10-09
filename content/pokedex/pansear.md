@@ -557,6 +557,7 @@ forms:
         slug: 'simisear'
         depth: 1
         method: 'Use Fire Stone'
+    survival_locations: ['Safari Zone: Eastern Desert — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

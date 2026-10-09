@@ -528,6 +528,7 @@ forms:
         slug: 'drapion'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp']
 region: ''
 anniversary: ''
 tier: ''

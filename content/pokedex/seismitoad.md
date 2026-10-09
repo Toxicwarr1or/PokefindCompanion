@@ -516,6 +516,7 @@ forms:
         slug: 'seismitoad'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 5+; Pokémon Lv 36+']
 region: ''
 anniversary: ''
 tier: ''

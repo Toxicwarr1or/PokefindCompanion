@@ -457,6 +457,7 @@ forms:
         slug: 'raticate'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Normal: Brushland, Plains']
   - name: 'Alolan'
     kind: 'form'
     description: 'It commands a nest of Rattata. Different nests don''t get along, whipping up severe fights over feeding grounds.'

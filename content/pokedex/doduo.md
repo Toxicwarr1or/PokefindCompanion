@@ -365,6 +365,7 @@ forms:
         slug: 'dodrio'
         depth: 1
         method: 'Level 31'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Central Meadow — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

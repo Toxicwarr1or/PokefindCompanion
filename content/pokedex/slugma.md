@@ -460,6 +460,7 @@ forms:
         slug: 'magcargo'
         depth: 1
         method: 'Level 38'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether)', 'Safari Zone: Eastern Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

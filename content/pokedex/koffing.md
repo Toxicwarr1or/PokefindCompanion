@@ -482,6 +482,7 @@ forms:
         slug: 'weezing'
         depth: 1
         method: 'Level 35'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp', 'Safari Zone: Entrance — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

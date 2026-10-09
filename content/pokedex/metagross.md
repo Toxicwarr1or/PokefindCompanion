@@ -507,6 +507,7 @@ forms:
         slug: 'metagross'
         depth: 2
         method: 'Level 45'
+    survival_locations: ['Steel: Granite Cliffs, Badlands — trainer Lv 45+; Pokémon Lv 45+']
   - name: 'Haikou'
     kind: 'form'
     types: ['Rock', 'Bug']

@@ -439,6 +439,7 @@ forms:
         slug: 'kingler'
         depth: 1
         method: 'Level 28'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 28+']
 region: ''
 anniversary: ''
 tier: ''

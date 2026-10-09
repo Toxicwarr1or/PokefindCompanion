@@ -557,6 +557,7 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 15+', 'Safari Zone: West Pond — Jan–Mar, Jul–Sep']
   - name: 'Galarian'
     kind: 'form'
     description: 'Watch your step when wandering areas oceans once covered. What looks like a stone could be this Pokémon, and it will curse you if you kick it.'

@@ -393,6 +393,7 @@ forms:
         slug: 'staraptor'
         depth: 2
         method: 'Level 34'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

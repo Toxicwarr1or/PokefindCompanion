@@ -566,6 +566,7 @@ forms:
         slug: 'gothitelle'
         depth: 2
         method: 'Level 41'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — trainer Lv 30+; Pokémon Lv 30+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Dark', 'Steel']

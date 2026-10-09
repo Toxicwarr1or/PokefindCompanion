@@ -538,6 +538,7 @@ forms:
         slug: 'hypno'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 26+']
 region: ''
 anniversary: ''
 tier: ''

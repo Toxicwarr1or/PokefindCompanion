@@ -525,6 +525,7 @@ forms:
         slug: 'crawdaunt'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

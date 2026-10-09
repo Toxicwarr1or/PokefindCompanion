@@ -27,7 +27,7 @@ Every season starts at the spawn hub: the Professor's Lab, PokéCenter and Poké
 
 ### The gym gauntlet
 
-Eight gyms, the Elite Four, and the Regional Champion — all at spawn. Badges do more than mark progress: each one raises the **trainer-level cap** and the **Pokémon obedience cap**, and two of them unlock dimensions. You need the third badge to enter the Nether and the sixth to enter the End.
+Eight gyms, the Elite Four, and the Regional Champion — all at spawn. Badges do more than mark progress: each one raises the **trainer-level cap** and the **Pokémon obedience cap**, and two of them unlock dimensions. You need the third badge to enter the Nether and the seventh to enter the End.
 
 [More information →](gyms/) — gym order and types, level caps per badge, Elite Four lineup.
 

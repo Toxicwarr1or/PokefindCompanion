@@ -499,6 +499,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '5'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 10+; Pokémon Lv 14+', 'Safari Zone: Jungle — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

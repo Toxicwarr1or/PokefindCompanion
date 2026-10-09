@@ -359,6 +359,7 @@ forms:
         slug: 'swanna'
         depth: 1
         method: 'Level 35'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Flying: Skylands Autumn, Skylands Spring']
 region: ''
 anniversary: ''
 tier: ''

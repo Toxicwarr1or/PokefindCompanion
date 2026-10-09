@@ -480,6 +480,7 @@ forms:
         slug: 'scizor'
         depth: 1
         method: 'Trade, holding Metal Coat'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 18+', 'Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 18+', 'Safari Zone: Entrance — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

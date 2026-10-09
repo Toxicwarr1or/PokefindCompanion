@@ -517,6 +517,7 @@ forms:
         slug: 'tangrowth'
         depth: 1
         method: 'Level up, knowing Ancient Power'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

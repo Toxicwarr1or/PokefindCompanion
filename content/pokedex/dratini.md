@@ -488,6 +488,7 @@ forms:
         slug: 'dragonite'
         depth: 2
         method: 'Level 55'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 13+; Pokémon Lv 16+', 'Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 13+; Pokémon Lv 16+', 'Safari Zone: Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

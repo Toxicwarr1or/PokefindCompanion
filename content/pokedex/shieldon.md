@@ -495,6 +495,7 @@ forms:
         slug: 'bastiodon'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Safari Zone: Eastern Desert — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -422,6 +422,7 @@ forms:
         slug: 'breloom'
         depth: 1
         method: 'Level 23'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

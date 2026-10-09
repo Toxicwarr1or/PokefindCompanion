@@ -452,6 +452,7 @@ forms:
         slug: 'floatzel'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean']
 region: ''
 anniversary: ''
 tier: ''

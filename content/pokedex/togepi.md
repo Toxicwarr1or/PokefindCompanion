@@ -526,6 +526,7 @@ forms:
         slug: 'togekiss'
         depth: 2
         method: 'Use Shiny Stone'
+    survival_locations: ['Safari Zone: Deep Jungle — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

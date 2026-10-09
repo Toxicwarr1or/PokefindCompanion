@@ -381,6 +381,7 @@ forms:
         slug: 'luxray'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — trainer Lv 35+; Pokémon Lv 30+']
   - name: 'Shiloh'
     kind: 'form'
     types: ['Electric', 'Ghost']

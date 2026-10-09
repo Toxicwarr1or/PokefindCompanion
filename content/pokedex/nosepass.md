@@ -487,6 +487,7 @@ forms:
         slug: 'probopass'
         depth: 1
         method: 'Level up, near Special Magnetic Field'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Eastern Desert — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -446,6 +446,7 @@ forms:
         slug: 'starmie'
         depth: 1
         method: 'Use Water Stone'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: West Pond — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

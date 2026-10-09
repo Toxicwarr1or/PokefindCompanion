@@ -411,6 +411,7 @@ forms:
         slug: 'sunflora'
         depth: 1
         method: 'Use Sun Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 15+']
   - name: 'Jataro'
     kind: 'form'
     types: ['Electric', 'Grass']

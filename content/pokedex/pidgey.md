@@ -369,6 +369,7 @@ forms:
         slug: 'pidgeot'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -103,6 +103,7 @@ forms:
         slug: 'kricketune'
         depth: 1
         method: 'Level 10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Central Meadow — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

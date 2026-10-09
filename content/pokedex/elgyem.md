@@ -555,6 +555,7 @@ forms:
         slug: 'beheeyem'
         depth: 1
         method: 'Level 42'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -565,6 +565,7 @@ forms:
         slug: 'scrafty'
         depth: 1
         method: 'Level 39'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 12+', 'Ghost: End Barrens (End), End Midlands (End) — trainer Lv 12+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Water', 'Steel']

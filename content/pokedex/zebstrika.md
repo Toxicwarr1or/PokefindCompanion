@@ -358,6 +358,7 @@ forms:
         slug: 'zebstrika'
         depth: 1
         method: 'Level 27'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 27+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Psychic', 'Flying']

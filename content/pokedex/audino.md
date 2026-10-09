@@ -686,6 +686,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Jungle — Jul–Dec']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Psychic']

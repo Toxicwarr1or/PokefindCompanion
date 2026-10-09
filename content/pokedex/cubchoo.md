@@ -463,6 +463,7 @@ forms:
         slug: 'beartic'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes', 'Safari Zone: East Pond — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

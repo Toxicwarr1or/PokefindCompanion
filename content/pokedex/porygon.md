@@ -479,6 +479,7 @@ forms:
         slug: 'porygon-z'
         depth: 2
         method: 'Trade, holding Dubious Disc'
+    survival_locations: ['Safari Zone: Central Meadow — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -578,6 +578,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Normal: Brushland, Plains', 'Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Entrance — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

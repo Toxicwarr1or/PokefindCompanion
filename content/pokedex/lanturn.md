@@ -448,6 +448,7 @@ forms:
         slug: 'lanturn'
         depth: 1
         method: 'Level 27'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean']
   - name: 'Jataro'
     kind: 'form'
     description: 'Lanturn nurtures life wherever it roams, restoring weakened Pokémon simply by passing nearby. Despite its gentle glow, its strength is startling, softened only by its ability to endure even the harshest blows.'

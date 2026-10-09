@@ -420,6 +420,7 @@ forms:
         slug: 'crobat'
         depth: 2
         method: 'Level up, high friendship'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 22+', 'Poison: Swamp, Mangrove Swamp — Pokémon Lv 22+']
 region: ''
 anniversary: ''
 tier: ''

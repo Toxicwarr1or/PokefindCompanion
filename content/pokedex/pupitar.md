@@ -421,6 +421,7 @@ forms:
         slug: 'tyranitar'
         depth: 2
         method: 'Level 55'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 25+']
 region: ''
 anniversary: ''
 tier: ''

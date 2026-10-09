@@ -473,6 +473,7 @@ forms:
         slug: 'crobat'
         depth: 2
         method: 'Level up, high friendship'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Poison: Swamp, Mangrove Swamp', 'Safari Zone: Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

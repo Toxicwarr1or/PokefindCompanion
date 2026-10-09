@@ -430,6 +430,7 @@ forms:
         slug: 'ampharos'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — trainer Lv 10+', 'Safari Zone: Central Meadow — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

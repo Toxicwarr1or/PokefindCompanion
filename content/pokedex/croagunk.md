@@ -632,6 +632,7 @@ forms:
         slug: 'toxicroak'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 15+', 'Poison: Swamp, Mangrove Swamp — trainer Lv 15+', 'Safari Zone: Deep Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

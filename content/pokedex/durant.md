@@ -437,6 +437,7 @@ forms:
         power: '65'
         accuracy: '95'
         pp: '15'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 20+', 'Steel: Granite Cliffs, Badlands — Pokémon Lv 20+', 'Safari Zone: Central Meadow — Jan–Mar, Oct–Dec']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Fire', 'Electric']

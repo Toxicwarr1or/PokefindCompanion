@@ -671,6 +671,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Orange Desert — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

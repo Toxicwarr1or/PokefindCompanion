@@ -454,6 +454,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — trainer Lv 13+', 'Safari Zone: Entrance — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

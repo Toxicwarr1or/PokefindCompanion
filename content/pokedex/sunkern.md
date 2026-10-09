@@ -452,6 +452,7 @@ forms:
         slug: 'sunflora'
         depth: 1
         method: 'Use Sun Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Entrance — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -429,6 +429,7 @@ forms:
         slug: 'salamence'
         depth: 2
         method: 'Level 50'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 13+; Pokémon Lv 16+', 'Safari Zone: Entrance — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

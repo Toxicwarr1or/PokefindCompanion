@@ -37,7 +37,7 @@ Rare spawns are announced in the Discord `#survival-rare-spawns` feed.
 | --- | --- |
 | Overworld | none |
 | Nether | Badge 3 |
-| End | Badge 6 |
+| End | Badge 7 |
 
 Portals at spawn route you straight into the corresponding wild dimension.
 

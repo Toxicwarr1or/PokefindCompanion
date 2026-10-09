@@ -580,6 +580,7 @@ forms:
         slug: 'swoobat'
         depth: 1
         method: 'Level up, high friendship'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Central Meadow — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

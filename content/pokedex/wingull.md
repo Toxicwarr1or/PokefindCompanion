@@ -429,6 +429,7 @@ forms:
         slug: 'pelipper'
         depth: 1
         method: 'Level 25'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: East Pond — Jan–Jun', 'Safari Zone: North River — Jan–Jun', 'Safari Zone: West Pond — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

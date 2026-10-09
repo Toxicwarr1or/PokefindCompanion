@@ -506,6 +506,7 @@ forms:
         slug: 'reuniclus'
         depth: 2
         method: 'Level 41'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles']
 region: ''
 anniversary: ''
 tier: ''

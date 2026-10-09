@@ -464,6 +464,7 @@ forms:
         slug: 'aggron'
         depth: 2
         method: 'Level 42'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 25+; Pokémon Lv 32+', 'Steel: Granite Cliffs, Badlands — trainer Lv 25+; Pokémon Lv 32+']
 region: ''
 anniversary: ''
 tier: ''

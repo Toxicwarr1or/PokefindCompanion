@@ -396,6 +396,7 @@ forms:
         slug: 'swellow'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Entrance — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

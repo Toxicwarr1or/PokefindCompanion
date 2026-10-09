@@ -455,6 +455,7 @@ forms:
         slug: 'octillery'
         depth: 1
         method: 'Level 25'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean']
   - name: 'Jataro'
     kind: 'form'
     types: ['Dark', 'Psychic']

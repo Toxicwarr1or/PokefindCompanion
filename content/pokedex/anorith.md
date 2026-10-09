@@ -450,6 +450,7 @@ forms:
         slug: 'armaldo'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Safari Zone: Eastern Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

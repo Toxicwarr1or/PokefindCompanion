@@ -535,6 +535,7 @@ forms:
         slug: 'marowak'
         depth: 1
         method: 'Level 28'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Orange Desert — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

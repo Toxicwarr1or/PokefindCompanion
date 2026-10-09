@@ -479,6 +479,7 @@ forms:
         slug: 'serperior'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: Jungle — Jan–Mar']
 region: ''
 anniversary: ''
 tier: ''

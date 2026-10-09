@@ -386,6 +386,7 @@ forms:
         slug: 'stoutland'
         depth: 2
         method: 'Level 32'
+    survival_locations: ['Normal: Brushland, Plains — Pokémon Lv 16+']
 region: ''
 anniversary: ''
 tier: ''

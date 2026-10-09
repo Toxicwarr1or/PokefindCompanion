@@ -457,6 +457,7 @@ forms:
         slug: 'scolipede'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp — trainer Lv 25+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Bug', 'Fire']

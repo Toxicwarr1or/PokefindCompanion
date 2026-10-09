@@ -603,6 +603,7 @@ forms:
         slug: 'mr-mime'
         depth: 1
         method: 'Level up, knowing Mimic'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Normal: Brushland, Plains', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

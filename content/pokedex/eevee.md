@@ -447,6 +447,7 @@ forms:
         slug: 'glaceon'
         depth: 1
         method: 'Level up, near Ice Rock'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Entrance — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

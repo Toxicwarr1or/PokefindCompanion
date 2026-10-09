@@ -473,6 +473,7 @@ forms:
         slug: 'chimecho'
         depth: 1
         method: 'Level up, at night, high friendship'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Deep Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

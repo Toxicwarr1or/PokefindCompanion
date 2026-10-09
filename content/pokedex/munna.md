@@ -527,6 +527,7 @@ forms:
         slug: 'musharna'
         depth: 1
         method: 'Use Moon Stone'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

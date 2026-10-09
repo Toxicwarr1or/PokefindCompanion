@@ -458,6 +458,7 @@ forms:
         slug: 'altaria'
         depth: 1
         method: 'Level 35'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Safari Zone: Deep Jungle — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

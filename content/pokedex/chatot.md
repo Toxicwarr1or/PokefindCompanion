@@ -427,6 +427,7 @@ forms:
         power: '—'
         accuracy: '55'
         pp: '20'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

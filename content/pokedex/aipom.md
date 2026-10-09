@@ -600,6 +600,7 @@ forms:
         slug: 'ambipom'
         depth: 1
         method: 'Level up, knowing Double Hit'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

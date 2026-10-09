@@ -49,6 +49,7 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '15'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Deep Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

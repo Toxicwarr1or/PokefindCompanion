@@ -425,6 +425,7 @@ forms:
         slug: 'noctowl'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains']
 region: ''
 anniversary: ''
 tier: ''

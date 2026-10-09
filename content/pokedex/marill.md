@@ -510,6 +510,7 @@ forms:
         slug: 'azumarill'
         depth: 2
         method: 'Level 18'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

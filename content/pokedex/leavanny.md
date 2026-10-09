@@ -483,6 +483,7 @@ forms:
         slug: 'leavanny'
         depth: 2
         method: 'Level up, high friendship'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 35+']
 region: ''
 anniversary: ''
 tier: ''

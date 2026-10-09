@@ -557,6 +557,7 @@ forms:
         slug: 'medicham'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 37+', 'Fighting: Savanna, Savanna Plateau — Pokémon Lv 37+']
 region: ''
 anniversary: ''
 tier: ''

@@ -502,6 +502,7 @@ forms:
         slug: 'linoone'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Normal: Brushland, Plains — Pokémon Lv 20+']
   - name: 'Galarian'
     kind: 'form'
     description: 'It uses its long tongue to taunt opponents. Once the opposition is enraged, this Pokémon hurls itself at the opponent, tackling them forcefully.'

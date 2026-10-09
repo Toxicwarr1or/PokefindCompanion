@@ -376,6 +376,7 @@ forms:
         slug: 'unfezant'
         depth: 2
         method: 'Level 32'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

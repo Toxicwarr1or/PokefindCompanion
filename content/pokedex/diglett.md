@@ -442,6 +442,7 @@ forms:
         slug: 'dugtrio'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Eastern Desert — Jan–Mar, Jul–Sep']
   - name: 'Alolan'
     kind: 'form'
     types: ['Ground', 'Steel']

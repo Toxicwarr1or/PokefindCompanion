@@ -546,6 +546,7 @@ forms:
         slug: 'lopunny'
         depth: 1
         method: 'Level up, high friendship'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau']
 region: ''
 anniversary: ''
 tier: ''

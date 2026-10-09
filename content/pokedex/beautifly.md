@@ -380,6 +380,7 @@ forms:
         slug: 'dustox'
         depth: 2
         method: 'Level 10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 10+']
 region: ''
 anniversary: ''
 tier: ''

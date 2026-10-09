@@ -462,6 +462,7 @@ forms:
         slug: 'purugly'
         depth: 1
         method: 'Level 38'
+    survival_locations: ['Normal: Brushland, Plains — Pokémon Lv 38+']
 region: ''
 anniversary: ''
 tier: ''

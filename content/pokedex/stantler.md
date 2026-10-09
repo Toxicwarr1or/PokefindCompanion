@@ -531,6 +531,7 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    survival_locations: ['Normal: Brushland, Plains — trainer Lv 13+', 'Safari Zone: Deep Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

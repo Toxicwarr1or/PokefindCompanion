@@ -86,6 +86,7 @@ forms:
         slug: 'butterfree'
         depth: 2
         method: 'Level 10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Central Meadow — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

@@ -345,6 +345,7 @@ forms:
         slug: 'vanilluxe'
         depth: 2
         method: 'Level 47'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes']
 region: ''
 anniversary: ''
 tier: ''

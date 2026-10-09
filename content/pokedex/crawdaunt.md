@@ -500,6 +500,7 @@ forms:
         slug: 'crawdaunt'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 30+']
 region: ''
 anniversary: ''
 tier: ''

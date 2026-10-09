@@ -398,6 +398,7 @@ forms:
         slug: 'musharna'
         depth: 1
         method: 'Use Moon Stone'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Fire', 'Psychic']

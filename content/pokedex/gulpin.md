@@ -452,6 +452,7 @@ forms:
         slug: 'swalot'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp', 'Safari Zone: Deep Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

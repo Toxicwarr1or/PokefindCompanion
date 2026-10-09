@@ -482,6 +482,7 @@ forms:
         slug: 'hariyama'
         depth: 1
         method: 'Level 24'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — Pokémon Lv 24+']
   - name: 'Haikou'
     kind: 'form'
     description: 'Hariyama trains relentlessly in coastal storms, letting crashing waves harden its body. Each strike grows heavier the longer it stands its ground, and it never falters once it finds its rhythm.'

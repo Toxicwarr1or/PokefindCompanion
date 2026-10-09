@@ -432,6 +432,7 @@ forms:
         slug: 'donphan'
         depth: 1
         method: 'Level 25'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Eastern Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

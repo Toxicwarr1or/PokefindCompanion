@@ -530,6 +530,7 @@ forms:
         slug: 'rampardos'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Safari Zone: Orange Desert — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

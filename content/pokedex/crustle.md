@@ -424,6 +424,7 @@ forms:
         slug: 'crustle'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 35+', 'Grass/Bug: Birch Forest, Forest — Pokémon Lv 35+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Bug', 'Water']

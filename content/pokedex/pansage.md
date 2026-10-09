@@ -533,6 +533,7 @@ forms:
         slug: 'simisage'
         depth: 1
         method: 'Use Leaf Stone'
+    survival_locations: ['Safari Zone: Central Meadow — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

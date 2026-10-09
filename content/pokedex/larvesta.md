@@ -413,6 +413,7 @@ forms:
         slug: 'volcarona'
         depth: 1
         method: 'Level 59'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 25+; Pokémon Lv 30+', 'Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — trainer Lv 25+; Pokémon Lv 30+', 'Safari Zone: Eastern Desert — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

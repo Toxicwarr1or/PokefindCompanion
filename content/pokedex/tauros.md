@@ -466,6 +466,7 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    survival_locations: ['Normal: Brushland, Plains — Pokémon Lv 16+', 'Safari Zone: Jungle — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

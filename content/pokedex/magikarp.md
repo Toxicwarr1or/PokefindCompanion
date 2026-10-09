@@ -70,6 +70,7 @@ forms:
         slug: 'gyarados'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Ice: Frozen Peaks, Ice Spikes', 'Safari Zone: Desert Oasis — Apr–Jun, Oct–Dec', 'Safari Zone: East Pond — Apr–Jun, Oct–Dec', 'Safari Zone: North River — Apr–Jun, Oct–Dec', 'Safari Zone: West Pond — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -521,6 +521,7 @@ forms:
         slug: 'gothitelle'
         depth: 2
         method: 'Level 41'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — trainer Lv 17+; Pokémon Lv 20+']
 region: ''
 anniversary: ''
 tier: ''

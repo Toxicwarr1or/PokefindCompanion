@@ -454,6 +454,7 @@ forms:
         slug: 'jellicent'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 40+']
   - name: 'Female'
     kind: 'form'
     types: ['Water', 'Ghost']

@@ -492,6 +492,7 @@ forms:
         slug: 'salamence'
         depth: 2
         method: 'Level 50'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 45+; Pokémon Lv 50+']
   - name: 'Haikou'
     kind: 'form'
     types: ['Dark', 'Flying']

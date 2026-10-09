@@ -468,6 +468,7 @@ forms:
         slug: 'abomasnow'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes']
 region: ''
 anniversary: ''
 tier: ''

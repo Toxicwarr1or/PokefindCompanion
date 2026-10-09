@@ -612,6 +612,7 @@ forms:
         slug: 'snorlax'
         depth: 1
         method: 'Level up, high friendship'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Entrance — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

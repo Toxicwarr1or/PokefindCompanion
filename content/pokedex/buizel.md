@@ -462,6 +462,7 @@ forms:
         slug: 'floatzel'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: Desert Oasis — Jan–Jun', 'Safari Zone: North River — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

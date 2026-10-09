@@ -336,6 +336,7 @@ forms:
         slug: 'kingdra'
         depth: 2
         method: 'Trade, holding Dragon Scale'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 32+']
 region: ''
 anniversary: ''
 tier: ''

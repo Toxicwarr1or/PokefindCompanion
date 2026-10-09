@@ -453,6 +453,7 @@ forms:
         slug: 'pelipper'
         depth: 1
         method: 'Level 25'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 25+', 'Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 25+']
 region: ''
 anniversary: ''
 tier: ''

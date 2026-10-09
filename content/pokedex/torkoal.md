@@ -501,6 +501,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '10'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — trainer Lv 10+', 'Safari Zone: Eastern Desert — Jan–Mar, Jul–Sep']
   - name: 'Haikou'
     kind: 'form'
     types: ['Steel']

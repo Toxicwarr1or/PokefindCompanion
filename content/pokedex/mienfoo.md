@@ -531,6 +531,7 @@ forms:
         slug: 'mienshao'
         depth: 1
         method: 'Level 50'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

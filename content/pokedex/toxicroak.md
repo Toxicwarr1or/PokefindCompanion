@@ -566,6 +566,7 @@ forms:
         slug: 'toxicroak'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 15+', 'Poison: Swamp, Mangrove Swamp — trainer Lv 15+']
   - name: 'Shiloh'
     kind: 'form'
     description: 'Its knuckles claws secrete a toxin so vile that even a scratch could prove fatal.'

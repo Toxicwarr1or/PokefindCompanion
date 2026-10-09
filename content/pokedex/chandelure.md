@@ -371,6 +371,7 @@ forms:
         slug: 'chandelure'
         depth: 2
         method: 'Use Dusk Stone'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 30+', 'Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — trainer Lv 30+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Ice', 'Electric']

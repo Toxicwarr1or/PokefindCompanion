@@ -501,6 +501,7 @@ forms:
         slug: 'linoone'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Central Meadow — Jul–Dec']
   - name: 'Galarian'
     kind: 'form'
     description: 'Its restlessness has it constantly running around. If it sees another Pokémon, it will purposely run into them in order to start a fight.'

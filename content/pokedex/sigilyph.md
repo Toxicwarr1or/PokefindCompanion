@@ -547,6 +547,7 @@ forms:
         power: '20'
         accuracy: '100'
         pp: '10'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Flying: Skylands Autumn, Skylands Spring', 'Safari Zone: Deep Jungle — Jul–Dec']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Ice', 'Poison']

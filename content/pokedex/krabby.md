@@ -490,6 +490,7 @@ forms:
         slug: 'kingler'
         depth: 1
         method: 'Level 28'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

@@ -549,6 +549,7 @@ forms:
         slug: 'archeops'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Safari Zone: Orange Desert — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -487,6 +487,7 @@ forms:
         slug: 'machamp'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — Pokémon Lv 28+']
 region: ''
 anniversary: ''
 tier: ''

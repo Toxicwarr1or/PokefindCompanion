@@ -421,6 +421,7 @@ forms:
         power: '35'
         accuracy: '85'
         pp: '15'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: Desert Oasis — Jan–Mar, Jul–Sep', 'Safari Zone: East Pond — Jan–Mar, Jul–Sep', 'Safari Zone: North River — Jan–Mar, Jul–Sep', 'Safari Zone: West Pond — Jan–Mar, Jul–Sep']
   - name: 'Blue-Striped'
     kind: 'form'
     types: ['Water']

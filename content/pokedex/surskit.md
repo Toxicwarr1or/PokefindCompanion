@@ -396,6 +396,7 @@ forms:
         slug: 'masquerain'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: North River — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

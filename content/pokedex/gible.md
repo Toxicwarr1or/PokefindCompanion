@@ -463,6 +463,7 @@ forms:
         slug: 'garchomp'
         depth: 2
         method: 'Level 48'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 13+; Pokémon Lv 16+', 'Safari Zone: Eastern Desert — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -402,6 +402,7 @@ forms:
         slug: 'klinklang'
         depth: 2
         method: 'Level 49'
+    survival_locations: ['Steel: Granite Cliffs, Badlands', 'Electric: Highlands, Rocky Shrubland']
 region: ''
 anniversary: ''
 tier: ''

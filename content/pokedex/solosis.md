@@ -540,6 +540,7 @@ forms:
         slug: 'reuniclus'
         depth: 2
         method: 'Level 41'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Central Meadow — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

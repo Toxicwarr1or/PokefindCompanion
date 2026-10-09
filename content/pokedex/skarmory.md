@@ -487,6 +487,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '20'
+    survival_locations: ['Steel: Granite Cliffs, Badlands — trainer Lv 25+', 'Safari Zone: Jungle — Jan–Mar, Oct–Dec']
   - name: 'Jataro'
     kind: 'form'
     types: ['Grass']

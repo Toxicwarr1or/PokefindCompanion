@@ -498,6 +498,7 @@ forms:
         slug: 'darmanitan'
         depth: 1
         method: 'Level 35'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether)', 'Safari Zone: Eastern Desert — Apr–Sep']
   - name: 'Galarian'
     kind: 'form'
     description: 'It lived in snowy areas for so long that its fire sac cooled off and atrophied. It now has an organ that generates cold instead.'

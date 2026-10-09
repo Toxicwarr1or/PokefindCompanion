@@ -465,6 +465,7 @@ forms:
         slug: 'jumpluff'
         depth: 2
         method: 'Level 27'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Flying: Skylands Autumn, Skylands Spring', 'Safari Zone: Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

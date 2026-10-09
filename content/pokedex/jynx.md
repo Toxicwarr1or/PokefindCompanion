@@ -543,6 +543,7 @@ forms:
         slug: 'jynx'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — Pokémon Lv 16+', 'Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 16+']
 region: ''
 anniversary: ''
 tier: ''

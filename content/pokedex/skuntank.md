@@ -435,6 +435,7 @@ forms:
         slug: 'skuntank'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp — Pokémon Lv 34+']
 region: ''
 anniversary: ''
 tier: ''

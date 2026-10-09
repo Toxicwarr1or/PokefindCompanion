@@ -480,6 +480,7 @@ forms:
         slug: 'golurk'
         depth: 1
         method: 'Level 43'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 12+', 'Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 12+', 'Safari Zone: Orange Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

@@ -495,6 +495,7 @@ forms:
         slug: 'arbok'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp', 'Safari Zone: Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

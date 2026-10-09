@@ -59,6 +59,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '1'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Entrance — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -453,6 +453,7 @@ forms:
         slug: 'meganium'
         depth: 2
         method: 'Level 32'
+    survival_locations: ['Safari Zone: Deep Jungle — Apr–Jun']
 region: ''
 anniversary: ''
 tier: ''

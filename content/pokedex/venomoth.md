@@ -418,6 +418,7 @@ forms:
         slug: 'venomoth'
         depth: 1
         method: 'Level 31'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 31+', 'Poison: Swamp, Mangrove Swamp — Pokémon Lv 31+']
 region: ''
 anniversary: ''
 tier: ''

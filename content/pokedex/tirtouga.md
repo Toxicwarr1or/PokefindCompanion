@@ -516,6 +516,7 @@ forms:
         slug: 'carracosta'
         depth: 1
         method: 'Level 37'
+    survival_locations: ['Safari Zone: West Pond — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

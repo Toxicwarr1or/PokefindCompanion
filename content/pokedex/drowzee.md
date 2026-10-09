@@ -566,6 +566,7 @@ forms:
         slug: 'hypno'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Entrance — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

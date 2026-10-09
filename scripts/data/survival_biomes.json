@@ -1,0 +1,778 @@
+{
+ "incendium:ash_barrens": {
+  "FIRE": 0.4,
+  "GHOST": 0.6
+ },
+ "incendium:infernal_dunes": {
+  "FIRE": 0.4,
+  "GHOST": 0.25,
+  "GROUND_ROCK": 0.35
+ },
+ "incendium:inverted_forest": {
+  "FIRE": 0.4,
+  "GHOST": 0.55,
+  "GRASS_BUG": 0.05
+ },
+ "incendium:quartz_flats": {
+  "DRAGON": 0.05,
+  "FIRE": 0.3,
+  "GHOST": 0.4,
+  "PSYCHIC": 0.25
+ },
+ "incendium:toxic_heap": {
+  "FIRE": 0.4,
+  "POISON": 0.6
+ },
+ "incendium:volcanic_deltas": {
+  "FIRE": 0.4,
+  "GHOST": 0.3,
+  "GROUND_ROCK": 0.3
+ },
+ "incendium:weeping_valley": {
+  "FIRE": 0.25,
+  "GHOST": 0.4,
+  "NORMAL": 0.35
+ },
+ "incendium:withered_forest": {
+  "FIRE": 0.25,
+  "GHOST": 0.7,
+  "GRASS_BUG": 0.05
+ },
+ "minecraft:badlands": {
+  "FIRE": 0.1,
+  "GROUND_ROCK": 0.6,
+  "STEEL": 0.3
+ },
+ "minecraft:bamboo_jungle": {
+  "FLYING": 0.1,
+  "GRASS_BUG": 0.8999999999999999
+ },
+ "minecraft:basalt_deltas": {
+  "FIRE": 0.9,
+  "GHOST": 0.1
+ },
+ "minecraft:beach": {
+  "NORMAL": 0.1,
+  "WATER": 0.9
+ },
+ "minecraft:birch_forest": {
+  "GRASS_BUG": 1.0
+ },
+ "minecraft:cherry_grove": {
+  "GRASS_BUG": 0.85,
+  "NORMAL": 0.15
+ },
+ "minecraft:cold_ocean": {
+  "WATER": 1.0
+ },
+ "minecraft:dark_forest": {
+  "GHOST": 0.4,
+  "GRASS_BUG": 0.5,
+  "POISON": 0.1
+ },
+ "minecraft:deep_dark": {
+  "GHOST": 0.55,
+  "GROUND_ROCK": 0.3,
+  "PSYCHIC": 0.15
+ },
+ "minecraft:deep_frozen_ocean": {
+  "ICE": 0.4,
+  "WATER": 0.6
+ },
+ "minecraft:deep_lukewarm_ocean": {
+  "WATER": 1.0
+ },
+ "minecraft:deep_ocean": {
+  "WATER": 1.0
+ },
+ "minecraft:desert": {
+  "FIRE": 0.1,
+  "GROUND_ROCK": 0.8,
+  "STEEL": 0.1
+ },
+ "minecraft:dripstone_caves": {
+  "GROUND_ROCK": 0.9,
+  "STEEL": 0.1
+ },
+ "minecraft:end_barrens": {
+  "DRAGON": 0.05,
+  "GHOST": 0.95
+ },
+ "minecraft:end_highlands": {
+  "FLYING": 0.1,
+  "GHOST": 0.9
+ },
+ "minecraft:end_midlands": {
+  "DRAGON": 0.05,
+  "GHOST": 0.95
+ },
+ "minecraft:eroded_badlands": {
+  "FIGHTING": 0.1,
+  "GROUND_ROCK": 0.7,
+  "STEEL": 0.2
+ },
+ "minecraft:flower_forest": {
+  "GRASS_BUG": 0.8,
+  "NORMAL": 0.2
+ },
+ "minecraft:forest": {
+  "GRASS_BUG": 1.0
+ },
+ "minecraft:frozen_ocean": {
+  "ICE": 0.4,
+  "WATER": 0.6
+ },
+ "minecraft:frozen_peaks": {
+  "ICE": 1.0
+ },
+ "minecraft:frozen_river": {
+  "ICE": 0.7,
+  "WATER": 0.3
+ },
+ "minecraft:grove": {
+  "GRASS_BUG": 0.1,
+  "ICE": 0.9
+ },
+ "minecraft:ice_spikes": {
+  "ICE": 1.0
+ },
+ "minecraft:jagged_peaks": {
+  "GROUND_ROCK": 0.2,
+  "ICE": 0.8
+ },
+ "minecraft:jungle": {
+  "FLYING": 0.1,
+  "GRASS_BUG": 0.9
+ },
+ "minecraft:lukewarm_ocean": {
+  "WATER": 1.0
+ },
+ "minecraft:lush_caves": {
+  "GHOST": 0.15,
+  "GRASS_BUG": 0.85
+ },
+ "minecraft:mangrove_swamp": {
+  "GRASS_BUG": 0.1,
+  "POISON": 0.7,
+  "WATER": 0.2
+ },
+ "minecraft:meadow": {
+  "ELECTRIC": 0.2,
+  "FIGHTING": 0.2,
+  "NORMAL": 0.6
+ },
+ "minecraft:mushroom_fields": {
+  "POISON": 0.7,
+  "PSYCHIC": 0.3
+ },
+ "minecraft:nether_wastes": {
+  "FIRE": 0.8,
+  "GHOST": 0.2
+ },
+ "minecraft:ocean": {
+  "WATER": 1.0
+ },
+ "minecraft:old_growth_birch_forest": {
+  "GRASS_BUG": 1.0
+ },
+ "minecraft:old_growth_pine_taiga": {
+  "FIGHTING": 0.1,
+  "GRASS_BUG": 0.8999999999999999
+ },
+ "minecraft:old_growth_spruce_taiga": {
+  "GRASS_BUG": 1.0
+ },
+ "minecraft:pale_garden": {
+  "GHOST": 0.4,
+  "GRASS_BUG": 0.4,
+  "PSYCHIC": 0.2
+ },
+ "minecraft:plains": {
+  "FIGHTING": 0.1,
+  "FLYING": 0.2,
+  "NORMAL": 0.7
+ },
+ "minecraft:river": {
+  "WATER": 1.0
+ },
+ "minecraft:savanna": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.6,
+  "FIRE": 0.1
+ },
+ "minecraft:savanna_plateau": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.6,
+  "FLYING": 0.1
+ },
+ "minecraft:small_end_islands": {
+  "DRAGON": 0.02,
+  "FLYING": 0.2,
+  "GHOST": 0.6799999999999999,
+  "PSYCHIC": 0.1
+ },
+ "minecraft:snowy_beach": {
+  "ICE": 0.6,
+  "WATER": 0.4
+ },
+ "minecraft:snowy_plains": {
+  "ICE": 0.8,
+  "NORMAL": 0.2
+ },
+ "minecraft:snowy_slopes": {
+  "ICE": 1.0
+ },
+ "minecraft:snowy_taiga": {
+  "ICE": 1.0
+ },
+ "minecraft:soul_sand_valley": {
+  "FIRE": 0.8,
+  "GHOST": 0.2
+ },
+ "minecraft:sparse_jungle": {
+  "FIGHTING": 0.2,
+  "GRASS_BUG": 0.8
+ },
+ "minecraft:stony_peaks": {
+  "FLYING": 0.1,
+  "GROUND_ROCK": 0.6,
+  "STEEL": 0.3
+ },
+ "minecraft:stony_shore": {
+  "FIGHTING": 0.2,
+  "GROUND_ROCK": 0.5,
+  "WATER": 0.3
+ },
+ "minecraft:sunflower_plains": {
+  "GRASS_BUG": 0.3,
+  "NORMAL": 0.7
+ },
+ "minecraft:swamp": {
+  "GRASS_BUG": 0.2,
+  "POISON": 0.8
+ },
+ "minecraft:taiga": {
+  "ELECTRIC": 0.1,
+  "FLYING": 0.1,
+  "ICE": 0.8
+ },
+ "minecraft:warm_ocean": {
+  "WATER": 1.0
+ },
+ "minecraft:warped_forest": {
+  "FIRE": 0.5,
+  "GHOST": 0.5
+ },
+ "minecraft:windswept_forest": {
+  "ELECTRIC": 0.2,
+  "FLYING": 0.2,
+  "GRASS_BUG": 0.2,
+  "GROUND_ROCK": 0.2,
+  "NORMAL": 0.2
+ },
+ "minecraft:windswept_gravelly_hills": {
+  "ELECTRIC": 0.2,
+  "FLYING": 0.2,
+  "GROUND_ROCK": 0.4,
+  "NORMAL": 0.2
+ },
+ "minecraft:windswept_hills": {
+  "ELECTRIC": 0.2,
+  "FLYING": 0.2,
+  "GROUND_ROCK": 0.4,
+  "NORMAL": 0.2
+ },
+ "minecraft:windswept_savanna": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.6,
+  "FLYING": 0.1
+ },
+ "minecraft:wooded_badlands": {
+  "FIRE": 0.2,
+  "GRASS_BUG": 0.1,
+  "GROUND_ROCK": 0.4,
+  "STEEL": 0.3
+ },
+ "nullscape:crystal_peaks": {
+  "GHOST": 0.7,
+  "NORMAL": 0.05,
+  "PSYCHIC": 0.25
+ },
+ "nullscape:shadowlands": {
+  "DRAGON": 0.05,
+  "GHOST": 0.8,
+  "PSYCHIC": 0.15
+ },
+ "nullscape:void_barrens": {
+  "DRAGON": 0.05,
+  "GHOST": 0.7,
+  "PSYCHIC": 0.25
+ },
+ "terralith:alpha_islands": {
+  "GRASS_BUG": 0.2,
+  "NORMAL": 0.3,
+  "WATER": 0.5
+ },
+ "terralith:alpha_islands_winter": {
+  "ICE": 0.5,
+  "WATER": 0.5
+ },
+ "terralith:alpine_grove": {
+  "GRASS_BUG": 0.2,
+  "ICE": 0.8
+ },
+ "terralith:alpine_highlands": {
+  "FIGHTING": 0.2,
+  "GRASS_BUG": 0.8
+ },
+ "terralith:amethyst_canyon": {
+  "GRASS_BUG": 0.2,
+  "GROUND_ROCK": 0.4,
+  "NORMAL": 0.4
+ },
+ "terralith:amethyst_rainforest": {
+  "GRASS_BUG": 0.2,
+  "NORMAL": 0.5,
+  "PSYCHIC": 0.3
+ },
+ "terralith:ancient_sands": {
+  "FIRE": 0.1,
+  "GROUND_ROCK": 0.8999999999999999
+ },
+ "terralith:arid_highlands": {
+  "FLYING": 0.3,
+  "GRASS_BUG": 0.1,
+  "GROUND_ROCK": 0.6
+ },
+ "terralith:ashen_savanna": {
+  "FIRE": 0.8,
+  "GROUND_ROCK": 0.2
+ },
+ "terralith:basalt_cliffs": {
+  "FIRE": 0.2,
+  "GROUND_ROCK": 0.8
+ },
+ "terralith:birch_taiga": {
+  "GRASS_BUG": 1.0
+ },
+ "terralith:blooming_plateau": {
+  "FIGHTING": 0.1,
+  "FLYING": 0.7,
+  "GRASS_BUG": 0.2
+ },
+ "terralith:blooming_valley": {
+  "GRASS_BUG": 1.0
+ },
+ "terralith:brushland": {
+  "FIGHTING": 0.2,
+  "NORMAL": 0.8
+ },
+ "terralith:bryce_canyon": {
+  "DRAGON": 0.01,
+  "GROUND_ROCK": 0.8999999999999999,
+  "NORMAL": 0.09
+ },
+ "terralith:caldera": {
+  "FIRE": 0.3,
+  "GROUND_ROCK": 0.2,
+  "WATER": 0.5
+ },
+ "terralith:cave/andesite_caves": {
+  "GHOST": 0.2,
+  "GROUND_ROCK": 0.8
+ },
+ "terralith:cave/deep_caves": {
+  "DRAGON": 0.01,
+  "GHOST": 0.8,
+  "PSYCHIC": 0.19
+ },
+ "terralith:cave/diorite_caves": {
+  "GHOST": 0.2,
+  "GROUND_ROCK": 0.8
+ },
+ "terralith:cave/frostfire_caves": {
+  "FIRE": 0.2,
+  "GHOST": 0.2,
+  "ICE": 0.4
+ },
+ "terralith:cave/fungal_caves": {
+  "GHOST": 0.2,
+  "NORMAL": 0.2,
+  "POISON": 0.8
+ },
+ "terralith:cave/granite_caves": {
+  "GHOST": 0.2,
+  "GROUND_ROCK": 0.8
+ },
+ "terralith:cave/infested_caves": {
+  "GHOST": 0.3,
+  "GRASS_BUG": 0.4,
+  "GROUND_ROCK": 0.3
+ },
+ "terralith:cave/mantle_caves": {
+  "FIRE": 0.6,
+  "GROUND_ROCK": 0.4
+ },
+ "terralith:cave/thermal_caves": {
+  "FIRE": 0.4,
+  "GROUND_ROCK": 0.5,
+  "WATER": 0.1
+ },
+ "terralith:cave/tuff_caves": {
+  "FIRE": 0.1,
+  "GHOST": 0.7,
+  "GROUND_ROCK": 0.2
+ },
+ "terralith:cave/underground_jungle": {
+  "GHOST": 0.2,
+  "GRASS_BUG": 0.8
+ },
+ "terralith:cloud_forest": {
+  "DRAGON": 0.05,
+  "FLYING": 0.2,
+  "GRASS_BUG": 0.55,
+  "ICE": 0.2
+ },
+ "terralith:cold_shrubland": {
+  "FIGHTING": 0.2,
+  "GRASS_BUG": 0.3,
+  "ICE": 0.4,
+  "NORMAL": 0.1
+ },
+ "terralith:deep_warm_ocean": {
+  "WATER": 1.0
+ },
+ "terralith:desert_canyon": {
+  "FIGHTING": 0.2,
+  "FIRE": 0.05,
+  "GROUND_ROCK": 0.75
+ },
+ "terralith:desert_oasis": {
+  "FIRE": 0.05,
+  "GRASS_BUG": 0.2,
+  "GROUND_ROCK": 0.75
+ },
+ "terralith:desert_spires": {
+  "FIRE": 0.05,
+  "FLYING": 0.2,
+  "GROUND_ROCK": 0.75
+ },
+ "terralith:emerald_peaks": {
+  "ELECTRIC": 0.35,
+  "FIGHTING": 0.2,
+  "GROUND_ROCK": 0.4,
+  "ICE": 0.05
+ },
+ "terralith:forested_highlands": {
+  "ELECTRIC": 0.2,
+  "GRASS_BUG": 0.6000000000000001,
+  "NORMAL": 0.2
+ },
+ "terralith:fractured_savanna": {
+  "FIGHTING": 0.2,
+  "FIRE": 0.05,
+  "GROUND_ROCK": 0.75
+ },
+ "terralith:frozen_cliffs": {
+  "ICE": 1.0
+ },
+ "terralith:glacial_chasm": {
+  "ICE": 1.0
+ },
+ "terralith:granite_cliffs": {
+  "ELECTRIC": 0.2,
+  "GROUND_ROCK": 0.4,
+  "STEEL": 0.4
+ },
+ "terralith:gravel_beach": {
+  "GROUND_ROCK": 0.4,
+  "STEEL": 0.2,
+  "WATER": 0.4
+ },
+ "terralith:gravel_desert": {
+  "ELECTRIC": 0.2,
+  "GROUND_ROCK": 0.75,
+  "STEEL": 0.05
+ },
+ "terralith:haze_mountain": {
+  "DRAGON": 0.05,
+  "FLYING": 0.2,
+  "GROUND_ROCK": 0.35,
+  "PSYCHIC": 0.4
+ },
+ "terralith:highlands": {
+  "ELECTRIC": 0.4,
+  "FIGHTING": 0.2,
+  "GROUND_ROCK": 0.1,
+  "NORMAL": 0.3
+ },
+ "terralith:hot_shrubland": {
+  "ELECTRIC": 0.2,
+  "FIGHTING": 0.4,
+  "FIRE": 0.05,
+  "NORMAL": 0.35
+ },
+ "terralith:ice_marsh": {
+  "ICE": 0.4,
+  "POISON": 0.6
+ },
+ "terralith:jungle_mountains": {
+  "FLYING": 0.2,
+  "GRASS_BUG": 0.75,
+  "GROUND_ROCK": 0.05
+ },
+ "terralith:lavender_forest": {
+  "GRASS_BUG": 0.39999999999999997,
+  "NORMAL": 0.2,
+  "PSYCHIC": 0.4
+ },
+ "terralith:lavender_valley": {
+  "GRASS_BUG": 0.39999999999999997,
+  "NORMAL": 0.2,
+  "PSYCHIC": 0.4
+ },
+ "terralith:lush_desert": {
+  "FIRE": 0.05,
+  "GRASS_BUG": 0.2,
+  "GROUND_ROCK": 0.75
+ },
+ "terralith:lush_valley": {
+  "ELECTRIC": 0.2,
+  "GRASS_BUG": 0.75,
+  "PSYCHIC": 0.05
+ },
+ "terralith:mirage_isles": {
+  "DRAGON": 0.05,
+  "GHOST": 0.15,
+  "NORMAL": 0.3,
+  "PSYCHIC": 0.5
+ },
+ "terralith:moonlight_grove": {
+  "GHOST": 0.2,
+  "NORMAL": 0.4,
+  "PSYCHIC": 0.4
+ },
+ "terralith:moonlight_valley": {
+  "GHOST": 0.2,
+  "NORMAL": 0.4,
+  "PSYCHIC": 0.4
+ },
+ "terralith:orchid_swamp": {
+  "GHOST": 0.1,
+  "NORMAL": 0.1,
+  "POISON": 0.3,
+  "PSYCHIC": 0.3,
+  "WATER": 0.2
+ },
+ "terralith:painted_mountains": {
+  "ELECTRIC": 0.3,
+  "FLYING": 0.1,
+  "GROUND_ROCK": 0.6
+ },
+ "terralith:red_oasis": {
+  "ELECTRIC": 0.15,
+  "FIRE": 0.05,
+  "GROUND_ROCK": 0.8
+ },
+ "terralith:rocky_jungle": {
+  "FLYING": 0.15,
+  "GRASS_BUG": 0.8,
+  "GROUND_ROCK": 0.05
+ },
+ "terralith:rocky_mountains": {
+  "DRAGON": 0.05,
+  "FLYING": 0.4,
+  "GROUND_ROCK": 0.4,
+  "STEEL": 0.15
+ },
+ "terralith:rocky_shrubland": {
+  "ELECTRIC": 0.4,
+  "FLYING": 0.05,
+  "GROUND_ROCK": 0.4,
+  "NORMAL": 0.15
+ },
+ "terralith:sakura_grove": {
+  "GHOST": 0.05,
+  "GRASS_BUG": 0.3,
+  "NORMAL": 0.55,
+  "PSYCHIC": 0.1
+ },
+ "terralith:sakura_valley": {
+  "GHOST": 0.05,
+  "GRASS_BUG": 0.3,
+  "NORMAL": 0.55,
+  "PSYCHIC": 0.1
+ },
+ "terralith:sandstone_valley": {
+  "FIGHTING": 0.15,
+  "FIRE": 0.05,
+  "GROUND_ROCK": 0.7,
+  "NORMAL": 0.1
+ },
+ "terralith:savanna_badlands": {
+  "ELECTRIC": 0.4,
+  "FIGHTING": 0.1,
+  "GROUND_ROCK": 0.35,
+  "NORMAL": 0.15
+ },
+ "terralith:savanna_slopes": {
+  "ELECTRIC": 0.4,
+  "FIGHTING": 0.1,
+  "GROUND_ROCK": 0.35,
+  "NORMAL": 0.15
+ },
+ "terralith:scarlet_mountains": {
+  "FIGHTING": 0.05,
+  "FIRE": 0.1,
+  "FLYING": 0.3,
+  "GROUND_ROCK": 0.4,
+  "NORMAL": 0.15
+ },
+ "terralith:shield": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.2,
+  "GRASS_BUG": 0.3,
+  "GROUND_ROCK": 0.2
+ },
+ "terralith:shield_clearing": {
+  "ELECTRIC": 0.3,
+  "GROUND_ROCK": 0.5,
+  "NORMAL": 0.2
+ },
+ "terralith:shrubland": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.2,
+  "GRASS_BUG": 0.3,
+  "GROUND_ROCK": 0.2
+ },
+ "terralith:siberian_grove": {
+  "FIGHTING": 0.2,
+  "GRASS_BUG": 0.3,
+  "GROUND_ROCK": 0.2,
+  "ICE": 0.3
+ },
+ "terralith:siberian_taiga": {
+  "FIGHTING": 0.2,
+  "GRASS_BUG": 0.3,
+  "GROUND_ROCK": 0.2,
+  "ICE": 0.3
+ },
+ "terralith:skylands_autumn": {
+  "DRAGON": 0.01,
+  "FLYING": 0.99
+ },
+ "terralith:skylands_spring": {
+  "DRAGON": 0.01,
+  "FLYING": 0.99
+ },
+ "terralith:skylands_summer": {
+  "DRAGON": 0.01,
+  "FLYING": 0.99
+ },
+ "terralith:skylands_winter": {
+  "DRAGON": 0.01,
+  "FLYING": 0.99
+ },
+ "terralith:snowy_badlands": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.2,
+  "GROUND_ROCK": 0.2,
+  "ICE": 0.3
+ },
+ "terralith:snowy_cherry_grove": {
+  "GRASS_BUG": 0.2,
+  "ICE": 0.8
+ },
+ "terralith:snowy_maple_forest": {
+  "GRASS_BUG": 0.2,
+  "ICE": 0.8
+ },
+ "terralith:snowy_shield": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.2,
+  "GROUND_ROCK": 0.2,
+  "ICE": 0.3
+ },
+ "terralith:steppe": {
+  "ELECTRIC": 0.2,
+  "FIGHTING": 0.2,
+  "GROUND_ROCK": 0.3,
+  "NORMAL": 0.3
+ },
+ "terralith:stony_spires": {
+  "ELECTRIC": 0.3,
+  "FIGHTING": 0.2,
+  "FLYING": 0.3,
+  "GROUND_ROCK": 0.2
+ },
+ "terralith:temperate_highlands": {
+  "FIGHTING": 0.2,
+  "FLYING": 0.3,
+  "GROUND_ROCK": 0.2,
+  "NORMAL": 0.3
+ },
+ "terralith:tropical_jungle": {
+  "FIRE": 0.1,
+  "GRASS_BUG": 0.7,
+  "GROUND_ROCK": 0.2
+ },
+ "terralith:valley_clearing": {
+  "ELECTRIC": 0.4,
+  "GRASS_BUG": 0.4,
+  "NORMAL": 0.2
+ },
+ "terralith:volcanic_crater": {
+  "DRAGON": 0.05,
+  "FIRE": 0.75,
+  "GROUND_ROCK": 0.2
+ },
+ "terralith:volcanic_peaks": {
+  "FIRE": 0.6,
+  "GROUND_ROCK": 0.4
+ },
+ "terralith:warm_river": {
+  "WATER": 1.0
+ },
+ "terralith:warped_mesa": {
+  "GHOST": 0.2,
+  "GROUND_ROCK": 0.2,
+  "PSYCHIC": 0.6
+ },
+ "terralith:white_cliffs": {
+  "GROUND_ROCK": 0.8,
+  "NORMAL": 0.2
+ },
+ "terralith:white_mesa": {
+  "GROUND_ROCK": 0.8,
+  "NORMAL": 0.2
+ },
+ "terralith:windswept_spires": {
+  "DRAGON": 0.01,
+  "FLYING": 0.2,
+  "GROUND_ROCK": 0.79
+ },
+ "terralith:wintry_forest": {
+  "GRASS_BUG": 0.4,
+  "ICE": 0.6
+ },
+ "terralith:wintry_lowlands": {
+  "ICE": 0.6,
+  "NORMAL": 0.2,
+  "STEEL": 0.2
+ },
+ "terralith:yellowstone": {
+  "ELECTRIC": 0.2,
+  "GROUND_ROCK": 0.8
+ },
+ "terralith:yosemite_cliffs": {
+  "FLYING": 0.2,
+  "GROUND_ROCK": 0.6,
+  "STEEL": 0.2
+ },
+ "terralith:yosemite_lowlands": {
+  "GRASS_BUG": 0.2,
+  "GROUND_ROCK": 0.4,
+  "STEEL": 0.2,
+  "WATER": 0.2
+ }
+}

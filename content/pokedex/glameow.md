@@ -487,6 +487,7 @@ forms:
         slug: 'purugly'
         depth: 1
         method: 'Level 38'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Jungle — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

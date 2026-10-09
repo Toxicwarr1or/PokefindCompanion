@@ -416,6 +416,7 @@ forms:
         slug: 'wailord'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 30+; Pokémon Lv 40+']
   - name: 'Haikou'
     kind: 'form'
     description: 'Designed after ancient flying machines, Wailord glides effortlessly through the sky despite its immense mass. Its engines hum calmly, unaffected by weather, as it draws power from passing storms.'

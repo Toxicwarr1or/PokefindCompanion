@@ -593,6 +593,7 @@ forms:
         slug: 'lopunny'
         depth: 1
         method: 'Level up, high friendship'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

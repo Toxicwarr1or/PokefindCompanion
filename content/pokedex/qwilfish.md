@@ -502,6 +502,7 @@ forms:
         power: '60'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: West Pond — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

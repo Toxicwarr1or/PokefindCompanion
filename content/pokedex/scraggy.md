@@ -617,6 +617,7 @@ forms:
         slug: 'scrafty'
         depth: 1
         method: 'Level 39'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 6+', 'Ghost: End Barrens (End), End Midlands (End) — trainer Lv 6+', 'Safari Zone: Eastern Desert — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

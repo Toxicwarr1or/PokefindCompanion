@@ -360,6 +360,7 @@ forms:
         slug: 'victreebel'
         depth: 2
         method: 'Use Leaf Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 21+', 'Poison: Swamp, Mangrove Swamp — Pokémon Lv 21+']
 region: ''
 anniversary: ''
 tier: ''

@@ -426,6 +426,7 @@ forms:
         slug: 'watchog'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Deep Jungle — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

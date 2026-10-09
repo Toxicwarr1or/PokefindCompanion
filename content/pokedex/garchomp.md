@@ -483,6 +483,7 @@ forms:
         slug: 'garchomp'
         depth: 2
         method: 'Level 48'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 45+; Pokémon Lv 50+']
   - name: 'Shiloh'
     kind: 'form'
     types: ['Water', 'Dragon']

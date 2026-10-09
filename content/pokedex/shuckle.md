@@ -506,6 +506,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Orange Desert — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

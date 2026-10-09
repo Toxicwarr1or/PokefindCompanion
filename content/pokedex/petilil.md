@@ -415,6 +415,7 @@ forms:
         slug: 'lilligant'
         depth: 1
         method: 'Use Sun Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Central Meadow — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

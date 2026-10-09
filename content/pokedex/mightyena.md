@@ -428,6 +428,7 @@ forms:
         slug: 'mightyena'
         depth: 1
         method: 'Level 18'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — Pokémon Lv 18+']
 region: ''
 anniversary: ''
 tier: ''

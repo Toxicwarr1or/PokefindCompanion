@@ -511,6 +511,7 @@ forms:
         slug: 'grumpig'
         depth: 1
         method: 'Level 32'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — trainer Lv 10+', 'Safari Zone: Entrance — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

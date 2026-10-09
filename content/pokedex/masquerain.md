@@ -387,6 +387,7 @@ forms:
         slug: 'masquerain'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 22+', 'Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 22+']
 region: ''
 anniversary: ''
 tier: ''

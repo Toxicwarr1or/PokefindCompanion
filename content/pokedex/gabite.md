@@ -409,6 +409,7 @@ forms:
         slug: 'garchomp'
         depth: 2
         method: 'Level 48'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 25+; Pokémon Lv 30+']
 region: ''
 anniversary: ''
 tier: ''

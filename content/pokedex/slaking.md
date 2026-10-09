@@ -540,6 +540,7 @@ forms:
         slug: 'slaking'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Normal: Brushland, Plains — trainer Lv 30+; Pokémon Lv 36+']
   - name: 'Haikou'
     kind: 'form'
     types: ['Grass', 'Fighting']

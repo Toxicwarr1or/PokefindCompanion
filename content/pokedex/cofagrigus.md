@@ -469,6 +469,7 @@ forms:
         slug: 'cofagrigus'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 22+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Psychic', 'Dragon']

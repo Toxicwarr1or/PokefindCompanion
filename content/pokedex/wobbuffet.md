@@ -97,6 +97,7 @@ forms:
         slug: 'wobbuffet'
         depth: 1
         method: 'Level 15'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles']
 region: ''
 anniversary: ''
 tier: ''

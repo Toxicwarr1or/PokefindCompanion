@@ -568,6 +568,7 @@ forms:
         slug: 'gengar'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Deep Jungle — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

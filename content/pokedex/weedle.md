@@ -80,6 +80,7 @@ forms:
         slug: 'beedrill'
         depth: 2
         method: 'Level 10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp', 'Safari Zone: Jungle — Jan–Mar, Jul–Sep']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Dragon', 'Bug']

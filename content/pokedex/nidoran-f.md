@@ -458,6 +458,7 @@ forms:
         slug: 'nidoqueen'
         depth: 2
         method: 'Use Moon Stone'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp']
 region: ''
 anniversary: ''
 tier: ''

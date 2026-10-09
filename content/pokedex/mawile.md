@@ -640,6 +640,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Steel: Granite Cliffs, Badlands', 'Safari Zone: Entrance — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

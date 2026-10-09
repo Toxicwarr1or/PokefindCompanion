@@ -451,6 +451,7 @@ forms:
         slug: 'ludicolo'
         depth: 2
         method: 'Use Water Stone'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 14+']
 region: ''
 anniversary: ''
 tier: ''

@@ -409,6 +409,7 @@ forms:
         slug: 'whiscash'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

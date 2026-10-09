@@ -437,6 +437,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '15'
+    survival_locations: ['Safari Zone: Jungle — Apr–Jun, Oct–Dec']
   - name: 'Sunny'
     kind: 'form'
     types: ['Fire']

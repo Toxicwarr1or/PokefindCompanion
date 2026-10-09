@@ -442,6 +442,7 @@ forms:
         slug: 'sawsbuck'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — trainer Lv 4+', 'Safari Zone: Jungle — Jan–Mar, Jul–Sep']
   - name: 'Summer'
     kind: 'form'
     types: ['Normal', 'Grass']

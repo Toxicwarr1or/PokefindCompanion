@@ -530,6 +530,7 @@ forms:
         slug: 'lucario'
         depth: 1
         method: 'Level up, at day, high friendship'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

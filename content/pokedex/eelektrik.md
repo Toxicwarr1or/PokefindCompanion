@@ -393,6 +393,7 @@ forms:
         slug: 'eelektross'
         depth: 2
         method: 'Use Thunder Stone'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 15+']
 region: ''
 anniversary: ''
 tier: ''

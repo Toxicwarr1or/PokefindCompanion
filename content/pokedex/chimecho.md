@@ -548,6 +548,7 @@ forms:
         slug: 'chimecho'
         depth: 1
         method: 'Level up, at night, high friendship'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — trainer Lv 10+; Pokémon Lv 14+']
   - name: 'Haikou'
     kind: 'form'
     types: ['Dark', 'Fairy']

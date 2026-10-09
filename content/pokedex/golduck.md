@@ -515,6 +515,7 @@ forms:
         slug: 'golduck'
         depth: 1
         method: 'Level 33'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 33+']
 region: ''
 anniversary: ''
 tier: ''

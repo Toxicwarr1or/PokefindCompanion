@@ -543,6 +543,7 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 12+; Pokémon Lv 14+', 'Psychic: Warped Mesa, Mirage Isles — trainer Lv 12+; Pokémon Lv 14+', 'Safari Zone: Orange Desert — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

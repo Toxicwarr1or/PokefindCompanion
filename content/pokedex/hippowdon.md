@@ -370,6 +370,7 @@ forms:
         slug: 'hippowdon'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands']
   - name: 'Shiloh'
     kind: 'form'
     types: ['Water', 'Fire']

@@ -500,6 +500,7 @@ forms:
         slug: 'claydol'
         depth: 1
         method: 'Level 36'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles', 'Safari Zone: Eastern Desert — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

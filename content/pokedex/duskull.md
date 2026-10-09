@@ -490,6 +490,7 @@ forms:
         slug: 'dusknoir'
         depth: 2
         method: 'Trade, holding Reaper Cloth'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — trainer Lv 10+; Pokémon Lv 14+', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

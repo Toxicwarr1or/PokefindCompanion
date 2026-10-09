@@ -354,6 +354,7 @@ forms:
         slug: 'dodrio'
         depth: 1
         method: 'Level 31'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 31+', 'Normal: Brushland, Plains — Pokémon Lv 31+']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Fire', 'Fairy']

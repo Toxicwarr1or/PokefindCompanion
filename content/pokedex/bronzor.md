@@ -462,6 +462,7 @@ forms:
         slug: 'bronzong'
         depth: 1
         method: 'Level 33'
+    survival_locations: ['Steel: Granite Cliffs, Badlands', 'Electric: Highlands, Rocky Shrubland', 'Safari Zone: Entrance — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

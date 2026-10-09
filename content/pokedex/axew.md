@@ -511,6 +511,7 @@ forms:
         slug: 'haxorus'
         depth: 2
         method: 'Level 48'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 15+; Pokémon Lv 16+', 'Safari Zone: Deep Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

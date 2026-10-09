@@ -513,6 +513,7 @@ forms:
         slug: 'hariyama'
         depth: 1
         method: 'Level 24'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — trainer Lv 7+', 'Safari Zone: Central Meadow — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

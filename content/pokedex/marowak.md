@@ -516,6 +516,7 @@ forms:
         slug: 'marowak'
         depth: 1
         method: 'Level 28'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 28+', 'Ghost: End Barrens (End), End Midlands (End) — Pokémon Lv 28+']
   - name: 'Alolan'
     kind: 'form'
     types: ['Fire', 'Ghost']

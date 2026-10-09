@@ -617,6 +617,7 @@ forms:
         power: '65'
         accuracy: '95'
         pp: '15'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 18+', 'Safari Zone: Jungle — Jan–Mar, Oct–Dec']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Steel', 'Rock']

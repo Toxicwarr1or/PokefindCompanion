@@ -433,6 +433,7 @@ forms:
         slug: 'lumineon'
         depth: 1
         method: 'Level 31'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: North River — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

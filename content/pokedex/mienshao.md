@@ -487,6 +487,7 @@ forms:
         slug: 'mienshao'
         depth: 1
         method: 'Level 50'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau — Pokémon Lv 35+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Grass', 'Dark']

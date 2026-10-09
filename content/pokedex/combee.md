@@ -96,6 +96,7 @@ forms:
         slug: 'vespiquen'
         depth: 1
         method: 'Level 21, (female)'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp', 'Safari Zone: Central Meadow — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

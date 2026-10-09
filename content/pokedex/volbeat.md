@@ -502,6 +502,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '10'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

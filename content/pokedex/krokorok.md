@@ -516,6 +516,7 @@ forms:
         slug: 'krookodile'
         depth: 2
         method: 'Level 40'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 16+']
 region: ''
 anniversary: ''
 tier: ''

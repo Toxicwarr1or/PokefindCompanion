@@ -707,6 +707,7 @@ forms:
         slug: 'blissey'
         depth: 2
         method: 'Level up, high friendship'
+    survival_locations: ['Normal: Brushland, Plains — trainer Lv 25+; Pokémon Lv 18+', 'Safari Zone: Central Meadow — Jul–Dec']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Ground', 'Ghost']

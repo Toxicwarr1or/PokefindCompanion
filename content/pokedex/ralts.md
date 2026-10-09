@@ -587,6 +587,7 @@ forms:
         slug: 'gallade'
         depth: 2
         method: 'Use Dawn Stone, (male)'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — trainer Lv 13+', 'Safari Zone: Central Meadow — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

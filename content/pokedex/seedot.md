@@ -387,6 +387,7 @@ forms:
         slug: 'shiftry'
         depth: 2
         method: 'Use Leaf Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Deep Jungle — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

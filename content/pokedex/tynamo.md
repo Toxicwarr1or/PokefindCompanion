@@ -93,6 +93,7 @@ forms:
         slug: 'eelektross'
         depth: 2
         method: 'Use Thunder Stone'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland', 'Safari Zone: Central Meadow — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

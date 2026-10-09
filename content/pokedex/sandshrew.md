@@ -517,6 +517,7 @@ forms:
         slug: 'sandslash'
         depth: 1
         method: 'Level 22'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Eastern Desert — Jan–Jun']
   - name: 'Alolan'
     kind: 'form'
     types: ['Ice', 'Steel']

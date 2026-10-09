@@ -403,6 +403,7 @@ forms:
         slug: 'raichu'
         depth: 2
         method: 'Use Thunder Stone'
+    survival_locations: ['Safari Zone: Entrance — Jul–Dec']
   - name: 'Surfing 1'
     kind: 'skin'
     skin_gate: 'summer'

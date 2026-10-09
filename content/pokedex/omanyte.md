@@ -480,6 +480,7 @@ forms:
         slug: 'omastar'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Safari Zone: West Pond — Jan–Jun']
 region: ''
 anniversary: ''
 tier: ''

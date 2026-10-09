@@ -553,6 +553,7 @@ forms:
         slug: 'bisharp'
         depth: 1
         method: 'Level 52'
+    survival_locations: ['Steel: Granite Cliffs, Badlands — trainer Lv 15+', 'Ghost: End Barrens (End), End Midlands (End) — trainer Lv 15+', 'Safari Zone: Eastern Desert — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

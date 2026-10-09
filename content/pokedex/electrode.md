@@ -404,6 +404,7 @@ forms:
         slug: 'electrode'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 30+', 'Steel: Granite Cliffs, Badlands — Pokémon Lv 30+']
 region: ''
 anniversary: ''
 tier: ''

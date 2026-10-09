@@ -491,6 +491,7 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 15+', 'Safari Zone: West Pond — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

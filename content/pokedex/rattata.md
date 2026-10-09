@@ -467,6 +467,7 @@ forms:
         slug: 'raticate'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Entrance — Apr–Sep']
   - name: 'Alolan'
     kind: 'form'
     description: 'Night after night, they sneak into people''s homes seeking food. A massive outbreak of them has become an issue of public concern.'

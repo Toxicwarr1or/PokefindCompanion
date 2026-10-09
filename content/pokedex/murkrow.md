@@ -531,6 +531,7 @@ forms:
         slug: 'honchkrow'
         depth: 1
         method: 'Use Dusk Stone'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End)', 'Safari Zone: Orange Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

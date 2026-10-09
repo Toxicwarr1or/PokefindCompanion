@@ -417,6 +417,7 @@ forms:
         slug: 'escavalier'
         depth: 1
         method: 'Trade, trade for Shelmet'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest — Pokémon Lv 15+', 'Safari Zone: Entrance — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

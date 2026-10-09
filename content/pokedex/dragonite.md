@@ -640,6 +640,7 @@ forms:
         slug: 'dragonite'
         depth: 2
         method: 'Level 55'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — trainer Lv 45+; Pokémon Lv 55+', 'Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 45+; Pokémon Lv 55+']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Electric', 'Water']

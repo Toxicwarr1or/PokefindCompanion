@@ -473,6 +473,7 @@ forms:
         power: '—'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — trainer Lv 8+', 'Flying: Skylands Autumn, Skylands Spring — trainer Lv 8+', 'Safari Zone: Deep Jungle — Jan–Mar, Oct–Dec']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Flying', 'Fairy']

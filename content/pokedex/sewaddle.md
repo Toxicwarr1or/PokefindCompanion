@@ -401,6 +401,7 @@ forms:
         slug: 'leavanny'
         depth: 2
         method: 'Level up, high friendship'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Safari Zone: Jungle — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

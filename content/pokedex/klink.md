@@ -357,6 +357,7 @@ forms:
         slug: 'klinklang'
         depth: 2
         method: 'Level 49'
+    survival_locations: ['Steel: Granite Cliffs, Badlands', 'Electric: Highlands, Rocky Shrubland', 'Safari Zone: Entrance — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

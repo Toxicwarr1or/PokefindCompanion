@@ -438,6 +438,7 @@ forms:
         slug: 'cradily'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Safari Zone: Orange Desert — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

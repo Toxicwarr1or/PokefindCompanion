@@ -501,6 +501,7 @@ forms:
         slug: 'gengar'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — Pokémon Lv 25+']
 region: ''
 anniversary: ''
 tier: ''

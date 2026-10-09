@@ -365,6 +365,7 @@ forms:
         slug: 'unfezant'
         depth: 2
         method: 'Level 32'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 36+', 'Normal: Brushland, Plains — Pokémon Lv 36+']
 region: ''
 anniversary: ''
 tier: ''

@@ -501,6 +501,7 @@ forms:
         slug: 'ampharos'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland — Pokémon Lv 40+']
   - name: 'Jataro'
     kind: 'form'
     description: 'Its tail shines bright and strong. It has been prized since long ago as a beacon for sailors.'

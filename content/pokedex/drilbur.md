@@ -448,6 +448,7 @@ forms:
         slug: 'excadrill'
         depth: 1
         method: 'Level 31'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 15+', 'Safari Zone: Eastern Desert — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

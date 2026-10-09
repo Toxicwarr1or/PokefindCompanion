@@ -520,6 +520,7 @@ forms:
         slug: 'beheeyem'
         depth: 1
         method: 'Level 42'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 36+']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Ghost', 'Fairy']

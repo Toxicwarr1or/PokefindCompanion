@@ -457,6 +457,7 @@ forms:
         slug: 'empoleon'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: North River — Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

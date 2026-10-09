@@ -462,6 +462,7 @@ forms:
         slug: 'torterra'
         depth: 2
         method: 'Level 32'
+    survival_locations: ['Safari Zone: Jungle — Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

@@ -500,6 +500,7 @@ forms:
         slug: 'golem'
         depth: 2
         method: 'Trade'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Safari Zone: Eastern Desert — Jan–Mar, Jul–Sep']
   - name: 'Alolan'
     kind: 'form'
     types: ['Rock', 'Electric']

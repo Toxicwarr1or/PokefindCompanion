@@ -549,6 +549,7 @@ forms:
         slug: 'ursaring'
         depth: 1
         method: 'Level 30'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Central Meadow — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

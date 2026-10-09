@@ -544,6 +544,7 @@ forms:
         slug: 'steelix'
         depth: 1
         method: 'Trade, holding Metal Coat'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 18+', 'Safari Zone: Eastern Desert — Jan–Mar, Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

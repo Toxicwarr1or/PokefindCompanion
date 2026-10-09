@@ -493,6 +493,7 @@ forms:
         power: '—'
         accuracy: '∞'
         pp: '5'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring', 'Normal: Brushland, Plains', 'Safari Zone: Entrance — Apr–Sep']
   - name: 'Galarian'
     kind: 'form'
     description: 'The Farfetch''d of the Galar region are brave warriors, and they wield thick, tough leeks in battle.'

@@ -458,6 +458,7 @@ forms:
         power: '80'
         accuracy: '90'
         pp: '15'
+    survival_locations: ['Fighting: Savanna, Savanna Plateau', 'Safari Zone: Central Meadow — Jan–Mar, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

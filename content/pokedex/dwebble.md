@@ -479,6 +479,7 @@ forms:
         slug: 'crustle'
         depth: 1
         method: 'Level 34'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands', 'Grass/Bug: Birch Forest, Forest', 'Safari Zone: Orange Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

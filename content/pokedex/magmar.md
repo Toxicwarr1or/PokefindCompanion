@@ -425,6 +425,7 @@ forms:
         slug: 'magmortar'
         depth: 2
         method: 'Trade, holding Magmarizer'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — Pokémon Lv 16+', 'Ground/Rock: Dripstone Caves, Ancient Sands — Pokémon Lv 16+']
 region: ''
 anniversary: ''
 tier: ''

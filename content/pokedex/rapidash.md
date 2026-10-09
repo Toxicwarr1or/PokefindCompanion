@@ -393,6 +393,7 @@ forms:
         slug: 'rapidash'
         depth: 1
         method: 'Level 40'
+    survival_locations: ['Fire: Basalt Deltas (Nether), Nether Wastes (Nether) — Pokémon Lv 40+']
   - name: 'Galarian'
     kind: 'form'
     description: 'Little can stand up to its psycho cut. Unleashed from this Pokémon''s horn, the move will punch a hole right through a thick metal sheet.'

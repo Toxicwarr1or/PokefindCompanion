@@ -481,6 +481,7 @@ forms:
         slug: 'magmortar'
         depth: 2
         method: 'Trade, holding Magmarizer'
+    survival_locations: ['Safari Zone: Orange Desert — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

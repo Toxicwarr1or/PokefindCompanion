@@ -459,6 +459,7 @@ forms:
         slug: 'mandibuzz'
         depth: 1
         method: 'Level 54'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 54+', 'Ghost: End Barrens (End), End Midlands (End) — Pokémon Lv 54+']
 region: ''
 anniversary: ''
 tier: ''

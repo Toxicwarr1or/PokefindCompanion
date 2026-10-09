@@ -537,6 +537,7 @@ forms:
         slug: 'sudowoodo'
         depth: 1
         method: 'Level up, knowing Mimic'
+    survival_locations: ['Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 15+']
 region: ''
 anniversary: ''
 tier: ''

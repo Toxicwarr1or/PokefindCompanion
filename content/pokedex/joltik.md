@@ -459,6 +459,7 @@ forms:
         slug: 'galvantula'
         depth: 1
         method: 'Level 36'
+    survival_locations: ['Electric: Highlands, Rocky Shrubland', 'Grass/Bug: Birch Forest, Forest', 'Safari Zone: Jungle — Jul–Dec']
 region: ''
 anniversary: ''
 tier: ''

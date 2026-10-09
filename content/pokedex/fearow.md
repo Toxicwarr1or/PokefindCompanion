@@ -351,6 +351,7 @@ forms:
         slug: 'fearow'
         depth: 1
         method: 'Level 20'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 20+', 'Normal: Brushland, Plains — Pokémon Lv 20+']
 region: ''
 anniversary: ''
 tier: ''

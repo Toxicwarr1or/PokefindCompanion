@@ -454,6 +454,7 @@ forms:
         power: '65'
         accuracy: '100'
         pp: '20'
+    survival_locations: ['Normal: Brushland, Plains — Pokémon Lv 16+', 'Safari Zone: Deep Jungle — Jul–Dec']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Normal', 'Grass']

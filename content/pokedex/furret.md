@@ -508,6 +508,7 @@ forms:
         slug: 'furret'
         depth: 1
         method: 'Level 15'
+    survival_locations: ['Normal: Brushland, Plains']
 region: ''
 anniversary: ''
 tier: ''

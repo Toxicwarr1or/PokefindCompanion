@@ -544,6 +544,7 @@ forms:
         power: '35'
         accuracy: '85'
         pp: '15'
+    survival_locations: ['Ice: Frozen Peaks, Ice Spikes — trainer Lv 25+; Pokémon Lv 18+', 'Water: Cold Ocean, Deep Lukewarm Ocean — trainer Lv 25+; Pokémon Lv 18+', 'Safari Zone: Desert Oasis — Jul–Dec', 'Safari Zone: East Pond — Jul–Dec']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Rock', 'Ghost']

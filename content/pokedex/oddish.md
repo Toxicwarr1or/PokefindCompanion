@@ -440,6 +440,7 @@ forms:
         slug: 'bellossom'
         depth: 2
         method: 'Use Sun Stone'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp', 'Safari Zone: Deep Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

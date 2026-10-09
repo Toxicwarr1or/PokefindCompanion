@@ -560,6 +560,7 @@ forms:
         slug: 'persian'
         depth: 1
         method: 'Level 28'
+    survival_locations: ['Normal: Brushland, Plains', 'Safari Zone: Jungle — Jan–Mar, Oct–Dec']
   - name: 'Alolan'
     kind: 'form'
     types: ['Dark']

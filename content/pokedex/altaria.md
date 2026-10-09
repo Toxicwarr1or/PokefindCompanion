@@ -514,6 +514,7 @@ forms:
         slug: 'altaria'
         depth: 1
         method: 'Level 35'
+    survival_locations: ['Dragon: End Barrens (End), End Midlands (End) — Pokémon Lv 35+', 'Flying: Skylands Autumn, Skylands Spring — Pokémon Lv 35+']
 region: ''
 anniversary: ''
 tier: ''

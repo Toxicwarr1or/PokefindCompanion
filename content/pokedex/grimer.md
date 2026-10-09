@@ -519,6 +519,7 @@ forms:
         slug: 'muk'
         depth: 1
         method: 'Level 38'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp', 'Safari Zone: Jungle — Jul–Dec']
   - name: 'Alolan'
     kind: 'form'
     types: ['Poison', 'Dark']

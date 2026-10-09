@@ -11,7 +11,7 @@ subtitle: "The eight-gym gauntlet, the Elite Four, and what each badge unlocks"
 
 PokéSurvival's progression is a **linear gym gauntlet** at spawn: eight gyms, then the Elite Four and the Regional Champion. Each gym requires the one before it. **Cletus Jr.**, the Gym Official, meets you at spawn and escorts you to whichever gym you have not beaten yet; his father **Cletus** guards the Elite Four and will not let you through without all eight badges. Inside each gym, League Official **Charles** briefs you before the leader.
 
-Badges are not just trophies here. They set two ceilings that govern everything else you do (see below), and the third and sixth badges open the Nether and the End.
+Badges are not just trophies here. They set two ceilings that govern everything else you do (see below), and the third and seventh badges open the Nether and the End.
 
 ---
 
@@ -24,8 +24,8 @@ Badges are not just trophies here. They set two ceilings that govern everything 
 | 3 | Electric / Normal | **Dex** — beating this gym unlocks the **Nether** |
 | 4 | Bug | **Selene** |
 | 5 | Water | **Delphine** |
-| 6 | Dragon / Fire | **Draven** — beating this gym unlocks the **End** |
-| 7 | Psychic | **Orion** |
+| 6 | Dragon / Fire | **Draven** |
+| 7 | Psychic | **Orion** — beating this gym unlocks the **End** |
 | 8 | Steel | **Valeria** — the final trial |
 
 Leader teams: *TODO — add once the live rosters are confirmed (the Gym Teams section may grow a PokéSurvival tab).*
@@ -42,8 +42,8 @@ Your **highest** badge sets both caps (they do not add up).
 | 3 | 23 | 50 | **Nether** |
 | 4 | 27 | 60 | |
 | 5 | 30 | 70 | |
-| 6 | 35 | 80 | **End** |
-| 7 | 40 | 90 | |
+| 6 | 35 | 80 | |
+| 7 | 40 | 90 | **End** |
 | 8 | uncapped | 100 | Iconic trainers, Elite Four |
 
 - **Trainer level** stops gaining experience at the cap until you earn the next badge.

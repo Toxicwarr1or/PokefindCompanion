@@ -591,6 +591,7 @@ forms:
         slug: 'gliscor'
         depth: 1
         method: 'Level up, holding Razor Fang, at night'
+    survival_locations: ['Flying: Skylands Autumn, Skylands Spring — trainer Lv 15+', 'Ground/Rock: Dripstone Caves, Ancient Sands — trainer Lv 15+', 'Safari Zone: Eastern Desert — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

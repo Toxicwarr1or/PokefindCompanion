@@ -488,6 +488,7 @@ forms:
         slug: 'swampert'
         depth: 2
         method: 'Level 36'
+    survival_locations: ['Safari Zone: North River — Jul–Sep']
 region: ''
 anniversary: ''
 tier: ''

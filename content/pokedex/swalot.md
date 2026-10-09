@@ -459,6 +459,7 @@ forms:
         slug: 'swalot'
         depth: 1
         method: 'Level 26'
+    survival_locations: ['Poison: Swamp, Mangrove Swamp — Pokémon Lv 26+']
 region: ''
 anniversary: ''
 tier: ''

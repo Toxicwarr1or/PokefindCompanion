@@ -554,6 +554,7 @@ forms:
         slug: 'wigglytuff'
         depth: 2
         method: 'Use Moon Stone'
+    survival_locations: ['Normal: Brushland, Plains']
 region: ''
 anniversary: ''
 tier: ''

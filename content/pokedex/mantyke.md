@@ -448,6 +448,7 @@ forms:
         slug: 'mantine'
         depth: 1
         method: 'Level up, with Remoraid in party'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean', 'Safari Zone: Desert Oasis — Apr–Sep', 'Safari Zone: West Pond — Apr–Sep']
 region: ''
 anniversary: ''
 tier: ''

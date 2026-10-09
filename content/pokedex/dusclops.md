@@ -572,6 +572,7 @@ forms:
         slug: 'dusknoir'
         depth: 2
         method: 'Trade, holding Reaper Cloth'
+    survival_locations: ['Ghost: End Barrens (End), End Midlands (End) — Pokémon Lv 37+']
 region: ''
 anniversary: ''
 tier: ''

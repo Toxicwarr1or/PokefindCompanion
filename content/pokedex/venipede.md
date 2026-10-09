@@ -381,6 +381,7 @@ forms:
         slug: 'scolipede'
         depth: 2
         method: 'Level 30'
+    survival_locations: ['Grass/Bug: Birch Forest, Forest', 'Poison: Swamp, Mangrove Swamp', 'Safari Zone: Deep Jungle — Apr–Jun, Oct–Dec']
 region: ''
 anniversary: ''
 tier: ''

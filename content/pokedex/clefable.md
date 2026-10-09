@@ -581,6 +581,7 @@ forms:
         slug: 'clefable'
         depth: 2
         method: 'Use Moon Stone'
+    survival_locations: ['Normal: Brushland, Plains']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Normal', 'Ghost']

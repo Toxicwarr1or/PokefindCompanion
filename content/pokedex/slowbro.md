@@ -601,6 +601,7 @@ forms:
         slug: 'slowking'
         depth: 1
         method: 'Trade, holding King''s Rock'
+    survival_locations: ['Water: Cold Ocean, Deep Lukewarm Ocean — Pokémon Lv 37+', 'Psychic: Warped Mesa, Mirage Isles — Pokémon Lv 37+']
   - name: 'Kyoto'
     kind: 'form'
     types: ['Steel', 'Water']

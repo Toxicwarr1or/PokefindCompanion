@@ -595,6 +595,7 @@ forms:
         slug: 'reuniclus'
         depth: 2
         method: 'Level 41'
+    survival_locations: ['Psychic: Warped Mesa, Mirage Isles']
   - name: 'Zeinova'
     kind: 'form'
     types: ['Poison', 'Fairy']
