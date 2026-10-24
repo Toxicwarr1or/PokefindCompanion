@@ -40,6 +40,27 @@ Pools switch over at midnight on the first of the month. A species that appears 
 
 ---
 
+## Map
+
+![Map of the PokéSurvival Safari Zone, split into numbered spawn areas](/images/pokesurvival/safari-map.png)
+
+The dirt paths are the borders between areas. The four water areas sit inside the land around them and only spawn Pokémon on water.
+
+| Map label | Area |
+| --- | --- |
+| Area 1 | [Entrance](#entrance) |
+| Area 2 | [Orange Desert](#orange-desert) |
+| Area 3 | [Central Meadow](#central-meadow) |
+| Area 4 | [Eastern Desert](#eastern-desert) |
+| Area 4.5 | [Desert Oasis](#desert-oasis-water) (water) |
+| Area 5 | [Jungle](#jungle) |
+| Area 5.5 | [Deep Jungle](#deep-jungle) |
+| North River | [North River](#north-river-water) (water) |
+| East Pond | [East Pond](#east-pond-ice-water) (ice water) |
+| West Pond | [West Pond](#west-pond-water) (water) |
+
+---
+
 ## Areas
 
 Tiers are relative to the other Pokémon in that area during that window. Water areas are **surf-only** — their Pokémon roll on water or ice tiles, never in grass.

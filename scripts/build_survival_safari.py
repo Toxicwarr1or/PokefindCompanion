@@ -36,6 +36,13 @@ def main():
     doc = json.loads(SRC.read_text(encoding='utf-8'), object_pairs_hook=lambda p: p)
     names = [v for k, v in doc if k == 'Comment' and 'Area' in v]
     areas = [v for k, v in doc if k == 'SafariZoneArea']
+    # An area can be split into several boxes ("... (part b of 3)"), each repeating the same list: keep one per area.
+    seen, pairs = set(), []
+    for name, area in zip(names, areas):
+        name = re.sub(r' \(part [a-z] of \d+\)$', '', name)
+        if name not in seen:
+            seen.add(name); pairs.append((name, area))
+    names, areas = [n for n, _ in pairs], [a for _, a in pairs]
     page = PAGE.read_text(encoding='utf-8')
     # keep the existing blurb under each heading
     blurbs = dict(re.findall(r'^### (.+?)\n\n(.+?)\n', page, re.M))
